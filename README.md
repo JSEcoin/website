@@ -29,7 +29,7 @@ As part of this we also offer the ability for users without website to mine JSEC
 ## Official Website
 Check out our live [website](https://jsecoin.com).
 
-## Quickstart developing extending the website
+## Quickstart developing and extending the website
 
 1. Install [Node.js](https://nodejs.org) v8.0.0 or higher.
 2. Clone this repository: `git clone https://github.com/JSEcoin/website`
@@ -37,9 +37,13 @@ Check out our live [website](https://jsecoin.com).
 4. Initialise developer environment `npm run dev`
 
 ### Build website
-Executing `npm run build` generates a build within `./build`
+Executing `npm run build` generates a build within `./dist`
 
-### Bug Bounty
+## Webpack notes
+
+1. Remember to update `./build/webpack.prod.conf.js` with any new additional routes to generate static html and paths with PrerenderSpaPlugin.
+
+## Bug Bounty
 This is an initial push - alot of cleanup is still required if you spot an issue please report it and if we consider it a major issue we will credit your account as part of our bug bounty offering.
 [Bug Bounty Info Page](https://jsecoin.com/en/oddJobs/bugBounty)
 
