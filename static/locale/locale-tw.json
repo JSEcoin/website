@@ -1,0 +1,1498 @@
+{
+	"tpl": {
+		"globalNavHeader": {
+			"link_whitepaper": "白皮書",
+			"link_investors": "投資者",
+			"link_webmasters": "WEBMASTERS",
+			"link_developers": "開發商",
+			"link_contact": "聯繫",
+			"link_login": "登錄"
+		},
+		"header": {
+			"heading_whyJSEcoin": "為什麼選擇JSEcoin？",
+			"para_main1": "傳統的加密貨幣不是為主流採用或網頁集成而設計的。 JSEcoin項目從頭開始構建，為以下問題提供解決方案：",
+			"subheading_environmentalImpact": "對環境造成的影響",
+			"para_main2": "傳統加密貨幣的挖掘使用了大量的電力。 JSEcoin採用剩餘CPU資源開採，減少了加密貨幣採用對環境的影響。",
+			"subheading_consumerFriendly": "消費者友好",
+			"para_main3": "我們的混合系統可以讓非技術用戶輕鬆設置賬戶，礦幣，交易和使用加密貨幣。我們為用戶提供安全，簡單和直觀的平台。",
+			"subheading_builtForTheWeb": "為網絡而建",
+			"para_main4": "我們認為加密貨幣應該是基於網絡的。我們的系統由網站管理員和自我挖掘者使用網絡瀏覽器進行挖掘。在線平台提供了一個基於Web的JSEcoin網絡入口點。",
+			"button_close": "關",
+			"carousel1": {
+				"heading": "數字貨幣 - 為網站設計",
+				"subheading": "未來的區塊鏈",
+				"placeholder": "輸入你的電子郵箱地址",
+				"button_getStarted": "開始使用",
+				"link_readTheWhitepaper": "閱讀白皮書",
+				"button_whyJSEcoin": "為什麼JSECoin？"
+			}
+		}
+	},
+	"template": {
+		"meta": {
+			"title": "數字貨幣 - 為網站設計",
+			"keywords": "jsecoin，網絡挖掘cryptocurrency，crpyto，區塊鏈作為服務，JavaScript挖掘代碼，JavaScript加密礦工，通過瀏覽器挖掘，挖掘GUI",
+			"description": "發現JSECoin，這是挖掘您的商品或服務的收款付款和在線上向朋友和家人轉移加密貨幣的最簡單方式。探索為每個人建立的網站管理員挖掘的Cryptocurrency。"
+		},
+		"global": {
+			"text_comingSoon": "快來了！"
+		},
+		"adDetection": {
+			"text_title": "我們注意到您正在使用adblocker。",
+			"para_main1": "您仍然可以使用我們的網站並與其互動，但是某些區域可能會被禁用。",
+			"para_main2": "請將我們的白名單或停用您的廣告攔截器，並重新加載頁面以訪問所有內容。"
+		},
+		"lang": {
+			"para_choose": "請選擇您最熟悉的語言。"
+		},
+		"cookies": {
+			"text_overview_line1": "我們使用cookie來更好地提供我們的服務。",
+			"text_overview_line2": "通過使用我們的服務，您同意",
+			"link_terms": "我們使用cookies"
+		},
+		"navigation": {
+			"heading_company": "公司",
+			"link_about": "關於我們",
+			"link_team": "球隊",
+			"link_vision": "視力",
+			"link_news": "新聞",
+			"link_announcements": "通告",
+			"link_developmentStatus": "發展狀況",
+			"link_timeline": "時間線",
+			"link_charity": "慈善機構",
+			"link_careers": "招聘",
+			"link_reportAbuse": "報告濫用",
+			"link_FAQ": "常問問題",
+			"link_contactUs": "聯繫我們",
+			"heading_investors": "投資者",
+			"link_whyInvest": "為什麼投資",
+			"link_overview": "概觀",
+			"link_whitepaper": "白皮書",
+			"link_siteStatistics": "網站統計",
+			"link_bitcoinTalkAnn": "BitcoinTalk Ann",
+			"link_technicalOverview": "技術概述",
+			"link_investorNews": "投資者新聞",
+			"link_forums": "論壇",
+			"link_press": "按",
+			"link_exchanges": "交易所",
+			"link_environment": "環境",
+			"link_signup": "註冊",
+			"heading_webmaster": "網站管理員",
+			"link_whySwitch": "為什麼切換",
+			"link_blockchainExplorer": "區塊鏈資源管理器",
+			"link_merchantTools": "商家工具",
+			"link_JSE_Wallet": "JSE錢包",
+			"link_JSE_Integration": "JSE集成",
+			"link_systemStatus": "系統狀況",
+			"link_technicalSupport": "技術支持",
+			"link_API_Overview": "API概述",
+			"link_sampleIntegrations": "示例集成",
+			"link_publisherNews": "發布商新聞",
+			"heading_developers": "開發商",
+			"link_ourCommitment": "我們的承諾",
+			"link_API_Documentation": "API文檔",
+			"link_codeSamples": "代碼示例",
+			"link_developerSupport": "開發者支持",
+			"link_developerNews": "開發者新聞",
+			"link_bugBounty": "錯誤賞金",
+			"link_oddJobs": "奇怪的工作",
+			"link_submitABug": "提交一個Bug",
+			"button_platformLogin": "平台登錄",
+			"button_readWhitepaper": "閱讀白皮書"
+		},
+		"social": {
+			"title_telegram": "Telegam",
+			"title_Discord": "不和",
+			"title_Reddit": "書籤交易",
+			"title_Medium": "中",
+			"title_YouTube": "YouTube的",
+			"title_facebook": "Facebook的",
+			"title_twitter": "推特",
+			"title_LinkedIn": "LinkedIn"
+		},
+		"footer": {
+			"privacy": {
+				"text_trust": "信任是至關重要的，並將與我們的經營透明度成正比。我們以開放的道德業務為榮。",
+				"text_optout": "上面的隱私政策頁面還包含一個退出鏈接，用於關閉整個網絡中基於瀏覽器的JSE加密貨幣挖掘",
+				"link_privacyPolicy": "隱私政策",
+				"link_terms": "條款",
+				"link_kyc": "KYC政策"
+			},
+			"info": {
+				"heading_newsletterSignup": "通訊註冊",
+				"placeholder_emailInput": "輸入你的電子郵箱地址",
+				"button_signup": "更新註冊！",
+				"heading_mentioned": "提到",
+				"subheading_mentioned": "利用區塊鍊和網絡創新",
+				"alt_logos": "JSECoin被提及的網站"
+			},
+			"companyInfo": {
+				"text_registered": "在英格蘭註冊號10940920  -  Dun and Bradstreet No. 100233913837",
+				"text_address": "JSECoin有限公司，劍橋郡，英國"
+			},
+			"copy": {
+				"text_copyright": "版權所有2017-2018",
+				"text_rightsReserved": "版權所有"
+			}
+		}
+	},
+	"segment": {
+		"interactiveTimeline": {
+			"label_tasks": "任務",
+			"month_january": "一月",
+			"month_february": "二月",
+			"month_march": "遊行",
+			"month_april": "四月",
+			"month_may": "可能",
+			"month_june": "六月",
+			"month_july": "七月",
+			"month_august": "八月",
+			"month_september": "九月",
+			"month_october": "十月",
+			"month_november": "十一月",
+			"month_december": "十二月",
+			"label_today": "今天",
+			"label_os": "OPEN-SOURCING",
+			"label_icoLaunch": "ICO推出",
+			"label_exchangeListing": "交易所上市",
+			"task_name1": "新的品牌標識",
+			"task_name1a": "SEO增強功能",
+			"task_name1b": "SEO JSE橫幅增強",
+			"task_name2": "開發者門戶",
+			"task_name3": "新的採礦平台",
+			"task_name4": "Windows / Linux / macOS桌面應用程序",
+			"task_name5": "Android Mobile App",
+			"task_name6": "平台安全評估",
+			"task_name7": "商家工具",
+			"task_name8": "Web多語言支持",
+			"task_name9": "平台多語言支持",
+			"task_name10": "桌面應用程序多語言支持",
+			"task_name11": "移動多語言支持",
+			"task_name12": "改進DB架構 -  Redis",
+			"task_name13": "平台GPU散列支持",
+			"task_name14": "發布商網站爬蟲",
+			"task_name15": "Blockchain Explorer增強功能",
+			"task_name16": "合同合同ERC220",
+			"task_name17": "Web3客戶端ICO Widget",
+			"task_name18": "Web3服務器端導入/導出",
+			"task_name19": "合同安全審查",
+			"task_name20": "Identicons GFX Pack",
+			"task_name21": "Identicons框架",
+			"task_name22": "Identicons Blockchain Customiser"
+		},
+		"miniStat": {
+			"text_loading": "載入中",
+			"text_activeMiners": "活躍的礦工",
+			"text_registeredSites": "註冊站點",
+			"text_registeredUsers": "註冊用戶",
+			"text_hundred": "百",
+			"text_thousand": "千",
+			"text_million": "百萬",
+			"text_billion": "十億",
+			"text_trillion": "兆"
+		}
+	},
+	"pages": {
+		"navigation": {
+			"about": {
+				"link_about": "關於",
+				"link_team": "球隊",
+				"link_vision": "視力",
+				"link_careers": "招聘",
+				"link_press": "按"
+			},
+			"legal": {
+				"link_userAgreement": "用戶協議",
+				"link_privacyPolicy": "隱私政策",
+				"link_terms": "條款",
+				"link_kycPolicy": "KYC政策"
+			},
+			"oddJobs": {
+				"link_bugBounty": "錯誤賞金",
+				"link_smallJobs": "小型工作",
+				"link_submit": "提交"
+			},
+			"support": {
+				"link_community": "社區",
+				"link_contact": "聯繫",
+				"link_FAQ": "常問問題"
+			},
+			"technical": {
+				"link_overview": "JSE概述",
+				"link_stats": "統計",
+				"link_APIS": "蜜蜂",
+				"link_samples": "樣品",
+				"link_support": "支持"
+			}
+		},
+		"about": {
+			"meta": {
+				"title": "關於",
+				"keywords": "英國cryptocurrency blockchain，blockchain uk，英國cryptocurrency公司",
+				"description": "JSEcoin項目概述以及英國以外的加密貨幣創業公司的團隊。"
+			},
+			"banner": {
+				"linkText": "關於我們",
+				"heading": "關於我們",
+				"subheading": "領先的基於網絡挖掘的加密貨幣網絡"
+			},
+			"heading_about": "關於JSECoin有限公司",
+			"subheading_about": "形成於2017年8月6日",
+			"para_main1": "JSECoin成立於2017年8月，為網絡開發下一代區塊鏈技術。",
+			"para_main2": "JSEcoin項目包括數字貨幣，錢包，採礦和開發人員平台，任何具有電子郵件地址的企業或個人都可以生成令牌，並且安全且經濟高效地在線發送和接收加密貨幣付款。",
+			"para_main3": "我們的網絡規模和我們產品的廣泛接受度幫助我們成為了基於網絡挖掘的領先加密貨幣網絡之一。我們正在引導道德選擇性的基於網絡的挖掘方式向我們的發布商提供網絡流量和計算能力。",
+			"para_main4": "總部位於英國劍橋的我們團隊正致力於利用區塊鏈技術的最新發展為網絡構建世界級的支付解決方案。世界正在發生變化，我們如何儲存價值，交易和使用金錢將在未來十年中受到干擾。加密貨幣的出現為我們改變世界並發揮作用提供了一個獨特的機會。",
+			"para_main5": "如果您想了解有關該項目的更多信息，請花些時間查看我們更新的白皮書https://jsecoin.com/whitepaper.pdf",
+			"alt_about": "關於JSE"
+		},
+		"charity": {
+			"meta": {
+				"title": "慈善機構",
+				"keywords": "Cryptocurrency慈善機構，給cryptocurrency，cryptocurrency慈善事業",
+				"description": "我們對我們的網站挖掘平台有如此多的支持，我們的團隊致力於通過我們的慈善項目回饋。"
+			},
+			"banner": {
+				"linkText": "慈善機構",
+				"heading": "",
+				"subheading": "做出有意識的改變"
+			},
+			"heading_about": "JSE為慈善事業",
+			"subheading_about": "2017年9月，我們設立了一個慈善賬戶",
+			"para_main1": "我們的承諾是回饋給對我們用戶至關重要的慈善機構。我們正在創建一個同行主導的投票系統，我們支持的慈善機構由JSEcoin社區選擇。成員可以通過轉移到我們的慈善賬戶來承諾任何金額的JSE，無論大小。我們還將任何不正當的代幣直接轉移到慈善賬戶，以便某些好的東西可以來自一些人的壞習慣。繼ICO之後，我們會將這些代幣分發給您選擇的慈善機構。",
+			"para_main2": "我們將建立一個人群投票系統和定期分發包，任何人都可以建議一個註冊慈善機構，社區將對最有價值的原因進行投票，以獲得資金。",
+			"para_main3_line1": "這個帳戶現在已經發展到可以結束了",
+			"para_main3_line2": "JSE，我們很高興能夠在ICO之後開始將這種事情分配給重大事業。",
+			"para_main4": "作為我們透明和合乎道德的承諾的一部分，我們將發布此帳戶的所有外發交易。"
+		},
+		"environment": {
+			"meta": {
+				"title": "環境",
+				"keywords": "環保加密貨幣，綠色區塊鏈技術",
+				"description": "傳統加密貨幣的效率非常低，有些甚至使用全國的功率。 JSEcoin旨在減少區塊鏈行業的碳足跡。"
+			},
+			"banner": {
+				"linkText": "環境",
+				"heading": "環境",
+				"subheading": "降低CRYPTO與JSECOIN的環境影響"
+			},
+			"heading_environment": "我們的環境影響",
+			"subheading_environment": "區塊鏈很耗電",
+			"para_main1": "你知道，通過在比特幣網絡上進行單筆交易所消耗的電力，可以為6個美國家庭供電1天！",
+			"para_main2": "整個電網消耗的電量與1,500,000戶相同，礦工的消耗量每月增長約1TW / hr。這是由工作系統的採礦證明的競爭性造成的。獲得更便宜電力的礦工具有優勢，因為這是購買ASIC採礦硬件後唯一的實際成本。結果，巨大的服務器農場每年消耗了近10億美元的電力。",
+			"para_main3": "這是最佳的，道德的還是可持續的？我們認為不是。 JSEcoin通過使用在正常網頁瀏覽過程中不使用的背景CPU電源來提供解決方案。這種多餘的計算機能力被用來在不破壞地球的情況下使用開采和確保區塊鏈。這看起來像是技術的邏輯演進，但我們卻是一個有點偏頗的人。",
+			"para_main4_line1": "作為我們透明和合乎道德的承諾的一部分，我們將發布此帳戶的所有外發交易。",
+			"para_main4_line1_bold": "JSEcoin擁有先發優勢",
+			"para_main4_line2": "，讓我們快速移動並修補東西。"
+		},
+		"exchanges": {
+			"meta": {
+				"title": "交易所",
+				"keywords": "貿易jse，jsecoin交換，交換jsecoin，jsecoin價格，jse到usd",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "交易所",
+				"heading": "交易所",
+				"subheading": ""
+			},
+			"heading_exchanges": "交易所",
+			"subheading_exchanges": "何時何地您將被列出？",
+			"para_main1": "我們計劃在今年晚些時候在ICO的交易所上市。在此基礎上，我們將聆聽您的反饋意見，同時衡量每個交易所的專業和客戶，以便確定我們計劃列入的交易所。上市費用的資金將在ICO期間提出，因此在此之後才會作出最終決定。",
+			"para_main2": "我們已入圍多個交易所，我們將考慮申請或參與其新上市的投票系統： -",
+			"para_main3": "諸如coinbase（gdax）/ bittrex之類的一些交易所對於新的加密貨幣令牌是不切實際的主張。"
+		},
+		"home": {
+			"meta": {
+				"title": "JSECoin：數字貨幣 - 專為網絡設計",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "家",
+				"heading": "",
+				"subheading": ""
+			},
+			"button_viewGlobalStats": "查看全球統計",
+			"section_overview": {
+				"heading_overview": "在網絡上構建區塊鏈的未來",
+				"subheading_overview": "簡化加密貨幣，商業，採礦和用戶採用 - 通過瀏覽器",
+				"highlights": {
+					"heading_simple": "簡單易用",
+					"para_simple": "輕鬆入門，直接購買，並簡單地發送數字貨幣給任何有電子郵件地址的人",
+					"heading_browserMining": "Web瀏覽器挖掘",
+					"para_browserMining": "任何擁有網絡瀏覽器或網站的人現在都可以挖掘加密貨幣。無論是在我們易於使用的平台上使用您自己的設備，還是在您的網站上安裝一段代碼片段即可在您的訪問者瀏覽過程中獲得令牌。",
+					"heading_storage": "存儲",
+					"para_storage": "您可以將標記存儲在JSEcoin平台上，或者將其導出到您選擇的以太坊兼容錢包。",
+					"heading_tokens": "如何使用您的令牌",
+					"para_tokens": "使用您的JSEcoin令牌在參與網站上進行網上購物。如果您擁有自己的網站，現在您可以使用我們易於使用的商家工具開始接受JSEcoin。"
+				},
+				"button_readWhitePaper": "閱讀白皮書"
+			},
+			"section_browserMining": {
+				"heading_browserMining": "平台挖掘概述",
+				"subheading_browserMining": "曾經想進入cryptocurrency，但發現它有點混亂？",
+				"heading_simple": "簡單易用",
+				"para_main1": "現在您可以註冊您的JSEcoin賬戶並在60秒內開始挖礦。",
+				"para_main2": "我們在該平台上有一個專門的採礦頁面，您可以將您的設備CPU用於為您賺取一些JSEcoin令牌。在這裡，您的計算機將執行數學方程來確保我們的區塊鏈（基本上是我們所有交易的分類賬），並且為此做出的獎勵您將有機會獲得JSEcoin代幣。",
+				"para_main3": "您始終處於完全控制之下，並且能夠隨時啟動和停止該流程，並且可以更改您為開採所投入的CPU功率。",
+				"button_tryit": "試試看！",
+				"button_watchVideo": "觀看我們的視頻",
+				"alt_miner": "JSE Miner"
+			},
+			"section_pubPlatMining": {
+				"alt_newMiningPlatform": "新的採礦平台",
+				"alt_existingLoginScreen": "現有登錄屏幕",
+				"alt_existingMiningPlatform": "現有的採礦平台",
+				"heading_pubPlatMining": "發布商挖掘概述",
+				"subheading_pubPlatMining": "您是否在尋找一種通過您的網站獲利的新方式？",
+				"para_main1": "JSEcoin可能是解決方案。一個不顯眼的代碼片段放置在您的網站上，然後在瀏覽您的網站時在您的訪問者的設備上運行JSEcoin礦工。",
+				"para_main2": "這提供了確保區塊鏈所需的散列功能，並且您有機會獲得JSEcoin令牌。",
+				"para_main3": "我們相信透明度和對訪問者瀏覽體驗的影響最小化是這個系統主流採用的關鍵。您網站的所有訪問者都會收到通知，並有機會退出，並且CPU使用率低於大多數標準視頻廣告。",
+				"button_findOutMore": "了解更多",
+				"button_watchVideo": "觀看我們的視頻"
+			},
+			"section_env": {
+				"heading_env": "密碼的環境影響",
+				"subheading_env": "傳統的小貨幣比小國利用更多的力量來運營他們的網絡",
+				"para_main1": "全球其他所有行業都在朝著更加綠色的解決方案發展，以減少氣候變化和全球變暖的風險。遲早，區塊鏈技術需要效仿。簡單地說，不需要消耗傳統加密電子貨幣網絡浪費的大量電力。",
+				"para_main2": "JSEcoin使用多餘的CPU資源開採，否則這些資源將被浪費。與現有的加密貨幣網絡相比，瀏覽器挖掘具有巨大的環境和成本優勢。有基於網絡的加密貨幣挖掘真正改變的機會。",
+				"para_main3": "目前的採礦實踐在能源消耗方面不可持續或不合理 - 我們認為瀏覽器採礦提供了一種解決方案。無論是我們的項目突破它還是別人的項目，這都是行業發展的方向，我們擁有先發優勢。",
+				"button_learnMoreOnImpact": "詳細了解我們的影響",
+				"alt_sustainableEnergy": "可持續能源"
+			},
+			"section_timeline": {
+				"heading_timeline": "2018年時間表",
+				"subheading_timeline": "看看我們的路標，我們將在未來的一年！",
+				"button_viewDetailedTimeline": "查看詳細時間表"
+			},
+			"section_team": {
+				"heading_team": "JSE團隊",
+				"subheading_team": "推進當今基於Web的BLOCKCHAIN挖礦和密碼交易能力！",
+				"button_meetTheTeam": "與團隊見面"
+			},
+			"section_community": {
+				"heading_community": "成為我們不斷發展的社區",
+				"subheading_community": "幫助我們創新，擴大並成為下一個最好的加密貨幣",
+				"button_DontForgetForums": "不要忘記我們的論壇！"
+			},
+			"section_charity": {
+				"alt_charity": "JSE捐贈給慈善機構",
+				"heading_charity": "捐贈給慈善機構",
+				"subheading_charity": "籌款活動",
+				"para_main1": "我們的承諾是回饋給對我們用戶至關重要的慈善機構。我們正在創建一個同行主導的投票系統，我們支持的慈善機構由JSEcoin社區選擇。成員可以通過轉移到我們的慈善賬戶來承諾任何金額的JSE，無論大小。我們還將任何不正當的代幣直接轉移到慈善賬戶，以便某些好的東西可以來自一些人的壞習慣。繼ICO之後，我們會將這些代幣分發給您選擇的慈善機構。",
+				"text_JSECollected": "JSE收集慈善"
+			}
+		},
+		"notFound": {
+			"meta": {
+				"title": "404頁面不存在",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "404",
+				"heading": "404",
+				"subheading": "err：找不到頁面？！"
+			},
+			"alt_404": "錯誤404",
+			"heading_notFound": "錯誤404  - 找不到頁面",
+			"subheading_notFound": "別擔心。回到前面的頁面..."
+		},
+		"systemStatus": {
+			"meta": {
+				"title": "系統狀況",
+				"keywords": "Jsecoin網絡，區塊鏈系統狀態",
+				"description": "系統更新和來自JSEcoin網絡的實時服務器信息。如果出現問題，您會首先在這裡聽到。"
+			},
+			"banner": {
+				"linkText": "系統狀況",
+				"heading": "系統狀況",
+				"subheading": ""
+			},
+			"alt_serverStatus": "服務器狀態",
+			"text_checkingServerStatus": "檢查服務器狀態...",
+			"text_systemsUp": "所有系統都在運行",
+			"text_serverIssue": "報告服務器問題",
+			"text_lastUpdated": "今天最後更新",
+			"para_infoMsg": "如果您遇到問題，請聯繫",
+			"button_Support": "支持"
+		},
+		"timeline": {
+			"meta": {
+				"title": "交互式時間線",
+				"keywords": "Jsecoin時間表，瀏覽器挖掘ico，jse時間表",
+				"description": "加密貨幣的未來是光明的。請參閱我們的行動計劃，以設計，構建，推廣和維護JSEcoin區塊鏈，網頁挖掘平台和發行商套件。"
+			},
+			"banner": {
+				"linkText": "時間線",
+				"heading": "時間線",
+				"subheading": "請在下一年查看我們的路線圖"
+			},
+			"section_interactiveTimeline": {
+				"heading_timeline": "2018互動時間表",
+				"subheading_timeline": "我們今天在哪裡，併計劃成為明天！",
+				"para_main1_line1": "看看我們2018年的發展計劃 - 我們會不斷",
+				"para_main1_line2": "更新此頁面，以便期望時間表正式更改。",
+				"para_main1_line3": "我們將盡我們所能來做出這些估計。",
+				"para_main2": "在下面的圖表上滑動瀏覽月份。"
+			},
+			"section_timeline": {
+				"heading_timeline": "這一切都開始了",
+				"subheading_timeline": "JSECoin的歷史",
+				"date_july17_ABR": "JUL",
+				"info_july17_title": "概念驗證",
+				"info_july17_para_content1": "瀏覽器挖掘在過去已經完成，但從未起飛，因為它從來沒有效率 - 使用更多功率和採礦新方法的機器將會是一個有效的項目？",
+				"info_july17_para_content2": "詹姆斯進一步調查樣本代碼",
+				"date_august17_ABR": "AUG",
+				"info_august17_title": "JSECoin成立",
+				"info_august17_para_content1": "JSECoin由James Bachini創立。",
+				"info_august17_list1": "為網站所有者創建測試平台。",
+				"info_august17_list2": "獲取來自加密貨幣投資者和開發者的反饋。",
+				"info_august17_list3": "啟動內部網站並創建beta區塊鏈。",
+				"info_august17_list3_info": "（公開開放平台）",
+				"date_september17_ABR": "SEP",
+				"info_september17_title": "審查採用率",
+				"info_september17_para_content1": "尋找願意資助公司以獲得加密貨幣或股票的種子投資者。和/或探索其他資金選擇。為ICO營銷和交易所上市確保投資。",
+				"info_september17_para_content2": "發布第一套月度帳戶。",
+				"date_october17_ABR": "OCT",
+				"info_october17_title": "廣告",
+				"info_october17_list1": "開始針對發布商和潛在ICO投資者的廣告和營銷活動。",
+				"info_october17_list2": "將網絡從測試階段轉移到主要更新的生產環境中",
+				"date_november17_ABR": "NOV",
+				"info_november17_title": "營銷計劃",
+				"info_november17_list1": "創建ICO營銷計劃。",
+				"info_november17_list2": "釋放塊瀏覽器。",
+				"info_november17_list3": "擴大營銷活動。",
+				"info_november17_list4": "創建Bitcointalk ANN線程。",
+				"date_december17_ABR": "DEC",
+				"info_december17_title": "新年準備",
+				"info_december17_list1": "繪製出商戶工具。",
+				"info_december17_list2": "白皮書更新。",
+				"info_december17_list3": "為投資者製作演示/銷售視頻。",
+				"info_december17_list4": "開始為ICO做準備",
+				"date_january18_ABR": "JAN",
+				"info_january18_title": "JSECoin Rebrand",
+				"info_january18_para_content1": "啟動更名的企業網站",
+				"info_january18_list1": "合同合同ERC220",
+				"info_january18_list2": "發布商網站爬蟲"
+			}
+		},
+		"careers": {
+			"meta": {
+				"title": "招聘",
+				"keywords": "區塊鏈職業英國區塊鏈工作",
+				"description": "您想與全球最熱門的加密貨幣初創公司合作嗎？我們正在招聘開發人員，安全專家，支持團隊等等。"
+			},
+			"banner": {
+				"linkText": "招聘",
+				"heading": "招聘",
+				"subheading": "帶領一個團隊共同創新並帶領轉型"
+			},
+			"section_overview": {
+				"heading_careers": "招聘",
+				"subheading_careers": "致力於貢獻有意義且前沿的項目",
+				"para_main1": "您是否對區塊鏈，網絡技術充滿熱情，通過網絡做出什麼似乎不可能的事情？如果是這樣，你找到了正確的地方。",
+				"para_main2": "我們是一支充滿激情的開發人員，設計師和企業家的全球團隊，他們希望通過數字貨幣和區塊鏈在金融科技行業發揮作用。",
+				"para_main3": "JSECoin平台有助於消費者和商家輕鬆使用數字貨幣。這包括我們的加密貨幣JSE的購買和銷售，並在一套商業工具和開發者平台上提供雲中的安全存儲。",
+				"minorHeading_benefits": "優點",
+				"info_benefits_list1": "擁有自己的項目從構想到推出",
+				"info_benefits_list2": "在JSECoin中獲得報酬的選項",
+				"info_benefits_list3": "無論何時工作最好（靈活時間）",
+				"info_benefits_list4": "靈活的假期 - 在需要時休假",
+				"info_benefits_list5": "為員工提供100％的醫療/視力/牙科福利",
+				"sideHeading_currentPositions": "目前未結頭寸",
+				"info_job_list1": "客戶支持",
+				"info_job_list2": "設計",
+				"info_job_list3": "法律",
+				"info_job_list4": "營運",
+				"info_job_list5": "安全"
+			},
+			"section_banner": {
+				"linkText": "",
+				"heading_careers": "招聘",
+				"subheading_careers": "致力於貢獻有意義且前沿的項目"
+			},
+			"section_careers": {
+				"heading_careers": "招聘",
+				"subheading_careers": "致力於貢獻有意義且前沿的項目",
+				"highlights": {
+					"heading_culture": "文化",
+					"para_culture": "我們培養了一個充滿樂趣，回報創造力，決心和多元視角的環境。",
+					"heading_benefits": "優點",
+					"para_benefits": "我們通過提供慷慨的健康，健康和財務計劃來照顧我們的員工，讓他們在構建未來金錢的同時感受自己的未來。",
+					"heading_remoteLocations": "遠程位置",
+					"para_remoteLocations": "我們的團隊在全球定位。在家工作，無論你在哪里工作最好的海灘。",
+					"heading_people": "人",
+					"para_people": "當我們被激勵和挑戰我們的人所包圍時，我們做了很棒的工作。"
+				}
+			},
+			"section_questions": {
+				"heading_questions": "有問題嗎？",
+				"subheading_questions": "今天給我們發電子郵件 - 我們一直在尋找聰明的人加入",
+				"button_contactUs": "聯繫我們"
+			},
+			"alt_about": "關於JSE"
+		},
+		"ourVision": {
+			"meta": {
+				"title": "我們的願景",
+				"keywords": "網絡瀏覽器加密貨幣，網站加密貨幣，瀏覽器挖掘",
+				"description": "我們的願景是為未來加密貨幣可以用來購買任何人和全球每個人的日常物品。"
+			},
+			"banner": {
+				"linkText": "我們的願景",
+				"heading": "我們的願景",
+				"subheading": "在萬維網上開發一種能效高的加密貨幣"
+			},
+			"section_overview": {
+				"heading_vision": "我們的願景",
+				"subheading_vision": "設計一個公平的加密貨幣",
+				"para_main1": "我們的目標是創建由主流用戶在全球範圍內採用的網站管理員挖掘的節能加密貨幣。",
+				"para_main2": "所有主要的加密貨幣目前都依賴礦工來執行加密哈希。哈希是一個大規模數學方程式，用於確保區塊鍊是一個加密貨幣的基礎交易數據庫。這個過程消耗大量的計算能力和電力，並由服務器農場占主導地位。通過分配貨幣，礦工們將得到回報。",
+				"para_main3": "可以在標準的Web瀏覽器或移動設備上執行SHA256和其他加密。通過在網站上嵌入JavaScript片段，網站的所有訪問者都可以執行哈希加密過程，在大規模組合時可以取代礦工的角色。然後，網站所有者將通過分配貨幣獲得獎勵。我們估計有15個人中有1個擁有或有權訪問提供大量分銷和潛在客戶群的網站。",
+				"para_main4": "通過使用剩餘的CPU功率，可以比傳統的加密貨幣網絡節省大量的能源和成本。",
+				"alt_vision": "視力"
+			}
+		},
+		"press": {
+			"meta": {
+				"title": "新聞和媒體",
+				"keywords": "區塊鏈文章，加密貨幣訪談，cryptocurrency新聞稿",
+				"description": "公共關係信息，包括新聞媒體使用的藝術品。 JSEcoin是一家位於英國的加密貨幣初創公司，專門從事網站cryptocurrency挖掘。"
+			},
+			"banner": {
+				"linkText": "按",
+				"heading": "按",
+				"subheading": "對Web Cryptocurrency Mining產生正面影響"
+			},
+			"section_overview": {
+				"heading_press": "新聞報導",
+				"subheading_press": "了解別人對JSECoin的看法",
+				"alt_symantecLogo": "Symantec徽標",
+				"strapline_1": "為傳統的網絡收入生成方法提供了一個真正的，更好的替代方案",
+				"alt_BBCLogo": "BBC標誌",
+				"strapline_2": "許多網站使用這個和其他網站，如JSE Coin，合法地從他們源源不斷的遊客中賺取一些錢。",
+				"alt_BitcoinLogo": "Bitcoin.com徽標",
+				"strapline_3": "Adguard估計，每個運行加密挖掘腳本的網站在三週的審查期內賺取約43,000美元。",
+				"alt_pressMedia": "新聞媒體"
+			},
+			"section_media": {
+				"alt_mediaPackDownload": "媒體包下載",
+				"heading_media": "媒體包下載",
+				"para_main1": "請在您的新聞文章中隨意使用本網站的任何圖像，報價或統計數據。我們所要求的是，我們不與隱藏背景的Monero採礦平台相關聯。 JSEcoin從來不會參與隱藏的後台網站挖掘。",
+				"para_main2": "JSEcoin項目致力於基於網絡構建新的區塊鏈技術，並不會挖掘比特幣或Monero。請閱讀常見問題文檔以獲取更多信息。",
+				"para_main3": "如果您有任何問題或希望與其中一個團隊聯繫",
+				"link_contactUs": "聯繫我們",
+				"button_downloadMediaPack": "下載媒體包"
+			}
+		},
+		"team": {
+			"meta": {
+				"title": "團隊",
+				"keywords": "加密貨幣團隊，區塊鏈開發者，英國加密項目",
+				"description": "與JSEcoin團隊見面，了解更多關於我們的創始人誰創造技術和建立了加密貨幣。"
+			},
+			"banner": {
+				"linkText": "與團隊見面",
+				"heading": "認識JSE團隊",
+				"subheading": "推進區塊鏈<br />採礦和加密貨幣交易"
+			},
+			"section_overview": {
+				"heading_team": "JSECoin團隊",
+				"subheading_team": "形成於2017年8月6日",
+				"para_main1": "JSE團隊致力於改進和簡化人們可以通過使用所有設備的瀏覽器使用加密貨幣進行挖掘和交易的過程。",
+				"para_main2": "“我們不再生活在90年代，現在不應該像現在那樣用加密貨幣購買和交易商品。”",
+				"alt_team": "團隊"
+			},
+			"members": {
+				"JB": {
+					"title": "創始人兼首席執行官",
+					"para_main1": "詹姆斯有建立成功的數字營銷業務的歷史。擁有8年廣告技術行業經驗。",
+					"para_main2": "開發大量應用程序和網站的經驗。在Commodore64上寫下了他的第一個程序，並從此一直受到關注。",
+					"para_main3": "負責監督業務發展和營銷活動。"
+				},
+				"JS": {
+					"title": "聯合創始人兼首席技術官",
+					"para_main1": "擁有超過15年的IT經驗 -  John在全球IT技術和應用會議的重要會議上定期介紹全棧開發，創新，用戶體驗和雲架構。",
+					"para_main2": "他在JSE的核心焦點是領導和建議開發團隊，並與設計和用戶體驗團隊密切合作，通過新的JSE平台改進加密貨幣用戶旅程和體驗。"
+				},
+				"DM": {
+					"title": "聯合創始人兼首席運營官",
+					"para_main1": "Dave領導我們的技術支持和社交渠道，向我們的用戶提供技術知識，耐心和幫助。",
+					"para_main2": "你會在論壇和社交網站上看到他活躍，幫助，指導和積極推動JSECoin。"
+				},
+				"TH": {
+					"title": "聯合創始人兼首席財務官",
+					"para_main1_Line1": "MAAT認可的會計師。 20年的財務管理和會計經驗。",
+					"para_main1_Line2": "此前曾指導中型IT解決方案提供商的財務部門。",
+					"para_main2": "負責完成網站上發布的月度管理賬戶並進行現金流量預測和預測。",
+					"para_main3": "特蕾西為團隊帶來了豐富的財務經驗。"
+				},
+				"AG": {
+					"title": "企業區塊鏈",
+					"para_main1": "來自開羅沙丘的歡呼聲; Amr是一個真正的技術Nekkyō-sha！",
+					"para_main2": "擁有數學和計算機科學學士學位，目前正在攻讀他的碩士學位。",
+					"para_main3": "Amr對技術充滿熱情，總是在推動他所使用的技術的極限。",
+					"para_main4": "他在JSE上的重點是以太坊，穩固性和web3集成以及未來的EOS平台。"
+				},
+				"AW": {
+					"title": "企業架構師",
+					"para_main1": "出生在阿拉斯加中部的凍土帶，只有一個綠色和黑色的單色8086編碼。",
+					"para_main2": "安迪現在居住在溫和的明尼蘇達州，擁有更多現代化的硬件。",
+					"para_main3": "一位擁有超過15年經驗的IT企業架構師Andy已經為各個公司實施了解決方案。",
+					"para_main4": "他對JSE的關注是幫助構建強大的後端架構和數據模型，以便能夠在未來進行擴展。"
+				},
+				"AS": {
+					"title": "國際HR",
+					"para_main1": "高素質，具有國際經驗的人力資源專業人才，充分發揮人力資本的價值優勢;獲得了項目管理專業碩士學位，工商管理碩士學位和工商管理學士學位，專攻歐洲各大學的國際貿易。多語言，精通四種語言並具有另外三種語言的工作經驗，擁有7年的人力資源管理和歐盟僱傭法的經驗。",
+					"para_main2": "您可以在布加勒斯特的街頭享用放鬆身心的熱血雞尾酒。"
+				},
+				"OB": {
+					"title": "營銷顧問",
+					"para_main1": "6年在線廣告和聯盟營銷經驗。一個全方位服務的數字營銷機構已有4年的歷史。 6年全棧開發經驗。圖像和數字媒體編輯專業。最近從世界各地的旅行返回來幫助JSEcoin項目。",
+					"para_main2": "奧利弗將負責管理會員賬戶並幫助社交網絡賬戶的前端開發和媒體製作。"
+				},
+				"ASa": {
+					"title": "技術架構師",
+					"subTitle": "TOGAF 9企業架構師",
+					"para_main1": "一位技術架構師，熱衷於研究技術如何幫助企業茁壯成長。他的主要角色是一位值得信賴的顧問，幫助客戶了解他們的架構並幫助他們成功部署項目。",
+					"para_main2": "工作之外安傑洛喜歡用小工具和技術“修補”，一個寵物項目正在使用Arduino / ESP8266等設備創建IOT智能家居，HomeAssistant等服務器和MQTT等各種傳感器協議。"
+				}
+			}
+		},
+		"developerOverview": {
+			"meta": {
+				"title": "開發者選項",
+				"keywords": "區塊鏈開發，為區塊鏈，cryptocurrency開發人員構建應用程序",
+				"description": "開發人員可以了解更多關於使用JSEcoin平台和API的信息。了解有關網絡的更多信息，如何運行以及如何整合第三方應用程序。"
+			},
+			"banner": {
+				"linkText": "開發商",
+				"heading": "JSE開發者體驗",
+				"subheading": "擴大社區和我們的承諾"
+			},
+			"heading_developer": "我們的承諾",
+			"subheading_developer": "通過區塊鍊和在線加密貨幣推動創新",
+			"para_main1": "在考慮JSEcoin的可能性時，發布者代碼只是冰山的一角。我們有一個完整的功能REST API，其中包含以下文檔：",
+			"para_main2": "開發人員可以利用餘額檢查，站點和子追踪，服務器端交易，導入/導出功能等等。",
+			"para_main3": "我們的工程師可以為您的項目提供支持，我們在論壇，Discord和Telegram上有積極的支持社區，您可以在其中發布問題並從我們的團隊獲得幫助。"
+		},
+		"investorOverview": {
+			"meta": {
+				"title": "投資者選項",
+				"keywords": "瀏覽器挖掘ico，網絡區塊鏈ico，jsecoin投資者信息",
+				"description": "潛在投資者和加密貨幣交易者的信息。在我們的投資者門戶網站查找您需要的所有信息。"
+			},
+			"banner": {
+				"linkText": "投資者",
+				"heading": "投資者",
+				"subheading": "什麼，為什麼，當......"
+			},
+			"test": "測試",
+			"heading_what": "什麼是JSECoin",
+			"subheading_what": "針對網絡的Cryptocurrency",
+			"para_what1": "我們相信您將投資於網站貨幣化的未來。在ICO籌集的資金主要用於交換上市費用和......",
+			"heading_why": "為什麼要投資",
+			"subheading_why": "致力於改變網站被監控的方式",
+			"para_why1": "這是一個新的概念，旨在挑戰當前的網站貨幣化模式。隨著目前全球在線廣告行業價值超過2000億美元，這將是一個投資於可能挑戰當前現狀的平台的好時機。對JSEcoin的需求將通過引入商業工具來創建，允許使用JSEcoin作為數字支付的一種方法。我們正在建立一個大型的平台礦工社區，以確保有大量用戶使用JSEcoin令牌。",
+			"para_why2": "ICO目前的趨勢是一家公司根據一個想法和一份白皮書來這樣做。這顯然給投資者帶來巨大的風險，即任何產品都不會上市。雖然我們無法為投資者提供任何回報保證（我們會質疑任何人的回報），但我們正在努力打造一個出色的平台，並吸引堅實的用戶群以緩解風險，並使JSEcoin成為更可行的投資機會。",
+			"heading_when": "為什麼要投資",
+			"subheading_when": "致力於改變網站被監控的方式",
+			"para_when1": "我們計劃在今年晚些時候使用ICO。如上所述，我們希望確保我們擁有一個偉大的工作產品，並且已經被堅實的用戶群所採用。一旦我們完成了我們時間表上列出的大部分主要發展，將會公佈具體的日期。"
+		},
+		"webmastersOverview": {
+			"meta": {
+				"title": "網站管理員概述",
+				"keywords": "在網站上加密貨幣，wordpress cryptocurrency挖掘，monero替代，瀏覽器礦工，網頁挖掘cryptocurrency",
+				"description": "在您的網站上進行基於瀏覽器的加密貨幣挖掘，了解如何在您的網站上安裝JSEcoin代碼並在瀏覽器中加密我們的加密貨幣。"
+			},
+			"banner": {
+				"linkText": "網站管理員",
+				"heading": "網站管理員",
+				"subheading": "從廣告切換到挖掘"
+			},
+			"heading_why": "為什麼切換",
+			"subheading_why": "改變過去，創造更美好的未來",
+			"para_main1": "永遠不會有更好的時機開始在您的網站上挖掘JSE令牌。競爭在不斷增加，所以在太遲之前建立一堆JSE。小型，中型和大型網站均可受益於我們的加密貨幣挖掘模塊。這只是您複製並粘貼到您網站的JavaScript片段，其工作方式與廣告和分析代碼類似。",
+			"para_main2": "Wordpress插件可以讓您輕鬆安裝在您的博客或WordPress的網站上。",
+			"para_main3": "加密技術可以作為網站所有者將其內容作為替代或除了展示廣告之外的其他方式使用的一種方式。頁面加載時間和用戶體驗不受JSE採礦代碼消耗的極少量資源的影響。"
+		},
+		"privacyPolicy": {
+			"meta": {
+				"title": "隱私政策",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "隱私政策",
+				"heading": "隱私政策",
+				"subheading": ""
+			},
+			"heading_privacy": "隱私政策",
+			"para_main1": "當您瀏覽網站時，JSEcoin代碼片段運行數學加密哈希。這使我們能夠獎勵網站管理員製作您請求的內容。",
+			"para_main2": "如果您想退出，可以在以下鏈接中輸入：",
+			"para_main3": "點擊此處，您可以選擇退出整個網絡的JSE加密挖掘",
+			"para_main4": "要在整個網絡上重新啟動JSE加密挖掘，請單擊此處",
+			"para_main5": "在訪問者瀏覽器上運行的代碼與採用GPU和ASIC的比特幣挖掘程序相同，並不具有資源激進性。額外的CPU使用率和功耗將保持在最低水平。",
+			"subHeading_dataPrivacy": "數據隱私",
+			"para_main6": "我們在我們的網站上收集分析數據。",
+			"para_main7": "我們收集的數據是：",
+			"list_collectedData1": "pubid  - 發送流量的發布者ID",
+			"list_collectedData2": "siteid  - 站點ID，它是站點的域名",
+			"list_collectedData3": "userip  - 用戶的IP地址",
+			"list_collectedData4": "useragent  - 這是標識瀏覽器的瀏覽器useragent字符串，即Chrome / Firefox / Safari",
+			"list_collectedData5": "操作系統",
+			"list_collectedData6": "引用者 - 這是引用者字符串，其中包含網站發送流量的網址。",
+			"para_main8": "我們也使用Google Analytics，請在這裡查看他們的條款：",
+			"para_main9": "我們還存儲cookie並使用localStorage API。",
+			"para_main10_info": "該清單已於2017年8月24日發布，目前已完成，但未來可能會發生變化"
+		},
+		"kycPolicy": {
+			"meta": {
+				"title": "KYC政策",
+				"description": "了解您對JSEcoin的客戶政策以及我們如何在加密貨幣中與洗錢作鬥爭"
+			},
+			"banner": {
+				"linkText": "kycPolicy",
+				"heading": "KYC政策",
+				"subheading": ""
+			},
+			"heading_kyc": "了解你的客戶（KYC）政策",
+			"para_main1": "每年洗錢8000億至2萬億美元，相當於世界國內生產總值的2-5％（聯合國2017年毒品和犯罪辦公室）",
+			"para_main2": "企業和個人每年賄賂約1.5萬億美元。 （世界銀行2017）",
+			"para_main3": "在JSEcoin，我們不希望與洗錢相關聯，並且正在採取積極措施來遵守政府了解您的客戶規定。",
+			"para_main4": "此KYC政策適用於價值超過$ 10,000美元的所有客戶關係。",
+			"para_main5": "對於希望轉賬超過10,000美元的投資者，您需要向我們發送包含照片，身份證明，住址和出生日期的官方文件的掃描件以驗證您的帳戶。數據將從交易日起至少保存五年。",
+			"para_main6": "KYC是一個持續的基於風險的流程，用於收集有關我們客戶及其業務和財務活動的相關信息，以便：",
+			"list_collectedData1": "促進及時識別與既有事實和信息不一致的客戶活動。 JSEcoin致力於阻止將其產品和服務用於非法目的。 KYC政策和支持程序是防止和偵測洗錢，恐怖融資，欺詐和身份盜用計劃的關鍵組成部分",
+			"list_collectedData2": "符合我們的法律和監管義務",
+			"subHeading_customerIdentity": "確認客戶身份",
+			"para_main7": "在與客戶建立關係時，我們將使用可接受的識別方法在可接受的時間範圍內確認個人的身份或實體的存在。當產品或服務正在建立時，將會進行詢問以確定它是否會被第三方使用或為第三方的利益。如果需要，第三方的細節及其與客戶的關係將在建立關係之前獲得。",
+			"subHeading_sharingInfo": "共享客戶信息",
+			"para_main8": "我們有義務向監管當局報告可能與洗錢活動有關的可疑交易。",
+			"subHeading_verifyingInfo": "驗證客戶信息",
+			"para_main9": "我們將採取合理和適當的措施來驗證潛在客戶提供的關鍵信息以確保可靠的獨立來源。我們將為代表較高風險級別的關係執行額外的驗證活動。我們將拒絕與堅持匿名或提供虛假，不一致或衝突信息的任何個人或實體進行或繼續保持關係或進行交易，但經過合理調查後不一致或衝突無法解決。",
+			"subHeading_monitoringInfo": "監控和更新客戶信息",
+			"para_main10": "我們將監控客戶活動，以識別和報告可能指示非法或不正當活動的交易。我們將保持關於客戶及其業務和財務活動的信息準確，完整和最新以達到收集目的。當客戶的財務行為發生變化時，我們將採取措施確定潛在的原因。"
+		},
+		"terms": {
+			"meta": {
+				"title": "條款和條件",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "條款",
+				"heading": "條款和條件",
+				"subheading": ""
+			},
+			"heading_terms": "條款",
+			"subHeading_definitions": "定義",
+			"list_definitions1": "“用戶”是指賬戶申請人或使用JSEcoin平台的人。",
+			"list_definitions2": "“出版商”是指賬戶申請人或負責分發JSEcoin webmining JavaScript代碼的人員。",
+			"list_definitions3": "“廣告”從出版商網站顯示的電子廣告形式。",
+			"list_definitions4": "“網站”是出版商擁有的財產，用於為廣告客戶提供廣告空間。",
+			"list_definitions5": "“JSEcoin”是由JSEcoin Limited作為加密貨幣技術提供商運營的網絡。",
+			"list_definitions6": "“流量”是指用戶從發布商網站提供給JSEcoin平台。",
+			"list_definitions7": "“Miner”是執行哈希算法來保護JSEcoin網絡的人。",
+			"subHeading_conditions": "條件",
+			"list_conditions1": "這些“條款和條件”不會影響您作為消費者的法定權利。",
+			"list_conditions2": "JSEcoin制定的所有合同和廣告訂單均應被視為包含這些條款和條件，優先於來自廣告商或發布商的任何其他文檔或通信。",
+			"list_conditions3": "如果需要修改這些條款和條件，最好以書面形式確認。",
+			"list_conditions4": "JSEcoin有限公司，JSEcoin員工，JSEcoin關聯公司不是財務顧問，在任何情況下都不會將本網站或第三方網站上的信息和信件作為財務建議。投資者有責任進行自己的盡職調查和研究。",
+			"list_conditions5": "這些條款和任何爭議將根據聯合王國的法律進行管理。",
+			"subHeading_liquidty": "Liquidty",
+			"list_liquidty1": "JSEcoin不負責將代幣或硬幣兌換為法定貨幣（如美元/歐元/英鎊）。",
+			"list_liquidty2": "當硬幣和代幣通過第三方和交易所出售時，JSEcoin不能協助解決問題。",
+			"list_liquidty3": "JSEcoin不承擔代表出版商支付任何所得稅，銀行佣金或貨幣費用的責任。請聯繫您當地的稅務部門以獲取有關任何適用所得稅計劃的進一步建議。",
+			"subHeading_deliveryOfPrivacyNotice": "提供隱私聲明",
+			"list_deliveryOfPrivacyNotice1": "儘管我們會盡一切合理努力提供可靠和一致的隱私聲明和廣告投放，但JSEcoin不承擔任何直接或間接由任何其他人或公司產生的任何損失，費用，損害或費用來自廣告網絡的失敗。",
+			"subHeading_publicity": "公開",
+			"list_publicity1": "未經事先書面批准，JSEcoin可能使用發布商，廣告商或任何第三方的名稱，商標和/或信件。",
+			"subHeading_statisticsDiscrepancies": "統計和差異",
+			"list_statisticsDiscrepancies1": "所有流量收入將根據JSEcoin統計數據計算。這些將是計算出版商收入的唯一基礎。",
+			"list_statisticsDiscrepancies2": "JSEcoin的統計數據可能不是100％準確的，這被發布商和礦商所接受。",
+			"list_statisticsDiscrepancies3": "如果無法記錄來自網絡的統計數據。 JSEcoin將根據以前和歷史統計數據估算收入和成本。我們關於設定這些費率的決定將是最終的，不可議付。",
+			"subHeading_ownershipRisk": "所有權和風險",
+			"list_ownershipRisk1": "採礦和廣告中的任何風險都應當在從發布者處投遞廣告時直接傳遞給廣告客戶。",
+			"list_ownershipRisk2": "在交通質量方面不能做出任何保證，JSEcoin將不承擔因質量差的交通造成的任何損失。",
+			"subHeading_cancellationRefunds": "取消和退款",
+			"list_cancellationRefunds1": "廣告客戶可以隨時取消廣告系列。廣告網絡提供對此功能的實時控制，但作為預防措施，建議盡可能在24小時內提供書面通知。",
+			"list_cancellationRefunds2": "如果您是廣告客戶，除了其他權利外，您有權取消合同並獲得退款。您必須與我們聯繫並書面通知我們您希望取消您的帳戶。您的登錄將被刪除，您的餘額將退還給您。任何銀行/貝寶費用將由廣告客戶收取。",
+			"list_cancellationRefunds3": "如果您是出版商，您有權在任何時候取消您的合同，除了您的其他權利之外。您必須與我們聯繫並書面通知我們您希望取消您的帳戶。您的登錄名將被刪除，剩餘的餘額只有在符合部分所述的最低限額時才會被支付",
+			"subHeading_forceMajeure": "不可抗力",
+			"list_forceMajeure1": "如果JSEcoin由於任何超出其控制範圍的原因（例如但不限於上帝的行為，戰爭，罷工，停工，硬件故障，安全漏洞等）而無法履行其銷售合同項下的義務，第三方投放廣告的洪水和失敗，只要這種履行被阻止，JSEcoin應當免除其銷售合同下的義務和責任。",
+			"subHeading_complaints": "投訴",
+			"list_complaints1": "如果您對我們的服務或您從JSEcoin購買的任何商品或服務有任何投訴，請立即與我們聯繫。我們會盡快與您聯繫，並在5個工作日內提供解決方案。",
+			"list_complaints2": "所有投訴將以公平和保密的方式處理。",
+			"subHeading_liability": "責任",
+			"list_liability1": "在任何情況下，JSEcoin或JSEcoin Limited均不對用戶，礦工或出版商遭受的任何損失承擔責任。",
+			"list_liability2": "我們的總責任將不會超過每個事件100美元以上，因此一系列事件或活動被視為單一事件。",
+			"list_liability3": "對於包括使用廣告網絡的第三方造成的損失，我們不承擔任何責任。",
+			"subHeading_alterationsTermsAndConditions": "條款和條件的變更",
+			"list_alterationsTermsAndConditions1": "JSEcoin有權在任何時候以任何理由修改我們認為合適的條款和條件。",
+			"list_alterationsTermsAndConditions2": "當前條款和條件的最新副本將在以下網址提供：",
+			"list_alterationsTermsAndConditions3": "如果礦工或出版商不同意任何修改，他們將有權在修改後的14天內以書面形式終止協議。",
+			"subHeading_budgetsCaptitalisationHashingDifficulty": "預算，Captitalisation和哈希難度",
+			"list_budgetsCaptitalisationHashingDifficulty1": "雖然我們盡一切努力滿足礦工在預算方面的要求，但我們保留隨時更改採礦獎勵和散列難度的權利，恕不另行通知。",
+			"list_budgetsCaptitalisationHashingDifficulty2": "JSEcoin保留引入新硬幣並分發硬幣的權利。所有交易將公開。",
+			"subHeading_damageSystems": "系統損壞",
+			"list_damageSystems1": "JSEcoin不承擔因採礦造成的任何硬件或軟件系統損壞造成的損失。",
+			"subHeading_websiteStandards": "網站標準",
+			"list_websiteStandards1": "JSEcoin對以下網站和廣告內容採取零容忍政策：",
+			"subList_tolerance1": "兒童色情",
+			"subList_tolerance2": "與動物的性行為",
+			"subList_tolerance3": "暴力或濫用內容",
+			"subList_tolerance4": "種族主義者，性別歧視或任何歧視性內容",
+			"subList_tolerance5": "未經他/她同意的人的內容或圖像",
+			"subList_tolerance6": "刑事罪行",
+			"subList_tolerance7": "欺騙性投資建議",
+			"subList_tolerance8": "間諜軟件，惡意軟件，廣告軟件和任何非法軟件",
+			"subList_tolerance9": "盜版內容/版權侵權",
+			"subList_tolerance10": "非法活動，如垃圾郵件和網絡釣魚",
+			"subList_tolerance11": "任何散列活動",
+			"subList_tolerance12": "未經授權使用第三方商標",
+			"subList_tolerance13": "促進藥物或相關用具",
+			"subList_tolerance14": "任何針對18歲或以下兒童的內容",
+			"subList_tolerance15": "賭博或在線投注，針對美國觀眾",
+			"subList_tolerance16": "付費點擊廣告（PTC）",
+			"subList_tolerance17": "自動衝浪流量發生器",
+			"subList_tolerance18": "流行音樂下載或iframing內容。",
+			"list_websiteStandards2": "帶有退出選項的隱私聲明必須顯示給用戶。應該做什麼來隱藏或重新設置此通知。",
+			"list_websiteStandards3": "站點ID必須與腳本運行的域名相匹配。",
+			"list_websiteStandards4": "任何違反第15.1條的行為都可能導致您的發布者帳戶立即終止。",
+			"subHeading_applications": "應用",
+			"list_applications1": "由於我們認為合適的原因，網絡上的賬戶申請將由JSEcoin員工自行決定批准或拒絕。",
+			"subHeading_misuse": "濫用",
+			"list_misuse1": "任何對系統的濫用都將導致用戶帳戶立即暫停或關閉。",
+			"list_misuse2": "濫用行為將僅由JSEcoin員工進行評判，並可基於我們認為合適的任何因素。",
+			"list_misuse3": "使用任何方法人為地增加提供的展示次數的發布商將立即關閉其帳戶。所有提供的流量應該是真正的用戶。",
+			"list_misuse4": "為發布商提供的代碼（如javascript標記）不得以任何方式修改或重用。",
+			"list_misuse5": "在未經授權的情況下在系統上創建多個帳戶將被視為濫用。",
+			"list_misuse6": "發布商代碼只能放置在網站管理員擁有的域名上或經過網站所有者的書面許可。",
+			"list_misuse7": "發布商代碼中使用的SiteID必須與網站站長的所有權域匹配。",
+			"list_misuse8": "禁止使用任何IP更改服務，如VPN，代理服務器，TOR或任何隱藏或更改IP地址的系統。我們根據第三方列表檢查用戶的IP地址以識別違規者。",
+			"subHeading_closureAccount": "帳戶關閉",
+			"list_closureAccount1": "關閉帳戶後，發布者將無權獲得帳戶中剩餘的任何資金報酬。",
+			"subHeading_useCookies": "使用Cookies",
+			"list_useCookies1": "JSEcoin使用cookies和localStorage將信息存儲在用戶計算機上。這些信息將用於廣告客戶的定位，包括重定向廣告系列。重定向廣告系列是指在用戶計算機上放置cookie（有時由第三方），然後向具有該特定cookie的用戶顯示廣告。每個出版商都有責任更新在當地使用cookies和重定目標所需的條款和條件，隱私政策和任何其他法律文件。",
+			"subHeading_intellectualProperty": "知識產權",
+			"list_intellectualProperty1": "JSEcoin聯合創始人保留本網站及其產品和服務的所有權利，所有權和利益，包括所有版權，專利，商業秘密，商標，商標名稱，標識，標語，圖形，腳本，代碼，視頻，文本，文件，內容，信息和其他知識產權。",
+			"subHeading_indemnification": "保障",
+			"list_indemnification1": "在適用法律允許的最大範圍內，您將對我們和我們各自過去，現在和未來的員工，管理人員，董事，承包商，顧問，股權持有人，供應商，供應商，服務提供商，母公司，子公司代理人，代表，前任，繼承人和受讓人的所有索賠，損害賠償，債務，損失，成本和費用。",
+			"list_indemnification2": "根據這些條款，我們保留權利對任何索賠要求的賠償行為進行獨立控制，費用由您承擔。",
+			"subHeading_referrals": "介紹人",
+			"list_referrals1": "所有引薦流量應該是真正的用戶，虛假帳戶和殭屍網絡流量將導致帳戶被暫停。",
+			"list_referrals2": "JSEcoin具有重複IP地址和其他指示重複帳戶的因素的用戶將不會被支付。這包括兩個用戶從同一個辦公室/家庭註冊。",
+			"list_referrals3": "JSEcoin人員有權暫停任何我們認為濫用該系統的賬戶。我們的決定是最終決定，不會受到法律訴訟。",
+			"subHeading_taxation": "稅收",
+			"list_taxation1": "用戶和發行商全權負責所有數字資產的披露和徵稅。",
+			"list_taxation2": "JSEcoin有限公司將不對您在本國管轄範圍內轉讓或持有數字資產所產生的稅務影響負責。",
+			"subHeading_misc": "雜項",
+			"list_misc1": "任何合同在任何方面均應解釋為英文合同並符合英國法律。",
+			"list_misc2": "JSEcoin不承擔任何違反英國以外的指導方針或法律的責任。",
+			"list_misc3": "如果發生安全漏洞，數據丟失，開發問題或JSEcoin團隊認為合適的其他原因，我們保留將區塊鏈重置為創世區塊或早期備份的權利。在可能的情況下，我們會將賬戶餘額轉發給用戶，但用戶承擔可能需要重置或扭轉區塊鏈的風險，這可能導致資金或交易數據的損失。",
+			"list_misc4": "如果這些非基本條款和條件的任何部分被認定為非法或不可執行，這些發現不會影響其餘條款和條件的有效性或可執行性。"
+		},
+		"bugBounty": {
+			"meta": {
+				"title": "錯誤賞金",
+				"keywords": "Cryptocurrency錯誤賞金，區塊鏈錯誤賞金",
+				"description": "發現錯誤或安全漏洞？了解如何通過獲取JSE令牌來提交信息，這有助於我們改進平台和網絡安全。"
+			},
+			"banner": {
+				"linkText": "bugBounty",
+				"heading": "錯誤賞金",
+				"subheading": "追查一些冷酷的JSE漏洞"
+			},
+			"section_overview": {
+				"alt_bugBounty": "錯誤賞金",
+				"heading_bugBounty": "JSE安全Bug賞金",
+				"subheading_bugBounty": "尋找快樂的bug！",
+				"para_main1": "作為我們繼續致力於確保JSEcoin系統安全性和可靠性的一部分 - 我們提供了一個漏洞獎勵計劃，負責披露安全漏洞。",
+				"para_main2": "當今的軟件安全研究人員越來越多地與互聯網公司合作來跟踪問題和安全漏洞。 HackerOne，Hacken，Google，Mozilla和其他公司的計劃幫助創建了一個強大的尋找bug的社區。",
+				"para_main3": "我們的賞金計劃為這些研究人員的努力提供了一個小竅門，並提供了一些冷酷的JSE。",
+				"para_main4": "如果您發現漏洞，",
+				"link_submit": "在此提交"
+			},
+			"section_leaderBoard": {
+				"heading_leaderBoard": "排行榜",
+				"subheading_leaderBoard": "哇！感謝您幫助我們。",
+				"para_main1_line1": "我們的新網站剛剛推出 - 所以得到這些錯誤和",
+				"link_smallTasks": "小任務在......",
+				"para_main1_line2": "如果您希望......即將成為我們即將推出的排行榜的特色！"
+			},
+			"section_rules": {
+				"heading_rules": "規則",
+				"subheading_forYou": "適用於你的規則",
+				"list_forYou1": "不要嘗試訪問其他用戶的帳戶或數據。",
+				"list_forYou2": "不要執行任何可能損害我們服務或數據的可靠性/完整性的攻擊。不允許DDoS /垃圾郵件攻擊。",
+				"list_forYou3": "在修復之前，不要公開披露一個bug。",
+				"list_forYou4": "只測試您知道由JSEcoin運營的網站上的漏洞，並在Open Bounties下列出。",
+				"list_forYou5": "不要使用掃描儀或自動工具來查找漏洞。他們很吵，我們可能會禁止你的IP地址。",
+				"list_forYou6": "切勿嘗試對我們的員工，用戶或基礎設施進行非技術性攻擊，例如社交工程，網絡釣魚或物理攻擊。",
+				"list_forYou7": "有疑問時，",
+				"link_contact": "聯繫我們",
+				"subheading_forUs": "我們的規則",
+				"list_forUs1": "我們會盡快回复您的提交。",
+				"list_forUs2": "我們會在您解決您提交的錯誤時幫助您更新。",
+				"list_forUs3": "如果您遵守規則，我們不會對您採取法律行動。",
+				"subheading_doesNotQualify": "什麼不合格？",
+				"list_doesNotQualify1": "不影響最新版本的現代瀏覽器（Chrome，Firefox，Edge，Safari）的錯誤。",
+				"subList_doesNotQualify1": "與瀏覽器擴展相關的錯誤也超出範圍。",
+				"list_doesNotQualify2": "錯誤要求極不可能的用戶交互。",
+				"list_doesNotQualify3": "對不敏感的Cookie不安全的cookie設置。",
+				"list_doesNotQualify4": "披露不存在重大風險的公共信息和信息。",
+				"list_doesNotQualify5": "已經由其他用戶提交的錯誤，我們已經知道，或者已被分類為不合格。",
+				"list_doesNotQualify6": "未列在“開放獎勵”下的應用程序中的錯誤通常不符合條件。關於範圍的細節請看個人賞金。",
+				"list_doesNotQualify7": "JSE認定為可接受風險的漏洞無法在網站上獲得付費獎勵或列表。",
+				"list_doesNotQualify8": "腳本或其他自動化和暴力強制的功能。",
+				"list_doesNotQualify9": "為獲得指導，我們列出了我們用於組織向賞金計劃提交的提交的漏洞分類。",
+				"list_doesNotQualify9a": "與電子郵件欺騙或社交工程相關的錯誤。",
+				"list_doesNotQualify10": "有疑問時，"
+			},
+			"section_openBounties": {
+				"heading_openBounties": "打開賞金",
+				"subheading_openBounties": "這些是我們活躍的網站，是我們錯誤賞金計劃的一部分",
+				"subheading_officialWebsite": "官方網站",
+				"subheading_user_miningPlatform": "用戶/挖掘平台",
+				"subheading_API": "API",
+				"subheading_blockchainExplorer": "區塊鏈資源管理器",
+				"subheading_developerPlatform": "開發者平台",
+				"subheading_loadServer": "加載服務器"
+			},
+			"section_rewards": {
+				"heading_rewards": "獎勵",
+				"subheading_rewards": "在cryptocurrency中付款",
+				"para_reward_line1": "最低獎勵：1000 JSE",
+				"para_reward_line2": "最高獎勵：100000 JSE",
+				"para_reward_info": "根據問題的嚴重程度，具體金額將由團隊自行決定。",
+				"para_ps_line1": "請盡可能在報告中包含盡可能多的信息，以便開發人員可以重現並解決問題。",
+				"para_ps_line2": "還請說明您是否希望加入我們的名人堂，並提供您希望使用的鏈接和全名。"
+			},
+			"section_submitABug": {
+				"heading_rewards": "提交錯誤",
+				"subheading_rewards": "已經發現一個問題 - 知道一個問題？",
+				"button_submissionForm": "前往我們的提交表格"
+			}
+		},
+		"smallJobs": {
+			"meta": {
+				"title": "社區任務",
+				"keywords": "支付加密貨幣，加密貨幣工作，區塊鏈工作",
+				"description": "想幫助推廣和建立JSEcoin項目？通過完成零散工作賺取JSE，並幫助我們構建下一代基於瀏覽器的加密貨幣。"
+			},
+			"banner": {
+				"linkText": "小型工作",
+				"heading": "小型工作",
+				"subheading": "有一些時間幫助我們的團隊解決一些小的零散工作？"
+			},
+			"para_main1_infoMsg_line1": "我們正在與我們的新網站建立起來。",
+			"para_main1_infoMsg_line2": "如果您正在尋求幫助JSE--我們將在接下來的幾週內在此列出更多任務。",
+			"para_main2_infoMsg": "我們一直在尋找新網站上的拼寫錯誤。發現拼寫錯誤，我們會向您發送200個JSE每更正！",
+			"heading_promo": "JSE宣傳視頻",
+			"subheading_promo": "你有視頻編輯技巧？",
+			"para_promo": "為JSEcoin創建一個宣傳視頻，如果它很棒，我們使用它將為您支付10000美元的JSE。該視頻應該向那些從未聽說過該平台的投資者和網站管理員推廣該項目。它應該是令人印象深刻，時尚和現代。請不要使用可能會給我們帶來麻煩的第三方提供的任何受版權保護的音樂/圖像/視頻。",
+			"heading_affiliate": "成為會員",
+			"subheading_affiliate": "為每個可以註冊平台的用戶賺取200個JSE",
+			"para_affiliate": "從平台獲取您的會員鏈接。優惠是雙重入選註冊會計師，目前只適用於以下國家：美國，英國，加拿大，澳大利亞，新西蘭，IE，ZA",
+			"heading_findBugs": "查找安全漏洞和問題",
+			"subheading_findBugs": "你知道如何安全地測試平台嗎？",
+			"para_findBugs": "找到我們的平台的安全問題，我們將獎勵您的錯誤獎勵。您也可以選擇添加到我們的臭蟲賞金牆上。"
+		},
+		"submitInfo": {
+			"meta": {
+				"title": "提交任務或賞金",
+				"keywords": "Blockchain黑客攻擊，加密貨幣錯誤",
+				"description": "請將您發現的任何錯誤或安全漏洞發送給我們，並且您可以獲得JSE令牌，作為我們錯誤賞金活動的一部分。"
+			},
+			"banner": {
+				"linkText": "提交信息",
+				"heading": "發現錯誤或完成任務？",
+				"subheading": "發送給我們 - 待審查.."
+			},
+			"para_main1_infoMsg_line1": "請使用此表格提交錯誤，修復或完成的工作項目。",
+			"para_main1_infoMsg_line2": "確保將所有屏幕截圖，文檔和代碼壓縮以附加到此表單。",
+			"form": {
+				"heading_userInfo": "用戶信息",
+				"label_placeholder_userID": "戶口號碼",
+				"label_placeholder_email": "電子郵件地址",
+				"heading_taskSummary": "任務摘要",
+				"placeholder_pleaseSelect": "請選擇",
+				"heading_description": "說明 - 僅限文字",
+				"label_placeholder_message": "信息",
+				"heading_attachment": "附件 - 單個zip文件",
+				"para_dragDrop": "拖放一個zip文件",
+				"button_submit": "提交",
+				"heading_thankyou": "感謝您幫助團隊！ :)",
+				"para_thankyou": "我們會查看您的信息並儘快回复您。"
+			}
+		},
+		"community": {
+			"meta": {
+				"title": "社區",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "社區",
+				"heading": "社區",
+				"subheading": "與其他礦工和開發人員聯繫"
+			},
+			"heading_community": "我們的社區",
+			"subheading_community": "加入我們的社區，直接向我們提出任何問題"
+		},
+		"contact": {
+			"meta": {
+				"title": "聯繫",
+				"keywords": "聯繫jsecoin，jsecoin聯繫方式",
+				"description": "在我們基於瀏覽器的挖掘和加密貨幣平台上聯繫JSEcoin團隊，提出任何問題，請求，建議或反饋。"
+			},
+			"banner": {
+				"linkText": "聯繫",
+				"heading": "聯繫我們",
+				"subheading": "取得聯繫 - 我們在這裡幫助:)"
+			},
+			"heading_contact": "有任何問題，問題給我們留言",
+			"subheading_contact": "你可以在我們的網站找到一些常見問題的答案",
+			"link_FAQ": "常見問題頁面。",
+			"form": {
+				"label_placeholder_firstName": "名字",
+				"label_placeholder_lastName": "姓",
+				"label_placeholder_contactNo": "聯繫方式",
+				"label_placeholder_emailAddress": "電子郵件地址",
+				"label_placeholder_message": "信息",
+				"button_submit": "發信息",
+				"heading_thankyou": "感謝您的留言 ：）",
+				"para_thankyou_line1": "我們會查看您的信息並儘快回复您。",
+				"para_thankyou_line2": "隨時也可以通過我們的社交渠道與我們的團隊聯繫。",
+				"err_failed1": "無法提交表單 - 無效的響應 -",
+				"err_failed2": "無法提交表單 - 請檢查您的連接",
+				"err_failed3": "無法提交表單 - 請檢查以上所有必填字段"
+			}
+		},
+		"FAQ": {
+			"meta": {
+				"title": "常問問題",
+				"keywords": "關於基於瀏覽器的挖掘，網絡上的區塊鏈，jse faq",
+				"description": "我們會問這些問題很多，所以請看一下，你會發現很多關於網頁挖掘，帳戶問題和發布者整合的信息。"
+			},
+			"banner": {
+				"linkText": "常問問題",
+				"heading": "經常問的問題",
+				"subheading": "通過閱讀我們的WHITEPAPER了解更多信息"
+			},
+			"heading_FAQ": "我們在這裡提供幫助",
+			"subheading_FAQ": "如果你無法找到你正在尋找的答案",
+			"link_getInTouch": "保持聯繫",
+			"section_general": {
+				"alt_general": "一般過濾按鈕",
+				"heading_general": "通用查詢",
+				"subheading_general": "新的在這裡？讓我們從基礎開始",
+				"faqItemHeading1": "你打算發布一個錢包嗎？",
+				"faqItemContent1": "我們目前正在將該平台與ERC20兼容的以太坊智能合約進行整合。這將與所有第三方ERC20兼容錢包（如myetherwallet，metamask，奇偶校驗等）兼容。對於大多數用戶，我們建議將您的令牌存儲在Web平台上，並在您的帳戶中使用強大的安全措施，如獨特密碼和雙因素驗證。",
+				"faqItemHeading2": "我失去了我的雙因素認證碼，我該怎麼辦？",
+				"faqItemContent2": "如果您遺失了手機或訪問了您的2fa代碼，我們建議您在新設備上重新安裝Google Authenticator或Authy，並使用您的Gmail帳戶登錄以訪問您的代碼。如果這不起作用，我們將要求照片標識與註冊帳戶時使用的名稱和地址相匹配並回答一些安全問題。請注意2fa是一項安全功能，如果我們不是100％滿意的話，我們保留拒絕重置請求的權利。",
+				"faqItemHeading3": "為什麼我應該為JSEcoin平台使用唯一的密碼？",
+				"faqItemContent3": "您應該為註冊的每個平台使用不同的密碼。對每個帳戶使用相同電子郵件地址和密碼的用戶，其帳戶遭到黑客入侵。這是因為高調的黑客洩露了黑客現在可以使用的電子郵件/密碼組合數據庫。雅虎，Linkedin，索尼，美國在線，Equifax在過去都遭到破壞，用戶帳戶數據掌握在黑客手中。金融平台特別容易被黑客攻擊。注意您的賬戶，使用獨特的密碼並使用Google身份驗證器等應用程序設置雙因素身份驗證。這個建議適用於整個網絡的所有平台，而不僅僅是特定的JSEcoin。",
+				"faqItemHeading4": "為什麼我的廣告攔截/反病毒軟件阻止JSEcoin.com？",
+				"faqItemContent4": "一些廣告攔截器和反病毒公司已經將隱藏的後台挖掘腳本與我們捆綁在一起，這些腳本可以在用戶PC上挖掘，而他們不知道。我們正在積極宣傳和遊說阻止我們域名的組織。如果您想提供幫助，請聯繫您的軟件提供商並要求提供例外。",
+				"faqItemHeading5": "我如何才能使用我的PC賺取JSEcoin加密貨幣代幣？",
+				"faqItemContent5": "有很多方法可以獲得JSE。您可以嘗試在工作時在後台運行筆記本電腦上的數學哈希處理的自我挖掘。獎勵通過彩票系統分發給礦工。如果你有一個網站，你可以通過將代碼片段放在你的網站上，並在你入睡時讓你的訪問者為你獲得JSE。您可以使用通過平台提供的會員鏈接引用朋友和同事，甚至還有一個簡單的社交分享按鈕，可在Facebook上發布或分享。最後，您可以通過完成小型項目來幫助我們的團隊開發平台",
+				"link_jobsListedHere": "這裡列出的工作",
+				"faqItemHeading6": "我是新來的平台，有什麼地方我可以找到一切如何運作的概述？",
+				"faqItemContent6": "是。我們有一個視頻演練指南，可以在這裡找到",
+				"faqItemContent6_para2": "在跳轉到以下時間之後，您是否應該有特定的頁面？",
+				"faqItemContent6_list1": "轉機1點05分",
+				"faqItemContent6_list2": "導出2:45",
+				"faqItemContent6_list3": "採礦4:16",
+				"faqItemContent6_list4": "出版商6:46",
+				"faqItemContent6_list5": "投資者9:45",
+				"faqItemContent6_list6": "轉介10:00",
+				"faqItemContent6_list7": "設置11:33",
+				"faqItemHeading7": "你有粗略猜測ICO的價格是多少？",
+				"faqItemContent7": "不，我們不想猜測這一點，因為它依賴於我們無法控制的外部因素。這是一個非常波動的市場，價值可能會在很短的時間內大量變化。",
+				"faqItemHeading8": "Pre-ICO令牌的價值為1JSE = 1美元，您的ICO的價值是多少？",
+				"faqItemContent8": "在這個階段很難說，但價值將由ICO時的需求和市場條件決定。我們正在努力創建一個高需求平台，並為所有早期投資者帶來良好回報。",
+				"faqItemHeading9": "如果JSEcoin本身就是一枚硬幣，它是否在Coinmarketcap上市？",
+				"faqItemContent9": "JSEcoin本身就是一種加密貨幣，但我們還沒有在Coinmarketcap上市，因為我們還沒有在交易所上市。我們將在今年晚些時候在ICO之後的交易所上市。"
+			},
+			"section_webmasters": {
+				"alt_webmasters": "網站管理員篩選按鈕",
+				"heading_webmasters": "網站管理員",
+				"subheading_webmasters": "JSE集成",
+				"faqItemHeading1": "如何設置帳戶並將我的網站的代碼放置？",
+				"faqItemContent1": "只需註冊一個帳戶在",
+				"faqItemContent1_2": "然後訪問發布商頁面。輸入您的網站域名並點擊“設置網站”按鈕。這將生成您的獨特腳本。代碼將在新窗口中彈出，您可以將其複制並粘貼在關閉之上</body>標記或粘貼到JSEcoin wordpress插件中。",
+				"faqItemContent1_para2": "通常，放置代碼的最佳位置在模板文件中（所以它可以在網站的所有頁面上運行）或索引文件（因此它只能在首頁上運行）。或者，如果你有一個靜態網站，你可以將它複製到每一頁，如果你願意。",
+				"faqItemHeading2": "我如何在我的wordpress網站上安裝JSEcoin代碼片段？",
+				"faqItemContent2": "這裡有安裝說明和視頻：",
+				"link_wordpress": "WordPress的，插件可用",
+				"faqItemHeading3": "我如何知道代碼是否在我的網站上正確安裝？",
+				"faqItemContent3": "您可以通過打開控制台日誌窗口來查看它的運行情況。為此，請使用Firefox或Chrome在Firefox中按住CTRL SHIFT K，然後在Chome中按CTRL SHIFT J",
+				"faqItemContent3_para2": "將打開一個控制台日誌窗口，其中將顯示後台進程，您將能夠看到腳本收集塊數據並處理散列。",
+				"faqItemContent3_para3": "隱私聲明每小時只會顯示一次（因此它不會作為用戶瀏覽器通過網站加載到每個頁面上），頁面加載後會有15秒的延遲。",
+				"faqItemHeading4": "每個網站是否需要有自己的片段（包括域名），或者可以在多個網站上放置相同的片段？",
+				"faqItemContent4": "請分別跟踪不同的網站。我們需要知道代碼運行的位置以避免欺詐，如果siteid與推介域不匹配，我們的自動檢查可能會返回誤報。將來您可能希望看到各個站點的統計數據等。",
+				"faqItemHeading5": "出版商如何在他們的網站上運行該腳本獲得獎勵？",
+				"faqItemContent5": "獎勵通過彩票系統進行分發，發行商可以為獨立訪客獲取彩票，查看頁面瀏覽和哈希。隨後將50 x 2JSE隨機分配給持票人。這個抽獎每30秒重複一次，每天總共提供288000個JSE代幣。",
+				"faqItemHeading6": "是否有可能增加我的訪客設備上的CPU使用率？",
+				"faqItemContent6": "沒有！我們不想讓發布者控制挖掘使用的用戶CPU數量。目前它設置為使用最小量，以便它們對瀏覽體驗沒有顯著影響。我們不希望網站管理員能夠增加CPU使用量，因為這可能會給JSEcoin帶來不好的聲譽。網站管理員的收入取決於訪問者，唯一訪問者以及發現的哈希值，因此將CPU使用率設置為保證區塊鏈所需的最低限度。",
+				"faqItemHeading7": "是否有可能阻止JSEcoin橫幅出現在我的網站上？",
+				"faqItemContent7": "這實際上是隱私通知。對於我們而言，當用戶第一次訪問您的網站時（以及此後每小時一次），必須顯示此通知，因為我們希望以透明方式進行操作，以便明確告知用戶正在進行採礦，而且退出可用。我們認為這對於法律和道德方面的原因很重要，而且這種開放性將有助於這個想法得到更廣泛的接受。我們的使用條款之一是發布者必須展示通知，而不是試圖隱藏它。",
+				"faqItemHeading8": "我們需要在我們的網站上放置哪些具體的法律法規？",
+				"faqItemContent8": "這是新技術，我們還沒有任何法律問題或指導要與之抗衡。隱私聲明默認顯示，並且是必不可少的，因為它包含在整個網絡中選擇退出的選項。如果你想在自己的網站上放置一些東西，這將有助於提高透明度。",
+				"faqItemContent8_para2": "MySite.com的一些內容使用後台加密貨幣挖掘。",
+				"faqItemContent8_para2_line2": "要選擇退出，請訪問",
+				"link_privacyPolicy": "隱私政策",
+				"faqItemHeading9": "我在另一個網站上看到了你的代碼，我正試圖理解它是如何工作的，以及網站發布者從中得到什麼？",
+				"faqItemContent9": "我們是基於網站管理員挖掘的早期加密貨幣。我們的系統與傳統加密貨幣類似，但我們在網站訪問者瀏覽器中執行散列算法，而不是大型服務器群。這是不引人注目的，並且在幕後運行（除了隱私通知），所以它不會對用戶體驗或網站訪問者的網頁加載速度產生負面影響。",
+				"faqItemContent9_para2": "網站發布者將我們的代碼片段複製到他們的網站，並通過向他們的帳戶支付JSEcoin令牌來獲得獎勵。"
+			},
+			"section_exchanges": {
+				"alt_exchanges": "交換過濾器按鈕",
+				"heading_exchanges": "交易所",
+				"subheading_exchanges": "你的錢包",
+				"faqItemHeading1": "有沒有可用於存儲硬幣的錢包？",
+				"faqItemContent1": "目前只能通過在線錢包存儲JSEtokens",
+				"faqItemContent1_line2": "我們已經測試了與ERC20 Ethereum智能合約的整合，這將允許使用第三方錢包。直到我們確定了現在和當我們ICO之間可能會發生改變的交換/ ICO技術之後，才會發布這個技術。",
+				"faqItemHeading2": "如何獲得付款並將JSE轉換為美元或我的本地貨幣？",
+				"faqItemContent2": "您在JSEcoin令牌中獲得獎勵，這些令牌是用於將代碼放置在您的網站上的加密貨幣令牌，這將使您的訪問者在後台執行數學方程式，以幫助確保區塊鏈安全。",
+				"faqItemContent2_para2": "不幸的是，對於我們所有人來說，JSEcoin代幣都是非常新的（2017年8月公開發布），因此目前沒有辦法兌現您的JSE。我們的目標是2018年的ICO和交易所上市，然後您將能夠將JSEcoin轉移到交易所並交換比特幣/美元等。儘管由於競爭很低，將永遠不會有更好的時間來挖掘加密貨幣，但您無法做到花費收入直到JSE在交易所上市。另外值得注意的是，如果JSE或加密貨幣市場出現問題，我們可能永遠無法進入流動性階段，代幣將毫無價值。這是早期採用者面臨的風險。",
+				"faqItemHeading3": "您將在哪些交易所上市？",
+				"faqItemContent3": "這將在我們的ICO之後得到確認;因為這將取決於JSE平台的可用資金和流行程度。"
+			},
+			"section_platformMining": {
+				"alt_platformMining": "用戶篩選按鈕",
+				"heading_platformMining": "平台挖掘",
+				"subheading_platformMining": "我可以挖？",
+				"faqItemHeading1": "是否有可能在多台計算機上登錄到同一個帳戶？如果不是，是否應該建立多個擁有相同所有者/電子郵件地址的帳戶？",
+				"faqItemContent1": "不，我們正試圖避免這兩種情況。基本上，自我挖掘意味著讓個人用戶參與加密貨幣並為每個人帶來樂趣。我們希望避免走多個用戶帳戶和多個設備的路徑，因為這最終會導致服務器場，bot網等等，並且不會讓所有人受益。您有可能會關閉您的帳戶並採取積極措施來阻止此類活動。",
+				"faqItemHeading2": "每天有多少令牌可用，它們是如何分配的？",
+				"faqItemContent2": "找到有效的哈希值可以讓您獲得一張彩票系統的入場券，其中50個獲獎者獲得1 JSE令牌獎勵。這個彩票每30秒發生一次，每次都有一個新的50 x 1JSE。這增加了每天144000JSE。",
+				"faqItemHeading3": "為什麼當我訪問其他標籤時，哈希率顯著下降？",
+				"faqItemContent3": "為了解決這個問題，我們建議您在沒有打開其他選項卡的情況下在新瀏覽器中打開挖掘。如果您希望繼續訪問不同的網站而不是打開新標籤，則應打開新的瀏覽器。這應該會阻止散列率的下降。嘗試不同的瀏覽器，您的最佳瀏覽器將取決於您的系統。 Chrome和Firefox都是推薦的。我們目前正在完成一個桌面應用程序，用戶可以使用這個桌面應用程序，這也將徹底解決這個問題。",
+				"faqItemHeading4": "什麼是哈希率加速器？",
+				"faqItemContent4": "這是一個簡單的滑塊功能，允許您增加或減少專門用於挖掘過程的CPU功率。如果您想繼續使用計算機，那麼您可能需要關閉此功能，或者如果您的設備上沒有其他功能可以使用，請將其啟動。請注意，目前通過超過10K小時/秒的收入並沒有真正的收益，因此設置哈希率加速器以提供更多，這不被推薦。",
+				"faqItemHeading5": "如果我的同屋人和我同時在使用相同的IP地址時收入受到影響？",
+				"faqItemContent5": "作為我們防止欺詐的一部分，為了確保服務器農場無法接管JSEcoin，我們必須實施知識產權限制。我們將它限制為每個IP地址每塊一張彩票。這意味著多個用戶可以在同一地點挖掘，但潛在的獎勵將在他們之間分配。"
+			},
+			"section_thePlatform": {
+				"alt_thePlatform": "平台過濾按鈕",
+				"heading_thePlatform": "該平台",
+				"subheading_thePlatform": "出了些問題",
+				"faqItemHeading1": "我是新來的平台，有什麼地方我可以找到一切如何運作的概述？",
+				"faqItemContent1": "是。我們有一個視頻演練指南，可以在這裡找到",
+				"faqItemContent1_para2": "在跳轉到以下時間之後，您是否應該有特定的頁面？",
+				"faqItemContent1_list1": "轉機1點05分",
+				"faqItemContent1_list2": "導出2:45",
+				"faqItemContent1_list3": "採礦4:16",
+				"faqItemContent1_list4": "出版商6:46",
+				"faqItemContent1_list5": "投資者9:45",
+				"faqItemContent1_list6": "轉介10:00",
+				"faqItemContent1_list7": "設置11:33",
+				"faqItemHeading2": "有些東西在平台上不起作用，我該怎麼辦？",
+				"faqItemContent2": "目前我們正在推出大量更新並重新設置服務器。這可能是瀏覽器緩存問題，請嘗試註銷然後按F5或刷新幾次以重新加載最新版本的平台。如果這不起作用，請給我們一個筆記在",
+				"faqItemContent2_line2": "我們會研究它。",
+				"faqItemHeading3": "我失去了我的密碼。我能做什麼？",
+				"faqItemContent3": "只需訪問登錄頁面，然後單擊登錄按鈕下方的“忘記密碼”鏈接即可。",
+				"faqItemHeading4": "它說我的電子郵件和密碼在數據庫中沒有匹配的帳戶。我該怎麼辦。",
+				"faqItemContent4": "請嘗試再次輸入您的詳細信息，確保它們是正確的。如果問題仍然存在，請嘗試重置您的密碼。如果您仍然無法訪問您的帳戶，請使用我們的帳戶提出一張票",
+				"link_contactForm": "聯繫表",
+				"faqItemHeading5": "我一直被要求確認我的帳戶，但我還沒有收到確認電子郵件。",
+				"faqItemContent5": "首先請確保你已經檢查了你的垃圾郵件/垃圾文件夾。如果不存在，請嘗試將noreply@jsecoin.com添加到您的電子郵件地址簿並重新請求電子郵件。任何進一步的問題，請使用我們的提高票",
+				"faqItemHeading6": "我不斷登出平台，並要求重新登錄。這是正常的嗎？",
+				"faqItemContent6": "這不應該發生在平台上。用戶發現導致此問題的兩個常見原因是;",
+				"faqItemContent6_list1": "刷新頁面以檢查收入。通過刷新，您正在離開頁面並重新進入，因此需要重新登錄。這是一個相當標準的安全功能。",
+				"faqItemContent6_list2": "您正在第二台設備上登錄您的帳戶。用戶僅限於一台設備，並且只要第二次登錄，您就會從第一個帳戶註銷。",
+				"faqItemHeading7": "我聽說過很多人被盜的加密貨幣，我的代幣在我的JSEcoin賬戶中是否安全？",
+				"faqItemContent7": "是的，他們是安全的。由於目前沒有錢包可用硬幣只能轉移到其他JSEcoin賬戶，並且我們有所有交易的記錄。我們建議您通過設置雙因素身份驗證來使您的帳戶更安全，但是如果有人進入您的帳戶並刪除您的代幣，我們將能夠跟踪他們去哪裡並將它們退還給您。在我們到達ICO之前，錢包將可用，但直到我們更接近此為止。",
+				"faqItemHeading8": "好什麼是2因素認證（2fa）？",
+				"faqItemContent8": "2fa要求您輸入用戶名和密碼後，從移動應用程序隨機生成的代碼輸入您的JSEcoin帳戶。該平台支持並經過全面測試的2款常用應用程序是Authy和Google Autenticator。只需下載其中一個應用程序，並在您下次登錄您的帳戶時進入設置頁面，然後單擊打開2fa。系統會提示您使用手機掃描qr碼，並生成您的前6位數碼。然後，每次登錄帳戶時都需要輸入代碼。您應該仔細閱讀有關備份手機2fa帳戶的說明，以防萬一您丟失或損壞手機。",
+				"faqItemHeading9": "我對2fa有問題，你能幫忙嗎？",
+				"faqItemContent9": "是的，但我們擔心這不是一個簡單的過程。首先使用我們提供的票",
+				"faqItemContent9_line2": "然後你將被要求完成一些步驟來證明你的身份。請記住，這純粹是為了保護用戶帳戶。這看起來可能很煩人，但如果我們允許某人通過沒有顯示適當的缺陷來訪問你的代幣，你會更加惱火。如果您已經正確備份了您的2fa帳戶，那麼這應該不是真正的問題。"
+			},
+			"section_affiliates": {
+				"alt_affiliates": "關聯公司過濾器按鈕",
+				"heading_affiliates": "關聯公司",
+				"subheading_affiliates": "通過推介賺取",
+				"faqItemHeading1": "我如何才能賺取JSE轉介其他用戶？",
+				"faqItemContent1": "只需登錄您的帳戶，然後前往推介頁面。在這裡您可以找到您可以分發的各種獨特的推薦代碼。請務必在投入時間和精力分發鏈接之前閱讀有關合格轉介的規則。",
+				"faqItemHeading2": "我會賺多少錢，並有任何規則？",
+				"faqItemContent2": "我們為每個確認用戶支付200JSE的費用，這些用戶註冊了已通過您的個人推薦鏈接點擊並符合以下條件的帳戶：",
+				"faqItemContent2_para2": "- 他們來自推薦頁面上列出的我們接受的國家之一。這些國家是美國，加拿大，英國，澳大利亞，新西蘭，澳大利亞，ZA。這是由於缺乏技術支持和我們能夠提供給非英語國家的網站翻譯。一旦網站完全開發，我們會考慮將網站翻譯成大多數語言，在這一點上，我們可能會重新為這些國家重新引入會員獎金。",
+				"faqItemContent2_para3": "- 還沒有一個賬戶註冊到該IP地址。重複的IP賬戶沒有被支付獎金，因為這會導致系統被濫用。",
+				"faqItemContent2_para4": "他們是一個真正的用戶，不支付點擊或機器人生成的流量。",
+				"faqItemHeading3": "為什麼我的推薦被拒絕？",
+				"faqItemContent3": "這可能有兩個原因。",
+				"faqItemContent3_para2": "您的推介不是來自推薦頁面上列出的我們接受的國家之一。這些國家是美國，加拿大，英國，澳大利亞，新西蘭，澳大利亞，ZA。",
+				"faqItemContent3_para3": "您的推介已經有一個帳戶在同一個IP地址註冊。重複的IP賬戶沒有被支付獎金，因為這會導致系統被濫用。",
+				"faqItemHeading4": "你為什麼要限制聯盟計劃只獎勵說英語的簽名？這會改變嗎？",
+				"faqItemContent4": "這是由於缺乏技術支持和我們能夠提供給非英語國家的網站翻譯。一旦網站完全開發，我們會考慮將網站翻譯成大多數語言，在這一點上，我們可能會重新為這些國家重新引入會員獎金。",
+				"faqItemHeading5": "我的推薦來自合格的國家，不是重複帳戶，但我仍然沒有收到獎金。為什麼會這樣呢？",
+				"faqItemContent5": "用戶最有可能還沒有確認他們的賬戶。只要他們這樣做，你應該得到獎金。"
+			},
+			"section_technology": {
+				"alt_technology": "技術過濾器按鈕",
+				"heading_technology": "技術",
+				"subheading_technology": "開源，算法，庫",
+				"faqItemHeading1": "該算法是否使用開放源代碼並在github / gitlab上可用？",
+				"faqItemContent1": "所有的代碼目前都是私有的，因為我們在網站管理員的加密貨幣挖掘方面擁有先發優勢。我們需要在ICO之前開源代碼庫，儘管這是交換需求。在此之前，我們需要進行全面的安全審查和代碼檢查。"
+			}
+		},
+		"APIS": {
+			"meta": {
+				"title": "API概述",
+				"keywords": "區塊鏈api，cryptocurrency api",
+				"description": "Cryptocurrency開發人員可以使用我們簡單，有效和快速的cryptocurrency API。進行交易，檢查子付款餘額等。"
+			},
+			"banner": {
+				"linkText": "蜜蜂",
+				"heading": "API概述",
+				"subheading": "支持JSE開發人員社區"
+			},
+			"heading_about": "API概述",
+			"subheading_about": "距開發者平台更近一步！",
+			"para_main1_line1": "今天，JSE API支持基本的JSE Wallet管理和訪問區塊鏈。",
+			"para_main1_line2": "我們正在積極與開發人員社區和集成商合作，為訪問JSE Wallet，區塊鏈，商戶工具等提供強大且穩定的API。",
+			"para_main2_b": "API端點：",
+			"para_main3_line1": "我們正在完成我們的開發者門戶網站的過程。",
+			"para_main3_line2": "請務必馬上查看。在此期間，通過我們的一些看看",
+			"link_oldBlogPosts": "舊的代碼博客文章",
+			"alt_api": "蜜蜂"
+		},
+		"samples": {
+			"meta": {
+				"title": "示例代碼",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "樣品",
+				"heading": "示例代碼",
+				"subheading": "“機器中的鬼魂” <br /> <span style=\"font-size:0.6em; opacity: 0.2;\">01101000 01100101 01101100 01101100 01101111 00100000 01110111 01101111 01110010 01101100 01100100</span>"
+			},
+			"para_infoMsg_line1": "我們只是在清理我們的樣本並準備推出我們的JSE Developer Portal。",
+			"para_infoMsg_line2": "請務必馬上查看。在此期間，通過我們的一些看看",
+			"link_oldBlogPosts": "舊的代碼博客文章"
+		},
+		"stats": {
+			"meta": {
+				"title": "統計",
+				"keywords": "區塊鏈數據，加密貨幣統計數據，瀏覽器挖掘統計數據",
+				"description": "最新數據來自JSEcoin服務器。我們發布了註冊用戶，網站礦工，自我挖礦者，加密貨幣市值等數量。"
+			},
+			"banner": {
+				"linkText": "統計",
+				"heading": "統計",
+				"subheading": "瀏覽器"
+			},
+			"section_map": {
+				"heading_stats": "人口統計",
+				"subheading_stats": "礦山前10名",
+				"alt_map": "世界地圖",
+				"country_US": "美國",
+				"country_RU": "俄國",
+				"country_CN": "中國",
+				"country_IN": "印度",
+				"country_UA": "烏克蘭",
+				"country_GB": "英國",
+				"country_DE": "德國",
+				"country_JP": "日本",
+				"country_CA": "加拿大",
+				"country_ID": "印度尼西亞"
+			},
+			"section_cpuOverview": {
+				"para_main1_infoMsg_line1": "我們只是收集並整理來自各個操作系統和不同設備（如Raspberry PI）上運行的各種瀏覽器的統計數據和指標。讓我們快速移動並修補東西。",
+				"para_main1_infoMsg_line2": "我們的採礦平台使用不到10％的空閒CPU資源 - 與使用80-90％的Monero礦工相比！"
+			},
+			"section_cpuBenchmark": {
+				"heading_bench": "跟踪CPU基準平均值"
+			}
+		},
+		"support": {
+			"meta": {
+				"title": "支持",
+				"description": "遇到與平台的麻煩或努力設置網站挖掘代碼？在我們的技術支持頁面獲得幫助。"
+			},
+			"banner": {
+				"linkText": "支持",
+				"heading": "支持",
+				"subheading": "有問題嗎？我們在這裡 - 只是提出支持票;）"
+			},
+			"heading_support": "JSE支持門票",
+			"subheading_support": "快來了。",
+			"para_main1": "我們正在整理這些錯誤 - 但我們應該在短期內提供支持票務環境。",
+			"link_contactUs": "在此期間，請隨時通過使用此表格與我們聯繫"
+		},
+		"techOverview": {
+			"meta": {
+				"title": "技術概述",
+				"keywords": "如何在Web瀏覽器中挖掘加密貨幣，在筆記本電腦上挖掘cryptocurrency，瀏覽器挖掘技術",
+				"description": "了解是什麼使得JSEcoin項目成為現實。我們使用尖端技術構建下一代基於網絡的加密貨幣和基於瀏覽器的區塊鏈挖掘。"
+			},
+			"banner": {
+				"linkText": "技術概述",
+				"heading": "技術概述",
+				"subheading": "利用網絡瀏覽器功能進行創新並超越"
+			},
+			"section_techOverview": {
+				"heading_techOverview": "Web瀏覽器挖掘概述",
+				"subheading_techOverview": "為什麼啟用Web瀏覽器挖掘功能？",
+				"para_main1": "我們對Google Adsense和其他分析或廣告平台採用類似的方法 - 網站管理員在其網站中嵌入外部JavaScript文件。",
+				"para_main2": "最少量的訪問者CPU用於挖掘JSE Coins（少於10％ - 不超過在頁面中包含視頻片段）。您擁有更多的用戶社區的訪問者將匯集在一起，以提高開採量。",
+				"link_cpuUsage": "查看我們的統計信息頁面，查看平均用戶CPU使用情況",
+				"alt_tech": "技術概述"
+			},
+			"section_monitiseBanner": {
+				"heading_monitiseBanner": "Monetise您的網站",
+				"subheading_monitiseBanner": "想像一下，賺錢沒有廣告的混亂",
+				"button_caseStudies_line1": "JSE網站管理員案例研究",
+				"button_caseStudies_line2": "快來了！"
+			},
+			"section_gettingStarted": {
+				"heading_gettingStarted": "如何開始？",
+				"subheading_gettingStarted": "一個腳本標記和一個小魔術",
+				"step_heading1": "註冊",
+				"step_content1": "創建一個帳戶，您可以在該平台上進行平台挖掘，或者允許您的訪問者通過您的網站進行訪問。",
+				"alt_login": "登錄屏幕",
+				"step_heading2": "連",
+				"step_content2": "將JavaScript代碼複製並粘貼到您的網站上或選擇平台挖掘按鈕。",
+				"alt_minerTypes": "礦工類型",
+				"step_heading3": "整合",
+				"step_content3": "使用我們的商家工具，允許用戶使用JSECoin購買商品和服務",
+				"alt_merchantTools": "Mercant工具"
+			},
+			"section_miningCoins": {
+				"alt_star": "星",
+				"heading_miningCoins": "採礦硬幣 - 密碼學",
+				"subheading_miningCoins": "JSE是通過瀏覽器開采的加密貨幣",
+				"para_main1": "我們在瀏覽器中有secp256k1橢圓曲線ECDSA工作服務器和客戶端。這允許用戶對交易進行數字簽名。",
+				"para_main2": "對於散列，我們使用標準的SHA256算法。在可用時，我們使用瀏覽器內置方法Crypto.Subtle API，因為這提供了接近本機的性能。在較舊的瀏覽器上有一個回退SHA256功能。 SHA256算法獲取任意長度或大小的數據，並為其生成始終具有相同長度的唯一代碼字符串。",
+				"para_main3": "當搜索散列值時，我們將數據更改為一位數字，併計算完全不同的字母數字字符串。我們的礦工一次又一次地進行這種計算，尋找可能具有前導零的最低可能值字符串。"
+			},
+			"section_howDoesItWork": {
+				"heading_howDoesItWork": "散列過程如何工作？",
+				"subheading_howDoesItWork": "通過瀏覽器簡化用戶採用和挖掘",
+				"step_heading1": "階段1",
+				"step_content1": "交易數據在平台上設置並發送到客戶端Web瀏覽器",
+				"step_heading2": "階段2",
+				"step_content2": "數據使用ECDSA加密技術（secp256k1）從瀏覽器內簽名",
+				"step_heading3": "階段3",
+				"step_content3": "事務由節點驗證並推送到當前塊"
+			},
+			"section_miningRewards": {
+				"heading_miningRewards": "礦業獎勵",
+				"subheading_miningRewards": "JSE是一種通過瀏覽器挖掘的加密貨幣",
+				"step_heading1": "發布商挖掘",
+				"step_content1": "每天288000個硬幣，彩票系統，門票分發給獨特的訪問者，頁面瀏覽和哈希。",
+				"step_heading2": "平台挖掘",
+				"step_content2": "144000個硬幣/天抽獎系統每個哈希找到1張票。**",
+				"step_heading3": "廣告收入",
+				"step_content3": "（尚未實施）預計有效每千次展示費用x印象 - 基於加密貨幣市場價值的保證金。",
+				"step_content3_para2": "重要提示：收入根據展示次數，獨特用戶和現場時間而不是最佳哈希值。這可以防止高功率設備或服務器場能夠主宰採礦。",
+				"step_content3_para3": "以法定貨幣購買美元，歐元，英鎊（貝寶，銀行電匯）",
+				"step_content3_para4": "以加密貨幣購買BTC，ETH（提供地址，開發中使用ERC20 / 23）",
+				"alt_insight": "眼光",
+				"infoMsg_miningRewards": "**為了確保公平分配和打擊採礦欺詐，彩票上設置了每張門票限額。"
+			},
+			"section_networkArchitecture": {
+				"heading_miningRewards": "網絡架構",
+				"subheading_miningRewards": "高級架構 - 由GOOGLE雲端供電",
+				"alt_insight": "JSE網絡體系結構"
+			}
+		},
+		"blockchainExplorer": {
+			"meta": {
+				"title": "區塊鏈資源管理器",
+				"keywords": "Jsecoin區塊鏈探險家，區塊鏈探索者vue.js，開源的區塊鏈探索者",
+				"description": "使用我們的實時區塊鏈瀏覽器探索JSEcoin區塊鏈。隨著我們系統的發展，觀察這些區塊進入並進行交易。"
+			},
+			"banner": {
+				"linkText": "區塊鏈資源管理器",
+				"heading": "JSE Blockchain Explorer",
+				"subheading": ""
+			},
+			"heading_blockchainExplorer": "JSE Blockchain Explorer",
+			"subheading_blockchainExplorer": "探索JSE區塊鏈",
+			"para_main1": "區塊鏈瀏覽器為JSEcoin區塊鏈提供了一個公共訪問點。這可以與API一起使用，以找出誰擁有什麼或最新的挖礦獎勵。請注意，諸如電子郵件地址或參考等敏感數據不會被記錄或顯示在區塊鏈中。",
+			"para_main2": "區塊鏈瀏覽器是使用實時數據通信編寫的，這意味著您可以在完成30秒的數據塊循環後看到數據的演變。"
+		},
+		"merchantTools": {
+			"meta": {
+				"title": "商家工具",
+				"keywords": "接受網站上的加密貨幣，cryptocurrency訂閱，cryptocurrency電子商務",
+				"description": "使用加密貨幣接受您網站上的付款。我們的商家工具允許網站管理員將他們的網站與簡單的電子商務和付款解決方案進行整合。"
+			},
+			"banner": {
+				"linkText": "商家工具",
+				"heading": "JSE商家工具",
+				"subheading": ""
+			},
+			"heading_merchantTools": "商家工具",
+			"subheading_merchantTools": "擴大電子商務和改變數字廣告",
+			"para_main1_infoMsg": "該功能目前正在開發中，很快將發布給網站管理員。",
+			"para_main1": "JSEcoin商家工具允許網站管理員使用JSEcoin通過他們的網站進行數字支付。 JSE令牌可用於： -",
+			"list_usedFor1": "購物車",
+			"list_usedFor2": "付款按鈕",
+			"list_usedFor3": "SaaS訂閱",
+			"list_usedFor4": "數字下載",
+			"list_usedFor5": "數字營銷",
+			"list_usedFor6": "軟件銷售",
+			"list_usedFor7": "網站會員訂閱",
+			"para_main2": "任何通過網站購買的東西都應該可以用加密貨幣支付，而JSEcoin可以為網站管理員與他們的網站進行整合提供可能性和簡單性。"
+		},
+		"wallet": {
+			"meta": {
+				"title": "錢包",
+				"keywords": "持有加密貨幣，如何存儲加密貨幣，加密貨幣錢包，jse錢包",
+				"description": "將您的JSEcoin代幣存儲在在線錢包中。我們的平台安全，安全並與JSE區塊鏈完全整合。直接從您的錢包發送資金並導出代幣。"
+			},
+			"banner": {
+				"linkText": "錢包",
+				"heading": "JSE在線錢包",
+				"subheading": ""
+			},
+			"heading_wallet": "錢包集成",
+			"subheading_wallet": "擴展JSE錢包支持",
+			"para_main1_infoMsg": "我們計劃在未來幾個月內發布我們的ERC20錢包整合，目前正在測試我們的集成。",
+			"para_main2": "JSE令牌可以存儲在平台​​上，也可以通過與第三方錢包和交換機兼容的ERC20令牌存儲。對於大多數用戶，我們建議在平台上保留令牌，因為一旦它們被導出，我們就無法控制可能導致資金損失的欺詐/盜竊/黑客入侵企圖。",
+			"para_main3": "JSEcoin令牌與任何第三方ERC20兼容錢包兼容，包括： -",
+			"list_wallet1": "MyEtherWallet",
+			"list_wallet2": "MetaMask",
+			"list_wallet3": "平價",
+			"para_main4": "存儲在平台​​上的令牌仍然只有您的密碼憑證和操作系統安全性，因此請注意使用獨特的安全密碼並確保您的操作系統沒有病毒和木馬。"
+		},
+		"wordpress": {
+			"meta": {
+				"title": "CMS插件",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "",
+				"heading": "",
+				"subheading": ""
+			}
+		},
+		"integration": {
+			"meta": {
+				"title": "積分",
+				"keywords": "設置加密貨幣挖掘，最好的加密貨幣瀏覽器挖掘，加密挖掘腳本",
+				"description": "了解如何在您的網站上設置基於JSEcoin瀏覽器的加密貨幣挖掘。 Web瀏覽器挖掘是貨幣化和高效區塊鏈技術的未來。"
+			},
+			"banner": {
+				"linkText": "積分",
+				"heading": "積分",
+				"subheading": "今天開始製作JSE硬幣"
+			},
+			"heading_integration": "網站管理員發布商挖掘整合",
+			"subheading_integration": "非常容易，如1，2，3  - 複製並粘貼JSE代碼",
+			"para_main1": "在您的網站上設置採礦代碼與將代碼複製並粘貼到HTML中一樣簡單。",
+			"para_main2_line1": "在設置帳戶",
+			"para_main2_line2": "並訪問“發布商”頁面。",
+			"para_main3": "輸入您的網站的域名並點擊",
+			"para_main3_infoMsg": "“獲取代碼”",
+			"para_main4": "將代碼複製並粘貼在上方</body>標記在您的HTML。請記住，最好編輯頁腳文件或位置，以便在整個站點上顯示代碼。如果您使用的是wordpress，請下載JSEcoin插件，該插件會自動將代碼插入到每個頁面上。",
+			"para_main5_line1": "保存模板文件或將HTML上傳到您的Web主機，然後在瀏覽器中進行測試。延遲15秒後，您應該開始通過開發者控制台看到JSE散列數據。要打開開發者控制台，請按",
+			"para_main5_infoMg1": "CTRL SHIFT K",
+			"para_main5_line2": "在Firefox或",
+			"para_main5_infoMg2": "CTRL SHIFT J",
+			"para_main5_line3": "在Chrome中。"
+		}
+	}
+}

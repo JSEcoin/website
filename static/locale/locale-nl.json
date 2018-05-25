@@ -1,0 +1,1498 @@
+{
+	"tpl": {
+		"globalNavHeader": {
+			"link_whitepaper": "WIT PAPIER",
+			"link_investors": "INVESTEERDERS",
+			"link_webmasters": "WEBMASTERS",
+			"link_developers": "DEVELOPERS",
+			"link_contact": "CONTACT",
+			"link_login": "LOG IN"
+		},
+		"header": {
+			"heading_whyJSEcoin": "Waarom JSEcoin?",
+			"para_main1": "Traditionele cryptocurrencies waren niet ontworpen voor reguliere adoptie of webintegratie. Het JSEcoin-project is vanaf nul opgebouwd om oplossingen te bieden voor de volgende problemen:",
+			"subheading_environmentalImpact": "Milieu-impact",
+			"para_main2": "PoW-mijnbouw van traditionele cryptocurrencies maakt gebruik van een enorme hoeveelheid elektrisch vermogen. JSEcoin wordt gedolven met behulp van overtollige CPU-bronnen die de milieu-impact van cryptocurrency-adoptie verminderen.",
+			"subheading_consumerFriendly": "Consumentvriendelijk",
+			"para_main3": "Ons hybride systeem maakt het gemakkelijk voor niet-technische gebruikers om een ​​account in te stellen, mijn valuta te gebruiken, transacties te doen en cryptocurrency te gebruiken. Wij bieden een veilig, eenvoudig en intuïtief platform voor onze gebruikers.",
+			"subheading_builtForTheWeb": "Gebouwd voor het web",
+			"para_main4": "Wij zijn van mening dat cryptocurrency webgebaseerd moet zijn. Ons systeem wordt gewonnen door webmasters en zelfmijnen met behulp van een webbrowser. Het online platform biedt een webgebaseerd toegangspunt tot het JSEcoin-netwerk.",
+			"button_close": "Dichtbij",
+			"carousel1": {
+				"heading": "DIGITALE VALUTA - ONTWORPEN VOOR HET WEB",
+				"subheading": "De toekomstige Blockchain",
+				"placeholder": "Vul je e-mailadres in",
+				"button_getStarted": "Begin",
+				"link_readTheWhitepaper": "Lees de whitepaper",
+				"button_whyJSEcoin": "Waarom JSecoin?"
+			}
+		}
+	},
+	"template": {
+		"meta": {
+			"title": "DIGITALE VALUTA - ONTWORPEN VOOR HET WEB",
+			"keywords": "jsecoin, web mining cryptocurrency, crpyto, blockchain as a service, javascript mining code, javascript crypto mijnwerker, mining via een browser, mining gui",
+			"description": "Ontdek JSECoin, de eenvoudigste manier om betalingen voor uw goederen of services te delven en cryptocurrency online over te dragen aan vrienden en familie. Verken de Cryptocurrency gedolven door webmasters die voor iedereen zijn gebouwd."
+		},
+		"global": {
+			"text_comingSoon": "Binnenkort beschikbaar!"
+		},
+		"adDetection": {
+			"text_title": "We hebben gemerkt dat u een adblocker gebruikt.",
+			"para_main1": "U mag nog steeds onze site gebruiken en ermee communiceren, maar sommige gebieden kunnen worden uitgeschakeld.",
+			"para_main2": "Zet ons op de witte lijst of schakel uw advertentieblokkering uit en laad de pagina opnieuw om toegang tot alle inhoud te krijgen."
+		},
+		"lang": {
+			"para_choose": "Kies een taal die u het prettigst vindt."
+		},
+		"cookies": {
+			"text_overview_line1": "Wij gebruiken cookies om onze diensten beter te kunnen leveren.",
+			"text_overview_line2": "Door gebruik te maken van onze diensten gaat u akkoord met",
+			"link_terms": "ons gebruik van cookies"
+		},
+		"navigation": {
+			"heading_company": "Bedrijf",
+			"link_about": "Over ons",
+			"link_team": "Team",
+			"link_vision": "Visie",
+			"link_news": "Nieuws",
+			"link_announcements": "Mededelingen",
+			"link_developmentStatus": "Ontwikkelingsstatus",
+			"link_timeline": "Tijdlijn",
+			"link_charity": "Goed doel",
+			"link_careers": "Careers",
+			"link_reportAbuse": "Meld misbruik",
+			"link_FAQ": "FAQ",
+			"link_contactUs": "Neem contact met ons op",
+			"heading_investors": "investeerders",
+			"link_whyInvest": "Waarom beleggen?",
+			"link_overview": "Overzicht",
+			"link_whitepaper": "Wit papier",
+			"link_siteStatistics": "Sitestatistieken",
+			"link_bitcoinTalkAnn": "BitcoinTalk Ann",
+			"link_technicalOverview": "Technisch overzicht",
+			"link_investorNews": "Nieuws van beleggers",
+			"link_forums": "Forums",
+			"link_press": "druk op",
+			"link_exchanges": "uitwisselingen",
+			"link_environment": "Milieu",
+			"link_signup": "Aanmelden",
+			"heading_webmaster": "Webmaster",
+			"link_whySwitch": "Waarom schakelen",
+			"link_blockchainExplorer": "Blockchain Explorer",
+			"link_merchantTools": "Handelaarshulpmiddelen",
+			"link_JSE_Wallet": "JSE Wallet",
+			"link_JSE_Integration": "JSE-integratie",
+			"link_systemStatus": "Systeem status",
+			"link_technicalSupport": "Technische hulp",
+			"link_API_Overview": "API-overzicht",
+			"link_sampleIntegrations": "Voorbeeldintegraties",
+			"link_publisherNews": "Uitgeversnieuws",
+			"heading_developers": "ontwikkelaars",
+			"link_ourCommitment": "Onze toewijding",
+			"link_API_Documentation": "API-documentatie",
+			"link_codeSamples": "Codevoorbeelden",
+			"link_developerSupport": "Ondersteuning voor ontwikkelaars",
+			"link_developerNews": "Ontwikkelaarsnieuws",
+			"link_bugBounty": "Bug Bounty",
+			"link_oddJobs": "Oneven banen",
+			"link_submitABug": "Dien een bug in",
+			"button_platformLogin": "Platform Login",
+			"button_readWhitepaper": "Lees de whitepaper"
+		},
+		"social": {
+			"title_telegram": "Telegam",
+			"title_Discord": "Onenigheid",
+			"title_Reddit": "reddit",
+			"title_Medium": "Medium",
+			"title_YouTube": "YouTube",
+			"title_facebook": "facebook",
+			"title_twitter": "tjilpen",
+			"title_LinkedIn": "LinkedIn"
+		},
+		"footer": {
+			"privacy": {
+				"text_trust": "Vertrouwen is essentieel en staat in verhouding tot onze operationele transparantie. We zijn er trots op dat we een open ethisch bedrijf runnen.",
+				"text_optout": "De privacybeleidspagina hierboven bevat ook een opt-outlink om browsergebaseerde JSE cryptocurrency-mijnen over het gehele netwerk uit te schakelen",
+				"link_privacyPolicy": "Privacybeleid",
+				"link_terms": "Voorwaarden",
+				"link_kyc": "KYC-beleid"
+			},
+			"info": {
+				"heading_newsletterSignup": "Aanmelden nieuwsbrief",
+				"placeholder_emailInput": "Vul je e-mailadres in",
+				"button_signup": "Meld u vandaag aan voor updates!",
+				"heading_mentioned": "Vermeld op",
+				"subheading_mentioned": "Innoveren met blockchain en het web",
+				"alt_logos": "Sites waarop JSecoin wordt vermeld"
+			},
+			"companyInfo": {
+				"text_registered": "Geregistreerd in Engeland nr. 10940920 - Dun and Bradstreet No. 100233913837",
+				"text_address": "JSECoin Ltd, Cambridgeshire, Verenigd Koninkrijk"
+			},
+			"copy": {
+				"text_copyright": "Copyright 2017-2018",
+				"text_rightsReserved": "Alle rechten voorbehouden"
+			}
+		}
+	},
+	"segment": {
+		"interactiveTimeline": {
+			"label_tasks": "TAKEN",
+			"month_january": "JANUARI",
+			"month_february": "FEBRUARI",
+			"month_march": "MAART",
+			"month_april": "APRIL",
+			"month_may": "MEI",
+			"month_june": "JUNI",
+			"month_july": "JULI",
+			"month_august": "AUGUSTUS",
+			"month_september": "SEPTEMBER",
+			"month_october": "OKTOBER",
+			"month_november": "november",
+			"month_december": "DECEMBER",
+			"label_today": "VANDAAG",
+			"label_os": "OPEN-SOURCING",
+			"label_icoLaunch": "ICO-LANCERING",
+			"label_exchangeListing": "UITWISSELING VAN DE UITWISSELING",
+			"task_name1": "New Branded Identity",
+			"task_name1a": "SEO verbeteringen",
+			"task_name1b": "SEO JSE Banner-uitbreidingen",
+			"task_name2": "Ontwikkelaarsportaal",
+			"task_name3": "Nieuw mijnbouwplatform",
+			"task_name4": "Windows / Linux / macOS Desktop-app",
+			"task_name5": "Android mobiele app",
+			"task_name6": "Platformbeveiligingsreview",
+			"task_name7": "Handelaarshulpmiddelen",
+			"task_name8": "Web meertalige ondersteuning",
+			"task_name9": "Platform meertalige ondersteuning",
+			"task_name10": "Desktop-app Meertalige ondersteuning",
+			"task_name11": "Mobiele meertalige ondersteuning",
+			"task_name12": "DB Schema verbeteren - Redis",
+			"task_name13": "Platform GPU Hashing-ondersteuning",
+			"task_name14": "Site voor uitgevers Crawler",
+			"task_name15": "Blockchain Explorer-uitbreidingen",
+			"task_name16": "Soliditeitscontract ERC220",
+			"task_name17": "Web3 Client Side ICO Widget",
+			"task_name18": "Web3 Server Side Import / Export",
+			"task_name19": "Contractbeveiligingsbeoordeling",
+			"task_name20": "Identicons GFX Pack",
+			"task_name21": "Identicons Framework",
+			"task_name22": "Identicons Blockchain Customiser"
+		},
+		"miniStat": {
+			"text_loading": "Bezig met laden",
+			"text_activeMiners": "Actieve mijnwerkers",
+			"text_registeredSites": "Geregistreerde sites",
+			"text_registeredUsers": "Geregistreerde gebruikers",
+			"text_hundred": "Honderd",
+			"text_thousand": "Duizend",
+			"text_million": "Miljoen",
+			"text_billion": "Miljard",
+			"text_trillion": "Trillion"
+		}
+	},
+	"pages": {
+		"navigation": {
+			"about": {
+				"link_about": "Over",
+				"link_team": "Team",
+				"link_vision": "Visie",
+				"link_careers": "Careers",
+				"link_press": "druk op"
+			},
+			"legal": {
+				"link_userAgreement": "gebruikersovereenkomst",
+				"link_privacyPolicy": "Privacybeleid",
+				"link_terms": "Voorwaarden",
+				"link_kycPolicy": "KYC-beleid"
+			},
+			"oddJobs": {
+				"link_bugBounty": "Bug Bounty",
+				"link_smallJobs": "Kleine banen",
+				"link_submit": "voorleggen"
+			},
+			"support": {
+				"link_community": "Gemeenschap",
+				"link_contact": "Contact",
+				"link_FAQ": "FAQ"
+			},
+			"technical": {
+				"link_overview": "JSE-overzicht",
+				"link_stats": "Stats",
+				"link_APIS": "API'S",
+				"link_samples": "samples",
+				"link_support": "Ondersteuning"
+			}
+		},
+		"about": {
+			"meta": {
+				"title": "Over",
+				"keywords": "UK cryptocurrency blockchain, blockchain uk, uk cryptocurrency company",
+				"description": "Een overzicht van het JSEcoin-project en het team achter de start van de cryptocurrency op basis van het VK."
+			},
+			"banner": {
+				"linkText": "Over ons",
+				"heading": "Over ons",
+				"subheading": "Toonaangevende cryptocurrency-netwerk voor web-based mining"
+			},
+			"heading_about": "Over JSECoin Ltd",
+			"subheading_about": "Gevormd op 6 augustus 2017",
+			"para_main1": "JSECoin is opgericht in augustus 2017 en ontwikkelt de volgende generatie blockchain-technologie voor het web.",
+			"para_main2": "Het JSEcoin-project omvat het platform voor digitale valuta, portemonnee, mijnbouw en ontwikkelaar, waar elk bedrijf of individu met een e-mailadres tokens kan genereren en ook veilig en kosteneffectief online cryptocurrency-betalingen kan verzenden en ontvangen.",
+			"para_main3": "De omvang van ons netwerk en de toenemende acceptatie van ons product hebben ons geholpen een van de leidende cryptocurrency-netwerken te worden voor webgebaseerde mijnbouw. We zijn koploper in het promoten van ethische opt-in webgebaseerde mining voor onze uitgevers die verkeer en rekenkracht naar het netwerk leiden.",
+			"para_main4": "Ons hoofdkantoor is gevestigd in Cambridge, Verenigd Koninkrijk, en ons team werkt aan het bouwen van een betaaloplossing van wereldklasse voor het web met behulp van de nieuwste ontwikkelingen op het gebied van blockchain-technologie. De wereld verandert en hoe we waarde opslaan, handel drijven en geld gebruiken, zal in het volgende decennium worden verstoord. De opkomst van cryptocurrencies biedt een unieke kans voor ons om de wereld te veranderen en een verschil te maken.",
+			"para_main5": "Als je meer wilt weten over het project, neem dan de tijd om onze bijgewerkte whitepaper te bekijken https://jsecoin.com/whitepaper.pdf",
+			"alt_about": "Over JSE"
+		},
+		"charity": {
+			"meta": {
+				"title": "Goed doel",
+				"keywords": "Goede cryptocurrency, geef cryptocurrency, cryptocurrency filantropie",
+				"description": "We hebben zoveel steun gehad voor ons website-mijnbouwplatform, ons team streeft ernaar terug te geven via onze liefdadigheidsprojecten."
+			},
+			"banner": {
+				"linkText": "Goed doel",
+				"heading": "",
+				"subheading": "Het maken van een bewuste verandering ten goede"
+			},
+			"heading_about": "JSE voor liefdadigheid",
+			"subheading_about": "In september 2017 hebben we een liefdadigheidsaccount opgezet",
+			"para_main1": "Onze belofte is om iets terug te geven aan de goede doelen die belangrijk zijn voor onze gebruikers. We creëren een peer-led-stemsysteem waarbij de door ons ondersteunde goede doelen worden gekozen door de JSEcoin-gemeenschap. Leden kunnen elk bedrag van JSE verpanden, ongeacht hoe groot of klein ze zijn door een overschrijving naar onze liefdadigheidsrekening. We dragen ook alle onterecht verdiende tokens rechtstreeks over aan het liefdadigheidsaccount, zodat een deel van de slechte praktijken van sommige mensen iets oplevert. Na onze ICO zullen we kijken om deze tokens te verspreiden naar de door u gekozen goede doelen.",
+			"para_main2": "We zullen een crowd voting-systeem en een regulier distributiepakket opzetten waar iedereen een geregistreerde liefdadigheidsinstelling kan voorstellen en de gemeenschap zal stemmen over de meest waardevolle doelen die geld zullen ontvangen.",
+			"para_main3_line1": "Dit account is nu uitgegroeid tot meer dan dat",
+			"para_main3_line2": "JSE en we zijn verheugd om te beginnen met het verspreiden van dit tot grote doelen na de ICO.",
+			"para_main4": "Als onderdeel van ons streven om op een transparante en ethische manier te werken, zullen we alle uitgaande transacties publiceren vanuit dit account."
+		},
+		"environment": {
+			"meta": {
+				"title": "Milieu",
+				"keywords": "Milieuvriendelijke cryptocurrency, groene blockchain-technologie",
+				"description": "Traditionele cryptocurrencies zijn vreselijk inefficiënt, waarbij sommigen evenveel macht gebruiken als een heel land. JSEcoin streeft naar vermindering van de CO2-voetafdruk van de blockchain-industrie."
+			},
+			"banner": {
+				"linkText": "Milieu",
+				"heading": "Milieu",
+				"subheading": "VERMINDERING VAN DE MILIEU-EFFECTEN VAN CRYPTO MET JSECOIN"
+			},
+			"heading_environment": "Onze milieu-impact",
+			"subheading_environment": "blockchains hebben honger naar energie",
+			"para_main1": "Wist u dat 6 huishoudens in de VS 1 dag kunnen worden gevoed door het verbruikte elektriciteit voor een enkele transactie op het bitcoin-netwerk?",
+			"para_main2": "Het hele netwerk verbruikt dezelfde hoeveelheid elektriciteit als 1.500.000 huishoudens en het verbruik van mijnwerkers groeit met ongeveer 1TW / uur per maand. Dit wordt veroorzaakt door het competitieve karakter van het mijnbouwbewijs van het werksysteem. Mijnwerkers met toegang tot goedkopere elektriciteit hebben een voordeel omdat dit de enige echte kosten zijn als de ASIC-mijnbouwhardware is gekocht. Het resultaat: enorme serverparken die bijna een miljard dollar aan elektriciteit verbruiken per jaar.",
+			"para_main3": "Is dit optimaal, ethisch of duurzaam? We denken van niet. JSEcoin biedt een oplossing door gebruik te maken van CPU-kracht op de achtergrond die niet wordt gebruikt tijdens normaal browsen op het web. Deze overmatige computerkracht wordt gebruikt om mijnbouw te gebruiken en de blockchain te beveiligen zonder de planeet te vernietigen. Het lijkt een logische evolutie van de technologie, maar dan zijn we een beetje bevooroordeeld.",
+			"para_main4_line1": "Als onderdeel van ons streven om op een transparante en ethische manier te werken, zullen we alle uitgaande transacties publiceren vanuit dit account.",
+			"para_main4_line1_bold": "JSEcoin heeft het voordeel van de first-mover",
+			"para_main4_line2": ", laten we snel gaan en dingen herstellen."
+		},
+		"exchanges": {
+			"meta": {
+				"title": "uitwisselingen",
+				"keywords": "Handel jse, jsecoinuitwisseling, ruil jsecoin, jsecoinkrijs in, jse aan usd",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "uitwisselingen",
+				"heading": "uitwisselingen",
+				"subheading": ""
+			},
+			"heading_exchanges": "De uitwisselingen",
+			"subheading_exchanges": "Wanneer en waar word je vermeld?",
+			"para_main1": "We zijn van plan om later dit jaar uitwisselingen te volgen na onze ICO. In de opbouw hiervan zullen we luisteren naar uw feedback, terwijl we de voor- en nadelen van elke uitwisseling afwegen om de uitwisselingen te voltooien die we van plan zijn op te noemen. Fondsen voor listing fees zullen worden verhoogd tijdens de ICO en dus zullen er pas na deze tijd definitieve beslissingen worden genomen.",
+			"para_main2": "We hebben een aantal uitwisselingen op de shortlist geplaatst, die we zullen overwegen om aan te melden voor of deel te nemen aan hun stemsystemen voor nieuwe aanbiedingen:",
+			"para_main3": "Sommige uitwisselingen, zoals coinbase (gdax) / bittrex, zijn onrealistische proposities voor een nieuw cryptocurrency-token."
+		},
+		"home": {
+			"meta": {
+				"title": "JSecoin: Digital Currency - Ontworpen voor het web",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "Huis",
+				"heading": "",
+				"subheading": ""
+			},
+			"button_viewGlobalStats": "Bekijk globale statistieken",
+			"section_overview": {
+				"heading_overview": "Bouwen aan de toekomst van Blockchain op het web",
+				"subheading_overview": "Vereenvoudiging van Cryptocurrency, Commerce, Mining en User Adoption - via een browser",
+				"highlights": {
+					"heading_simple": "Eenvoudig te gebruiken",
+					"para_simple": "Gemakkelijk aan de slag, eenvoudig te kopen en eenvoudig om digitale valuta te verzenden naar iedereen met een e-mailadres",
+					"heading_browserMining": "Webbrowser Mijnbouw",
+					"para_browserMining": "Iedereen met een webbrowser of website kan cryptogeld nu mijnen. Ofwel de mijne op uw eigen apparaat op ons eenvoudig te gebruiken platform, of eenvoudig een codefragment in uw website installeren die u tokens oplevert terwijl uw bezoekers browsen.",
+					"heading_storage": "opslagruimte",
+					"para_storage": "U kunt uw tokens opslaan op het JSEcoin-platform of ze exporteren naar een Ethereum-compatibele portefeuille van uw keuze.",
+					"heading_tokens": "Hoe je tokens te gebruiken",
+					"para_tokens": "Gebruik uw JSEcoin-tokens om online aankopen te doen bij deelnemende sites. Als u een eigen site heeft, kunt u nu beginnen met het accepteren van JSEcoin met behulp van onze gebruiksvriendelijke handelaarstools."
+				},
+				"button_readWhitePaper": "Lees de whitepaper"
+			},
+			"section_browserMining": {
+				"heading_browserMining": "Platform mining overzicht",
+				"subheading_browserMining": "Ooit wilde je in cryptocurrency komen, maar vond je het allemaal een beetje verwarrend?",
+				"heading_simple": "Eenvoudig te gebruiken",
+				"para_main1": "Nu kunt u uw JSEcoin-account registreren en binnen 60 seconden beginnen met mijnen.",
+				"para_main2": "We hebben een speciale mining-pagina op het platform waarop u de CPU van uw apparatuur kunt gebruiken en waarmee u enkele JSEcoin-tokens verdient. Hier voert uw computer wiskundige vergelijkingen uit om onze blockchain te beveiligen (in feite een grootboek van al onze transacties) en als een beloning hiervoor, krijgt u de kans om JSEcoin-tokens te verdienen.",
+				"para_main3": "Je hebt de hele tijd de volledige controle en kunt het proces op elk moment starten en stoppen, en ook veranderen hoeveel CPUvermogen je aan mijnbouw besteedt.",
+				"button_tryit": "Probeer het!",
+				"button_watchVideo": "Bekijk onze video",
+				"alt_miner": "JSE Miner"
+			},
+			"section_pubPlatMining": {
+				"alt_newMiningPlatform": "Nieuw mijnbouwplatform",
+				"alt_existingLoginScreen": "Bestaand login scherm",
+				"alt_existingMiningPlatform": "Bestaand mijnplatform",
+				"heading_pubPlatMining": "Overzicht uitgevermijn",
+				"subheading_pubPlatMining": "Bent u op zoek naar een nieuwe manier om inkomsten te genereren met uw website?",
+				"para_main1": "JSEcoin kan de oplossing zijn. Er wordt een onopvallend codefragment op uw site geplaatst dat vervolgens de JSEcoin-mijn op de apparaten van uw bezoekers uitvoert terwijl ze op uw website browsen.",
+				"para_main2": "Dit biedt de hashing-functionaliteit die nodig is om de blockchain te beveiligen en in ruil krijg je de kans om JSEcoin-tokens te verdienen.",
+				"para_main3": "Wij zijn van mening dat transparantie en minimale impact op de browse-ervaring van uw bezoekers de sleutel is tot de acceptatie van dit systeem. Alle bezoekers van uw site worden op de hoogte gebracht en krijgen de kans om zich af te melden en het cpu-gebruik is minder dan de meeste standaard videoadvertenties.",
+				"button_findOutMore": "Meer te weten komen",
+				"button_watchVideo": "Bekijk onze video"
+			},
+			"section_env": {
+				"heading_env": "MILIEU-IMPACT VAN CRYPTOCURRENTIE",
+				"subheading_env": "TRADITIONELE KRUISPUNTEN GEBRUIKEN MEER KRACHT DAN KLEINE LANDEN OM HUN NETWERKEN TE BEDIENEN",
+				"para_main1": "Elke andere industrie over de hele wereld is op weg naar groenere oplossingen die het risico op klimaatverandering en opwarming van de aarde verminderen. Vroeger dan later moet blockchain-technologie volgen. Het is eenvoudigweg niet nodig om de enorme hoeveelheden elektrische energie te verbruiken die traditionele cryptocurrency-netwerken verspillen.",
+				"para_main2": "JSEcoin wordt gedolven met behulp van overtollige CPU-bronnen die anders zouden worden verspild. Browser mining heeft een enorm milieu- en kostenvoordeel ten opzichte van bestaande cryptocurrency-netwerken. Er is een mogelijkheid om een ​​echt verschil te maken met op het web gebaseerde cryptocurrency-mining.",
+				"para_main3": "De huidige mijnbouwmethoden zijn niet duurzaam of te rechtvaardigen in termen van energieverbruik - wij vinden dat browsermijnen een oplossing bieden. Of het nu gaat om ons project dat doorbreekt of door iemand anders, dit is de richting waarin de sector zich begeeft en we hebben het voordeel van de first mover.",
+				"button_learnMoreOnImpact": "Meer informatie over onze impact",
+				"alt_sustainableEnergy": "Duurzame energie"
+			},
+			"section_timeline": {
+				"heading_timeline": "2018 TIJDLIJN",
+				"subheading_timeline": "BEKIJK NAAR ONZE ROEMETUM EN WAAR ZULLEN WE HET VOLGENDE JAAR NIET HEBBEN!",
+				"button_viewDetailedTimeline": "Bekijk gedetailleerde tijdlijn"
+			},
+			"section_team": {
+				"heading_team": "HET JSE-TEAM",
+				"subheading_team": "VANDAAG GEAVANCEERDE WEB GEBASEERD OP BLOKKERWIELMIJNING EN CRYPTOCOLLENTIE HANDEL CAPACITEITEN!",
+				"button_meetTheTeam": "Ontmoet het team"
+			},
+			"section_community": {
+				"heading_community": "Maak deel uit van onze groeiende gemeenschap",
+				"subheading_community": "Help ons te innoveren, uit te breiden en de volgende beste cryptocurrency te worden",
+				"button_DontForgetForums": "Vergeet onze forums niet!"
+			},
+			"section_charity": {
+				"alt_charity": "JSE Doneren aan een goed doel",
+				"heading_charity": "Doneren aan een goed doel",
+				"subheading_charity": "ACTIVITEITEN OM GELD OP TE HALEN",
+				"para_main1": "Onze belofte is om iets terug te geven aan de goede doelen die belangrijk zijn voor onze gebruikers. We creëren een peer-led-stemsysteem waarbij de door ons ondersteunde goede doelen worden gekozen door de JSEcoin-gemeenschap. Leden kunnen elk bedrag van JSE verpanden, ongeacht hoe groot of klein ze zijn door een overschrijving naar onze liefdadigheidsrekening. We dragen ook alle onterecht verdiende tokens rechtstreeks over aan het liefdadigheidsaccount, zodat een deel van de slechte praktijken van sommige mensen iets oplevert. Na onze ICO zullen we kijken om deze tokens te verspreiden naar de door u gekozen goede doelen.",
+				"text_JSECollected": "JSE verzameld voor het goede doel"
+			}
+		},
+		"notFound": {
+			"meta": {
+				"title": "404 pagina niet gevonden",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "404",
+				"heading": "404",
+				"subheading": "err: Kon pagina niet vinden ?!"
+			},
+			"alt_404": "foutmelding 404",
+			"heading_notFound": "Fout 404 - Pagina niet gevonden",
+			"subheading_notFound": "Maak je geen zorgen. Ga terug naar de vorige pagina..."
+		},
+		"systemStatus": {
+			"meta": {
+				"title": "Systeem status",
+				"keywords": "Jsecoin-netwerk, blockchain-systeemstatus",
+				"description": "Systeemupdates en live serverinformatie van het JSEcoin-netwerk. Als er iets misgaat, hoor je het hier eerst."
+			},
+			"banner": {
+				"linkText": "Systeem status",
+				"heading": "Systeem status",
+				"subheading": ""
+			},
+			"alt_serverStatus": "Server Status",
+			"text_checkingServerStatus": "Serverstatus controleren ...",
+			"text_systemsUp": "Alle systemen zijn operationeel",
+			"text_serverIssue": "Serverprobleem gemeld",
+			"text_lastUpdated": "Laatst bijgewerkt vandaag",
+			"para_infoMsg": "Als u een probleem ondervindt, neemt u contact op met",
+			"button_Support": "Ondersteuning"
+		},
+		"timeline": {
+			"meta": {
+				"title": "Interactieve tijdlijn",
+				"keywords": "Jsecoin tijdlijn, browser mining ico, jse tijdlijn",
+				"description": "De toekomst voor cryptocurrency is helder. Bekijk ons ​​actieplan voor het ontwerpen, bouwen, promoten en onderhouden van het JSEcoin blockchain-, webmijnplatform en publisher-suite."
+			},
+			"banner": {
+				"linkText": "Tijdlijn",
+				"heading": "Tijdlijn",
+				"subheading": "Bekijk onze routekaart voor het komende jaar"
+			},
+			"section_interactiveTimeline": {
+				"heading_timeline": "2018 Interactieve tijdlijn",
+				"subheading_timeline": "Waar zijn we vandaag en we zijn van plan morgen te zijn!",
+				"para_main1_line1": "Bekijk onze ontwikkelingsplannen voor 2018 - we zullen constant zijn",
+				"para_main1_line2": "deze pagina bijwerken, dus verwacht dat tijdlijnen regelmatig veranderen.",
+				"para_main1_line3": "We zullen ons best doen om zich aan deze schattingen te committeren.",
+				"para_main2": "Blader door de maanden door in de onderstaande tabel te vegen."
+			},
+			"section_timeline": {
+				"heading_timeline": "Waar het allemaal begon",
+				"subheading_timeline": "De geschiedenis van JSECoin",
+				"date_july17_ABR": "juli",
+				"info_july17_title": "Bewijs van Concept",
+				"info_july17_para_content1": "Browser mining was in het verleden al gedaan maar is nooit van de grond gekomen omdat het nooit efficiënt was - met machines met meer kracht en een nieuwe benadering van mijnbouw zou het een effectief project zijn?",
+				"info_july17_para_content2": "James onderzoekt verder met voorbeeldcode",
+				"date_august17_ABR": "augustus",
+				"info_august17_title": "JSECoin is opgericht",
+				"info_august17_para_content1": "JSECoin is opgericht door James Bachini.",
+				"info_august17_list1": "Maak een bètaplatform voor website-eigenaren.",
+				"info_august17_list2": "Krijg feedback van investeerders en ontwikkelaars van cryptocurrency.",
+				"info_august17_list3": "Lancering op intern websitenetwerk en bètablokketting maken.",
+				"info_august17_list3_info": "(open platform openbaar)",
+				"date_september17_ABR": "september",
+				"info_september17_title": "Beoordeel de acceptatiegraad",
+				"info_september17_para_content1": "Vind seed-investeerders die bereid zijn om het bedrijf te financieren in ruil voor cryptocurrency of equity. En / of andere financieringsopties verkennen. Veilige investering voor ICO-marketing en beursnotering.",
+				"info_september17_para_content2": "Publiceer de eerste set maandelijkse accounts.",
+				"date_october17_ABR": "oktober",
+				"info_october17_title": "Advertentie",
+				"info_october17_list1": "Start reclame- en marketingcampagnes gericht op uitgevers en potentiële ICO-investeerders.",
+				"info_october17_list2": "Verplaats het netwerk uit de bètastadium en in productie met een grote update",
+				"date_november17_ABR": "november",
+				"info_november17_title": "Marketingplan",
+				"info_november17_list1": "Maak een ICO marketingplan.",
+				"info_november17_list2": "Release block explorer vrijgeven.",
+				"info_november17_list3": "Marketingcampagnes opschalen.",
+				"info_november17_list4": "Maak Bitcointalk ANN-thread.",
+				"date_december17_ABR": "december",
+				"info_december17_title": "Nieuwjaarsvoorbereiding",
+				"info_december17_list1": "Verkoophandleidingen in kaart brengen.",
+				"info_december17_list2": "Updates voor whitepaper.",
+				"info_december17_list3": "Maak een demo / verkoopvideo voor investeerders.",
+				"info_december17_list4": "Begin met de voorbereidingen voor ICO",
+				"date_january18_ABR": "JAN",
+				"info_january18_title": "JSecoin Rebrand",
+				"info_january18_para_content1": "Introduceer rebranded bedrijfssite",
+				"info_january18_list1": "Soliditeitscontract ERC220",
+				"info_january18_list2": "Site voor uitgevers Crawler"
+			}
+		},
+		"careers": {
+			"meta": {
+				"title": "Careers",
+				"keywords": "Loopbanen in Blockchain, Verenigd Koninkrijk, blockchain-taken",
+				"description": "Wilt u werken met de heetste startup voor cryptocurrency ter wereld? We nemen ontwikkelaars, beveiligingsdeskundigen, ondersteuningsteams en meer in dienst."
+			},
+			"banner": {
+				"linkText": "Careers",
+				"heading": "Careers",
+				"subheading": "Een team samenbrengen om te innoveren en een transformatie te leiden"
+			},
+			"section_overview": {
+				"heading_careers": "Careers",
+				"subheading_careers": "Gedreven om betekenisvolle en geavanceerde projecten bij te dragen",
+				"para_main1": "Ben je gepassioneerd over blockchain, webtechnologieën, om wat onmogelijk lijkt te maken via internet? Als dat zo is, heb je de juiste plek gevonden.",
+				"para_main2": "We zijn een wereldwijd team van gepassioneerde ontwikkelaars, ontwerpers en ondernemers - die op zoek zijn om een ​​verschil te maken in de fintech-industrie met digitale valuta's en de blockchain.",
+				"para_main3": "Het JSECoin-platform vergemakkelijkt het eenvoudige gebruik van digitale valuta voor consumenten en verkopers. Dit omvat het kopen en verkopen van onze cryptocurrency JSE en biedt veilige opslag in de cloud naast een reeks verkopershulpmiddelen en ontwikkelaarsplatform.",
+				"minorHeading_benefits": "Voordelen",
+				"info_benefits_list1": "Bezit uw eigen projecten vanaf de conceptie tot de lancering",
+				"info_benefits_list2": "De optie om betaald te worden in JSECoin",
+				"info_benefits_list3": "Werk wanneer u het beste werkt (flexibele uren)",
+				"info_benefits_list4": "Flexibele vakantie - neem de tijd vrij wanneer u het nodig hebt",
+				"info_benefits_list5": "100% van de medische / visuele / tandheelkundige voordelen voor werknemers",
+				"sideHeading_currentPositions": "Huidige Open Posities",
+				"info_job_list1": "KLANTENONDERSTEUNING",
+				"info_job_list2": "ONTWERP",
+				"info_job_list3": "LEGAL",
+				"info_job_list4": "ACTIVITEITEN",
+				"info_job_list5": "VEILIGHEID"
+			},
+			"section_banner": {
+				"linkText": "",
+				"heading_careers": "Careers",
+				"subheading_careers": "Gedreven om betekenisvolle en geavanceerde projecten bij te dragen"
+			},
+			"section_careers": {
+				"heading_careers": "Careers",
+				"subheading_careers": "Gedreven om betekenisvolle en geavanceerde projecten bij te dragen",
+				"highlights": {
+					"heading_culture": "Cultuur",
+					"para_culture": "We cultiveren een omgeving die leuk is en beloont vindingrijkheid, vastberadenheid en verschillende perspectieven.",
+					"heading_benefits": "Voordelen",
+					"para_benefits": "Wij zorgen voor onze werknemers door te zorgen voor genereuze gezondheids-, wellness- en financiële plannen, zodat zij zich veilig kunnen voelen over hun eigen toekomst en tegelijkertijd de toekomst van geld kunnen opbouwen.",
+					"heading_remoteLocations": "Externe locaties",
+					"para_remoteLocations": "Ons team is wereldwijd gepositioneerd. Werk vanuit huis, op het strand, waar je ook werkt.",
+					"heading_people": "Mensen",
+					"para_people": "We doen geweldig werk als we omringd zijn door mensen die ons inspireren en uitdagen."
+				}
+			},
+			"section_questions": {
+				"heading_questions": "Vragen?",
+				"subheading_questions": "E-mail ons vandaag nog - we zijn altijd op zoek naar slimme mensen om mee te doen",
+				"button_contactUs": "Neem contact met ons op"
+			},
+			"alt_about": "Over JSE"
+		},
+		"ourVision": {
+			"meta": {
+				"title": "Onze visie",
+				"keywords": "Webbrowser cryptocurrency, cryptocurrency voor websites, browsermijnbouw",
+				"description": "Onze visie is voor een toekomst waarin cryptocurrency kan worden gebruikt om alledaagse voorwerpen door iedereen en iedereen over de hele wereld te kopen."
+			},
+			"banner": {
+				"linkText": "Onze visie",
+				"heading": "Onze visie",
+				"subheading": "Maak een energiezuinige cryptocurrency gedolven op het WWW"
+			},
+			"section_overview": {
+				"heading_vision": "Onze visie",
+				"subheading_vision": "Het ontwerpen van een eerlijke cryptocurrency",
+				"para_main1": "Het is onze ambitie om een ​​energiezuinige cryptocurrency te maken die wordt ontgonnen door webmasters en die wereldwijd wordt gebruikt door reguliere gebruikers.",
+				"para_main2": "Alle grote cryptocurrencies zijn momenteel afhankelijk van mijnwerkers om de cryptografie-hashing uit te voeren. Hashing is een wiskundige vergelijking die op grote schaal wordt uitgevoerd om een ​​blockchain te beveiligen die de onderliggende transactiedatabase is van een cryptocurrency. Dit proces verbruikt enorme hoeveelheden rekenkracht en elektriciteit en wordt gedomineerd door server farms. Mijnwerkers worden beloond voor hun inspanningen door de verdeling van de valuta.",
+				"para_main3": "Het is mogelijk om SHA256 en andere codering uit te voeren in een standaard webbrowser of op een mobiel apparaat. Door een JavaScript-fragment in te bedden op een website, zouden alle bezoekers van de website het hashing-coderingsproces kunnen uitvoeren, dat in combinatie op schaal de rol van de mijnwerkers zou kunnen vervangen. Website-eigenaren zouden dan worden beloond met de verdeling van de valuta. We hebben geschat dat 1 op de 15 mensen eigenaar is van of toegang heeft tot een website die een grote distributie en een potentieel klantenbestand biedt.",
+				"para_main4": "Door overtollige CPU-kracht te gebruiken, kunnen enorme energie- en kostenbesparingen worden gerealiseerd via traditionele cryptocurrency-netwerken.",
+				"alt_vision": "Visie"
+			}
+		},
+		"press": {
+			"meta": {
+				"title": "Druk op En Media",
+				"keywords": "Blockchain-artikelen, cryptocurrency-interviews, cryptocurrency-persbericht",
+				"description": "Public relations-informatie inclusief kunstwerken voor gebruik door de pers. JSEcoin is een startup met cryptocurrency, gevestigd in het Verenigd Koninkrijk en gespecialiseerd in cryptocurrency-mining voor websites."
+			},
+			"banner": {
+				"linkText": "druk op",
+				"heading": "druk op",
+				"subheading": "Een positieve impact hebben in Web Cryptocurrency Mining"
+			},
+			"section_overview": {
+				"heading_press": "Druk op dekking",
+				"subheading_press": "Ontdek wat anderen over JSECoin zeggen",
+				"alt_symantecLogo": "Symantec-logo",
+				"strapline_1": "een echt en mogelijk beter alternatief bieden voor traditionele methoden voor het genereren van inkomsten via het web",
+				"alt_BBCLogo": "BBC-logo",
+				"strapline_2": "Veel sites gebruiken dit en anderen, zoals JSE Coin, op legitieme wijze om wat geld te genereren uit hun gestage stroom van bezoekers.",
+				"alt_BitcoinLogo": "Bitcoin.com-logo",
+				"strapline_3": "Adguard schatte dat elke website die een script voor cryptomining exploiteerde, ongeveer $ 43.000 verdiende binnen de onderzochte periode van drie weken.",
+				"alt_pressMedia": "Druk op en media"
+			},
+			"section_media": {
+				"alt_mediaPackDownload": "Media Pack downloaden",
+				"heading_media": "Media Pack-downloads",
+				"para_main1": "Voel je vrij om een ​​van de afbeeldingen, citaten of statistieken van deze site in je persartikel te gebruiken. We vragen alleen dat we niet worden geassocieerd met de verborgen achtergrond Monero-mijnplatforms. JSEcoin heeft nooit en zal nooit deelnemen aan verborgen mijnen op de achtergrondwebsite.",
+				"para_main2": "Het JSEcoin-project is gewijd aan het bouwen van nieuwe blockchain-technologieën op basis van het web en niet aan Bitcoin of Monero. Lees de documenten met veelgestelde vragen voor meer informatie.",
+				"para_main3": "Als u vragen heeft of als u contact wilt opnemen met een van de teamleden, kunt u dit doen",
+				"link_contactUs": "Neem contact met ons op",
+				"button_downloadMediaPack": "Media Pack downloaden"
+			}
+		},
+		"team": {
+			"meta": {
+				"title": "Het team",
+				"keywords": "cryptocurrency team, blockchain-ontwikkelaars, uk crypto-project",
+				"description": "Maak kennis met het JSEcoin-team en ontdek meer over onze oprichters die de technologie hebben gemaakt en de cryptocurrency hebben gebouwd."
+			},
+			"banner": {
+				"linkText": "Ontmoet het team",
+				"heading": "Maak kennis met het JSE-team",
+				"subheading": "Doorgaan met blockchain <br /> mijnbouw en cryptocurrency handel"
+			},
+			"section_overview": {
+				"heading_team": "JSecoin Team",
+				"subheading_team": "Gevormd op 6 augustus 2017",
+				"para_main1": "Het JSE-team is gedreven en toegewijd aan het verbeteren en vereenvoudigen van het proces waardoor mensen kunnen mijnen en transacties uitvoeren met cryptocurrencies door het gebruik van de browser voor alle apparaten.",
+				"para_main2": "&quot;We leven niet langer in de jaren 90 en het zou niet zo moeilijk moeten zijn als het vandaag is om goederen te kopen en te verhandelen met een cryptocurrency.&quot;",
+				"alt_team": "Het team"
+			},
+			"members": {
+				"JB": {
+					"title": "oprichter en directeur",
+					"para_main1": "James heeft een geschiedenis van het opbouwen van succesvolle digitale marketingbedrijven. Met 8 jaar ervaring in de ad-tech industrie.",
+					"para_main2": "Ervaring met het ontwikkelen van grootschalige applicaties en websites. Schreef zijn eerste programma op een Commodore64 en is sindsdien verslaafd.",
+					"para_main3": "Verantwoordelijk voor het begeleiden van bedrijfsontwikkeling en marketingcampagnes."
+				},
+				"JS": {
+					"title": "Medeoprichter en CTO",
+					"para_main1": "Met meer dan 15 jaar IT-ervaring presenteert John regelmatig presentaties over Full Stack-ontwikkeling, innovatie, gebruikerservaring en cloud-architectuur bij belangrijke Global IT Tech- en App-conferenties.",
+					"para_main2": "Zijn kernfocus bij JSE is het leiden en adviseren van het ontwikkelingsteam en nauw samenwerken met de Design- en UX-teams bij het verbeteren van de User Journey en Experience voor cryptocurrency met het nieuwe JSE-platform."
+				},
+				"DM": {
+					"title": "Medeoprichter en COO",
+					"para_main1": "Dave leidt onze technische ondersteuning en sociale kanalen waar hij technische kennis, geduld en hulp biedt aan onze gebruikers.",
+					"para_main2": "Je zult hem actief zien op de forums en sociale sites, door JSECoin te helpen, te begeleiden en actief te promoten."
+				},
+				"TH": {
+					"title": "Medeoprichter en CFO",
+					"para_main1_Line1": "MAAT geaccrediteerde accountant. 20 jaar ervaring in financieel management en accountancy.",
+					"para_main1_Line2": "Eerder de financiële afdeling geleid bij een mid-cap IT-oplossingenprovider.",
+					"para_main2": "Verantwoordelijk voor het invullen van de maandelijkse managementaccounts die op de website worden gepubliceerd en kasvoorspellingen en prognoses uitvoeren.",
+					"para_main3": "Tracey biedt het team een ​​schat aan financiële ervaring."
+				},
+				"AG": {
+					"title": "Enterprise Blockchain",
+					"para_main1": "Afkomstig uit de duinen van Caïro; Amr is een echte technologie Nekkyō-sha!",
+					"para_main2": "Met een bachelorgraad in wiskunde en computerwetenschappen en is momenteel bezig met het volgen van zijn master.",
+					"para_main3": "Amr is gepassioneerd door technologie en is altijd op zoek naar de grenzen van de technologieën die hij gebruikt.",
+					"para_main4": "Zijn focus bij JSE ligt op Ethereum, solidity en web3-integraties met een toekomstperspectief op het EOS-platform."
+				},
+				"AW": {
+					"title": "Enterprise Architect",
+					"para_main1": "Geboren uit de bevroren toendra in centraal Alaska met alleen een groene en zwarte monochrome 8086 om te coderen.",
+					"para_main2": "Andy woont nu in een iets warmer Minnesota met modernere hardware.",
+					"para_main3": "Een IT Enterprise Architect met meer dan 15 jaar ervaring Andy heeft oplossingen geïmplementeerd voor bedrijven over het hele spectrum.",
+					"para_main4": "Zijn focus bij JSE is om te helpen bouwen aan een robuuste backend-architectuur en datamodellen die in staat zullen zijn om te schalen voor de toekomst."
+				},
+				"AS": {
+					"title": "Internationale HR",
+					"para_main1": "Een hoog presterende en internationaal ervaren HR-professional, getalenteerd in het benutten van waarde uit menselijk kapitaal; het behalen van een Project Management Masters Degree, een MBA en een Bachelors of Business Administration met specialisatie in Internationale Handel aan Universiteiten in heel Europa. Meertalig, vloeiend in vier talen met werkervaring van nog eens drie talen, heeft 7 jaar ervaring met HR-management en Europees arbeidsrecht.",
+					"para_main2": "Geniet van ontspannen in de straten van Boekarest met een warme bloedcocktail."
+				},
+				"OB": {
+					"title": "Marketing Adviseur",
+					"para_main1": "6 jaar ervaring in online adverteren en affiliate marketing. Ran een full-service digitaal marketingbureau voor 4 jaar. 6 jaar ervaring met het ontwikkelen van volledige stacks. Professioneel beeldbewerking en digitale media bewerken. Onlangs teruggekeerd van een reis om de wereld om te helpen met het JSEcoin-project.",
+					"para_main2": "Oliver is verantwoordelijk voor het beheer van de aangesloten accounts en helpt bij front-end ontwikkelingen en mediaproductie voor accounts voor sociale netwerken."
+				},
+				"ASa": {
+					"title": "Technologie Architect",
+					"subTitle": "TOGAF 9 Enterprise Architect",
+					"para_main1": "Een technologie-architect met een passie voor het uitzoeken hoe technologie een bedrijf kan helpen bloeien en slagen. Zijn belangrijkste taken waren van een vertrouwde adviseur die klanten hielp om hun architecturen te vinden en hen te helpen met het succesvol inzetten van projecten.",
+					"para_main2": "Buiten het werk houdt Angelo van 'sleutelen' aan gadgets en technologie, één huisdierenproject maakt een IOT smart home aan met apparaten zoals Arduino / ESP8266, servers zoals HomeAssistant en protocollen zoals MQTT met een verscheidenheid aan sensoren."
+				}
+			}
+		},
+		"developerOverview": {
+			"meta": {
+				"title": "Ontwikkelaarsopties",
+				"keywords": "Blockchain-ontwikkeling, build-app voor blockchain, cryptocurrency-ontwikkelaar",
+				"description": "Ontwikkelaars kunnen meer leren over het werken met het JSEcoin-platform en de API. Lees meer over het netwerk, hoe het werkt en hoe u toepassingen van derden kunt integreren."
+			},
+			"banner": {
+				"linkText": "ontwikkelaars",
+				"heading": "JSE Developer Experience",
+				"subheading": "Het uitbreiden van de gemeenschap en onze toewijding"
+			},
+			"heading_developer": "Onze toewijding",
+			"subheading_developer": "Innovatie stimuleren met blockchain en online cryptocurrency",
+			"para_main1": "De uitgeverscode is slechts het topje van de ijsberg bij het nadenken over wat mogelijk is met JSEcoin. We hebben een volledig uitgeruste REST API met documentatie beschikbaar bij:",
+			"para_main2": "Ontwikkelaars kunnen gebruikmaken van balanscontroles, site- en subid tracking, server-side transacties, import / export-functionaliteit en nog veel meer.",
+			"para_main3": "Onze technici zijn beschikbaar om uw projecten te ondersteunen en we hebben actieve ondersteuningsgemeenschappen op het forum, Discord en Telegram, waar u vragen kunt stellen en hulp kunt krijgen van ons team."
+		},
+		"investorOverview": {
+			"meta": {
+				"title": "Beleggersopties",
+				"keywords": "Browser mijnbouw ico, web blockchain ico, jsecoin beleggersinformatie",
+				"description": "Informatie voor potentiële investeerders en handelaren in cryptocurrency. Vind alle informatie die u nodig heeft in onze beleggersportal."
+			},
+			"banner": {
+				"linkText": "investeerders",
+				"heading": "investeerders",
+				"subheading": "Wat, waarom, wanneer ..."
+			},
+			"test": "test",
+			"heading_what": "Wat is JSECoin",
+			"subheading_what": "Cryptocurrency gericht op internet",
+			"para_what1": "Wij geloven dat u zult investeren in de toekomst van het genereren van inkomsten op websites. Fondsen die bij ICO zijn opgehaald, zullen voornamelijk worden gebruikt voor vergoedingen voor uitwisselingslijsten en ...",
+			"heading_why": "Waarom beleggen?",
+			"subheading_why": "Toegewijd aan het veranderen van de manier waarop sites worden gemititiseerd",
+			"para_why1": "Dit is een nieuw concept dat is bedoeld om het huidige model uit te dagen voor het genereren van inkomsten via de website. Nu de huidige online advertentie-industrie wereldwijd meer dan $ 200 miljard waard is, zou dit een goed moment zijn om te investeren in een platform dat de huidige status quo zou kunnen uitdagen. De vraag naar JSEcoin zal worden gecreëerd door de introductie van merchant tools die het gebruik van JSEcoin als een methode voor digitale betalingen mogelijk maken. We bouwen een grote community van platformminers om ervoor te zorgen dat er een grote groep gebruikers is met JSEcoin-tokens die kunnen worden besteed.",
+			"para_why2": "De huidige trend voor een ICO is dat een bedrijf dit doet op basis van een idee en een whitepaper. Dit houdt duidelijk een enorm risico in voor beleggers dat er nooit een product op de markt zal komen. Hoewel we op geen enkele manier investeerders garanties kunnen geven voor een rendement (we zouden iedereen die dit wel doet) zullen vragen, proberen we een groot platform op te bouwen en een solide gebruikersbasis aan te boren om dit risico te verkleinen en van JSEcoin een meer rendabele investeringsmogelijkheid te maken.",
+			"heading_when": "Waarom beleggen?",
+			"subheading_when": "Toegewijd aan het veranderen van de manier waarop sites worden gemititiseerd",
+			"para_when1": "We plannen een ICO voor later dit jaar. Zoals hierboven vermeld, willen we ervoor zorgen dat we een geweldig werkproduct hebben dat is goedgekeurd door een solide gebruikersbestand. Exacte datums worden bekendgemaakt zodra het grootste deel van de belangrijkste ontwikkeling zoals vermeld op onze tijdlijn is voltooid."
+		},
+		"webmastersOverview": {
+			"meta": {
+				"title": "Webmasteroverzicht",
+				"keywords": "Mijn cryptocurrency op website, wordpress cryptocurrency mining, monero alternative, browser mining, web mining cryptocurrency",
+				"description": "Browser-gebaseerde cryptocurrency-mining op uw website, leer hoe u de JSEcoin-code op uw site en mijn cryptocurrency in een browser installeert."
+			},
+			"banner": {
+				"linkText": "Webmasters",
+				"heading": "Webmasters",
+				"subheading": "Overstappen van advertenties naar mijnbouw"
+			},
+			"heading_why": "Waarom schakelen",
+			"subheading_why": "Het verleden veranderen voor een betere, betere toekomst",
+			"para_main1": "Er zal nooit een beter moment zijn om JSE-tokens te gaan gebruiken op uw websites. De concurrentie neemt toe dus bouw een stapel JSE voordat het te laat is. Kleine, middelgrote en grote websites kunnen allemaal profiteren van onze cryptocurrency-mijnmodule. Dit is gewoon een JavaScript-fragment dat u kopieert en op uw site plakt en dat op dezelfde manier werkt als advertentie- en analysecodes.",
+			"para_main2": "WordPress plug-in is beschikbaar om het eenvoudig te installeren op uw blog of op wordpress gebaseerde website.",
+			"para_main3": "Cryptografie kan worden gebruikt als een manier voor website-eigenaren om inkomsten te genereren met hun inhoud als alternatief of naast het weergeven van advertenties. De laadtijden en gebruikerservaring van de pagina worden niet beïnvloed door de kleine hoeveelheid bronnen die wordt verbruikt door de JSE-miningcode."
+		},
+		"privacyPolicy": {
+			"meta": {
+				"title": "Privacybeleid",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "privacybeleid",
+				"heading": "Privacybeleid",
+				"subheading": ""
+			},
+			"heading_privacy": "Privacybeleid",
+			"para_main1": "Het JSEcoin-codefragment voert wiskundige cryptografiehashing uit terwijl u op een website surft. Dit stelt ons in staat om webmasters te belonen voor het produceren van de inhoud die u hebt aangevraagd.",
+			"para_main2": "Als u zich wilt afmelden, kunt u dit doen via de volgende link:",
+			"para_main3": "Je kunt je afmelden voor crypto-mining van JSE over het hele netwerk door hier te klikken",
+			"para_main4": "Klik hier om de crypto-mining van JSE over het hele netwerk opnieuw te starten",
+			"para_main5": "De code die in een bezoekersbrowser wordt uitgevoerd, is niet op dezelfde manier agressief als GPU- en ASIC Bitcoin-mijnbouwprogramma's. Extra CPU-gebruik en stroomverbruik worden tot een minimum beperkt.",
+			"subHeading_dataPrivacy": "Data Privacy",
+			"para_main6": "We verzamelen analysegegevens op onze site.",
+			"para_main7": "De gegevens die we verzamelen zijn:",
+			"list_collectedData1": "pubid - publisher id voor wie het verkeer heeft verzonden",
+			"list_collectedData2": "siteid - site id is de domeinnaam van de site",
+			"list_collectedData3": "userip - ip-adres van de gebruiker",
+			"list_collectedData4": "useragent - dit is de browser useragent string die de browser identificeert, bijv. Chrome / Firefox / Safari",
+			"list_collectedData5": "os - besturingssysteem",
+			"list_collectedData6": "referrer - dit is de verwijzerstring die de url bevat van de site die verkeer verzendt.",
+			"para_main8": "We gebruiken ook Google Analytics, zie hier hun voorwaarden:",
+			"para_main9": "We slaan ook cookies op en gebruiken de localStorage API.",
+			"para_main10_info": "Deze lijst is volledig en actueel op 24 augustus 2017, maar deze kan in de toekomst veranderen"
+		},
+		"kycPolicy": {
+			"meta": {
+				"title": "KYC-beleid",
+				"description": "Ken uw klantenbeleid voor JSEcoin en hoe wij werken tegen witwassen van geld in cryptocurrency"
+			},
+			"banner": {
+				"linkText": "kycPolicy",
+				"heading": "KYC-beleid",
+				"subheading": ""
+			},
+			"heading_kyc": "KEN UW KLANT (KYC) BELEID",
+			"para_main1": "Tussen £ 800 miljard en $ 2 triljoen USD wordt elk jaar witgewassen, wat overeenkomt met 2-5% van het wereldwijde BBP (VN-bureau voor drugs en criminaliteit 2017)",
+			"para_main2": "Ongeveer $ 1,5 biljoen wordt jaarlijks betaald door bedrijven en particulieren. (Wereldbank 2017)",
+			"para_main3": "Bij JSEcoin willen we niet in verband worden gebracht met het witwassen van geld en nemen we actieve maatregelen om te voldoen aan de regels van de overheid die uw klantenreglement kennen.",
+			"para_main4": "Dit KYC-beleid is van toepassing op alle klantrelaties met transacties met een waarde van meer dan $ 10.000 USD.",
+			"para_main5": "Voor beleggers die meer dan $ 10.000 USD willen overboeken, is het noodzakelijk om uw account te verifiëren door ons een scan van een officieel document met een foto, identiteit, woonadres en geboortedatum te sturen. Gegevens worden minimaal vijf jaar vanaf de transactiedatum bewaard.",
+			"para_main6": "KYC is een continu, op risico's gebaseerd proces om relevante informatie over onze klanten en hun zakelijke en financiële activiteiten te verzamelen om:",
+			"list_collectedData1": "Vergemakkelijk de tijdige identificatie van klantactiviteiten die niet consistent is met bestaande feiten en informatie. JSEcoin is vastbesloten om het gebruik van haar producten en diensten voor illegale doeleinden te ontmoedigen. Het KYC-beleid en de ondersteunende procedures zijn een belangrijk onderdeel van het programma om witwassen van geld, terrorismefinanciering, fraude en identiteitsdiefstal te voorkomen en op te sporen.",
+			"list_collectedData2": "Voldoen aan onze wettelijke en regelgevende verplichting",
+			"subHeading_customerIdentity": "Klantidentiteit bevestigen",
+			"para_main7": "Bij het aangaan van een relatie met een klant zullen we de identiteit van een persoon of het bestaan ​​van een entiteit binnen acceptabele tijdframes bevestigen met behulp van acceptabele identificatiemethoden. Wanneer een product of dienst wordt opgericht, wordt er gevraagd of het door of ten behoeve van een derde partij wordt gebruikt. Waar nodig zullen voorafgaand aan het vaststellen van de relatie gegevens over de derde partij en hun relatie met de klant worden verkregen.",
+			"subHeading_sharingInfo": "Klantinformatie delen",
+			"para_main8": "We zijn verplicht verdachte transacties die mogelijk verband kunnen houden met witwasactiviteiten aan de toezichthoudende autoriteiten te melden.",
+			"subHeading_verifyingInfo": "Klantinformatie verifiëren",
+			"para_main9": "We zullen redelijke en passende maatregelen nemen om de belangrijkste informatie die door potentiële klanten wordt verstrekt te verifiëren aan betrouwbare onafhankelijke bronnen. We zullen aanvullende verificatieactiviteiten uitvoeren voor relaties die een hoger risiconiveau vertegenwoordigen. We zullen weigeren om relaties aan te gaan of voort te zetten of transacties te verrichten met een persoon of entiteit die aandringt op anonimiteit of valse, inconsistente of tegenstrijdige informatie verschaft wanneer de inconsistentie of het conflict niet kan worden opgelost na een redelijk onderzoek.",
+			"subHeading_monitoringInfo": "Klantgegevens bewaken en bijwerken",
+			"para_main10": "We zullen de klantactiviteit volgen om transacties te identificeren en te rapporteren die mogelijk duiden op illegale of ongepaste activiteiten. We zullen informatie over de klant en zijn zakelijke en financiële activiteiten zo accuraat, volledig en up-to-date houden als nodig is om het doel waarvoor het werd verzameld te vervullen. Wanneer veranderingen in het financiële gedrag van een klant duidelijk worden, zullen we stappen ondernemen om de onderliggende redenen te bepalen."
+		},
+		"terms": {
+			"meta": {
+				"title": "Voorwaarden",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "termen",
+				"heading": "Voorwaarden",
+				"subheading": ""
+			},
+			"heading_terms": "Voorwaarden",
+			"subHeading_definitions": "Definities",
+			"list_definitions1": "De &quot;Gebruiker&quot; betekent de accountaanvrager of persoon die het JSEcoin-platform gebruikt.",
+			"list_definitions2": "De &quot;Publisher&quot; betekent accountaanvrager of persoon die verantwoordelijk is voor de distributie van de JSEcoin webmining javascript-code.",
+			"list_definitions3": "De &quot;Advertentie&quot; Een elektronische vorm van reclame die wordt weergegeven op de website van de uitgever.",
+			"list_definitions4": "De &quot;Website&quot; is het eigendom van de uitgever en wordt gebruikt om advertentieruimte voor adverteerders te bieden.",
+			"list_definitions5": "&quot;JSEcoin&quot; is het netwerk, beheerd door JSEcoin Limited en treedt op als aanbieder van cryptocurrency-technologie.",
+			"list_definitions6": "&quot;Verkeer&quot; is het aanbod van gebruikers van een website van een uitgever aan het JSEcoin-platform.",
+			"list_definitions7": "&quot;Miner&quot; is iemand die het hashing-algoritme uitvoert om het JSEcoin-netwerk te beveiligen.",
+			"subHeading_conditions": "Voorwaarden",
+			"list_conditions1": "Deze &quot;Algemene voorwaarden&quot; zijn niet van invloed op uw wettelijke rechten als consument.",
+			"list_conditions2": "Alle contracten en invoegopdrachten door JSEcoin worden geacht deze algemene voorwaarden te bevatten die prevaleren boven elk ander document of andere mededeling van de adverteerder of uitgever.",
+			"list_conditions3": "Als er wijzigingen in deze algemene voorwaarden zijn vereist, verdient het de voorkeur dat deze schriftelijk worden bevestigd.",
+			"list_conditions4": "JSEcoin Limited, JSEcoin-medewerkers, JSEcoin-gelieerde ondernemingen zijn geen financieel adviseurs en geen informatie op deze site of websites van derden. Correspondentie dient onder geen enkele voorwaarde als financieel advies te worden beschouwd. Investeerders zijn verantwoordelijk voor het uitvoeren van hun eigen due diligence en onderzoek.",
+			"list_conditions5": "Deze voorwaarden en eventuele geschillen worden beheerst door de wetten van het Verenigd Koninkrijk.",
+			"subHeading_liquidty": "Liquidty",
+			"list_liquidty1": "JSEcoin is niet verantwoordelijk voor het inwisselen van munten of munten in fiat-valuta's zoals USD / EUR / GBP.",
+			"list_liquidty2": "JSEcoin kan niet helpen bij het oplossen van problemen wanneer munten en tokens zijn verkocht via derde partijen en uitwisselingen.",
+			"list_liquidty3": "JSEcoin aanvaardt geen verantwoordelijkheid voor het betalen van inkomstenbelasting, bankprovisies of valutakosten namens de uitgever. Neem contact op met uw lokale belastingdienst voor verder advies over toepasselijke inkomstenbelastingregelingen.",
+			"subHeading_deliveryOfPrivacyNotice": "Levering van privacykennisgeving",
+			"list_deliveryOfPrivacyNotice1": "Hoewel alles in het werk wordt gesteld om een ​​betrouwbare en consistente levering van de privacyverklaring en advertenties te garanderen, is JSEcoin niet aansprakelijk voor verliezen, kosten, schade of uitgaven die zijn opgelopen door de uitgever of enige andere persoon of onderneming die rechtstreeks of onrechtstreeks uit een falen van het advertentienetwerk.",
+			"subHeading_publicity": "Publiciteit",
+			"list_publicity1": "JSEcoin mag de namen, handelsmerken en / of correspondentie van uitgevers, adverteerders of derden zonder voorafgaande schriftelijke toestemming gebruiken.",
+			"subHeading_statisticsDiscrepancies": "Statistieken en discrepanties",
+			"list_statisticsDiscrepancies1": "Alle verkeersopbrengsten worden berekend op basis van JSEcoin-statistieken. Dit is de enige basis voor het berekenen van inkomsten voor uitgevers.",
+			"list_statisticsDiscrepancies2": "JSEcoin-statistieken zijn mogelijk niet 100% nauwkeurig en dit wordt geaccepteerd door zowel de uitgevers als mijnwerkers.",
+			"list_statisticsDiscrepancies3": "In het geval van een mislukking om statistieken van het netwerk op te nemen. JSEcoin schat inkomsten en kosten op basis van eerdere en historische statistieken. Onze beslissing met betrekking tot het vaststellen van deze tarieven is definitief en niet verhandelbaar.",
+			"subHeading_ownershipRisk": "Eigendom en risico",
+			"list_ownershipRisk1": "Elk risico in mijnbouw en reclame gaat direct over op de adverteerder bij aflevering van de advertentie van de uitgever.",
+			"list_ownershipRisk2": "Er kunnen geen garanties worden gegeven met betrekking tot de verkeerskwaliteit en JSEcoin kan niet aansprakelijk worden gesteld voor eventuele verliezen als gevolg van verkeer van slechte kwaliteit.",
+			"subHeading_cancellationRefunds": "Annulering en restituties",
+			"list_cancellationRefunds1": "Een adverteerder kan een campagne op elk gewenst moment annuleren. Het advertentienetwerk biedt real-time controle over deze functie, maar als voorzorgsmaatregel wordt het aanbevolen om waar mogelijk 24 uur vooraf schriftelijk op te geven.",
+			"list_cancellationRefunds2": "Als u een adverteerder bent, hebt u het recht om, naast uw andere rechten, uw contract te annuleren en een terugbetaling te ontvangen. U moet contact met ons opnemen en ons schriftelijk laten weten dat u uw account wilt annuleren. Uw login zal dan worden verwijderd en uw resterende saldo zal aan u worden terugbetaald. Eventuele bank / paypal-kosten worden aan de adverteerder in rekening gebracht.",
+			"list_cancellationRefunds3": "Als u een uitgever bent, hebt u het recht om, naast uw andere rechten, uw contract op elk gewenst moment te annuleren. U moet contact met ons opnemen en ons schriftelijk laten weten dat u uw account wilt annuleren. Uw login wordt dan verwijderd en uw resterende saldo wordt alleen uitbetaald als het voldoet aan de minimumdrempels zoals uiteengezet in sectie",
+			"subHeading_forceMajeure": "Overmacht",
+			"list_forceMajeure1": "In het geval dat JSEcoin verhinderd wordt om zijn verplichtingen uit hoofde van een koopovereenkomst na te komen als gevolg van een oorzaak buiten haar schuld, zoals, maar niet beperkt tot, daden van God, oorlog, stakingen, uitsluitingen, hardwarestoringen, inbreuken op de beveiliging, Overstroming en falen van derden om advertenties te leveren, JSEcoin zal worden ontslagen van zijn verplichtingen en verplichtingen uit hoofde van een dergelijk contract voor verkoop zolang deze uitvoering wordt voorkomen.",
+			"subHeading_complaints": "klachten",
+			"list_complaints1": "Als u een klacht heeft over onze service of over goederen of diensten die u bij JSEcoin koopt, neemt u dan onmiddellijk contact met ons op. U zult zo snel mogelijk contact met ons opnemen en proberen binnen 5 werkdagen een oplossing te bieden.",
+			"list_complaints2": "Alle klachten worden op een eerlijke en vertrouwelijke manier afgehandeld.",
+			"subHeading_liability": "Aansprakelijkheid",
+			"list_liability1": "In geen geval kan JSEcoin of JSEcoin Limited aansprakelijk worden gesteld voor eventuele verliezen geleden door de gebruikers, mijnwerkers of uitgevers.",
+			"list_liability2": "Onze totale aansprakelijkheid zal nooit meer zijn dan $ 100 USD per evenement waarbij een reeks evenementen of campagnes als één evenement wordt beschouwd.",
+			"list_liability3": "Wij zijn niet aansprakelijk voor verliezen veroorzaakt door derden, met inbegrip van die welke gebruikmaken van het advertentienetwerk.",
+			"subHeading_alterationsTermsAndConditions": "Wijzigingen in de algemene voorwaarden",
+			"list_alterationsTermsAndConditions1": "JSEcoin is gerechtigd om deze voorwaarden en bepalingen naar eigen goeddunken om welke reden dan ook te allen tijde te wijzigen.",
+			"list_alterationsTermsAndConditions2": "Een up-to-date exemplaar van de huidige bepalingen en voorwaarden zal worden verstrekt op de volgende URL:",
+			"list_alterationsTermsAndConditions3": "Als een mijnwerker of uitgever niet instemt met een wijziging, hebben zij het recht om de overeenkomst schriftelijk te beëindigen binnen 14 dagen nadat de wijziging is aangebracht.",
+			"subHeading_budgetsCaptitalisationHashingDifficulty": "Budgetten, kapitalisatie en hash-problemen",
+			"list_budgetsCaptitalisationHashingDifficulty1": "Hoewel alles in het werk wordt gesteld om te voldoen aan de vereisten van mijnwerkers met betrekking tot budgetten, behouden we ons het recht voor om de problemen met mijnbeloningen en hashing op elk gewenst moment zonder kennisgeving te wijzigen.",
+			"list_budgetsCaptitalisationHashingDifficulty2": "JSEcoin behoudt zich het recht voor nieuwe munten te introduceren en munten te verdelen wanneer zij dit nodig achten. Alle transacties worden openbaar gemaakt.",
+			"subHeading_damageSystems": "Schade aan systemen",
+			"list_damageSystems1": "JSEcoin is niet aansprakelijk voor eventuele verliezen geleden door schade aan hardware of softwaresystemen veroorzaakt door mijnbouw.",
+			"subHeading_websiteStandards": "Website-standaarden",
+			"list_websiteStandards1": "JSEcoin hanteert een nultolerantiebeleid voor de volgende websites en advertentie-inhoud:",
+			"subList_tolerance1": "Kinderpornografie",
+			"subList_tolerance2": "Seksueel gedrag met dieren",
+			"subList_tolerance3": "Gewelddadige of beledigende inhoud",
+			"subList_tolerance4": "Racistische, seksistische of discriminerende inhoud",
+			"subList_tolerance5": "Inhoud of afbeeldingen van een persoon zonder zijn / haar toestemming",
+			"subList_tolerance6": "Criminele misdrijven",
+			"subList_tolerance7": "Misleidend beleggingsadvies",
+			"subList_tolerance8": "Spyware, malware, adware en illegale software",
+			"subList_tolerance9": "Piraat-inhoud / auteursrechtinbreuken",
+			"subList_tolerance10": "Illegale activiteiten zoals Spam en Phishing",
+			"subList_tolerance11": "Alle scatalogische activiteiten",
+			"subList_tolerance12": "Ongeautoriseerd gebruik van handelsmerken van derden",
+			"subList_tolerance13": "Promotie van medicijnen of aanverwante parafernalia",
+			"subList_tolerance14": "Inhoud die is gericht op kinderen van 18 jaar of jonger",
+			"subList_tolerance15": "Gokken of online weddenschappen die gericht zijn op het Amerikaanse publiek",
+			"subList_tolerance16": "Betaalde-klik-advertenties (PTC)",
+			"subList_tolerance17": "Generators voor automatisch surfen",
+			"subList_tolerance18": "Pop unders of iframing inhoud.",
+			"list_websiteStandards2": "De privacyverklaring met opt-outoptie moet aan gebruikers worden getoond. Er moet niets worden gedaan om deze melding te verbergen of te restylen.",
+			"list_websiteStandards3": "Site-ID's moeten overeenkomen met de domeinnaam waarop het script wordt uitgevoerd.",
+			"list_websiteStandards4": "Elke inbreuk op sectie 15.1 kan leiden tot onmiddellijke beëindiging van uw uitgeversaccount.",
+			"subHeading_applications": "toepassingen",
+			"list_applications1": "Aanvragen voor accounts op het netwerk worden goedgekeurd of geweigerd naar goeddunken van JSEcoin-medewerkers om welke reden dan ook die wij geschikt achten.",
+			"subHeading_misuse": "Misbruik",
+			"list_misuse1": "Elk misbruik van het systeem zal resulteren in onmiddellijke opschorting of sluiting van het gebruikersaccount.",
+			"list_misuse2": "Misbruik zal uitsluitend door JSEcoin-medewerkers worden beoordeeld en kan gebaseerd zijn op elke factor die wij geschikt achten.",
+			"list_misuse3": "Uitgevers die elke methode gebruiken om het aantal geleverde vertoningen kunstmatig te vergroten, hebben hun accounts onmiddellijk gesloten. Alle verkeer moet echte gebruikers zijn.",
+			"list_misuse4": "Gedeelde code voor uitgevers zoals de javascript-tag mag op geen enkele manier worden gewijzigd of hergebruikt.",
+			"list_misuse5": "Het aanmaken van meerdere accounts op het systeem zonder voorafgaande toestemming wordt beschouwd als misbruik.",
+			"list_misuse6": "Uitgeverscode mag alleen worden geplaatst op domeinen die eigendom zijn van de webmaster of met schriftelijke toestemming van de eigenaar van de website.",
+			"list_misuse7": "De SiteID die wordt gebruikt in de uitgeverscode, moet overeenkomen met het domein dat eigendom is van de webmaster.",
+			"list_misuse8": "Het gebruik van een IP-veranderende service zoals VPN, proxy, TOR of een ander systeem dat uw IP-adres verbergt of wijzigt, is verboden. We controleren gebruikers IP-adressen tegen lijsten van derden om overtreders te identificeren.",
+			"subHeading_closureAccount": "Sluiting van account",
+			"list_closureAccount1": "Bij het sluiten van de rekening heeft de uitgever geen recht op een vergoeding voor het resterende bedrag op de rekening.",
+			"subHeading_useCookies": "Gebruik van cookies",
+			"list_useCookies1": "JSEcoin gebruikt cookies en localStorage om informatie op te slaan op een computer van een gebruiker. Deze informatie wordt vervolgens gebruikt voor targeting door adverteerders, waaronder retargeting-campagnes. Een retargeting-campagne is wanneer een cookie wordt geplaatst, soms door een derde partij, op de computer van de gebruiker en vervolgens worden advertenties getoond aan gebruikers met die specifieke cookie. Elke uitgever is verantwoordelijk voor het bijwerken van de algemene voorwaarden, het privacybeleid en alle andere wettelijke documenten die vereist zijn voor het gebruik van cookies en retargeting in hun lokale regio.",
+			"subHeading_intellectualProperty": "Intellectueel eigendom",
+			"list_intellectualProperty1": "De medeoprichters van JSEcoin behouden alle rechten, titels en belangen in deze website, haar producten en diensten, inclusief alle auteursrechten, patenten, handelsgeheimen, handelsmerken, handelsnamen, logo's, slogans, afbeeldingen, scripts, code, video's, tekst, software, bestanden, inhoud, informatie en andere intellectuele eigendomsrechten.",
+			"subHeading_indemnification": "schadeloosstelling",
+			"list_indemnification1": "Voor zover toegestaan ​​door de toepasselijke wetgeving, zult u ons en onze respectieve vroegere, huidige en toekomstige werknemers, functionarissen, directeuren, aannemers, consultants, aandeelhouders, leveranciers, verkopers, dienstverleners, moederbedrijven en dochterondernemingen schadeloosstellen, verdedigen en behouden. , gelieerde ondernemingen, agenten, vertegenwoordigers, voorgangers, opvolgers en rechtverkrijgenden van en tegen alle vorderingen, schadevergoedingen, aansprakelijkheden, verliezen, kosten en uitgaven.",
+			"list_indemnification2": "We behouden ons het recht voor om de volledige zeggenschap uit te oefenen over de verdediging, op uw kosten, van elke aanspraak op vrijwaring op grond van deze voorwaarden.",
+			"subHeading_referrals": "Verwijzingen",
+			"list_referrals1": "Alle verwijzingsverkeer moet echte gebruikers zijn, valse accounts en botverkeer leiden tot opschorten van accounts.",
+			"list_referrals2": "JSEcoin Gebruikers met dubbele IP-adressen en andere factoren die op dubbele accounts duiden, worden niet betaald. Dit omvat twee gebruikers die zich aanmelden bij hetzelfde kantoor / thuis.",
+			"list_referrals3": "JSEcoin-personeel behoudt zich het recht voor om accounts op te schorten waarvan wij denken dat ze het systeem hebben misbruikt. Onze beslissing is definitief en is niet vatbaar voor juridische procedures.",
+			"subHeading_taxation": "belasting",
+			"list_taxation1": "Gebruikers en uitgevers zijn als enige verantwoordelijk voor de openbaarmaking en belasting van alle digitale activa.",
+			"list_taxation2": "JSEcoin Limited kan niet verantwoordelijk worden gehouden voor de fiscale gevolgen van overdracht of bezit van digitale eigendommen in uw eigen rechtsgebied.",
+			"subHeading_misc": "Misc",
+			"list_misc1": "Alle contracten worden in alle opzichten geïnterpreteerd en functioneren als een Engelse overeenkomst en in overeenstemming met de Engelse wetgeving.",
+			"list_misc2": "JSEcoin kan niet aansprakelijk worden gesteld voor inbreuken op richtlijnen of wetten buiten het Verenigd Koninkrijk.",
+			"list_misc3": "In het geval van een beveiligingsinbreuk, gegevensverlies, ontwikkelingsprobleem of om een ​​andere reden die het JSEcoin-team geschikt acht, behouden wij ons het recht voor om de blockchain te resetten naar het genesisblok of een eerdere back-up. Waar mogelijk zullen we rekeningsaldi overdragen, maar de gebruiker accepteert het risico dat het nodig kan zijn om de blockchain te resetten of terug te draaien, wat kan leiden tot verlies van fondsen of transactiegegevens.",
+			"list_misc4": "Als een deel van deze algemene voorwaarden dat niet fundamenteel is, onwettig of niet-afdwingbaar wordt bevonden, heeft een dergelijke bevinding geen invloed op de geldigheid of afdwingbaarheid van de rest van deze algemene voorwaarden."
+		},
+		"bugBounty": {
+			"meta": {
+				"title": "Bug Bounty",
+				"keywords": "Cryptocurrency bug bounty, blockchain bug bounty",
+				"description": "Heeft u een bug of beveiligingsrisico ontdekt? Ontdek hoe u JSE-tokens kunt verdienen voor het indienen van informatie die ons helpt onze platform- en netwerkbeveiliging te verbeteren."
+			},
+			"banner": {
+				"linkText": "bugBounty",
+				"heading": "Bug Bounty",
+				"subheading": "Zoek kwetsbaarheden op voor een koude JSE"
+			},
+			"section_overview": {
+				"alt_bugBounty": "Bug Bounty",
+				"heading_bugBounty": "JSE Security Bug Bounty",
+				"subheading_bugBounty": "Happy bug-jacht!",
+				"para_main1": "Als onderdeel van onze voortdurende toewijding om de veiligheid en betrouwbaarheid van het JSEcoin-systeem te waarborgen, bieden we een bugbounty-schema voor een verantwoorde openbaarmaking van beveiligingsrisico's.",
+				"para_main2": "Software beveiligingsonderzoekers zijn tegenwoordig in toenemende mate bezig met internetbedrijven om problemen en beveiligingskwetsbaarheden op te sporen. Programma's van HackerOne, Hacken, Google, Mozilla en anderen hebben bijgedragen aan het creëren van een sterke community voor het jagen op bugs.",
+				"para_main3": "Ons premieprogramma geeft deze onderzoekers een tipje van de sluier voor hun inspanningen en levert een aantal koude harde JSE's op.",
+				"para_main4": "Als je een kwetsbaarheid hebt gevonden,",
+				"link_submit": "stuur het hier in"
+			},
+			"section_leaderBoard": {
+				"heading_leaderBoard": "Scorebord",
+				"subheading_leaderBoard": "Wauw! Bedankt dat je ons hebt geholpen.",
+				"para_main1_line1": "Onze nieuwe site is net gelanceerd, dus haal die bugs en",
+				"link_smallTasks": "kleine taken in ...",
+				"para_main1_line2": "En als je wilt ... word binnenkort op ons up-en-coming leaderboard vermeld!"
+			},
+			"section_rules": {
+				"heading_rules": "Reglement",
+				"subheading_forYou": "Regels voor jou",
+				"list_forYou1": "Probeer geen toegang te krijgen tot de account of gegevens van een andere gebruiker.",
+				"list_forYou2": "Voer geen enkele aanval uit die de betrouwbaarheid / integriteit van onze services of gegevens zou kunnen schaden. DDoS / spamaanvallen zijn niet toegestaan.",
+				"list_forYou3": "Open een bug niet openbaar voordat deze is opgelost.",
+				"list_forYou4": "Test alleen op kwetsbaarheden op sites waarvan u weet dat ze door JSEcoin worden beheerd en die worden vermeld onder Open Bounties.",
+				"list_forYou5": "Gebruik geen scanners of geautomatiseerde hulpmiddelen om kwetsbaarheden te vinden. Ze zijn lawaaierig en we kunnen je IP-adres verbieden.",
+				"list_forYou6": "Probeer nooit niet-technische aanvallen zoals social engineering, phishing of fysieke aanvallen op onze werknemers, gebruikers of infrastructuur.",
+				"list_forYou7": "Bij twijfel,",
+				"link_contact": "Neem contact met ons op",
+				"subheading_forUs": "Regels voor ons",
+				"list_forUs1": "We zullen zo snel mogelijk reageren op uw inzending.",
+				"list_forUs2": "We houden je op de hoogte terwijl we werken om de bug die je hebt ingediend te repareren.",
+				"list_forUs3": "We zullen geen juridische stappen tegen u ondernemen als u volgens de regels speelt.",
+				"subheading_doesNotQualify": "Wat komt niet in aanmerking?",
+				"list_doesNotQualify1": "Bugs die geen invloed hebben op de nieuwste versie van moderne browsers (Chrome, Firefox, Edge, Safari).",
+				"subList_doesNotQualify1": "Bugs met betrekking tot browserextensies vallen ook buiten het bereik.",
+				"list_doesNotQualify2": "Bugs die buitengewoon onwaarschijnlijke gebruikersinteractie vereisen.",
+				"list_doesNotQualify3": "Onveilige cookie-instellingen voor niet-gevoelige cookies.",
+				"list_doesNotQualify4": "Openbaarmaking van openbare informatie en informatie die geen significant risico inhoudt.",
+				"list_doesNotQualify5": "Bugs die al zijn ingediend door een andere gebruiker, waarvan we ons al bewust zijn of die zijn geclassificeerd als ongeschikt.",
+				"list_doesNotQualify6": "Bugs in applicaties die niet onder Open Bounties staan, komen over het algemeen niet in aanmerking. Kijk naar individuele premies voor meer informatie over de reikwijdte.",
+				"list_doesNotQualify7": "Kwetsbaarheden die door JSE als een geaccepteerd risico worden beschouwd, komen niet in aanmerking voor een betaalde bounty of vermelding op de site.",
+				"list_doesNotQualify8": "Scripting of andere automatisering en brute forceren van bedoelde functionaliteit.",
+				"list_doesNotQualify9": "Als leidraad hebben we de Kwetsbaarheidsclassificaties vermeld die we gebruiken om inzendingen voor het premieprogramma te organiseren.",
+				"list_doesNotQualify9a": "Bugs gerelateerd aan e-mail spoofing of social engineering.",
+				"list_doesNotQualify10": "Bij twijfel,"
+			},
+			"section_openBounties": {
+				"heading_openBounties": "Open Bounties",
+				"subheading_openBounties": "Dit zijn onze actieve sites die deel uitmaken van ons bug bounty-programma",
+				"subheading_officialWebsite": "Officiële website",
+				"subheading_user_miningPlatform": "Gebruiker / Mijnbouwplatform",
+				"subheading_API": "API",
+				"subheading_blockchainExplorer": "Blockchain Explorer",
+				"subheading_developerPlatform": "Ontwikkelaarsplatform",
+				"subheading_loadServer": "Load Server"
+			},
+			"section_rewards": {
+				"heading_rewards": "beloningen",
+				"subheading_rewards": "Betaling in cryptocurrency",
+				"para_reward_line1": "Minimale beloning: 1000 JSE",
+				"para_reward_line2": "Maximale beloningen: 100000 JSE",
+				"para_reward_info": "Het precieze bedrag wordt bepaald door het team, afhankelijk van de ernst van het probleem.",
+				"para_ps_line1": "Probeer alsjeblieft zoveel mogelijk informatie in het rapport op te nemen, zodat de ontwikkelaars het probleem kunnen reproduceren en oplossen.",
+				"para_ps_line2": "Geef ook aan of je in onze eregalerij wilt worden opgenomen en geef een link en volledige naam op die je wilt gebruiken."
+			},
+			"section_submitABug": {
+				"heading_rewards": "Dien een bug in",
+				"subheading_rewards": "Heeft u al een probleem gevonden - weet u van een probleem?",
+				"button_submissionForm": "Ga naar ons inzendformulier"
+			}
+		},
+		"smallJobs": {
+			"meta": {
+				"title": "Gemeenschapstaken",
+				"keywords": "Betaald in cryptocurrency, cryptocurrency-taken, blockchain-taken",
+				"description": "Wil je het JSEcoin-project helpen promoten en opbouwen? Verdien JSE door klusjes te klaren en help ons de volgende generatie browsergebaseerde cryptocurrency te bouwen."
+			},
+			"banner": {
+				"linkText": "Kleine banen",
+				"heading": "Kleine banen",
+				"subheading": "Heb je wat tijd om ons team te helpen met een paar klussen?"
+			},
+			"para_main1_infoMsg_line1": "We zijn net bezig met het opzetten van onze nieuwe site.",
+			"para_main1_infoMsg_line2": "Als u JSE wilt helpen, zullen we hier de komende weken meer taken opnemen.",
+			"para_main2_infoMsg": "We zijn altijd op zoek naar typefouten op de nieuwe site. Zoek een spelfout en we sturen je 200 JSE per correctie!",
+			"heading_promo": "JSE promotievideo's",
+			"subheading_promo": "Heb je videobewerkingsvaardigheden?",
+			"para_promo": "Maak een promotievideo voor JSEcoin en als deze fantastisch is en we gebruiken, betaalt u 10000 JSE. De video moet het project promoten bij investeerders en webmasters die nog nooit van het platform hebben gehoord. Het moet indrukwekkend, gestroomlijnd en modern zijn. Gebruik geen auteursrechtelijk beschermde muziek / afbeeldingen / video van derden die ons in de problemen kunnen brengen.",
+			"heading_affiliate": "Word een partner",
+			"subheading_affiliate": "Verdien 200 JSE per gebruiker die je kunt krijgen om je aan te melden bij het platform",
+			"para_affiliate": "Download uw affiliate-link vanaf het platform. Aanbieding is dubbele opt-in CPA en momenteel alleen beschikbaar voor de volgende landen: VS, VK, CA, AU, NZ, IE, ZA",
+			"heading_findBugs": "Beveiligingsbugs en problemen vinden",
+			"subheading_findBugs": "Weet je hoe je een platform veilig pentest?",
+			"para_findBugs": "Zoek een beveiligingsprobleem met ons platform en we zullen u belonen met bugbounties. Je kunt optioneel ook worden toegevoegd aan onze befaamde muur met beroemdheden."
+		},
+		"submitInfo": {
+			"meta": {
+				"title": "Dien een taak of premie in",
+				"keywords": "Blockchain-hacking, cryptocurrency-bug",
+				"description": "Stuur ons bugs of beveiligingslekken die u kunt vinden en u kunt JSE-tokens verdienen als onderdeel van onze bugbounty-campagne."
+			},
+			"banner": {
+				"linkText": "Informatie verzenden",
+				"heading": "Heeft u een bug gevonden of een taak voltooid?",
+				"subheading": "Stuur het naar ons - als beoordeling."
+			},
+			"para_main1_infoMsg_line1": "Gebruik dit formulier om bugs, fixes of voltooide jobitems in te dienen.",
+			"para_main1_infoMsg_line2": "Zorg ervoor dat alle schermafbeeldingen, documenten en code die u aan dit formulier wilt toevoegen, zijn ingeslikt.",
+			"form": {
+				"heading_userInfo": "gebruikers informatie",
+				"label_placeholder_userID": "Account nummer",
+				"label_placeholder_email": "E-mailadres",
+				"heading_taskSummary": "Taakoverzicht",
+				"placeholder_pleaseSelect": "Selecteer alstublieft",
+				"heading_description": "Beschrijving - alleen tekst",
+				"label_placeholder_message": "Bericht",
+				"heading_attachment": "Bijlage - bestand met één zip",
+				"para_dragDrop": "Versleep een zipbestand",
+				"button_submit": "voorleggen",
+				"heading_thankyou": "Bedankt voor je hulp aan het team! :)",
+				"para_thankyou": "We zullen uw bericht bekijken en zo snel mogelijk contact met u opnemen."
+			}
+		},
+		"community": {
+			"meta": {
+				"title": "Gemeenschap",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "gemeenschap",
+				"heading": "Gemeenschap",
+				"subheading": "Leg contact met andere mijnwerkers en ontwikkelaars"
+			},
+			"heading_community": "Onze gemeenschap",
+			"subheading_community": "Word lid van onze community en neem contact met ons op voor vragen"
+		},
+		"contact": {
+			"meta": {
+				"title": "Contact",
+				"keywords": "Neem contact op met jsecoin, jsecoin contact details",
+				"description": "Neem contact op met het JSEcoin-team voor vragen, verzoeken, suggesties of feedback over ons browsergebaseerd mining- en cryptocurrency-platform."
+			},
+			"banner": {
+				"linkText": "Contact",
+				"heading": "Neem contact met ons op",
+				"subheading": "Neem contact op - we zijn hier om te helpen :)"
+			},
+			"heading_contact": "Heeft u problemen, vragen ping ons een bericht",
+			"subheading_contact": "U kunt antwoorden vinden op veelgestelde vragen in onze",
+			"link_FAQ": "Veelgestelde vragen pagina.",
+			"form": {
+				"label_placeholder_firstName": "Voornaam",
+				"label_placeholder_lastName": "Achternaam",
+				"label_placeholder_contactNo": "Contact Nr",
+				"label_placeholder_emailAddress": "E-mailadres",
+				"label_placeholder_message": "Bericht",
+				"button_submit": "Bericht versturen",
+				"heading_thankyou": "Bedankt voor je bericht :)",
+				"para_thankyou_line1": "We zullen uw bericht bekijken en zo snel mogelijk contact met u opnemen.",
+				"para_thankyou_line2": "Aarzel ook niet om ons team te bereiken via onze sociale kanalen.",
+				"err_failed1": "Verzenden van formulier mislukt - Ongeldige reactie -",
+				"err_failed2": "Verzenden van formulier mislukt - controleer uw verbinding",
+				"err_failed3": "Aanmelden mislukt - controleer alle verplichte velden hierboven"
+			}
+		},
+		"FAQ": {
+			"meta": {
+				"title": "FAQ",
+				"keywords": "Over browsergebaseerde mining, blockchain op het web, jse faq",
+				"description": "We krijgen deze vragen veel te stellen, dus neem een ​​kijkje en je vindt veel informatie over webmining, accountproblemen en de integratie van uitgevers."
+			},
+			"banner": {
+				"linkText": "FAQ",
+				"heading": "Veel Gestelde Vragen",
+				"subheading": "Lees meer door onze WHITEPAPER te lezen"
+			},
+			"heading_FAQ": "We zijn hier om te helpen",
+			"subheading_FAQ": "ALS JE HET ANTWOORD NIET ZOU VINDEN WAS JE ZOEKEND",
+			"link_getInTouch": "KRIJG IN TOUCH",
+			"section_general": {
+				"alt_general": "Algemene filterknop",
+				"heading_general": "Algemene inlichtingen",
+				"subheading_general": "NIEUWE ROND HIER? LATEN BEGINNEN MET DE BASICS",
+				"faqItemHeading1": "Ben je van plan om een ​​portemonnee vrij te geven?",
+				"faqItemContent1": "We integreren momenteel het platform met een ERC20 compatibel slim contract van Ethereum. Dit zal compatibel zijn met alle ERC20-compatibele wallets van derden, zoals myetherwallet, metamask, pariteit enz. Voor de meeste gebruikers raden we aan uw tokens op het webplatform op te slaan en sterke beveiligingspraktijken op uw account te gebruiken, zoals unieke wachtwoorden en tweefactorauthenticatie.",
+				"faqItemHeading2": "Ik ben mijn authenticatiecode voor twee factoren kwijt, wat kan ik doen?",
+				"faqItemContent2": "Als u uw telefoon kwijt bent of toegang hebt tot uw 2fa-codes, raden we aan Google Authenticator of Authy opnieuw te installeren op een nieuw apparaat en in te loggen met uw gmail-account om toegang te krijgen tot uw codes. Als dit niet werkt, hebben we een identiteitsbewijs met foto nodig dat overeenkomt met de naam en het adres dat is gebruikt toen u zich aanmeldde voor een account, samen met het beantwoorden van enkele beveiligingsvragen. Houd er rekening mee dat 2fa een beveiligingsfunctie is en we behouden ons het recht voor om verzoeken om het opnieuw instellen te weigeren als we niet 100% tevreden zijn dat de zaak echt is.",
+				"faqItemHeading3": "Waarom zou ik een uniek wachtwoord gebruiken voor het JSEcoin-platform?",
+				"faqItemContent3": "U moet een ander wachtwoord gebruiken voor elk platform waarmee u zich registreert. Gebruikers die voor elk account hetzelfde e-mailadres en wachtwoord gebruiken, riskeren dat hun accounts worden gehackt. Dit komt doordat high-profile hacks databases leken te lekken van e-mail / wachtwoordcombinaties die nu beschikbaar zijn voor hackers. Yahoo, Linkedin, Sony, AOL, Equifax zijn allemaal in het verleden geschonden en gegevens van gebruikersaccounts zijn in handen van hackers. Financiële platformen zijn om evidente redenen met name kwetsbaar voor hackers. Zorg voor uw account, gebruik een uniek wachtwoord en stel authenticatie van twee factoren in met behulp van een toepassing zoals Google Authenticator. Dit advies geldt voor alle platforms op internet en niet alleen voor JSEcoin.",
+				"faqItemHeading4": "Waarom blokkeert mijn adblocker / antivirussoftware JSEcoin.com?",
+				"faqItemContent4": "Sommige adblockers en antivirusbedrijven hebben ons gebundeld met verborgen achtergrond mining scripts die op de pc van een gebruiker mijnen zonder dat ze het weten. We zijn actief campagne voeren en lobbyen bij de organisaties die onze domeinen blokkeren. Als u wilt helpen, neem dan contact op met uw softwareleverancier en vraag om een ​​uitzondering.",
+				"faqItemHeading5": "Hoe kan ik JSEcoin cryptocurrency-tokens verdienen met alleen mijn pc?",
+				"faqItemContent5": "Er zijn een aantal manieren om JSE te verdienen. Je kunt het self-mining proberen, dat een wiskundig hash-proces uitvoert op je laptop terwijl je werkt. Beloningen worden via een loterij-systeem aan de mijnwerkers verdeeld. Als u een website heeft, kunt u JSE verdienen door het codefragment op uw site te plaatsen en bezoekers naar de mijne te laten gaan terwijl u slaapt. Je kunt vrienden en collega's doorverwijzen met behulp van de affiliate links die beschikbaar zijn via het platform, er is zelfs een simpele sociale share-knop om te tweeten of te delen op Facebook. Eindelijk kunt u ons team helpen het platform te ontwikkelen door het kleine te voltooien",
+				"link_jobsListedHere": "taken die hier worden vermeld",
+				"faqItemHeading6": "Ben ik nieuw op het platform, kan ik overal een overzicht vinden van hoe alles werkt?",
+				"faqItemContent6": "Ja. We hebben een gids met video-instructies die u hier kunt vinden",
+				"faqItemContent6_para2": "Als er een specifieke pagina is die u zoekt, kunt u naar de volgende tijdstippen gaan.",
+				"faqItemContent6_list1": "Transfer 1:05",
+				"faqItemContent6_list2": "Exporteer 2:45",
+				"faqItemContent6_list3": "Mijnbouw 4:16",
+				"faqItemContent6_list4": "Uitgever 6:46",
+				"faqItemContent6_list5": "Investeerders 09:45 uur",
+				"faqItemContent6_list6": "Verwijzingen 10:00",
+				"faqItemContent6_list7": "Instellingen 11:33",
+				"faqItemHeading7": "Heeft u een ruwe schatting van wat de ICO-prijs aan BTC zal zijn?",
+				"faqItemContent7": "Nee en we willen hier geen schatting van maken, omdat het afhankelijk is van externe factoren die buiten onze controle vallen. Het is een extreem volatiele markt waar waarden in grote hoeveelheden in zeer korte tijd kunnen veranderen.",
+				"faqItemHeading8": "Pre-ICO tokens werden verkocht met een waarde van 1JSE = $ 1, wat is de waarde voor uw ICO?",
+				"faqItemContent8": "Het is moeilijk om te zeggen in dit stadium, maar de waarde zal worden bepaald door de vraag en de marktomstandigheden op het moment van de ICO. We werken er hard aan om een ​​platform te creëren waar veel vraag naar is en dat een goed rendement oplevert voor alle vroege investeerders.",
+				"faqItemHeading9": "Als JSEcoin alleen een munt is, staat deze dan op Coinmarketcap?",
+				"faqItemContent9": "JSEcoin is een cryptocurrency op zich, maar we zijn nog niet genoteerd op Coinmarketcap omdat we niet op de beurzen vermeld staan. We zullen kijken naar de uitwisselingen volgend op onze ICO later dit jaar."
+			},
+			"section_webmasters": {
+				"alt_webmasters": "Webmasters filterknop",
+				"heading_webmasters": "Webmasters",
+				"subheading_webmasters": "JSE-integratie",
+				"faqItemHeading1": "Hoe stel ik een account in en plaats ik de code voor mijn site?",
+				"faqItemContent1": "Registreer gewoon voor een account op",
+				"faqItemContent1_2": "en bezoek de pagina met uitgevers. Voer uw websitedomeinnaam in en klik op de knop &quot;Site instellen&quot;. Dit genereert je unieke script. De code verschijnt in een nieuw venster en je kunt deze kopiëren en plakken boven de afsluiting </body> tag of plak het in de JSEcoin wordpress plug-in.",
+				"faqItemContent1_para2": "Normaal gesproken is de beste plaats om de code te plaatsen in een sjabloonbestand (dus deze loopt over alle pagina's van de site) of naar een indexbestand (dus alleen op de voorpagina). Als u een statische site heeft, kunt u deze naar elke pagina kopiëren als u dat wilt.",
+				"faqItemHeading2": "Hoe installeer ik het JSEcoin-fragment op mijn WordPress-site?",
+				"faqItemContent2": "Er zijn installatie-instructies en een video hier:",
+				"link_wordpress": "wordpress-plugin-beschikbaar",
+				"faqItemHeading3": "Hoe weet ik of de code correct is geïnstalleerd op mijn site?",
+				"faqItemContent3": "Je kunt het zien draaien door een consolelogvenster te openen. Hiertoe bezoekt u uw webpagina met behulp van Firefox of Chrome en houdt u in Firefox CTRL SHIFT K ingedrukt en drukt u in Chome op CTRL SHIFT J",
+				"faqItemContent3_para2": "Er wordt een console-logboekvenster geopend met achtergrondprocessen en u kunt het script zien dat blokgegevens verzamelt en werkt aan hashes.",
+				"faqItemContent3_para3": "De privacyverklaring wordt slechts één keer per uur weergegeven (dus deze wordt niet op elke pagina geladen als een gebruiker door een site bladert) en na het laden van de pagina is er een vertraging van 15 seconden.",
+				"faqItemHeading4": "Moet elke website een eigen fragment hebben (inclusief de domeinnaam), of kan hetzelfde fragment op meerdere websites worden geregen?",
+				"faqItemContent4": "Gelieve verschillende sites afzonderlijk te volgen. We moeten weten waar de code loopt om fraude te voorkomen en onze geautomatiseerde controles kunnen een vals positief resultaat opleveren als de siteid niet overeenkomt met het verwijzingsdomein. In de toekomst wilt u mogelijk statistieken van afzonderlijke sites, etc. bekijken.",
+				"faqItemHeading5": "Hoe worden uitgevers beloond voor het uitvoeren van het script op hun sites?",
+				"faqItemContent5": "Beloningen worden verdeeld via een loterijsysteem waarbij uitgevers loten verdienen voor unieke bezoekers, bekeken pagina's en hashes. 50 x 2JSE worden vervolgens willekeurig verdeeld over kaarthouders. Deze loterij herhaalt zich met elk blok van 30 seconden dat elke dag 288000 JSE-tokens levert.",
+				"faqItemHeading6": "Is het mogelijk om het CPU-gebruik op mijn bezoekersapparaat te verhogen?",
+				"faqItemContent6": "Nee! We willen uitgevers geen controle geven over hoeveel van de gebruikers het cpu-gebruik gebruiken. Momenteel is het ingesteld om het minimale bedrag te gebruiken, zodat het geen merkbare invloed heeft op hun browse-ervaring. We zouden niet willen dat webmasters het cpu-gebruik zouden kunnen verhogen, omdat dit JSEcoin een slechte reputatie zou kunnen geven. De inkomsten van webmasters zijn afhankelijk van bezoekers, unieke bezoekers en hashes die worden gevonden en dus wordt het cpu-gebruik ingesteld op het minimum dat vereist is om de blockchain te beveiligen.",
+				"faqItemHeading7": "Is het mogelijk om te voorkomen dat de JSEcoin-banner op mijn site verschijnt?",
+				"faqItemContent7": "Dit is eigenlijk de privacykennisgeving. Het is belangrijk voor ons dat deze melding moet verschijnen wanneer een gebruiker voor het eerst uw site bezoekt (en eenmaal per uur daarna), omdat we op een transparante manier willen werken, zodat gebruikers duidelijk te horen krijgen dat er mijnbouw plaatsvindt, en dat een opt-out is beschikbaar. Wij zijn van mening dat dit belangrijk is om juridische en ethische redenen en dat deze openheid ertoe zal bijdragen dat het idee breder geaccepteerd wordt. Het is een van onze gebruiksvoorwaarden dat uitgevers de melding moeten weergeven en niet proberen deze te verbergen.",
+				"faqItemHeading8": "Zijn er specifieke legalese die we op onze site moeten plaatsen?",
+				"faqItemContent8": "Dit is nieuwe technologie, we hebben geen juridische problemen of richtlijnen gehad om mee te kampen. De privacykennisgeving wordt standaard weergegeven en is van essentieel belang omdat deze de optie bevat om zich af te melden voor het gehele netwerk. Als u iets in uw eigen websitevoorwaarden wilt plaatsen, zou dit helpen met transparantie.",
+				"faqItemContent8_para2": "Iets in de trant van MySite.com maakt gebruik van achtergrond cryptocurrency-mining.",
+				"faqItemContent8_para2_line2": "Om af te melden, gaat u naar",
+				"link_privacyPolicy": "Privacybeleid",
+				"faqItemHeading9": "Ik zag je code op een andere site en ik probeer te begrijpen hoe het echt werkt en wat krijgt de site-uitgever eraan?",
+				"faqItemContent9": "We zijn een cryptocurrency in een vroeg stadium, gebaseerd op mijnbouw webmasters. Ons systeem is vergelijkbaar met traditionele cryptocurrencies, maar in plaats van grote server farms voeren we het hashing-algoritme uit in websitebezoekers. Dit is onopvallend en wordt achter de schermen uitgevoerd (met uitzondering van een privacykennisgeving), zodat dit geen negatieve invloed heeft op de gebruikerservaring of laadsnelheden van pagina's voor bezoekers van uw website.",
+				"faqItemContent9_para2": "De uitgever van de site kopieert ons codefragment naar hun website en wordt beloond met betaling van JSEcoin-tokens aan hun account."
+			},
+			"section_exchanges": {
+				"alt_exchanges": "Wisselt Filterknop uit",
+				"heading_exchanges": "uitwisselingen",
+				"subheading_exchanges": "Uw portemonnee",
+				"faqItemHeading1": "Is er een portemonnee beschikbaar om munten op te slaan?",
+				"faqItemContent1": "Momenteel is het alleen mogelijk om JSEtokens op te slaan via de online wallet op",
+				"faqItemContent1_line2": "We hebben een integratie getest met ERC20 Ethereum smart contract waarmee portefeuilles van derden kunnen worden gebruikt. Dit zal pas vrijgegeven worden als we de uitwisseling / ICO-technologie hebben afgerond die tussen nu en toen ICO wel eens zou kunnen veranderen.",
+				"faqItemHeading2": "Hoe krijg ik betaald en zet ik JSE om naar USD of mijn lokale valuta?",
+				"faqItemContent2": "Je wordt beloond met JSEcoin-tokens die cryptocurrency-tokens zijn voor het plaatsen van de code op je site, zodat je bezoekers wiskundige vergelijkingen op de achtergrond kunnen uitvoeren die helpen bij het beveiligen van de blockchain.",
+				"faqItemContent2_para2": "Helaas zijn voor ons allemaal JSEcoin tokens erg nieuw (publiekelijk gelanceerd in augustus 2017), dus er is momenteel geen manier om je JSE te verzilveren. We richten ons op een ICO en een beursnotering in 2018, dan kun je JSEcoin overdragen naar de beurzen en ruilen voor Bitcoin / USD enz. Hoewel er nooit een betere tijd zal zijn om mijn cryptocurrency te gebruiken omdat de concurrentie laag is, zul je niet in staat zijn om de inkomsten te besteden totdat JSE op beurzen genoteerd staat. Ook vermeldenswaard is dat als er iets mis gaat met JSE of de markten voor cryptocurrency in het algemeen, we misschien nooit het liquiditeitsniveau bereiken en de tokens waardeloos zijn. Dit is het risico waarmee early adopters worden geconfronteerd.",
+				"faqItemHeading3": "Op welke uitwisselingen staat / wordt u vermeld?",
+				"faqItemContent3": "Dit wordt bevestigd na onze ICO; omdat dit wordt gedicteerd door de beschikbare fondsen en de populariteit van het JSE-platform."
+			},
+			"section_platformMining": {
+				"alt_platformMining": "Gebruikersfilterknop",
+				"heading_platformMining": "Platform Mining",
+				"subheading_platformMining": "Kan ik de mijne?",
+				"faqItemHeading1": "Is het mogelijk om te ontginnen op meerdere computers die op hetzelfde account zijn ingelogd? Zo nee, moet u meerdere accounts instellen met dezelfde eigenaar / e-mailadres?",
+				"faqItemContent1": "Nee, we proberen beide scenario's te vermijden. Eigenlijk is de selfmining bedoeld als een manier voor individuele gebruikers om betrokken te raken bij cryptocurrency en plezier te hebben voor iedereen. We willen voorkomen dat we het pad van meerdere gebruikersaccounts en meerdere apparaten ingaan, omdat dit uiteindelijk zal leiden tot server farms, bottennetten enz. En niet iedereen ten goede komt. U riskeert uw account (s) gesloten te hebben en wij nemen actieve maatregelen om dit soort activiteiten te voorkomen.",
+				"faqItemHeading2": "Hoeveel tokens zijn elke dag beschikbaar en hoe worden ze verdeeld?",
+				"faqItemContent2": "Het vinden van geldige hashes levert je een ticket op voor een loterijsysteem waarbij 50 winnaars een 1 JSE-token krijgen. Deze loterij vindt elke 30 seconden plaats, met telkens een nieuwe 50 x 1 JSE beschikbaar. Dit komt neer op 144000JSE per dag beschikbaar.",
+				"faqItemHeading3": "Waarom daalt de hash-snelheid aanzienlijk wanneer ik andere tabbladen bezoek?",
+				"faqItemContent3": "Om dit te verhelpen, raden we u aan de mijn in een nieuwe browser te openen zonder dat andere tabbladen geopend zijn. Als u vervolgens naar andere sites wilt gaan in plaats van een nieuw tabblad te openen, opent u een nieuwe browser. Dit zou de daling van hash-snelheid moeten stoppen. Probeer verschillende browsers, uw optimale browser is afhankelijk van uw systeem. Chrome en Firefox zijn beide aanbevolen. We zijn momenteel bezig met het afwerken van een desktop-app die gebruikers kunnen gebruiken om te mijnen, wat ook dit probleem volledig zal oplossen.",
+				"faqItemHeading4": "Wat is de Hash Rate Accelerator?",
+				"faqItemContent4": "Dit is een eenvoudige schuifregelaar waarmee u de hoeveelheid cpu-energie die u aan het mijnproces besteedt, kunt verhogen of verlagen. Als u uw computer wilt blijven gebruiken, wilt u dit wellicht weigeren of kunt u het inschakelen als u niets anders te doen heeft op uw apparaat. Houd er rekening mee dat er op dit moment geen echt voordeel te behalen valt door meer dan 10K h / s te gebruiken en dus de hash rate accelerator in te stellen om meer te leveren dat dit niet wordt aanbevolen.",
+				"faqItemHeading5": "Als mijn huisgenoot en ik allebei tegelijk de mijne hebben, worden de inkomsten beïnvloed, omdat we hetzelfde IP-adres gebruiken?",
+				"faqItemContent5": "Als onderdeel van onze fraudepreventie en om ervoor te zorgen dat server farms JSEcoin niet kunnen overnemen, hebben we IP-beperkingen moeten implementeren. We hebben het beperkt tot één lotnummer per blok per IP-adres. Dit betekent dat meerdere gebruikers op dezelfde locatie kunnen mijnen, maar potentiële beloningen worden hiertussen verdeeld."
+			},
+			"section_thePlatform": {
+				"alt_thePlatform": "Knop Platformfilter",
+				"heading_thePlatform": "Het platform",
+				"subheading_thePlatform": "Er is iets fout gegaan",
+				"faqItemHeading1": "Ben ik nieuw op het platform, kan ik overal een overzicht vinden van hoe alles werkt?",
+				"faqItemContent1": "Ja. We hebben een gids met video-instructies die u hier kunt vinden",
+				"faqItemContent1_para2": "Als er een specifieke pagina is die u zoekt, kunt u naar de volgende tijdstippen gaan.",
+				"faqItemContent1_list1": "Transfer 1:05",
+				"faqItemContent1_list2": "Exporteer 2:45",
+				"faqItemContent1_list3": "Mijnbouw 4:16",
+				"faqItemContent1_list4": "Uitgever 6:46",
+				"faqItemContent1_list5": "Investeerders 09:45 uur",
+				"faqItemContent1_list6": "Verwijzingen 10:00",
+				"faqItemContent1_list7": "Instellingen 11:33",
+				"faqItemHeading2": "Er functioneert iets niet op het platform, wat moet ik doen?",
+				"faqItemContent2": "We pushen op dit moment veel updates en resetten de servers regelmatig. Het kan een cache-probleem met de browser zijn, probeer uit te loggen en druk dan op F5 of ververs een paar keer om de nieuwste versie van het platform opnieuw te laden. Als dat niet werkt stuur ons dan een berichtje op",
+				"faqItemContent2_line2": "en we zullen ernaar kijken.",
+				"faqItemHeading3": "Ik ben mijn wachtwoord kwijt. Wat kan ik doen?",
+				"faqItemContent3": "Ga eenvoudig naar de inlogpagina en klik op de link &quot;wachtwoord vergeten&quot; die net onder de login-knop staat.",
+				"faqItemHeading4": "Er staat dat er geen overeenkomende account voor mijn e-mailadres en wachtwoord in de database is. Wat moet ik doen.",
+				"faqItemContent4": "Probeer nogmaals uw gegevens in te voeren en zorg ervoor dat ze correct zijn. Als het probleem zich blijft voordoen, probeert u uw wachtwoord opnieuw in te stellen. Als u nog steeds geen toegang tot uw account heeft, kunt u een ticket opsturen met behulp van onze",
+				"link_contactForm": "Contact Formulier",
+				"faqItemHeading5": "Ik word steeds gevraagd om mijn account te bevestigen, maar ik heb de bevestigings-e-mail niet ontvangen.",
+				"faqItemContent5": "Controleer eerst of u uw spam / ongewenste mappen hebt gecontroleerd. Als het er niet is, probeer dan noreply@jsecoin.com toe te voegen aan uw e-mailadresboek en de e-mail opnieuw aan te vragen. Eventuele verdere problemen kunt u een ticket opsturen met behulp van onze",
+				"faqItemHeading6": "Ik blijf uitloggen op het platform en vroeg me weer aan te melden. Is dit normaal?",
+				"faqItemContent6": "Dit zou niet met het platform moeten gebeuren. De 2 veelvoorkomende redenen gebruikers vinden dat dit het geval is;",
+				"faqItemContent6_list1": "De pagina vernieuwen om inkomsten te controleren. Door te vernieuwen verlaat u effectief de pagina en gaat u opnieuw in en moet u zich opnieuw aanmelden. Dit is een vrij standaard beveiligingsfunctie.",
+				"faqItemContent6_list2": "U logt in op uw account op een tweede apparaat. Gebruikers zijn beperkt tot één apparaat en zodra een tweede aanmelding is gedaan, wordt u uitgelogd bij het eerste account.",
+				"faqItemHeading7": "Ik heb veel gehoord over mensen die hun cryptocurrencies hebben gestolen, zijn mijn tokens veilig in mijn JSEcoin-account?",
+				"faqItemContent7": "Ja, ze zijn veilig. Omdat er momenteel geen portemonnee beschikbaar is, kunnen munten alleen worden overgezet naar andere JSEcoin-accounts en hebben we een overzicht van alle transacties. We raden u aan uw account veiliger te maken door 2-factorenauthenticatie in te stellen, maar in het geval dat iemand uw account opent en uw tokens verwijdert, kunnen we bijhouden waar ze naartoe zijn gegaan en deze naar u terugsturen. De portemonnee is beschikbaar voordat we bij ICO zijn, maar niet voordat we hier veel dichter bij zijn.",
+				"faqItemHeading8": "Ok Wat is 2-factorenauthenticatie (2fa)?",
+				"faqItemContent8": "2fa vereist dat u een willekeurig gegenereerde code van een mobiele app in uw JSEcoin-account invoert nadat u uw gebruikersnaam en wachtwoord hebt ingevoerd. 2 veelgebruikte apps die door het platform worden ondersteund en die volledig zijn getest, zijn Authy en Google Autenticator. Download gewoon een van deze apps en ga de volgende keer dat u zich aanmeldt op uw account naar de instellingenpagina en klik om 2fa in te schakelen. U wordt gevraagd om een ​​qr-code met uw telefoon te scannen en uw eerste 6-cijferige code zal worden gegenereerd. U moet dan elke keer dat u inlogt op uw account een code invoeren. Lees de instructies aandachtig door met betrekking tot het maken van een back-up van uw 2FA-account voor het geval u uw telefoon zou verliezen of beschadigen.",
+				"faqItemHeading9": "Ik heb problemen met 2fa, kan je helpen?",
+				"faqItemContent9": "Ja, maar we zijn bang dat het geen eenvoudig proces is. Begin met het verhogen van een ticket met behulp van onze",
+				"faqItemContent9_line2": "U moet vervolgens enkele stappen uitvoeren om uw identiteit te bewijzen. Onthoud dat dit puur is om gebruikersaccounts te beveiligen. Het lijkt misschien vervelend, maar je zou meer geïrriteerd zijn als we iemand toegang tot je tokens zouden geven door niet te tonen dat hij niet vaardig is. Als u een goede back-up van uw 2FA-account hebt gemaakt, hoeft dit geen echt probleem te zijn."
+			},
+			"section_affiliates": {
+				"alt_affiliates": "Filiaalknop voor filialen",
+				"heading_affiliates": "Affiliates",
+				"subheading_affiliates": "Verdienen via verwijzingen",
+				"faqItemHeading1": "Hoe kan ik JSE verdienen voor het verwijzen van andere gebruikers?",
+				"faqItemContent1": "Meld u aan bij uw account en ga naar de verwijzingspagina. Hier vindt u verschillende unieke verwijzingscodes die u kunt verspreiden. Zorg ervoor dat u de regels met betrekking tot kwalificerende verwijzingen leest voordat u tijd en moeite besteedt aan het verspreiden van uw links.",
+				"faqItemHeading2": "Hoeveel verdien ik en zijn er regels?",
+				"faqItemContent2": "We betalen 200 JSE per bevestigde gebruiker die een account registreert nadat hij op uw persoonlijke verwijzingslink heeft geklikt en aan de volgende criteria voldoet:",
+				"faqItemContent2_para2": "-Ze komen uit een van onze geaccepteerde landen zoals vermeld op de verwijzingspagina. Deze landen zijn de VS, CA, GB, IE, NZ, AU, ZA. Dit is te wijten aan het gebrek aan technische ondersteuning en site-vertaling die we kunnen bieden aan niet-Engelssprekende landen. Zodra de site volledig is ontwikkeld, zullen we kijken naar de vertaling van de site naar de meeste talen. Op dat moment is de kans groot dat we de affiliate-bonus voor deze landen opnieuw introduceren.",
+				"faqItemContent2_para3": "- Er is nog geen account geregistreerd bij dat IP-adres. Dubbele IP-accounts krijgen de bonus niet betaald, omdat dit het systeem openstelt voor misbruik.",
+				"faqItemContent2_para4": "-Ze zijn een echte gebruiker en niet betaald aan click- of bot-gegenereerd verkeer.",
+				"faqItemHeading3": "Waarom is mijn verwijzing afgewezen?",
+				"faqItemContent3": "Dit kan om 2 redenen zijn;",
+				"faqItemContent3_para2": "uw verwijzing is niet afkomstig uit een van onze geaccepteerde landen zoals vermeld op de verwijzingspagina. Deze landen zijn de VS, CA, GB, IE, NZ, AU, ZA.",
+				"faqItemContent3_para3": "uw verwijzing heeft al een account geregistreerd op hetzelfde IP-adres. Dubbele IP-accounts krijgen de bonus niet betaald, omdat dit het systeem openstelt voor misbruik.",
+				"faqItemHeading4": "Waarom heb je het partnerprogramma beperkt om alleen Engelstalige aanmeldingen te belonen? Zal dit ooit veranderen?",
+				"faqItemContent4": "Dit is te wijten aan het gebrek aan technische ondersteuning en site-vertaling die we kunnen bieden aan niet-Engelssprekende landen. Zodra de site volledig is ontwikkeld, zullen we kijken naar de vertaling van de site naar de meeste talen. Op dat moment is de kans groot dat we de affiliate-bonus voor deze landen opnieuw introduceren.",
+				"faqItemHeading5": "Mijn verwijzing is afkomstig uit een kwalificerend land en is geen duplicaataccount, maar ik heb de bonus nog steeds niet ontvangen. Waarom zou dit kunnen zijn?",
+				"faqItemContent5": "Het is zeer waarschijnlijk dat de gebruiker zijn accounts nog niet heeft bevestigd. Zodra ze dit doen, zou je de bonus moeten ontvangen."
+			},
+			"section_technology": {
+				"alt_technology": "Technologie Filterknop",
+				"heading_technology": "Technologie",
+				"subheading_technology": "Open Source, algoritme, bibliotheken",
+				"faqItemHeading1": "Is het algoritme open source en beschikbaar op github / gitlab?",
+				"faqItemContent1": "Alle code is momenteel privé, omdat we een first-mover-voordeel hebben met cryptocurrency-mining voor webmasters. We zullen de codebase echter moeten openen voor een ICO, omdat dit een uitwisselingsvereiste is. Voordat dit gebeurt, moeten we een volledige beveiligingscontrole en codecontrole uitvoeren."
+			}
+		},
+		"APIS": {
+			"meta": {
+				"title": "API-overzicht",
+				"keywords": "Blockchain api, cryptocurrency api",
+				"description": "Cryptocurrency-ontwikkelaars kunnen gebruik maken van onze eenvoudige, effectieve en snelle cryptocurrency-API. Voer transacties uit, controleer de onderevende saldi en meer."
+			},
+			"banner": {
+				"linkText": "API'S",
+				"heading": "API-overzicht",
+				"subheading": "Ondersteuning van de JSE-ontwikkelaarsgemeenschap"
+			},
+			"heading_about": "API-overzicht",
+			"subheading_about": "Een stap dichterbij het ontwikkelaarplatform!",
+			"para_main1_line1": "Tegenwoordig maken de JSE API's basis JSE Wallet-beheer en toegang tot de blockchain mogelijk.",
+			"para_main1_line2": "We werken actief samen met onze ontwikkelaarsgemeenschap en integrators om een ​​krachtige en stabiele API aan te bieden voor toegang tot de JSE Wallet, Blockchain, verkopershulpmiddelen en meer.",
+			"para_main2_b": "API-eindpunt:",
+			"para_main3_line1": "We zijn net bezig met het afmaken van ons ontwikkelaarsportaal.",
+			"para_main3_line2": "Kom snel terug. Neem ondertussen een kijkje in enkele van onze",
+			"link_oldBlogPosts": "oude code blogposts",
+			"alt_api": "API'S"
+		},
+		"samples": {
+			"meta": {
+				"title": "Voorbeeldcode",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "samples",
+				"heading": "Voorbeeldcode",
+				"subheading": "&quot;geest in de machine&quot; <br /> <span style=\"font-size:0.6em; opacity: 0.2;\">01101000 01100101 01101100 01101100 01101111 00100000 01110111 01101111 01110010 01101100 01100100</span>"
+			},
+			"para_infoMsg_line1": "We zijn bezig met het opschonen van onze voorbeelden en bereiden ons voor op de lancering van ons JSE Developer Portal.",
+			"para_infoMsg_line2": "Kom snel terug. Neem ondertussen een kijkje in enkele van onze",
+			"link_oldBlogPosts": "oude code blogposts"
+		},
+		"stats": {
+			"meta": {
+				"title": "Statistieken",
+				"keywords": "Blockchain-figuren, cryptocurrency-statistieken, browsermijningsstatistieken",
+				"description": "De nieuwste cijfers leven van de JSEcoin-servers. We publiceren het aantal geregistreerde gebruikers, website-mijnwerkers, zelf-mijnwerkers, marktkapitalisatie voor cryptocurrency en meer."
+			},
+			"banner": {
+				"linkText": "Statistieken",
+				"heading": "Statistieken",
+				"subheading": "browser"
+			},
+			"section_map": {
+				"heading_stats": "DEMOGRAPHICS",
+				"subheading_stats": "TOP 10 LOCATIES VAN ONZE MIJNBOUWERS",
+				"alt_map": "Wereldkaart",
+				"country_US": "Verenigde Staten",
+				"country_RU": "Rusland",
+				"country_CN": "China",
+				"country_IN": "Indië",
+				"country_UA": "Oekraïne",
+				"country_GB": "Verenigd Koningkrijk",
+				"country_DE": "Duitsland",
+				"country_JP": "Japan",
+				"country_CA": "Canada",
+				"country_ID": "Indonesië"
+			},
+			"section_cpuOverview": {
+				"para_main1_infoMsg_line1": "We verzamelen en verzamelen alleen statistieken en statistieken van verschillende browsers die op elk besturingssysteem en op verschillende apparaten zoals Raspberry PI's worden uitgevoerd. Laten we snel handelen en dingen herstellen.",
+				"para_main1_infoMsg_line2": "Ons mijnplatform gebruikt minder dan 10% Idle CPU-bronnen - in vergelijking met mijnwerkers die tussen 80-90% gebruiken!"
+			},
+			"section_cpuBenchmark": {
+				"heading_bench": "Tracked CPU-benchmarkgemiddelde"
+			}
+		},
+		"support": {
+			"meta": {
+				"title": "Ondersteuning",
+				"description": "Heb je problemen met het platform of heb je moeite om de website mining-code in te stellen? Raadpleeg hier onze technische ondersteuningspagina's."
+			},
+			"banner": {
+				"linkText": "ondersteuning",
+				"heading": "Ondersteuning",
+				"subheading": "Heeft u een probleem? We zijn hier - vraag een supportticket aan;)"
+			},
+			"heading_support": "JSE-ondersteuningskaartjes",
+			"subheading_support": "Binnenkort beschikbaar.",
+			"para_main1": "We zijn gewoon de bugs aan het uitdrogen - maar onze support-ticketingomgeving zou binnenkort moeten werken ..",
+			"link_contactUs": "In de tussentijd kunt u contact met ons opnemen via dit formulier"
+		},
+		"techOverview": {
+			"meta": {
+				"title": "Technisch overzicht",
+				"keywords": "Hoe cryptocurrency te minen in webbrowser, mijn cryptocurrency op laptop, browser mining technisch",
+				"description": "Ontdek wat het JSEcoin-project tikt. We gebruiken geavanceerde technologie om de volgende generatie webgebaseerde cryptocurrency en browsergebaseerde blockchain-mining te bouwen."
+			},
+			"banner": {
+				"linkText": "Technisch overzicht",
+				"heading": "Technisch overzicht",
+				"subheading": "Innoveren met functies van de webbrowser en nog veel meer"
+			},
+			"section_techOverview": {
+				"heading_techOverview": "Webbrowser mijnbouw overzicht",
+				"subheading_techOverview": "Waarom mijn browser-mogelijkheden inschakelen?",
+				"para_main1": "We gebruiken een vergelijkbare aanpak voor Google Adsense en andere analytische of advertentieplatforms - waarbij een webmaster een extern JavaScript-bestand inschakelt op zijn website.",
+				"para_main2": "Een minimale hoeveelheid van een bezoekers-CPU wordt gebruikt om de JSE-munten te delven (minder dan 10% - niet meer dan een videofragment op een pagina laten opnemen). Hoe meer bezoekers u heeft, hoe meer uw gebruikersgemeenschap bij elkaar wordt gezet om het bedrag dat wordt gewonnen, te verbeteren.",
+				"link_cpuUsage": "Bekijk onze statistiekenpagina om het gemiddelde gebruikers CPU-gebruik te zien",
+				"alt_tech": "Technisch overzicht"
+			},
+			"section_monitiseBanner": {
+				"heading_monitiseBanner": "Verdien geld met uw website",
+				"subheading_monitiseBanner": "Stel je voor dat je geld verdient zonder de rommel van reclame",
+				"button_caseStudies_line1": "JSE Casestudy's voor webmasters",
+				"button_caseStudies_line2": "Binnenkort beschikbaar!"
+			},
+			"section_gettingStarted": {
+				"heading_gettingStarted": "Hoe aan de slag te gaan?",
+				"subheading_gettingStarted": "Eén scripttag en een beetje magie",
+				"step_heading1": "Aanmelden",
+				"step_content1": "Maak een account aan waar u mijn platformen kunt plaatsen, of laat uw bezoekers poolen en ontginnen vanaf uw site.",
+				"alt_login": "Log in scherm",
+				"step_heading2": "Aansluiten",
+				"step_content2": "Kopieer en plak de javascript-code op uw website of selecteer de platform mining-knop.",
+				"alt_minerTypes": "Mijnertypes",
+				"step_heading3": "Integreren",
+				"step_content3": "Gebruik onze verkopershulpmiddelen om gebruikers toe te staan ​​goederen en diensten met JSECoin te kopen",
+				"alt_merchantTools": "Mercant Tools"
+			},
+			"section_miningCoins": {
+				"alt_star": "Ster",
+				"heading_miningCoins": "Mijnbouwmunten - Cryptografie",
+				"subheading_miningCoins": "JSE is een cryptocurrency die wordt gedolven via een browser",
+				"para_main1": "We hebben secp256k1 elliptische curve ECDSA werkende server en clientzijde in de browser. Hiermee kunnen gebruikers transacties digitaal ondertekenen.",
+				"para_main2": "Voor hashing gebruiken we het standaard SHA256-algoritme. Indien beschikbaar gebruiken we de door de browser ingebouwde Crypto.Subtle API, omdat deze bijna native prestaties biedt. In oudere browsers is er een fallback SHA256-functie. Het SHA256-algoritme neemt gegevens van elke lengte of afmeting en produceert daarvoor een unieke codestring die altijd dezelfde lengte heeft.",
+				"para_main3": "Bij het zoeken naar hashes veranderen we de gegevens met slechts één cijfer en berekent het een geheel andere reeks alfanumerieke letters. Onze mijnwerkers doen deze berekening steeds weer opnieuw, op zoek naar de laagst mogelijke waardenreeks die voorloopnullen zal hebben."
+			},
+			"section_howDoesItWork": {
+				"heading_howDoesItWork": "Hoe werkt het hashingproces?",
+				"subheading_howDoesItWork": "Vereenvoudiging van gebruikersacceptatie en mijnbouw via een browser",
+				"step_heading1": "Fase 1",
+				"step_content1": "Transactiegegevens worden op het platform ingesteld en naar de webbrowser van de client verzonden",
+				"step_heading2": "Fase 2",
+				"step_content2": "Gegevens worden vanuit de browser ondertekend met behulp van ECDSA Cryptography (secp256k1)",
+				"step_heading3": "Fase 3",
+				"step_content3": "De transactie wordt geverifieerd door het knooppunt en naar het huidige blok gepusht"
+			},
+			"section_miningRewards": {
+				"heading_miningRewards": "Mijnbeloningen",
+				"subheading_miningRewards": "JSE is een cryptocurrency die wordt gedolven door een browser",
+				"step_heading1": "Uitgever Mining",
+				"step_content1": "288000 munten / dag, loterijsysteem, tickets worden uitgedeeld voor unieke bezoekers, bekeken pagina's en hashes.",
+				"step_heading2": "Platform Mining",
+				"step_content2": "144000 munten / dagloterijsysteem 1 ticket per hash gevonden. **",
+				"step_heading3": "Ad-inkomsten",
+				"step_content3": "(nog niet geïmplementeerd) Geschatte eCPM x-vertoningen - marge, gebaseerd op marktwaarde van de cryptocurrency.",
+				"step_content3_para2": "Belangrijk: inkomsten op basis van vertoningen, unieke gebruikers en tijd ter plaatse in plaats van beste hashes. Dit voorkomt dat krachtige apparatuur of server farms de mijn kunnen domineren.",
+				"step_content3_para3": "Koop in fiat valuta's USD, EUR, GBP (Paypal, Bankoverschrijving)",
+				"step_content3_para4": "Koop cryptocurrencies BTC, ETH (opgegeven adres, ERC20 / 23 in ontwikkeling)",
+				"alt_insight": "In zicht",
+				"infoMsg_miningRewards": "** Per blok worden ticketlimieten op de loterij geplaatst om een ​​eerlijke verdeling te garanderen en mijnfraude-fraude te bestrijden."
+			},
+			"section_networkArchitecture": {
+				"heading_miningRewards": "Netwerk architectuur",
+				"subheading_miningRewards": "HOOGGEBIEDSE ARCHITECTUUR - AANGEDREVEN DOOR GOOGLE CLOUD",
+				"alt_insight": "JSE Network Architecture"
+			}
+		},
+		"blockchainExplorer": {
+			"meta": {
+				"title": "Blockchain Explorer",
+				"keywords": "Jsecoin blockchain explorer, blockchain explorer vue.js, open-source blockchain explorer",
+				"description": "Verken de JSEcoin-blockchain met onze live real-time blockchain-verkenner. Kijk hoe de blokken binnenkomen en de transacties verdwijnen naarmate ons systeem groeit."
+			},
+			"banner": {
+				"linkText": "Blockchain Explorer",
+				"heading": "JSE Blockchain Explorer",
+				"subheading": ""
+			},
+			"heading_blockchainExplorer": "JSE Blockchain Explorer",
+			"subheading_blockchainExplorer": "Verken de JSE Blockchain",
+			"para_main1": "De blockchain-verkenner biedt een publiek toegangspunt tot de JSEcoin-blockchain. Dit kan samen met de API worden gebruikt om uit te zoeken wie de eigenaar is van wie of wie de nieuwste mijnbeloningen zijn. Houd er rekening mee dat gevoelige gegevens zoals e-mailadressen of verwijzingen niet worden opgenomen of weergegeven binnen de blockchain.",
+			"para_main2": "De blockchain-verkenner wordt geschreven met behulp van real-time datacommunicatie, wat betekent dat u de gegevens kunt zien evolueren als de 30 seconden blokcycli worden voltooid."
+		},
+		"merchantTools": {
+			"meta": {
+				"title": "Handelaarshulpmiddelen",
+				"keywords": "Accepteer cryptocurrency op website, cryptocurrency-abonnementen, cryptocurrency e-commerce",
+				"description": "Accepteer betalingen op uw website met cryptocurrency. Met onze merchant-tools kunnen webmasters hun sites integreren met een eenvoudige e-commerce- en betalingsoplossing."
+			},
+			"banner": {
+				"linkText": "Handelaarshulpmiddelen",
+				"heading": "JSE Merchant Tools",
+				"subheading": ""
+			},
+			"heading_merchantTools": "Handelaarshulpmiddelen",
+			"subheading_merchantTools": "Uitbreiden van e-commerce en transformeren van digitale advertenties",
+			"para_main1_infoMsg": "Deze functie wordt momenteel ontwikkeld en zal binnenkort worden vrijgegeven voor webmasters.",
+			"para_main1": "Met JSEcoin-verkopershulpmiddelen kunnen webmasters JSEcoin gebruiken voor het nemen van digitale betalingen via hun websites. JSE-tokens kunnen worden gebruikt voor: -",
+			"list_usedFor1": "Winkelwagentjes",
+			"list_usedFor2": "Betaal knoppen",
+			"list_usedFor3": "SaaS-abonnementen",
+			"list_usedFor4": "Digitale downloads",
+			"list_usedFor5": "Digitale marketing",
+			"list_usedFor6": "Software verkoop",
+			"list_usedFor7": "Abonnementen op lidmaatschap van de website",
+			"para_main2": "Alles wat via een website is gekocht, moet beschikbaar zijn om met cryptocurrency te betalen en JSEcoin kan de weg wijzen om dit mogelijk en eenvoudig voor webmasters te laten integreren met hun sites."
+		},
+		"wallet": {
+			"meta": {
+				"title": "Portemonnee",
+				"keywords": "Houd cryptocurrency aan, hoe cryptocurrency, cryptocurrency wallet, jse wallet op te slaan",
+				"description": "Bewaar je JSEcoin-tokens in de online portemonnee. Ons platform is veilig, veilig en volledig geïntegreerd met de JSE blockchain. Stuur fondsen en exporteer tokens rechtstreeks vanuit je portemonnee."
+			},
+			"banner": {
+				"linkText": "Portemonnee",
+				"heading": "JSE Online Wallet",
+				"subheading": ""
+			},
+			"heading_wallet": "Portefeuille-integraties",
+			"subheading_wallet": "Uitbreiding van de ondersteuning voor JSE-portefeuilles",
+			"para_main1_infoMsg": "We zijn van plan onze ERC20-portefeuille-integratie in de komende maanden uit te brengen en testen momenteel onze integraties.",
+			"para_main2": "JSE-tokens kunnen op het platform worden opgeslagen of worden geëxporteerd via een ERC20-token die compatibel is met portefeuilles en uitwisselingen van derden. Voor de meeste gebruikers raden we aan om de tokens op het platform te houden. Zodra ze zijn geëxporteerd, hebben we geen controle over fraude / diefstal / hackpogingen die tot geldverlies kunnen leiden.",
+			"para_main3": "Het JSEcoin-token is compatibel met elke ERC20-compatibele portemonnee van derden, waaronder:",
+			"list_wallet1": "MyEtherWallet",
+			"list_wallet2": "MetaMask",
+			"list_wallet3": "Pariteit",
+			"para_main4": "Tokens die op het platform zijn opgeslagen, zijn nog steeds net zo veilig als uw wachtwoordreferenties en de beveiliging van het besturingssysteem, dus zorg ervoor dat u unieke, veilige wachtwoorden gebruikt en zorg ervoor dat uw besturingssystemen vrij zijn van virussen en Trojaanse paarden."
+		},
+		"wordpress": {
+			"meta": {
+				"title": "CMS-plug-ins",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "",
+				"heading": "",
+				"subheading": ""
+			}
+		},
+		"integration": {
+			"meta": {
+				"title": "integratie",
+				"keywords": "Setup cryptocurrency mining, beste cryptocurrency browser mining, crypto mining script",
+				"description": "Leer hoe u JSEcoin-browsergebaseerde cryptocurrency-mining op uw website kunt instellen. Webbrowser-mining is de toekomst van het genereren van inkomsten en efficiënte blockchain-technologie."
+			},
+			"banner": {
+				"linkText": "integratie",
+				"heading": "integratie",
+				"subheading": "Begin vandaag met het maken van JSE-munten"
+			},
+			"heading_integration": "Webmaster Publisher Mijnbouwintegratie",
+			"subheading_integration": "Eenvoudig als 1, 2, 3 - kopieer en plak de JSE-code",
+			"para_main1": "Het instellen van de mijncode op uw site is net zo eenvoudig als het kopiëren en plakken van de code in uw HTML.",
+			"para_main2_line1": "Stel een account in op",
+			"para_main2_line2": "en bezoek de pagina 'uitgevers'.",
+			"para_main3": "Voer de domeinnaam van uw site in en klik op",
+			"para_main3_infoMsg": "&quot;GET CODE&quot;",
+			"para_main4": "Kopieer en plak de code net boven de </body> tag in uw HTML. Houd er rekening mee dat het het beste is om een ​​voettekstbestand of locatie te bewerken, zodat de code op uw hele site wordt weergegeven. Als u wordpress gebruikt, download dan de JSEcoin plug-in die automatisch de code op elke pagina zal invoegen.",
+			"para_main5_line1": "Sla uw sjabloonbestand op of upload de HTML naar uw webhost en test deze vervolgens in een browser. Na een vertraging van 15 seconden zou je JSE hashing data moeten zien binnenkomen via de de ontwikkelaar console. Om de ontwikkelaarsconsole te openen, drukt u op",
+			"para_main5_infoMg1": "CTRL SHIFT K",
+			"para_main5_line2": "in Firefox of",
+			"para_main5_infoMg2": "CTRL SHIFT J",
+			"para_main5_line3": "in Chrome."
+		}
+	}
+}
