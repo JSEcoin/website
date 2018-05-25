@@ -1,7 +1,6 @@
-
 <div align="center">
 
-[![JSECoin Ltd](https://jsecoin.com/docs/images/jseLogo_card.png)]
+![JSECoin Ltd](https://jsecoin.com/docs/images/jseLogo_small_card.png)
   
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/makes-people-smile.svg)](http://forthebadge.com)
 </div>
@@ -28,7 +27,7 @@ As part of this we also offer the ability for users without website to mine JSEC
 - [API Documentation](https://developer.jsecoin.com/API): API Reference and Sample code.
 
 ## Official Website
-Check out our live [webist](https://jsecoin.com).
+Check out our live [website](https://jsecoin.com).
 
 ## Quickstart developing extending the website
 
