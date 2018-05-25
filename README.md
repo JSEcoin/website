@@ -18,7 +18,8 @@ As part of this we also offer the ability for users without website to mine JSEC
   
 # JSE Website
 
-**[JSECOIN](https://jsecoin.com/)** [THE FUTURE BLOCKCHAIN & ECOSYSTEM FOR ECOMMERCE AND DIGITAL ADVERTISING]
+**[JSECOIN Ltd](https://jsecoin.com/)**  
+[THE FUTURE BLOCKCHAIN & ECOSYSTEM FOR ECOMMERCE AND DIGITAL ADVERTISING]
 
 
 ## Resources
@@ -31,10 +32,15 @@ Check out our live [website](https://jsecoin.com).
 
 ## Quickstart developing and extending the website
 
+### Initial setup
+
 1. Install [Node.js](https://nodejs.org) v8.0.0 or higher.
 2. Clone this repository: `git clone https://github.com/JSEcoin/website`
 3. Install dependencies `npm install`
-4. Initialise developer environment `npm run dev`
+
+### Run development environment
+
+1. Initialise developer environment `npm run dev`
 
 ### Build website
 Executing `npm run build` generates a build within `./dist`
