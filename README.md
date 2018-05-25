@@ -1,9 +1,9 @@
 
 <div align="center">
-	![JSECoin Ltd](https://jsecoin.com/docs/images/jseLogo_card.png)
+![JSECoin Ltd](https://jsecoin.com/docs/images/jseLogo_card.png)
   
   
-	[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/makes-people-smile.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/makes-people-smile.svg)](http://forthebadge.com)
 </div>
   
   
