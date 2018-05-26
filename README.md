@@ -43,7 +43,8 @@ Check out our live [website](https://jsecoin.com).
 1. Initialise developer environment `npm run dev`
 
 ### Build website
-Executing `npm run build` generates a build within `./dist`
+
+1. Executing `npm run build` generates a build within `./dist`
 
 ## Webpack notes
 
@@ -52,6 +53,9 @@ Executing `npm run build` generates a build within `./dist`
 ## Bug Bounty
 This is an initial push - alot of cleanup is still required if you spot an issue please report it and if we consider it a major issue we will credit your account as part of our bug bounty offering.
 [Bug Bounty Info Page](https://jsecoin.com/en/oddJobs/bugBounty)
+
+## Contribute
+If you'd like to assist and help the team please first review our [Contribution Guidelines](./CONTRIBUTING.md).
 
 ## License
 This project is under the [GNU General Public License v3.0](./LICENSE).
