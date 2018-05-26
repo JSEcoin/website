@@ -19,9 +19,6 @@
 						<router-link v-bind:to="`/${$store.state.local}/systemStatus`" tag="a">
 							{{ $t('template.navigation.link_systemStatus') }}
 						</router-link>
-						<router-link v-bind:to="`/${$store.state.local}/technical/support`" tag="a">
-							{{ $t('template.navigation.link_technicalSupport') }}
-						</router-link>
 						<router-link v-bind:to="`/${$store.state.local}/technical/APIS`" tag="a">
 							{{ $t('template.navigation.link_API_Overview') }}
 						</router-link>
@@ -32,10 +29,10 @@
 							{{ $t('template.navigation.link_publisherNews') }}
 						</router-link>
 						<a href="/forum/webmasters/">
-							{{ $t('template.navigation.link_signup') }}
+							{{ $t('template.navigation.link_forums') }}
 						</a>
 						<a href="https://platform.jsecoin.com/?register=1" target="_BLANK">
-							{{ $t('template.navigation.link_blockchainExplorer') }} <i class="fa fa-external-link"></i>
+							{{ $t('template.navigation.link_signup') }} <i class="fa fa-external-link"></i>
 						</a>
 					</nav>
 				</div>

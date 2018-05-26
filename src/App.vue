@@ -98,12 +98,6 @@
 							<router-link v-bind:to="`/blog/news`" tag="a">
 								{{ $t('template.navigation.link_news') }}
 							</router-link>
-							<router-link v-bind:to="`/blog/announcements`" tag="a">
-								{{ $t('template.navigation.link_announcements') }}
-							</router-link>
-							<router-link v-bind:to="`/blog/development`" tag="a">
-								{{ $t('template.navigation.link_developmentStatus') }}
-							</router-link>
 							<router-link v-bind:to="`/${$store.state.local}/timeline`" tag="a">
 								{{ $t('template.navigation.link_timeline') }}
 							</router-link>
@@ -122,6 +116,9 @@
 							<router-link v-bind:to="`/${$store.state.local}/support/FAQ`" tag="a">
 								{{ $t('template.navigation.link_FAQ') }}
 							</router-link>
+							<a href="/forums">
+								{{ $t('template.navigation.link_forums') }}
+							</a>
 							<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a">
 								{{ $t('template.navigation.link_contactUs') }}
 							</router-link>
@@ -141,18 +138,18 @@
 							<a href="/whitepaper.pdf" target="_blank">
 								{{ $t('template.navigation.link_whitepaper') }} <i class="fa fa-file-pdf-o"></i>
 							</a>
-							<router-link v-bind:to="`/${$store.state.local}/technical/stats`" tag="a">
-								{{ $t('template.navigation.link_siteStatistics') }}
-							</router-link>
+							<a href="https://www.slideshare.net/JamesBachini/jsecoin-pitch-deck-97289450" target="_blank">
+								{{ $t('template.navigation.link_pitchdeck') }} <i class="fa fa-external-link"></i>
+							</a>
 							<a href="https://bitcointalk.org/index.php?topic=2398571.0" target="_BLANK">
 								{{ $t('template.navigation.link_bitcoinTalkAnn') }} <i class="fa fa-external-link"></i>
 							</a>
+							<router-link v-bind:to="`/${$store.state.local}/technical/stats`" tag="a">
+								{{ $t('template.navigation.link_siteStatistics') }}
+							</router-link>
 							<router-link v-bind:to="`/${$store.state.local}/technical/overview`" tag="a">
 								{{ $t('template.navigation.link_technicalOverview') }}
 							</router-link>
-							<a href="/forum/investors/">
-								{{ $t('template.navigation.link_forums') }}
-							</a>
 							<router-link v-bind:to="`/${$store.state.local}/about/press`" tag="a">
 								{{ $t('template.navigation.link_press') }}
 							</router-link>
@@ -162,9 +159,9 @@
 							<router-link v-bind:to="`/${$store.state.local}/environment`" tag="a">
 								{{ $t('template.navigation.link_environment') }}
 							</router-link>
-							<a href="https://platform.jsecoin.com/?register=1" target="_BLANK">
-								{{ $t('template.navigation.link_signup') }} <i class="fa fa-external-link"></i>
-							</a>
+							<router-link v-bind:to="`/${$store.state.local}/whitelisting`" tag="a">
+								{{ $t('template.navigation.link_whitelisting') }} <i class="fa fa-check"></i>
+							</router-link>
 						</div>
 					</div>
 				</nav>
@@ -190,11 +187,6 @@
 							<router-link v-bind:to="`/${$store.state.local}/systemStatus`" tag="a">
 								{{ $t('template.navigation.link_systemStatus') }}
 							</router-link>
-							<!--
-							<router-link v-bind:to="`/${$store.state.local}/technical/support`" tag="a">
-								{{ $t('template.navigation.link_technicalSupport') }}
-							</router-link>
-							-->
 							<router-link v-bind:to="`/${$store.state.local}/technical/APIS`" tag="a">
 								{{ $t('template.navigation.link_API_Overview') }}
 							</router-link>
@@ -217,23 +209,15 @@
 					<h4 v-on:click="toggleNavItem('developers');"><i class="fa fa-chevron-left"></i> {{ $t('template.navigation.heading_developers') }}</h4>
 					<div class="mobileNavScroll vb" v-bar>
 						<div>
-							<!--<a href="https://developer.jsecoin.com/">
-								{{ $t('template.navigation.link_API_Documentation') }} <i class="fa fa-external-link"></i>
-							</a>
-							<a href="https://developers.jsecoin.com/codeSamples">
-								Code Samples <i class="fa fa-external-link"></i>
-							</a>
-							<a href="https://developers.jsecoin.com/support">
-								Technical Support <i class="fa fa-external-link"></i>
-							</a>-->
 							<router-link v-bind:to="`/${$store.state.local}/developers/overview`" tag="a">
 								{{ $t('template.navigation.link_ourCommitment') }}
 							</router-link>
-							<!--
-							<router-link v-bind:to="`/blog/development`" tag="a">
-								{{ $t('template.navigation.link_developerNews') }}
-							</router-link>
-							-->
+							<a href="https://developer.jsecoin.com/" target="_blank">
+								{{ $t('template.navigation.link_API_Documentation') }} <i class="fa fa-external-link"></i>
+							</a>
+							<a href="https://github.com/jsecoin" target="_blank">
+								GitHub <i class="fa fa-external-link"></i>
+							</a>
 							<router-link v-bind:to="`/${$store.state.local}/oddJobs/smallJobs`" tag="a">
 								{{ $t('template.navigation.link_oddJobs') }}
 							</router-link>
@@ -243,9 +227,9 @@
 							<router-link v-bind:to="`/${$store.state.local}/oddJobs/submitInfo`" tag="a">
 								{{ $t('template.navigation.link_submitABug') }}
 							</router-link>
-							<a href="/forum/development/">
-								{{ $t('template.navigation.link_forums') }}
-							</a>
+							<router-link v-bind:to="`/${$store.state.local}/downloads`" tag="a">
+								{{ $t('template.navigation.link_downloads') }}
+							</router-link>
 							<a href="https://platform.jsecoin.com/?register=1" target="_BLANK">
 								{{ $t('template.navigation.link_signup') }} <i class="fa fa-external-link"></i>
 							</a>
@@ -288,9 +272,6 @@
 								{{ $t('template.footer.privacy.text_trust') }}
 							</p>
 							<p>
-								<!--<router-link v-bind:to="`/${$store.state.local}/legal/userAgreement`" tag="a">
-									Read about our User Agreement  ›
-								</router-link><br />-->
 								<router-link v-bind:to="`/${$store.state.local}/legal/privacyPolicy`" tag="a">
 									{{ $t('template.footer.privacy.link_privacyPolicy') }} ›
 								</router-link><br />
@@ -322,12 +303,6 @@
 							<router-link v-bind:to="`/blog/news`" tag="a">
 								{{ $t('template.navigation.link_news') }}
 							</router-link>
-							<!--<router-link v-bind:to="`/blog/announcements`" tag="a">
-								{{ $t('template.navigation.link_announcements') }}
-							</router-link>
-							<router-link v-bind:to="`/blog/development`" tag="a">
-								{{ $t('template.navigation.link_developmentStatus') }}
-							</router-link>-->
 							<router-link v-bind:to="`/${$store.state.local}/timeline`" tag="a">
 								{{ $t('template.navigation.link_timeline') }}
 							</router-link>
@@ -373,9 +348,6 @@
 							<router-link v-bind:to="`/${$store.state.local}/technical/overview`" tag="a">
 								{{ $t('template.navigation.link_technicalOverview') }}
 							</router-link>
-							<!--<a href="/forum/investors/">
-								{{ $t('template.navigation.link_forums') }}
-							</a>-->
 							<router-link v-bind:to="`/${$store.state.local}/about/press`" tag="a">
 								{{ $t('template.navigation.link_press') }}
 							</router-link>
@@ -406,22 +378,12 @@
 							<router-link v-bind:to="`/${$store.state.local}/systemStatus`" tag="a">
 								{{ $t('template.navigation.link_systemStatus') }}
 							</router-link>
-							<!--
-							<router-link v-bind:to="`/${$store.state.local}/technical/support`" tag="a">
-								{{ $t('template.navigation.link_technicalSupport') }}
-							</router-link>
-							-->
 							<router-link v-bind:to="`/${$store.state.local}/technical/APIS`" tag="a">
 								{{ $t('template.navigation.link_API_Overview') }}
 							</router-link>
 							<a href="https://developer.jsecoin.com/samples" target="_BLANK">
-							<!--<router-link v-bind:to="`/${$store.state.local}/technical/samples`" tag="a">-->
 								{{ $t('template.navigation.link_sampleIntegrations') }}
-							<!--</router-link>-->
 							</a>
-							<!--<a href="/forum/webmasters/">
-								{{ $t('template.navigation.link_forums') }}
-							</a>-->
 							<a href="https://platform.jsecoin.com/?register=1" target="_BLANK">
 								{{ $t('template.navigation.link_signup') }} <i class="fa fa-external-link"></i>
 							</a>
@@ -431,20 +393,9 @@
 							<a href="https://developer.jsecoin.com/" target="_blank">
 								{{ $t('template.navigation.link_API_Documentation') }} <i class="fa fa-external-link"></i>
 							</a>
-							<a href="https://github.com/jsecoin/jsecoin" target="_blank">
+							<a href="https://github.com/jsecoin" target="_blank">
 								GitHub <i class="fa fa-external-link"></i>
 							</a>
-							<!--<a href="https://developer.jsecoin.com/codeSamples">
-								{{ $t('template.navigation.link_codeSamples') }} <i class="fa fa-external-link"></i>
-							</a>
-							<a href="https://developer.jsecoin.com/support">
-								{{ $t('template.navigation.link_developerSupport') }} <i class="fa fa-external-link"></i>
-							</a>-->
-							<!--
-							<router-link v-bind:to="`/blog/development`" tag="a">
-								{{ $t('template.navigation.link_developerNews') }}
-							</router-link>
-							-->
 							<router-link v-bind:to="`/${$store.state.local}/oddJobs/smallJobs`" tag="a">
 								{{ $t('template.navigation.link_oddJobs') }}
 							</router-link>
@@ -457,9 +408,6 @@
 							<router-link v-bind:to="`/${$store.state.local}/downloads`" tag="a">
 								{{ $t('template.navigation.link_downloads') }}
 							</router-link>
-							<!--<a href="/forum/development/">
-								{{ $t('template.navigation.link_forums') }}
-							</a>-->
 							<a href="https://platform.jsecoin.com/?register=1" target="_BLANK">
 								{{ $t('template.navigation.link_signup') }} <i class="fa fa-external-link"></i>
 							</a>
