@@ -4,27 +4,27 @@
 			<div class="row">
 				<div class="col" style="max-width:inherit;flex-grow:0;padding-right:40px;margin-right:40px; border-right:solid 1px #eee;width:240px;">
 					<nav id="JSEW-subNav">
-							<a href="https://developer.jsecoin.com/" target="_blank">
-								{{ $t('template.navigation.link_API_Documentation') }} <i class="fa fa-external-link"></i>
-							</a>
-							<a href="https://github.com/jsecoin/jsecoin" target="_blank">
-								GitHub <i class="fa fa-external-link"></i>
-							</a>
-							<router-link v-bind:to="`/${$store.state.local}/oddJobs/smallJobs`" tag="a">
-								{{ $t('template.navigation.link_oddJobs') }}
-							</router-link>
-							<router-link v-bind:to="`/${$store.state.local}/oddJobs/bugBounty`" tag="a">
-								{{ $t('template.navigation.link_bugBounty') }}
-							</router-link>
-							<router-link v-bind:to="`/${$store.state.local}/oddJobs/submitInfo`" tag="a">
-								{{ $t('template.navigation.link_submitABug') }}
-							</router-link>
-							<router-link v-bind:to="`/${$store.state.local}/downloads`" tag="a">
-								{{ $t('template.navigation.link_downloads') }}
-							</router-link>
-							<a href="https://platform.jsecoin.com/?register=1" target="_BLANK">
-								{{ $t('template.navigation.link_signup') }} <i class="fa fa-external-link"></i>
-							</a>
+						<a href="https://developer.jsecoin.com/" target="_blank">
+							{{ $t('template.navigation.link_API_Documentation') }} <i class="fa fa-external-link"></i>
+						</a>
+						<a href="https://github.com/jsecoin" target="_blank">
+							GitHub <i class="fa fa-external-link"></i>
+						</a>
+						<router-link v-bind:to="`/${$store.state.local}/oddJobs/smallJobs`" tag="a">
+							{{ $t('template.navigation.link_oddJobs') }}
+						</router-link>
+						<router-link v-bind:to="`/${$store.state.local}/oddJobs/bugBounty`" tag="a">
+							{{ $t('template.navigation.link_bugBounty') }}
+						</router-link>
+						<router-link v-bind:to="`/${$store.state.local}/oddJobs/submitInfo`" tag="a">
+							{{ $t('template.navigation.link_submitABug') }}
+						</router-link>
+						<router-link v-bind:to="`/${$store.state.local}/downloads`" tag="a">
+							{{ $t('template.navigation.link_downloads') }}
+						</router-link>
+						<a href="https://platform.jsecoin.com/?register=1" target="_BLANK">
+							{{ $t('template.navigation.link_signup') }} <i class="fa fa-external-link"></i>
+						</a>
 					</nav>
 				</div>
 				<div class="col">
