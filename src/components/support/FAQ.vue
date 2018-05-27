@@ -52,12 +52,12 @@
 						<img src="../../assets/images/support/affiliates.png" width="60%" :alt="$t('pages.FAQ.section_affiliates.alt_affiliates')" />
 						<h4 class="heading">{{ $t('pages.FAQ.section_affiliates.heading_affiliates') }}</h4>
 						<h5 class="subHeading">{{ $t('pages.FAQ.section_affiliates.subheading_affiliates') }}s</h5>
-					</div>
+					</div><!--
 					<div class="faqSection" :class="{active:activeFAQSection === 'technology'}" v-on:click="activeSection('technology')">
 						<img src="../../assets/images/support/cryptocurrency.png" width="60%" :alt="$t('pages.FAQ.section_technology.alt_technology')" />
 						<h4 class="heading">{{ $t('pages.FAQ.section_technology.heading_technology') }}</h4>
 						<h5 class="subHeading">{{ $t('pages.FAQ.section_technology.subheading_technology') }}</h5>
-					</div>
+					</div>-->
 				</div>
 
 				<div id="JSEW-faqList" class="col left">
@@ -472,23 +472,6 @@
 							</p>
 						</div>
 						<!--Affiliate program-->
-					</div>
-
-
-
-
-					<div v-if="activeFAQSection === 'technology'">
-						<h1 class="heading">{{ $t('pages.FAQ.section_technology.heading_technology') }}</h1>
-						<h2 class="subHeading">{{ $t('pages.FAQ.section_technology.subheading_technology') }}</h2>
-
-						<!--JSEcoin source code-->
-						<div is="xBasicToggle">
-							<h3 class="faqItem"><i class="fa fa-plus-circle"></i> {{ $t('pages.FAQ.section_technology.faqItemHeading1') }}</h3>
-							<p>
-								{{ $t('pages.FAQ.section_technology.faqItemContent1') }}
-							</p>
-						</div>
-						<!--xJSEcoin source code-->
 					</div>
 				</div>
 			</div>
