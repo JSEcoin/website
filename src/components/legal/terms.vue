@@ -26,13 +26,13 @@
 				<li>
 					<h4>Definitions</h4>
 					<ol>
-						<li>The “User” means the account applicant or person who uses the JSECoin platform.</li>
-						<li>The “Publisher” means account applicant or person who is responsible for the distribution of the JSECoin webmining javascript code.</li>
+						<li>The “User” means the account applicant or person who uses the JSEcoin platform.</li>
+						<li>The “Publisher” means account applicant or person who is responsible for the distribution of the JSEcoin web mining javascript code.</li>
 						<li>The “Advert” An electronic form of advertising displayed from the publishers website.</li>
 						<li>The “Website” is the publisher owned property which is utilised to provide advertising space for the advertiser.</li>
-						<li>“JSECoin” is the network, operated by JSECoin Limited acting as the cryptocurrency technology provider.</li>
-						<li>“Traffic” is the supply of users from a publishers website to the JSECoin platform.</li>
-						<li>“Miner” is someone who carries out the hashing algorithm to secure the JSECoin network.</li>
+						<li>“JSEcoin” is the network, operated by JSEcoin Limited acting as the cryptocurrency technology provider.</li>
+						<li>“Traffic” is the supply of users from a publishers website to the JSEcoin platform.</li>
+						<li>“Miner” is someone who carries out the hashing algorithm to secure the JSEcoin network.</li>
 						<li>“Accompanying Documents” shall mean other JSECOIN Ltd regulatory documents accompanying and detailing these Terms and Conditions, being inalienable part hereof and published on the Website (including, but not limited to, AML Policy, KYC Policy and Privacy Policy ) effective at the moment of the Website use. In case of any discrepancies between Accompanying Documents and the Terms, the latter shall apply.</li>
 						<li>“Affiliates” shall mean any persons or entities that have any relation to the Company, including, but not limited to partners, employees, and agents of the Company.</li>
 						<li>“Blockchain” shall mean a type of distributed ledger, comprised of unchangeable, digitally recorded, data in packages called blocks.</li>
@@ -46,9 +46,9 @@
 					<h4>Conditions</h4>
 					<ol>
 						<li>These “Terms and Conditions” do not affect your statutory rights as a consumer.</li>
-						<li>All contracts and insertion orders made by JSECoin shall be deemed to incorporate these terms and conditions which shall prevail over any other document or communication from the advertiser or publisher.</li>
-						<li>If any amendments to these terms and conditions are required it is preferable that they be confirmed in writing.</li>
-						<li>JSECoin Limited, JSECoin employees, JSECoin affiliates are not financial advisors and no information on this site or 3rd party websites and correspondence should be taken as financial advice under any circumstances. Investors are responsible for carrying out their own due diligence and research.</li>
+						<li>All contracts and insertion orders made by JSEcoin shall be deemed to incorporate these terms and conditions which shall prevail over any other document or communication from the advertiser or publisher.</li>
+						<li>If any amendments to these terms and conditions are required, it is preferable that they be confirmed in writing.</li>
+						<li>JSEcoin Limited, JSEcoin employees, JSEcoin affiliates are not financial advisors and no information on this site or 3rd party websites and correspondence should be taken as financial advice under any circumstances. Investors are responsible for carrying out their own due diligence and research.</li>
 						<li>These terms and any disputes arising will be governed under the laws of the United Kingdom.</li>
 						<li>JSECOIN Ltd Terms and Conditions and all Accompanying Documents constitute a legally binding agreement between the Company and any and all Users as defined herein. All questions concerning the construction, validity, enforcement and interpretation of these Terms and all Accompanying Documents shall be governed by and construed and enforced in accordance with the laws of the United Kingdom.</li>
 						<li>These Terms are effective at the time the User begins using the Website. It is hereby understood and presumed, that by the fact of the Website use and the purchase of  JSECOIN Tokens during the JSECOIN Token Sale the respective User fully read, understood and irrevocably accepted these Terms. If any User does not agree with these Terms in general or any part of them, such User’s only recourse is to withhold from using the Website and/or purchase of JSECOIN Tokens. The Users may withdraw from their obligation under the Terms at any time by discontinuing the use of the Website.</li>
@@ -82,65 +82,65 @@
 					</ol>
 				</li>
 				<li>
-					<h4>Liquidty</h4>
+					<h4>Liquidity</h4>
 					<ol>
-						<li>JSECoin is not responsible for the exchange of tokens or coins to fiat currencies such as USD/EUR/GBP.</li>
-						<li>JSECoin can not assist in resolving issues when coins and tokens have been sold via 3rd parties and exchanges.</li>
-						<li>JSECoin assumes no responsibility for paying any income taxes, banking commissions or currency fees on behalf of the publisher. Please contact your local tax authority for further advice on any applicable income tax schemes.</li>
+						<li>JSEcoin is not responsible for the exchange of tokens or coins to fiat currencies such as USD/EUR/GBP.</li>
+						<li>JSEcoin can not assist in resolving issues when coins and tokens have been sold via 3rd parties and exchanges.</li>
+						<li>JSEcoin assumes no responsibility for paying any income taxes, banking commissions or currency fees on behalf of the publisher. Please contact your local tax authority for further advice on any applicable income tax schemes.</li>
 					</ol>
 				</li>
 				<li>
 					<h4>Delivery of privacy notice</h4>
 					<ol>
-						<li>Whilst every reasonable effort shall be made to provide reliable and consistent delivery of the privacy notice and adverts JSECoin shall not be liable for any losses, costs, damages or expenses incurred by the publisher or any other person or company arising directly or indirectly out of any failure from the advertising network.</li>
+						<li>Whilst every reasonable effort shall be made to provide reliable and consistent delivery of the privacy notice and adverts JSEcoin shall not be liable for any losses, costs, damages or expenses incurred by the publisher or any other person or company arising directly or indirectly out of any failure from the advertising network.</li>
 					</ol>
 				</li>
 				<li>
 					<h4>Publicity</h4>
 					<ol>
-						<li>JSECoin may use the names, trademarks and/or correspondence of publishers, advertisers or any third parties without prior written approval.</li>
+						<li>JSEcoin may use the names, trademarks and/or correspondence of publishers, advertisers or any third parties without prior written approval.</li>
 					</ol>
 				</li>
 				<li>
 					<h4>Statistics and discrepancies</h4>
 					<ol>
-						<li>All traffic revenue will be calculated from JSECoin statistics. These will be the sole basis for calculating revenue for publishers.</li>
-						<li>JSECoin statistics may not be 100% accurate and this is accepted by both the publishers and miners.</li>
-						<li>In the event of a failure to record statistics from the network. JSECoin will estimate revenue and costs based on previous and historical statistics. Our decision in regard to setting these rates will be final and not negotiable.</li>
+						<li>All traffic revenue will be calculated from JSEcoin statistics. These will be the sole basis for calculating revenue for publishers.</li>
+						<li>JSEcoin statistics may not be 100% accurate and this is accepted by both the publishers and miners.</li>
+						<li>In the event of a failure to record statistics from the network. JSEcoin will estimate revenue and costs based on previous and historical statistics. Our decision in regard to setting these rates will be final and not negotiable.</li>
 					</ol>
 				</li>
 				<li>
 					<h4>Ownership and Risk</h4>
 					<ol>
 					<li>Any risk in mining and advertising shall pass directly to the advertiser upon delivery of the advert from the publisher.</li>
-					<li>No guarantees can be made in respect to traffic quality and JSECoin will not be held liable for any losses incurred from bad quality traffic.</li>
+					<li>No guarantees can be made in respect to traffic quality and JSEcoin will not be held liable for any losses incurred from bad quality traffic.</li>
 					</ol>
 				</li>
 				<li>
 					<h4>Cancellation and Refunds</h4>
 					<ol>
 						<li>An advertiser can cancel a campaign at any time. The advertising network provides real time control of this feature however as a precaution it is recommended to provide 24 hours notice in writing where possible.</li>
-						<li>If you are an advertiser you have the right, in addition to your other rights, to cancel your contract and receive a refund. You must contact us and inform us in writing of your desire to cancel your account. Your login will then be removed and your remaining balance will be paid back to you. Any bank/paypal fees from this will be charged to the advertiser.</li>
+						<li>If you are an advertiser, you have the right, in addition to your other rights, to cancel your contract and receive a refund. You must contact us and inform us in writing of your desire to cancel your account. Your login will then be removed and your remaining balance will be paid back to you. Any bank/paypal fees from this will be charged to the advertiser.</li>
 						<li>If you are a publisher you have the right, in addition to your other rights, to cancel your contract at any time. You must contact us and inform us in writing of your desire to cancel your account. Your login will then be removed and your remaining balance will be paid out only if it meets the minimum thresholds as outlined in section</li>
 					</ol>
 				</li>
 				<li>
 					<h4>Force Majeure</h4>
 					<ol>
-						<li>In the event that JSECoin is prevented from carrying out its obligations under a contract for sale as a result of any cause beyond its control such as but not limited to Acts of God, War, Strikes, Lock-outs, Hardware Failure, Security Breaches, Flood and Failure of third parties to deliver advertising, JSECoin shall be relieved of its obligations and liabilities under such contract for sale for as long as such fulfillment is prevented.</li>
+						<li>In the event that JSEcoin is prevented from carrying out its obligations under a contract for sale as a result of any cause beyond its control such as but not limited to Acts of God, War, Strikes, Lock-outs, Hardware Failure, Security Breaches, Flood and Failure of third parties to deliver advertising, JSEcoin shall be relieved of its obligations and liabilities under such contract for sale for as long as such fulfillment is prevented.</li>
 					</ol>
 				</li>
 				<li>
 					<h4>Complaints</h4>
 					<ol>
-						<li>If you have a complaint about our service or any goods or services you purchase from JSECoin then please contact us immediately. You will be contacted as soon as possible of our hearing from you and aim to provide a resolution within 5 working days.</li>
+						<li>If you have a complaint about our service or any goods or services you purchase from JSEcoin then please contact us immediately. You will be contacted as soon as possible of our hearing from you and aim to provide a resolution within 5 working days.</li>
 						<li>All complaints will be dealt with in a fair and confidential manner.</li>
 					</ol>
 				</li>
 				<li>
 					<h4>Liability</h4>
 					<ol>
-						<li>Under no circumstances will JSECoin or JSECoin Limited be liable for any losses suffered by the users, miners or publishers.</li>
+						<li>Under no circumstances will JSEcoin or JSEcoin Limited be liable for any losses suffered by the users, miners or publishers.</li>
 						<li>Our total liability will never exceed more than $100 USD per event whereby a series of events or campaigns is considered a single event.</li>
 						<li>We are not liable for losses caused by third parties including those using the advertising network.</li>
 					</ol>
@@ -148,28 +148,28 @@
 				<li>
 					<h4>Alterations to terms and conditions</h4>
 					<ol>
-						<li>JSECoin is entitled to amend these terms and conditions as we see fit for any reason at any time.</li>
+						<li>JSEcoin is entitled to amend these terms and conditions as we see fit for any reason at any time.</li>
 						<li>An up to date copy of the current terms and conditions will be provided at the following URL: https://jsecoin.com/en/legal/terms/</li>
 						<li>If a miner or publisher does not agree to any amendment they will be entitled to terminate the agreement in writing within 14 days of the amendment being made.</li>
 					</ol>
 				</li>
 				<li>
-					<h4>Budgets, Captitalisation and Hashing Difficulty</h4>
+					<h4>Budgets, Capitalisation and Hashing Difficulty</h4>
 					<ol>
-						<li>While every effort is made to meet miners requirements in regard to budgets we reserve the right to change the mining rewards and hashing difficulty at any time without notice.</li>
-						<li>JSECoin reserves the right to introduce new coins and distribute coins as it sees fit. All transactions will be made publicly available.</li>
+						<li>While every effort is made to meet miners requirements in regard to budget we reserve the right to change the mining rewards and hashing difficulty at any time without notice.</li>
+						<li>JSEcoin reserves the right to introduce new coins and distribute coins as it sees fit. All transactions will be made publicly available.</li>
 					</ol>
 				</li>
 				<li>
 					<h4>Damage to Systems</h4>
 					<ol>
-						<li>JSECoin is not liable for any losses suffered from damage to hardware or software systems caused by mining.</li>
+						<li>JSEcoin is not liable for any losses suffered from damage to hardware or software systems caused by mining.</li>
 					</ol>
 				</li>
 				<li>
 					<h4>Website Standards</h4>
 					<ol>
-						<li>JSECoin has a zero tolerance policy on the following website and advertising content:
+						<li>JSEcoin has a zero tolerance policy on the following website and advertising content:
 							<ol>
 								<li>Child pornography</li>
 								<li>Sexual conduct with animals</li>
@@ -199,16 +199,16 @@
 				<li>
 					<h4>Applications</h4>
 					<ol>
-						<li>Applications for accounts on the network will be approved or declined at the sole discretion of JSECoin employees for any reason we deem fit.</li>
+						<li>Applications for accounts on the network will be approved or declined at the sole discretion of JSEcoin employees for any reason we deem fit.</li>
 					</ol>
 				</li>
 				<li>
 					<h4>Misuse</h4>
 					<ol>
 						<li>Any misuse of the system will result in immediate suspension or closure of the users account.</li>
-						<li> Misuse will be judged solely by JSECoin employees and can be based on any factor we see fit.</li>
+						<li> Misuse will be judged solely by JSEcoin employees and can be based on any factor we see fit.</li>
 						<li>Publishers using any method to artificially increase the number of impressions supplied will have their accounts immediately closed. All traffic provided should be genuine users.</li>
-						<li>Code provided for publishers such as the javascript tag may not be modified or reused in any way.</li>
+						<li>Code provided for publishers such as the Javascript tag may not be modified or reused in any way.</li>
 						<li>Creating multiple accounts on the system without prior authorization will be deemed as misuse.</li>
 						<li>Publisher code must only be placed on domains owned by the webmaster or with written permission from the owner of the website.</li>
 						<li>The SiteID used in publisher code must match the owned domain of the webmaster.</li>
@@ -224,35 +224,35 @@
 				<li>
 					<h4>Use of Cookies</h4>
 					<ol>
-						<li>JSECoin uses cookies and localStorage to store information on a users computer. This information is then used in targeting by advertisers, including retargeting campaigns. A retargeting campaign is when a cookie is placed, sometimes by a third party, on the users computer and then ads are then shown to users with that specific cookie. Every publisher is responsible for updating the terms and conditions, privacy policy and any other legal documents required for the use of cookies and retargeting in their local region.</li>
+						<li>JSEcoin uses cookies and localStorage to store information on a users computer. This information is then used in targeting by advertisers, including retargeting campaigns. A retargeting campaign is when a cookie is placed, sometimes by a third party, on the users computer and then ads are then shown to users with that specific cookie. Every publisher is responsible for updating the terms and conditions, privacy policy and any other legal documents required for the use of cookies and retargeting in their local region.</li>
 					</ol>
 				</li>
 				<li>
 					<h4>Intellectual Property</h4>
 					<ol>
-						<li>The JSECoin co-founders retain all rights, title and interest in this website, its products and services including all copyrights, patents, trade secrets, trademarks, trade names, logos, slogans, graphics, scripts, code, videos, text, software, files, content, information and other intellectual property rights.</li>
+						<li>The JSEcoin co-founders retain all rights, title and interest in this website, its products and services including all copyrights, patents, trade secrets, trademarks, trade names, logos, slogans, graphics, scripts, code, videos, text, software, files, content, information and other intellectual property rights.</li>
 					</ol>
 				</li>
 				<li>
 					<h4>Indemnification</h4>
 					<ol>
 						<li>To the fullest extent permitted by applicable law, you will indemnify, defend and hold harmless us and our respective past, present and future employees, officers, directors, contractors, consultants, equity holders, suppliers, vendors, service providers, parent companies, subsidiaries, affiliates, agents, representatives, predecessors, successors and assigns from and against all claims, damages, liabilities, losses, costs and expenses.</li>
-						<li>We reserve the right to exercise sole control over the defense, at your expense, of any claim subject to indemnification pursuant to these terms. &amp;nbsp;This indemnity is in addition to, and not in lieu of, any other indemnities set forth in a written agreement between you and JSECoin.</li>
+						<li>We reserve the right to exercise sole control over the defense, at your expense, of any claim subject to indemnification pursuant to these terms. &amp;nbsp;This indemnity is in addition to, and not in lieu of, any other indemnities set forth in a written agreement between you and JSEcoin.</li>
 					</ol>
 				</li>
 				<li>
 					<h4>Referrals</h4>
 					<ol>
 						<li>All referral traffic should be genuine users, fake accounts and bot traffic will result in account suspensions.</li>
-						<li>JSECoin Users with duplicate IP addresses and other factors indicating duplicate accounts will not be paid. This includes two users signing up from the same office/home.</li>
-						<li>JSECoin personnel reserve the right to suspend any accounts that we believe have misused the system. Our decision is final and is not liable to legal proceedings.</li>
+						<li>JSEcoin Users with duplicate IP addresses and other factors indicating duplicate accounts will not be paid. This includes two users signing up from the same office/home.</li>
+						<li>JSEcoin personnel reserve the right to suspend any accounts that we believe have misused the system. Our decision is final and is not liable to legal proceedings.</li>
 					</ol>
 				</li>
 				<li>
 					<h4>Taxation</h4>
 					<ol>
 						<li>Users and publishers are solely responsible for the disclosure and taxation of all digital assets.</li>
-						<li>JSECoin Limited will not be held responsible for the tax implications of transferring or holding digital assets in your home jurisdiction.</li>
+						<li>JSEcoin Limited will not be held responsible for the tax implications of transferring or holding digital assets in your home jurisdiction.</li>
 						<li>The Company makes no representations concerning the tax implications of the sale of JSECOIN Tokens or the possession or use of them. The User bears the sole responsibility to determine if the purchase of JSECOIN Tokens with cryptocurrency or the potential appreciation or depreciation in the value of JSECOIN Tokens over time has tax implications for the User in the User’s home jurisdiction. By purchasing JSECOIN Tokens, and to the extent permitted by law, the User agrees not to hold the Company liable for any tax liability associated with or arising from the purchase of JSECOIN Tokens.</li>
 						<li>All fees and charges payable by You are exclusive of any taxes, and shall certain taxes be applicable, they shall be added on top of the payable amounts.</li>
 					</ol>
@@ -329,12 +329,12 @@
 					<h4>Misc</h4>
 					<ol>
 						<li>Any contracts shall in all respects be construed and operate as an English contract and in conformity with English law.</li>
-						<li>JSECoin will not be held liable to any breaches of guidelines or laws outside of the UK.</li>
+						<li>JSEcoin will not be held liable to any breaches of guidelines or laws outside of the UK.</li>
 						<li>These Terms and Conditions are intended to fully reflect the terms of the original agreement between the parties. No provision of these Terms shall be considered waived unless such waiver is in writing and signed by the party that benefits from the enforcement of such provision. No waiver of any provision in these Terms, however, will be deemed a waiver of a subsequent breach of such provision or a waiver of a similar provision. In addition, a waiver of any breach or a failure to enforce any term or condition of these Terms will not in any way affect, limit, or waive a Party’s rights hereunder at any time to enforce strict compliance thereafter with every term and condition hereof.</li>
 						<li>If any term, provision, covenant or restriction of these Terms and all Accompanying Documents is held by a court of competent jurisdiction to be invalid, illegal, void or unenforceable, the remainder of the terms, provisions, covenants and restrictions set forth herein shall remain in full force and effect and shall in no way be affected, impaired or invalidated, and the parties hereto shall use their commercially reasonable efforts to find and employ an alternative means to achieve the same or substantially the same result as that contemplated by such term, provision, covenant or restriction. It is hereby stipulated and declared to be the intention of the parties that they would have executed the remaining terms, provisions, covenants and restrictions without including any of such that may be hereafter declared invalid, illegal, void or unenforceable.</li>
 						<li>The User agrees and consents to receive electronically all communications, agreements, documents, receipts, notices and disclosures, that the Company provides in connection with use of the Website. The User agrees that the Company may provide these communications by posting them via the Website, by emailing them to User at the email address User provides.</li>
 						<li>The Company may, at its sole discretion, assign its rights and/or delegate its duties under these Terms and all Accompanying Documents. You may not assign your rights or delegate your duties, and any assignment or delegation without the written consent of the Company, which the latter may withhold at its sole discretion, shall be void.</li>
-						<li>In the event of a security breach, data loss, development issue, or for any other reason JSECoin team sees fit, we reserve the right to reset the blockchain to the genesis block or an earlier backup. Where possible we will carry account balances forwards however the user accepts the risk that it may be necessary to reset or reverse the blockchain which could lead to loss of funds or transaction data.</li>
+						<li>In the event of a security breach, data loss, development issue, or for any other reason JSEcoin team sees fit, we reserve the right to reset the blockchain to the genesis block or an earlier backup. Where possible we will carry account balances forwards however the user accepts the risk that it may be necessary to reset or reverse the blockchain which could lead to loss of funds or transaction data.</li>
 						<li>If any part of these terms and conditions that is not fundamental is found to be illegal or unenforceable, such finding will not affect the validity or enforceability of the remainder of these terms and conditions.</li>
 					</ol>
 				</li>
