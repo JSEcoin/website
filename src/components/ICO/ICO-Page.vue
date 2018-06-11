@@ -8,6 +8,7 @@
 						<div class="row">
 							<div style="border-right:solid 1px #eee; margin:10px 0px;">
 								<img style="width:140px; margin: 20px 20px 0px 20px;" src="../../assets/ico/logo.png" alt="JSECoin - The Javascript Embedded Cryptocurrency" />
+								<button v-if="showBuyOption" v-on:click="initBuy" class="button buy">Buy JSE</button>
 							</div>
 							<div class="mainCol">
 								<div style="border-bottom:solid 1px #eee; margin:0px 10px;padding-bottom:10px;">
@@ -42,12 +43,13 @@
 											</li>
 											<li class="mainCol" style="border-right:solid 1px #eee;">
 												<div id="JSEW-eth"></div>
-												0 <span>ETH</span>
+												{{total.eth}} <span>ETH</span>
 											</li>
+											<!--
 											<li class="mainCol">
 												<div id="JSEW-eos"></div>
 												0 <span>EOS</span>
-											</li>
+											</li>-->
 										</ul>
 									</div>
 									<div class="mainCol" style="padding:0px 10px;">
@@ -68,7 +70,7 @@
 						</div>
 						<div class="footer">
 							<p>
-								**Depending on the Ethereum and EOS network traffic, figures may be delayed.
+								**Depending on the Ethereum <!--and EOS --> network traffic, figures may be delayed.
 							</p>
 						</div>
 					</dd>
@@ -89,7 +91,7 @@
 			</div>
 			<div class="row">
 				<dl class="mainCol">
-					<dt>Use this payment method to send ETH from ERC20 Compatible Wallet to our smart contract</dt>
+					<dt>You can use this payment method to send ETH from ERC20 Compatible Wallet to our smart contract</dt>
 					<dd>
 						<div class="row" style="border-bottom:solid 1px #eee;">
 							<div style="border-right:solid 1px #eee; margin:10px 0px; align-self: center;">
@@ -105,7 +107,7 @@
 									<li>In order to add JSECoin tokens to your ETH wallet make sure you use this address:</li>
 								</ol>
 								<div class="warning">
-									<b>DO NOT send ETH or EOS directly from an exchange!</b>
+									<b>DO NOT send ETH <!-- or EOS --> directly from an exchange!</b>
 									<p>Please read below on why this is important...</p>
 								</div>
 							</div>
@@ -152,8 +154,8 @@
 						</table>
 					</dd>
 				</dl>
-				<dl class="thinCol" style="  font-size: 0.875em">
-					<dt style="color:#f7ad42"><i class="fa fa-info-circle "></i> DO NOT send ETH or EOS directly from an exchange!</dt>
+				<dl class="thinCol" style="font-size: 0.875em">
+					<dt style="color:#f7ad42"><i class="fa fa-info-circle "></i> DO NOT send ETH <!--or EOS --> directly from an exchange!</dt>
 					<dd>
 						<ol>
 							<li>Please make sure to send funds from a valid ERC20 compatible Ethereum address to receive your tokens.</li>
@@ -175,22 +177,97 @@
 </template>
 
 <script>
+import axios from 'axios';
 import QRious from 'qrious';
 import moment from 'moment';
+import Web3 from 'web3';
+import jseContractObj from './JSETokenSale.json';
+import jseTokenObj from './JSEToken.json';
+
+//setup web3
+window.web3 = new Web3(Web3.givenProvider || 'http://localhost:8545');
+//version
+console.log('VERSION:', window.web3.version);
 
 export default {
 	name: 'Ico-Page',
 	data() {
 		return {
-			ethPaymentAddress: '0xF98B1c84B5C04A5203187fB7248B5107064DA48B',
-			endICO: 1536710399,
+			ethPaymentAddress: '0x85e68197da73289039a866d30041f5941ff11f77',
+			tokenAddress: '0x85e68197da73289039a866d30041f5941ff11f77',
+			activeAccount: '',
+			userAccount: '',
+			showBuyOption: false,
+			availableAccounts: [],
+			endICO: 1539302399,
 			endDate: '',
 			months: '00',
 			days: '00',
 			hrs: '00',
 			mins: '00',
 			seconds: '00',
+			total: {
+				eth: 0,
+			},
 		};
+	},
+	created() {
+		const self = this;
+
+		//poll web3 to check current provider active and user logged in
+		web3.currentProvider.publicConfigStore.on('update', (acc) => {
+			console.log('upadate', acc);
+			if (typeof (acc.selectedAddress) !== 'undefined') {
+				self.activeAccount = acc.selectedAddress;
+				self.showBuyOption = true;
+			} else {
+				self.activeAccount = '';
+				self.showBuyOption = false;
+			}
+		});
+		/*
+		const accountInterval = setInterval(() => {
+			// Check if account has changed
+			if (web3.eth.accounts[0] !== self.userAccount) {
+				self.userAccount = web3.eth.accounts[0];
+			}
+		}, 100);*/
+		window.web3.eth.getAccounts().then((t) => {
+			console.log('AccountDefined', t, t.length);
+			if ((typeof (t) !== 'undefined') && (t.length > 0)) {
+				self.availableAccounts = t;
+				self.userAccount = t[0];
+				self.showBuyOption = true;
+			}
+		});
+		//set total Eth balance in wallet
+		window.web3.eth.getBalance(self.ethPaymentAddress, 'latest', (error, weiBalance) => {
+			self.total.eth = window.web3.utils.fromWei(weiBalance);
+		});
+
+		//get user balance
+		window.web3.eth.getBalance(self.tokenAddress, 'latest', (error, weiBalance) => {
+			console.log('USER BALNCE', window.web3.utils.fromWei(weiBalance));
+		});
+
+		//get user account list
+		window.web3.eth.getAccounts().then((data) => {
+			//loop generate an account list fieldset to choose account to pay from
+			console.log('ACCOUNT:', data);
+		});
+
+		window.jseTokenContract = new window.web3.eth.Contract(jseTokenObj.abi, self.tokenAddress);
+
+		window.jseContract = new window.web3.eth.Contract(jseContractObj.abi, self.ethPaymentAddress);
+		//test init buy call
+		/*jseContract.methods.buyTokens.call({
+			value: window.web3.utils.toWei('0.5', 'ether'),
+		});*/
+
+		//jseContract.methods.buyTokens().call();
+		/*jseContract.methods.buyTokens({
+			value: window.web3.utils.toWei('0.5', 'ether'),
+		});*/
 	},
 	mounted() {
 		const self = this;
@@ -249,12 +326,43 @@ export default {
 			],
 		};
 	},
+	methods: {
+		/**
+		 * initialises wallet buy interface
+		 * @returns nothing
+		 * @public
+		 */
+		initBuy() {
+			const self = this;
+			console.log('BUY');
+			//load contract
+			const jseContract = new window.web3.eth.Contract(jseContractObj.abi, self.ethPaymentAddress);
+			console.log('CONTRACT:', jseContract);
+
+			jseContract.methods.buyTokens().send({
+				from: self.userAccount,
+				value: web3.utils.toWei('0.4', 'ether'),
+			}).then((t) => {
+				console.log('blah',t);
+			});
+		},
+	},
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.button.buy {
+	padding: 4px 8px;
+    /* width: 100%; */
+    /* margin: 0px 20px; */
+    /* border: 0px; */
+    /* border-radius: 4px; */
+    width: 150px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
 .sideButton:hover {
 	background:#00a47a !important;
 }
