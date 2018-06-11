@@ -332,7 +332,9 @@ Vue.use(vuexI18n.plugin, store, {
 				}, 2000);
 			});
 		}
-		console.warn(`i18n: Key '${key}' not found for locale '${locale}'`);
+		if (key !== '') {
+			console.warn(`i18n: Key '${key}' not found for locale '${locale}'`);
+		}
 		return false;
 	},
 });

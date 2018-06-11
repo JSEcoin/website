@@ -237,6 +237,13 @@
 				"link_support": "Support"
 			}
 		},
+		"ico": {
+			"meta": {
+				"title": "ICO",
+				"keywords": "",
+				"description": ""
+			}
+		},
 		"about": {
 			"meta": {
 				"title": "About",

@@ -39,30 +39,42 @@
 	<meta name="twitter:creator" content="@JRSim_UIX">
 	<meta name="twitter:title" content="JSECoin" />
 	<meta name="twitter:description" content="Explore the Cryptocurrency mined by webmasters built for everyone" />
-	<meta name="twitter:image" content="https://www.jsecoin.com/static/images/twitter.png?jsecoin" />
+	<meta name="twitter:image" content="https://www.jsecoin.com/static/images/twitter.png?jsecoinV2" />
 	
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.jsecoin.com/" />
 	<meta property="og:title" content="JSECoin" />
 	<meta property="og:description" content="Explore the Cryptocurrency mined by webmasters built for everyone" />
-	<meta property="og:image" content="https://www.jsecoin.com/static/images/facebook.png" />
+	<meta property="og:image" content="https://www.jsecoin.com/static/images/facebook.png?jsecoinV2" />
 	<meta property="og:image:type" content="image/png" />
 	<meta property="og:image:width" content="600" />
 	<meta property="og:image:height" content="548" />
 
 	<!-- One Signal Push Notifications-->
 	<link rel="manifest" href="/manifest.json" />
-	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 	<script>
-		// added wait until page loads
-		document.addEventListener("DOMContentLoaded", function(){
-			var OneSignal = window.OneSignal || [];
-			OneSignal.push(function() {
-				OneSignal.init({
-					appId: "20aac144-e0a2-4aad-9b3f-073f248a2bd5",
+		if (location.href.indexOf('localhost') === -1) {
+			const t = document.createElement('script');
+			const s = document.getElementsByTagName('script')[0];
+
+			//script attrs
+			t.async = true;
+			t.defer = true;
+			t.id = 'JSEW-OneSignal';
+			t.src = 'https://cdn.onesignal.com/sdks/OneSignalSDK.js';
+
+			//inject
+			s.parentNode.insertBefore(t, s);
+			// added wait until page loads
+			document.addEventListener("DOMContentLoaded", function(){
+				var OneSignal = window.OneSignal || [];
+				OneSignal.push(function() {
+					OneSignal.init({
+						appId: "20aac144-e0a2-4aad-9b3f-073f248a2bd5",
+					});
 				});
 			});
-		});
+		}
 	</script>
 
 
