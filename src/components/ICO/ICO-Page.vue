@@ -195,20 +195,32 @@ export default {
 		return {
 			ethPaymentAddress: '0x85e68197da73289039a866d30041f5941ff11f77',
 			tokenAddress: '0x85e68197da73289039a866d30041f5941ff11f77',
-			activeAccount: '',
-			userAccount: '',
-			showBuyOption: false,
-			availableAccounts: [],
-			endICO: 1539302399,
-			endDate: '',
-			months: '00',
-			days: '00',
-			hrs: '00',
-			mins: '00',
-			seconds: '00',
+			activeAccount: '', //active metamask account
+			availableAccounts: [], //list of available accounts
+			selectedPaymentAccount: '', //user selected payment account
+			showBuyOption: false, //show option to allow user to pay through wallet
+			endICO: 1539302399, //Oct 12 2018
+			endDate: '', //calculate generate readable date from endICO
+			months: '00', //countdown months left
+			days: '00', //countdown days left
+			hrs: '00', //countdown hrs left
+			mins: '00', //countdown mins left
+			seconds: '00', //countdown seconds left
 			total: {
-				eth: 0,
+				eth: 0, //total eth paid into contract
+				eos: 0, //total eos paid into contract
+				jse: 0, // total JSE distributed
 			},
+			//JSE goal Checkpoints reached
+			goalCheckpoints:[
+				1000000,
+				10000000,
+				100000000,
+				200000000,
+				300000000,
+				400000000,
+				500000000,
+			],
 		};
 	},
 	created() {
@@ -216,7 +228,6 @@ export default {
 
 		//poll web3 to check current provider active and user logged in
 		web3.currentProvider.publicConfigStore.on('update', (acc) => {
-			console.log('upadate', acc);
 			if (typeof (acc.selectedAddress) !== 'undefined') {
 				self.activeAccount = acc.selectedAddress;
 				self.showBuyOption = true;
@@ -225,18 +236,12 @@ export default {
 				self.showBuyOption = false;
 			}
 		});
-		/*
-		const accountInterval = setInterval(() => {
-			// Check if account has changed
-			if (web3.eth.accounts[0] !== self.userAccount) {
-				self.userAccount = web3.eth.accounts[0];
-			}
-		}, 100);*/
+		
 		window.web3.eth.getAccounts().then((t) => {
 			console.log('AccountDefined', t, t.length);
 			if ((typeof (t) !== 'undefined') && (t.length > 0)) {
 				self.availableAccounts = t;
-				self.userAccount = t[0];
+				self.selectedPaymentAccount = t[0];
 				self.showBuyOption = true;
 			}
 		});
