@@ -50,9 +50,12 @@
 					<dl>
 						<dt><div class="profile jim"><div class="overlayHex"></div></div></dt>
 						<dd>
+							<div class="team-social-icons">
+								<a href="https://www.linkedin.com/in/james-bachini/" target="_blank"><img src="../../assets/images/ico_linkedin.png" class="team-social-icon" alt="Linkedin" /></a>
+								<a href="https://twitter.com/james_bachini" target="_blank"><img src="../../assets/images/ico_twitter.png" class="team-social-icon" alt="Twitter" /></a>
+							</div>
 							<h3>James Bachini</h3>
 							<h4>{{ $t('pages.team.members.JB.title') }}</h4>
-
 							<p>
 								{{ $t('pages.team.members.JB.para_main1') }}
 							</p>								
@@ -70,6 +73,10 @@
 					<dl>
 						<dt><div class="profile john"><div class="overlayHex"></div></div></dt>
 						<dd>
+							<div class="team-social-icons">
+								<a href="https://www.linkedin.com/in/johnrsim/" target="_blank"><img src="../../assets/images/ico_linkedin.png" class="team-social-icon" alt="Linkedin" /></a>
+								<a href="https://twitter.com/JRSim_UIX" target="_blank"><img src="../../assets/images/ico_twitter.png" class="team-social-icon" alt="Twitter" /></a>
+							</div>
 							<h3>John Sim</h3>
 							<h4>{{ $t('pages.team.members.JS.title') }}</h4>
 
@@ -89,6 +96,10 @@
 					<dl>
 						<dt><div class="profile dave"><div class="overlayHex"></div></div></dt>
 						<dd>
+							<div class="team-social-icons">
+								<a href="https://www.linkedin.com/in/david-mallett-308b19148/" target="_blank"><img src="../../assets/images/ico_linkedin.png" class="team-social-icon" alt="Linkedin" /></a>
+								<a href="https://twitter.com/DavemallettJSE" target="_blank"><img src="../../assets/images/ico_twitter.png" class="team-social-icon" alt="Twitter" /></a>
+							</div>
 							<h3>Dave Mallett</h3>
 							<h4>{{ $t('pages.team.members.DM.title') }}</h4>
 
@@ -106,6 +117,9 @@
 					<dl>
 						<dt><div class="profile tracy"><div class="overlayHex"></div></div></dt>
 						<dd>
+							<div class="team-social-icons">
+								<a href="https://www.linkedin.com/in/tracey-howard-12b60a163/" target="_blank"><img src="../../assets/images/ico_linkedin.png" class="team-social-icon" alt="Linkedin" /></a>
+							</div>
 							<h3>Tracey Howard</h3>
 							<h4>{{ $t('pages.team.members.TH.title') }}</h4>
 
@@ -130,6 +144,10 @@
 					<dl>
 						<dt><div class="profile amr"><div class="overlayHex"></div></div></dt>
 						<dd>
+							<div class="team-social-icons">
+								<a href="https://www.linkedin.com/in/agawish/" target="_blank"><img src="../../assets/images/ico_linkedin.png" class="team-social-icon" alt="Linkedin" /></a>
+								<a href="https://twitter.com/agawish" target="_blank"><img src="../../assets/images/ico_twitter.png" class="team-social-icon" alt="Twitter" /></a>
+							</div>
 							<h3>Amr Gawish</h3>
 							<h4>{{ $t('pages.team.members.AG.title') }}</h4>
 
@@ -153,6 +171,9 @@
 					<dl>
 						<dt><div class="profile matthew"><div class="overlayHex"></div></div></dt>
 						<dd>
+							<div class="team-social-icons">
+								<a href="https://www.linkedin.com/in/matthew-vallis-caia-a26054145/" target="_blank"><img src="../../assets/images/ico_linkedin.png" class="team-social-icon" alt="Linkedin" /></a>
+							</div>
 							<h3>Matthew Vallis</h3>
 							<h4>{{ $t('pages.team.members.MV.title') }}</h4>
 
@@ -338,5 +359,13 @@ export default {
 	color:#2b6aa7;
 	margin:0px 0px 20px 0px;
 }
-
+.team-social-icons {
+	float: right;
+	margin-right: 40px;
+	margin-top: 22px;
+}
+.team-social-icon {
+	height: 40px;
+	width: 40px;
+}
 </style>
