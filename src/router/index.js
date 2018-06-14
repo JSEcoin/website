@@ -694,9 +694,9 @@ const router = new Router({
 			component: ICO,
 			meta: {
 				linkText: '',
-				headerBG: '/banners/header_bg.png',
-				headerTitle: '',
-				headerSubTitle: '',
+				headerBG: '/banners/icoLaunchpad.png',
+				headerTitle: 'ICO Launchpad',
+				headerSubTitle: 'Make sure you are logged in to your wallet to access the integrated purchase capabilities',
 			},
 		},
 		{

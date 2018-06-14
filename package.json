@@ -28,6 +28,7 @@
     "vue-qriously": "^1.1.1",
     "vue-recaptcha": "^1.1.1",
     "vue-router": "^3.0.1",
+    "vue-swal": "^0.1.0",
     "vue-transmit": "^7.1.7",
     "vuebar": "0.0.17",
     "vuex": "^3.0.1",

@@ -10,6 +10,8 @@ import VueClipboard from 'vue-clipboard2';
 import VueTransmit from 'vue-transmit';
 import Meta from 'vue-meta';
 import VueQriously from 'vue-qriously';
+import VueSwal from 'vue-swal';
+
 
 import App from './App';
 import router from './router';
@@ -53,7 +55,8 @@ Vue.use(VueMultianalytics, {
 		//ignoredModules: ['ga'], // Modules that will not send route change events. The event sent will be this.$ma.trackView({viewName: 'homepage'}, ['ga'])
 	},
 });
-
+//popup model
+Vue.use(VueSwal);
 //file uploader
 Vue.use(VueTransmit);
 //QR Code Generator
