@@ -123,7 +123,7 @@
 											<!-- ETH -->
 											<li id="JSEW-distETH" class="mainCol borderRight">
 												<div id="JSEW-eth"></div>
-												{{total.eth}} <span>ETH</span>
+												{{total.ethDisplay}} <span>ETH</span>
 											</li>
 											<!-- xETH -->
 											<!-- EOS 
@@ -270,8 +270,8 @@
 						<!-- xPurchase Overview -->
 						<div class="footer" style="background:#fff; font-size:1em; border-top:solid 1px rgb(238, 238, 238);">
 							<!-- Token Address -->
-							<h2 style="margin-left:10px; text-transform:uppercase;">JSECoin token address <i class="fa  fa-level-down"></i></h2>
-							<div id="JSEW-ethAddressField">
+							<h2 style="margin-left:10px; text-transform:uppercase;">JSE token address <i class="fa  fa-level-down"></i></h2>
+							<div id="JSEW-jseAddressField">
 								<input type="text" :value="tokenAddress" />
 								<button class="sideButton" v-clipboard:copy="tokenAddress">COPY TO CLIPBOARD</button>
 							</div>
@@ -292,7 +292,7 @@
 									<input type="text" :value="JSETokenSale" />
 								</div>
 							</li>
-							<li>Use MyEtherWallet, MetaMask or other compatible wallets. Explore and track your ETH transactions on Ehterscan.io</li>
+							<li>Use MyEtherWallet, MetaMask or other compatible wallets. Explore and track your ETH transactions on <a :href="ethscanURL()" target="_BLANK">Etherscan.io</a></li>
 							<li>Your JSECoin tokes will appear on your Dashboard.</li>
 							<li>Set decimal numer: 18 - Some wallets may ask you to enter decimals.</li>
 						</ol>
@@ -316,16 +316,16 @@ import jseTokenObj from './JSEToken.json';
 //setup web3
 window.web3 = new Web3(Web3.givenProvider || 'http://localhost:8545');
 //version
-//console.log('VERSION:', window.web3.version);
+////console.log('VERSION:', window.web3.version);
 
 export default {
 	name: 'Ico-Page',
 	data() {
 		return {
 			//JSE Token Address - query for balance
-			tokenAddress: '0xeb0b03fc9637e42402d18e608a6bb5591d5b807d',
+			tokenAddress: '0xf90172bd3f56b4845229aa82239d6243ea19c523',//'0x1c1f7b95907df941fb6ed4469b0f4f049ab6b75c',
 			//contract Address
-			JSETokenSale: '0x69039bf5f16c24b818f95932fba14af3ff2d4716',
+			JSETokenSale: '0x169b6443836236877c633518da0e01ce53973202',//'0x9793a17f3aa26b8e93f442ed370d38e4d1bfe610',
 			activeAccount: '', //active metamask account
 			availableAccounts: [], //list of available accounts
 			selectedPaymentAccount: '', //user selected payment account
@@ -346,6 +346,7 @@ export default {
 				eos: 0, //total eos paid into contract
 				jse: 0, // total JSE distributed
 				jseDisplay: '0',
+				ethDisplay: '0',
 			},
 			JSEPerEth: 0,
 			progressBarWidth: 0, //width of progress bar in %
@@ -397,9 +398,15 @@ export default {
 		//poll web3 to check current provider active and user logged in
 		web3.currentProvider.publicConfigStore.on('update', (acc) => {
 			if (typeof (acc.selectedAddress) !== 'undefined') {
-				//console.log(acc.selectedAddress);
+				////console.log(acc.selectedAddress);
 				if (self.activeAccount !== acc.selectedAddress) {
-					console.log('ADDRESS CHANGED', acc.selectedAddress);
+					//console.log('ADDRESS CHANGED', acc.selectedAddress);
+					self.form.info.title = '';
+					self.form.info.msg = '';
+					self.form.error.title = '';
+					self.form.error.msg = '';
+					self.form.ico.address.flag = false;
+					self.form.ico.address.displayLabel = true;
 					self.activeAccount = acc.selectedAddress;
 					self.updateAccountDetails(acc.selectedAddress);
 				}
@@ -413,22 +420,23 @@ export default {
 
 		//get store user accounts
 		window.web3.eth.getAccounts().then((t) => {
-			console.log('ACCOUNTS FOUND', t, t.length);
+			//console.log('ACCOUNTS FOUND', t, t.length);
 			if ((typeof (t) !== 'undefined') && (t.length > 0)) {
 				self.availableAccounts = t;
 			}
 		});
 
+		/*
 		//set total Eth balance in wallet
 		window.web3.eth.getBalance(self.JSETokenSale, 'latest', (error, weiBalance) => {
-			console.log('JSE TOKEN SALE BALANCE', self.total.eth);
+			//console.log('JSE TOKEN SALE BALANCE', self.total.eth);
 			self.total.eth = window.web3.utils.fromWei(weiBalance);
 		});
 
 		//get JSE balance
 		window.web3.eth.getBalance(self.tokenAddress, 'latest', (error, weiBalance) => {
-			console.log('JSE TOKEN ADDRESS BALANCE', window.web3.utils.fromWei(weiBalance));
-		});
+			//console.log('JSE TOKEN ADDRESS BALANCE', window.web3.utils.fromWei(weiBalance));
+		});*/
 
 		window.jseTokenContract = new window.web3.eth.Contract(jseTokenObj.abi, self.tokenAddress);
 		window.jseContract = new window.web3.eth.Contract(jseContractObj.abi, self.JSETokenSale);
@@ -498,6 +506,10 @@ export default {
 		};
 	},
 	methods: {
+		ethscanURL() {
+			const self = this;
+			return `https://etherscan.io/address/${self.selectedPaymentAccount}`;
+		},
 		updateDistributionDisplay() {
 			const self = this;
 			//total JSE Distributed from contract acc
@@ -521,14 +533,32 @@ export default {
 
 			//Current token/eth value
 			jseContract.methods.tokensPerKEther().call().then((t) => {
-				console.log('TOKENS / ETH', t/1e3);
+				//console.log('TOKENS / ETH', t/1e3);
 				self.JSEPerEth = t/1e3;
 			});
 
-			//add max cap if user hasn't whitelisted.
-			jseContract.methods.CONTRIBUTION_MAX_NO_WHITELIST().call((t) => {
-				console.log('MAX WHITELIST CAP', t);
-				self.maxEth = t;
+			//add max cap if user hasn't whitelisted. 15.8eth
+			jseContract.methods.CONTRIBUTION_MAX_NO_WHITELIST().call().then((t) => {
+				//console.log('MAX NO WHITELIST CAP ETH', web3.utils.fromWei(t));
+				self.maxEthNotWhitelisted = web3.utils.fromWei(t);
+			});
+
+			//add max cap if user hasn't whitelisted. 10,000eth
+			jseContract.methods.CONTRIBUTION_MAX().call().then((t) => {
+				//console.log('MAX WHITELIST CAP ETH', web3.utils.fromWei(t));
+				self.maxEthWhitelisted = web3.utils.fromWei(t);
+			});
+
+			//Amount of ether raised
+			jseContract.methods.weiRaised().call().then((t) => {
+				//console.log('weiRaised', web3.utils.fromWei(t));
+				const etherRaised = web3.utils.fromWei(t);
+				if (etherRaised < 10) {
+					self.total.eth = +(Number(etherRaised)).toFixed(2);
+				} else {
+					self.total.eth = Math.floor(web3.utils.fromWei(t));
+				}
+				self.total.ethDisplay = self.total.eth.toLocaleString();
 			});
 		},
 		/**
@@ -541,7 +571,7 @@ export default {
 				to: (String(document.location).indexOf('localhost') === -1) ? self.JSETokenSale : web3.eth.accounts[0],
 				amount: web3.utils.toWei(eth, 'ether'),
 			}).then((t) => {
-				console.log(self.form.ico.eth.val, t);
+				//console.log(self.form.ico.eth.val, t);
 				self.gasPriceEstimate = t;
 				//self.form.ico.eth.val = String(Number(self.form.ico.eth.val) - t);
 				self.updateJSEVal();
@@ -577,7 +607,7 @@ export default {
 			const self = this;
 			//get availble user balance
 			window.web3.eth.getBalance(address, 'latest', (error, weiBalance) => {
-				console.log('USER BALNCE', window.web3.utils.fromWei(weiBalance));
+				//console.log('USER BALNCE', window.web3.utils.fromWei(weiBalance));
 				self.form.ico.eth.val = window.web3.utils.fromWei(weiBalance);
 				self.userWalletBalance = self.form.ico.eth.val;
 				self.form.ico.eth.displayLabel = true;
@@ -587,6 +617,7 @@ export default {
 					self.form.info.title = 'Notice:';
 					self.form.info.msg = `Your active wallet "${address}" has no Ethereum available to spend that we can detect. Don't worry you can buy more ETH from your wallet during the transaction. Go ahead select the "BUY TOKENS" button.`;
 				} else {
+					self.checkValWhiteListed();
 					self.gasPrice(self.form.ico.eth.val);
 				}
 				self.updateJSEVal();
@@ -605,7 +636,7 @@ export default {
 				},
 				fromBlock: 0,
 			}).then((t) => {
-				console.log(t);
+				//console.log(t);
 			});
 		},
 		/**
@@ -613,7 +644,7 @@ export default {
 		 */
 		getTimestamp(blockNum) {
 			web3.eth.getBlock(blockNum).then((t) => {
-				console.log(moment.unix(t.timestamp).format('MMMM Do YYYY'));
+				//console.log(moment.unix(t.timestamp).format('MMMM Do YYYY'));
 			});
 		},
 		/**
@@ -623,21 +654,11 @@ export default {
 		 */
 		initBuy() {
 			const self = this;
-			self.form.info.title = '';
-			self.form.info.msg = '';
+
 			if (self.showBuyOption) {
-				if (self.form.ico.eth.val > self.maxEth) {
-					if (self.accountWhitelisted) {
-						self.form.showForm = true;
-					} else {
-						self.form.info.title = 'Notice:';
-						self.form.info.msg = `We are unable to accept transactions over ${self.maxEth} ETH - until you have whitelisted address ${self.form.ico.address.val}`;
-					}
-				} else {
-					self.form.showForm = true;
-				}
+				self.form.showForm = true;
 			} else {
-				alert('Could not detect a connected wallet - please login to your ethereum wallet or pay using the option below');
+				self.$swal('Connect Online Wallet', `Please login to your ethereum wallet or pay using the payment address ${self.JSETokenSale}`, 'error');
 			}
 		},
 		/**
@@ -652,9 +673,11 @@ export default {
 		 */
 		processWeb3Payment() {
 			const self = this;
-			console.log('PROCESS');
+			//console.log('PROCESS');
 			self.form.error.title = '';
 			self.form.error.msg = '';
+			self.form.info.title = '';
+			self.form.info.msg = '';
 			if (self.form.ico.address.val.length !== 42) {
 				self.form.ico.address.flag = true;
 				self.form.error.title = 'Error Detected:';
@@ -685,19 +708,30 @@ export default {
 				self.form.error.msg = 'Please enter an amount of Ethereum you would like to exchange for tokens!';
 				return;
 			}
+
+			//check against max eth accepted whitelisted and not whitelisted.
+			if (self.form.ico.eth.val > self.maxEth) {
+				if (!self.accountWhitelisted) {
+					self.form.info.title = 'Notice:';
+					self.form.info.msg = `We are unable to accept transactions over ${self.maxEth} ETH - until you have whitelisted address ${self.form.ico.address.val}`;
+					return;
+				}
+			}
+
 			//load contract
 			const jseContract = new window.web3.eth.Contract(jseContractObj.abi, self.JSETokenSale);
-			console.log('CONTRACT:', jseContract);
+			//console.log('CONTRACT:', jseContract);
 
 			jseContract.methods.buyTokens().send({
 				from: self.form.ico.address.val,
 				value: web3.utils.toWei(self.form.ico.eth.val+'', 'ether'),
 			}).on('receipt', function(receipt) {
-				console.log('receipt', receipt);
+				//console.log('receipt', receipt);
 				self.form.showForm = false;
+				self.$swal('Transaction Complete', `Make sure to add the JSE Token address to see your tokens in your wallet ${self.tokenAddress}`, 'success');
 				setTimeout(self.updateDistributionDisplay, 1000);
 			}).on('error', function(error) {
-				console.error('error', error);
+				//console.error('error', error);
 				// Do something to alert the user their transaction has failed
 				self.form.error.title = 'Transaction Failed:';
 				self.form.error.msg = error.message;
@@ -709,6 +743,23 @@ export default {
 		stopBubble(e) {
 			e.stopPropagation();
 			e.preventDefault();
+		},
+		/**
+		 * checkValWhiteListed
+		 */
+		checkValWhiteListed() {
+			const self = this;
+			//console.log(self.accountWhitelisted, self.form.ico.eth.val, self.maxEthWhitelisted, self.maxEthNotWhitelisted);
+			if (self.accountWhitelisted) {
+				if (Number(self.form.ico.eth.val) >= Number(self.maxEthWhitelisted)) {
+					self.form.info.title = 'Notice:';
+					self.form.info.msg = `We are unable to accept transactions over ${self.maxEthWhitelisted} ETH - Please contact admin@jsecoin.com to discuss investing a larger amount.`;
+				}
+			} else if (Number(self.form.ico.eth.val) >= Number(self.maxEthNotWhitelisted)) {
+				//console.log('!!!');
+				self.form.info.title = 'Notice:';
+				self.form.info.msg = `We are unable to accept transactions over ${self.maxEthNotWhitelisted} ETH until you have whitelisted your address ${self.form.ico.address.val}.`;
+			}
 		},
 		/**
 		 * watch form
@@ -726,7 +777,6 @@ export default {
 				self.form.ico[input].flag = false;
 				self.form.ico[input].displayLabel = true;
 			} else {
-				console.log('???');
 				self.form.ico[input].displayLabel = false;
 				self.form.ico[input].flag = true;
 			}
@@ -759,11 +809,12 @@ export default {
 			self.form.info.msg = '';
 			self.form.error.title = '';
 			self.form.error.msg = '';
-			console.log(self.userWalletBalance, self.form.ico.eth.val);
+			//console.log(self.userWalletBalance, self.form.ico.eth.val);
 			if (Number(self.userWalletBalance) < Number(self.form.ico.eth.val)) {
 				self.form.info.title = 'Notice:';
 				self.form.info.msg = 'You have entered a higher amount of Ethereum to spend than we can find in the selected wallet address. Don\'t worry you can buy more from your wallet during the transaction. Go ahead select the "BUY TOKENS" button.';
 			}
+			self.checkValWhiteListed();
 		},
 		/**
 		 * updates eth value based on jse entered
@@ -776,7 +827,7 @@ export default {
 			self.form.info.msg = '';
 			self.form.error.title = '';
 			self.form.error.msg = '';
-			console.log(self.userWalletBalance, self.form.ico.eth.val);
+			//console.log(self.userWalletBalance, self.form.ico.eth.val);
 			if (Number(self.userWalletBalance) < Number(self.form.ico.eth.val)) {
 				self.form.info.title = 'Notice:';
 				self.form.info.msg = 'You have entered a higher amount of Ethereum to spend than we can find in the selected wallet address. Don\'t worry you can buy more from your wallet during the transaction. Go ahead select the "BUY TOKENS" button.';
@@ -1267,7 +1318,7 @@ th {
 	position: absolute;
 	bottom:-13px;
 	left:50%;
-	/*margin-left:-14px;*/
+	margin-left:-14px;
 }
 #JSEW-icoPointerWrapper {
 	position: relative;
@@ -1383,6 +1434,20 @@ th {
     background-size: 30px;
     background-position: 0px 5px;
 }
+#JSEW-jseAddressField {
+	display: flex;
+	border-radius: 0px 0px 0px 4px;
+	/*box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);*/
+	border-top:solid 1px #eee;
+	font-size:0.8em;
+	background-color:#f9fbfc;
+	background-image:url('../../assets/ico/jse_token.png');
+	background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 0px 5px;
+}
+
+#JSEW-jseAddressField input,
 #JSEW-ethAddressField input {
 	padding:4px 8px;
 	font-family: Courier New, Courier, monospace;
@@ -1395,6 +1460,7 @@ th {
 	margin-left:24px;
 	flex-grow: 1;
 }
+#JSEW-jseAddressField button,
 #JSEW-ethAddressField button {
 	color:#fff;
 	background:#00b48d;
