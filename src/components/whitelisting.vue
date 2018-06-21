@@ -120,6 +120,8 @@
 					</p>
 				</div>
 			</form>
+			<!-- whitelisting pixels iframe -->
+			<iframe src="https://jsecoin.com/pixels.php?conversion=whitelisting" frameborder="0" width="1" height="1" style="position: absolute; left: -150px;"></iframe>
 		</div>
 	</div>
 </template>
