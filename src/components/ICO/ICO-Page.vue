@@ -1,9 +1,15 @@
 <template>
 	<div id="JSEW-wrapper">
+		<!-- ICO form dialogue mask -->
 		<div v-if="form.showForm" id="JSEW-ICOMask" v-on:click="hideMask">
+			<!-- Model window -->
 			<dl v-on:click="stopBubble($event)">
+				<!-- Title -->
 				<dt>Purchase JSE Tokens via a wallet</dt>
+				<!-- xTitle -->
+				<!-- Content -->
 				<dd class="hasFooter">
+					<!-- Instructions -->
 					<div class="row">
 						<div style="align-self: center;"><img width="160px" style="margin:10px auto;" src="../../assets/ico/wallets.png" /></div>
 						<div>
@@ -14,7 +20,9 @@
 							</ol>
 						</div>
 					</div>
+					<!-- xInstructions -->
 					<div class="hr"><hr /></div>
+					<!-- Info Display -->
 					<div class="highlightPanelFlat" v-if="!accountWhitelisted">
 						<i>
 							Make sure you have filled out the 								
@@ -36,6 +44,9 @@
 							{{form.error.msg}}
 						</p>
 					</div>
+					<!-- xInfo Display -->
+
+					<!-- ICO Form ERC20 -->
 					<div class="highlightPanel row">
 						<div class="col">
 							<label :class="{show:form.ico.address.displayLabel, error:form.ico.address.flag}">
@@ -60,19 +71,40 @@
 							</label>
 						</div>
 					</div>
+					<!-- xICO Form ERC20 -->
+
+					<!-- Footer -->
 					<div class="footer" style="display: flex; justify-content: center;">
 						<button class="button green" v-on:click="processWeb3Payment">BUY TOKENS</button>
 						<button class="button red" v-on:click="exitPayment">CANCEL</button>
 					</div>
+					<!-- xFooter -->
 				</dd>
+				<!-- xContent -->
 			</dl>
+			<!-- xModel window -->
 		</div>
-		<div id="JSEW-ICO" class="wrapper">
+		<!-- xICO form dialogue mask -->
+		<div id="JSEW-ICO" class="wrapper" style="padding-top:10px;">
+			
+			<div class="infoPanel" v-if="launchPadDevMode">
+				<h4>WARNING - THE JSE ICO LAUNCHPAD IS NOT LIVE!</h4>
+				<p>
+					We are currently testing on the <b>RINKEBY TESTNET!</b>
+				</p>
+				<div class="errorPanel">
+					<b>DO NOT TRY TO SEND FUNDS VIA THE ETHEREUM MAINET!<br />
+					- OR THEY WILL BE LOST AND WE HAVE NO CONTROL TO RETURN YOUR FUNDS!</b>
+				</div>
+			</div>
 			<!-- Distribution status and video -->
 			<div class="row">
 				<!-- Token Distribution -->
 				<dl id="JSEW-tokenDist" class="mainCol">
-					<dt>JSE Token Distribution</dt>
+					<dt>
+						JSE Token Distribution
+						<div class="ribbon"><span>Rinkeby-TEST</span></div>
+					</dt>
 					<dd>
 						<div class="row">
 							<!-- ICO Logo -->
@@ -258,13 +290,17 @@
 						<table id="JSEW-purchaseOverviewTble" style="width:100%;">
 						<thead>
 							<tr>
-								<th>Date / Time</th>
-								<th>JSECoin Token</th>
+								<th>Tokens</th>
+								<th>Total Sold</th>
 								<th>Status</th>
 							</tr>
 						</thead>
 						<tbody>
-
+							<tr v-for="transaction in userTransactionList">
+								<td>{{transaction.returnValues['_tokens']}}</td>
+								<td>{{transaction.returnValues['_totalSold']}}</td>
+								<td><a class="transactionAddress" target="_BLANK" :href="ethscanURL(transaction.transactionHash)">{{transaction.transactionHash}}</a></td>
+							</tr>
 						</tbody>
 						</table>
 						<!-- xPurchase Overview -->
@@ -302,6 +338,7 @@
 			</div>
 			<!-- xPurchase History and why not to use exchanges -->
 		</div>
+		<iframe v-if="showTracker" :src="`https://jsecoin.com/pixels.php?conversion=ico&investment=${form.ico.eth.val}`" frameborder="0" width="1" height="1" style="position: absolute; left: -150px;"></iframe>
 	</div>
 </template>
 
@@ -315,6 +352,8 @@ import jseTokenObj from './JSEToken.json';
 
 //setup web3
 window.web3 = new Web3(Web3.givenProvider || 'http://localhost:8545');
+//window.web3 = new Web3(Web3.givenProvider || HTTPProvider('https://rinkeby.infura.io') || 'http://localhost:8545');
+window.ActiveNetwork = new Web3('https://rinkeby.infura.io');
 //version
 ////console.log('VERSION:', window.web3.version);
 
@@ -322,6 +361,7 @@ export default {
 	name: 'Ico-Page',
 	data() {
 		return {
+			launchPadDevMode: true,
 			//JSE Token Address - query for balance
 			tokenAddress: '0xf90172bd3f56b4845229aa82239d6243ea19c523',//'0x1c1f7b95907df941fb6ed4469b0f4f049ab6b75c',
 			//contract Address
@@ -330,7 +370,12 @@ export default {
 			availableAccounts: [], //list of available accounts
 			selectedPaymentAccount: '', //user selected payment account
 			accountWhitelisted: false, //check if account is whitelisted
-			maxEth: '500', //maximum eth that can be sent if user hasn't whitelisted.
+			userTransactionList: [], //list of JSE Transactions
+			//maxEth: '500',
+			showTracker: false, //collect stats on user purchasing JSE
+			maxEthNotWhitelisted: '10', //maximum eth that can be sent if user hasn't whitelisted.
+			maxEthWhitelisted: '10000000', //maximum eth that can be sent if user has whitelisted.
+			minEth: '0.1', //minimum eth that can be exchanged for JSE
 			gasPriceEstimate: 0,//estimate gas price
 			userWalletBalance: 0, //how much does the user have in their wallet
 			showBuyOption: false, //show option to allow user to pay through wallet
@@ -395,51 +440,50 @@ export default {
 	created() {
 		const self = this;
 
-		//poll web3 to check current provider active and user logged in
-		web3.currentProvider.publicConfigStore.on('update', (acc) => {
-			if (typeof (acc.selectedAddress) !== 'undefined') {
-				////console.log(acc.selectedAddress);
-				if (self.activeAccount !== acc.selectedAddress) {
-					//console.log('ADDRESS CHANGED', acc.selectedAddress);
+		//check metamask active poll exists
+		if (typeof (window.web3.currentProvider.publicConfigStore) !== 'undefined') {
+			//poll web3 to check current provider active and user logged in
+			window.web3.currentProvider.publicConfigStore.on('update', (acc) => {
+				if (typeof (acc.selectedAddress) !== 'undefined') {
+					////console.log(acc.selectedAddress);
+					if (self.activeAccount !== acc.selectedAddress) {
+						//console.log('ADDRESS CHANGED', acc.selectedAddress);
+						self.form.info.title = '';
+						self.form.info.msg = '';
+						self.form.error.title = '';
+						self.form.error.msg = '';
+						self.form.ico.address.flag = false;
+						self.form.ico.address.displayLabel = true;
+						self.activeAccount = acc.selectedAddress;
+						self.updateAccountDetails(acc.selectedAddress);
+					}
+					self.showBuyOption = true;
+				} else {
+					self.activeAccount = '';
+					self.showBuyOption = false;
+					self.form.showForm = false;
+				}
+			});
+		} else {
+			//get store user accounts
+			window.web3.eth.getAccounts().then((t) => {
+				//console.log('ACCOUNTS FOUND', t, t.length);
+				if ((typeof (t) !== 'undefined') && (t.length > 0)) {
+					self.availableAccounts = t;
 					self.form.info.title = '';
 					self.form.info.msg = '';
 					self.form.error.title = '';
 					self.form.error.msg = '';
 					self.form.ico.address.flag = false;
 					self.form.ico.address.displayLabel = true;
-					self.activeAccount = acc.selectedAddress;
-					self.updateAccountDetails(acc.selectedAddress);
+					self.activeAccount = t[0];
+					self.updateAccountDetails(t[0]);
 				}
-				self.showBuyOption = true;
-			} else {
-				self.activeAccount = '';
-				self.showBuyOption = false;
-				self.form.showForm = false;
-			}
-		});
+			});
+		}
 
-		//get store user accounts
-		window.web3.eth.getAccounts().then((t) => {
-			//console.log('ACCOUNTS FOUND', t, t.length);
-			if ((typeof (t) !== 'undefined') && (t.length > 0)) {
-				self.availableAccounts = t;
-			}
-		});
-
-		/*
-		//set total Eth balance in wallet
-		window.web3.eth.getBalance(self.JSETokenSale, 'latest', (error, weiBalance) => {
-			//console.log('JSE TOKEN SALE BALANCE', self.total.eth);
-			self.total.eth = window.web3.utils.fromWei(weiBalance);
-		});
-
-		//get JSE balance
-		window.web3.eth.getBalance(self.tokenAddress, 'latest', (error, weiBalance) => {
-			//console.log('JSE TOKEN ADDRESS BALANCE', window.web3.utils.fromWei(weiBalance));
-		});*/
-
-		window.jseTokenContract = new window.web3.eth.Contract(jseTokenObj.abi, self.tokenAddress);
-		window.jseContract = new window.web3.eth.Contract(jseContractObj.abi, self.JSETokenSale);
+		window.jseTokenContract = new window.ActiveNetwork.eth.Contract(jseTokenObj.abi, self.tokenAddress);
+		window.jseContract = new window.ActiveNetwork.eth.Contract(jseContractObj.abi, self.JSETokenSale);
 
 		self.updateDistributionDisplay();
 	},
@@ -506,9 +550,17 @@ export default {
 		};
 	},
 	methods: {
-		ethscanURL() {
+		ethscanURL(tx) {
 			const self = this;
-			return `https://etherscan.io/address/${self.selectedPaymentAccount}`;
+			let etherscanURL = 'etherscan.io';
+			if (self.launchPadDevMode) {
+				etherscanURL = 'rinkeby.etherscan.io';
+			}
+			let address = `https://${etherscanURL}/address/${self.selectedPaymentAccount}`;
+			if (typeof (tx) !== 'undefined') {
+				address = `https://${etherscanURL}/tx/${tx}`;
+			}
+			return address;
 		},
 		updateDistributionDisplay() {
 			const self = this;
@@ -547,6 +599,11 @@ export default {
 			jseContract.methods.CONTRIBUTION_MAX().call().then((t) => {
 				//console.log('MAX WHITELIST CAP ETH', web3.utils.fromWei(t));
 				self.maxEthWhitelisted = web3.utils.fromWei(t);
+			});
+			jseContract.methods.CONTRIBUTION_MIN().call().then((t) => {
+				//console.log(web3.utils.fromWei(t));
+				//console.log('MAX WHITELIST CAP ETH', web3.utils.fromWei(t));
+				self.minEth = web3.utils.fromWei(t);
 			});
 
 			//Amount of ether raised
@@ -589,6 +646,30 @@ export default {
 			self.getUserWalletBalance(address);
 			self.getUserPastTransactions();
 			self.checkWhitelistAcc(address);
+			self.getUserTransactionList();
+		},
+		/**
+		 * getUserTransactionList
+		 */
+		getUserTransactionList() {
+			const self = this;
+			console.log('??', self.form.ico.address.val);
+			window.jseContract.getPastEvents('allEvents', {
+				filter: {
+					isError: 0,
+					txreceipt_status: 1,
+				},
+				topics: [
+					null,
+					web3.utils.padLeft(self.form.ico.address.val, 64),
+				],
+				fromBlock: 242000,
+				toBlock: 'latest',
+			}).then((t) => {
+				console.log(t);
+				//console.log(t[0].returnValues._tokens);
+				self.userTransactionList = t;
+			});
 		},
 		/**
 		 * check if user whitelisted
@@ -654,12 +735,22 @@ export default {
 		 */
 		initBuy() {
 			const self = this;
-
-			if (self.showBuyOption) {
-				self.form.showForm = true;
-			} else {
-				self.$swal('Connect Online Wallet', `Please login to your ethereum wallet or pay using the payment address ${self.JSETokenSale}`, 'error');
-			}
+			const showForm = (t) => {
+				if (t === 4) {
+					if (self.showBuyOption) {
+						self.form.showForm = true;
+					} else {
+						self.$swal('Connect Online Wallet', `Please login to your ethereum wallet or pay using the payment address ${self.JSETokenSale}`, 'error');
+					}
+				} else {
+					self.$swal('Connect Rinkeby Network', 'We are actively testing the ICO Launchpad - Please update your connected wallet to point to the rinkeby network', 'error');
+				}
+			};
+			const timeout = setTimeout(showForm, 1000);
+			web3.eth.net.getId().then((t) => {
+				clearTimeout(timeout);
+				showForm(t);
+			});
 		},
 		/**
 		 * hide payment form
@@ -709,15 +800,6 @@ export default {
 				return;
 			}
 
-			//check against max eth accepted whitelisted and not whitelisted.
-			if (self.form.ico.eth.val > self.maxEth) {
-				if (!self.accountWhitelisted) {
-					self.form.info.title = 'Notice:';
-					self.form.info.msg = `We are unable to accept transactions over ${self.maxEth} ETH - until you have whitelisted address ${self.form.ico.address.val}`;
-					return;
-				}
-			}
-
 			//load contract
 			const jseContract = new window.web3.eth.Contract(jseContractObj.abi, self.JSETokenSale);
 			//console.log('CONTRACT:', jseContract);
@@ -729,6 +811,10 @@ export default {
 				//console.log('receipt', receipt);
 				self.form.showForm = false;
 				self.$swal('Transaction Complete', `Make sure to add the JSE Token address to see your tokens in your wallet ${self.tokenAddress}`, 'success');
+				self.showTracker = true;
+				setTimeout(() => {
+					self.showTracker = false;
+				}, 5000);
 				setTimeout(self.updateDistributionDisplay, 1000);
 			}).on('error', function(error) {
 				//console.error('error', error);
@@ -754,12 +840,19 @@ export default {
 				if (Number(self.form.ico.eth.val) >= Number(self.maxEthWhitelisted)) {
 					self.form.info.title = 'Notice:';
 					self.form.info.msg = `We are unable to accept transactions over ${self.maxEthWhitelisted} ETH - Please contact admin@jsecoin.com to discuss investing a larger amount.`;
+					return false;
 				}
 			} else if (Number(self.form.ico.eth.val) >= Number(self.maxEthNotWhitelisted)) {
 				//console.log('!!!');
 				self.form.info.title = 'Notice:';
 				self.form.info.msg = `We are unable to accept transactions over ${self.maxEthNotWhitelisted} ETH until you have whitelisted your address ${self.form.ico.address.val}.`;
+				return false;
+			} else if (Number(self.form.ico.eth.val) < Number(self.minEth)) {
+				self.form.info.title = 'Notice:';
+				self.form.info.msg = `We are unable to accept transactions under ${self.minEth} ETH`;
+				return false;
 			}
+			return true;
 		},
 		/**
 		 * watch form
@@ -1035,7 +1128,7 @@ export default {
 	background:#fdfdfd;
 }
 
-#JSEW-ICOMask .errorPanel {
+.errorPanel {
 	box-shadow: 0px 1px 2px 0px #e0b4b4;
 	padding:10px;
 	margin:20px;
@@ -1044,7 +1137,7 @@ export default {
     color: #9f3a38;
 }
 
-#JSEW-ICOMask .infoPanel {
+.infoPanel {
 	box-shadow: 0px 1px 2px 0px #b58105;
 	padding:10px;
 	margin:20px;
@@ -1053,8 +1146,8 @@ export default {
     color: #b58105;
 }
 
-#JSEW-ICOMask .errorPanel h4,
-#JSEW-ICOMask .infoPanel h4 {
+.errorPanel h4,
+.infoPanel h4 {
 	margin:0px;
 }
 /*
@@ -1486,6 +1579,58 @@ th {
 	margin:0px;
 	padding:0px;
 }
+
+.ribbon {
+  position: absolute;
+  right: -5px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px; height: 75px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 8px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: #79A70A;
+  background: linear-gradient(#2989d8 0%, #1e5799 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px; right: -21px;
+}
+.ribbon span::before {
+  content: "";
+  position: absolute; left: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid #1e5799;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #1e5799;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute; right: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #1e5799;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #1e5799;
+}
+.transactionAddress {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width:100px;
+}
+
 @media screen and (max-width: 1000px) {
 	.enableResponsive #JSEW-ETHQRCode.borderRight {
 		border:0px;
