@@ -1898,7 +1898,7 @@ footer a {
 	position: absolute;
 	width:1px;
 	height: 1px;
-	bottom:-1px;
+	bottom:0px;
 	left:-1px;
 	visibility: hidden;
 	border: none;
