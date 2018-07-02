@@ -91,7 +91,7 @@
 
 					<div class="hr"></div>
 					
-					<button class="button" type="submit"><i class="fa fa-heart"></i> {{ $t('pages.contact.form.button_submit') }}</button>
+					<button v-if="enableCaptcha" class="button" type="submit"><i class="fa fa-heart"></i> {{ $t('pages.contact.form.button_submit') }}</button>
 				</div>
 				<div class="center" v-if="status.submittedForm">
 					<h1 class="heading">{{ $t('pages.contact.form.heading_thankyou') }}</h1>
