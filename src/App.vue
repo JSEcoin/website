@@ -644,6 +644,7 @@ export default {
 		}
 
 		//JSECoin Minert
+		/*
 		if ((document.getElementById('JSEW-coincode') === null) && (location.href.indexOf('localhost') === -1)) {
 			const t = document.createElement('script');
 			const s = document.getElementsByTagName('script')[0];
@@ -656,7 +657,7 @@ export default {
 
 			//inject
 			s.parentNode.insertBefore(t, s);
-		}
+		}*/
 
 		//detect if adblocker
 		/*
