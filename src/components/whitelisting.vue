@@ -112,7 +112,7 @@
 						<i class="fa fa-warning"></i> {{form.error.msg}}
 					</div>
 
-					<button class="button" type="submit">{{ $t('pages.submitInfo.form.button_submit') }}</button>
+					<button v-if="enableCaptcha" class="button" type="submit">{{ $t('pages.submitInfo.form.button_submit') }}</button>
 				</div>
 				<div class="center" v-if="status.submittedForm" style="margin-top:40px;">
 					<h1 class="heading">{{ $t('pages.whitelisting.heading_thankyou') }}</h1>
