@@ -43,6 +43,7 @@
 
 				<div v-if="status.displayForm" id="JSEW-contactFormWrapper">
 					<vue-recaptcha
+						v-if="enableCaptcha"
 						ref="invisibleRecaptcha"
 						@verify="onVerify"
 						@expired="onExpired"
@@ -141,6 +142,7 @@ export default {
 	components: { VueRecaptcha, xLoading },
 	data() {
 		return {
+			enableCaptcha: false,
 			form: {
 				required: ['firstName', 'lastName', 'emailAddress', 'message'],
 				firstName: {
@@ -234,7 +236,14 @@ export default {
 			//if form pass check then submit captcha
 			if (checkRequiredFields) {
 				this.form.error.display = false;
-				this.$refs.invisibleRecaptcha.execute();
+				if (typeof (this.$refs.invisibleRecaptcha) === 'undefined') {
+					self.enableCaptcha = true;
+					setTimeout(() => {
+						this.$refs.invisibleRecaptcha.execute();
+					}, 1000);
+				} else {
+					this.$refs.invisibleRecaptcha.execute();
+				}
 			} else {
 				console.error('Failed to submit form');
 				this.form.error.display = true;

@@ -27,6 +27,7 @@
 
 				<div :class="{showForm:status.displayForm}" id="JSEW-oddJobsFormWrapper">
 					<vue-recaptcha
+						v-if="enableCaptcha"
 						ref="invisibleRecaptcha"
 						@verify="onVerify"
 						@expired="onExpired"
@@ -173,7 +174,7 @@
 					
 					<div class="hr"></div>
 
-					<button class="button" type="submit">{{ $t('pages.submitInfo.form.button_submit') }}</button>
+					<button v-if="enableCaptcha" class="button" type="submit">{{ $t('pages.submitInfo.form.button_submit') }}</button>
 				</div>
 				<div class="center" v-if="status.submittedForm" style="margin-top:40px;">
 					<h1 class="heading">{{ $t('pages.submitInfo.form.heading_thankyou') }}</h1>
@@ -220,6 +221,7 @@ export default {
 	},
 	data() {
 		return {
+			enableCaptcha: false,
 			highlightDropBox: false,
 			filename: '',
 			filesize: '',
@@ -317,7 +319,11 @@ export default {
 		this.listFinded = this.list;
 	},
 	mounted() {
-		[
+		const self = this;
+		setTimeout(() => {
+			self.enableCaptcha = true;
+		}, 5000);
+		/*[
 			'drop',
 			'drag-start',
 			'drag-end',
@@ -349,7 +355,7 @@ export default {
 			'max-files-exceeded',
 			'max-files-reached',
 			'queue-complete',
-		].forEach(this.listen);
+		].forEach(this.listen);*/
 	},
 	methods: {
 		listen(event) {
@@ -524,6 +530,11 @@ export default {
 							self.form.error.msg = 'Failed to submit form - Invalid Response - '+ resObject.notification;
 						}
 			    });
+				} else if (typeof (this.$refs.invisibleRecaptcha) === 'undefined') {
+					self.enableCaptcha = true;
+					setTimeout(() => {
+						this.$refs.invisibleRecaptcha.execute();
+					}, 1000);
 				} else {
 					this.$refs.invisibleRecaptcha.execute();
 				}
@@ -538,7 +549,7 @@ export default {
 			const self = this;
 			this.status.displayForm = false;
 			this.status.submittingMsg = true;
-			console.log('!!!!',this.$refs.uploader.queuedFiles);
+			//console.log('!!!!',this.$refs.uploader.queuedFiles);
 			this.$refs.uploader.processQueue();
 		},
 		onExpired() {
