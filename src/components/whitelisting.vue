@@ -10,6 +10,7 @@
 
 				<div :class="{showForm:status.displayForm}" id="JSEW-whitelistingFormWrapper">
 					<vue-recaptcha
+						v-if="enableCaptcha"
 						ref="invisibleRecaptcha"
 						@verify="onVerify"
 						@expired="onExpired"
@@ -160,6 +161,7 @@ export default {
 	},
 	data() {
 		return {
+			enableCaptcha: false,
 			highlightDropBox: false,
 			filename: '',
 			filesize: '',
@@ -485,6 +487,11 @@ export default {
 							self.form.error.msg = 'Failed to submit form - Invalid Response - '+ resObject.notification;
 						}
 			    });
+				} else if (typeof (this.$refs.invisibleRecaptcha) === 'undefined') {
+					self.enableCaptcha = true;
+					setTimeout(() => {
+						this.$refs.invisibleRecaptcha.execute();
+					}, 1000);
 				} else {
 					this.$refs.invisibleRecaptcha.execute();
 				}
@@ -500,7 +507,7 @@ export default {
 			const self = this;
 			this.status.displayForm = false;
 			this.status.submittingMsg = true;
-			console.log('!!!!',this.$refs.uploader.queuedFiles);
+			//console.log('!!!!',this.$refs.uploader.queuedFiles);
 			this.$refs.uploader.processQueue();
 		},
 		onExpired() {
