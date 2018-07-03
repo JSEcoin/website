@@ -13,3 +13,5 @@ yarn-error.log*
 *.sln
 
 src/components/ICO/ICO-Pagex\.vue
+
+\.vscode/
