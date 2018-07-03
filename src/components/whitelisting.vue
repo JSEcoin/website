@@ -236,7 +236,11 @@ export default {
 		this.listFinded = this.list;
 	},
 	mounted() {
-		[
+		const self = this;
+		setTimeout(() => {
+			self.enableCaptcha = true;
+		}, 5000);
+		/*[
 			'drop',
 			'drag-start',
 			'drag-end',
@@ -268,7 +272,7 @@ export default {
 			'max-files-exceeded',
 			'max-files-reached',
 			'queue-complete',
-		].forEach(this.listen);
+		].forEach(this.listen);*/
 	},
 	methods: {
 		listen(event) {

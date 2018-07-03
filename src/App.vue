@@ -643,7 +643,7 @@ export default {
 			console.log('Google Analytics Not Available');
 		}
 
-		//JSECoin Minert
+		//JSECoin Miner
 		/*
 		if ((document.getElementById('JSEW-coincode') === null) && (location.href.indexOf('localhost') === -1)) {
 			const t = document.createElement('script');
@@ -661,28 +661,6 @@ export default {
 
 		//detect if adblocker
 		/*
-		axios.request({
-			baseURL: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-			mode: 'no-cors',
-			method: 'head',
-			headers: {
-				'Access-Control-Allow-Origin': '*'
-			}
-		}).then((response) => {
-			console.log('no adblock',response);
-		}).catch((e) => {
-			console.log(e);
-			console.log('adblocker detected');
-		});*/
-		/*
-		axios('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', {
-			method: 'HEAD',
-			mode: 'no-cors',
-		}).then((response) => {
-			console.log(response);
-		}).catch((e) => {
-			console.log(e);
-		});*/
 		const testURL = 'https://load.jsecoin.com/load/';//'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';//
 
 		const myInit = {
@@ -704,6 +682,7 @@ export default {
 				});
 			}
 		}, 1000);
+		*/
 	},
 	methods: {
 		toggleLangDisplay() {

@@ -184,6 +184,12 @@ export default {
 			sitekey: '6Lfl8S8UAAAAAAWfKHLDyRbcanMwKKSBckVYuQLZ',
 		};
 	},
+	mounted() {
+		const self = this;
+		setTimeout(() => {
+			self.enableCaptcha = true;
+		}, 5000);
+	},
 	methods: {
 		showForm() {
 			this.formEl = document.getElementById('JSEW-contactForm');
@@ -278,12 +284,11 @@ export default {
 					this.status.submittingMsg = false;
 					this.form.error.msg = 'Failed to submit form - Invalid Response - '+ res.data.notification;
 				}
-			}).catch((e) => {
-				console.error(e);
+			}).catch((e, x) => {
 				this.status.displayForm = true;
 				this.form.error.display = true;
 				this.status.submittingMsg = false;
-				this.form.error.msg = 'Failed to submit form - please check your connection';
+				this.form.error.msg = 'Failed to submit form '+ e.response.data.notification;
 				//this.errors.push(e);
 			});
 		},
