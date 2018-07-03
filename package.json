@@ -16,7 +16,6 @@
     "moment": "^2.22.1",
     "numeral": "^2.0.6",
     "particles.js": "^2.0.0",
-    "puppeteer": "^1.1.0",
     "qrious": "^4.0.2",
     "stf-vue-select": "^0.1.9",
     "swiper": "^4.0.7",
@@ -33,8 +32,7 @@
     "vuebar": "0.0.17",
     "vuex": "^3.0.1",
     "vuex-i18n": "^1.10.5",
-    "web3": "^1.0.0-beta.34",
-    "zxcvbn": "^4.4.2"
+    "web3": "^1.0.0-beta.34"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
