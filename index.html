@@ -52,16 +52,14 @@
 
 	<!-- One Signal Push Notifications-->
 	<link rel="manifest" href="/manifest.json" />
-	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async="">
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async>
 	<script>
-		if (String(document.location).indexOf('localhost') === -1) {
-			var OneSignal = window.OneSignal || [];
-			OneSignal.push(function() {
-				OneSignal.init({
-					appId: "20aac144-e0a2-4aad-9b3f-073f248a2bd5",
-				});
+		var OneSignal = window.OneSignal || [];
+		OneSignal.push(function() {
+			OneSignal.init({
+				appId: "20aac144-e0a2-4aad-9b3f-073f248a2bd5",
 			});
-		}
+		});
 	</script>
 
 

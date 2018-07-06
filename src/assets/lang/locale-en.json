@@ -2,7 +2,8 @@
 	"global": {},
 	"updates": {
 		"20180424": "priavcyPolicy > para_main1_cta, section_where_next > whole section",
-		"20180502": "pages.downloads, pages.whitelisting"
+		"20180502": "pages.downloads, pages.whitelisting",
+		"20180706": "pages.ico"
 	},
 	"tpl": {
 		"globalNavHeader": {
@@ -242,6 +243,68 @@
 				"title": "ICO",
 				"keywords": "",
 				"description": ""
+			},
+			"banner": {
+				"linkText": "ICO Launchpad",
+				"heading": "ICO Launchpad",
+				"subheading": "Make sure you are logged in to your wallet to access the integrated purchase capabilities"
+			},
+			"panel_purchase": {
+				"heading_purchase": "Purchase JSE Tokens via an Ethereum ERC Compatible Wallet (ie MetaMask)",
+				"purchase_list1": "Select your wallet address",
+				"purchase_list2": "Enter either the amount of JSE Tokens you would like to purchase or the amount of Ethereum to exchange for JSE Tokens.",
+				"purchase_list3": "Select the “Buy Tokens” button to initiate the purchase through your connected wallet.",
+				"highlight_info1": "Make sure you have filled out the",
+				"highlight_link": "whitelist form",
+				"highlight_info2": "if you would like to invest more than",
+				"form_walletAddress": "Connected Wallet Address",
+				"form_purchaseTokens": "Purchase JSE Tolkens",
+				"form_ethereumSpend": "Ethereum to Spend",
+				"button_buyTokens": "BUY TOKENS",
+				"button_cancel": "CANCEL"
+			},
+			"panel_tokenDist": {
+				"heading_tokenDist": "JSE Token Distribution",
+				"subheading_totalDist": "Total Distributed At ICO",
+				"subheading_currentDist": "Current Distributions",
+				"subheading_DistEndsIn": "Distribution Ends In",
+				"footer_msg": "**Depending on the Ethereum network traffic, figures may be delayed."
+			},
+			"panel_howToPurchase": {
+				"heading_howTo": "How To Purchase JSE Tokens Video",
+				"footer_header": "Important for our first time investors",
+				"footer_msg": "Please watch our tutorial on how to buy JSECoin Tokens"
+			},
+			"panel_directPayment": {
+				"heading_directPayment": "Use this payment method to send ETH from ERC20 Compatible Wallet to our smart contract",
+				"subheading_important": "Important",
+				"info_list1": "Please make sure to send funds from a valid ERC20 compatible Ethereum address to receive your tokens.",
+				"info_list2": "In order to add JSECoin tokens to your ETH wallet make sure you use this address.",
+				"subheading_doNot": "DO NOT send ETH directly from an exchange!",
+				"msg_doNot": "You must use an Ethereum compatible wallet.",
+				"heading_paymentAddress": "JSECOIN ETH SMART CONTRACT PAYMENT ADDRESS",
+				"button_copy": "COPY TO CLIPBOARD"
+			},
+			"panel_KYC": {
+				"heading_KYC": "Please pass the KYC verification",
+				"para_kyc": "In order to unlock JSE Tokens you will be required to successfully pass the KYC procedure. JSECoin Ltd strongly encourages all users to pass the KYC before purchasing JSECoin tokens. The verification process takes approximately 5 minutes.",
+				"para_infoMsg": "Note: JSECoin tokens will remain locked until the KYC is passed successfully",
+				"button_startKYC": "START KYC"
+			},
+			"panel_purchaseHistory": {
+				"heading_purchaseHistory": "Purchase History",
+				"tblHead_tokens": "Tokens",
+				"tblHead_totalSold": "Total Sold",
+				"tblHead_address": "Address",
+				"heading_tokenAddress": "JSE TOKEN ADDRESS "
+			},
+			"panel_exchangeInfo": {
+				"heading_exchangeInfo": "DO NOT send ETH directly from an exchange!",
+				"info_list1": "Please make sure to send funds from a valid ERC20 compatible Ethereum address to receive your tokens.",
+				"info_list2": "In order to add JSECoin tokens to your ETH wallet make sure you use this address:",
+				"info_list3": "Use MyEtherWallet, MetaMask or other compatible wallets. Explore and track your ETH transactions on",
+				"info_list4": "Your JSECoin tokes will appear on your Dashboard.",
+				"info_list5": "Set decimal numer: 18 - Some wallets may ask you to enter decimals."
 			}
 		},
 		"about": {
@@ -731,6 +794,20 @@
 					"para_main2": "With a bachelor's degree in Math and Computer Sciences and is currently pursuing his master's.",
 					"para_main3": "Amr is passionate about technology and is always pushing the limits of the technologies he uses.",
 					"para_main4": "His focus at JSE is on Ethereum, solidity and web3 integrations with a future look at EOS platform. "
+				},
+				"JW": {
+					"title": "CEO Fastener.iO",
+					"para_main1": "Jay began in digital media during the mid-90's forming partnerships with companies including Compuserve and Yahoo before going on to become Vice President of SpinMedia and EvolveMedia. In 2013 Jay founded <a target=\"_NEW\" href=\"http://www.fastener.io\">Fastener.io</a>, a professional consultancy firm to the digital content publishing industry. Jay will be working on improving the JSEcoin publisher and ad-tech solutions."
+				},
+				"NI": {
+					"title": "Nick Community Support Manager",
+					"para_main1": "Started as just a community member, Nick’s dedication and commitment to helping the team has led him to being offered the role of community advisor.",
+					"para_main2": "Nick enjoys spending his days on the sunny beaches of Florida and learning all he can about blockchain technology/cryptocurrency. Nick is currently pursing his undergraduate as a business major in the hopes of someday running his own business.",
+					"para_main3": "His role will be that of helping out in the JSE socials, facilitating the advancement of the JSE project out to the community."
+				},
+				"JC": {
+					"title": "Jack Digital Marketing Specialist",
+					"para_main1": "Jack is studying marketing at Sam Houston State University, with a minor in accounting. He has been involved with JSE since the start and is looking to gain experience in cryptocurrency marketing. He has marketing experience working with 4 separate companies, 3 of which were start ups."
 				},
 				"AW": {
 					"title": "Enterprise Architect",

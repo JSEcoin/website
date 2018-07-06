@@ -5,7 +5,7 @@
 			<!-- Model window -->
 			<dl v-on:click="stopBubble($event)">
 				<!-- Title -->
-				<dt>Purchase JSE Tokens via a wallet</dt>
+				<dt>{{ $t('pages.ico.panel_purchase.heading_purchase') }}</dt>
 				<!-- xTitle -->
 				<!-- Content -->
 				<dd class="hasFooter">
@@ -14,9 +14,9 @@
 						<div style="align-self: center;"><img width="160px" style="margin:10px auto;" src="../../assets/ico/wallets.png" /></div>
 						<div>
 							<ol>
-								<li>Select your wallet address</li>
-								<li>Enter either the amount of JSE Tokens you would like to purchase or the amount of Ethereum to exchange for JSE Tokens.</li>
-								<li>Select the “Buy Tokens” button to initiate the purchase through your connected wallet.</li>
+								<li>{{ $t('pages.ico.panel_purchase.purchase_list1') }}</li>
+								<li>{{ $t('pages.ico.panel_purchase.purchase_list2') }}</li>
+								<li>{{ $t('pages.ico.panel_purchase.purchase_list3') }}</li>
 							</ol>
 						</div>
 					</div>
@@ -25,11 +25,11 @@
 					<!-- Info Display -->
 					<div class="highlightPanelFlat" v-if="!accountWhitelisted">
 						<i>
-							Make sure you have filled out the 								
+							{{ $t('pages.ico.panel_purchase.highlight_info1') }}							
 							<router-link v-bind:to="`/${$store.state.local}/whitelisting`" tag="a">
-								whitelist form
+								{{ $t('pages.ico.panel_purchase.highlight_link') }}
 							</router-link>
-							if you would like to invest more than <b>10,000 USD</b>
+							{{ $t('pages.ico.panel_purchase.highlight_info2') }} <b>10,000 USD</b>
 						</i>
 					</div>
 					<div v-if="form.info.msg.length > 0" class="infoPanel">
@@ -50,23 +50,23 @@
 					<div class="highlightPanel row">
 						<div class="col">
 							<label :class="{show:form.ico.address.displayLabel, error:form.ico.address.flag}">
-								<div class="inputLabel">Connected Wallet Address *</div>
-								<input type="text" placeholder="Connected Wallet Address *" v-model="form.ico.address.val" @keyup="keyWatch('address')" v-on:blur="checkAddress" />
+								<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_walletAddress') }} *</div>
+								<input type="text" :placeholder="$t('pages.ico.panel_purchase.form_walletAddress') + ' *'" v-model="form.ico.address.val" @keyup="keyWatch('address')" v-on:blur="checkAddress" />
 							</label>
 						</div>
 						<div class="col">
 							<label class="icoCoin" :class="{show:form.ico.jse.displayLabel, error:form.ico.jse.flag}">
-								<div class="inputLabel">Purchase JSE Tolkens *</div>
+								<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_purchaseTokens') }} *</div>
 								<div class="amountInput coin">
-									<input type="number" min="10000" step="200" placeholder="Purchase JSE Tolkens *" v-model="form.ico.jse.val" @keyup="keyWatch('jse')" @mouseup="keyWatch('jse')" />
+									<input type="number" min="10000" step="200" :placeholder="$t('pages.ico.panel_purchase.form_purchaseTokens') + ' *'" v-model="form.ico.jse.val" @keyup="keyWatch('jse')" @mouseup="keyWatch('jse')" />
 								</div>
 							</label>
 						</div>
 						<div class="col">
 							<label :class="{show:form.ico.eth.displayLabel, error:form.ico.eth.flag}">
-								<div class="inputLabel">Ethereum to Spend *</div>
+								<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_ethereumSpend') }} *</div>
 								<div class="amountInput ethIcon">
-									<input type="number" min="0" step="0.1" placeholder="Ethereum to Spend *" v-model="form.ico.eth.val" @keyup="keyWatch('eth')" @mouseup="keyWatch('eth')" />
+									<input type="number" min="0" step="0.1" :placeholder="$t('pages.ico.panel_purchase.form_ethereumSpend') + ' *'" v-model="form.ico.eth.val" @keyup="keyWatch('eth')" @mouseup="keyWatch('eth')" />
 								</div>
 							</label>
 						</div>
@@ -75,8 +75,8 @@
 
 					<!-- Footer -->
 					<div class="footer" style="display: flex; justify-content: center;">
-						<button class="button green" v-on:click="processWeb3Payment">BUY TOKENS</button>
-						<button class="button red" v-on:click="exitPayment">CANCEL</button>
+						<button class="button green" v-on:click="processWeb3Payment">{{ $t('pages.ico.panel_purchase.button_buyTokens') }}</button>
+						<button class="button red" v-on:click="exitPayment">{{ $t('pages.ico.panel_purchase.button_cancel') }}</button>
 					</div>
 					<!-- xFooter -->
 				</dd>
@@ -102,7 +102,7 @@
 				<!-- Token Distribution -->
 				<dl id="JSEW-tokenDist" class="mainCol">
 					<dt>
-						JSE Token Distribution
+						{{ $t('pages.ico.panel_tokenDist.heading_tokenDist') }}
 						<div class="ribbon"><span>Rinkeby-TEST</span></div>
 					</dt>
 					<dd>
@@ -110,14 +110,14 @@
 							<!-- ICO Logo -->
 							<div id="JSEW-ICOLogo" class="borderRight">
 								<img src="../../assets/ico/logo.png" alt="JSECoin - The Javascript Embedded Cryptocurrency" />
-								<button v-on:click="initBuy" class="button buy" :class="{disable: !showBuyOption}">Buy JSE</button>
+								<button v-on:click="initBuy" class="button buy" :class="{disable: !showBuyOption}">{{BuyJSEButton}}</button>
 							</div>
 							<!-- xICO Logo -->
 							<!-- ICO Status Info -->
 							<div class="mainCol">
 								<!-- Total JSE Distribution -->
 								<div id="JSEW-totalDistribution">
-									<h2>Total Distributed At ICO</h2>
+									<h2>{{ $t('pages.ico.panel_tokenDist.subheading_totalDist') }}</h2>
 
 									<div id="JSEW-icoMeter">
 										<div id="JSEW-icoMeterDisplay" :style="{width:`${progressBarWidth}%`}">
@@ -144,7 +144,7 @@
 								<div class="row" style="margin:10px 0px;">
 									<!-- Current Distribution Spread -->
 									<div id="JSEW-currentDistSpread" class="mainCol borderRight">
-										<h2>Current Distributions</h2>
+										<h2>{{ $t('pages.ico.panel_tokenDist.subheading_currentDist') }}</h2>
 										<ul id="JSEW-distOptions">
 											<!-- JSE -->
 											<li id="JSEW-distJSE" class="mainCol borderRight">
@@ -169,8 +169,8 @@
 									<!-- xCurrent Distribution Spread -->
 
 									<!-- Distribution Timer -->
-									<div id="JSEW-distributionCounterWrapper"class="mainCol">
-										<h2>Distribution Ends In</h2>
+									<div id="JSEW-distributionCounterWrapper" class="mainCol">
+										<h2>{{ $t('pages.ico.panel_tokenDist.subheading_DistEndsIn') }}</h2>
 										<ul id="JSEW-distCountdown">
 											<li class="counter">{{days}}</li>
 											<li>:</li>
@@ -190,7 +190,7 @@
 						<!-- Footer -->
 						<div class="footer">
 							<p>
-								**Depending on the Ethereum <!-- and EOS--> network traffic, figures may be delayed.
+								{{ $t('pages.ico.panel_tokenDist.footer_msg') }}
 							</p>
 						</div>
 						<!-- xFooter -->
@@ -200,13 +200,13 @@
 
 				<!-- Purchase video -->
 				<dl id="JSEW-purchaseVideo" class="thinCol">
-					<dt><i class="fa fa-info-circle "></i> How To Purchase JSE Tokens Video</dt>
+					<dt><i class="fa fa-info-circle "></i> {{ $t('pages.ico.panel_howToPurchase.heading_howTo') }}</dt>
 					<dd>
 						<iframe width="100%" height="226" src="https://www.youtube.com/embed/Mwyujyj6gMA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						<div class="footer">
 							<p>
-								<b>Important for our first time investors</b><br/>
-								Please watch our tutorial on how to buy JSECoin Tokens
+								<b>{{ $t('pages.ico.panel_howToPurchase.footer_header') }}</b><br/>
+								{{ $t('pages.ico.panel_howToPurchase.footer_msg') }}
 							</p>
 						</div>
 					</dd>
@@ -219,7 +219,7 @@
 			<div class="row">
 				<!-- Ethereum Payment Overview Panel -->
 				<dl id="JSEW-paymentEthOverview" class="mainCol">
-					<dt>Use this payment method to send ETH from ERC20 Compatible Wallet to our smart contract</dt>
+					<dt>{{ $t('pages.ico.panel_directPayment.heading_directPayment') }}</dt>
 					<dd>
 						<div class="row" style="border-bottom:solid 1px #eee;">
 							<!-- ETH QR Code -->
@@ -233,24 +233,24 @@
 							
 							<!-- ETH payment Info -->
 							<div id="JSEW-ethPaymentInfo">
-								<h2><i class="fa fa-info-circle"></i> Important</h2>
+								<h2><i class="fa fa-info-circle"></i> {{ $t('pages.ico.panel_directPayment.subheading_important') }}</h2>
 								<ol>
-									<li>Please make sure to send funds from a valid ERC20 compatible Ethereum address to receive your tokens.</li>
-									<li>In order to add JSECoin tokens to your ETH wallet make sure you use this address:</li>
+									<li> {{ $t('pages.ico.panel_directPayment.info_list1') }}</li>
+									<li> {{ $t('pages.ico.panel_directPayment.info_list2') }}</li>
 								</ol>
 								<div class="warning">
-									<b>DO NOT send ETH <!-- or EOS --> directly from an exchange!</b>
-									<p>You must use an Ethereum compatible wallet.</p>
+									<b>{{ $t('pages.ico.panel_directPayment.subheading_doNot') }}</b>
+									<p>{{ $t('pages.ico.panel_directPayment.msg_doNot') }}</p>
 									<!--<p>Please read below on why this is important...</p>-->
 								</div>
 							</div>
 							<!-- xETH payment Info -->
 						</div>
 						<!-- ETH payment Address -->
-						<h2 style="margin-left:10px; text-transform:uppercase;">JSECoin ETH smart contract payment address <i class="fa  fa-level-down"></i></h2>
+						<h2 style="margin-left:10px; text-transform:uppercase;">{{ $t('pages.ico.panel_directPayment.heading_paymentAddress') }} <i class="fa  fa-level-down"></i></h2>
 						<div id="JSEW-ethAddressField">
 							<input type="text" :value="JSETokenSale" />
-							<button class="sideButton" v-clipboard:copy="JSETokenSale">COPY TO CLIPBOARD</button>
+							<button class="sideButton" v-clipboard:copy="JSETokenSale">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
 						</div>
 						<!-- xETH payment Address -->
 					</dd>
@@ -259,19 +259,19 @@
 				
 				<!-- KYC -->
 				<dl id="JSEW-KYC" class="thinCol">
-					<dt><i class="fa fa-info-circle "></i> Please pass the KYC verification</dt>
+					<dt><i class="fa fa-info-circle "></i> {{ $t('pages.ico.panel_KYC.heading_KYC') }}</dt>
 					<dd class="hasFooter">
 						<p>
-							In order to unlock JSE Tokens you will be required to successfully pass the KYC procedure. JSECoin Ltd strongly encourages all users to pass the KYC before purchasing JSECoin tokens. The verification process takes approximately 5 minutes.
+							{{ $t('pages.ico.panel_KYC.para_kyc') }}
 						</p>
 						<p>
-							<i>Note: JSECoin tokens will remain locked until the KYC is passed successfully</i>
+							<i>{{ $t('pages.ico.panel_KYC.para_infoMsg') }}</i>
 						</p>
 						
 						
 						<div class="footer">
 							<router-link style="width:80%" class="button thin" v-bind:to="`/${$store.state.local}/whitelisting`" tag="button">
-								START KYC
+								{{ $t('pages.ico.panel_KYC.button_startKYC') }}
 							</router-link>
 						</div>
 					</dd>
@@ -284,32 +284,34 @@
 			<div class="row">
 				<!-- Purchase History -->
 				<dl id="JSEW-purchaseHistory" class="mainCol">
-					<dt>Purchase History</dt>
+					<dt>{{ $t('pages.ico.panel_purchaseHistory.heading_purchaseHistory') }}</dt>
 					<dd>
 						<!-- Purchase Overview -->
 						<table id="JSEW-purchaseOverviewTble" style="width:100%;">
 						<thead>
 							<tr>
-								<th>Tokens</th>
-								<th>Total Sold</th>
-								<th>Status</th>
+								<th>{{ $t('pages.ico.panel_purchaseHistory.tblHead_tokens') }}</th>
+								<th>{{ $t('pages.ico.panel_purchaseHistory.tblHead_totalSold') }}</th>
+								<th class="mobileHide">{{ $t('pages.ico.panel_purchaseHistory.tblHead_address') }}</th>
 							</tr>
 						</thead>
 						<tbody>
-							<tr v-for="transaction in userTransactionList">
-								<td>{{transaction.returnValues['_tokens']}}</td>
-								<td>{{transaction.returnValues['_totalSold']}}</td>
-								<td><a class="transactionAddress" target="_BLANK" :href="ethscanURL(transaction.transactionHash)">{{transaction.transactionHash}}</a></td>
-							</tr>
+							<template v-for="transaction in userTransactionList">
+								<tr>
+									<td><a target="_BLANK" :href="ethscanURL(transaction.transactionHash)">{{transaction.returnValues['_tokens']}}</a></td>
+									<td><a target="_BLANK" :href="ethscanURL(transaction.transactionHash)">{{transaction.returnValues['_totalSold']}}</a></td>
+									<td class="mobileHide"><a class="transactionAddress" target="_BLANK" :href="ethscanURL(transaction.transactionHash)">{{transaction.transactionHash}}</a></td>
+								</tr>
+							</template>
 						</tbody>
 						</table>
 						<!-- xPurchase Overview -->
 						<div class="footer" style="background:#fff; font-size:1em; border-top:solid 1px rgb(238, 238, 238);">
 							<!-- Token Address -->
-							<h2 style="margin-left:10px; text-transform:uppercase;">JSE token address <i class="fa  fa-level-down"></i></h2>
+							<h2 style="margin-left:10px; text-transform:uppercase;">{{ $t('pages.ico.panel_purchaseHistory.heading_tokenAddress') }} <i class="fa  fa-level-down"></i></h2>
 							<div id="JSEW-jseAddressField">
 								<input type="text" :value="tokenAddress" />
-								<button class="sideButton" v-clipboard:copy="tokenAddress">COPY TO CLIPBOARD</button>
+								<button class="sideButton" v-clipboard:copy="tokenAddress">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
 							</div>
 							<!-- xToken Address -->
 						</div>
@@ -319,18 +321,18 @@
 
 				<!-- Exchange payment info -->
 				<dl id="JSEW-exchangePaymentInfo" class="thinCol">
-					<dt><i class="fa fa-info-circle "></i> DO NOT send ETH <!-- or EOS--> directly from an exchange!</dt>
+					<dt><i class="fa fa-info-circle "></i> {{ $t('pages.ico.panel_exchangeInfo.heading_exchangeInfo') }}</dt>
 					<dd>
 						<ol>
-							<li>Please make sure to send funds from a valid ERC20 compatible Ethereum address to receive your tokens.</li>
-							<li>In order to add JSECoin tokens to your ETH wallet make sure you use this address:<br />
+							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list1') }}</li>
+							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list2') }}<br />
 								<div id="JSEW-ethAddressMini">
 									<input type="text" :value="JSETokenSale" />
 								</div>
 							</li>
-							<li>Use MyEtherWallet, MetaMask or other compatible wallets. Explore and track your ETH transactions on <a :href="ethscanURL()" target="_BLANK">Etherscan.io</a></li>
-							<li>Your JSECoin tokes will appear on your Dashboard.</li>
-							<li>Set decimal numer: 18 - Some wallets may ask you to enter decimals.</li>
+							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list3') }}<a :href="ethscanURL()" target="_BLANK">Etherscan.io</a></li>
+							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list4') }}</li>
+							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list5') }}</li>
 						</ol>
 					</dd>
 				</dl>
@@ -355,17 +357,19 @@ window.web3 = new Web3(Web3.givenProvider || 'http://localhost:8545');
 //window.web3 = new Web3(Web3.givenProvider || HTTPProvider('https://rinkeby.infura.io') || 'http://localhost:8545');
 window.ActiveNetwork = new Web3('https://rinkeby.infura.io');
 //version
-////console.log('VERSION:', window.web3.version);
+//////console.log('VERSION:', window.web3.version);
 
 export default {
 	name: 'Ico-Page',
 	data() {
 		return {
+			BuyJSEButton: 'Buy JSE',
 			launchPadDevMode: true,
 			//JSE Token Address - query for balance
 			tokenAddress: '0xf90172bd3f56b4845229aa82239d6243ea19c523',//'0x1c1f7b95907df941fb6ed4469b0f4f049ab6b75c',
 			//contract Address
 			JSETokenSale: '0x169b6443836236877c633518da0e01ce53973202',//'0x9793a17f3aa26b8e93f442ed370d38e4d1bfe610',
+			networkVersion: '4', //1 = mainnet 3 = rinkeby
 			activeAccount: '', //active metamask account
 			availableAccounts: [], //list of available accounts
 			selectedPaymentAccount: '', //user selected payment account
@@ -425,13 +429,15 @@ export default {
 			},
 			//JSE goal Checkpoints reached
 			goalCheckpoints: [
-				1000000,
-				10000000,
-				100000000,
-				200000000,
-				300000000,
-				400000000,
-				500000000,
+				20000000, // 100,000
+				50000000, // 250,000
+				150000000, // 750,000
+				300000000, // 1,500,000
+				500000000, // 2,500,000
+				800000000, // 4,000,000
+				2000000000, // 10,000,000
+				3600000000, // 18,000,000
+				5000000000, // 25,000,000
 			],
 			activeGoal: 5000000000,
 			activeGoalDisplay: '5,000,000,000',
@@ -440,14 +446,18 @@ export default {
 	created() {
 		const self = this;
 
+		self.BuyJSEButton = 'Initialising...';
 		//check metamask active poll exists
 		if (typeof (window.web3.currentProvider.publicConfigStore) !== 'undefined') {
+			//console.log('x');
 			//poll web3 to check current provider active and user logged in
 			window.web3.currentProvider.publicConfigStore.on('update', (acc) => {
-				if (typeof (acc.selectedAddress) !== 'undefined') {
-					////console.log(acc.selectedAddress);
+				//console.log(acc, acc.networkVersion === self.networkVersion);
+				if ((typeof (acc.selectedAddress) !== 'undefined') && (acc.networkVersion === self.networkVersion)) {
+					//////console.log(acc.selectedAddress);
+					self.BuyJSEButton = 'Buy JSE';
 					if (self.activeAccount !== acc.selectedAddress) {
-						//console.log('ADDRESS CHANGED', acc.selectedAddress);
+						////console.log('ADDRESS CHANGED', acc.selectedAddress);
 						self.form.info.title = '';
 						self.form.info.msg = '';
 						self.form.error.title = '';
@@ -459,27 +469,43 @@ export default {
 					}
 					self.showBuyOption = true;
 				} else {
+					self.BuyJSEButton = 'Connect';
 					self.activeAccount = '';
 					self.showBuyOption = false;
 					self.form.showForm = false;
 				}
 			});
 		} else {
-			//get store user accounts
-			window.web3.eth.getAccounts().then((t) => {
-				//console.log('ACCOUNTS FOUND', t, t.length);
-				if ((typeof (t) !== 'undefined') && (t.length > 0)) {
-					self.availableAccounts = t;
-					self.form.info.title = '';
-					self.form.info.msg = '';
-					self.form.error.title = '';
-					self.form.error.msg = '';
-					self.form.ico.address.flag = false;
-					self.form.ico.address.displayLabel = true;
-					self.activeAccount = t[0];
-					self.updateAccountDetails(t[0]);
+			const checkNetwork = (err, currentNetwork) => {
+				//if (err) throw err // Please handle errors responsibly.
+				if (currentNetwork !== self.networkVersion) {
+					self.activeAccount = '';
+					self.showBuyOption = false;
+					self.form.showForm = false;
+				} else {
+					//get store user accounts
+					window.web3.eth.getAccounts().then((t) => {
+						self.BuyJSEButton = 'Buy JSE';
+						////console.log('ACCOUNTS FOUND', t, t.length);
+						if ((typeof (t) !== 'undefined') && (t.length > 0)) {
+							self.availableAccounts = t;
+							self.form.info.title = '';
+							self.form.info.msg = '';
+							self.form.error.title = '';
+							self.form.error.msg = '';
+							self.form.ico.address.flag = false;
+							self.form.ico.address.displayLabel = true;
+							self.activeAccount = t[0];
+							self.updateAccountDetails(t[0]);
+							self.showBuyOption = true;
+						}
+					});
 				}
-			});
+			};
+
+			setInterval(() => {
+				web3.version.getNetwork(checkNetwork);
+			}, 1000);
 		}
 
 		window.jseTokenContract = new window.ActiveNetwork.eth.Contract(jseTokenObj.abi, self.tokenAddress);
@@ -585,30 +611,30 @@ export default {
 
 			//Current token/eth value
 			jseContract.methods.tokensPerKEther().call().then((t) => {
-				//console.log('TOKENS / ETH', t/1e3);
+				////console.log('TOKENS / ETH', t/1e3);
 				self.JSEPerEth = t/1e3;
 			});
 
 			//add max cap if user hasn't whitelisted. 15.8eth
 			jseContract.methods.CONTRIBUTION_MAX_NO_WHITELIST().call().then((t) => {
-				//console.log('MAX NO WHITELIST CAP ETH', web3.utils.fromWei(t));
+				////console.log('MAX NO WHITELIST CAP ETH', web3.utils.fromWei(t));
 				self.maxEthNotWhitelisted = web3.utils.fromWei(t);
 			});
 
 			//add max cap if user hasn't whitelisted. 10,000eth
 			jseContract.methods.CONTRIBUTION_MAX().call().then((t) => {
-				//console.log('MAX WHITELIST CAP ETH', web3.utils.fromWei(t));
+				////console.log('MAX WHITELIST CAP ETH', web3.utils.fromWei(t));
 				self.maxEthWhitelisted = web3.utils.fromWei(t);
 			});
 			jseContract.methods.CONTRIBUTION_MIN().call().then((t) => {
-				//console.log(web3.utils.fromWei(t));
-				//console.log('MAX WHITELIST CAP ETH', web3.utils.fromWei(t));
+				////console.log(web3.utils.fromWei(t));
+				////console.log('MAX WHITELIST CAP ETH', web3.utils.fromWei(t));
 				self.minEth = web3.utils.fromWei(t);
 			});
 
 			//Amount of ether raised
 			jseContract.methods.weiRaised().call().then((t) => {
-				//console.log('weiRaised', web3.utils.fromWei(t));
+				////console.log('weiRaised', web3.utils.fromWei(t));
 				const etherRaised = web3.utils.fromWei(t);
 				if (etherRaised < 10) {
 					self.total.eth = +(Number(etherRaised)).toFixed(2);
@@ -628,7 +654,7 @@ export default {
 				to: (String(document.location).indexOf('localhost') === -1) ? self.JSETokenSale : web3.eth.accounts[0],
 				amount: web3.utils.toWei(eth, 'ether'),
 			}).then((t) => {
-				//console.log(self.form.ico.eth.val, t);
+				////console.log(self.form.ico.eth.val, t);
 				self.gasPriceEstimate = t;
 				//self.form.ico.eth.val = String(Number(self.form.ico.eth.val) - t);
 				self.updateJSEVal();
@@ -653,7 +679,7 @@ export default {
 		 */
 		getUserTransactionList() {
 			const self = this;
-			console.log('??', self.form.ico.address.val);
+			//console.log('??', self.form.ico.address.val);
 			window.jseContract.getPastEvents('allEvents', {
 				filter: {
 					isError: 0,
@@ -666,8 +692,8 @@ export default {
 				fromBlock: 242000,
 				toBlock: 'latest',
 			}).then((t) => {
-				console.log(t);
-				//console.log(t[0].returnValues._tokens);
+				//console.log(t);
+				////console.log(t[0].returnValues._tokens);
 				self.userTransactionList = t;
 			});
 		},
@@ -688,7 +714,7 @@ export default {
 			const self = this;
 			//get availble user balance
 			window.web3.eth.getBalance(address, 'latest', (error, weiBalance) => {
-				//console.log('USER BALNCE', window.web3.utils.fromWei(weiBalance));
+				////console.log('USER BALNCE', window.web3.utils.fromWei(weiBalance));
 				self.form.ico.eth.val = window.web3.utils.fromWei(weiBalance);
 				self.userWalletBalance = self.form.ico.eth.val;
 				self.form.ico.eth.displayLabel = true;
@@ -717,7 +743,7 @@ export default {
 				},
 				fromBlock: 0,
 			}).then((t) => {
-				//console.log(t);
+				////console.log(t);
 			});
 		},
 		/**
@@ -725,7 +751,7 @@ export default {
 		 */
 		getTimestamp(blockNum) {
 			web3.eth.getBlock(blockNum).then((t) => {
-				//console.log(moment.unix(t.timestamp).format('MMMM Do YYYY'));
+				////console.log(moment.unix(t.timestamp).format('MMMM Do YYYY'));
 			});
 		},
 		/**
@@ -764,7 +790,10 @@ export default {
 		 */
 		processWeb3Payment() {
 			const self = this;
-			//console.log('PROCESS');
+			////console.log('PROCESS');
+			if ((self.form.ico.jse.flag) || (self.form.ico.eth.flag))  {
+				return;
+			}
 			self.form.error.title = '';
 			self.form.error.msg = '';
 			self.form.info.title = '';
@@ -802,13 +831,13 @@ export default {
 
 			//load contract
 			const jseContract = new window.web3.eth.Contract(jseContractObj.abi, self.JSETokenSale);
-			//console.log('CONTRACT:', jseContract);
+			////console.log('CONTRACT:', jseContract);
 
 			jseContract.methods.buyTokens().send({
 				from: self.form.ico.address.val,
 				value: web3.utils.toWei(self.form.ico.eth.val+'', 'ether'),
 			}).on('receipt', function(receipt) {
-				//console.log('receipt', receipt);
+				////console.log('receipt', receipt);
 				self.form.showForm = false;
 				self.$swal('Transaction Complete', `Make sure to add the JSE Token address to see your tokens in your wallet ${self.tokenAddress}`, 'success');
 				self.showTracker = true;
@@ -835,7 +864,10 @@ export default {
 		 */
 		checkValWhiteListed() {
 			const self = this;
-			//console.log(self.accountWhitelisted, self.form.ico.eth.val, self.maxEthWhitelisted, self.maxEthNotWhitelisted);
+
+			self.form.ico.jse.flag = false;
+			self.form.ico.eth.flag = false;
+			////console.log(self.accountWhitelisted, self.form.ico.eth.val, self.maxEthWhitelisted, self.maxEthNotWhitelisted);
 			if (self.accountWhitelisted) {
 				if (Number(self.form.ico.eth.val) >= Number(self.maxEthWhitelisted)) {
 					self.form.info.title = 'Notice:';
@@ -843,13 +875,17 @@ export default {
 					return false;
 				}
 			} else if (Number(self.form.ico.eth.val) >= Number(self.maxEthNotWhitelisted)) {
-				//console.log('!!!');
+				////console.log('!!!');
 				self.form.info.title = 'Notice:';
 				self.form.info.msg = `We are unable to accept transactions over ${self.maxEthNotWhitelisted} ETH until you have whitelisted your address ${self.form.ico.address.val}.`;
+				self.form.ico.jse.flag = true;
+				self.form.ico.eth.flag = true;
 				return false;
 			} else if (Number(self.form.ico.eth.val) < Number(self.minEth)) {
 				self.form.info.title = 'Notice:';
 				self.form.info.msg = `We are unable to accept transactions under ${self.minEth} ETH`;
+				self.form.ico.jse.flag = true;
+				self.form.ico.eth.flag = true;
 				return false;
 			}
 			return true;
@@ -865,6 +901,16 @@ export default {
 			if (input === 'jse') {
 				self.updateEthVal();
 			}
+
+			console.log(self.form.ico.eth.val, (self.form.ico.eth.val.length > 10), (self.form.ico.eth.val % 1 !== 0));
+			//check if display > 10 and contains decimal
+			if ((self.form.ico.eth.val.length > 10) && (self.form.ico.eth.val % 1 !== 0)) {
+				self.form.ico.eth.val = String(+(Math.round(Number(self.form.ico.eth.val) + 'e+' + 10)  + 'e-' + 10));
+			}
+			//check if display > 10 and contains decimal
+			if ((self.form.ico.jse.val.length > 10) && (self.form.ico.jse.val % 1 !== 0)) {
+				self.form.ico.jse.val = String(+(Math.round(Number(self.form.ico.jse.val) + 'e+' + 10)  + 'e-' + 10));
+			}
 			//if text remove placeholder and show above input
 			if (String(self.form.ico[input].val).length > 0) {
 				self.form.ico[input].flag = false;
@@ -873,6 +919,7 @@ export default {
 				self.form.ico[input].displayLabel = false;
 				self.form.ico[input].flag = true;
 			}
+			self.checkValWhiteListed();
 		},
 		/**
 		 * confirms valid eth address
@@ -896,13 +943,13 @@ export default {
 		 */
 		updateJSEVal() {
 			const self = this;
-			self.form.ico.jse.val = self.JSEPerEth * self.form.ico.eth.val;
+			self.form.ico.jse.val = String(self.JSEPerEth * self.form.ico.eth.val);
 			self.form.ico.jse.displayLabel = true;
 			self.form.info.title = '';
 			self.form.info.msg = '';
 			self.form.error.title = '';
 			self.form.error.msg = '';
-			//console.log(self.userWalletBalance, self.form.ico.eth.val);
+			////console.log(self.userWalletBalance, self.form.ico.eth.val);
 			if (Number(self.userWalletBalance) < Number(self.form.ico.eth.val)) {
 				self.form.info.title = 'Notice:';
 				self.form.info.msg = 'You have entered a higher amount of Ethereum to spend than we can find in the selected wallet address. Don\'t worry you can buy more from your wallet during the transaction. Go ahead select the "BUY TOKENS" button.';
@@ -914,13 +961,13 @@ export default {
 		 */
 		updateEthVal() {
 			const self = this;
-			self.form.ico.eth.val = self.form.ico.jse.val / self.JSEPerEth;
+			self.form.ico.eth.val = String(self.form.ico.jse.val / self.JSEPerEth);
 			self.form.ico.eth.displayLabel = true;
 			self.form.info.title = '';
 			self.form.info.msg = '';
 			self.form.error.title = '';
 			self.form.error.msg = '';
-			//console.log(self.userWalletBalance, self.form.ico.eth.val);
+			////console.log(self.userWalletBalance, self.form.ico.eth.val);
 			if (Number(self.userWalletBalance) < Number(self.form.ico.eth.val)) {
 				self.form.info.title = 'Notice:';
 				self.form.info.msg = 'You have entered a higher amount of Ethereum to spend than we can find in the selected wallet address. Don\'t worry you can buy more from your wallet during the transaction. Go ahead select the "BUY TOKENS" button.';
@@ -1004,7 +1051,23 @@ export default {
 		
 	}
 }
-
+	.mobileHide {
+		display:none;
+	}
+	.mobileShow {
+		display:block;
+	}
+@media screen and (max-width: 600px) {
+	.mobileHide {
+		display:none;
+	}
+	.mobileShow {
+		display:block;
+	}
+}
+.tranAddress td {
+	border-bottom:solid 4px #ccc;
+}
 #JSEW-ICOMask dl {
 	max-width: 800px;
 	margin:100px auto;

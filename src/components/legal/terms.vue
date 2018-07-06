@@ -193,7 +193,7 @@
 						</li>
 						<li>The privacy notice with opt-out option must be displayed to users. Nothing should be done to hide or restyle this notification.</li>
 						<li>Site ID’s must match the domain name that the script is running on.</li>
-						<li>Any breaches of section 15.1 may result in immediate termination of your publisher account.</li>
+						<li>Any breaches of section "Website Standards" may result in immediate termination of your publisher account.</li>
 					</ol>
 				</li>
 				<li>
