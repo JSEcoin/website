@@ -2,7 +2,8 @@
 	"global": {},
 	"updates": {
 		"20180424": "priavcyPolicy > para_main1_cta, section_where_next > whole section",
-		"20180502": "pages.downloads, pages.whitelisting"
+		"20180502": "pages.downloads, pages.whitelisting",
+		"20180706": "pages.ico"
 	},
 	"tpl": {
 		"globalNavHeader": {
@@ -258,15 +259,53 @@
 				"highlight_info2": "if you would like to invest more than",
 				"form_walletAddress": "Connected Wallet Address",
 				"form_purchaseTokens": "Purchase JSE Tolkens",
-				"form_ethereumSpend": "Ethereum to Spend"
+				"form_ethereumSpend": "Ethereum to Spend",
+				"button_buyTokens": "BUY TOKENS",
+				"button_cancel": "CANCEL"
 			},
-			"heading_1": "",
-			"heading_2": "",
-			"heading_3": "",
-			"heading_4": "",
-			"heading_5": "",
-			"heading_6": "",
-			"heading_7": ""
+			"panel_tokenDist": {
+				"heading_tokenDist": "JSE Token Distribution",
+				"subheading_totalDist": "Total Distributed At ICO",
+				"subheading_currentDist": "Current Distributions",
+				"subheading_DistEndsIn": "Distribution Ends In",
+				"footer_msg": "**Depending on the Ethereum network traffic, figures may be delayed."
+			},
+			"panel_howToPurchase": {
+				"heading_howTo": "How To Purchase JSE Tokens Video",
+				"footer_header": "Important for our first time investors",
+				"footer_msg": "Please watch our tutorial on how to buy JSECoin Tokens"
+			},
+			"panel_directPayment": {
+				"heading_directPayment": "Use this payment method to send ETH from ERC20 Compatible Wallet to our smart contract",
+				"subheading_important": "Important",
+				"info_list1": "Please make sure to send funds from a valid ERC20 compatible Ethereum address to receive your tokens.",
+				"info_list2": "In order to add JSECoin tokens to your ETH wallet make sure you use this address.",
+				"subheading_doNot": "DO NOT send ETH directly from an exchange!",
+				"msg_doNot": "You must use an Ethereum compatible wallet.",
+				"heading_paymentAddress": "JSECOIN ETH SMART CONTRACT PAYMENT ADDRESS",
+				"button_copy": "COPY TO CLIPBOARD"
+			},
+			"panel_KYC": {
+				"heading_KYC": "Please pass the KYC verification",
+				"para_kyc": "In order to unlock JSE Tokens you will be required to successfully pass the KYC procedure. JSECoin Ltd strongly encourages all users to pass the KYC before purchasing JSECoin tokens. The verification process takes approximately 5 minutes.",
+				"para_infoMsg": "Note: JSECoin tokens will remain locked until the KYC is passed successfully",
+				"button_startKYC": "START KYC"
+			},
+			"panel_purchaseHistory": {
+				"heading_purchaseHistory": "Purchase History",
+				"tblHead_tokens": "Tokens",
+				"tblHead_totalSold": "Total Sold",
+				"tblHead_address": "Address",
+				"heading_tokenAddress": "JSE TOKEN ADDRESS "
+			},
+			"panel_exchangeInfo": {
+				"heading_exchangeInfo": "DO NOT send ETH directly from an exchange!",
+				"info_list1": "Please make sure to send funds from a valid ERC20 compatible Ethereum address to receive your tokens.",
+				"info_list2": "In order to add JSECoin tokens to your ETH wallet make sure you use this address:",
+				"info_list3": "Use MyEtherWallet, MetaMask or other compatible wallets. Explore and track your ETH transactions on",
+				"info_list4": "Your JSECoin tokes will appear on your Dashboard.",
+				"info_list5": "Set decimal numer: 18 - Some wallets may ask you to enter decimals."
+			}
 		},
 		"about": {
 			"meta": {

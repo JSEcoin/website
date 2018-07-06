@@ -75,8 +75,8 @@
 
 					<!-- Footer -->
 					<div class="footer" style="display: flex; justify-content: center;">
-						<button class="button green" v-on:click="processWeb3Payment">BUY TOKENS</button>
-						<button class="button red" v-on:click="exitPayment">CANCEL</button>
+						<button class="button green" v-on:click="processWeb3Payment">{{ $t('pages.ico.panel_purchase.button_buyTokens') }}</button>
+						<button class="button red" v-on:click="exitPayment">{{ $t('pages.ico.panel_purchase.button_cancel') }}</button>
 					</div>
 					<!-- xFooter -->
 				</dd>
@@ -102,7 +102,7 @@
 				<!-- Token Distribution -->
 				<dl id="JSEW-tokenDist" class="mainCol">
 					<dt>
-						JSE Token Distribution
+						{{ $t('pages.ico.panel_tokenDist.heading_tokenDist') }}
 						<div class="ribbon"><span>Rinkeby-TEST</span></div>
 					</dt>
 					<dd>
@@ -117,7 +117,7 @@
 							<div class="mainCol">
 								<!-- Total JSE Distribution -->
 								<div id="JSEW-totalDistribution">
-									<h2>Total Distributed At ICO</h2>
+									<h2>{{ $t('pages.ico.panel_tokenDist.subheading_totalDist') }}</h2>
 
 									<div id="JSEW-icoMeter">
 										<div id="JSEW-icoMeterDisplay" :style="{width:`${progressBarWidth}%`}">
@@ -144,7 +144,7 @@
 								<div class="row" style="margin:10px 0px;">
 									<!-- Current Distribution Spread -->
 									<div id="JSEW-currentDistSpread" class="mainCol borderRight">
-										<h2>Current Distributions</h2>
+										<h2>{{ $t('pages.ico.panel_tokenDist.subheading_currentDist') }}</h2>
 										<ul id="JSEW-distOptions">
 											<!-- JSE -->
 											<li id="JSEW-distJSE" class="mainCol borderRight">
@@ -170,7 +170,7 @@
 
 									<!-- Distribution Timer -->
 									<div id="JSEW-distributionCounterWrapper" class="mainCol">
-										<h2>Distribution Ends In</h2>
+										<h2>{{ $t('pages.ico.panel_tokenDist.subheading_DistEndsIn') }}</h2>
 										<ul id="JSEW-distCountdown">
 											<li class="counter">{{days}}</li>
 											<li>:</li>
@@ -190,7 +190,7 @@
 						<!-- Footer -->
 						<div class="footer">
 							<p>
-								**Depending on the Ethereum <!-- and EOS--> network traffic, figures may be delayed.
+								{{ $t('pages.ico.panel_tokenDist.footer_msg') }}
 							</p>
 						</div>
 						<!-- xFooter -->
@@ -200,13 +200,13 @@
 
 				<!-- Purchase video -->
 				<dl id="JSEW-purchaseVideo" class="thinCol">
-					<dt><i class="fa fa-info-circle "></i> How To Purchase JSE Tokens Video</dt>
+					<dt><i class="fa fa-info-circle "></i> {{ $t('pages.ico.panel_howToPurchase.heading_howTo') }}</dt>
 					<dd>
 						<iframe width="100%" height="226" src="https://www.youtube.com/embed/Mwyujyj6gMA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						<div class="footer">
 							<p>
-								<b>Important for our first time investors</b><br/>
-								Please watch our tutorial on how to buy JSECoin Tokens
+								<b>{{ $t('pages.ico.panel_howToPurchase.footer_header') }}</b><br/>
+								{{ $t('pages.ico.panel_howToPurchase.footer_msg') }}
 							</p>
 						</div>
 					</dd>
@@ -219,7 +219,7 @@
 			<div class="row">
 				<!-- Ethereum Payment Overview Panel -->
 				<dl id="JSEW-paymentEthOverview" class="mainCol">
-					<dt>Use this payment method to send ETH from ERC20 Compatible Wallet to our smart contract</dt>
+					<dt>{{ $t('pages.ico.panel_directPayment.heading_directPayment') }}</dt>
 					<dd>
 						<div class="row" style="border-bottom:solid 1px #eee;">
 							<!-- ETH QR Code -->
@@ -233,24 +233,24 @@
 							
 							<!-- ETH payment Info -->
 							<div id="JSEW-ethPaymentInfo">
-								<h2><i class="fa fa-info-circle"></i> Important</h2>
+								<h2><i class="fa fa-info-circle"></i> {{ $t('pages.ico.panel_directPayment.subheading_important') }}</h2>
 								<ol>
-									<li>Please make sure to send funds from a valid ERC20 compatible Ethereum address to receive your tokens.</li>
-									<li>In order to add JSECoin tokens to your ETH wallet make sure you use this address:</li>
+									<li> {{ $t('pages.ico.panel_directPayment.info_list1') }}</li>
+									<li> {{ $t('pages.ico.panel_directPayment.info_list2') }}</li>
 								</ol>
 								<div class="warning">
-									<b>DO NOT send ETH <!-- or EOS --> directly from an exchange!</b>
-									<p>You must use an Ethereum compatible wallet.</p>
+									<b>{{ $t('pages.ico.panel_directPayment.subheading_doNot') }}</b>
+									<p>{{ $t('pages.ico.panel_directPayment.msg_doNot') }}</p>
 									<!--<p>Please read below on why this is important...</p>-->
 								</div>
 							</div>
 							<!-- xETH payment Info -->
 						</div>
 						<!-- ETH payment Address -->
-						<h2 style="margin-left:10px; text-transform:uppercase;">JSECoin ETH smart contract payment address <i class="fa  fa-level-down"></i></h2>
+						<h2 style="margin-left:10px; text-transform:uppercase;">{{ $t('pages.ico.panel_directPayment.heading_paymentAddress') }} <i class="fa  fa-level-down"></i></h2>
 						<div id="JSEW-ethAddressField">
 							<input type="text" :value="JSETokenSale" />
-							<button class="sideButton" v-clipboard:copy="JSETokenSale">COPY TO CLIPBOARD</button>
+							<button class="sideButton" v-clipboard:copy="JSETokenSale">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
 						</div>
 						<!-- xETH payment Address -->
 					</dd>
@@ -259,19 +259,19 @@
 				
 				<!-- KYC -->
 				<dl id="JSEW-KYC" class="thinCol">
-					<dt><i class="fa fa-info-circle "></i> Please pass the KYC verification</dt>
+					<dt><i class="fa fa-info-circle "></i> {{ $t('pages.ico.panel_KYC.heading_KYC') }}</dt>
 					<dd class="hasFooter">
 						<p>
-							In order to unlock JSE Tokens you will be required to successfully pass the KYC procedure. JSECoin Ltd strongly encourages all users to pass the KYC before purchasing JSECoin tokens. The verification process takes approximately 5 minutes.
+							{{ $t('pages.ico.panel_KYC.para_kyc') }}
 						</p>
 						<p>
-							<i>Note: JSECoin tokens will remain locked until the KYC is passed successfully</i>
+							<i>{{ $t('pages.ico.panel_KYC.para_infoMsg') }}</i>
 						</p>
 						
 						
 						<div class="footer">
 							<router-link style="width:80%" class="button thin" v-bind:to="`/${$store.state.local}/whitelisting`" tag="button">
-								START KYC
+								{{ $t('pages.ico.panel_KYC.button_startKYC') }}
 							</router-link>
 						</div>
 					</dd>
@@ -284,15 +284,15 @@
 			<div class="row">
 				<!-- Purchase History -->
 				<dl id="JSEW-purchaseHistory" class="mainCol">
-					<dt>Purchase History</dt>
+					<dt>{{ $t('pages.ico.panel_purchaseHistory.heading_purchaseHistory') }}</dt>
 					<dd>
 						<!-- Purchase Overview -->
 						<table id="JSEW-purchaseOverviewTble" style="width:100%;">
 						<thead>
 							<tr>
-								<th>Tokens</th>
-								<th>Total Sold</th>
-								<th class="mobileHide">Address</th>
+								<th>{{ $t('pages.ico.panel_purchaseHistory.tblHead_tokens') }}</th>
+								<th>{{ $t('pages.ico.panel_purchaseHistory.tblHead_totalSold') }}</th>
+								<th class="mobileHide">{{ $t('pages.ico.panel_purchaseHistory.tblHead_address') }}</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -308,10 +308,10 @@
 						<!-- xPurchase Overview -->
 						<div class="footer" style="background:#fff; font-size:1em; border-top:solid 1px rgb(238, 238, 238);">
 							<!-- Token Address -->
-							<h2 style="margin-left:10px; text-transform:uppercase;">JSE token address <i class="fa  fa-level-down"></i></h2>
+							<h2 style="margin-left:10px; text-transform:uppercase;">{{ $t('pages.ico.panel_purchaseHistory.heading_tokenAddress') }} <i class="fa  fa-level-down"></i></h2>
 							<div id="JSEW-jseAddressField">
 								<input type="text" :value="tokenAddress" />
-								<button class="sideButton" v-clipboard:copy="tokenAddress">COPY TO CLIPBOARD</button>
+								<button class="sideButton" v-clipboard:copy="tokenAddress">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
 							</div>
 							<!-- xToken Address -->
 						</div>
@@ -321,18 +321,18 @@
 
 				<!-- Exchange payment info -->
 				<dl id="JSEW-exchangePaymentInfo" class="thinCol">
-					<dt><i class="fa fa-info-circle "></i> DO NOT send ETH <!-- or EOS--> directly from an exchange!</dt>
+					<dt><i class="fa fa-info-circle "></i> {{ $t('pages.ico.panel_exchangeInfo.heading_exchangeInfo') }}</dt>
 					<dd>
 						<ol>
-							<li>Please make sure to send funds from a valid ERC20 compatible Ethereum address to receive your tokens.</li>
-							<li>In order to add JSECoin tokens to your ETH wallet make sure you use this address:<br />
+							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list1') }}</li>
+							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list2') }}<br />
 								<div id="JSEW-ethAddressMini">
 									<input type="text" :value="JSETokenSale" />
 								</div>
 							</li>
-							<li>Use MyEtherWallet, MetaMask or other compatible wallets. Explore and track your ETH transactions on <a :href="ethscanURL()" target="_BLANK">Etherscan.io</a></li>
-							<li>Your JSECoin tokes will appear on your Dashboard.</li>
-							<li>Set decimal numer: 18 - Some wallets may ask you to enter decimals.</li>
+							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list3') }}<a :href="ethscanURL()" target="_BLANK">Etherscan.io</a></li>
+							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list4') }}</li>
+							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list5') }}</li>
 						</ol>
 					</dd>
 				</dl>
@@ -791,6 +791,9 @@ export default {
 		processWeb3Payment() {
 			const self = this;
 			////console.log('PROCESS');
+			if ((self.form.ico.jse.flag) || (self.form.ico.eth.flag))  {
+				return;
+			}
 			self.form.error.title = '';
 			self.form.error.msg = '';
 			self.form.info.title = '';
