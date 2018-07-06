@@ -1732,6 +1732,15 @@ footer a {
 .angelo {
 	background-image:url("assets/images/profile/angelo.png");
 }
+.jay {
+	background-image:url("assets/images/profile/jay.png");
+}
+.nick {
+	background-image:url("assets/images/profile/nick.png");
+}
+.jack {
+	background-image:url("assets/images/profile/jack.png");
+}
 
 .overlayHex {
 	display: block;
