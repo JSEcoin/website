@@ -203,6 +203,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ar/tools/blockchainExplorer',
 			'/ar/downloads',
 			'/ar/whitelisting',
+			'/ar/ico',
 
 			//bg
 			'/bg/home',
@@ -240,6 +241,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/bg/tools/blockchainExplorer',
 			'/bg/downloads',
 			'/bg/whitelisting',
+			'/bg/ico',
 
 			//chinese
 			'/cn/home',
@@ -277,6 +279,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/cn/tools/blockchainExplorer',
 			'/cn/downloads',
 			'/cn/whitelisting',
+			'/cn/ico',
 
 			//German
 			'/de/home',
@@ -314,6 +317,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/de/tools/blockchainExplorer',
 			'/de/downloads',
 			'/de/whitelisting',
+			'/de/ico',
 
 			//Spanish
 			'/es/home',
@@ -351,6 +355,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/es/tools/blockchainExplorer',
 			'/es/downloads',
 			'/es/whitelisting',
+			'/es/ico',
 
 			//finnish
 			'/fi/home',
@@ -388,6 +393,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/fi/tools/blockchainExplorer',
 			'/fi/downloads',
 			'/fi/whitelisting',
+			'/fi/ico',
 
 			//french
 			'/fr/home',
@@ -425,6 +431,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/fr/tools/blockchainExplorer',
 			'/fr/downloads',
 			'/fr/whitelisting',
+			'/fr/ico',
 
 			//Indonesian
 			'/id/home',
@@ -462,6 +469,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/id/tools/blockchainExplorer',
 			'/id/downloads',
 			'/id/whitelisting',
+			'/id/ico',
 
 			//Italian
 			'/it/home',
@@ -499,6 +507,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/it/tools/blockchainExplorer',
 			'/it/downloads',
 			'/it/whitelisting',
+			'/it/ico',
 
 			//japanese
 			'/jp/home',
@@ -536,6 +545,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/jp/tools/blockchainExplorer',
 			'/jp/downloads',
 			'/jp/whitelisting',
+			'/jp/ico',
 
 			//Korean
 			'/ko/home',
@@ -573,6 +583,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ko/tools/blockchainExplorer',
 			'/ko/downloads',
 			'/ko/whitelisting',
+			'/ko/ico',
 
 			//
 			'/ms/home',
@@ -610,6 +621,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ms/tools/blockchainExplorer',
 			'/ms/downloads',
 			'/ms/whitelisting',
+			'/ms/ico',
 
 			//
 			'/nl/home',
@@ -647,6 +659,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/nl/tools/blockchainExplorer',
 			'/nl/downloads',
 			'/nl/whitelisting',
+			'/nl/ico',
 
 			//xxxx
 			'/no/home',
@@ -684,6 +697,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/no/tools/blockchainExplorer',
 			'/no/downloads',
 			'/no/whitelisting',
+			'/no/ico',
 
 			//Portugese
 			'/pt/home',
@@ -721,6 +735,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/pt/tools/blockchainExplorer',
 			'/pt/downloads',
 			'/pt/whitelisting',
+			'/pt/ico',
 
 			//Romanian
 			'/ro/home',
@@ -758,6 +773,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ro/tools/blockchainExplorer',
 			'/ro/downloads',
 			'/ro/whitelisting',
+			'/ro/ico',
 
 			//Russian
 			'/ru/home',
@@ -795,6 +811,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ru/tools/blockchainExplorer',
 			'/ru/downloads',
 			'/ru/whitelisting',
+			'/ru/ico',
 
 			//Slovenian
 			'/si/home',
@@ -832,6 +849,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/si/tools/blockchainExplorer',
 			'/si/downloads',
 			'/si/whitelisting',
+			'/si/ico',
 
 			//Swedish
 			'/se/home',
@@ -869,6 +887,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/se/tools/blockchainExplorer',
 			'/se/downloads',
 			'/se/whitelisting',
+			'/se/ico',
 
 			//Thai
 			'/th/home',
@@ -906,6 +925,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/th/tools/blockchainExplorer',
 			'/th/downloads',
 			'/th/whitelisting',
+			'/th/ico',
 
 			//taiwanese
 			'/tw/home',
@@ -943,6 +963,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/tw/tools/blockchainExplorer',
 			'/tw/downloads',
 			'/tw/whitelisting',
+			'/tw/ico',
 
 			//test
 			'/en/banner1',
