@@ -242,7 +242,31 @@
 				"title": "ICO",
 				"keywords": "",
 				"description": ""
-			}
+			},
+			"banner": {
+				"linkText": "ICO Launchpad",
+				"heading": "ICO Launchpad",
+				"subheading": "Make sure you are logged in to your wallet to access the integrated purchase capabilities"
+			},
+			"panel_purchase": {
+				"heading_purchase": "Purchase JSE Tokens via an Ethereum ERC Compatible Wallet (ie MetaMask)",
+				"purchase_list1": "Select your wallet address",
+				"purchase_list2": "Enter either the amount of JSE Tokens you would like to purchase or the amount of Ethereum to exchange for JSE Tokens.",
+				"purchase_list3": "Select the “Buy Tokens” button to initiate the purchase through your connected wallet.",
+				"highlight_info1": "Make sure you have filled out the",
+				"highlight_link": "whitelist form",
+				"highlight_info2": "if you would like to invest more than",
+				"form_walletAddress": "Connected Wallet Address",
+				"form_purchaseTokens": "Purchase JSE Tolkens",
+				"form_ethereumSpend": "Ethereum to Spend"
+			},
+			"heading_1": "",
+			"heading_2": "",
+			"heading_3": "",
+			"heading_4": "",
+			"heading_5": "",
+			"heading_6": "",
+			"heading_7": ""
 		},
 		"about": {
 			"meta": {

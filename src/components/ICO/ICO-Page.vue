@@ -5,7 +5,7 @@
 			<!-- Model window -->
 			<dl v-on:click="stopBubble($event)">
 				<!-- Title -->
-				<dt>Purchase JSE Tokens via an Ethereum ERC Compatible Wallet (ie MetaMask)</dt>
+				<dt>{{ $t('pages.ico.panel_purchase.heading_purchase') }}</dt>
 				<!-- xTitle -->
 				<!-- Content -->
 				<dd class="hasFooter">
@@ -14,9 +14,9 @@
 						<div style="align-self: center;"><img width="160px" style="margin:10px auto;" src="../../assets/ico/wallets.png" /></div>
 						<div>
 							<ol>
-								<li>Select your wallet address</li>
-								<li>Enter either the amount of JSE Tokens you would like to purchase or the amount of Ethereum to exchange for JSE Tokens.</li>
-								<li>Select the “Buy Tokens” button to initiate the purchase through your connected wallet.</li>
+								<li>{{ $t('pages.ico.panel_purchase.purchase_list1') }}</li>
+								<li>{{ $t('pages.ico.panel_purchase.purchase_list2') }}</li>
+								<li>{{ $t('pages.ico.panel_purchase.purchase_list3') }}</li>
 							</ol>
 						</div>
 					</div>
@@ -25,11 +25,11 @@
 					<!-- Info Display -->
 					<div class="highlightPanelFlat" v-if="!accountWhitelisted">
 						<i>
-							Make sure you have filled out the 								
+							{{ $t('pages.ico.panel_purchase.highlight_info1') }}							
 							<router-link v-bind:to="`/${$store.state.local}/whitelisting`" tag="a">
-								whitelist form
+								{{ $t('pages.ico.panel_purchase.highlight_link') }}
 							</router-link>
-							if you would like to invest more than <b>10,000 USD</b>
+							{{ $t('pages.ico.panel_purchase.highlight_info2') }} <b>10,000 USD</b>
 						</i>
 					</div>
 					<div v-if="form.info.msg.length > 0" class="infoPanel">
@@ -50,23 +50,23 @@
 					<div class="highlightPanel row">
 						<div class="col">
 							<label :class="{show:form.ico.address.displayLabel, error:form.ico.address.flag}">
-								<div class="inputLabel">Connected Wallet Address *</div>
-								<input type="text" placeholder="Connected Wallet Address *" v-model="form.ico.address.val" @keyup="keyWatch('address')" v-on:blur="checkAddress" />
+								<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_walletAddress') }} *</div>
+								<input type="text" :placeholder="$t('pages.ico.panel_purchase.form_walletAddress') + ' *'" v-model="form.ico.address.val" @keyup="keyWatch('address')" v-on:blur="checkAddress" />
 							</label>
 						</div>
 						<div class="col">
 							<label class="icoCoin" :class="{show:form.ico.jse.displayLabel, error:form.ico.jse.flag}">
-								<div class="inputLabel">Purchase JSE Tolkens *</div>
+								<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_purchaseTokens') }} *</div>
 								<div class="amountInput coin">
-									<input type="number" min="10000" step="200" placeholder="Purchase JSE Tolkens *" v-model="form.ico.jse.val" @keyup="keyWatch('jse')" @mouseup="keyWatch('jse')" />
+									<input type="number" min="10000" step="200" :placeholder="$t('pages.ico.panel_purchase.form_purchaseTokens') + ' *'" v-model="form.ico.jse.val" @keyup="keyWatch('jse')" @mouseup="keyWatch('jse')" />
 								</div>
 							</label>
 						</div>
 						<div class="col">
 							<label :class="{show:form.ico.eth.displayLabel, error:form.ico.eth.flag}">
-								<div class="inputLabel">Ethereum to Spend *</div>
+								<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_ethereumSpend') }} *</div>
 								<div class="amountInput ethIcon">
-									<input type="number" min="0" step="0.1" placeholder="Ethereum to Spend *" v-model="form.ico.eth.val" @keyup="keyWatch('eth')" @mouseup="keyWatch('eth')" />
+									<input type="number" min="0" step="0.1" :placeholder="$t('pages.ico.panel_purchase.form_ethereumSpend') + ' *'" v-model="form.ico.eth.val" @keyup="keyWatch('eth')" @mouseup="keyWatch('eth')" />
 								</div>
 							</label>
 						</div>
@@ -469,7 +469,7 @@ export default {
 					}
 					self.showBuyOption = true;
 				} else {
-					self.BuyJSEButton = 'Enable Connected Wallet';
+					self.BuyJSEButton = 'Connect';
 					self.activeAccount = '';
 					self.showBuyOption = false;
 					self.form.showForm = false;
@@ -861,6 +861,9 @@ export default {
 		 */
 		checkValWhiteListed() {
 			const self = this;
+
+			self.form.ico.jse.flag = false;
+			self.form.ico.eth.flag = false;
 			////console.log(self.accountWhitelisted, self.form.ico.eth.val, self.maxEthWhitelisted, self.maxEthNotWhitelisted);
 			if (self.accountWhitelisted) {
 				if (Number(self.form.ico.eth.val) >= Number(self.maxEthWhitelisted)) {
@@ -872,10 +875,14 @@ export default {
 				////console.log('!!!');
 				self.form.info.title = 'Notice:';
 				self.form.info.msg = `We are unable to accept transactions over ${self.maxEthNotWhitelisted} ETH until you have whitelisted your address ${self.form.ico.address.val}.`;
+				self.form.ico.jse.flag = true;
+				self.form.ico.eth.flag = true;
 				return false;
 			} else if (Number(self.form.ico.eth.val) < Number(self.minEth)) {
 				self.form.info.title = 'Notice:';
 				self.form.info.msg = `We are unable to accept transactions under ${self.minEth} ETH`;
+				self.form.ico.jse.flag = true;
+				self.form.ico.eth.flag = true;
 				return false;
 			}
 			return true;
@@ -891,6 +898,16 @@ export default {
 			if (input === 'jse') {
 				self.updateEthVal();
 			}
+
+			console.log(self.form.ico.eth.val, (self.form.ico.eth.val.length > 10), (self.form.ico.eth.val % 1 !== 0));
+			//check if display > 10 and contains decimal
+			if ((self.form.ico.eth.val.length > 10) && (self.form.ico.eth.val % 1 !== 0)) {
+				self.form.ico.eth.val = String(+(Math.round(Number(self.form.ico.eth.val) + 'e+' + 10)  + 'e-' + 10));
+			}
+			//check if display > 10 and contains decimal
+			if ((self.form.ico.jse.val.length > 10) && (self.form.ico.jse.val % 1 !== 0)) {
+				self.form.ico.jse.val = String(+(Math.round(Number(self.form.ico.jse.val) + 'e+' + 10)  + 'e-' + 10));
+			}
 			//if text remove placeholder and show above input
 			if (String(self.form.ico[input].val).length > 0) {
 				self.form.ico[input].flag = false;
@@ -899,6 +916,7 @@ export default {
 				self.form.ico[input].displayLabel = false;
 				self.form.ico[input].flag = true;
 			}
+			self.checkValWhiteListed();
 		},
 		/**
 		 * confirms valid eth address
@@ -922,7 +940,7 @@ export default {
 		 */
 		updateJSEVal() {
 			const self = this;
-			self.form.ico.jse.val = self.JSEPerEth * self.form.ico.eth.val;
+			self.form.ico.jse.val = String(self.JSEPerEth * self.form.ico.eth.val);
 			self.form.ico.jse.displayLabel = true;
 			self.form.info.title = '';
 			self.form.info.msg = '';
@@ -940,7 +958,7 @@ export default {
 		 */
 		updateEthVal() {
 			const self = this;
-			self.form.ico.eth.val = self.form.ico.jse.val / self.JSEPerEth;
+			self.form.ico.eth.val = String(self.form.ico.jse.val / self.JSEPerEth);
 			self.form.ico.eth.displayLabel = true;
 			self.form.info.title = '';
 			self.form.info.msg = '';
