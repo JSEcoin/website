@@ -5,7 +5,7 @@
 			<!-- Model window -->
 			<dl v-on:click="stopBubble($event)">
 				<!-- Title -->
-				<dt>Purchase JSE Tokens via a wallet</dt>
+				<dt>Purchase JSE Tokens via an Ethereum ERC Compatible Wallet (ie MetaMask)</dt>
 				<!-- xTitle -->
 				<!-- Content -->
 				<dd class="hasFooter">
@@ -110,7 +110,7 @@
 							<!-- ICO Logo -->
 							<div id="JSEW-ICOLogo" class="borderRight">
 								<img src="../../assets/ico/logo.png" alt="JSECoin - The Javascript Embedded Cryptocurrency" />
-								<button v-on:click="initBuy" class="button buy" :class="{disable: !showBuyOption}">Buy JSE</button>
+								<button v-on:click="initBuy" class="button buy" :class="{disable: !showBuyOption}">{{BuyJSEButton}}</button>
 							</div>
 							<!-- xICO Logo -->
 							<!-- ICO Status Info -->
@@ -169,7 +169,7 @@
 									<!-- xCurrent Distribution Spread -->
 
 									<!-- Distribution Timer -->
-									<div id="JSEW-distributionCounterWrapper"class="mainCol">
+									<div id="JSEW-distributionCounterWrapper" class="mainCol">
 										<h2>Distribution Ends In</h2>
 										<ul id="JSEW-distCountdown">
 											<li class="counter">{{days}}</li>
@@ -292,15 +292,17 @@
 							<tr>
 								<th>Tokens</th>
 								<th>Total Sold</th>
-								<th>Status</th>
+								<th class="mobileHide">Address</th>
 							</tr>
 						</thead>
 						<tbody>
-							<tr v-for="transaction in userTransactionList">
-								<td>{{transaction.returnValues['_tokens']}}</td>
-								<td>{{transaction.returnValues['_totalSold']}}</td>
-								<td><a class="transactionAddress" target="_BLANK" :href="ethscanURL(transaction.transactionHash)">{{transaction.transactionHash}}</a></td>
-							</tr>
+							<template v-for="transaction in userTransactionList">
+								<tr>
+									<td><a target="_BLANK" :href="ethscanURL(transaction.transactionHash)">{{transaction.returnValues['_tokens']}}</a></td>
+									<td><a target="_BLANK" :href="ethscanURL(transaction.transactionHash)">{{transaction.returnValues['_totalSold']}}</a></td>
+									<td class="mobileHide"><a class="transactionAddress" target="_BLANK" :href="ethscanURL(transaction.transactionHash)">{{transaction.transactionHash}}</a></td>
+								</tr>
+							</template>
 						</tbody>
 						</table>
 						<!-- xPurchase Overview -->
@@ -355,17 +357,19 @@ window.web3 = new Web3(Web3.givenProvider || 'http://localhost:8545');
 //window.web3 = new Web3(Web3.givenProvider || HTTPProvider('https://rinkeby.infura.io') || 'http://localhost:8545');
 window.ActiveNetwork = new Web3('https://rinkeby.infura.io');
 //version
-////console.log('VERSION:', window.web3.version);
+//////console.log('VERSION:', window.web3.version);
 
 export default {
 	name: 'Ico-Page',
 	data() {
 		return {
+			BuyJSEButton: 'Buy JSE',
 			launchPadDevMode: true,
 			//JSE Token Address - query for balance
 			tokenAddress: '0xf90172bd3f56b4845229aa82239d6243ea19c523',//'0x1c1f7b95907df941fb6ed4469b0f4f049ab6b75c',
 			//contract Address
 			JSETokenSale: '0x169b6443836236877c633518da0e01ce53973202',//'0x9793a17f3aa26b8e93f442ed370d38e4d1bfe610',
+			networkVersion: '4', //1 = mainnet 3 = rinkeby
 			activeAccount: '', //active metamask account
 			availableAccounts: [], //list of available accounts
 			selectedPaymentAccount: '', //user selected payment account
@@ -425,13 +429,15 @@ export default {
 			},
 			//JSE goal Checkpoints reached
 			goalCheckpoints: [
-				1000000,
-				10000000,
-				100000000,
-				200000000,
-				300000000,
-				400000000,
-				500000000,
+				20000000, // 100,000
+				50000000, // 250,000
+				150000000, // 750,000
+				300000000, // 1,500,000
+				500000000, // 2,500,000
+				800000000, // 4,000,000
+				2000000000, // 10,000,000
+				3600000000, // 18,000,000
+				5000000000, // 25,000,000
 			],
 			activeGoal: 5000000000,
 			activeGoalDisplay: '5,000,000,000',
@@ -440,14 +446,18 @@ export default {
 	created() {
 		const self = this;
 
+		self.BuyJSEButton = 'Initialising...';
 		//check metamask active poll exists
 		if (typeof (window.web3.currentProvider.publicConfigStore) !== 'undefined') {
+			//console.log('x');
 			//poll web3 to check current provider active and user logged in
 			window.web3.currentProvider.publicConfigStore.on('update', (acc) => {
-				if (typeof (acc.selectedAddress) !== 'undefined') {
-					////console.log(acc.selectedAddress);
+				//console.log(acc, acc.networkVersion === self.networkVersion);
+				if ((typeof (acc.selectedAddress) !== 'undefined') && (acc.networkVersion === self.networkVersion)) {
+					//////console.log(acc.selectedAddress);
+					self.BuyJSEButton = 'Buy JSE';
 					if (self.activeAccount !== acc.selectedAddress) {
-						//console.log('ADDRESS CHANGED', acc.selectedAddress);
+						////console.log('ADDRESS CHANGED', acc.selectedAddress);
 						self.form.info.title = '';
 						self.form.info.msg = '';
 						self.form.error.title = '';
@@ -459,27 +469,43 @@ export default {
 					}
 					self.showBuyOption = true;
 				} else {
+					self.BuyJSEButton = 'Enable Connected Wallet';
 					self.activeAccount = '';
 					self.showBuyOption = false;
 					self.form.showForm = false;
 				}
 			});
 		} else {
-			//get store user accounts
-			window.web3.eth.getAccounts().then((t) => {
-				//console.log('ACCOUNTS FOUND', t, t.length);
-				if ((typeof (t) !== 'undefined') && (t.length > 0)) {
-					self.availableAccounts = t;
-					self.form.info.title = '';
-					self.form.info.msg = '';
-					self.form.error.title = '';
-					self.form.error.msg = '';
-					self.form.ico.address.flag = false;
-					self.form.ico.address.displayLabel = true;
-					self.activeAccount = t[0];
-					self.updateAccountDetails(t[0]);
+			const checkNetwork = (err, currentNetwork) => {
+				//if (err) throw err // Please handle errors responsibly.
+				if (currentNetwork !== self.networkVersion) {
+					self.activeAccount = '';
+					self.showBuyOption = false;
+					self.form.showForm = false;
+				} else {
+					//get store user accounts
+					window.web3.eth.getAccounts().then((t) => {
+						self.BuyJSEButton = 'Buy JSE';
+						////console.log('ACCOUNTS FOUND', t, t.length);
+						if ((typeof (t) !== 'undefined') && (t.length > 0)) {
+							self.availableAccounts = t;
+							self.form.info.title = '';
+							self.form.info.msg = '';
+							self.form.error.title = '';
+							self.form.error.msg = '';
+							self.form.ico.address.flag = false;
+							self.form.ico.address.displayLabel = true;
+							self.activeAccount = t[0];
+							self.updateAccountDetails(t[0]);
+							self.showBuyOption = true;
+						}
+					});
 				}
-			});
+			};
+
+			setInterval(() => {
+				web3.version.getNetwork(checkNetwork);
+			}, 1000);
 		}
 
 		window.jseTokenContract = new window.ActiveNetwork.eth.Contract(jseTokenObj.abi, self.tokenAddress);
@@ -585,30 +611,30 @@ export default {
 
 			//Current token/eth value
 			jseContract.methods.tokensPerKEther().call().then((t) => {
-				//console.log('TOKENS / ETH', t/1e3);
+				////console.log('TOKENS / ETH', t/1e3);
 				self.JSEPerEth = t/1e3;
 			});
 
 			//add max cap if user hasn't whitelisted. 15.8eth
 			jseContract.methods.CONTRIBUTION_MAX_NO_WHITELIST().call().then((t) => {
-				//console.log('MAX NO WHITELIST CAP ETH', web3.utils.fromWei(t));
+				////console.log('MAX NO WHITELIST CAP ETH', web3.utils.fromWei(t));
 				self.maxEthNotWhitelisted = web3.utils.fromWei(t);
 			});
 
 			//add max cap if user hasn't whitelisted. 10,000eth
 			jseContract.methods.CONTRIBUTION_MAX().call().then((t) => {
-				//console.log('MAX WHITELIST CAP ETH', web3.utils.fromWei(t));
+				////console.log('MAX WHITELIST CAP ETH', web3.utils.fromWei(t));
 				self.maxEthWhitelisted = web3.utils.fromWei(t);
 			});
 			jseContract.methods.CONTRIBUTION_MIN().call().then((t) => {
-				//console.log(web3.utils.fromWei(t));
-				//console.log('MAX WHITELIST CAP ETH', web3.utils.fromWei(t));
+				////console.log(web3.utils.fromWei(t));
+				////console.log('MAX WHITELIST CAP ETH', web3.utils.fromWei(t));
 				self.minEth = web3.utils.fromWei(t);
 			});
 
 			//Amount of ether raised
 			jseContract.methods.weiRaised().call().then((t) => {
-				//console.log('weiRaised', web3.utils.fromWei(t));
+				////console.log('weiRaised', web3.utils.fromWei(t));
 				const etherRaised = web3.utils.fromWei(t);
 				if (etherRaised < 10) {
 					self.total.eth = +(Number(etherRaised)).toFixed(2);
@@ -628,7 +654,7 @@ export default {
 				to: (String(document.location).indexOf('localhost') === -1) ? self.JSETokenSale : web3.eth.accounts[0],
 				amount: web3.utils.toWei(eth, 'ether'),
 			}).then((t) => {
-				//console.log(self.form.ico.eth.val, t);
+				////console.log(self.form.ico.eth.val, t);
 				self.gasPriceEstimate = t;
 				//self.form.ico.eth.val = String(Number(self.form.ico.eth.val) - t);
 				self.updateJSEVal();
@@ -653,7 +679,7 @@ export default {
 		 */
 		getUserTransactionList() {
 			const self = this;
-			console.log('??', self.form.ico.address.val);
+			//console.log('??', self.form.ico.address.val);
 			window.jseContract.getPastEvents('allEvents', {
 				filter: {
 					isError: 0,
@@ -666,8 +692,8 @@ export default {
 				fromBlock: 242000,
 				toBlock: 'latest',
 			}).then((t) => {
-				console.log(t);
-				//console.log(t[0].returnValues._tokens);
+				//console.log(t);
+				////console.log(t[0].returnValues._tokens);
 				self.userTransactionList = t;
 			});
 		},
@@ -688,7 +714,7 @@ export default {
 			const self = this;
 			//get availble user balance
 			window.web3.eth.getBalance(address, 'latest', (error, weiBalance) => {
-				//console.log('USER BALNCE', window.web3.utils.fromWei(weiBalance));
+				////console.log('USER BALNCE', window.web3.utils.fromWei(weiBalance));
 				self.form.ico.eth.val = window.web3.utils.fromWei(weiBalance);
 				self.userWalletBalance = self.form.ico.eth.val;
 				self.form.ico.eth.displayLabel = true;
@@ -717,7 +743,7 @@ export default {
 				},
 				fromBlock: 0,
 			}).then((t) => {
-				//console.log(t);
+				////console.log(t);
 			});
 		},
 		/**
@@ -725,7 +751,7 @@ export default {
 		 */
 		getTimestamp(blockNum) {
 			web3.eth.getBlock(blockNum).then((t) => {
-				//console.log(moment.unix(t.timestamp).format('MMMM Do YYYY'));
+				////console.log(moment.unix(t.timestamp).format('MMMM Do YYYY'));
 			});
 		},
 		/**
@@ -764,7 +790,7 @@ export default {
 		 */
 		processWeb3Payment() {
 			const self = this;
-			//console.log('PROCESS');
+			////console.log('PROCESS');
 			self.form.error.title = '';
 			self.form.error.msg = '';
 			self.form.info.title = '';
@@ -802,13 +828,13 @@ export default {
 
 			//load contract
 			const jseContract = new window.web3.eth.Contract(jseContractObj.abi, self.JSETokenSale);
-			//console.log('CONTRACT:', jseContract);
+			////console.log('CONTRACT:', jseContract);
 
 			jseContract.methods.buyTokens().send({
 				from: self.form.ico.address.val,
 				value: web3.utils.toWei(self.form.ico.eth.val+'', 'ether'),
 			}).on('receipt', function(receipt) {
-				//console.log('receipt', receipt);
+				////console.log('receipt', receipt);
 				self.form.showForm = false;
 				self.$swal('Transaction Complete', `Make sure to add the JSE Token address to see your tokens in your wallet ${self.tokenAddress}`, 'success');
 				self.showTracker = true;
@@ -835,7 +861,7 @@ export default {
 		 */
 		checkValWhiteListed() {
 			const self = this;
-			//console.log(self.accountWhitelisted, self.form.ico.eth.val, self.maxEthWhitelisted, self.maxEthNotWhitelisted);
+			////console.log(self.accountWhitelisted, self.form.ico.eth.val, self.maxEthWhitelisted, self.maxEthNotWhitelisted);
 			if (self.accountWhitelisted) {
 				if (Number(self.form.ico.eth.val) >= Number(self.maxEthWhitelisted)) {
 					self.form.info.title = 'Notice:';
@@ -843,7 +869,7 @@ export default {
 					return false;
 				}
 			} else if (Number(self.form.ico.eth.val) >= Number(self.maxEthNotWhitelisted)) {
-				//console.log('!!!');
+				////console.log('!!!');
 				self.form.info.title = 'Notice:';
 				self.form.info.msg = `We are unable to accept transactions over ${self.maxEthNotWhitelisted} ETH until you have whitelisted your address ${self.form.ico.address.val}.`;
 				return false;
@@ -902,7 +928,7 @@ export default {
 			self.form.info.msg = '';
 			self.form.error.title = '';
 			self.form.error.msg = '';
-			//console.log(self.userWalletBalance, self.form.ico.eth.val);
+			////console.log(self.userWalletBalance, self.form.ico.eth.val);
 			if (Number(self.userWalletBalance) < Number(self.form.ico.eth.val)) {
 				self.form.info.title = 'Notice:';
 				self.form.info.msg = 'You have entered a higher amount of Ethereum to spend than we can find in the selected wallet address. Don\'t worry you can buy more from your wallet during the transaction. Go ahead select the "BUY TOKENS" button.';
@@ -920,7 +946,7 @@ export default {
 			self.form.info.msg = '';
 			self.form.error.title = '';
 			self.form.error.msg = '';
-			//console.log(self.userWalletBalance, self.form.ico.eth.val);
+			////console.log(self.userWalletBalance, self.form.ico.eth.val);
 			if (Number(self.userWalletBalance) < Number(self.form.ico.eth.val)) {
 				self.form.info.title = 'Notice:';
 				self.form.info.msg = 'You have entered a higher amount of Ethereum to spend than we can find in the selected wallet address. Don\'t worry you can buy more from your wallet during the transaction. Go ahead select the "BUY TOKENS" button.';
@@ -1004,7 +1030,23 @@ export default {
 		
 	}
 }
-
+	.mobileHide {
+		display:none;
+	}
+	.mobileShow {
+		display:block;
+	}
+@media screen and (max-width: 600px) {
+	.mobileHide {
+		display:none;
+	}
+	.mobileShow {
+		display:block;
+	}
+}
+.tranAddress td {
+	border-bottom:solid 4px #ccc;
+}
 #JSEW-ICOMask dl {
 	max-width: 800px;
 	margin:100px auto;
