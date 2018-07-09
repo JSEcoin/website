@@ -266,7 +266,7 @@
 			"panel_tokenDist": {
 				"heading_tokenDist": "JSE Token Distribution Overview",
 				"subheading_totalDist": "Total JSE Distributed",
-				"subheading_currentDist": "Transfers",
+				"subheading_currentDist": "Transfers In / Out",
 				"subheading_DistEndsIn": "JSE Distribution Ends In",
 				"footer_msg": "**Depending on the Ethereum network traffic, figures may be delayed."
 			},
@@ -292,7 +292,7 @@
 				"button_startKYC": "START KYC"
 			},
 			"panel_purchaseHistory": {
-				"heading_purchaseHistory": "Purchase History",
+				"heading_purchaseHistory": "ICO Tracked Purchase History",
 				"tblHead_tokens": "Tokens",
 				"tblHead_totalSold": "Total Sold",
 				"tblHead_address": "Address",
@@ -303,7 +303,8 @@
 				"info_list1": "Please make sure to send funds from a valid ERC20 compatible Ethereum address to receive your tokens.",
 				"info_list2": "In order to purchase JSE tokens send ETH this address:",
 				"info_list2_1": "To see your JSE Tokens you may need to add our JSE Token address to your wallet:",
-				"info_list3": "Use MyEtherWallet, MetaMask or other compatible wallets. Explore and track your ETH transactions on",
+				"info_list3": "Use MyEtherWallet, MetaMask or other compatible wallets.",
+				"info_list3_1": "Explore and track your ETH transactions on",
 				"info_list4": "Your JSECoin tokes will appear on your Dashboard.",
 				"info_list5": "Set decimal numer: 18 - Some wallets may ask you to enter decimals."
 			}

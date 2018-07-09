@@ -249,6 +249,16 @@ const router = new Router({
 			},
 		},
 		{
+			path: '/ICO',
+			component: ICO,
+			meta: {
+				linkText: '',
+				headerBG: '/banners/icoLaunchpad.png',
+				headerTitle: 'pages.ico.banner.heading', //ICO Launchpad',
+				headerSubTitle: 'pages.ico.banner.subheading', //'Make sure you are logged in to your wallet to access the integrated purchase capabilities',
+			},
+		},
+		{
 			path: '/home',
 			component: home,
 			meta: {
@@ -701,6 +711,16 @@ const router = new Router({
 		},*/
 		{
 			path: '/:lang/ico',
+			component: ICO,
+			meta: {
+				linkText: '',
+				headerBG: '/banners/icoLaunchpad.png',
+				headerTitle: 'pages.ico.banner.heading', //ICO Launchpad',
+				headerSubTitle: 'pages.ico.banner.subheading', //'Make sure you are logged in to your wallet to access the integrated purchase capabilities',
+			},
+		},
+		{
+			path: '/:lang/ICO',
 			component: ICO,
 			meta: {
 				linkText: '',

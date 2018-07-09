@@ -1,5 +1,35 @@
 <template>
 	<div id="JSEW-wrapper">
+		<div id="JSEW-ICOLoadingMask" v-if="loadingTransaction">
+			<div id="JSEW-ICOLoadingAnimationWrapper">
+				<div id="JSEW-ICOLoadingAnimationx">
+					<!--1.2em<div id="JSEA-rotatingLogo"></div>-->
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style="white-space: preserve-spaces; display:block; position:absolute; top:0px; width: 60px; margin: 50%; left: -30px; top: -26px;">
+						<g id="JSEA-rotatingLogo3" class="active" filter="none" transform="translate(498,507) translate(-445.503,-500.996)" style="fill: #00b1f4;">
+							<path id="JSEA-layer1" d="M56.3,556L55.8,704.3C55.9,735.5,72.7,764.5,99.6,780.2L229.3,854.5C256,869.7,289,869.8,316.1,854.7L446.7,779.3C473.6,763.8,490.5,734.9,490.4,703.8L490.9,555.5C490.8,524.3,474,495.3,447.1,479.6L317.4,405.3C290.7,390.1,257.7,390,230.6,405.1L100,480.4C73.1,495.9,56.2,524.8,56.3,556ZM273.3,470L411.9,550.8L411.8,709.9L273.9,789.5L136,710L135.3,549.6L273.3,470Z" transform="translate(-55.8,-0.0372215)" style=""/>
+							<path id="JSEA-layer2" d="M510.2,556.3L509.7,704.6C509.8,735.8,526.6,764.8,553.5,780.5L683.2,854.8C709.9,870,742.9,870.1,770,855L900.6,779.6C927.5,764.1,944.4,735.2,944.3,704.1L944.8,555.8C944.7,524.6,927.9,495.6,901,479.9L771.3,405.6C744.6,390.4,711.6,390.3,684.5,405.4L553.9,480.8C527.1,496.3,510.2,525.1,510.2,556.3ZM727.2,470.4L865.8,551.2L865.7,710.3L727.8,789.9L590,710.4L589.3,550L727.2,470.4Z" transform="translate(-55.8,-0.0372215)" style=""/>
+							<path id="JSEA-layer3" d="M283,162.2L282.5,310.5C282.6,341.7,299.4,370.7,326.3,386.4L456,460.7C482.7,475.9,515.7,476,542.8,460.9L673.4,385.5C700.3,370,717.2,341.1,717.1,310L717.6,161.7C717.5,130.5,700.7,101.5,673.8,85.8L544.1,11.5C517.4,-3.7,484.4,-3.8,457.3,11.3L326.7,86.7C299.8,102.2,282.9,131,283,162.2ZM499.9,76.3L638.5,157L638.4,316.1L500.5,395.7L362.7,316.2L362,155.9L499.9,76.3Z" transform="translate(-55.8,-0.0372215)" style=""/>
+							<g transform="translate(-55.8,-0.0372215)">
+								<g>
+									<path d="M585.3,817.8C529.4,832.6,470.5,832.6,414.6,817.7C407,815.7,398,820.2,396.1,828.2C394.3,836.1,398.5,844.5,406.6,846.7C467.5,862.9,532.3,862.9,593.2,846.8C601,844.7,605.8,836.1,603.7,828.3C601.6,820.4,593.2,815.8,585.3,817.8L585.3,817.8Z"/>
+								</g>
+							</g>
+							<g transform="translate(-55.8,-0.0372215)">
+								<g>
+									<path d="M181.1,413.6C196.2,357.5,225.7,306.7,266.6,265.6C272.3,259.9,272.3,250.1,266.6,244.4C260.9,238.7,251.1,238.6,245.4,244.4C201,289,168.5,344.8,152.2,405.6C150.2,413.2,154.7,422.2,162.7,424.1C170.5,425.9,178.9,421.7,181.1,413.6L181.1,413.6Z"/>
+								</g>
+							</g>
+							<g transform="translate(-55.8,-0.0372215)">
+								<g>
+									<path d="M733.4,265.5C774.4,306.6,803.8,357.4,818.9,413.5C821,421.3,829.6,426.1,837.4,424C845.3,421.8,850,413.4,847.9,405.5C831.5,344.7,799.1,288.8,754.6,244.2C748.9,238.5,739.1,238.5,733.4,244.2C727.6,250.1,727.6,259.8,733.4,265.5L733.4,265.5Z"/>
+								</g>
+							</g>
+						</g>
+					</svg>
+					<div class="txtOverlay">INITIATED TRANSACTION</div>
+				</div>
+			</div>
+		</div>
 		<!-- ICO form dialogue mask -->
 		<div v-if="form.showForm" id="JSEW-ICOMask" v-on:click="hideMask">
 			<!-- Model window -->
@@ -75,7 +105,7 @@
 
 					<!-- Footer -->
 					<div class="footer" style="display: flex; justify-content: center;">
-						<button class="button green" v-on:click="processWeb3Payment">{{ $t('pages.ico.panel_purchase.button_buyTokens') }}</button>
+						<button class="button green" :class="{'disable':!form.ico.showBuyButton}" v-on:click="processWeb3Payment">{{ $t('pages.ico.panel_purchase.button_buyTokens') }}</button>
 						<button class="button red" v-on:click="exitPayment">{{ $t('pages.ico.panel_purchase.button_cancel') }}</button>
 					</div>
 					<!-- xFooter -->
@@ -121,7 +151,7 @@
 
 									<div id="JSEW-icoMeter">
 										<div id="JSEW-icoMeterDisplay" :style="{width:`${progressBarWidth}%`}">
-											<div style="width:1px;height:1px; float:right; position:relative;">
+											<div style="width:1px;height:1px; float:right; position:relative;" v-if="tokenLoaded">
 												<div id="JSEW-icoPointerArr"></div>
 												<div id="JSEW-icoPointer">
 													<div id="JSEW-icoPointerWrapper">
@@ -146,18 +176,18 @@
 									<div id="JSEW-currentDistSpread" class="mainCol borderRight">
 										<h2>{{ $t('pages.ico.panel_tokenDist.subheading_currentDist') }}</h2>
 										<ul id="JSEW-distOptions">
-											<!-- JSE -->
-											<li id="JSEW-distJSE" class="mainCol borderRight">
-												<div id="JSEW-jse"></div>
-												{{total.jseDisplay}} <span>JSE</span>
-											</li>
-											<!-- xJSE -->
 											<!-- ETH -->
 											<li id="JSEW-distETH" class="mainCol borderRight">
 												<div id="JSEW-eth"></div>
 												{{total.ethDisplay}} <span>ETH</span>
 											</li>
 											<!-- xETH -->
+											<!-- JSE -->
+											<li id="JSEW-distJSE" class="mainCol borderRight">
+												<div id="JSEW-jse"></div>
+												{{total.jseDisplay}} <span>JSE</span>
+											</li>
+											<!-- xJSE -->
 											<!-- EOS 
 											<li id="JSEW-distEOS" class="mainCol">
 												<div id="JSEW-eos"></div>
@@ -257,7 +287,7 @@
 						<!-- ETH payment Address -->
 						<h2 style="margin-left:10px; text-transform:uppercase;">{{ $t('pages.ico.panel_directPayment.heading_paymentAddress') }} <i class="fa  fa-level-down"></i></h2>
 						<div id="JSEW-ethAddressField">
-							<input type="text" :value="JSETokenSale" />
+							<input disabled type="text" :value="JSETokenSale" />
 							<button class="sideButton" v-clipboard:copy="JSETokenSale">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
 						</div>
 						<!-- xETH payment Address -->
@@ -318,7 +348,7 @@
 							<!-- Token Address -->
 							<h2 style="margin-left:10px; text-transform:uppercase;">{{ $t('pages.ico.panel_purchaseHistory.heading_tokenAddress') }} <i class="fa  fa-level-down"></i></h2>
 							<div id="JSEW-jseAddressField">
-								<input type="text" :value="tokenAddress" />
+								<input disabled type="text" :value="tokenAddress" />
 								<button class="sideButton" v-clipboard:copy="tokenAddress">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
 							</div>
 							<!-- xToken Address -->
@@ -335,15 +365,16 @@
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list1') }}</li>
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list2') }}<br />
 								<div style="display:flex; margin:10px 0px; border-radius:6px; border:solid 1px #eee; padding:4px 8px;">
-									<input style="flex:1; font-size: 0.75em; font-weight:bold; color:#666;" type="text" :value="JSETokenSale" />
+									<input disabled style="flex:1; font-size: 0.75em; font-weight:bold; color:#666;" type="text" :value="JSETokenSale" />
 								</div>
 							</li>
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list2_1') }}<br />
 								<div style="display:flex; margin:10px 0px; border-radius:6px; border:solid 1px #eee; padding:4px 8px;">
-									<input style="flex:1; font-size: 0.75em; font-weight:bold; color:#666;" type="text" :value="tokenAddress" />
+									<input disabled style="flex:1; font-size: 0.75em; font-weight:bold; color:#666;" type="text" :value="tokenAddress" />
 								</div>
 							</li>
-							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list3') }} <a :href="ethscanURL()" target="_BLANK">Etherscan.io</a></li>
+							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list3_1') }} <a :href="ethscanURL()" target="_BLANK">Etherscan.io</a></li>
+							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list3') }}</li>
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list4') }}</li>
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list5') }}</li>
 						</ol>
@@ -376,8 +407,10 @@ export default {
 	name: 'Ico-Page',
 	data() {
 		return {
+			loadingTransaction: false, //user purchased JSE - display loading animation.
 			BuyJSEButton: 'Buy JSE', //Buy button Text
 			launchPadDevMode: false, // rinkeby network = true
+			tokenLoaded: false, //true once JSE contract enabled
 			//JSE Token Address - query for balance
 			tokenAddress: '0xf90172bd3f56b4845229aa82239d6243ea19c523',//'0x1c1f7b95907df941fb6ed4469b0f4f049ab6b75c',
 			//contract Address
@@ -564,8 +597,8 @@ export default {
 				self.mins = mins;
 				self.seconds = seconds;
 
-				//update distribution display every 30 seconds
-				if ((seconds === 0) || (seconds === 30)) {
+				//update distribution display every min
+				if (seconds === '00') {
 					self.updateDistributionDisplay();
 				}
 			}
@@ -601,8 +634,9 @@ export default {
 			}
 			return address;
 		},
-		updateDistributionDisplay() {
+		totalTokensSold() {
 			const self = this;
+
 			//total JSE Distributed from contract acc
 			jseContract.methods.totalTokensSold().call().then((t) => {
 				self.total.jse = Math.floor(t/10e18);
@@ -620,7 +654,13 @@ export default {
 				//set progress bar width
 				const barWidth = (100/self.activeGoal) * self.total.jse;
 				self.progressBarWidth = (barWidth >= 100) ? 100 : barWidth;
+				self.tokenLoaded = true;
 			});
+		},
+		updateDistributionDisplay() {
+			const self = this;
+
+			self.totalTokensSold();
 
 			//Current token/eth value
 			jseContract.methods.tokensPerKEther().call().then((t) => {
@@ -779,7 +819,7 @@ export default {
 					if (self.showBuyOption) {
 						self.form.showForm = true;
 					} else {
-						self.$swal('Connect Online Wallet', `Please login to your ethereum wallet or pay using the payment address ${self.JSETokenSale}`, 'error');
+						self.$swal('Connect to Online Wallet', `Please login to your browser connected Ethereum wallet or recieve JSE Tokens by sending ETH direct to our smart contract address: ${self.JSETokenSale}`, 'error');
 					}
 				} else {
 					self.$swal('Mainnet Disconnected..', 'Please update your integrated wallet to point to the Ethereum Mainnet! Or use the Smart Contract address below to send payment direct in exchange of JSE Tokens.', 'error');
@@ -804,7 +844,7 @@ export default {
 		processWeb3Payment() {
 			const self = this;
 			////console.log('PROCESS');
-			if ((self.form.ico.jse.flag) || (self.form.ico.eth.flag))  {
+			if ((self.form.ico.jse.flag) || (self.form.ico.eth.flag) || (!self.form.ico.showBuyButton))  {
 				return;
 			}
 			self.form.error.title = '';
@@ -845,13 +885,15 @@ export default {
 			//load contract
 			const jseContract = new window.web3.eth.Contract(jseContractObj.abi, self.JSETokenSale);
 			////console.log('CONTRACT:', jseContract);
+			self.form.showForm = false;
+			self.loadingTransaction = true;
 
 			jseContract.methods.buyTokens().send({
 				from: self.form.ico.address.val,
 				value: web3.utils.toWei(self.form.ico.eth.val+'', 'ether'),
 			}).on('receipt', function(receipt) {
 				////console.log('receipt', receipt);
-				self.form.showForm = false;
+				self.loadingTransaction = false;
 				self.$swal('Transaction Complete', `Make sure to add the JSE Token address to see your tokens in your wallet ${self.tokenAddress}`, 'success');
 				self.showTracker = true;
 				setTimeout(() => {
@@ -861,6 +903,8 @@ export default {
 			}).on('error', function(error) {
 				//console.error('error', error);
 				// Do something to alert the user their transaction has failed
+				self.loadingTransaction = false;
+				self.form.showForm = true;
 				self.form.error.title = 'Transaction Failed:';
 				self.form.error.msg = error.message;
 			});
@@ -880,11 +924,13 @@ export default {
 
 			self.form.ico.jse.flag = false;
 			self.form.ico.eth.flag = false;
+			self.form.ico.showBuyButton = true;
 			////console.log(self.accountWhitelisted, self.form.ico.eth.val, self.maxEthWhitelisted, self.maxEthNotWhitelisted);
 			if (self.accountWhitelisted) {
 				if (Number(self.form.ico.eth.val) >= Number(self.maxEthWhitelisted)) {
 					self.form.info.title = 'Notice:';
 					self.form.info.msg = `We are unable to accept transactions over ${self.maxEthWhitelisted} ETH - Please contact admin@jsecoin.com to discuss investing a larger amount.`;
+				self.form.ico.showBuyButton = false;
 					return false;
 				}
 			} else if (Number(self.form.ico.eth.val) >= Number(self.maxEthNotWhitelisted)) {
@@ -893,12 +939,14 @@ export default {
 				self.form.info.msg = `We are unable to accept transactions over ${self.maxEthNotWhitelisted} ETH until you have whitelisted your address ${self.form.ico.address.val}.`;
 				self.form.ico.jse.flag = true;
 				self.form.ico.eth.flag = true;
+				self.form.ico.showBuyButton = false;
 				return false;
 			} else if (Number(self.form.ico.eth.val) < Number(self.minEth)) {
 				self.form.info.title = 'Notice:';
 				self.form.info.msg = `We are unable to accept transactions under ${self.minEth} ETH`;
 				self.form.ico.jse.flag = true;
 				self.form.ico.eth.flag = true;
+				self.form.ico.showBuyButton = false;
 				return false;
 			}
 			return true;
@@ -1001,9 +1049,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #JSEW-ICO dl {
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
-#JSEW-ICOMask {
+#JSEW-ICOMask,
+#JSEW-ICOLoadingMask {
 	position: fixed;
 	top:0px;
 	left: 0px;
@@ -1013,6 +1062,44 @@ export default {
 	background: rgba(8, 124, 211,0.3);
 	overflow: auto;
 }
+
+#JSEW-ICOLoadingAnimationWrapper {
+	width: 200px;
+	height:254px;
+	margin:100px auto;
+	background-color: #fff;
+	padding:10px 0px;
+	border-radius:8px;
+	box-shadow: 0px 1px 2px 0px rgba(8, 124, 211,0.6);
+}
+
+#JSEW-ICOLoadingAnimationWrapper .txtOverlay {
+	color:#fff;
+	text-align:center;
+	position: absolute;
+	bottom:11px;
+	left:0px;
+	right:0px;
+	font-weight:bold;
+	font-size:0.8em;
+}
+
+#JSEW-ICOLoadingMask #JSEW-ICOLoadingAnimationx {
+	background-image:url("../../assets/ico/ICO_alert.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+	width: 180px;
+	height:230px;
+	margin:0px auto;
+	position: relative;
+	/*
+	min-width: 120px;
+    padding: 20px;
+    border-radius: 6px;
+    color: #606060;
+    position: relative;*/
+}
+
 #JSEW-ICOMask .amountInput {
     flex-grow: 1;
     display: flex;
@@ -1119,6 +1206,12 @@ export default {
 
 #JSEW-ICOMask .footer button.green:hover {
 	background:#16ab39;
+}
+
+#JSEW-ICOMask .footer button.green.disable, 
+#JSEW-ICOMask .footer button.green.disable:hover {
+	background: #ccc;
+	cursor: default;
 }
 
 
@@ -1413,7 +1506,7 @@ dt {
     font-size: 0.8em;
     letter-spacing: 1px;
     min-height: 44px;
-	min-width:340px;
+	min-width:326px;
 }
 dd {
 	padding:0px;
@@ -1449,6 +1542,7 @@ hr {
 	height:9px;
 	display: inline-block;
 	position: relative;
+	transition: width 0.8s;
 }
 #JSEW-start {
 	float:left;
@@ -1608,7 +1702,7 @@ th {
 	background-image:url('../../assets/ico/eth_token.png');
 	background-repeat: no-repeat;
     background-size: 30px;
-    background-position: 0px 5px;
+    background-position: 3px 5px;
 }
 #JSEW-jseAddressField {
 	display: flex;
@@ -1620,7 +1714,7 @@ th {
 	background-image:url('../../assets/ico/jse_token.png');
 	background-repeat: no-repeat;
     background-size: 30px;
-    background-position: 0px 5px;
+    background-position: 3px 5px;
 }
 
 #JSEW-jseAddressField input,

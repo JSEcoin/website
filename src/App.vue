@@ -840,6 +840,23 @@ export default {
 #JSEA-rotatingLogo2.active #JSEA-layer3 {
 	animation: a3_t 3.6s linear forwards;
 }
+
+
+#JSEA-rotatingLogo3.active {
+	animation: a0_t 3.6s linear infinite both;
+}
+
+#JSEA-rotatingLogo3.active #JSEA-layer1 {
+	animation: a1_t 3.6s linear infinite both;
+}
+
+#JSEA-rotatingLogo3.active #JSEA-layer2 {
+	animation: a2_t 3.6s linear infinite both;
+}
+
+#JSEA-rotatingLogo3.active #JSEA-layer3 {
+	animation: a3_t 3.6s linear infinite both;
+}
 #JSEA-rotatingLogo {
 	position: absolute;
 	top:0px;
@@ -854,7 +871,8 @@ export default {
 	fill: white;
 }
 
-#JSEW-ICOAlert {
+#JSEW-ICOAlert,
+#JSEW-ICOLoadingAnimation {
 	background-color: transparent;
 	background-image:url("assets/ico/ICO_alert.png");
 	background-repeat: no-repeat;
