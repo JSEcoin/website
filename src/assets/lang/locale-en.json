@@ -1035,7 +1035,7 @@
 				"list_doesNotQualify7": "Vulnerabilities that JSE determines to be an accepted risk will not be eligible for a paid bounty or listing on the site.",
 				"list_doesNotQualify8": "Scripting or other automation and brute forcing of intended functionality.",
 				"list_doesNotQualify9": "For guidance, we have listed the Vulnerability classifications we use to organize submissions made to the bounty program.",
-				"list_doesNotQualify9a": "Bugs related to email spoofing or social engineering.",
+				"list_doesNotQualify9a": "Bugs related to email spoofing, clickjacking or social engineering.",
 				"list_doesNotQualify10": "When in doubt, "
 			},
 			"section_openBounties": {
