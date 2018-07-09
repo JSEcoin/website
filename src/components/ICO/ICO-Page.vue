@@ -298,7 +298,7 @@
 				<!-- KYC -->
 				<dl id="JSEW-KYC" class="thinCol">
 					<dt><i class="fa fa-info-circle "></i> {{ $t('pages.ico.panel_KYC.heading_KYC') }}</dt>
-					<dd class="hasFooter">
+					<dd class="hasFooter" style="padding-bottom: 60px;">
 						<p>
 							{{ $t('pages.ico.panel_KYC.para_kyc') }}
 						</p>
@@ -321,28 +321,23 @@
 			<!-- Purchase History and why not to use exchanges -->
 			<div class="row">
 				<!-- Purchase History -->
-				<dl v-if="showBuyOption" id="JSEW-purchaseHistory" class="mainCol">
+				<dl v-if="userTransactionList.length > 0" id="JSEW-purchaseHistory" class="mainCol">
 					<dt>{{ $t('pages.ico.panel_purchaseHistory.heading_purchaseHistory') }}</dt>
-					<dd>
+					<dd class="hasFooter" style="padding: 0px 0px 90px 0px;">
+						<p>
+							Here are a list of purchases you have made during the ICO:
+						</p>
+						<div class="hr" style="margin:10px 0px;"><hr /></div>
 						<!-- Purchase Overview -->
-						<table id="JSEW-purchaseOverviewTble" style="width:100%;">
-						<thead>
-							<tr>
-								<th>{{ $t('pages.ico.panel_purchaseHistory.tblHead_tokens') }}</th>
-								<th>{{ $t('pages.ico.panel_purchaseHistory.tblHead_totalSold') }}</th>
-								<th class="mobileHide">{{ $t('pages.ico.panel_purchaseHistory.tblHead_address') }}</th>
-							</tr>
-						</thead>
-						<tbody>
-							<template v-for="transaction in userTransactionList">
-								<tr>
-									<td><a target="_BLANK" :href="ethscanURL(transaction.transactionHash)">{{transaction.returnValues['_tokens']}}</a></td>
-									<td><a target="_BLANK" :href="ethscanURL(transaction.transactionHash)">{{transaction.returnValues['_totalSold']}}</a></td>
-									<td class="mobileHide"><a class="transactionAddress" target="_BLANK" :href="ethscanURL(transaction.transactionHash)">{{transaction.transactionHash}}</a></td>
-								</tr>
-							</template>
-						</tbody>
-						</table>
+						<ul style="margin:0px;padding:0px;">
+							<li style="margin:10px 0px; list-style:none; padding:4px 8px;" v-for="transaction in userTransactionList">
+								<a target="_BLANK" style="display:block; border:solid 1px #eee; border-radius:6px;" :href="ethscanURL(transaction.transactionHash)">
+									<b style="display:block; padding:4px 8px;">{{convertToJSE(transaction.returnValues['_tokens'])}} JSE</b>
+									<div style="margin:0px;" class="hr"><hr /></div>
+									<span style="display:block; padding:4px 8px; font-size:0.65em;">{{transaction.transactionHash}}</span>
+								</a>
+							</li>
+						</ul>
 						<!-- xPurchase Overview -->
 						<div class="footer" style="background:#fff; font-size:1em; border-top:solid 1px rgb(238, 238, 238);">
 							<!-- Token Address -->
@@ -634,6 +629,10 @@ export default {
 			}
 			return address;
 		},
+		convertToJSE(val) {
+			console.log(val/10e18);
+			return (val/10e18);
+		},
 		totalTokensSold() {
 			const self = this;
 
@@ -745,7 +744,7 @@ export default {
 				fromBlock: 242000,
 				toBlock: 'latest',
 			}).then((t) => {
-				//console.log(t);
+				console.log(t);
 				////console.log(t[0].returnValues._tokens);
 				self.userTransactionList = t;
 			});

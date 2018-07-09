@@ -292,7 +292,7 @@
 				"button_startKYC": "START KYC"
 			},
 			"panel_purchaseHistory": {
-				"heading_purchaseHistory": "ICO Tracked Purchase History",
+				"heading_purchaseHistory": "Your ICO Tracked Purchase History",
 				"tblHead_tokens": "Tokens",
 				"tblHead_totalSold": "Total Sold",
 				"tblHead_address": "Address",
