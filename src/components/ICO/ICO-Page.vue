@@ -330,7 +330,7 @@
 						<div class="hr" style="margin:10px 0px;"><hr /></div>
 						<!-- Purchase Overview -->
 						<ul style="margin:0px;padding:0px;">
-							<li style="margin:10px 0px; list-style:none; padding:4px 8px;" v-for="transaction in userTransactionList">
+							<li style="margin:10px 0px; list-style:none; padding:4px 8px;" :key="index" v-for="(transaction, index) in userTransactionList">
 								<a target="_BLANK" style="display:block; border:solid 1px #eee; border-radius:6px;" :href="ethscanURL(transaction.transactionHash)">
 									<b style="display:block; padding:4px 8px;">{{convertToJSE(transaction.returnValues['_tokens'])}} JSE</b>
 									<div style="margin:0px;" class="hr"><hr /></div>
@@ -630,7 +630,6 @@ export default {
 			return address;
 		},
 		convertToJSE(val) {
-			console.log(val/10e18);
 			return (val/10e18);
 		},
 		totalTokensSold() {
@@ -744,7 +743,7 @@ export default {
 				fromBlock: 242000,
 				toBlock: 'latest',
 			}).then((t) => {
-				console.log(t);
+				//console.log(t);
 				////console.log(t[0].returnValues._tokens);
 				self.userTransactionList = t;
 			});
