@@ -122,6 +122,7 @@
 									<div id="JSEW-icoMeter">
 										<div id="JSEW-icoMeterDisplay" :style="{width:`${progressBarWidth}%`}">
 											<div style="width:1px;height:1px; float:right; position:relative;">
+												<div id="JSEW-icoPointerArr"></div>
 												<div id="JSEW-icoPointer">
 													<div id="JSEW-icoPointerWrapper">
 														<div class="icoRow">
@@ -129,7 +130,6 @@
 															<span style="color:#0096ff; margin-right:4px;">{{total.jseDisplay}}</span> 
 															<span>JSE</span>
 														</div>
-														<div id="JSEW-icoPointerArr"></div>
 													</div>
 												</div>
 											</div>
@@ -221,13 +221,21 @@
 				<dl id="JSEW-paymentEthOverview" class="mainCol">
 					<dt>{{ $t('pages.ico.panel_directPayment.heading_directPayment') }}</dt>
 					<dd>
+						<div>
+							<img src="../../assets/ico/metamask.svg" style="width:50px; float:left; margin:0px 10px" />
+							<p>
+								If you don't have an integrated wallet like <a href="http://metamask.com/" target="_BLANK">Metamask</a> - you can send Ethereum direct to our smart contract address for JSE Tokens.
+							</p>
+							<div class="hr" style="margin:10px 0px;"><hr /></div>
+						</div>
 						<div class="row" style="border-bottom:solid 1px #eee;">
 							<!-- ETH QR Code -->
 							<div id="JSEW-ETHQRCode" class="borderRight">
-								<div style="position:relative; margin:10px ">
+								<div style="position:relative; margin:10px 10px 0px 10px">
 									<div id="JSEA-QRBGImage"></div>
 									<qriously v-if="JSETokenSale" v-bind="{foregroundAlpha:1, backgroundAlpha:0}" :value="JSETokenSale" foreground="#0d152c" :size="160" />
 								</div>
+								<div style="margin:0px 10px 10px 10px; font-size:0.65em; text-align:center; font-weight:bold; border-radius:3px; border:solid 1px #eee; padding:4px 8px;">QR CODE<BR />JSE CONTRACT ADDRESS</div>
 							</div>
 							<!-- xETH QR Code -->
 							
@@ -236,11 +244,11 @@
 								<h2><i class="fa fa-info-circle"></i> {{ $t('pages.ico.panel_directPayment.subheading_important') }}</h2>
 								<ol>
 									<li> {{ $t('pages.ico.panel_directPayment.info_list1') }}</li>
-									<li> {{ $t('pages.ico.panel_directPayment.info_list2') }}</li>
+									<!--<li> {{ $t('pages.ico.panel_directPayment.info_list2') }}</li>-->
 								</ol>
 								<div class="warning">
-									<b>{{ $t('pages.ico.panel_directPayment.subheading_doNot') }}</b>
-									<p>{{ $t('pages.ico.panel_directPayment.msg_doNot') }}</p>
+									<b>2. {{ $t('pages.ico.panel_directPayment.subheading_doNot') }}</b>
+									<p><i>{{ $t('pages.ico.panel_directPayment.msg_doNot') }}</i></p>
 									<!--<p>Please read below on why this is important...</p>-->
 								</div>
 							</div>
@@ -264,7 +272,7 @@
 						<p>
 							{{ $t('pages.ico.panel_KYC.para_kyc') }}
 						</p>
-						<p>
+						<p style="margin:10px; border-radius:6px; border:solid 1px #eee; padding:4px 8px;">
 							<i>{{ $t('pages.ico.panel_KYC.para_infoMsg') }}</i>
 						</p>
 						
@@ -283,7 +291,7 @@
 			<!-- Purchase History and why not to use exchanges -->
 			<div class="row">
 				<!-- Purchase History -->
-				<dl id="JSEW-purchaseHistory" class="mainCol">
+				<dl v-if="showBuyOption" id="JSEW-purchaseHistory" class="mainCol">
 					<dt>{{ $t('pages.ico.panel_purchaseHistory.heading_purchaseHistory') }}</dt>
 					<dd>
 						<!-- Purchase Overview -->
@@ -320,17 +328,22 @@
 				<!-- xPurchase History -->
 
 				<!-- Exchange payment info -->
-				<dl id="JSEW-exchangePaymentInfo" class="thinCol">
+				<dl id="JSEW-exchangePaymentInfo" :class="{'thinCol':showBuyOption}">
 					<dt><i class="fa fa-info-circle "></i> {{ $t('pages.ico.panel_exchangeInfo.heading_exchangeInfo') }}</dt>
 					<dd>
-						<ol>
+						<ol style="padding: 0px 30px;">
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list1') }}</li>
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list2') }}<br />
-								<div id="JSEW-ethAddressMini">
-									<input type="text" :value="JSETokenSale" />
+								<div style="display:flex; margin:10px 0px; border-radius:6px; border:solid 1px #eee; padding:4px 8px;">
+									<input style="flex:1; font-size: 0.75em; font-weight:bold; color:#666;" type="text" :value="JSETokenSale" />
 								</div>
 							</li>
-							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list3') }}<a :href="ethscanURL()" target="_BLANK">Etherscan.io</a></li>
+							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list2_1') }}<br />
+								<div style="display:flex; margin:10px 0px; border-radius:6px; border:solid 1px #eee; padding:4px 8px;">
+									<input style="flex:1; font-size: 0.75em; font-weight:bold; color:#666;" type="text" :value="tokenAddress" />
+								</div>
+							</li>
+							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list3') }} <a :href="ethscanURL()" target="_BLANK">Etherscan.io</a></li>
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list4') }}</li>
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list5') }}</li>
 						</ol>
@@ -363,8 +376,8 @@ export default {
 	name: 'Ico-Page',
 	data() {
 		return {
-			BuyJSEButton: 'Buy JSE',
-			launchPadDevMode: false,
+			BuyJSEButton: 'Buy JSE', //Buy button Text
+			launchPadDevMode: false, // rinkeby network = true
 			//JSE Token Address - query for balance
 			tokenAddress: '0xf90172bd3f56b4845229aa82239d6243ea19c523',//'0x1c1f7b95907df941fb6ed4469b0f4f049ab6b75c',
 			//contract Address
@@ -769,7 +782,7 @@ export default {
 						self.$swal('Connect Online Wallet', `Please login to your ethereum wallet or pay using the payment address ${self.JSETokenSale}`, 'error');
 					}
 				} else {
-					self.$swal('Connect Rinkeby Network', 'We are actively testing the ICO Launchpad - Please update your connected wallet to point to the rinkeby network', 'error');
+					self.$swal('Mainnet Disconnected..', 'Please update your integrated wallet to point to the Ethereum Mainnet! Or use the Smart Contract address below to send payment direct in exchange of JSE Tokens.', 'error');
 				}
 			};
 			const timeout = setTimeout(showForm, 1000);
@@ -987,6 +1000,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#JSEW-ICO dl {
+	overflow: hidden;
+}
 #JSEW-ICOMask {
 	position: fixed;
 	top:0px;
@@ -1256,6 +1272,7 @@ export default {
 
 #JSEW-tokenDist {
 	position:relative;
+	overflow: visible !important;
 }
 
 #JSEW-tokenDist dd {
@@ -1302,6 +1319,8 @@ export default {
 
 #JSEW-ethPaymentInfo h2 {
 	color:#db2828;
+	font-size:1em;
+	border-bottom:solid 2px #db2828;
 }
 
 #JSEW-ethPaymentInfo ol {
@@ -1472,9 +1491,10 @@ th {
 	background-repeat: no-repeat;
 	background-size: contain;
 	position: absolute;
-	bottom:-13px;
+	bottom:-7px;
 	left:50%;
-	margin-left:-14px;
+	margin-left:-12px;
+	z-index:1000;
 }
 #JSEW-icoPointerWrapper {
 	position: relative;

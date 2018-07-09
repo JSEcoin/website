@@ -252,7 +252,7 @@
 			"panel_purchase": {
 				"heading_purchase": "Purchase JSE Tokens via an Ethereum ERC Compatible Wallet (ie MetaMask)",
 				"purchase_list1": "Select your wallet address",
-				"purchase_list2": "Enter either the amount of JSE Tokens you would like to purchase or the amount of Ethereum to exchange for JSE Tokens.",
+				"purchase_list2": "Enter either the amount of JSE Tokens you would like to purchase or the amount of Ethereum to transfer for JSE Tokens.",
 				"purchase_list3": "Select the “Buy Tokens” button to initiate the purchase through your connected wallet.",
 				"highlight_info1": "Make sure you have filled out the",
 				"highlight_link": "whitelist form",
@@ -264,31 +264,31 @@
 				"button_cancel": "CANCEL"
 			},
 			"panel_tokenDist": {
-				"heading_tokenDist": "JSE Token Distribution",
-				"subheading_totalDist": "Total Distributed At ICO",
-				"subheading_currentDist": "Current Distributions",
-				"subheading_DistEndsIn": "Distribution Ends In",
+				"heading_tokenDist": "JSE Token Distribution Overview",
+				"subheading_totalDist": "Total JSE Distributed",
+				"subheading_currentDist": "Transfers",
+				"subheading_DistEndsIn": "JSE Distribution Ends In",
 				"footer_msg": "**Depending on the Ethereum network traffic, figures may be delayed."
 			},
 			"panel_howToPurchase": {
 				"heading_howTo": "How To Purchase JSE Tokens Video",
 				"footer_header": "Important for our first time investors",
-				"footer_msg": "Please watch our tutorial on how to buy JSECoin Tokens"
+				"footer_msg": "Please watch our tutorial on how to buy JSE Tokens"
 			},
 			"panel_directPayment": {
-				"heading_directPayment": "Use this payment method to send ETH from ERC20 Compatible Wallet to our smart contract",
+				"heading_directPayment": "Send ETH direct from an ERC20 Compatible Wallet to our smart contract",
 				"subheading_important": "Important",
-				"info_list1": "Please make sure to send funds from a valid ERC20 compatible Ethereum address to receive your tokens.",
-				"info_list2": "In order to add JSECoin tokens to your ETH wallet make sure you use this address.",
+				"info_list1": "Please make sure to send funds from a valid ERC20 compatible wallet to receive your tokens.",
+				"info_list2": "In order to purchase JSE tokens send ETH this address:",
 				"subheading_doNot": "DO NOT send ETH directly from an exchange!",
 				"msg_doNot": "You must use an Ethereum compatible wallet.",
 				"heading_paymentAddress": "JSECOIN ETH SMART CONTRACT PAYMENT ADDRESS",
 				"button_copy": "COPY TO CLIPBOARD"
 			},
 			"panel_KYC": {
-				"heading_KYC": "Please pass the KYC verification",
-				"para_kyc": "In order to unlock JSE Tokens you will be required to successfully pass the KYC procedure. JSECoin Ltd strongly encourages all users to pass the KYC before purchasing JSECoin tokens. The verification process takes approximately 5 minutes.",
-				"para_infoMsg": "Note: JSECoin tokens will remain locked until the KYC is passed successfully",
+				"heading_KYC": "Looking to invest more than $10,000?",
+				"para_kyc": "We are legally obliged to require our larger investors to pass the Know Your Customer (KYC) procedure - To do this head over to our whitelist form and complete the required information - The verification process takes 24hrs and you will be notified by email when your ethereum address has been approved and whitelisted on our smart contract.",
+				"para_infoMsg": "Note: All Ethereum accounts that have not whitelisted with us and send above $10,000 will be declined and will not receive JSE Tokens.",
 				"button_startKYC": "START KYC"
 			},
 			"panel_purchaseHistory": {
@@ -301,7 +301,8 @@
 			"panel_exchangeInfo": {
 				"heading_exchangeInfo": "DO NOT send ETH directly from an exchange!",
 				"info_list1": "Please make sure to send funds from a valid ERC20 compatible Ethereum address to receive your tokens.",
-				"info_list2": "In order to add JSECoin tokens to your ETH wallet make sure you use this address:",
+				"info_list2": "In order to purchase JSE tokens send ETH this address:",
+				"info_list2_1": "To see your JSE Tokens you may need to add our JSE Token address to your wallet:",
 				"info_list3": "Use MyEtherWallet, MetaMask or other compatible wallets. Explore and track your ETH transactions on",
 				"info_list4": "Your JSECoin tokes will appear on your Dashboard.",
 				"info_list5": "Set decimal numer: 18 - Some wallets may ask you to enter decimals."
