@@ -11,7 +11,7 @@
 						{{ $t('pages.downloads.desktop_app_description') }}
 					</p>
 					<p>
-						{{ $t('pages.downloads.latest_version') }}: 0.4
+						{{ $t('pages.downloads.latest_version') }}: 0.5
 					</p>
 					<p>
 						{{ $t('pages.downloads.system_recommendation') }}
