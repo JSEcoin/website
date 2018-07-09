@@ -132,6 +132,9 @@
 							<router-link v-bind:to="`/${$store.state.local}/investors/overview`" tag="a">
 								{{ $t('template.navigation.link_whyInvest') }}
 							</router-link>
+							<a href="/JSECoinV2_Overview.pdf" target="_blank">
+								Intro Slides <i class="fa fa-file-pdf-o"></i>
+							</a>
 							<a href="/onepager.pdf" target="_blank">
 								{{ $t('template.navigation.link_overview') }} <i class="fa fa-file-pdf-o"></i>
 							</a>
@@ -330,6 +333,9 @@
 						</nav>
 						<nav>
 							<h4>{{ $t('template.navigation.heading_investors') }}</h4>
+							<a href="/JSECoinV2_Overview.pdf" target="_blank">
+								Intro Slides <i class="fa fa-file-pdf-o"></i>
+							</a>
 							<a href="/onepager.pdf" target="_blank">
 								{{ $t('template.navigation.link_overview') }} <i class="fa fa-file-pdf-o"></i>
 							</a>

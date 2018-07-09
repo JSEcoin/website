@@ -103,7 +103,7 @@
 				<dl id="JSEW-tokenDist" class="mainCol">
 					<dt>
 						{{ $t('pages.ico.panel_tokenDist.heading_tokenDist') }}
-						<div class="ribbon"><span>Rinkeby-TEST</span></div>
+						<div class="ribbon"><span>ETH Mainnet</span></div>
 					</dt>
 					<dd>
 						<div class="row">
@@ -364,12 +364,12 @@ export default {
 	data() {
 		return {
 			BuyJSEButton: 'Buy JSE',
-			launchPadDevMode: true,
+			launchPadDevMode: false,
 			//JSE Token Address - query for balance
 			tokenAddress: '0xf90172bd3f56b4845229aa82239d6243ea19c523',//'0x1c1f7b95907df941fb6ed4469b0f4f049ab6b75c',
 			//contract Address
 			JSETokenSale: '0x169b6443836236877c633518da0e01ce53973202',//'0x9793a17f3aa26b8e93f442ed370d38e4d1bfe610',
-			networkVersion: '4', //1 = mainnet 3 = rinkeby
+			networkVersion: '1', //1 = mainnet 3 = rinkeby
 			activeAccount: '', //active metamask account
 			availableAccounts: [], //list of available accounts
 			selectedPaymentAccount: '', //user selected payment account
@@ -762,7 +762,7 @@ export default {
 		initBuy() {
 			const self = this;
 			const showForm = (t) => {
-				if (t === 4) {
+				if (t === Number(self.networkVersion)) {
 					if (self.showBuyOption) {
 						self.form.showForm = true;
 					} else {
