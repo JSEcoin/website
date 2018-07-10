@@ -649,14 +649,14 @@ export default {
 			return address;
 		},
 		convertToJSE(val) {
-			return (val/10e18);
+			return (val/1e18);
 		},
 		totalTokensSold() {
 			const self = this;
 
 			//total JSE Distributed from contract acc
 			jseContract.methods.totalTokensSold().call().then((t) => {
-				self.total.jse = Math.floor(t/10e18);
+				self.total.jse = Math.floor(t/1e18);
 				self.total.jseDisplay = self.total.jse.toLocaleString();
 				//set goal checkpoint
 				self.goalCheckpoints.some((checkpoint) => {
@@ -921,6 +921,7 @@ export default {
 					self.showTracker = false;
 				}, 5000);
 				setTimeout(self.updateDistributionDisplay, 1000);
+				self.getUserTransactionList();
 			}).on('error', function(error) {
 				//console.error('error', error);
 				// Do something to alert the user their transaction has failed

@@ -169,7 +169,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/en/whitelisting',
 			'/en/ico',
 			'/en/ico/issue',
-/**/
+
 			//arabic
 			'/ar/home',
 			'/ar/about',
@@ -690,7 +690,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/nl/ico',
 			'/nl/ico/issue',
 
-			//xxxx
+			//
 			'/no/home',
 			'/no/about',
 			'/no/about/meetTheTeam',
