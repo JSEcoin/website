@@ -128,6 +128,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/downloads',
 			'/whitelisting',
 			'/ico',
+			'/ico/issue',
 
 			//english
 			'/en/home',
@@ -167,6 +168,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/en/downloads',
 			'/en/whitelisting',
 			'/en/ico',
+			'/en/ico/issue',
 /**/
 			//arabic
 			'/ar/home',
@@ -206,6 +208,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ar/downloads',
 			'/ar/whitelisting',
 			'/ar/ico',
+			'/ar/ico/issue',
 
 			//bg
 			'/bg/home',
@@ -245,6 +248,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/bg/downloads',
 			'/bg/whitelisting',
 			'/bg/ico',
+			'/bg/ico/issue',
 
 			//chinese
 			'/zh/home',
@@ -284,6 +288,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/zh/downloads',
 			'/zh/whitelisting',
 			'/zh/ico',
+			'/zh/ico/issue',
 
 			//German
 			'/de/home',
@@ -323,6 +328,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/de/downloads',
 			'/de/whitelisting',
 			'/de/ico',
+			'/de/ico/issue',
 
 			//Spanish
 			'/es/home',
@@ -362,6 +368,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/es/downloads',
 			'/es/whitelisting',
 			'/es/ico',
+			'/es/ico/issue',
 
 			//finnish
 			'/fi/home',
@@ -401,6 +408,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/fi/downloads',
 			'/fi/whitelisting',
 			'/fi/ico',
+			'/fi/ico/issue',
 
 			//french
 			'/fr/home',
@@ -440,6 +448,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/fr/downloads',
 			'/fr/whitelisting',
 			'/fr/ico',
+			'/fr/ico/issue',
 
 			//Indonesian
 			'/id/home',
@@ -479,6 +488,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/id/downloads',
 			'/id/whitelisting',
 			'/id/ico',
+			'/id/ico/issue',
 
 			//Italian
 			'/it/home',
@@ -518,6 +528,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/it/downloads',
 			'/it/whitelisting',
 			'/it/ico',
+			'/it/ico/issue',
 
 			//japanese
 			'/jp/home',
@@ -557,6 +568,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/jp/downloads',
 			'/jp/whitelisting',
 			'/jp/ico',
+			'/jp/ico/issue',
 
 			//Korean
 			'/ko/home',
@@ -596,6 +608,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ko/downloads',
 			'/ko/whitelisting',
 			'/ko/ico',
+			'/ko/ico/issue',
 
 			//
 			'/ms/home',
@@ -635,6 +648,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ms/downloads',
 			'/ms/whitelisting',
 			'/ms/ico',
+			'/ms/ico/issue',
 
 			//
 			'/nl/home',
@@ -674,6 +688,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/nl/downloads',
 			'/nl/whitelisting',
 			'/nl/ico',
+			'/nl/ico/issue',
 
 			//xxxx
 			'/no/home',
@@ -713,6 +728,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/no/downloads',
 			'/no/whitelisting',
 			'/no/ico',
+			'/no/ico/issue',
 
 			//Portugese
 			'/pt/home',
@@ -752,6 +768,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/pt/downloads',
 			'/pt/whitelisting',
 			'/pt/ico',
+			'/pt/ico/issue',
 
 			//Romanian
 			'/ro/home',
@@ -791,6 +808,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ro/downloads',
 			'/ro/whitelisting',
 			'/ro/ico',
+			'/ro/ico/issue',
 
 			//Russian
 			'/ru/home',
@@ -830,6 +848,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ru/downloads',
 			'/ru/whitelisting',
 			'/ru/ico',
+			'/ru/ico/issue',
 
 			//Slovenian
 			'/si/home',
@@ -869,6 +888,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/si/downloads',
 			'/si/whitelisting',
 			'/si/ico',
+			'/si/ico/issue',
 
 			//Swedish
 			'/se/home',
@@ -908,6 +928,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/se/downloads',
 			'/se/whitelisting',
 			'/se/ico',
+			'/se/ico/issue',
 
 			//Thai
 			'/th/home',
@@ -947,6 +968,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/th/downloads',
 			'/th/whitelisting',
 			'/th/ico',
+			'/th/ico/issue',
 
 			//taiwanese
 			'/tw/home',
@@ -986,6 +1008,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/tw/downloads',
 			'/tw/whitelisting',
 			'/tw/ico',
+			'/tw/ico/issue',
 
 			//test
 			'/en/banner1',

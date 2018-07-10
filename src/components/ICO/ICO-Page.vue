@@ -13,7 +13,7 @@
 				</router-link>
 			</ul>
 		</nav>
-		<div id="JSEW-ICOLoadingMask" v-if="loadingTransaction">
+		<div id="JSEW-ICOLoadingMask" v-if="loadingTransaction" v-on:click="hideTransactionMask">
 			<div id="JSEW-ICOLoadingAnimationWrapper">
 				<div id="JSEW-ICOLoadingAnimationx">
 					<!--1.2em<div id="JSEA-rotatingLogo"></div>-->
@@ -718,16 +718,17 @@ export default {
 		 */
 		gasPrice(eth) {
 			const self = this;
+			/*
 			web3.eth.estimateGas({
 				from: self.form.ico.address.val,
-				to: (String(document.location).indexOf('localhost') === -1) ? self.JSETokenSale : web3.eth.accounts[0],
+				to: web3.eth.accounts[0],
 				amount: web3.utils.toWei(eth, 'ether'),
 			}).then((t) => {
 				////console.log(self.form.ico.eth.val, t);
 				self.gasPriceEstimate = t;
 				//self.form.ico.eth.val = String(Number(self.form.ico.eth.val) - t);
 				self.updateJSEVal();
-			});
+			});*/
 		},
 		/**
 		 * updateAccountDetails
@@ -853,6 +854,10 @@ export default {
 		hideMask() {
 			const self = this;
 			self.form.showForm = false;
+		},
+		hideTransactionMask() {
+			const self = this;
+			self.loadingTransaction = false;
 		},
 		/**
 		 * Check form nd process payment through wallet

@@ -68,11 +68,12 @@
 						<div v-if="activeHeaderItem('carousel2')">
 							<ICOPanel />
 						</div>
+						<!--
 						<ul id="JSEW-carouselItems">
 							<li v-on:click="headerSelector('carousel1')" :class="{ active:activeHeaderItem('carousel1') }"></li>
 							<li v-on:click="headerSelector('carousel2')" :class="{ active:activeHeaderItem('carousel2') }"></li>
-							<!--<li v-on:click="headerSelector('carousel3')" :class="{ active:activeHeaderItem('carousel3') }"></li>-->
 						</ul>
+						-->
 					</div>
 				</div>
 			</div>

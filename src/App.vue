@@ -477,8 +477,8 @@
 				</div>
 			</footer>
 		</div>
+		<!--
 		<router-link v-bind:to="`/${$store.state.local}/ico`" tag="button" id="JSEW-ICOAlert" :class="{'active': showICOBadge}">
-			<!--1.2em<div id="JSEA-rotatingLogo"></div>-->
 			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style="white-space: preserve-spaces; display:block; position:absolute; top:0px; width: 60px; margin: 50%; left: -30px; top: -26px;">
 				<g id="JSEA-rotatingLogo2" :class="{'active': animateBadge}" filter="none" transform="translate(498,507) translate(-445.503,-500.996)" style="fill: #00b1f4;">
 					<path id="JSEA-layer1" d="M56.3,556L55.8,704.3C55.9,735.5,72.7,764.5,99.6,780.2L229.3,854.5C256,869.7,289,869.8,316.1,854.7L446.7,779.3C473.6,763.8,490.5,734.9,490.4,703.8L490.9,555.5C490.8,524.3,474,495.3,447.1,479.6L317.4,405.3C290.7,390.1,257.7,390,230.6,405.1L100,480.4C73.1,495.9,56.2,524.8,56.3,556ZM273.3,470L411.9,550.8L411.8,709.9L273.9,789.5L136,710L135.3,549.6L273.3,470Z" transform="translate(-55.8,-0.0372215)" style=""/>
@@ -504,6 +504,7 @@
 			<div class="txtOverlay">ICO LAUNCH</div>
 			<div id="JSEW-ICOButton" :class="{'active': showICOButton}">BUY JSE</div>
 		</router-link>
+		-->
 	</div>
 </template>
 
@@ -678,16 +679,18 @@ export default {
 		const self = this;
 
 		//animate badge - every 5 seconds
-		document.querySelector('#JSEA-rotatingLogo2').addEventListener('animationend', function() {
-			//console.log('Animation finished');
-			self.animateBadge = false;
+		if (document.querySelector('#JSEA-rotatingLogo2') !== null) {
+			document.querySelector('#JSEA-rotatingLogo2').addEventListener('animationend', function() {
+				//console.log('Animation finished');
+				self.animateBadge = false;
+				setTimeout(() => {
+					self.animateBadge = true;
+				}, 5000);
+			}, false);
 			setTimeout(() => {
 				self.animateBadge = true;
-			}, 5000);
-		}, false);
-		setTimeout(() => {
-			self.animateBadge = true;
-		}, 8000);
+			}, 8000);
+		}
 
 		//disable scrollbar if mobile
 		if ((typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1)) {
