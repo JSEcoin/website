@@ -3,7 +3,8 @@
 	"updates": {
 		"20180424": "priavcyPolicy > para_main1_cta, section_where_next > whole section",
 		"20180502": "pages.downloads, pages.whitelisting",
-		"20180706": "pages.ico"
+		"20180706": "pages.ico",
+		"20180710": "KYC.whitelisting"
 	},
 	"tpl": {
 		"globalNavHeader": {
@@ -400,7 +401,8 @@
 			"kyc_regs":"For potential investments valued at more than $10,000 USD we are required to comply with KYC regulations to prevent money laundering. Please double check the name and address on your photo ID matches the name and address on your account and that the document also includes a photograph and date of birth which is all clearly visible and readable.",
 			"submit":"submit",
 			"heading_thankyou":"Whitelisting Application Received",
-			"para_thankyou":"Please check the ICO page on the platform for updates on your application. KYC regulations can take up to 7 days to complete."
+			"para_thankyou":" Thankyou for whitelisting - you can now purchase JSE and invest up to 24 ETH. If you would like to invest more you will be required to re-submit the form with an amount over 10,000 USD that you are looking to invest - this will require photo ID as part of our legal KYC procedure.",
+			"para_thankyou_kyc":"Thankyou for whitelisting - we will contact via email when your account has been approved by our KYC partner. This will allow you to invest over 24ETH. If you would like you can invest upto 24 ETH until your submission has been approved."
 		},
 		"downloads": {
 			"meta": {

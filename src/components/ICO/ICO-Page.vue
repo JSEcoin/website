@@ -1,5 +1,18 @@
 <template>
 	<div id="JSEW-wrapper">
+		<nav id="JSEW-subHeaderNav">
+			<ul class="wrapper">
+				<router-link v-bind:to="`/${$store.state.local}/ico`" tag="li" class="active">
+					ICO Launchpad
+				</router-link>
+				<router-link v-bind:to="`/${$store.state.local}/whitelisting`" tag="li">
+					KYC
+				</router-link>
+				<router-link v-bind:to="`/${$store.state.local}/ico/issue`" tag="li">
+					Report Issue
+				</router-link>
+			</ul>
+		</nav>
 		<div id="JSEW-ICOLoadingMask" v-if="loadingTransaction">
 			<div id="JSEW-ICOLoadingAnimationWrapper">
 				<div id="JSEW-ICOLoadingAnimationx">
@@ -78,6 +91,9 @@
 
 					<!-- ICO Form ERC20 -->
 					<div class="highlightPanel row">
+						<div id="JSEW-bonusDisplay" v-if="bonus>0">
+							+ 10% BONUS: {{JSEBonusVal}} JSE
+						</div>
 						<div class="col">
 							<label :class="{show:form.ico.address.displayLabel, error:form.ico.address.flag}">
 								<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_walletAddress') }} *</div>
@@ -85,18 +101,18 @@
 							</label>
 						</div>
 						<div class="col">
-							<label class="icoCoin" :class="{show:form.ico.jse.displayLabel, error:form.ico.jse.flag}">
-								<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_purchaseTokens') }} *</div>
-								<div class="amountInput coin">
-									<input type="number" min="10000" step="200" :placeholder="$t('pages.ico.panel_purchase.form_purchaseTokens') + ' *'" v-model="form.ico.jse.val" @keyup="keyWatch('jse')" @mouseup="keyWatch('jse')" />
-								</div>
-							</label>
-						</div>
-						<div class="col">
 							<label :class="{show:form.ico.eth.displayLabel, error:form.ico.eth.flag}">
 								<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_ethereumSpend') }} *</div>
 								<div class="amountInput ethIcon">
 									<input type="number" min="0" step="0.1" :placeholder="$t('pages.ico.panel_purchase.form_ethereumSpend') + ' *'" v-model="form.ico.eth.val" @keyup="keyWatch('eth')" @mouseup="keyWatch('eth')" />
+								</div>
+							</label>
+						</div>
+						<div class="col">
+							<label class="icoCoin" :class="{show:form.ico.jse.displayLabel, error:form.ico.jse.flag}">
+								<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_purchaseTokens') }} *</div>
+								<div class="amountInput coin">
+									<input type="number" min="10000" step="200" :placeholder="$t('pages.ico.panel_purchase.form_purchaseTokens') + ' *'" v-model="form.ico.jse.val" @keyup="keyWatch('jse')" @mouseup="keyWatch('jse')" />
 								</div>
 							</label>
 						</div>
@@ -139,8 +155,9 @@
 						<div class="row">
 							<!-- ICO Logo -->
 							<div id="JSEW-ICOLogo" class="borderRight">
-								<img src="../../assets/ico/logo.png" alt="JSECoin - The Javascript Embedded Cryptocurrency" />
+								<img :class="{'bonus':bonus>0}" src="../../assets/ico/logo.png" alt="JSECoin - The Javascript Embedded Cryptocurrency" />
 								<button v-on:click="initBuy" class="button buy" :class="{disable: !showBuyOption}">{{BuyJSEButton}}</button>
+								<div v-if="bonus>0" style="margin:10px 10px 10px 10px; font-size:0.65em; text-align:center; font-weight:bold; border-radius:3px; border:solid 1px #eee; padding:4px 8px;">{{bonus}}% BONUS ROUND</div>
 							</div>
 							<!-- xICO Logo -->
 							<!-- ICO Status Info -->
@@ -359,12 +376,12 @@
 						<ol style="padding: 0px 30px;">
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list1') }}</li>
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list2') }}<br />
-								<div style="display:flex; margin:10px 0px; border-radius:6px; border:solid 1px #eee; padding:4px 8px;">
+								<div style="max-width:280px; display:flex; margin:10px 0px; border-radius:6px; border:solid 1px #eee; padding:4px 8px;">
 									<input disabled style="flex:1; font-size: 0.75em; font-weight:bold; color:#666;" type="text" :value="JSETokenSale" />
 								</div>
 							</li>
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list2_1') }}<br />
-								<div style="display:flex; margin:10px 0px; border-radius:6px; border:solid 1px #eee; padding:4px 8px;">
+								<div style="max-width:280px; display:flex; margin:10px 0px; border-radius:6px; border:solid 1px #eee; padding:4px 8px;">
 									<input disabled style="flex:1; font-size: 0.75em; font-weight:bold; color:#666;" type="text" :value="tokenAddress" />
 								</div>
 							</li>
@@ -402,6 +419,8 @@ export default {
 	name: 'Ico-Page',
 	data() {
 		return {
+			bonus: 10, //bonus amount set in contract
+			JSEBonusVal: 0, //bonus amount set in contract
 			loadingTransaction: false, //user purchased JSE - display loading animation.
 			BuyJSEButton: 'Buy JSE', //Buy button Text
 			launchPadDevMode: false, // rinkeby network = true
@@ -961,13 +980,15 @@ export default {
 				self.updateEthVal();
 			}
 
-			console.log(self.form.ico.eth.val, (self.form.ico.eth.val.length > 10), (self.form.ico.eth.val % 1 !== 0));
+			//console.log(self.form.ico.eth.val, (self.form.ico.eth.val.length > 10), (self.form.ico.eth.val % 1 !== 0));
 			//check if display > 10 and contains decimal
 			if ((self.form.ico.eth.val.length > 10) && (self.form.ico.eth.val % 1 !== 0)) {
+				//self.form.ico.eth.val = self.form.ico.eth.val.substring(0, 10);
 				self.form.ico.eth.val = String(+(Math.round(Number(self.form.ico.eth.val) + 'e+' + 10)  + 'e-' + 10));
 			}
 			//check if display > 10 and contains decimal
 			if ((self.form.ico.jse.val.length > 10) && (self.form.ico.jse.val % 1 !== 0)) {
+				//self.form.ico.jse.val = self.form.ico.jse.val.substring(0, 10);
 				self.form.ico.jse.val = String(+(Math.round(Number(self.form.ico.jse.val) + 'e+' + 10)  + 'e-' + 10));
 			}
 			//if text remove placeholder and show above input
@@ -978,6 +999,7 @@ export default {
 				self.form.ico[input].displayLabel = false;
 				self.form.ico[input].flag = true;
 			}
+			self.JSEBonusVal = Math.floor(Number(self.form.ico.jse.val)*0.1).toLocaleString();
 			self.checkValWhiteListed();
 		},
 		/**
@@ -1002,6 +1024,9 @@ export default {
 		 */
 		updateJSEVal() {
 			const self = this;
+			if (Number(self.form.ico.eth.val) > Number(self.maxEthWhitelisted)) {
+				self.form.ico.eth.val = String(self.maxEthWhitelisted);
+			}
 			self.form.ico.jse.val = String(self.JSEPerEth * self.form.ico.eth.val);
 			self.form.ico.jse.displayLabel = true;
 			self.form.info.title = '';
@@ -1021,6 +1046,10 @@ export default {
 		updateEthVal() {
 			const self = this;
 			self.form.ico.eth.val = String(self.form.ico.jse.val / self.JSEPerEth);
+			if (Number(self.form.ico.eth.val) > Number(self.maxEthWhitelisted)) {
+				self.form.ico.eth.val = String(self.maxEthWhitelisted);
+				self.updateJSEVal();
+			}
 			self.form.ico.eth.displayLabel = true;
 			self.form.info.title = '';
 			self.form.info.msg = '';
@@ -1046,6 +1075,23 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#JSEW-bonusDisplay {
+    position: absolute;
+    bottom: -14px;
+    background: #2b6aa7;
+    border-radius: 6px;
+    padding: 4px 8px;
+    margin: 0px auto;
+    width: 300px;
+    font-size: 0.8em;
+	font-weight:bold;
+    text-align: center;
+    color: #fff;
+    left: 50%;
+    margin-left: -150px;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.3);
+}
+
 #JSEW-ICO dl {
 	/*overflow: hidden;*/
 }
@@ -1290,6 +1336,8 @@ export default {
 	margin:20px;
 	border-radius:8px;
 	background:#fdfdfd;
+	position: relative;
+	margin-bottom:40px;
 }
 #JSEW-ICOMask .highlightPanelFlat {
 	padding:10px;
@@ -1377,6 +1425,10 @@ export default {
 #JSEW-ICOLogo img {
 	width:140px; 
 	margin: 20px 20px 0px 20px;
+}
+
+#JSEW-ICOLogo img.bonus {
+	margin: -8px 20px 0px 20px;
 }
 
 #JSEW-totalDistribution {
@@ -1745,7 +1797,7 @@ th {
     margin: 1em 0;
     padding: 4px 8px;
 	border-radius: 4px;
-	box-shadow: 0 0 0 1px #c9ba9b inset, 0 0 0 0 transparent;
+	box-shadow: 0 0 0 1px #c9ba9b inset, rgba(210, 214, 217,1) 0px 1px 3px 0px;
 }
 .warning b {
 	font-size:0.8em;

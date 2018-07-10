@@ -1,12 +1,29 @@
 <template>
 <div id="JSEW-wrapper">
-	<div id="JSEW-whitelisting" class="wrapper">
-		<h1 class="heading">{{ $t('pages.whitelisting.heading') }}</h1>
+		<nav id="JSEW-subHeaderNav">
+			<ul class="wrapper">
+				<router-link v-bind:to="`/${$store.state.local}/ico`" tag="li">
+					ICO Launchpad
+				</router-link>
+				<router-link v-bind:to="`/${$store.state.local}/whitelisting`" tag="li" class="active">
+					KYC
+				</router-link>
+				<router-link v-bind:to="`/${$store.state.local}/ico/issue`" tag="li">
+					Report Issue
+				</router-link>
+			</ul>
+		</nav>
+	<div id="JSEW-whitelisting" class="wrapper center">
+		<!--<h1 class="heading">{{ $t('pages.whitelisting.heading') }}</h1>
 		<p>{{ $t('pages.whitelisting.intro') }}</p>
-		<p>{{ $t('pages.whitelisting.intro2') }}</p>
-		<p>{{ $t('pages.whitelisting.help') }}
 			<a href="https://jsecoin.com/HowToParticipateInICO.pdf" target="_blank">{{ $t('pages.whitelisting.pdf') }}</a>
 		</p>
+		<p>{{ $t('pages.whitelisting.intro2') }}</p>-->
+		
+				<p class="infoMsg">
+					{{ $t('pages.whitelisting.help') }}
+					<a href="https://jsecoin.com/HowToParticipateInICO.pdf" target="_blank">{{ $t('pages.whitelisting.pdf') }}</a>
+				</p>
 		<form id="JSEW-submitForm" @submit.prevent="onSubmit">
 			<xLoading v-if="status.submittingMsg" />
 
@@ -28,6 +45,8 @@
 					<a href="https://platform.jsecoin.com/?register=1&utm_source=internal&utm_campaign=whitelisting"
 					    target="_blank">https://platform.jsecoin.com</a>
 				</p>
+				
+
 				<div class="row">
 					<div class="col">
 						<label :class="{show:form.emailAddress.displayLabel, error:!form.emailAddress.valid || form.emailAddress.flag}">
@@ -128,9 +147,16 @@
 			</div>
 			<div class="center" v-if="status.submittedForm" style="margin-top:40px;">
 				<h1 class="heading">{{ $t('pages.whitelisting.heading_thankyou') }}</h1>
-				<p>
+				<p v-if="Number(form.intendedPurchase.val) < 10000">
 					{{ $t('pages.whitelisting.para_thankyou') }}
 				</p>
+				<p v-else>
+					{{ $t('pages.whitelisting.para_thankyou_kyc') }}
+				</p>
+				
+				<router-link v-bind:to="`/${$store.state.local}/ico`" tag="button" class="button">
+					Buy JSE
+				</router-link>
 			</div>
 		</form>
 		<!-- whitelisting pixels iframe -->
@@ -556,7 +582,7 @@ export default {
 				this.form.error.msg =
 					'Failed to submit form - please check all required fields above';
 			}
-			this.$ma.event('goal', 'whitelisting');
+			this.$ma.trackEvent({ category: 'goal', action: 'whitelisting' });
 		},
 		onVerify(response) {
 			//console.log('Verify: ' + response, this.$refs.uploader);

@@ -128,7 +128,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/downloads',
 			'/whitelisting',
 			'/ico',
-			'/ICO',
 
 			//english
 			'/en/home',
@@ -168,7 +167,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/en/downloads',
 			'/en/whitelisting',
 			'/en/ico',
-			'/en/ICO',
 /**/
 			//arabic
 			'/ar/home',
@@ -208,7 +206,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ar/downloads',
 			'/ar/whitelisting',
 			'/ar/ico',
-			'/ar/ICO',
 
 			//bg
 			'/bg/home',
@@ -248,7 +245,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/bg/downloads',
 			'/bg/whitelisting',
 			'/bg/ico',
-			'/bg/ICO',
 
 			//chinese
 			'/zh/home',
@@ -288,7 +284,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/zh/downloads',
 			'/zh/whitelisting',
 			'/zh/ico',
-			'/zh/ICO',
 
 			//German
 			'/de/home',
@@ -328,7 +323,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/de/downloads',
 			'/de/whitelisting',
 			'/de/ico',
-			'/de/ICO',
 
 			//Spanish
 			'/es/home',
@@ -368,7 +362,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/es/downloads',
 			'/es/whitelisting',
 			'/es/ico',
-			'/es/ICO',
 
 			//finnish
 			'/fi/home',
@@ -408,7 +401,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/fi/downloads',
 			'/fi/whitelisting',
 			'/fi/ico',
-			'/fi/ICO',
 
 			//french
 			'/fr/home',
@@ -448,7 +440,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/fr/downloads',
 			'/fr/whitelisting',
 			'/fr/ico',
-			'/fr/ICO',
 
 			//Indonesian
 			'/id/home',
@@ -488,7 +479,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/id/downloads',
 			'/id/whitelisting',
 			'/id/ico',
-			'/id/ICO',
 
 			//Italian
 			'/it/home',
@@ -528,7 +518,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/it/downloads',
 			'/it/whitelisting',
 			'/it/ico',
-			'/it/ICO',
 
 			//japanese
 			'/jp/home',
@@ -568,7 +557,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/jp/downloads',
 			'/jp/whitelisting',
 			'/jp/ico',
-			'/jp/ICO',
 
 			//Korean
 			'/ko/home',
@@ -608,7 +596,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ko/downloads',
 			'/ko/whitelisting',
 			'/ko/ico',
-			'/ko/ICO',
 
 			//
 			'/ms/home',
@@ -648,7 +635,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ms/downloads',
 			'/ms/whitelisting',
 			'/ms/ico',
-			'/ms/ICO',
 
 			//
 			'/nl/home',
@@ -688,7 +674,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/nl/downloads',
 			'/nl/whitelisting',
 			'/nl/ico',
-			'/nl/ICO',
 
 			//xxxx
 			'/no/home',
@@ -728,7 +713,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/no/downloads',
 			'/no/whitelisting',
 			'/no/ico',
-			'/no/ICO',
 
 			//Portugese
 			'/pt/home',
@@ -768,7 +752,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/pt/downloads',
 			'/pt/whitelisting',
 			'/pt/ico',
-			'/pt/ICO',
 
 			//Romanian
 			'/ro/home',
@@ -808,7 +791,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ro/downloads',
 			'/ro/whitelisting',
 			'/ro/ico',
-			'/ro/ICO',
 
 			//Russian
 			'/ru/home',
@@ -848,7 +830,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ru/downloads',
 			'/ru/whitelisting',
 			'/ru/ico',
-			'/ru/ICO',
 
 			//Slovenian
 			'/si/home',
@@ -888,7 +869,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/si/downloads',
 			'/si/whitelisting',
 			'/si/ico',
-			'/si/ICO',
 
 			//Swedish
 			'/se/home',
@@ -928,7 +908,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/se/downloads',
 			'/se/whitelisting',
 			'/se/ico',
-			'/se/ICO',
 
 			//Thai
 			'/th/home',
@@ -968,7 +947,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/th/downloads',
 			'/th/whitelisting',
 			'/th/ico',
-			'/th/ICO',
 
 			//taiwanese
 			'/tw/home',
@@ -1008,7 +986,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/tw/downloads',
 			'/tw/whitelisting',
 			'/tw/ico',
-			'/tw/ICO',
 
 			//test
 			'/en/banner1',
