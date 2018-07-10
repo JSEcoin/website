@@ -36,39 +36,43 @@
 					<xGlobalNavHeader/>
 					
 					<div id="JSEW-carouselContent" v-if="$route.meta.linkText === 'Home'">
-						<div id="JSEW-supportedBrowsers"></div>
-						<h1 id="JSEW-carouselHeading">{{ $t('tpl.header.carousel1.heading') }}</h1>
-						<h4 id="JSEW-carouselSubHeading">{{ $t('tpl.header.carousel1.subheading') }}</h4>
+						<div v-if="activeHeaderItem('carousel1')">
+							<div id="JSEW-supportedBrowsers"></div>
+							<h1 id="JSEW-carouselHeading">{{ $t('tpl.header.carousel1.heading') }}</h1>
+							<h4 id="JSEW-carouselSubHeading">{{ $t('tpl.header.carousel1.subheading') }}</h4>
 
-						<form id="JSEW-getStarted" style="margin-bottom:25px" @submit.prevent="onSubmit" :class="{error:!form.emailAddress.valid}">
-							<input type="email" :placeholder="$t('tpl.header.carousel1.placeholder') + '*'" v-model="form.emailAddress.val" @blur="checkEmail"  @keyup="checkEmail"/>
-							<button>{{ $t('tpl.header.carousel1.button_getStarted') }}</button>
-						</form>
-						<!--<div id="JSEW-getStartedLinks">
-							<router-link v-bind:to="`/${$store.state.local}/support/blockchainExplorer`" tag="a">
-								New to bitcoin?
-							</router-link>
-							<router-link v-bind:to="`/${$store.state.local}/support/blockchainExplorer`" tag="a">
-								What is Ethereum?
-							</router-link>
-							<router-link v-bind:to="`/${$store.state.local}/support/blockchainExplorer`" tag="a">
-								Move to EOS?
-							</router-link>
-						</div>-->
+							<form id="JSEW-getStarted" style="margin-bottom:25px" @submit.prevent="onSubmit" :class="{error:!form.emailAddress.valid}">
+								<input type="email" :placeholder="$t('tpl.header.carousel1.placeholder') + '*'" v-model="form.emailAddress.val" @blur="checkEmail"  @keyup="checkEmail"/>
+								<button>{{ $t('tpl.header.carousel1.button_getStarted') }}</button>
+							</form>
+							<!--<div id="JSEW-getStartedLinks">
+								<router-link v-bind:to="`/${$store.state.local}/support/blockchainExplorer`" tag="a">
+									New to bitcoin?
+								</router-link>
+								<router-link v-bind:to="`/${$store.state.local}/support/blockchainExplorer`" tag="a">
+									What is Ethereum?
+								</router-link>
+								<router-link v-bind:to="`/${$store.state.local}/support/blockchainExplorer`" tag="a">
+									Move to EOS?
+								</router-link>
+							</div>-->
 
-						<a href="/whitepaper.pdf" id="JSEW-readWhitepaper" target="_blank">
-							<i class="fa fa-file-pdf-o"></i> {{ $t('tpl.header.carousel1.link_readTheWhitepaper') }}
-						</a>
+							<a href="/whitepaper.pdf" id="JSEW-readWhitepaper" target="_blank">
+								<i class="fa fa-file-pdf-o"></i> {{ $t('tpl.header.carousel1.link_readTheWhitepaper') }}
+							</a>
 
-						<!--<ul id="JSEW-carouselItems">
+							<button id="JSEW-why" v-on:click="whyJSECoin()">
+								<i class="fa fa-heart"></i> {{ $t('tpl.header.carousel1.button_whyJSEcoin') }}
+							</button>
+						</div>
+						<div v-if="activeHeaderItem('carousel2')">
+							<ICOPanel />
+						</div>
+						<ul id="JSEW-carouselItems">
 							<li v-on:click="headerSelector('carousel1')" :class="{ active:activeHeaderItem('carousel1') }"></li>
 							<li v-on:click="headerSelector('carousel2')" :class="{ active:activeHeaderItem('carousel2') }"></li>
-							<li v-on:click="headerSelector('carousel3')" :class="{ active:activeHeaderItem('carousel3') }"></li>
-						</ul>-->
-
-						<button id="JSEW-why" v-on:click="whyJSECoin()">
-							<i class="fa fa-heart"></i> {{ $t('tpl.header.carousel1.button_whyJSEcoin') }}
-						</button>
+							<!--<li v-on:click="headerSelector('carousel3')" :class="{ active:activeHeaderItem('carousel3') }"></li>-->
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -90,13 +94,17 @@
 <script>
 import particlesJS from './particlesJS';
 import xGlobalNavHeader from './globalNavHeader';
+import ICOPanel from './ICOPanel';
 
 //const STATIC_PATH = STATIC_PATH || 'ddd';
 
 export default {
 	name: 'xHeader',
-	components: { particlesJS,xGlobalNavHeader },
-
+	components: {
+		particlesJS,
+		xGlobalNavHeader,
+		ICOPanel,
+	},
 	mounted () {
 		this.applyFadeIn = true;
 		//console.log(STATIC_PATH);

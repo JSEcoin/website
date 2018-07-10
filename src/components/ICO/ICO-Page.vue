@@ -342,7 +342,8 @@
 					<dt>{{ $t('pages.ico.panel_purchaseHistory.heading_purchaseHistory') }}</dt>
 					<dd class="hasFooter" style="padding: 0px 0px 90px 0px;">
 						<p>
-							Here are a list of purchases you have made during the ICO:
+							You can purchase JSE at any time during the ICO - <br />
+							Here are a list of JSE Token transaction you have made:
 						</p>
 						<div class="hr" style="margin:10px 0px;"><hr /></div>
 						<!-- Purchase Overview -->
@@ -411,7 +412,7 @@ import jseTokenObj from './JSEToken.json';
 //setup web3
 window.web3 = new Web3(Web3.givenProvider || 'http://localhost:8545');
 //window.web3 = new Web3(Web3.givenProvider || HTTPProvider('https://rinkeby.infura.io') || 'http://localhost:8545');
-window.ActiveNetwork = new Web3('https://rinkeby.infura.io');
+window.ActiveNetwork = new Web3('https://mainnet.infura.io');
 //version
 //////console.log('VERSION:', window.web3.version);
 
@@ -426,9 +427,9 @@ export default {
 			launchPadDevMode: false, // rinkeby network = true
 			tokenLoaded: false, //true once JSE contract enabled
 			//JSE Token Address - query for balance
-			tokenAddress: '0xf90172bd3f56b4845229aa82239d6243ea19c523',//'0x1c1f7b95907df941fb6ed4469b0f4f049ab6b75c',
+			tokenAddress: '0x2d184014b5658C453443AA87c8e9C4D57285620b',
 			//contract Address
-			JSETokenSale: '0x169b6443836236877c633518da0e01ce53973202',//'0x9793a17f3aa26b8e93f442ed370d38e4d1bfe610',
+			JSETokenSale: '0xcfc4fceb90787ef1fda15bb115630ef453f50f86',
 			networkVersion: '1', //1 = mainnet 3 = rinkeby
 			activeAccount: '', //active metamask account
 			availableAccounts: [], //list of available accounts
@@ -437,13 +438,13 @@ export default {
 			userTransactionList: [], //list of JSE Transactions
 			//maxEth: '500',
 			showTracker: false, //collect stats on user purchasing JSE
-			maxEthNotWhitelisted: '10', //maximum eth that can be sent if user hasn't whitelisted.
-			maxEthWhitelisted: '10000000', //maximum eth that can be sent if user has whitelisted.
+			maxEthNotWhitelisted: '20', //maximum eth that can be sent if user hasn't whitelisted.
+			maxEthWhitelisted: '10000', //maximum eth that can be sent if user has whitelisted.
 			minEth: '0.1', //minimum eth that can be exchanged for JSE
-			gasPriceEstimate: 0,//estimate gas price
+			gasPriceEstimate: 0, //estimate gas price
 			userWalletBalance: 0, //how much does the user have in their wallet
 			showBuyOption: false, //show option to allow user to pay through wallet
-			endICO: 1539302399, //Oct 12 2018
+			endICO: 1539259200, //Thursday, 11-Oct-18 12:00:00 UTC
 			endDate: '', //calculate generate readable date from endICO
 			months: '00', //countdown months left
 			days: '00', //countdown days left
@@ -509,7 +510,6 @@ export default {
 		self.BuyJSEButton = 'Initialising...';
 		//check metamask active poll exists
 		if (typeof (window.web3.currentProvider.publicConfigStore) !== 'undefined') {
-			//console.log('x');
 			//poll web3 to check current provider active and user logged in
 			window.web3.currentProvider.publicConfigStore.on('update', (acc) => {
 				//console.log(acc, acc.networkVersion === self.networkVersion);
@@ -684,7 +684,6 @@ export default {
 				////console.log('TOKENS / ETH', t/1e3);
 				self.JSEPerEth = t/1e3;
 			});
-
 			//add max cap if user hasn't whitelisted. 15.8eth
 			jseContract.methods.CONTRIBUTION_MAX_NO_WHITELIST().call().then((t) => {
 				////console.log('MAX NO WHITELIST CAP ETH', web3.utils.fromWei(t));
@@ -759,7 +758,7 @@ export default {
 					null,
 					web3.utils.padLeft(self.form.ico.address.val, 64),
 				],
-				fromBlock: 242000,
+				fromBlock: 5939115,
 				toBlock: 'latest',
 			}).then((t) => {
 				//console.log(t);

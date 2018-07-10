@@ -252,8 +252,8 @@
 			},
 			"panel_purchase": {
 				"heading_purchase": "Purchase JSE Tokens via an Ethereum ERC Compatible Wallet (ie MetaMask)",
-				"purchase_list1": "Select your wallet address",
-				"purchase_list2": "Enter either the amount of JSE Tokens you would like to purchase or the amount of Ethereum to transfer for JSE Tokens.",
+				"purchase_list1": "Confirm or enter your wallet address",
+				"purchase_list2": "Enter either the amount of Ethereum you would like to transfer for JSE Tokens.",
 				"purchase_list3": "Select the “Buy Tokens” button to initiate the purchase through your connected wallet.",
 				"highlight_info1": "Make sure you have filled out the",
 				"highlight_link": "whitelist form",
@@ -293,7 +293,7 @@
 				"button_startKYC": "START KYC"
 			},
 			"panel_purchaseHistory": {
-				"heading_purchaseHistory": "Your ICO Tracked Purchase History",
+				"heading_purchaseHistory": "Your ICO Tracked Transfer History",
 				"tblHead_tokens": "Tokens",
 				"tblHead_totalSold": "Total Sold",
 				"tblHead_address": "Address",

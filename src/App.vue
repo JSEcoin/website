@@ -1605,10 +1605,11 @@ header .carousel1 {
 }
 
 header .carousel2 {
-	background-image: url("assets/images/carousel/2.png");
+	background-image: url("assets/images/carousel/ico.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 header .carousel3 {
 	background-image: url("assets/images/carousel/4.png");
 	background-repeat: no-repeat;
