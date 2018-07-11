@@ -1,105 +1,127 @@
 <template>
-	<dl id="JSEW-tokenDist" class="mainCol">
-		<dt>
-			{{ $t('pages.ico.panel_tokenDist.heading_tokenDist') }}
-			<div class="ribbon"><span>ETH Mainnet</span></div>
-		</dt>
-		<dd>
-			<div class="row">
-				<!-- ICO Logo -->
-				<div id="JSEW-ICOLogo" class="borderRight">
-					<img :class="{'bonus':bonus>0}" src="../../assets/ico/logo.png" alt="JSECoin - The Javascript Embedded Cryptocurrency" />
-					<!--<button v-on:click="initBuy" class="button buy" :class="{disable: !showBuyOption}">{{BuyJSEButton}}</button>-->
-					<div v-if="bonus>0" style="margin:10px 10px 10px 10px; font-size:0.65em; text-align:center; font-weight:bold; border-radius:3px; border:solid 1px rgba(230,230,230,0.2); padding:4px 8px;">{{bonus}}% BONUS ROUND</div>
-				</div>
-				<!-- xICO Logo -->
-				<!-- ICO Status Info -->
-				<div class="mainCol">
-					<!-- Total JSE Distribution -->
-					<div id="JSEW-totalDistribution">
-						<h2>{{ $t('pages.ico.panel_tokenDist.subheading_totalDist') }}</h2>
+	<div class="row">
+		<div class="col" style="max-width:none">
+			<dl id="JSEW-tokenDist" class="mainCol">
+				<dt>
+					{{ $t('pages.ico.panel_tokenDist.heading_tokenDist') }}
+					<div class="ribbon"><span>ETH Mainnet</span></div>
+				</dt>
+				<dd>
+					<div class="row">
+						<!-- ICO Logo -->
+						<div id="JSEW-ICOLogo" class="borderRight">
+							<img :class="{'bonus':bonus>0}" src="../../assets/ico/logo_white.png" alt="JSECoin - The Javascript Embedded Cryptocurrency" />
+							<!--<button v-on:click="initBuy" class="button buy" :class="{disable: !showBuyOption}">{{BuyJSEButton}}</button>-->
+							<div v-if="bonus>0" style="margin:10px 10px 10px 10px; font-size:0.65em; text-align:center; font-weight:bold; border-radius:3px; border:solid 1px rgba(230,230,230,0.2); padding:4px 8px;">{{bonus}}% BONUS ROUND</div>
+						</div>
+						<!-- xICO Logo -->
+						<!-- ICO Status Info -->
+						<div class="mainCol">
+							<!-- Total JSE Distribution -->
+							<div id="JSEW-totalDistribution">
+								<h2>{{ $t('pages.ico.panel_tokenDist.subheading_totalDist') }}</h2>
 
-						<div id="JSEW-icoMeter">
-							<div id="JSEW-icoMeterDisplay" :style="{width:`${progressBarWidth}%`}">
-								<div style="width:1px;height:1px; float:right; position:relative;" v-if="tokenLoaded">
-									<div id="JSEW-icoPointerArr"></div>
-									<div id="JSEW-icoPointer">
-										<div id="JSEW-icoPointerWrapper">
-											<div class="icoRow">
-												<div class="coin"></div>
-												<span style="color:#0096ff; margin-right:4px;">{{total.jseDisplay}}</span> 
-												<span>JSE</span>
+								<div id="JSEW-icoMeter">
+									<div id="JSEW-icoMeterDisplay" :style="{width:`${progressBarWidth}%`}">
+										<div style="width:1px;height:1px; float:right; position:relative;" v-if="tokenLoaded">
+											<div id="JSEW-icoPointerArr"></div>
+											<div id="JSEW-icoPointer">
+												<div id="JSEW-icoPointerWrapper">
+													<div class="icoRow">
+														<div class="coin"></div>
+														<span style="color:#0096ff; margin-right:4px;">{{total.jseDisplay}}</span> 
+														<span>JSE</span>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+								<div id="JSEW-hardCapLegend" class="cf">
+									<div id="JSEW-start">0 JSE</div>
+									<div id="JSEW-end">{{activeGoalDisplay}} JSE</div>
+								</div>
+							</div>
+							<!-- xTotal JSE Distribution -->
+							<div class="row" style="margin:10px 0px;">
+								<!-- Current Distribution Spread -->
+								<div id="JSEW-currentDistSpread" class="mainCol borderRight">
+									<h2>{{ $t('pages.ico.panel_tokenDist.subheading_currentDist') }}</h2>
+									<ul id="JSEW-distOptions">
+										<!-- ETH -->
+										<li id="JSEW-distETH" class="mainCol borderRight">
+											<div id="JSEW-eth"></div>
+											{{total.ethDisplay}} <span>ETH</span>
+										</li>
+										<!-- xETH -->
+										<!-- JSE -->
+										<li id="JSEW-distJSE" class="mainCol borderRight">
+											<div id="JSEW-jse"></div>
+											{{total.jseDisplay}} <span>JSE</span>
+										</li>
+										<!-- xJSE -->
+										<!-- EOS 
+										<li id="JSEW-distEOS" class="mainCol">
+											<div id="JSEW-eos"></div>
+											0 <span>EOS</span>
+										</li>
+										xEOS -->
+									</ul>
+								</div>
+								<!-- xCurrent Distribution Spread -->
+
+								<!-- Distribution Timer -->
+								<div id="JSEW-distributionCounterWrapper" class="mainCol">
+									<h2>{{ $t('pages.ico.panel_tokenDist.subheading_DistEndsIn') }}</h2>
+									<ul id="JSEW-distCountdown">
+										<li class="counter">{{days}}</li>
+										<li>:</li>
+										<li class="counter">{{hrs}}</li>
+										<li>:</li>
+										<li class="counter">{{mins}}</li>
+										<li>:</li>
+										<li class="counter">{{seconds}}</li>
+										<li id="JSEW-countFooter">{{endDate}}</li>
+									</ul>
+								</div>
+								<!-- xDistribution Timer -->
 							</div>
 						</div>
-						<div id="JSEW-hardCapLegend" class="cf">
-							<div id="JSEW-start">0 JSE</div>
-							<div id="JSEW-end">{{activeGoalDisplay}} JSE</div>
-						</div>
+						<!-- xICO Status Info -->
 					</div>
-					<!-- xTotal JSE Distribution -->
-					<div class="row" style="margin:10px 0px;">
-						<!-- Current Distribution Spread -->
-						<div id="JSEW-currentDistSpread" class="mainCol borderRight">
-							<h2>{{ $t('pages.ico.panel_tokenDist.subheading_currentDist') }}</h2>
-							<ul id="JSEW-distOptions">
-								<!-- ETH -->
-								<li id="JSEW-distETH" class="mainCol borderRight">
-									<div id="JSEW-eth"></div>
-									{{total.ethDisplay}} <span>ETH</span>
-								</li>
-								<!-- xETH -->
-								<!-- JSE -->
-								<li id="JSEW-distJSE" class="mainCol borderRight">
-									<div id="JSEW-jse"></div>
-									{{total.jseDisplay}} <span>JSE</span>
-								</li>
-								<!-- xJSE -->
-								<!-- EOS 
-								<li id="JSEW-distEOS" class="mainCol">
-									<div id="JSEW-eos"></div>
-									0 <span>EOS</span>
-								</li>
-								xEOS -->
-							</ul>
-						</div>
-						<!-- xCurrent Distribution Spread -->
-
-						<!-- Distribution Timer -->
-						<div id="JSEW-distributionCounterWrapper" class="mainCol">
-							<h2>{{ $t('pages.ico.panel_tokenDist.subheading_DistEndsIn') }}</h2>
-							<ul id="JSEW-distCountdown">
-								<li class="counter">{{days}}</li>
-								<li>:</li>
-								<li class="counter">{{hrs}}</li>
-								<li>:</li>
-								<li class="counter">{{mins}}</li>
-								<li>:</li>
-								<li class="counter">{{seconds}}</li>
-								<li id="JSEW-countFooter">{{endDate}}</li>
-							</ul>
-						</div>
-						<!-- xDistribution Timer -->
+					<!-- Footer -->
+					<div class="footer">
+						<p>
+							{{ $t('pages.ico.panel_tokenDist.footer_msg') }}
+						</p>
 					</div>
-				</div>
-				<!-- xICO Status Info -->
-			</div>
-			<!-- Footer -->
-			<div class="footer">
-				<p>
-					{{ $t('pages.ico.panel_tokenDist.footer_msg') }}
-				</p>
-			</div>
-			<!-- xFooter -->
-		</dd>
-	</dl>
+					<!-- xFooter -->
+				</dd>
+			</dl>
+		</div>
+		<div class="col" style="width:300px; max-width:none;">
+			<dl id="JSEW-tokenDist">
+				<dt>
+					Explainer Video
+				</dt>
+				<dd style="padding-bottom:14px;">
+					<iframe style="background:#000;" width="100%" height="160" src="https://www.youtube.com/embed/keoXxFL6aPM?rel=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					
+					<router-link v-bind:to="`/${$store.state.local}/ico`" tag="button" class="button">
+						INVEST IN JSECOIN
+					</router-link>
+				</dd>
+			</dl>
+		</div>
+	</div>
 </template>
 
 <script>
 import moment from 'moment';
+import Web3 from 'web3';
+import jseContractObj from '@/components/ICO/JSETokenSale.json';
+
+window.ActiveNetwork = new Web3('https://mainnet.infura.io');
 
 export default {
 	name: 'ICOPanel',
@@ -144,6 +166,11 @@ export default {
 			activeGoalDisplay: '5,000,000,000',
 		};
 	},
+	created() {
+		const self = this;
+		window.jseContract = new window.ActiveNetwork.eth.Contract(jseContractObj.abi, self.JSETokenSale);
+		self.updateDistributionDisplay();
+	},
 	mounted() {
 		const self = this;
 		self.endDate = moment.unix(self.endICO).format('MMMM Do YYYY');
@@ -181,14 +208,77 @@ export default {
 				self.hrs = hrs;
 				self.mins = mins;
 				self.seconds = seconds;
+
+				//update distribution display every min
+				if (seconds === '00') {
+					self.updateDistributionDisplay();
+				}
 			}
 		}, 1000);
+	},
+	methods: {
+		totalTokensSold() {
+			const self = this;
+
+			//total JSE Distributed from contract acc
+			jseContract.methods.totalTokensSold().call().then((t) => {
+				self.total.jse = Math.floor(t/1e18);
+				self.total.jseDisplay = self.total.jse.toLocaleString();
+				//set goal checkpoint
+				self.goalCheckpoints.some((checkpoint) => {
+					if (self.total.jse < checkpoint) {
+						self.activeGoal = checkpoint;
+						self.activeGoalDisplay = checkpoint.toLocaleString();
+						return true;
+					}
+					return false;
+				});
+
+				//set progress bar width
+				const barWidth = (100/self.activeGoal) * self.total.jse;
+				self.progressBarWidth = (barWidth >= 100) ? 100 : barWidth;
+				self.tokenLoaded = true;
+			});
+		},
+		updateDistributionDisplay() {
+			const self = this;
+
+			self.totalTokensSold();
+
+			//Amount of ether raised
+			jseContract.methods.weiRaised().call().then((t) => {
+				////console.log('weiRaised', web3.utils.fromWei(t));
+				const etherRaised = web3.utils.fromWei(t);
+				if (etherRaised < 10) {
+					self.total.eth = +(Number(etherRaised)).toFixed(2);
+				} else {
+					self.total.eth = Math.floor(web3.utils.fromWei(t));
+				}
+				self.total.ethDisplay = self.total.eth.toLocaleString();
+			});
+		},
 	},
 };
 </script>
 
 <style scoped>
 /* Your styles */
+#JSEW-tokenDist .button {
+	width: 90%;
+    border: solid 1px rgba(255,255,255,0.2);
+    border-radius: 4px;
+    background: rgba(0,0,0,0.4);
+    color: #25cbfc;
+    padding: 6px;
+    /* margin: 1px 10px; */
+    margin-top: 8px;
+	transition: background 0.2s, border 0.2s;
+}
+
+#JSEW-tokenDist .button:hover {
+	background: #000;
+    border: solid 1px #25cbfc;
+}
 
 #JSEW-ICOMask,
 #JSEW-ICOLoadingMask {
@@ -507,10 +597,14 @@ export default {
 #JSEW-tokenDist {
 	position:relative;
 	overflow: visible !important;
+	font-size:0.8em;
+	max-width:630px;
+	margin-top:16px;
+	margin-bottom:0px;
 }
 
 #JSEW-tokenDist dd {
-	padding-bottom:40px;
+	padding-bottom:22px;
 }
 
 #JSEW-ICOLogo {
@@ -518,12 +612,12 @@ export default {
 }
 
 #JSEW-ICOLogo img {
-	width:140px; 
+	width:100px; 
 	margin: 20px 20px 0px 20px;
 }
 
 #JSEW-ICOLogo img.bonus {
-	margin: -8px 20px 0px 20px;
+	margin: 4px 20px 0px 20px;
 }
 
 #JSEW-totalDistribution {
@@ -655,8 +749,7 @@ dt {
     font-weight: bold;
     font-size: 0.8em;
     letter-spacing: 1px;
-    min-height: 36px;
-	min-width:326px;
+	min-width:280px;
 }
 dd {
 	padding:0px;
@@ -753,12 +846,15 @@ th {
 
 .footer {
 	position: absolute;
-	bottom:0px;
-	left: 0px;
-	right:0px;
+	bottom:1px;
+	left: 1px;
+	right:1px;
 	font-size:0.8em;
 	background: rgba(0,19,36,0.8);
 	border-radius: 0px 0px 6px 6px;
+}
+.footer p {
+	line-height: 8px;
 }
 
 
@@ -834,8 +930,7 @@ th {
 	background:rgba(0,0,0,0.48);
 	left: 0px;
 	right: 0px;
-	height:30px;
-	line-height: 30px;
+	line-height: 24px;
 	font-size:0.8em;
 }
 .thinCol {

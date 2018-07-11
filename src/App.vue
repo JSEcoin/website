@@ -477,7 +477,7 @@
 				</div>
 			</footer>
 		</div>
-		<!--
+		
 		<router-link v-bind:to="`/${$store.state.local}/ico`" tag="button" id="JSEW-ICOAlert" :class="{'active': showICOBadge}">
 			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style="white-space: preserve-spaces; display:block; position:absolute; top:0px; width: 60px; margin: 50%; left: -30px; top: -26px;">
 				<g id="JSEA-rotatingLogo2" :class="{'active': animateBadge}" filter="none" transform="translate(498,507) translate(-445.503,-500.996)" style="fill: #00b1f4;">
@@ -504,7 +504,7 @@
 			<div class="txtOverlay">ICO LAUNCH</div>
 			<div id="JSEW-ICOButton" :class="{'active': showICOButton}">BUY JSE</div>
 		</router-link>
-		-->
+		
 	</div>
 </template>
 
@@ -1547,6 +1547,9 @@ header a {
 	right: 0px;
 	bottom: 0px;
 }
+/*.carousel2 #JSEW-carouselItems {
+	margin: 6px auto 0px;
+}*/
 #JSEW-carouselItems {
 	margin:15px auto 0px;
 	padding:0px;
@@ -1562,6 +1565,9 @@ header a {
 	list-style: none;
 	margin:5px;
 	cursor: pointer;
+}
+.carousel2 #JSEW-carouselItems li {
+	background: #000;
 }
 
 #JSEW-carouselItems li:hover,

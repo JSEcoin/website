@@ -1118,8 +1118,8 @@ const webpackConfig = merge(baseWebpackConfig, {
     ]),
     // service worker caching
     new SWPrecacheWebpackPlugin({
-      cacheId: 'jse-website',
-      filename: 'jse-web-worker_preico.js',
+      cacheId: 'jse-website_ico',
+      filename: 'jse-web-worker_ico.js',
 	  //staticFileGlobs: ['dist/**/*.{js,html,css}'],
 	  staticFileGlobsIgnorePatterns: [/\.map$/], // use this to ignore sourcemap files
 	  staticFileGlobs: [

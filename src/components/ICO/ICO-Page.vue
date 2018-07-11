@@ -72,7 +72,7 @@
 							<router-link v-bind:to="`/${$store.state.local}/whitelisting`" tag="a">
 								{{ $t('pages.ico.panel_purchase.highlight_link') }}
 							</router-link>
-							{{ $t('pages.ico.panel_purchase.highlight_info2') }} <b>10,000 USD</b>
+							{{ $t('pages.ico.panel_purchase.highlight_info2') }} <b>{{maxEthNotWhitelisted}} ETH</b>
 						</i>
 					</div>
 					<div v-if="form.info.msg.length > 0" class="infoPanel">
@@ -249,7 +249,7 @@
 				<dl id="JSEW-purchaseVideo" class="thinCol">
 					<dt><i class="fa fa-info-circle "></i> {{ $t('pages.ico.panel_howToPurchase.heading_howTo') }}</dt>
 					<dd>
-						<iframe width="100%" height="226" src="https://www.youtube.com/embed/Mwyujyj6gMA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<iframe width="100%" height="226" src="https://www.youtube.com/embed/ivVxijQAQT8?rel=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						<div class="footer">
 							<p>
 								<b>{{ $t('pages.ico.panel_howToPurchase.footer_header') }}</b><br/>
@@ -271,7 +271,7 @@
 						<div>
 							<img src="../../assets/ico/metamask.svg" style="width:50px; float:left; margin:0px 10px" />
 							<p>
-								If you don't have an integrated wallet like <a href="http://metamask.com/" target="_BLANK">Metamask</a> - you can send Ethereum direct to our smart contract address for JSE Tokens.
+								If you don't have an integrated wallet like <a href="http://metamask.io/" target="_BLANK">Metamask</a> - you can send Ethereum direct to our smart contract address for JSE Tokens.
 							</p>
 							<div class="hr" style="margin:10px 0px;"><hr /></div>
 						</div>
@@ -377,14 +377,16 @@
 						<ol style="padding: 0px 30px;">
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list1') }}</li>
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list2') }}<br />
-								<div style="max-width:280px; display:flex; margin:10px 0px; border-radius:6px; border:solid 1px #eee; padding:4px 8px;">
-									<input disabled style="flex:1; font-size: 0.75em; font-weight:bold; color:#666;" type="text" :value="JSETokenSale" />
+								<div style="width:280px; display:flex; margin:10px 0px 0px -20px; border-radius:6px 6px 0px 0px; border:solid 1px #eee; padding:4px 8px; background:#f9fbfc;">
+									<input disabled style="flex:1; font-size: 0.75em; font-weight:bold; color:#666; background:#f9fbfc;" type="text" :value="JSETokenSale" />
 								</div>
+								<button class="bottomButton" v-clipboard:copy="JSETokenSale">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
 							</li>
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list2_1') }}<br />
-								<div style="max-width:280px; display:flex; margin:10px 0px; border-radius:6px; border:solid 1px #eee; padding:4px 8px;">
-									<input disabled style="flex:1; font-size: 0.75em; font-weight:bold; color:#666;" type="text" :value="tokenAddress" />
+								<div style="width:280px; display:flex; margin:10px 0px 0px -20px; border-radius:6px 6px 0px 0px; border:solid 1px #eee; padding:4px 8px; background:#f9fbfc;">
+									<input disabled style="flex:1; font-size: 0.75em; font-weight:bold; color:#666; background:#f9fbfc;" type="text" :value="tokenAddress" />
 								</div>
+								<button class="bottomButton" v-clipboard:copy="tokenAddress">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
 							</li>
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list3_1') }} <a :href="ethscanURL()" target="_BLANK">Etherscan.io</a></li>
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list3') }}</li>
@@ -642,7 +644,10 @@ export default {
 			if (self.launchPadDevMode) {
 				etherscanURL = 'rinkeby.etherscan.io';
 			}
-			let address = `https://${etherscanURL}/address/${self.selectedPaymentAccount}`;
+			let address = `https://${etherscanURL}/`;
+			if (self.selectedPaymentAccount !== '') {
+				address = `https://${etherscanURL}/address/${self.selectedPaymentAccount}`;
+			}
 			if (typeof (tx) !== 'undefined') {
 				address = `https://${etherscanURL}/tx/${tx}`;
 			}
@@ -1404,6 +1409,22 @@ export default {
 .sideButton:hover {
 	background:#00a47a !important;
 }
+.bottomButton {
+	background: #00b48d;
+	border-radius:0px 0px 6px 6px; 
+	margin:0px 0px 10px -20px; 
+	padding:4px 8px; 
+	width:280px; 
+	font-size:0.8em; 
+	font-weight:bold; 
+	max-width:280px;
+	color:#fff;
+}
+
+.bottomButton:hover {
+	background:#00a47a !important;
+}
+
 .icoRow {
 	display: flex;
 }
