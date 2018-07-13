@@ -243,6 +243,7 @@ const router = new Router({
 			path: '/ico',
 			component: ICO,
 			meta: {
+				hideICOButton: true,
 				linkText: '',
 				headerBG: '/banners/icoLaunchpad.png',
 				headerTitle: 'pages.ico.banner.heading', //ICO Launchpad',
@@ -718,6 +719,7 @@ const router = new Router({
 			path: '/:lang/ico',
 			component: ICO,
 			meta: {
+				hideICOButton: true,
 				linkText: '',
 				headerBG: '/banners/icoLaunchpad.png',
 				headerTitle: 'pages.ico.banner.heading', //ICO Launchpad',

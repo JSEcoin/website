@@ -547,7 +547,7 @@ export default {
 		//this.showICOBadge = (this.activeRoutePath !== '/ico');
 
 		//console.log((!this.showICOBadge), (this.activeRoutePath !== '/ico'));
-		if ((!this.showICOBadge) && (this.activeRoutePath !== '/ico')) {
+		if ((!this.showICOBadge) && (this.$route.meta.hideICOButton)) {
 			//enable JSECoin BUY Badge
 			setTimeout(() => {
 				this.showICOBadge = true;

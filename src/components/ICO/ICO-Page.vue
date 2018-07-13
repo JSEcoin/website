@@ -92,7 +92,7 @@
 					<!-- ICO Form ERC20 -->
 					<div class="highlightPanel row">
 						<div id="JSEW-bonusDisplay" v-if="bonus>0">
-							+ 10% BONUS: {{JSEBonusVal}} JSE
+							+ {{bonus}}% BONUS: {{JSEBonusVal}} JSE
 						</div>
 						<div class="col">
 							<label :class="{show:form.ico.address.displayLabel, error:form.ico.address.flag}">
@@ -261,7 +261,19 @@
 				<!-- xPurchase video -->
 			</div>
 			<!-- xDistribution status and video -->
-
+			<div class="row">
+				<dl>
+					<dt>ICO Rank and Overview <i>(12 July 2018)</i></dt>
+					<dd class="row" style="padding:10px; justify-content: center;">
+						<div class="col"><a href="https://icobench.com/ico/jsecoin" target="_blank" rel="nofollow" title="JSEcoin on ICO Bench"><img src="../../assets/ico/icobench.png" style="height:38px; border-radius:4px; margin:0px 4px;" /></a></div>
+						<div class="col"><a href="https://blokt.com/ico-ratings/jsecoin" target="_blank" rel="nofollow" title="JSEcoin on Blokt"><img src="../../assets/ico/blokt-ico-rating-a.png" style="height:38px; border-radius:4px; margin:0px 4px;" /></a></div>
+						<div class="col"><a href="https://icoholder.com/en/jsecoin-22332" target="_blank" rel="nofollow" title="JSEcoin on ICO Holder"><img src="https://icoholder.com/files/img/widget/e7f9eb690f6ce65ea318aa819b7987cb.svg?r=4.11" style="height:38px; border-radius:4px; margin:0px 4px;" /></a></div>
+						<div class="col"><a href="https://www.trackico.io/ico/jsecoin/" target="_blank" rel="nofollow" title="JSEcoin on Track ICO"><img src="../../assets/ico/track.png" style="height:38px; border-radius:4px; margin:0px 4px;" /></a></div>
+						<div class="col"><a href="https://foxico.io/project/jsecoin" target="_blank" title="JSEcoin on FoxICO"><img border="0" src="https://foxico.io/rating/jsecoin"  style="height:38px; border-radius:4px; margin:0px 4px;" alt="JSEcoin ICO rating"/></a></div>
+						<div class="col"><a href="https://icomarks.com/ico/jsecoin" target="_blank" rel="nofollow" title="JSEcoin on ICO Marks"><img border="0" src="https://icomarks.com/widget/j/jsecoin/horizontal.svg" style="height:38px; border-radius:4px; margin:0px 4px;" alt="JSEcoin ICO rating"/></a></div>
+					</dd>
+				</dl>
+			</div>
 			<!-- Ethe Payment and KYC -->
 			<div class="row">
 				<!-- Ethereum Payment Overview Panel -->
@@ -291,6 +303,7 @@
 								<h2><i class="fa fa-info-circle"></i> {{ $t('pages.ico.panel_directPayment.subheading_important') }}</h2>
 								<ol>
 									<li> {{ $t('pages.ico.panel_directPayment.info_list1') }}</li>
+									<li> Minimum accepted transfer <b>0.1 ETH</b></li>
 									<!--<li> {{ $t('pages.ico.panel_directPayment.info_list2') }}</li>-->
 								</ol>
 								<div class="warning">
@@ -301,13 +314,6 @@
 							</div>
 							<!-- xETH payment Info -->
 						</div>
-						<!-- ETH payment Address -->
-						<h2 style="margin-left:10px; text-transform:uppercase;">{{ $t('pages.ico.panel_directPayment.heading_paymentAddress') }} <i class="fa  fa-level-down"></i></h2>
-						<div id="JSEW-ethAddressField">
-							<input disabled type="text" :value="JSETokenSale" />
-							<button class="sideButton" v-clipboard:copy="JSETokenSale">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
-						</div>
-						<!-- xETH payment Address -->
 					</dd>
 				</dl>
 				<!-- xEthereum Payment Overview Panel -->
@@ -334,6 +340,57 @@
 				<!-- xKYC -->
 			</div>
 			<!-- xEthe Payment and KYC -->
+
+			<div class="row">
+				<div class="mainCol">
+					<dl>
+						<dt>{{ $t('pages.ico.panel_directPayment.heading_paymentAddress') }} <i class="fa  fa-level-down"></i></dt>
+						<dd>
+							<div id="JSEW-ethAddressField">
+								<input disabled type="text" :value="JSETokenSale" />
+								<button class="sideButton" v-clipboard:copy="JSETokenSale">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
+							</div>
+						</dd>
+					</dl>
+					
+					<dl style="margin-top:16px">
+						<dt>{{ $t('pages.ico.panel_purchaseHistory.heading_tokenAddress') }} <i class="fa  fa-level-down"></i></dt>
+						<dd>
+							<div id="JSEW-jseAddressField">
+								<input disabled type="text" :value="tokenAddress" />
+								<button class="sideButton" v-clipboard:copy="tokenAddress">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<dl class="thinCol" style="margin-bottom:20px;">
+					<dt>ETH / JSE Bonus Calculator</dt>
+					<dd>
+						
+						<div class="highlightPanel row">
+							<div id="JSEW-bonusDisplay" v-if="bonus>0">
+								+ {{bonus}}% BONUS: {{JSEBonusVal}} JSE
+							</div>
+							<div class="col">
+								<label :class="{show:form.ico.eth.displayLabel, error:form.ico.eth.flag}">
+									<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_ethereumSpend') }} *</div>
+									<div class="amountInput ethIcon">
+										<input type="number" min="0" step="0.1" :placeholder="$t('pages.ico.panel_purchase.form_ethereumSpend') + ' *'" v-model="form.ico.eth.val" @keyup="keyWatch('eth')" @mouseup="keyWatch('eth')" />
+									</div>
+								</label>
+							</div>
+							<div class="col">
+								<label class="icoCoin" :class="{show:form.ico.jse.displayLabel, error:form.ico.jse.flag}">
+									<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_purchaseTokens') }} *</div>
+									<div class="amountInput coin">
+										<input type="number" min="10000" step="200" :placeholder="$t('pages.ico.panel_purchase.form_purchaseTokens') + ' *'" v-model="form.ico.jse.val" @keyup="keyWatch('jse')" @mouseup="keyWatch('jse')" />
+									</div>
+								</label>
+							</div>
+						</div>
+					</dd>
+				</dl>
+			</div>
 
 			<!-- Purchase History and why not to use exchanges -->
 			<div class="row">
@@ -372,7 +429,7 @@
 
 				<!-- Exchange payment info -->
 				<dl id="JSEW-exchangePaymentInfo" :class="{'thinCol':showBuyOption}">
-					<dt><i class="fa fa-info-circle "></i> {{ $t('pages.ico.panel_exchangeInfo.heading_exchangeInfo') }}</dt>
+					<dt><i class="fa fa-info-circle "></i> How To: Add Token Address</dt>
 					<dd>
 						<ol style="padding: 0px 30px;">
 							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list1') }}</li>
@@ -924,7 +981,7 @@ export default {
 				self.showTracker = true;
 				setTimeout(() => {
 					self.showTracker = false;
-				}, 5000);
+				}, 10000);
 				setTimeout(self.updateDistributionDisplay, 1000);
 				self.getUserTransactionList();
 			}).on('error', function(error) {
