@@ -41,6 +41,7 @@
 				<p>
 					{{ $t('pages.about.para_main5') }}
 				</p>
+				<a class="button" style="margin: 20px;" href="/whitepaper.pdf" target="_BLANK">The Official JSECoin Whitepaper</a>
 			</div>
 			<div class="col center" style="align-self: center;">
 				<img width="80%" src="../assets/images/about/about_gfxIco2.png" :alt="$t('pages.about.alt_about')" />
