@@ -156,7 +156,10 @@
 							<!-- ICO Logo -->
 							<div id="JSEW-ICOLogo" class="borderRight">
 								<img :class="{'bonus':bonus>0}" src="../../assets/ico/logo.png" alt="JSECoin - The Javascript Embedded Cryptocurrency" />
-								<button v-on:click="initBuy" class="button buy" :class="{disable: !showBuyOption}">{{BuyJSEButton}}</button>
+								<button style="display:flex; font-size:0.8em; align-items:flex-end;justify-content: center;" v-on:click="initBuy" class="button buy" :class="{disable: !showBuyOption}">
+									<img v-if="!showBuyOption" src="../../assets/ico/metamask_ico.png" style="height: 16px; width: 19px; margin: 0px 4px 0px 0px;" />
+									<img v-else src="../../assets/ico/metamask_ico_active.png" style="height: 16px; width: 19px; margin: 0px 4px 0px 0px;" />
+									{{BuyJSEButton}}</button>
 								<div v-if="bonus>0" style="margin:10px 10px 10px 10px; font-size:0.65em; text-align:center; font-weight:bold; border-radius:3px; border:solid 1px #eee; padding:4px 8px;">{{bonus}}% BONUS ROUND</div>
 							</div>
 							<!-- xICO Logo -->
@@ -311,8 +314,21 @@
 									<p><i>{{ $t('pages.ico.panel_directPayment.msg_doNot') }}</i></p>
 									<!--<p>Please read below on why this is important...</p>-->
 								</div>
+								<div style="text-align:center">
+									<a target="_blank" href="https://tokenmarket.net/what-is/ethereum-token-wallets/" STYLE="background:#3375bb;color:#fff; margin: 10px; font-size: 0.65em; text-align: center; font-weight: bold; border-radius: 3px; border: 0px; padding: 4px 8px;">
+									<i class="fa fa-check"></i> VIEW COMPATIBLE WALLETS</a>
+								</div>
 							</div>
 							<!-- xETH payment Info -->
+						</div>
+							
+						<div class="row" style="padding:10px; justify-content: center;">
+							<div class="col"><a href="https://github.com/ethereum/mist/releases" target="_blank" rel="nofollow" title="Mist Wallet"><img src="../../assets/ico/mist_badge.png" style="height:30px; margin:0px 4px;" /></a></div>
+							<div class="col"><a href="https://token.im/" target="_blank" rel="nofollow" title="IMToken Wallet"><img src="../../assets/ico/imtoken_badge.png" style="height:30px; margin:0px 4px;" /></a></div>
+							<div class="col"><a href="https://www.myetherwallet.com/" target="_blank" rel="nofollow" title="My Ether Wallet"><img src="../../assets/ico/mew_badge.png" style="height:30px; margin:0px 4px;" /></a></div>
+							<div class="col"><a href="https://trustwalletapp.com/" target="_blank" rel="nofollow" title="Trust Wallet"><img src="../../assets/ico/trust_badge.png" style="height:30px; margin:0px 4px;" /></a></div>
+							<div class="col"><a href="https://www.cipherbrowser.com/" target="_blank" title="Cipher Wallet"><img border="0" src="../../assets/ico/cipher_badge.png"  style="height:30px; margin:0px 4px;" /></a></div>
+							<div class="col"><a href="https://www.coinomi.com/" target="_blank" rel="nofollow" title="Coinomi Wallet"><img border="0" src="../../assets/ico/coinomi_badge.png" style="height:30px; margin:0px 4px;" /></a></div>
 						</div>
 					</dd>
 				</dl>
@@ -332,7 +348,7 @@
 						
 						<div class="footer">
 							<router-link style="width:80%" class="button thin" v-bind:to="`/${$store.state.local}/whitelisting`" tag="button">
-								{{ $t('pages.ico.panel_KYC.button_startKYC') }}
+								<i class="fa fa-user-circle-o"></i> {{ $t('pages.ico.panel_KYC.button_startKYC') }}
 							</router-link>
 						</div>
 					</dd>
@@ -348,7 +364,18 @@
 						<dd>
 							<div id="JSEW-ethAddressField">
 								<input disabled type="text" :value="JSETokenSale" />
-								<button class="sideButton" v-clipboard:copy="JSETokenSale">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
+							</div>
+							<div class="row">
+								<div class="col" style="max-width:inherit;">
+									<button class="button thin green" style="width: 80%; font-size:0.8em;" v-clipboard:copy="JSETokenSale">
+										<i class="fa fa-copy"></i> {{ $t('pages.ico.panel_directPayment.button_copy') }}
+									</button>
+								</div>
+								<div class="col" style="max-width:inherit;">
+									<a target="_BLANK" href="https://etherscan.io/address/0xcfc4fceb90787ef1fda15bb115630ef453f50f86" class="button thin" style="width: 80%; font-size:0.8em">
+										<i class="fa fa-bar-chart"></i> ETHERSCAN LOOKUP
+									</a>
+								</div>
 							</div>
 						</dd>
 					</dl>
@@ -358,35 +385,41 @@
 						<dd>
 							<div id="JSEW-jseAddressField">
 								<input disabled type="text" :value="tokenAddress" />
-								<button class="sideButton" v-clipboard:copy="tokenAddress">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
+							</div>
+							<div class="row">
+								<div class="col" style="max-width:inherit;">
+									<button class="button thin green" style="width: 80%; font-size:0.8em" v-clipboard:copy="tokenAddress">
+										<i class="fa fa-copy"></i> {{ $t('pages.ico.panel_directPayment.button_copy') }}
+									</button>
+								</div>
+								<div class="col" style="max-width:inherit;">
+									<a target="_BLANK" href="https://etherscan.io/address/0x2d184014b5658C453443AA87c8e9C4D57285620b" class="button thin" style="width: 80%; font-size:0.8em">
+										<i class="fa fa-bar-chart"></i> ETHERSCAN LOOKUP
+									</a>
+								</div>
 							</div>
 						</dd>
 					</dl>
 				</div>
-				<dl class="thinCol" style="margin-bottom:20px;">
+				<dl id="JSEW-calculator" class="thinCol" style="margin-bottom:20px;">
 					<dt>ETH / JSE Bonus Calculator</dt>
 					<dd>
-						
-						<div class="highlightPanel row">
-							<div id="JSEW-bonusDisplay" v-if="bonus>0">
-								+ {{bonus}}% BONUS: {{JSEBonusVal}} JSE
-							</div>
-							<div class="col">
-								<label :class="{show:form.ico.eth.displayLabel, error:form.ico.eth.flag}">
-									<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_ethereumSpend') }} *</div>
-									<div class="amountInput ethIcon">
-										<input type="number" min="0" step="0.1" :placeholder="$t('pages.ico.panel_purchase.form_ethereumSpend') + ' *'" v-model="form.ico.eth.val" @keyup="keyWatch('eth')" @mouseup="keyWatch('eth')" />
-									</div>
-								</label>
-							</div>
-							<div class="col">
-								<label class="icoCoin" :class="{show:form.ico.jse.displayLabel, error:form.ico.jse.flag}">
-									<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_purchaseTokens') }} *</div>
-									<div class="amountInput coin">
-										<input type="number" min="10000" step="200" :placeholder="$t('pages.ico.panel_purchase.form_purchaseTokens') + ' *'" v-model="form.ico.jse.val" @keyup="keyWatch('jse')" @mouseup="keyWatch('jse')" />
-									</div>
-								</label>
-							</div>
+						<div id="JSEW-bonusDisplay" v-if="bonus>0">
+							+ {{bonus}}% BONUS: {{JSEBonusVal}} JSE
+						</div>
+						<div style="margin:20px;">
+							<label :class="{show:form.ico.eth.displayLabel, error:form.ico.eth.flag}">
+								<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_ethereumSpend') }} *</div>
+								<div class="amountInput ethIcon">
+									<input type="number" min="0" step="0.1" :placeholder="$t('pages.ico.panel_purchase.form_ethereumSpend') + ' *'" v-model="form.ico.eth.val" @keyup="keyWatch('eth')" @mouseup="keyWatch('eth')" />
+								</div>
+							</label>
+							<label class="icoCoin" :class="{show:form.ico.jse.displayLabel, error:form.ico.jse.flag}">
+								<div class="inputLabel">{{ $t('pages.ico.panel_purchase.form_purchaseTokens') }} *</div>
+								<div class="amountInput coin">
+									<input type="number" min="10000" step="200" :placeholder="$t('pages.ico.panel_purchase.form_purchaseTokens') + ' *'" v-model="form.ico.jse.val" @keyup="keyWatch('jse')" @mouseup="keyWatch('jse')" />
+								</div>
+							</label>
 						</div>
 					</dd>
 				</dl>
@@ -400,12 +433,17 @@
 					<dd class="hasFooter" style="padding: 0px 0px 90px 0px;">
 						<p>
 							You can purchase JSE at any time during the ICO - <br />
-							Here are a list of JSE Token transaction you have made:
+							Here are a list of previous JSE Token transaction you have made:
 						</p>
 						<div class="hr" style="margin:10px 0px;"><hr /></div>
+						<p>
+							You can also {{ $t('pages.ico.panel_exchangeInfo.info_list3_1') }} <a :href="ethscanURL()" target="_BLANK">Etherscan.io</a>
+						</p>
+						<div class="hr" style="margin:10px 0px;"><hr /></div>
+						<h2 style="margin:10px;">Purchased Tokens</h2>
 						<!-- Purchase Overview -->
 						<ul style="margin:0px;padding:0px;">
-							<li style="margin:10px 0px; list-style:none; padding:4px 8px;" :key="index" v-for="(transaction, index) in userTransactionList">
+							<li v-if="(typeof(transaction.returnValues['_tokens']) !== 'undefined')" style="margin:10px 0px; list-style:none; padding:4px 8px;" :key="index" v-for="(transaction, index) in userTransactionList">
 								<a target="_BLANK" style="display:block; border:solid 1px #eee; border-radius:6px;" :href="ethscanURL(transaction.transactionHash)">
 									<b style="display:block; padding:4px 8px;">{{convertToJSE(transaction.returnValues['_tokens'])}} JSE</b>
 									<div style="margin:0px;" class="hr"><hr /></div>
@@ -413,43 +451,31 @@
 								</a>
 							</li>
 						</ul>
-						<!-- xPurchase Overview -->
-						<div class="footer" style="background:#fff; font-size:1em; border-top:solid 1px rgb(238, 238, 238);">
-							<!-- Token Address -->
-							<h2 style="margin-left:10px; text-transform:uppercase;">{{ $t('pages.ico.panel_purchaseHistory.heading_tokenAddress') }} <i class="fa  fa-level-down"></i></h2>
-							<div id="JSEW-jseAddressField">
-								<input disabled type="text" :value="tokenAddress" />
-								<button class="sideButton" v-clipboard:copy="tokenAddress">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
-							</div>
-							<!-- xToken Address -->
-						</div>
 					</dd>
 				</dl>
 				<!-- xPurchase History -->
 
 				<!-- Exchange payment info -->
 				<dl id="JSEW-exchangePaymentInfo" :class="{'thinCol':showBuyOption}">
-					<dt><i class="fa fa-info-circle "></i> How To: Add Token Address</dt>
+					<dt><i class="fa fa-info-circle "></i> How To: Add &amp; See Your JSE Tokens</dt>
 					<dd>
 						<ol style="padding: 0px 30px;">
-							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list1') }}</li>
-							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list2') }}<br />
-								<div style="width:280px; display:flex; margin:10px 0px 0px -20px; border-radius:6px 6px 0px 0px; border:solid 1px #eee; padding:4px 8px; background:#f9fbfc;">
-									<input disabled style="flex:1; font-size: 0.75em; font-weight:bold; color:#666; background:#f9fbfc;" type="text" :value="JSETokenSale" />
-								</div>
-								<button class="bottomButton" v-clipboard:copy="JSETokenSale">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
-							</li>
-							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list2_1') }}<br />
+							<li style="margin:10px;">In your ERC20 Wallet "Add a custom token".</li>
+							<li style="margin:10px;"><b>TOKEN ADDRESS:</b><br />
 								<div style="width:280px; display:flex; margin:10px 0px 0px -20px; border-radius:6px 6px 0px 0px; border:solid 1px #eee; padding:4px 8px; background:#f9fbfc;">
 									<input disabled style="flex:1; font-size: 0.75em; font-weight:bold; color:#666; background:#f9fbfc;" type="text" :value="tokenAddress" />
 								</div>
 								<button class="bottomButton" v-clipboard:copy="tokenAddress">{{ $t('pages.ico.panel_directPayment.button_copy') }}</button>
 							</li>
-							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list3_1') }} <a :href="ethscanURL()" target="_BLANK">Etherscan.io</a></li>
-							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list3') }}</li>
-							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list4') }}</li>
-							<li>{{ $t('pages.ico.panel_exchangeInfo.info_list5') }}</li>
+							<li style="margin:10px;"><b>TOKEN SYMBOL:</b>
+								JSE
+							</li>
+							<li style="margin:10px;"><b>DECIMALS OF PRECISION:</b>
+								18
+							</li>
+							<li style="margin:10px;">{{ $t('pages.ico.panel_exchangeInfo.info_list4') }}</li>
 						</ol>
+						<div class="hr" style="margin:10px 0px;"><hr /></div>	
 					</dd>
 				</dl>
 				<!-- xExchange payment info -->
@@ -1211,6 +1237,7 @@ export default {
     position: relative;*/
 }
 
+#JSEW-calculator .amountInput,
 #JSEW-ICOMask .amountInput {
     flex-grow: 1;
     display: flex;
@@ -1222,12 +1249,14 @@ export default {
     border-radius: 3px;
 	background-repeat: no-repeat;
 }
+#JSEW-calculator .amountInput input,
 #JSEW-ICOMask .amountInput input {
     background: transparent;
     margin: 0px !important;
     padding-left: 30px !important;
     width: 100%;
 }
+#JSEW-calculator .ethIcon,
 #JSEW-ICOMask .ethIcon {
 	background-image: url(../../assets/ico/eth_token.png);
 }
@@ -1325,17 +1354,19 @@ export default {
 	cursor: default;
 }
 
-
+#JSEW-calculator label,
 #JSEW-ICOMask label {
 	display:flex;
 	position: relative;
 }
 
+#JSEW-calculator label input,
 #JSEW-ICOMask label input,
 #JSEW-ICOMask label textarea {
 	flex-grow:1;
 }
 
+#JSEW-calculator .inputLabel,
 #JSEW-ICOMask .inputLabel {
 	position: absolute;
 	top:0px;
@@ -1345,6 +1376,7 @@ export default {
 	opacity:0;
 	transition: opacity 0.2s;
 }
+#JSEW-calculator label.show .inputLabel,
 #JSEW-ICOMask label.show .inputLabel {
 	opacity:1;
 }
@@ -1364,6 +1396,17 @@ export default {
 	background:#087cd3;
 }
 
+.button.thin.green {
+	background: #00b48d;
+}
+#JSEW-ICOMask button:hover,
+.button.thin.green:hover {
+	background:#00a47a;
+}
+
+#JSEW-calculator input[type="text"],
+#JSEW-calculator input[type="number"],
+#JSEW-calculator input[type="email"],
 #JSEW-ICOMask input[type="text"],
 #JSEW-ICOMask input[type="number"],
 #JSEW-ICOMask input[type="email"],
@@ -1377,19 +1420,25 @@ export default {
 	margin:26px 16px;
 }
 
+#JSEW-calculator .error input,
+#JSEW-calculator .error textarea,
 #JSEW-ICOMask .error input,
 #JSEW-ICOMask .error textarea {
 	box-shadow:inset 0px 0px 0px 1px #ffb4b4, 0px 0px 0px 6px #fff6f6;
 	color:#ff8585;
 }
+#JSEW-calculator input:focus,
+#JSEW-calculator textarea:focus,
 #JSEW-ICOMask input:focus,
 #JSEW-ICOMask textarea:focus {
 	box-shadow:inset 0px 0px 0px 1px #a8d2ff, 0px 0px 0px 6px #f4f9ff;
 	color:#73b6fb;
 }
+#JSEW-calculator .error .inputLabel,
 #JSEW-ICOMask .error .inputLabel {
 	color:#ff8585;
 }
+#JSEW-calculator .errorMsg,
 #JSEW-ICOMask .errorMsg {
 	background-color: #ffe8e6;
     color: #db2828;
@@ -1397,6 +1446,7 @@ export default {
 	padding:16px;
 	border-radius: 8px;
 }
+#JSEW-calculator .highlightPanel,
 #JSEW-ICOMask .highlightPanel {
 	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.3);
 	padding:10px;
@@ -1406,6 +1456,7 @@ export default {
 	position: relative;
 	margin-bottom:40px;
 }
+#JSEW-calculator .highlightPanelFlat,
 #JSEW-ICOMask .highlightPanelFlat {
 	padding:10px;
 	margin:20px;
@@ -1560,7 +1611,6 @@ export default {
 }
 
 #JSEW-KYC i {
-	color:#8d8d8d
 }
 
 #JSEW-KYCButton {
@@ -1872,6 +1922,25 @@ th {
 	padding:0px 20px;
 	font-size:1em;
 }
+.col.twinFooterButton {
+	max-width: inherit;
+	color:#fff;
+	background:#00b48d;
+	height:40px;
+	padding:0px 20px;
+	font-size:1em;
+}
+.col.twinFooterButton:first-child {
+	border-radius: 0px 0px 0px 4px;
+}
+.col.twinFooterButton:last-child {
+	border-radius: 0px 0px 4px 0px;
+}
+
+.col.twinFooterButton:hover {
+	background:#00a47a !important;
+}
+
 .warning {
 	background-color: #fffaf3 !important;
     color: #573a08;
