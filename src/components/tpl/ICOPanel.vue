@@ -1,6 +1,6 @@
 <template>
 	<div class="row">
-		<div class="col" style="max-width:none">
+		<div id="JSEW-icoInfoPanel" class="col" style="max-width:none">
 			<dl id="JSEW-tokenDist" class="mainCol">
 				<dt>
 					{{ $t('pages.ico.panel_tokenDist.heading_tokenDist') }}
@@ -43,7 +43,7 @@
 								</div>
 							</div>
 							<!-- xTotal JSE Distribution -->
-							<div class="row" style="margin:10px 0px;">
+							<div id="JSEW-icoInfoPanelOverview" class="row">
 								<!-- Current Distribution Spread -->
 								<div id="JSEW-currentDistSpread" class="mainCol borderRight">
 									<h2>{{ $t('pages.ico.panel_tokenDist.subheading_currentDist') }}</h2>
@@ -99,7 +99,7 @@
 				</dd>
 			</dl>
 		</div>
-		<div class="col" style="width:300px; max-width:none;">
+		<div id="JSEW-promoVideo" class="col" style="width:300px; max-width:none;">
 			<dl id="JSEW-tokenDist">
 				<dt>
 					Explainer Video
@@ -1053,10 +1053,19 @@ th {
 	text-overflow: ellipsis;
 	max-width:100px;
 }
+#JSEW-icoInfoPanelOverview {
+	margin:10px 0px;
+}
 
 @media screen and (max-width: 1000px) {
 	.enableResponsive #JSEW-ETHQRCode.borderRight {
 		border:0px;
+	}
+	.enableResponsive #JSEW-promoVideo {
+		display: none;
+	}
+	.enableResponsive #JSEW-icoInfoPanel {
+		max-width: 640px !important;
 	}
 }
 
@@ -1077,6 +1086,15 @@ th {
 	.enableResponsive .thinCol {
 		flex:1;
 	}
+	.enableResponsive .icoRow {
+		font-size:1.4em;
+	}
+	.enableResponsive #JSEW-icoMeter {
+		margin:0px;
+	}
+	.enableResponsive #JSEW-icoInfoPanelOverview {
+		margin:6px 0px;
+	}
 }
 @media screen and (max-width: 720px) {
 	.enableResponsive iframe {
@@ -1091,6 +1109,9 @@ th {
 @media screen and (max-width: 440px) {
 	.enableResponsive iframe {
 		height:230px;
+	}
+	.enableResponsive #JSEW-distributionCounterWrapper {
+		display: none;
 	}
 }
 </style>
