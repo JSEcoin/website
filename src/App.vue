@@ -441,6 +441,7 @@
 					</div>
 				</div>
 
+
 				<div id="JSEW-footerCompanyInfoBar" class="cf">
 					<div class="wrapper">
 						<p id="JSEW-footerCompanyInfo">
@@ -453,6 +454,23 @@
 					</div>
 				</div>
 
+				<div id="JSEW-footerPrivacy" class="cf">
+					<div class="wrapper">
+						<router-link v-bind:to="`/${$store.state.local}/legal/privacyPolicy`" tag="a">
+							{{ $t('template.footer.privacy.link_privacyPolicy') }} ›
+						</router-link><br />
+						<router-link v-bind:to="`/${$store.state.local}/legal/terms`" tag="a">
+							{{ $t('template.footer.privacy.link_terms') }} ›
+						</router-link><br />
+						<router-link v-bind:to="`/${$store.state.local}/legal/kycPolicy`" tag="a">
+							{{ $t('template.footer.privacy.link_kyc') }} ›
+						</router-link><br />
+						<router-link v-bind:to="`/${$store.state.local}/legal/gdpr`" tag="a">
+							GDPR ›
+						</router-link>
+					</div>
+				</div>
+				
 				<div id="JSEW-copy" class="cf">
 					<div class="wrapper">
 						<div id="JSEW-copyInfo">
@@ -2187,6 +2205,21 @@ footer a {
 #JSEW-langOptions a:hover {
 	background:#e6e6e6;
 	border-radius:60px;
+}
+
+#JSEW-footerPrivacy .wrapper {
+	display: flex;
+	justify-content: center;
+}
+#JSEW-footerPrivacy a {
+	display: block;
+    padding: 4px 8px;
+    background: #222533;
+    border-radius: 12px;
+    margin: 6px;
+    color: #a1b1bc;
+    font-size: 0.6em;
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 1000px) {
