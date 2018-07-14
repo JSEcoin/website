@@ -648,9 +648,11 @@ export default {
 				}
 			};
 
+			/*
 			setInterval(() => {
-				web3.version.getNetwork(checkNetwork);
+				window.web3.version.getNetwork(checkNetwork);
 			}, 1000);
+			*/
 		}
 
 		window.jseTokenContract = new window.ActiveNetwork.eth.Contract(jseTokenObj.abi, self.tokenAddress);

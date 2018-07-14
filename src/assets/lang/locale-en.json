@@ -241,9 +241,9 @@
 		},
 		"ico": {
 			"meta": {
-				"title": "ICO",
-				"keywords": "",
-				"description": ""
+				"title": "JSEcoin ICO - JSE Token Sale",
+				"keywords": "jsecoin, ico, erc20, token sale, initial coin offering, invest",
+				"description": "Use the JSEcoin ICO launchpad to purchase JSE tokens during our ICO using an ethereum ERC20 smart contract"
 			},
 			"banner": {
 				"linkText": "ICO Launchpad",
@@ -327,7 +327,7 @@
 			"para_main2": "The JSECoin project includes the digital currency, wallet, mining and developer platform where any business or individual with an email address can generate tokens as well as securely and cost-effectively send and receive cryptocurrency payments online.",
 			"para_main3": "The size of our network and widening acceptance of our product have helped us become one of the leading cryptocurrency networks for web-based mining. We are leading the way in promoting ethical opt-in web-based mining to our publishers which drive traffic and computation power to the network.",
 			"para_main4": "Headquartered in Cambridge, United Kingdom our team are working towards building a world class payments solution for the web utilizing the latest developments in blockchain technology. The world is changing and how we store value, trade and use money is going to be disrupted in the next decade. The emergence of cryptocurrencies provides a unique opportunity for us to change the world and make a difference.",
-			"para_main5": "If you would like to know more about the project please take the time to look at our updated whitepaper https://JSECoin.com/whitepaper.pdf",
+			"para_main5": "If you would like to know more about the project please take the time to look at our updated whitepaper:",
 			"alt_about": "About JSE"
 		},
 		"charity": {
