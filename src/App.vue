@@ -470,7 +470,7 @@
 						</router-link>
 					</div>
 				</div>
-				
+
 				<div id="JSEW-copy" class="cf">
 					<div class="wrapper">
 						<div id="JSEW-copyInfo">
@@ -2207,6 +2207,9 @@ footer a {
 	border-radius:60px;
 }
 
+#JSEW-footerPrivacy {
+	display: none;
+}
 #JSEW-footerPrivacy .wrapper {
 	display: flex;
 	justify-content: center;
@@ -2293,6 +2296,10 @@ footer a {
 	}
 }
 @media screen and (max-width: 768px) {
+		
+	.enableResponsive #JSEW-footerPrivacy {
+		display: none;
+	}
 	.enableResponsive #JSEW-footerSitemap,
 	.enableResponsive #JSEW-footerInfo,
 	.enableResponsive #JSEW-langOptions {
