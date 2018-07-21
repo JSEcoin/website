@@ -79,7 +79,7 @@ export default {
 	name: 'investorOptions',
 	metaInfo () {
 		return {
-			title: this.$t('pages.investorOverview.meta.title'),
+			title: this.$t('pages.investorOverview.meta.title') + ' 💰',
 			meta: [
 				{
 					vmid: 'description',

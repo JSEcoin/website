@@ -54,7 +54,7 @@ export default {
 	name: 'developerOptions',
 	metaInfo () {
 		return {
-			title: this.$t('pages.developerOverview.meta.title'),
+			title: this.$t('pages.developerOverview.meta.title') + ' 🤓',
 			meta: [
 				{
 					vmid: 'description',

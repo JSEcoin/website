@@ -410,7 +410,7 @@ export default {
 	name: 'home',
 	metaInfo () {
 		return {
-			title: this.$t('pages.home.meta.title'),
+			title: this.$t('pages.home.meta.title') + ' 🤖',
 			titleTemplate: null,
 		};
 	},

@@ -707,7 +707,7 @@ export default {
 	},
 	metaInfo () {
 		return {
-			title: this.$t('pages.ico.meta.title'),
+			title: this.$t('pages.ico.meta.title') + ' 🥇',
 			meta: [
 				{
 					vmid: 'description',

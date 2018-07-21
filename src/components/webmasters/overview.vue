@@ -61,7 +61,7 @@ export default {
 	name: 'webmastersOverview',
 	metaInfo () {
 		return {
-			title: this.$t('pages.webmastersOverview.meta.title'),
+			title: this.$t('pages.webmastersOverview.meta.title') + ' ⚒',
 			meta: [
 				{
 					vmid: 'description',

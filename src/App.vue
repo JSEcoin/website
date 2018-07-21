@@ -595,7 +595,7 @@ export default {
 		});
 
 		return {
-			title: this.$t('template.meta.title'),
+			title: this.$t('template.meta.title') + this.$route.meta.unicode,
 			titleTemplate: 'JSECoin | %s',
 			htmlAttrs: {
 				lang: this.$store.state.local,
