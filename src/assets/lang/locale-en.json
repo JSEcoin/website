@@ -3,7 +3,8 @@
 	"updates": {
 		"20180424": "priavcyPolicy > para_main1_cta, section_where_next > whole section",
 		"20180502": "pages.downloads, pages.whitelisting",
-		"20180706": "pages.ico"
+		"20180706": "pages.ico",
+		"20180710": "KYC.whitelisting"
 	},
 	"tpl": {
 		"globalNavHeader": {
@@ -240,9 +241,9 @@
 		},
 		"ico": {
 			"meta": {
-				"title": "ICO",
-				"keywords": "",
-				"description": ""
+				"title": "JSEcoin ICO - JSE Token Sale",
+				"keywords": "jsecoin, ico, erc20, token sale, initial coin offering, invest",
+				"description": "Use the JSEcoin ICO launchpad to purchase JSE tokens during our ICO using an ethereum ERC20 smart contract"
 			},
 			"banner": {
 				"linkText": "ICO Launchpad",
@@ -251,48 +252,48 @@
 			},
 			"panel_purchase": {
 				"heading_purchase": "Purchase JSE Tokens via an Ethereum ERC Compatible Wallet (ie MetaMask)",
-				"purchase_list1": "Select your wallet address",
-				"purchase_list2": "Enter either the amount of JSE Tokens you would like to purchase or the amount of Ethereum to exchange for JSE Tokens.",
+				"purchase_list1": "Confirm or enter your wallet address",
+				"purchase_list2": "Enter either the amount of Ethereum you would like to transfer for JSE Tokens.",
 				"purchase_list3": "Select the “Buy Tokens” button to initiate the purchase through your connected wallet.",
 				"highlight_info1": "Make sure you have filled out the",
 				"highlight_link": "whitelist form",
 				"highlight_info2": "if you would like to invest more than",
 				"form_walletAddress": "Connected Wallet Address",
-				"form_purchaseTokens": "Purchase JSE Tolkens",
+				"form_purchaseTokens": "Purchase JSE Tokens",
 				"form_ethereumSpend": "Ethereum to Spend",
 				"button_buyTokens": "BUY TOKENS",
 				"button_cancel": "CANCEL"
 			},
 			"panel_tokenDist": {
-				"heading_tokenDist": "JSE Token Distribution",
-				"subheading_totalDist": "Total Distributed At ICO",
-				"subheading_currentDist": "Current Distributions",
-				"subheading_DistEndsIn": "Distribution Ends In",
+				"heading_tokenDist": "JSE Token Distribution Overview",
+				"subheading_totalDist": "Total JSE Distributed",
+				"subheading_currentDist": "Transfers In / Out",
+				"subheading_DistEndsIn": "JSE Distribution Ends In",
 				"footer_msg": "**Depending on the Ethereum network traffic, figures may be delayed."
 			},
 			"panel_howToPurchase": {
 				"heading_howTo": "How To Purchase JSE Tokens Video",
 				"footer_header": "Important for our first time investors",
-				"footer_msg": "Please watch our tutorial on how to buy JSECoin Tokens"
+				"footer_msg": "Please watch our tutorial on how to buy JSE Tokens"
 			},
 			"panel_directPayment": {
-				"heading_directPayment": "Use this payment method to send ETH from ERC20 Compatible Wallet to our smart contract",
+				"heading_directPayment": "Send ETH direct from an ERC20 Compatible Wallet to our smart contract",
 				"subheading_important": "Important",
-				"info_list1": "Please make sure to send funds from a valid ERC20 compatible Ethereum address to receive your tokens.",
-				"info_list2": "In order to add JSECoin tokens to your ETH wallet make sure you use this address.",
+				"info_list1": "Please make sure to send funds from a valid ERC20 compatible wallet to receive your tokens.",
+				"info_list2": "In order to purchase JSE tokens send ETH this address:",
 				"subheading_doNot": "DO NOT send ETH directly from an exchange!",
 				"msg_doNot": "You must use an Ethereum compatible wallet.",
 				"heading_paymentAddress": "JSECOIN ETH SMART CONTRACT PAYMENT ADDRESS",
 				"button_copy": "COPY TO CLIPBOARD"
 			},
 			"panel_KYC": {
-				"heading_KYC": "Please pass the KYC verification",
-				"para_kyc": "In order to unlock JSE Tokens you will be required to successfully pass the KYC procedure. JSECoin Ltd strongly encourages all users to pass the KYC before purchasing JSECoin tokens. The verification process takes approximately 5 minutes.",
-				"para_infoMsg": "Note: JSECoin tokens will remain locked until the KYC is passed successfully",
+				"heading_KYC": "Looking to invest more than $10,000?",
+				"para_kyc": "We are legally obliged to require our larger investors to pass the Know Your Customer (KYC) procedure - To do this head over to our whitelist form and complete the required information - The verification process takes 24hrs and you will be notified by email when your ethereum address has been approved and whitelisted on our smart contract.",
+				"para_infoMsg": "Note: All Ethereum accounts that have not whitelisted with us and send above $10,000 will be declined and will not receive JSE Tokens.",
 				"button_startKYC": "START KYC"
 			},
 			"panel_purchaseHistory": {
-				"heading_purchaseHistory": "Purchase History",
+				"heading_purchaseHistory": "Your ICO Tracked Transfer History",
 				"tblHead_tokens": "Tokens",
 				"tblHead_totalSold": "Total Sold",
 				"tblHead_address": "Address",
@@ -301,9 +302,11 @@
 			"panel_exchangeInfo": {
 				"heading_exchangeInfo": "DO NOT send ETH directly from an exchange!",
 				"info_list1": "Please make sure to send funds from a valid ERC20 compatible Ethereum address to receive your tokens.",
-				"info_list2": "In order to add JSECoin tokens to your ETH wallet make sure you use this address:",
-				"info_list3": "Use MyEtherWallet, MetaMask or other compatible wallets. Explore and track your ETH transactions on",
-				"info_list4": "Your JSECoin tokes will appear on your Dashboard.",
+				"info_list2": "In order to purchase JSE tokens send ETH this address:",
+				"info_list2_1": "To see your JSE Tokens you may need to add our JSE Token address to your wallet:",
+				"info_list3": "Use MyEtherWallet, MetaMask or other compatible wallets.",
+				"info_list3_1": "Explore and track your ETH transactions on",
+				"info_list4": "Your JSECoin tokens will appear on your Dashboard.",
 				"info_list5": "Set decimal numer: 18 - Some wallets may ask you to enter decimals."
 			}
 		},
@@ -324,7 +327,7 @@
 			"para_main2": "The JSECoin project includes the digital currency, wallet, mining and developer platform where any business or individual with an email address can generate tokens as well as securely and cost-effectively send and receive cryptocurrency payments online.",
 			"para_main3": "The size of our network and widening acceptance of our product have helped us become one of the leading cryptocurrency networks for web-based mining. We are leading the way in promoting ethical opt-in web-based mining to our publishers which drive traffic and computation power to the network.",
 			"para_main4": "Headquartered in Cambridge, United Kingdom our team are working towards building a world class payments solution for the web utilizing the latest developments in blockchain technology. The world is changing and how we store value, trade and use money is going to be disrupted in the next decade. The emergence of cryptocurrencies provides a unique opportunity for us to change the world and make a difference.",
-			"para_main5": "If you would like to know more about the project please take the time to look at our updated whitepaper https://JSECoin.com/whitepaper.pdf",
+			"para_main5": "If you would like to know more about the project please take the time to look at our updated whitepaper:",
 			"alt_about": "About JSE"
 		},
 		"charity": {
@@ -398,7 +401,8 @@
 			"kyc_regs":"For potential investments valued at more than $10,000 USD we are required to comply with KYC regulations to prevent money laundering. Please double check the name and address on your photo ID matches the name and address on your account and that the document also includes a photograph and date of birth which is all clearly visible and readable.",
 			"submit":"submit",
 			"heading_thankyou":"Whitelisting Application Received",
-			"para_thankyou":"Please check the ICO page on the platform for updates on your application. KYC regulations can take up to 7 days to complete."
+			"para_thankyou":" Thankyou for whitelisting - you can now purchase JSE and invest up to 20 ETH. If you would like to invest more you will be required to re-submit the form with an amount over 10,000 USD that you are looking to invest - this will require photo ID as part of our legal KYC procedure.",
+			"para_thankyou_kyc":"Thankyou for whitelisting - we will contact via email when your account has been approved by our KYC partner. This will allow you to invest over 20 ETH. If you would like you can invest upto 20 ETH until your submission has been approved."
 		},
 		"downloads": {
 			"meta": {
@@ -872,7 +876,7 @@
 			"subheading_what": "Cryptocurrency targeted for the web",
 			"para_what1": "JSEcoin is a simple to use platform making cryptocurrency accessible to a much wider audience encouraging mainstream adoption, alongside offering a genuine solution to disrupt the $200 billion online advertising industry.",
 			"heading_why": "Why Invest",
-			"subheading_why": "Committed to changing the way sites are monitised",
+			"subheading_why": "Committed to changing the way sites are monetised",
 			"para_why1": "This is a new concept that is set to challenge the current model for website monetisation. With the current online advertising industry being valued in excess of $200 billion worldwide, this would be a great time to invest in a platform that could challenge the current status quo. Demand for JSECoin will be created by the introduction of merchant tools allowing for the use of JSECoin as a method for digital payments. We are building a large community of platform miners to ensure that there is large pool of users with JSECoin tokens to spend.",
 			"para_why2": "The current trend for an ICO is for a company to do so based on an idea and a whitepaper. This clearly poses a huge risk for investors that no product will ever come to market. Whilst we are in no way able to offer investors any guarantees of a return (we would question anyone who does) we are trying to build a great platform and engage a solid user base to mitigate this risk and make JSECoin a more viable investment opportunity.",
 			"heading_when": "When to Invest",

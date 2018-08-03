@@ -132,6 +132,9 @@
 							<router-link v-bind:to="`/${$store.state.local}/investors/overview`" tag="a">
 								{{ $t('template.navigation.link_whyInvest') }}
 							</router-link>
+							<a href="/JSECoinV2_Overview.pdf" target="_blank">
+								Intro Slides <i class="fa fa-file-pdf-o"></i>
+							</a>
 							<a href="/onepager.pdf" target="_blank">
 								{{ $t('template.navigation.link_overview') }} <i class="fa fa-file-pdf-o"></i>
 							</a>
@@ -330,6 +333,9 @@
 						</nav>
 						<nav>
 							<h4>{{ $t('template.navigation.heading_investors') }}</h4>
+							<a href="/JSECoinV2_Overview.pdf" target="_blank">
+								Intro Slides <i class="fa fa-file-pdf-o"></i>
+							</a>
 							<a href="/onepager.pdf" target="_blank">
 								{{ $t('template.navigation.link_overview') }} <i class="fa fa-file-pdf-o"></i>
 							</a>
@@ -435,6 +441,7 @@
 					</div>
 				</div>
 
+
 				<div id="JSEW-footerCompanyInfoBar" class="cf">
 					<div class="wrapper">
 						<p id="JSEW-footerCompanyInfo">
@@ -444,6 +451,23 @@
 						<p id="JSEW-officeAddress">
 							<i class="fa fa-globe"></i> {{ $t('template.footer.companyInfo.text_address') }}
 						</p>
+					</div>
+				</div>
+
+				<div id="JSEW-footerPrivacy" class="cf">
+					<div class="wrapper">
+						<router-link v-bind:to="`/${$store.state.local}/legal/privacyPolicy`" tag="a">
+							{{ $t('template.footer.privacy.link_privacyPolicy') }} ›
+						</router-link><br />
+						<router-link v-bind:to="`/${$store.state.local}/legal/terms`" tag="a">
+							{{ $t('template.footer.privacy.link_terms') }} ›
+						</router-link><br />
+						<router-link v-bind:to="`/${$store.state.local}/legal/kycPolicy`" tag="a">
+							{{ $t('template.footer.privacy.link_kyc') }} ›
+						</router-link><br />
+						<router-link v-bind:to="`/${$store.state.local}/legal/gdpr`" tag="a">
+							GDPR ›
+						</router-link>
 					</div>
 				</div>
 
@@ -471,6 +495,34 @@
 				</div>
 			</footer>
 		</div>
+		
+		<router-link v-bind:to="`/${$store.state.local}/ico`" tag="button" id="JSEW-ICOAlert" :class="{'active': showICOBadge}">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style="white-space: preserve-spaces; display:block; position:absolute; top:0px; width: 60px; margin: 50%; left: -30px; top: -26px;">
+				<g id="JSEA-rotatingLogo2" :class="{'active': animateBadge}" filter="none" transform="translate(498,507) translate(-445.503,-500.996)" style="fill: #00b1f4;">
+					<path id="JSEA-layer1" d="M56.3,556L55.8,704.3C55.9,735.5,72.7,764.5,99.6,780.2L229.3,854.5C256,869.7,289,869.8,316.1,854.7L446.7,779.3C473.6,763.8,490.5,734.9,490.4,703.8L490.9,555.5C490.8,524.3,474,495.3,447.1,479.6L317.4,405.3C290.7,390.1,257.7,390,230.6,405.1L100,480.4C73.1,495.9,56.2,524.8,56.3,556ZM273.3,470L411.9,550.8L411.8,709.9L273.9,789.5L136,710L135.3,549.6L273.3,470Z" transform="translate(-55.8,-0.0372215)" style=""/>
+					<path id="JSEA-layer2" d="M510.2,556.3L509.7,704.6C509.8,735.8,526.6,764.8,553.5,780.5L683.2,854.8C709.9,870,742.9,870.1,770,855L900.6,779.6C927.5,764.1,944.4,735.2,944.3,704.1L944.8,555.8C944.7,524.6,927.9,495.6,901,479.9L771.3,405.6C744.6,390.4,711.6,390.3,684.5,405.4L553.9,480.8C527.1,496.3,510.2,525.1,510.2,556.3ZM727.2,470.4L865.8,551.2L865.7,710.3L727.8,789.9L590,710.4L589.3,550L727.2,470.4Z" transform="translate(-55.8,-0.0372215)" style=""/>
+					<path id="JSEA-layer3" d="M283,162.2L282.5,310.5C282.6,341.7,299.4,370.7,326.3,386.4L456,460.7C482.7,475.9,515.7,476,542.8,460.9L673.4,385.5C700.3,370,717.2,341.1,717.1,310L717.6,161.7C717.5,130.5,700.7,101.5,673.8,85.8L544.1,11.5C517.4,-3.7,484.4,-3.8,457.3,11.3L326.7,86.7C299.8,102.2,282.9,131,283,162.2ZM499.9,76.3L638.5,157L638.4,316.1L500.5,395.7L362.7,316.2L362,155.9L499.9,76.3Z" transform="translate(-55.8,-0.0372215)" style=""/>
+					<g transform="translate(-55.8,-0.0372215)">
+						<g>
+							<path d="M585.3,817.8C529.4,832.6,470.5,832.6,414.6,817.7C407,815.7,398,820.2,396.1,828.2C394.3,836.1,398.5,844.5,406.6,846.7C467.5,862.9,532.3,862.9,593.2,846.8C601,844.7,605.8,836.1,603.7,828.3C601.6,820.4,593.2,815.8,585.3,817.8L585.3,817.8Z"/>
+						</g>
+					</g>
+					<g transform="translate(-55.8,-0.0372215)">
+						<g>
+							<path d="M181.1,413.6C196.2,357.5,225.7,306.7,266.6,265.6C272.3,259.9,272.3,250.1,266.6,244.4C260.9,238.7,251.1,238.6,245.4,244.4C201,289,168.5,344.8,152.2,405.6C150.2,413.2,154.7,422.2,162.7,424.1C170.5,425.9,178.9,421.7,181.1,413.6L181.1,413.6Z"/>
+						</g>
+					</g>
+					<g transform="translate(-55.8,-0.0372215)">
+						<g>
+							<path d="M733.4,265.5C774.4,306.6,803.8,357.4,818.9,413.5C821,421.3,829.6,426.1,837.4,424C845.3,421.8,850,413.4,847.9,405.5C831.5,344.7,799.1,288.8,754.6,244.2C748.9,238.5,739.1,238.5,733.4,244.2C727.6,250.1,727.6,259.8,733.4,265.5L733.4,265.5Z"/>
+						</g>
+					</g>
+				</g>
+			</svg>
+			<div class="txtOverlay">ICO LAUNCH</div>
+			<div id="JSEW-ICOButton" :class="{'active': showICOButton}">BUY JSE</div>
+		</router-link>
+		
 	</div>
 </template>
 
@@ -510,6 +562,21 @@ export default {
 			route = '/home';
 		}
 		this.activeRoutePath = route;
+		//this.showICOBadge = (this.activeRoutePath !== '/ico');
+
+		//console.log((!this.showICOBadge), (this.activeRoutePath !== '/ico'));
+		if ((!this.showICOBadge) && (!this.$route.meta.hideICOButton)) {
+			//enable JSECoin BUY Badge
+			setTimeout(() => {
+				this.showICOBadge = true;
+				setTimeout(() => {
+					this.showICOButton = true;
+				}, 2000);
+			}, 3000);
+		} else if (this.activeRoutePath === '/ico') {
+			this.showICOBadge = false;
+		}
+
 		const aLink 	= [
 							{
 								vmid: 'canonical',
@@ -528,7 +595,7 @@ export default {
 		});
 
 		return {
-			title: this.$t('template.meta.title'),
+			title: this.$t('template.meta.title') + this.$route.meta.unicode,
 			titleTemplate: 'JSECoin | %s',
 			htmlAttrs: {
 				lang: this.$store.state.local,
@@ -558,6 +625,9 @@ export default {
 	components: { xHeader },
 	data() {
 		return {
+			showICOBadge: false,
+			showICOButton: false,
+			animateBadge: false,
 			nav: {
 				company: false,
 				investors: false,
@@ -626,6 +696,20 @@ export default {
 	mounted() {
 		const self = this;
 
+		//animate badge - every 5 seconds
+		if (document.querySelector('#JSEA-rotatingLogo2') !== null) {
+			document.querySelector('#JSEA-rotatingLogo2').addEventListener('animationend', function() {
+				//console.log('Animation finished');
+				self.animateBadge = false;
+				setTimeout(() => {
+					self.animateBadge = true;
+				}, 5000);
+			}, false);
+			setTimeout(() => {
+				self.animateBadge = true;
+			}, 8000);
+		}
+
 		//disable scrollbar if mobile
 		if ((typeof window.orientation !== 'undefined') || (navigator.userAgent.indexOf('IEMobile') !== -1)) {
 			//this.$vuebar.destroyScrollbar(document.getElementById('JSEW-website'));
@@ -685,6 +769,10 @@ export default {
 		*/
 	},
 	methods: {
+		icoBadge() {
+			const self = this;
+			self.$router.push('ico');
+		},
 		toggleLangDisplay() {
 			this.langOptMin = !this.langOptMin;
 		},
@@ -752,6 +840,114 @@ export default {
 @import 'assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 /*@import 'assets/fonts/customset/ico.css';*/
+@keyframes a0_t { 0% { transform: translate(498px,507px) rotate(0deg) translate(-445.503px,-500.996px); } 22.2222% { transform: translate(498px,507px) rotate(0deg) translate(-445.503px,-500.996px); animation-timing-function: cubic-bezier(0.44,0,0.19,1.515); } 30.5555% { transform: translate(498px,507px) rotate(120deg) translate(-445.503px,-500.996px); } 55.5555% { transform: translate(498px,507px) rotate(120deg) translate(-445.503px,-500.996px); animation-timing-function: cubic-bezier(0.44,0,0.19,1.515); } 63.8888% { transform: translate(498px,507px) rotate(240deg) translate(-445.503px,-500.996px); } 88.8888% { transform: translate(498px,507px) rotate(240deg) translate(-445.503px,-500.996px); animation-timing-function: cubic-bezier(0.44,0,0.19,1.515); } 97.2222% { transform: translate(498px,507px) rotate(360deg) translate(-445.503px,-500.996px); } 100% { transform: translate(498px,507px) rotate(360deg) translate(-445.503px,-500.996px); } }
+@keyframes a1_t { 0% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 5.5555% { transform: translate(38.503px,177.996004px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 11.1111% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 38.8888% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 44.4444% { transform: translate(38.503px,177.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 50% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 77.7777% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 83.3333% { transform: translate(38.503px,177.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 88.8888% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 100% { transform: translate(-55.8px,-0.037221px) scale(1,1); } }
+@keyframes a2_t { 0% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 11.1111% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 16.6666% { transform: translate(155.500967px,182.995999px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 22.2222% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 33.3333% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 38.8888% { transform: translate(155.501px,182.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 44.4444% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 72.2222% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 77.7777% { transform: translate(155.501px,182.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 83.3333% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 100% { transform: translate(-55.8px,-0.037221px) scale(1,1); } }
+@keyframes a3_t { 0% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 5.5555% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 11.1111% { transform: translate(95.926907px,82.995999px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 16.6666% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 44.4444% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 50% { transform: translate(95.9269px,82.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 55.5555% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 66.6666% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 72.2222% { transform: translate(95.9269px,82.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 77.7777% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 100% { transform: translate(-55.8px,-0.037221px) scale(1,1); } }
+ 
+		
+#JSEA-rotatingLogo2.active {
+	animation: a0_t 3.6s linear forwards;
+}
+
+#JSEA-rotatingLogo2.active #JSEA-layer1 {
+	animation: a1_t 3.6s linear forwards;
+}
+
+#JSEA-rotatingLogo2.active #JSEA-layer2 {
+	animation: a2_t 3.6s linear forwards;
+}
+
+#JSEA-rotatingLogo2.active #JSEA-layer3 {
+	animation: a3_t 3.6s linear forwards;
+}
+
+
+#JSEA-rotatingLogo3.active {
+	animation: a0_t 3.6s linear infinite both;
+}
+
+#JSEA-rotatingLogo3.active #JSEA-layer1 {
+	animation: a1_t 3.6s linear infinite both;
+}
+
+#JSEA-rotatingLogo3.active #JSEA-layer2 {
+	animation: a2_t 3.6s linear infinite both;
+}
+
+#JSEA-rotatingLogo3.active #JSEA-layer3 {
+	animation: a3_t 3.6s linear infinite both;
+}
+#JSEA-rotatingLogo {
+	position: absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	background-image:url("assets/ico/logo_animation.svg");
+	background-repeat: no-repeat;
+	background-size: 60px;
+    background-position: center 24px;
+	color: white;
+	fill: white;
+}
+
+#JSEW-ICOAlert,
+#JSEW-ICOLoadingAnimation {
+	background-color: transparent;
+	background-image:url("assets/ico/ICO_alert.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: fixed;
+	bottom:-200px;
+	right:40px;	
+	width:100px;
+	height:155px;
+	z-index:100;
+	transition: bottom 0.4s;
+	padding:0px;
+}
+#JSEW-ICOAlert.active {
+	bottom:20px;
+}
+
+#JSEW-ICOAlert .txtOverlay {
+	position: absolute;
+	bottom: 29px;
+	left:0px;
+	right:0px;
+	color:#fff;
+	text-align: center;
+	font-weight:bold;
+	font-size:0.7em;
+	letter-spacing:1px;
+}
+
+
+#JSEW-ICOButton {
+	position: absolute;
+	bottom:0px;
+	left:0px;
+	right:1px;
+	border-radius: 4px;
+	color: #fff;
+	text-align:center;
+	background: #106ce1;
+	font-weight:bold;
+	font-size:0.7em;
+	letter-spacing:1px;
+	padding:4px 8px;
+	box-shadow:0px 1px 0px 0px rgba(0,0,0,0.2);
+	opacity:0;
+	transition: opacity 0.4s, bottom 0.2s;
+}
+#JSEW-ICOAlert #JSEW-ICOButton.active  {
+	opacity:1;
+}
+
+#JSEW-ICOAlert:hover #JSEW-ICOButton.active {
+	bottom: 23px;
+}
 body {
 	margin: 0px;
 	padding:0px;
@@ -1369,6 +1565,9 @@ header a {
 	right: 0px;
 	bottom: 0px;
 }
+/*.carousel2 #JSEW-carouselItems {
+	margin: 6px auto 0px;
+}*/
 #JSEW-carouselItems {
 	margin:15px auto 0px;
 	padding:0px;
@@ -1384,6 +1583,9 @@ header a {
 	list-style: none;
 	margin:5px;
 	cursor: pointer;
+}
+.carousel2 #JSEW-carouselItems li {
+	background: #000;
 }
 
 #JSEW-carouselItems li:hover,
@@ -1430,10 +1632,11 @@ header .carousel1 {
 }
 
 header .carousel2 {
-	background-image: url("assets/images/carousel/2.png");
+	background-image: url("assets/images/carousel/ico.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 header .carousel3 {
 	background-image: url("assets/images/carousel/4.png");
 	background-repeat: no-repeat;
@@ -1630,6 +1833,8 @@ header .carousel3 {
 
 footer {
 	background: #0c0c14;
+	position: relative;
+	z-index: 1000;
 }
 
 
@@ -1646,6 +1851,7 @@ footer a {
 	align-items: center;
 	flex-direction: column;
 	padding:0px 10px;
+	background:#fff;
 }
 
 #JSEW-subHeaderNav .wrapper {
@@ -2001,6 +2207,24 @@ footer a {
 	border-radius:60px;
 }
 
+#JSEW-footerPrivacy {
+	display: none;
+}
+#JSEW-footerPrivacy .wrapper {
+	display: flex;
+	justify-content: center;
+}
+#JSEW-footerPrivacy a {
+	display: block;
+    padding: 4px 8px;
+    background: #222533;
+    border-radius: 12px;
+    margin: 6px;
+    color: #a1b1bc;
+    font-size: 0.6em;
+    white-space: nowrap;
+}
+
 @media screen and (max-width: 1000px) {
 	#JSEW-website.enableResponsive {
 		min-width: 100%;
@@ -2072,6 +2296,10 @@ footer a {
 	}
 }
 @media screen and (max-width: 768px) {
+		
+	.enableResponsive #JSEW-footerPrivacy {
+		display: none;
+	}
 	.enableResponsive #JSEW-footerSitemap,
 	.enableResponsive #JSEW-footerInfo,
 	.enableResponsive #JSEW-langOptions {
@@ -2168,6 +2396,10 @@ footer a {
 	.enableResponsive #JSEW-langMsg {
 		max-height: 384px;
 	}
+	
+	#JSEW-ICOAlert {
+		right: 10px;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -2215,6 +2447,9 @@ footer a {
 	}
 	.enableResponsive .flexTableBody .tdCol {
 		width:auto !important;
+	}
+	#JSEW-ICOAlert {
+		right: 10px;
 	}
 }
 

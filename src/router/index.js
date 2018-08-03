@@ -82,6 +82,7 @@ import test from '@/components/test';
 
 //ICO
 import ICO from '@/components/ICO/ICO-Page';
+import Issue from '@/components/ICO/Issue';
 
 //redux store
 import store from '../store';
@@ -242,10 +243,25 @@ const router = new Router({
 			path: '/ico',
 			component: ICO,
 			meta: {
+				hideICOButton: true,
 				linkText: '',
 				headerBG: '/banners/icoLaunchpad.png',
 				headerTitle: 'pages.ico.banner.heading', //ICO Launchpad',
 				headerSubTitle: 'pages.ico.banner.subheading', //'Make sure you are logged in to your wallet to access the integrated purchase capabilities',
+			},
+		},
+		{
+			path: '/ICO',
+			redirect: '/ico',
+		},
+		{
+			path: '/ico/issue',
+			component: Issue,
+			meta: {
+				linkText: '',
+				headerBG: '/banners/icoLaunchpad.png',
+				headerTitle: 'pages.Issue.banner.heading',
+				headerSubTitle: 'pages.Issue.banner.subheading',
 			},
 		},
 		{
@@ -703,10 +719,26 @@ const router = new Router({
 			path: '/:lang/ico',
 			component: ICO,
 			meta: {
+				hideICOButton: true,
 				linkText: '',
 				headerBG: '/banners/icoLaunchpad.png',
 				headerTitle: 'pages.ico.banner.heading', //ICO Launchpad',
 				headerSubTitle: 'pages.ico.banner.subheading', //'Make sure you are logged in to your wallet to access the integrated purchase capabilities',
+			},
+		},
+		//Add redirection on typo
+		{
+			path: '/:lang/ICO',
+			redirect: '/:lang/ico',
+		},
+		{
+			path: '/:lang/ico/issue',
+			component: Issue,
+			meta: {
+				linkText: '',
+				headerBG: '/banners/icoLaunchpad.png',
+				headerTitle: 'pages.ico.banner.heading',
+				headerSubTitle: 'pages.ico.banner.subheading',
 			},
 		},
 		{

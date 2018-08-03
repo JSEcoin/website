@@ -4,6 +4,9 @@
 			<div class="row">
 				<div id="JSEW-subNav" class="col" style="max-width:inherit;flex-grow:0;padding-right:40px;margin-right:40px; border-right:solid 1px #eee;width:240px;">
 					<nav>
+							<a href="/JSECoinV2_Overview.pdf" target="_blank">
+								Intro Slides <i class="fa fa-file-pdf-o"></i>
+							</a>
 							<a href="/onepager.pdf" target="_blank">
 								{{ $t('template.navigation.link_overview') }} <i class="fa fa-file-pdf-o"></i>
 							</a>
@@ -76,7 +79,7 @@ export default {
 	name: 'investorOptions',
 	metaInfo () {
 		return {
-			title: this.$t('pages.investorOverview.meta.title'),
+			title: this.$t('pages.investorOverview.meta.title') + ' 💰',
 			meta: [
 				{
 					vmid: 'description',

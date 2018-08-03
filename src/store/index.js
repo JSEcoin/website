@@ -73,7 +73,7 @@ const store = new Vuex.Store({
 			'fr',
 			'id',
 			'it',
-			'ja',//japanese
+			'jp',//japanese
 			'ko',
 			'ms',
 			'nl',
@@ -97,7 +97,7 @@ const store = new Vuex.Store({
 			fr: 'Français',
 			id: 'Bahasa Indonesia',
 			it: 'Italiano',
-			ja: '日本語',
+			jp: '日本語',
 			ko: '한국어',
 			ms: 'മലയാളം',
 			nl: 'Dansk',

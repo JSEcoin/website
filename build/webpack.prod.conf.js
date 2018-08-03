@@ -128,6 +128,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/downloads',
 			'/whitelisting',
 			'/ico',
+			'/ico/issue',
 
 			//english
 			'/en/home',
@@ -143,6 +144,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/en/legal/privacyPolicy',
 			'/en/legal/terms',
 			'/en/legal/kycPolicy',
+			'/en/legal/gdpr',
 			'/en/technical/overview',
 			'/en/technical/stats',
 			'/en/technical/APIS',
@@ -166,7 +168,8 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/en/downloads',
 			'/en/whitelisting',
 			'/en/ico',
-/**/
+			'/en/ico/issue',
+
 			//arabic
 			'/ar/home',
 			'/ar/about',
@@ -181,6 +184,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ar/legal/privacyPolicy',
 			'/ar/legal/terms',
 			'/ar/legal/kycPolicy',
+			'/ar/legal/gdpr',
 			'/ar/technical/overview',
 			'/ar/technical/stats',
 			'/ar/technical/APIS',
@@ -204,6 +208,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ar/downloads',
 			'/ar/whitelisting',
 			'/ar/ico',
+			'/ar/ico/issue',
 
 			//bg
 			'/bg/home',
@@ -219,6 +224,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/bg/legal/privacyPolicy',
 			'/bg/legal/terms',
 			'/bg/legal/kycPolicy',
+			'/bg/legal/gdpr',
 			'/bg/technical/overview',
 			'/bg/technical/stats',
 			'/bg/technical/APIS',
@@ -242,44 +248,47 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/bg/downloads',
 			'/bg/whitelisting',
 			'/bg/ico',
+			'/bg/ico/issue',
 
 			//chinese
-			'/cn/home',
-			'/cn/about',
-			'/cn/about/meetTheTeam',
-			'/cn/about/ourVision',
-			'/cn/about/careers',
-			'/cn/about/press',
-			'/cn/support/contact',
-			'/cn/support/FAQ',
-			'/cn/support/community',
-			'/cn/legal/userAgreement',
-			'/cn/legal/privacyPolicy',
-			'/cn/legal/terms',
-			'/cn/legal/kycPolicy',
-			'/cn/technical/overview',
-			'/cn/technical/stats',
-			'/cn/technical/APIS',
-			'/cn/technical/samples',
-			'/cn/technical/support',
-			'/cn/oddJobs/bugBounty',
-			'/cn/oddJobs/smallJobs',
-			'/cn/oddJobs/submitInfo',
-			'/cn/timeline',
-			'/cn/environment',
-			'/cn/charity',
-			'/cn/exchanges',
-			'/cn/systemStatus',
-			'/cn/investors/overview',
-			'/cn/webmasters/overview',
-			'/cn/webmasters/integration',
-			'/cn/developers/overview',
-			'/cn/tools/wallet',
-			'/cn/tools/merchantTools',
-			'/cn/tools/blockchainExplorer',
-			'/cn/downloads',
-			'/cn/whitelisting',
-			'/cn/ico',
+			'/zh/home',
+			'/zh/about',
+			'/zh/about/meetTheTeam',
+			'/zh/about/ourVision',
+			'/zh/about/careers',
+			'/zh/about/press',
+			'/zh/support/contact',
+			'/zh/support/FAQ',
+			'/zh/support/community',
+			'/zh/legal/userAgreement',
+			'/zh/legal/privacyPolicy',
+			'/zh/legal/terms',
+			'/zh/legal/kycPolicy',
+			'/zh/legal/gdpr',
+			'/zh/technical/overview',
+			'/zh/technical/stats',
+			'/zh/technical/APIS',
+			'/zh/technical/samples',
+			'/zh/technical/support',
+			'/zh/oddJobs/bugBounty',
+			'/zh/oddJobs/smallJobs',
+			'/zh/oddJobs/submitInfo',
+			'/zh/timeline',
+			'/zh/environment',
+			'/zh/charity',
+			'/zh/exchanges',
+			'/zh/systemStatus',
+			'/zh/investors/overview',
+			'/zh/webmasters/overview',
+			'/zh/webmasters/integration',
+			'/zh/developers/overview',
+			'/zh/tools/wallet',
+			'/zh/tools/merchantTools',
+			'/zh/tools/blockchainExplorer',
+			'/zh/downloads',
+			'/zh/whitelisting',
+			'/zh/ico',
+			'/zh/ico/issue',
 
 			//German
 			'/de/home',
@@ -295,6 +304,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/de/legal/privacyPolicy',
 			'/de/legal/terms',
 			'/de/legal/kycPolicy',
+			'/de/legal/gdpr',
 			'/de/technical/overview',
 			'/de/technical/stats',
 			'/de/technical/APIS',
@@ -318,6 +328,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/de/downloads',
 			'/de/whitelisting',
 			'/de/ico',
+			'/de/ico/issue',
 
 			//Spanish
 			'/es/home',
@@ -333,6 +344,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/es/legal/privacyPolicy',
 			'/es/legal/terms',
 			'/es/legal/kycPolicy',
+			'/es/legal/gdpr',
 			'/es/technical/overview',
 			'/es/technical/stats',
 			'/es/technical/APIS',
@@ -356,6 +368,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/es/downloads',
 			'/es/whitelisting',
 			'/es/ico',
+			'/es/ico/issue',
 
 			//finnish
 			'/fi/home',
@@ -371,6 +384,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/fi/legal/privacyPolicy',
 			'/fi/legal/terms',
 			'/fi/legal/kycPolicy',
+			'/fi/legal/gdpr',
 			'/fi/technical/overview',
 			'/fi/technical/stats',
 			'/fi/technical/APIS',
@@ -394,6 +408,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/fi/downloads',
 			'/fi/whitelisting',
 			'/fi/ico',
+			'/fi/ico/issue',
 
 			//french
 			'/fr/home',
@@ -409,6 +424,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/fr/legal/privacyPolicy',
 			'/fr/legal/terms',
 			'/fr/legal/kycPolicy',
+			'/fr/legal/gdpr',
 			'/fr/technical/overview',
 			'/fr/technical/stats',
 			'/fr/technical/APIS',
@@ -432,6 +448,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/fr/downloads',
 			'/fr/whitelisting',
 			'/fr/ico',
+			'/fr/ico/issue',
 
 			//Indonesian
 			'/id/home',
@@ -447,6 +464,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/id/legal/privacyPolicy',
 			'/id/legal/terms',
 			'/id/legal/kycPolicy',
+			'/id/legal/gdpr',
 			'/id/technical/overview',
 			'/id/technical/stats',
 			'/id/technical/APIS',
@@ -470,6 +488,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/id/downloads',
 			'/id/whitelisting',
 			'/id/ico',
+			'/id/ico/issue',
 
 			//Italian
 			'/it/home',
@@ -485,6 +504,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/it/legal/privacyPolicy',
 			'/it/legal/terms',
 			'/it/legal/kycPolicy',
+			'/it/legal/gdpr',
 			'/it/technical/overview',
 			'/it/technical/stats',
 			'/it/technical/APIS',
@@ -508,6 +528,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/it/downloads',
 			'/it/whitelisting',
 			'/it/ico',
+			'/it/ico/issue',
 
 			//japanese
 			'/jp/home',
@@ -523,6 +544,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/jp/legal/privacyPolicy',
 			'/jp/legal/terms',
 			'/jp/legal/kycPolicy',
+			'/jp/legal/gdpr',
 			'/jp/technical/overview',
 			'/jp/technical/stats',
 			'/jp/technical/APIS',
@@ -546,6 +568,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/jp/downloads',
 			'/jp/whitelisting',
 			'/jp/ico',
+			'/jp/ico/issue',
 
 			//Korean
 			'/ko/home',
@@ -561,6 +584,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ko/legal/privacyPolicy',
 			'/ko/legal/terms',
 			'/ko/legal/kycPolicy',
+			'/ko/legal/gdpr',
 			'/ko/technical/overview',
 			'/ko/technical/stats',
 			'/ko/technical/APIS',
@@ -584,6 +608,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ko/downloads',
 			'/ko/whitelisting',
 			'/ko/ico',
+			'/ko/ico/issue',
 
 			//
 			'/ms/home',
@@ -599,6 +624,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ms/legal/privacyPolicy',
 			'/ms/legal/terms',
 			'/ms/legal/kycPolicy',
+			'/ms/legal/gdpr',
 			'/ms/technical/overview',
 			'/ms/technical/stats',
 			'/ms/technical/APIS',
@@ -622,6 +648,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ms/downloads',
 			'/ms/whitelisting',
 			'/ms/ico',
+			'/ms/ico/issue',
 
 			//
 			'/nl/home',
@@ -637,6 +664,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/nl/legal/privacyPolicy',
 			'/nl/legal/terms',
 			'/nl/legal/kycPolicy',
+			'/nl/legal/gdpr',
 			'/nl/technical/overview',
 			'/nl/technical/stats',
 			'/nl/technical/APIS',
@@ -660,8 +688,9 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/nl/downloads',
 			'/nl/whitelisting',
 			'/nl/ico',
+			'/nl/ico/issue',
 
-			//xxxx
+			//
 			'/no/home',
 			'/no/about',
 			'/no/about/meetTheTeam',
@@ -675,6 +704,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/no/legal/privacyPolicy',
 			'/no/legal/terms',
 			'/no/legal/kycPolicy',
+			'/no/legal/gdpr',
 			'/no/technical/overview',
 			'/no/technical/stats',
 			'/no/technical/APIS',
@@ -698,6 +728,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/no/downloads',
 			'/no/whitelisting',
 			'/no/ico',
+			'/no/ico/issue',
 
 			//Portugese
 			'/pt/home',
@@ -713,6 +744,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/pt/legal/privacyPolicy',
 			'/pt/legal/terms',
 			'/pt/legal/kycPolicy',
+			'/pt/legal/gdpr',
 			'/pt/technical/overview',
 			'/pt/technical/stats',
 			'/pt/technical/APIS',
@@ -736,6 +768,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/pt/downloads',
 			'/pt/whitelisting',
 			'/pt/ico',
+			'/pt/ico/issue',
 
 			//Romanian
 			'/ro/home',
@@ -751,6 +784,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ro/legal/privacyPolicy',
 			'/ro/legal/terms',
 			'/ro/legal/kycPolicy',
+			'/ro/legal/gdpr',
 			'/ro/technical/overview',
 			'/ro/technical/stats',
 			'/ro/technical/APIS',
@@ -774,6 +808,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ro/downloads',
 			'/ro/whitelisting',
 			'/ro/ico',
+			'/ro/ico/issue',
 
 			//Russian
 			'/ru/home',
@@ -789,6 +824,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ru/legal/privacyPolicy',
 			'/ru/legal/terms',
 			'/ru/legal/kycPolicy',
+			'/ru/legal/gdpr',
 			'/ru/technical/overview',
 			'/ru/technical/stats',
 			'/ru/technical/APIS',
@@ -812,6 +848,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ru/downloads',
 			'/ru/whitelisting',
 			'/ru/ico',
+			'/ru/ico/issue',
 
 			//Slovenian
 			'/si/home',
@@ -827,6 +864,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/si/legal/privacyPolicy',
 			'/si/legal/terms',
 			'/si/legal/kycPolicy',
+			'/si/legal/gdpr',
 			'/si/technical/overview',
 			'/si/technical/stats',
 			'/si/technical/APIS',
@@ -850,6 +888,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/si/downloads',
 			'/si/whitelisting',
 			'/si/ico',
+			'/si/ico/issue',
 
 			//Swedish
 			'/se/home',
@@ -865,6 +904,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/se/legal/privacyPolicy',
 			'/se/legal/terms',
 			'/se/legal/kycPolicy',
+			'/se/legal/gdpr',
 			'/se/technical/overview',
 			'/se/technical/stats',
 			'/se/technical/APIS',
@@ -888,6 +928,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/se/downloads',
 			'/se/whitelisting',
 			'/se/ico',
+			'/se/ico/issue',
 
 			//Thai
 			'/th/home',
@@ -903,6 +944,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/th/legal/privacyPolicy',
 			'/th/legal/terms',
 			'/th/legal/kycPolicy',
+			'/th/legal/gdpr',
 			'/th/technical/overview',
 			'/th/technical/stats',
 			'/th/technical/APIS',
@@ -926,6 +968,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/th/downloads',
 			'/th/whitelisting',
 			'/th/ico',
+			'/th/ico/issue',
 
 			//taiwanese
 			'/tw/home',
@@ -941,6 +984,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/tw/legal/privacyPolicy',
 			'/tw/legal/terms',
 			'/tw/legal/kycPolicy',
+			'/tw/legal/gdpr',
 			'/tw/technical/overview',
 			'/tw/technical/stats',
 			'/tw/technical/APIS',
@@ -964,6 +1008,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/tw/downloads',
 			'/tw/whitelisting',
 			'/tw/ico',
+			'/tw/ico/issue',
 
 			//test
 			'/en/banner1',
@@ -1073,8 +1118,8 @@ const webpackConfig = merge(baseWebpackConfig, {
     ]),
     // service worker caching
     new SWPrecacheWebpackPlugin({
-      cacheId: 'jse-website',
-      filename: 'jse-web-worker_preico.js',
+      cacheId: 'jse-website_ico_030818',
+      filename: 'jse-web-worker_ico.js',
 	  //staticFileGlobs: ['dist/**/*.{js,html,css}'],
 	  staticFileGlobsIgnorePatterns: [/\.map$/], // use this to ignore sourcemap files
 	  staticFileGlobs: [
