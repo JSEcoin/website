@@ -12,7 +12,7 @@
 		
 		<div id="JSEW-overview" class="wrapper">
 			<h1 class="heading center">{{ $t('pages.home.section_overview.heading_overview') }}</h1>
-			<h2 class="subHeading center">{{ $t('pages.home.section_overview.subheading_overview') }}</h2>
+			<h3 class="subHeading center">{{ $t('pages.home.section_overview.subheading_overview') }}</h3>
 			
 			<div id="JSEW-sectionHighlights">
 				<div class="row">
@@ -75,8 +75,8 @@
 			<div class="wrapper">
 				<div id="JSEW-browserMiningContent" class="row reverse">
 					<div class="col">
-						<h1 class="heading">{{ $t('pages.home.section_browserMining.heading_browserMining') }}</h1>
-						<h2 class="subHeading">{{ $t('pages.home.section_browserMining.subheading_browserMining') }}</h2>
+						<h2 class="heading">{{ $t('pages.home.section_browserMining.heading_browserMining') }}</h2>
+						<h3 class="subHeading">{{ $t('pages.home.section_browserMining.subheading_browserMining') }}</h3>
 
 						<p>
 							 {{ $t('pages.home.section_browserMining.para_main1') }}
@@ -124,8 +124,8 @@
 
 					</div>
 					<div class="col">
-						<h1 class="heading">{{ $t('pages.home.section_pubPlatMining.heading_pubPlatMining') }}</h1>
-						<h2 class="subHeading">{{ $t('pages.home.section_pubPlatMining.subheading_pubPlatMining') }}</h2>
+						<h2 class="heading">{{ $t('pages.home.section_pubPlatMining.heading_pubPlatMining') }}</h2>
+						<h3 class="subHeading">{{ $t('pages.home.section_pubPlatMining.subheading_pubPlatMining') }}</h3>
 
 						<p>
 							{{ $t('pages.home.section_pubPlatMining.para_main1') }}
@@ -158,8 +158,8 @@
 					<div class="row">
 						<div class="col">
 							<div class="panelHighlight">
-								<h1 class="heading">{{ $t('pages.home.section_env.heading_env') }}</h1>
-								<h2 class="subHeading" style="margin-bottom:40px;">{{ $t('pages.home.section_env.subheading_env') }}</h2>
+								<h2 class="heading">{{ $t('pages.home.section_env.heading_env') }}</h2>
+								<h3 class="subHeading" style="margin-bottom:40px;">{{ $t('pages.home.section_env.subheading_env') }}</h3>
 								<p>
 									{{ $t('pages.home.section_env.para_main1') }}
 								</p>
@@ -184,8 +184,8 @@
 
 		<div id="JSEW-timeLine">
 			<div class="wrapper">
-				<h1 class="heading center">{{ $t('pages.home.section_timeline.heading_timeline') }}</h1>
-				<h2 class="subHeading center">{{ $t('pages.home.section_timeline.subheading_timeline') }}</h2>
+				<h2 class="heading center">{{ $t('pages.home.section_timeline.heading_timeline') }}</h2>
+				<h3 class="subHeading center">{{ $t('pages.home.section_timeline.subheading_timeline') }}</h3>
 			</div>
 			
 			<interactiveTimeline/>
@@ -196,8 +196,8 @@
 		</div>
 
 		<div id="JSEW-team">
-			<h1 class="heading center">{{ $t('pages.home.section_team.heading_team') }}</h1>
-			<h2 class="subHeading center">{{ $t('pages.home.section_team.subheading_team') }}</h2>
+			<h2 class="heading center">{{ $t('pages.home.section_team.heading_team') }}</h2>
+			<h3 class="subHeading center">{{ $t('pages.home.section_team.subheading_team') }}</h3>
 
 			<div>
 				<div class="hexProfileContainer">
@@ -245,8 +245,8 @@
 
 		<div id="JSEW-community">
 			<div class="wrapper center">
-				<h1 class="heading center">{{ $t('pages.home.section_community.heading_community') }}</h1>
-				<h2 class="subHeading center">{{ $t('pages.home.section_community.subheading_community') }}</h2>
+				<h2 class="heading center">{{ $t('pages.home.section_community.heading_community') }}</h2>
+				<h3 class="subHeading center">{{ $t('pages.home.section_community.subheading_community') }}</h3>
 
 				<nav class="centerFlex">
 					<ul id="JSEW-communityLinks">
@@ -270,8 +270,8 @@
 						<img src="../assets/images/img_charity.png" class="charityImg" :alt="$t('pages.home.section_charity.alt_charity')" />
 					</div>
 					<div class="col">
-						<h1 class="heading">{{ $t('pages.home.section_charity.heading_charity') }}</h1>
-						<h2 class="subHeading">{{ $t('pages.home.section_charity.subheading_charity') }}</h2>
+						<h2 class="heading">{{ $t('pages.home.section_charity.heading_charity') }}</h2>
+						<h3 class="subHeading">{{ $t('pages.home.section_charity.subheading_charity') }}</h3>
 
 						<p>
 							{{ $t('pages.home.section_charity.para_main1') }}
@@ -294,15 +294,15 @@
 		<div id="JSEW-where-next">
 			<div class="wrapper center">
 				<div id="JSEW-where-next-container">
-					<h1 class="heading center">{{ $t('pages.home.section_where_next.heading1') }}</h1>
+					<h2 class="heading center">{{ $t('pages.home.section_where_next.heading1') }}</h2>
 					<hr>
-					<h2 class="subHeading center">{{ $t('pages.home.section_where_next.heading2a') }}</h2>
+					<h3 class="subHeading center">{{ $t('pages.home.section_where_next.heading2a') }}</h3>
 					<p class=".JSEW-giant-link-container"><a href="https://jsecoin.com/whitelisting" class="JSEW-giant-link">https://jsecoin.com/whitelisting</a></p>
 					<hr>
-					<h2 class="subHeading center">{{ $t('pages.home.section_where_next.heading2b') }}</h2>
+					<h3 class="subHeading center">{{ $t('pages.home.section_where_next.heading2b') }}</h3>
 					<p class=".JSEW-giant-link-container"><a href="https://platform.jsecoin.com" class="JSEW-giant-link">https://platform.jsecoin.com</a></p>
 					<hr>
-					<h2 class="subHeading center">{{ $t('pages.home.section_where_next.heading2c') }}</h2>
+					<h3 class="subHeading center">{{ $t('pages.home.section_where_next.heading2c') }}</h3>
 					<p class=".JSEW-giant-link-container"><a href="https://jsecoin.com/whitepaper.pdf" class="JSEW-giant-link">https://jsecoin.com/whitepaper.pdf</a></p>
 					<hr>
 				</div>
@@ -314,8 +314,8 @@
 		<!--
 		<div id="JSEW-solutions">
 			<div class="wrapper">
-				<h1 class="heading center">OTHER JSECoin SOLUTIONS</h1>
-				<h2 class="subHeading center">Merchant Tools, OFFLINE WALLET, Developer API, BlockChain Explorer</h2>
+				<h2 class="heading center">OTHER JSECoin SOLUTIONS</h2>
+				<h3 class="subHeading center">Merchant Tools, OFFLINE WALLET, Developer API, BlockChain Explorer</h3>
 
 				<swiper :options="swiperOption3" ref="mySwiper3" @slideChange="onSlideChange">
 			
@@ -325,7 +325,7 @@
 								<img id="JSEW-blockChainLogo" src="../assets/images/ico_blockchain.png" class="solutionGFX" alt="JSE Blockchain Explorer logo" />
 							</div>
 							<div class="col">
-								<h1 class="heading">JSE Blockchain Explorer</h1>
+								<h2 class="heading">JSE Blockchain Explorer</h2>
 								<p>
 									Visit the online blockchain page - here you can view the content of individual JSE blocks and 
 									transactions and the transaction histories and balances of addresses, as well as keeping up to date with daily stats.
@@ -345,7 +345,7 @@
 								<img src="../assets/images/carousel/1.png" class="solutionGFX" alt="JSE Merchant Tools" />
 							</div>
 							<div class="col">
-								<h1 class="heading">Merchant Tools</h1>
+								<h2 class="heading">Merchant Tools</h2>
 								<p>
 									Simple to install tools to enable your site to receive JSE as payment for goods and services.
 								</p>
@@ -367,7 +367,7 @@
 								<img src="../assets/images/carousel/1.png" class="solutionGFX" alt="JSE Wallet" />
 							</div>
 							<div class="col">
-								<h1 class="heading">Wallet</h1>
+								<h2 class="heading">Wallet</h2>
 								<p>
 									Full integration with Ethereum Based wallets enable you to securely store and quickly send your tokens in a decentralised environment. 
 								</p>
