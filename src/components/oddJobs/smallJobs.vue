@@ -91,9 +91,6 @@
 									Note: Some issues we class as minor and will not fix - ie Firefox on Android the navigational menu item
 									appears larger than other browsers.
 								</p>
-								<p class="infoMsg">
-									Screen reader and accessibility issues are currently not being accepted.
-								</p>
 							</div>
 							<div class="tdCol">
 								1000 JSE
