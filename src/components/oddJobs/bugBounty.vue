@@ -104,6 +104,17 @@
 						</div>
 					</div>
 
+					<div class="flexTableBody">
+						<div class="tdCol">
+							<b>Yosua Kristanto</b>
+						</div>
+						<div class="tdCol">
+							<p>
+								<a href="https://twitter.com/YosuaKristanto" target="_Balnk"><i class="fa fa-twitter"></i> Yosua Kristanto</a>
+							</p>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
