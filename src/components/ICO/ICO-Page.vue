@@ -160,7 +160,10 @@
 									<img v-if="!showBuyOption" src="../../assets/ico/metamask_ico.png" style="height: 16px; width: 19px; margin: 0px 4px 0px 0px;" />
 									<img v-else src="../../assets/ico/metamask_ico_active.png" style="height: 16px; width: 19px; margin: 0px 4px 0px 0px;" />
 									{{BuyJSEButton}}</button>
-								<div v-if="bonus>0" style="margin:10px 10px 10px 10px; font-size:0.65em; text-align:center; font-weight:bold; border-radius:3px; border:solid 1px #eee; padding:4px 8px;">{{bonus}}% BONUS ROUND</div>
+								<div v-if="bonus>0" style="margin:10px 10px 10px 10px; font-size:0.65em; text-align:center; font-weight:bold; border-radius:3px; border:solid 1px #eee; padding:4px 8px;">
+									{{bonus}}% BONUS ROUND
+									<div style="border-top: solid 1px #eee; margin-top: 4px; padding-top: 4px;">1<span style="opacity:0.8; font-size:0.85em;">ETH</span> = {{calcBonus()}}<span style="opacity:0.8; font-size:0.85em;">JSE</span></div>
+								</div>
 							</div>
 							<!-- xICO Logo -->
 							<!-- ICO Status Info -->
@@ -194,7 +197,7 @@
 								<div class="row" style="margin:10px 0px;">
 									<!-- Current Distribution Spread -->
 									<div id="JSEW-currentDistSpread" class="mainCol borderRight">
-										<h2>{{ $t('pages.ico.panel_tokenDist.subheading_currentDist') }}</h2>
+										<h2 style="text-align: center;">{{ $t('pages.ico.panel_tokenDist.subheading_currentDist') }}</h2>
 										<ul id="JSEW-distOptions">
 											<!-- ETH -->
 											<li id="JSEW-distETH" class="mainCol borderRight">
@@ -214,21 +217,22 @@
 												0 <span>EOS</span>
 											</li>
 											 xEOS -->
+											<!--<li id="JSEW-countFooter">1ETH = 7,500JSE</li>-->
 										</ul>
 									</div>
 									<!-- xCurrent Distribution Spread -->
 
 									<!-- Distribution Timer -->
 									<div id="JSEW-distributionCounterWrapper" class="mainCol">
-										<h2>{{ $t('pages.ico.panel_tokenDist.subheading_DistEndsIn') }}</h2>
+										<h2 style="text-align: center;">{{bonus}}% {{ $t('pages.ico.panel_tokenDist.subheading_DistEndsIn') }}</h2>
 										<ul id="JSEW-distCountdown">
-											<li class="counter">{{days}}</li>
+											<li title="Days" class="counter">{{days}}</li>
 											<li>:</li>
-											<li class="counter">{{hrs}}</li>
+											<li title="Hours" class="counter">{{hrs}}</li>
 											<li>:</li>
-											<li class="counter">{{mins}}</li>
+											<li title="Minutes" class="counter">{{mins}}</li>
 											<li>:</li>
-											<li class="counter">{{seconds}}</li>
+											<li title="Seconds" class="counter">{{seconds}}</li>
 											<li id="JSEW-countFooter">{{endDate}}</li>
 										</ul>
 									</div>
@@ -505,7 +509,14 @@ export default {
 	name: 'Ico-Page',
 	data() {
 		return {
-			bonus: 10, //bonus amount set in contract
+			bonus: 0,
+			bonusOptions: [
+				10,
+				8,
+				5,
+				0,
+				0,
+			], //bonus amount set in contract
 			JSEBonusVal: 0, //bonus amount set in contract
 			loadingTransaction: false, //user purchased JSE - display loading animation.
 			BuyJSEButton: 'Buy JSE', //Buy button Text
@@ -530,6 +541,14 @@ export default {
 			userWalletBalance: 0, //how much does the user have in their wallet
 			showBuyOption: false, //show option to allow user to pay through wallet
 			endICO: 1539259200, //Thursday, 11-Oct-18 12:00:00 UTC
+			bonusDate: 0, //active bonus date
+			bonusEndDate: [
+				1531310400,//july 11 10% -start ICO
+				1533988800,//aug 11 8%
+				1536667200,//sep 11 5%
+				1539259200,//oct 11 0% -end ICO
+				1539259200,//oct 11 0% -end ICO
+			], //bonus end date
 			endDate: '', //calculate generate readable date from endICO
 			months: '00', //countdown months left
 			days: '00', //countdown days left
@@ -543,7 +562,7 @@ export default {
 				jseDisplay: '0',
 				ethDisplay: '0',
 			},
-			JSEPerEth: 0,
+			JSEPerEth: 7500,
 			progressBarWidth: 0, //width of progress bar in %
 			form: {
 				error: {
@@ -591,6 +610,17 @@ export default {
 	},
 	created() {
 		const self = this;
+		const todayUnix = moment().format('x');
+
+		self.bonusEndDate.some((date, i) => {
+			//console.log(moment.unix(self.bonusEndDate[i]).isAfter(Number(todayUnix)));
+			if (moment.unix(self.bonusEndDate[i]).isAfter(Number(todayUnix))) {
+				self.bonusDate = self.bonusEndDate[i];
+				self.bonus = self.bonusOptions[i-1];
+				return true;
+			}
+			return false;
+		});
 
 		self.BuyJSEButton = 'Initialising...';
 		//check metamask active poll exists
@@ -662,9 +692,9 @@ export default {
 	},
 	mounted() {
 		const self = this;
-		self.endDate = moment.unix(self.endICO).format('MMMM Do YYYY');
+		self.endDate = moment.unix(self.bonusDate).format('MMMM Do YYYY');
 		setInterval(() => {
-			const endICO = moment.unix(self.endICO);
+			const endICO = moment.unix(self.bonusDate);
 			const currentTime = moment();
 
 			let days = endICO.diff(currentTime, 'days');
@@ -723,6 +753,11 @@ export default {
 		};
 	},
 	methods: {
+		calcBonus() {
+			const self = this;
+			const JSEPlusBonus = self.JSEPerEth * ((self.bonus/100)+1);
+			return Math.floor(Number(JSEPlusBonus)).toLocaleString();
+		},
 		ethscanURL(tx) {
 			const self = this;
 			let etherscanURL = 'etherscan.io';
@@ -1559,12 +1594,12 @@ export default {
 }
 
 #JSEW-ICOLogo img {
-	width:140px; 
+	width:120px; 
 	margin: 20px 20px 0px 20px;
 }
 
 #JSEW-ICOLogo img.bonus {
-	margin: -8px 20px 0px 20px;
+	margin: -4px 20px 0px 20px;
 }
 
 #JSEW-totalDistribution {

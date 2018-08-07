@@ -12,14 +12,17 @@
 						<div id="JSEW-ICOLogo" class="borderRight">
 							<img :class="{'bonus':bonus>0}" src="../../assets/ico/logo_white.png" alt="JSECoin - The Javascript Embedded Cryptocurrency" />
 							<!--<button v-on:click="initBuy" class="button buy" :class="{disable: !showBuyOption}">{{BuyJSEButton}}</button>-->
-							<div v-if="bonus>0" style="margin:10px 10px 10px 10px; font-size:0.65em; text-align:center; font-weight:bold; border-radius:3px; border:solid 1px rgba(230,230,230,0.2); padding:4px 8px;">{{bonus}}% BONUS ROUND</div>
+							<div v-if="bonus>0" style="background:rgba(0,0,0,0.48); margin:10px 10px 10px 10px; font-size:0.65em; text-align:center; font-weight:bold; border-radius:3px; border:solid 1px rgba(230,230,230,0.2); padding:4px 8px;">
+								{{bonus}}% BONUS ROUND
+								<div style="border-top: solid 1px rgba(230, 230, 230, 0.2); margin-top: 4px; padding-top: 4px;">1<span style="font-size:0.85em;color:#167dd5;"> ETH</span> = {{calcBonus()}}<span style="font-size:0.85em;color:#167dd5;"> JSE</span></div>
+							</div>
 						</div>
 						<!-- xICO Logo -->
 						<!-- ICO Status Info -->
 						<div class="mainCol">
 							<!-- Total JSE Distribution -->
 							<div id="JSEW-totalDistribution">
-								<h2>{{ $t('pages.ico.panel_tokenDist.subheading_totalDist') }}</h2>
+								<h2 style="margin-bottom:0px; display:inline-block; padding:4px 16px;background:rgba(0,0,0,0.48); border-radius:50px;">{{ $t('pages.ico.panel_tokenDist.subheading_totalDist') }}</h2>
 
 								<div id="JSEW-icoMeter">
 									<div id="JSEW-icoMeterDisplay" :style="{width:`${progressBarWidth}%`}">
@@ -45,8 +48,8 @@
 							<!-- xTotal JSE Distribution -->
 							<div id="JSEW-icoInfoPanelOverview" class="row">
 								<!-- Current Distribution Spread -->
-								<div id="JSEW-currentDistSpread" class="mainCol borderRight">
-									<h2>{{ $t('pages.ico.panel_tokenDist.subheading_currentDist') }}</h2>
+								<div id="JSEW-currentDistSpread" class="mainCol borderRight" style="text-align:center">
+									<h2 style="display:inline-block; padding:4px 16px;background:rgba(0,0,0,0.48); border-radius:50px;">{{ $t('pages.ico.panel_tokenDist.subheading_currentDist') }}</h2>
 									<ul id="JSEW-distOptions">
 										<!-- ETH -->
 										<li id="JSEW-distETH" class="mainCol borderRight">
@@ -71,8 +74,8 @@
 								<!-- xCurrent Distribution Spread -->
 
 								<!-- Distribution Timer -->
-								<div id="JSEW-distributionCounterWrapper" class="mainCol">
-									<h2>{{ $t('pages.ico.panel_tokenDist.subheading_DistEndsIn') }}</h2>
+								<div id="JSEW-distributionCounterWrapper" class="mainCol" style="text-align:center">
+									<h2 style="display:inline-block; padding:4px 16px;background:rgba(0,0,0,0.48); border-radius:50px;">{{bonus}}% {{ $t('pages.ico.panel_tokenDist.subheading_DistEndsIn') }}</h2>
 									<ul id="JSEW-distCountdown">
 										<li class="counter">{{days}}</li>
 										<li>:</li>
@@ -127,7 +130,15 @@ export default {
 	name: 'ICOPanel',
 	data() {
 		return {
-			bonus: 10, //bonus amount set in contract
+			bonus: 0,
+			bonusOptions: [
+				10,
+				8,
+				5,
+				0,
+				0,
+			], //bonus amount set in contract
+			JSEBonusVal: 0, //bonus amount set in contract
 			tokenLoaded: false, //true once JSE contract enabled
 			//JSE Token Address - query for balance
 			tokenAddress: '0x2d184014b5658C453443AA87c8e9C4D57285620b',
@@ -135,6 +146,14 @@ export default {
 			JSETokenSale: '0xcfc4fceb90787ef1fda15bb115630ef453f50f86',
 			networkVersion: '1', //1 = mainnet 3 = rinkeby
 			endICO: 1539259200, //Thursday, 11-Oct-18 12:00:00 UTC
+			bonusDate: 0, //active bonus date
+			bonusEndDate: [
+				1531310400,//july 11 10% -start ICO
+				1533988800,//aug 11 8%
+				1536667200,//sep 11 5%
+				1539259200,//oct 11 0% -end ICO
+				1539259200,//oct 11 0% -end ICO
+			], //bonus end date
 			endDate: '', //calculate generate readable date from endICO
 			months: '00', //countdown months left
 			days: '00', //countdown days left
@@ -160,7 +179,7 @@ export default {
 				jseDisplay: '0',
 				ethDisplay: '0',
 			},
-			JSEPerEth: 0,
+			JSEPerEth: 75000,
 			progressBarWidth: 0, //width of progress bar in %
 			activeGoal: 5000000000,
 			activeGoalDisplay: '5,000,000,000',
@@ -168,14 +187,26 @@ export default {
 	},
 	created() {
 		const self = this;
+		const todayUnix = moment().format('x');
+
+		self.bonusEndDate.some((date, i) => {
+			//console.log(moment.unix(self.bonusEndDate[i]).isAfter(Number(todayUnix)));
+			if (moment.unix(self.bonusEndDate[i]).isAfter(Number(todayUnix))) {
+				self.bonusDate = self.bonusEndDate[i];
+				self.bonus = self.bonusOptions[i-1];
+				return true;
+			}
+			return false;
+		});
+
 		window.jseContract = new window.ActiveNetwork.eth.Contract(jseContractObj.abi, self.JSETokenSale);
 		self.updateDistributionDisplay();
 	},
 	mounted() {
 		const self = this;
-		self.endDate = moment.unix(self.endICO).format('MMMM Do YYYY');
+		self.endDate = moment.unix(self.bonusDate).format('MMMM Do YYYY');
 		setInterval(() => {
-			const endICO = moment.unix(self.endICO);
+			const endICO = moment.unix(self.bonusDate);
 			const currentTime = moment();
 
 			let days = endICO.diff(currentTime, 'days');
@@ -217,6 +248,11 @@ export default {
 		}, 1000);
 	},
 	methods: {
+		calcBonus() {
+			const self = this;
+			const JSEPlusBonus = self.JSEPerEth * ((self.bonus/100)+1);
+			return Math.floor(Number(JSEPlusBonus)).toLocaleString();
+		},
 		totalTokensSold() {
 			const self = this;
 
@@ -612,7 +648,7 @@ export default {
 }
 
 #JSEW-ICOLogo img {
-	width:100px; 
+	width:90px; 
 	margin: 20px 20px 0px 20px;
 }
 
@@ -773,7 +809,7 @@ hr {
 	border-radius:20px;
 	background:rgba(255,255,255,0.08);
 	margin:10px;
-	margin-top:20px;
+	margin-top:10px;
     padding-right: 12px;
 }
 
@@ -866,6 +902,7 @@ th {
 	padding:0px;
 	font-weight: bold;
 	font-size:0.7em;
+	background: rgba(0,0,0,0.18);
 }
 
 #JSEW-distOptions li {

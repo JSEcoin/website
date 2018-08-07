@@ -14,7 +14,7 @@
 			</p>
 		</div>
 		<interactiveTimeline/>
-
+		
 		<div id="JSEW-timelineWrapper">
 			
 			<div class="wrapper center">
@@ -179,12 +179,72 @@
 									</div>
 								</div>
 							</div>
+							<div class="item right" style="margin-top: 10rem;">
+								<div class="date">
+									<span>APR</span>
+								</div>
+								<div class="box">
+									<h2 class="title">Components</h2>
+									<div class="content">
+										<ul>
+											<li>Alpha Desktop Launch</li> 
+											<li>Merchant Tools</li>
+											<li>Finalise metamask integration</li>
+										</ul>
+									</div>
+								</div>
+							</div>			
+							<div class="item left" style="margin-top: -1rem;">
+								<div class="date">
+									<span>MAY</span>
+								</div>
+								<div class="box">
+									<h2 class="title">Components</h2>
+									<div class="content">
+										<ul>
+											<li>Whitelisting KYC system</li> 
+											<li>Initiate marketing campaign</li> 
+											<li>Open source JSECoin</li> 
+											<li>Pre-alpha Android Mobile App release</li>
+											<li>PIN Security Feature</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="item right" style="margin-top: 10rem;">
+								<div class="date">
+									<span>JUN</span>
+								</div>
+								<div class="box">
+									<h2 class="title">Audits</h2>
+									<div class="content">
+										<ul>
+											<li>Smart Contract Audit</li> 
+											<li>Full security Audit / Review</li> 
+										</ul>
+									</div>
+								</div>
+							</div>	
+							<div class="item left" style="margin-top: 10rem;">
+								<div class="date">
+									<span>JUL</span>
+								</div>
+								<div class="box">
+									<h2 class="title">ICO</h2>
+									<div class="content">
+										<ul>
+											<li>ICO Launch</li> 
+											<li>Airdrop</li> 
+											<li>Marketing Initiative</li> 
+										</ul>
+									</div>
+								</div>
+							</div>	
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 </template>
 
 <script>
