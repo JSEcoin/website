@@ -42,9 +42,8 @@
 					</p>-->
 				</div>
 			</div>
-			<div id="JSEW-cookieDetection" class="active" v-if="showCookie && !$store.state.showMobileNav">
-				<div id="JSEW-cookie"></div>
-				{{ $t('template.cookies.text_overview_line1') }}<br />
+			<div id="JSEW-cookieDetection" :class="{active:showCookie}" v-if="showCookie && !$store.state.showMobileNav">
+				{{ $t('template.cookies.text_overview_line1') }}
 				{{ $t('template.cookies.text_overview_line2') }}
 				
 				<router-link v-bind:to="`/${$store.state.local}/legal/terms`" tag="a">
@@ -675,9 +674,9 @@ export default {
 		*/
 
 		//show cookie if undefined in localstorage
-		setTimeout(function() {
+		//setTimeout(function() {
 			self.showCookie = (localStorage.getItem('showCookie') === null);
-		}, 500);
+		//}, 500);
 
 		//if user shows adblock removal instructions on clicking close from iframe
 		//will trigger this.
@@ -1227,13 +1226,13 @@ a {
 	color:#b7c0ca;
 	box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.5);
     z-index: 1000;
+	text-align: center
 }
 
 #JSEW-cookieDetection.active {
 	display:block;
 }
 #JSEW-cookie {
-	background-image: url("assets/images/cookie.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	position: absolute;
@@ -1249,11 +1248,10 @@ a {
 	top:5px;
 	right:20px;
 	cursor: pointer;
-	background: #fff;
 	width: 30px;
 	height: 30px;
 	border-radius: 8px;
-	color: #0c2d4e;
+	color: #fff;
 	text-align: center;
 	line-height: 30px;
 }

@@ -268,7 +268,7 @@
 				"heading_tokenDist": "JSE Token Distribution Overview",
 				"subheading_totalDist": "Total JSE Distributed",
 				"subheading_currentDist": "Transfers In / Out",
-				"subheading_DistEndsIn": "JSE Distribution Ends In",
+				"subheading_DistEndsIn": "Bonus Ends",
 				"footer_msg": "**Depending on the Ethereum network traffic, figures may be delayed."
 			},
 			"panel_howToPurchase": {

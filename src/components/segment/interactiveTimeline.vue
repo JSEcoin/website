@@ -366,7 +366,7 @@ export default {
 						{
 							start: 190,
 							taskName: this.$t('segment.interactiveTimeline.task_name11'),
-							duration: 45,
+							duration: 90,
 						},
 					],
 					[
