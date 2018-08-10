@@ -931,10 +931,10 @@ th {
 	background-image: url(../../assets/ico/eos_token.png);
 }
 #JSEW-jse {
-	background-image: url(../../assets/ico/jse_token.png);
+	background-image: url(../../assets/ico/jse_token_white.png);
 }
 #JSEW-eth {
-	background-image: url(../../assets/ico/eth_token.png);
+	background-image: url(../../assets/ico/eth_token_white.png);
 }
 
 #JSEW-distCountdown {
