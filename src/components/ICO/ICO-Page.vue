@@ -697,7 +697,7 @@ export default {
 			const endICO = moment.unix(self.bonusDate);
 			const currentTime = moment();
 
-			let days = endICO.diff(currentTime, 'days');
+			let days = endICO.diff(currentTime, 'days')+1;
 			if (days < 10) {
 				days = `0${days}`;
 			}
