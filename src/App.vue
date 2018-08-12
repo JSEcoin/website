@@ -118,9 +118,9 @@
 							<a href="/forums">
 								{{ $t('template.navigation.link_forums') }}
 							</a>
-							<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a">
+							<!--<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a">
 								{{ $t('template.navigation.link_contactUs') }}
-							</router-link>
+							</router-link>-->
 						</div>
 					</div>
 				</nav>
@@ -326,9 +326,9 @@
 							<a href="/forums">
 								{{ $t('template.navigation.link_forums') }}
 							</a>
-							<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a">
+							<!--<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a">
 								{{ $t('template.navigation.link_contactUs') }}
-							</router-link>
+							</router-link>-->
 						</nav>
 						<nav>
 							<h4>{{ $t('template.navigation.heading_investors') }}</h4>
@@ -1938,6 +1938,9 @@ footer a {
 }
 .jay {
 	background-image:url("assets/images/profile/jay.png");
+}
+.kyle {
+	background-image:url("assets/images/profile/kyle.png");
 }
 .nick {
 	background-image:url("assets/images/profile/nick.png");

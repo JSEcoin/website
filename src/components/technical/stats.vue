@@ -15,9 +15,9 @@
 				<li onclick="window.location.href='https://developer.jsecoin.com/samples'">
 						{{ $t('pages.navigation.technical.link_samples') }}
 				</li>
-				<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="li">
+				<!--<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="li">
 					{{ $t('pages.navigation.technical.link_support') }}
-				</router-link>
+				</router-link>-->
 				<!--
 				<router-link v-bind:to="`/${$store.state.local}/technical/APIS`" tag="li">
 					{{ $t('pages.navigation.technical.link_APIS') }}

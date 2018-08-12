@@ -21,7 +21,7 @@
 			</p>
 		</div>
 		
-		<div id="JSEW-shop">
+		<div id="JSEW-shop" style="padding-bottom:30px;">
 			<div class="center">
 				<h1 class="heading">Donate</h1>
 				<h2 class="subHeading">Purchase some swag and give something back to charity</h2>

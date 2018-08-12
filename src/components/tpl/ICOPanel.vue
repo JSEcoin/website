@@ -209,7 +209,7 @@ export default {
 			const endICO = moment.unix(self.bonusDate);
 			const currentTime = moment();
 
-			let days = endICO.diff(currentTime, 'days')+1;
+			let days = endICO.diff(currentTime, 'days');
 			if (days < 10) {
 				days = `0${days}`;
 			}
@@ -222,8 +222,11 @@ export default {
 				const EOD = moment().endOf('day');
 				const EOH = moment().endOf('hour');
 				const EOM = moment().endOf('minute');
-
 				let hrs = EOD.diff(moment(), 'hours');
+
+				if (days === '00') {
+					hrs = endICO.diff(moment(), 'hours');
+				}
 				if (hrs < 10) {
 					hrs = `0${hrs}`;
 				}

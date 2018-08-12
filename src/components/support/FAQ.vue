@@ -5,9 +5,9 @@
 				<router-link v-bind:to="`/${$store.state.local}/support/community`" tag="li">
 					{{ $t('pages.navigation.support.link_community') }}
 				</router-link>
-				<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="li">
+				<!--<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="li">
 					{{ $t('pages.navigation.support.link_contact') }}
-				</router-link>
+				</router-link>-->
 				<router-link v-bind:to="`/${$store.state.local}/support/FAQ`" tag="li" class="active">
 					{{ $t('pages.navigation.support.link_FAQ') }}
 				</router-link>
@@ -16,7 +16,7 @@
 		<div id="JSEW-FAQ" class="wrapper center">
 			<h1 class="heading">{{ $t('pages.FAQ.heading_FAQ') }}</h1>
 			<h2 class="subHeading">{{ $t('pages.FAQ.subheading_FAQ') }}
-				<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a">
+				<router-link v-bind:to="`/${$store.state.local}/support/community`" tag="a">
 					{{ $t('pages.FAQ.link_getInTouch') }}
 				</router-link>
 			</h2>
@@ -348,8 +348,8 @@
 							<h3 class="faqItem"><i class="fa fa-plus-circle"></i> {{ $t('pages.FAQ.section_thePlatform.faqItemHeading2') }}</h3>
 							<p>
 								{{ $t('pages.FAQ.section_thePlatform.faqItemContent2') }}
-								<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a" >
-									https://jsecoin.com/support/contact
+								<router-link v-bind:to="`/${$store.state.local}/support/community`" tag="a" >
+									https://jsecoin.com/support/community
 								</router-link> 
 							</p>
 						</div>
@@ -372,8 +372,8 @@
 							<h3 class="faqItem"><i class="fa fa-plus-circle"></i> {{ $t('pages.FAQ.section_thePlatform.faqItemHeading5') }}</h3>
 							<p>
 								{{ $t('pages.FAQ.section_thePlatform.faqItemContent5') }}
-								<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a" >
-									{{ $t('pages.FAQ.section_thePlatform.link_contactForm') }}
+								<router-link v-bind:to="`/${$store.state.local}/support/community`" tag="a" >
+									<!--{{ $t('pages.FAQ.section_thePlatform.link_contactForm') }}--> Community
 								</router-link>
 							</p>
 						</div>
@@ -409,8 +409,8 @@
 							<h3 class="faqItem"><i class="fa fa-plus-circle"></i> {{ $t('pages.FAQ.section_thePlatform.faqItemHeading9') }}</h3>
 							<p>
 								{{ $t('pages.FAQ.section_thePlatform.faqItemContent9') }}
-								<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a" >
-									{{ $t('pages.FAQ.section_thePlatform.link_contactForm') }}
+								<router-link v-bind:to="`/${$store.state.local}/support/community`" tag="a" >
+									<!--{{ $t('pages.FAQ.section_thePlatform.link_contactForm') }}--> Community
 								</router-link>
 								{{ $t('pages.FAQ.section_thePlatform.faqItemContent9_line2') }}
 							</p>

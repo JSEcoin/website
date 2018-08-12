@@ -8,21 +8,26 @@
 				<router-link v-bind:to="`/${$store.state.local}/technical/stats`" tag="li">
 					{{ $t('pages.navigation.technical.link_stats') }}
 				</router-link>
-				<li>
-					<a href="https://developer.jsecoin.com">
+				<li onclick="window.location.href='https://developer.jsecoin.com'">
 						{{ $t('pages.navigation.technical.link_APIS') }}
-					</a>
 				</li>
-				<li>
-					<a href="https://developer.jsecoin.com/samples">
+				<li onclick="window.location.href='https://developer.jsecoin.com/samples'" class="active">
 						{{ $t('pages.navigation.technical.link_samples') }}
-					</a>
 				</li>
-				<li>
-					<a href="https://jsecoin.com/en/support/contact">
-						{{ $t('pages.navigation.technical.link_support') }}
-					</a>
-				</li>
+				<!--<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="li">
+					{{ $t('pages.navigation.technical.link_support') }}
+				</router-link>-->
+				<!--
+				<router-link v-bind:to="`/${$store.state.local}/technical/APIS`" tag="li">
+					{{ $t('pages.navigation.technical.link_APIS') }}
+				</router-link>
+				<router-link v-bind:to="`/${$store.state.local}/technical/samples`" tag="li">
+					{{ $t('pages.navigation.technical.link_samples') }}
+				</router-link>
+				<router-link v-bind:to="`/${$store.state.local}/technical/support`" tag="li">
+					{{ $t('pages.navigation.technical.link_support') }}
+				</router-link>
+				-->
 			</ul>
 		</nav>
 		
