@@ -204,7 +204,7 @@
 										<ul>
 											<li>Whitelisting KYC system</li> 
 											<li>Initiate marketing campaign</li> 
-											<li>Open source JSECoin</li> 
+											<li>Open source JSEcoin</li> 
 											<li>Pre-alpha Android Mobile App release</li>
 											<li>PIN Security Feature</li>
 										</ul>

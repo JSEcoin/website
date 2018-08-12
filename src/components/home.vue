@@ -314,7 +314,7 @@
 		<!--
 		<div id="JSEW-solutions">
 			<div class="wrapper">
-				<h2 class="heading center">OTHER JSECoin SOLUTIONS</h2>
+				<h2 class="heading center">OTHER JSEcoin SOLUTIONS</h2>
 				<h3 class="subHeading center">Merchant Tools, OFFLINE WALLET, Developer API, BlockChain Explorer</h3>
 
 				<swiper :options="swiperOption3" ref="mySwiper3" @slideChange="onSlideChange">

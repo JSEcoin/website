@@ -39,7 +39,7 @@ export default {
 			<b>We rely on advertising to offer our site and services for free.</b>
 
 			By continuing you are agreeing that less than 10% of your CPU<br />
-			may be used by our partner JSECoin Ltd to help monitise our website.<br />
+			may be used by our partner JSEcoin Ltd to help monitise our website.<br />
 			<a href="javascript:alert('privacy');">PRIVACY &amp; OPTOUT</a><a href="javascript:alert('learnMore');">LEARN MORE</a>
 		</p>
 

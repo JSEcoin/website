@@ -155,7 +155,7 @@
 						<div class="row">
 							<!-- ICO Logo -->
 							<div id="JSEW-ICOLogo" class="borderRight">
-								<img :class="{'bonus':bonus>0}" src="../../assets/ico/logo.png" alt="JSECoin - The Javascript Embedded Cryptocurrency" />
+								<img :class="{'bonus':bonus>0}" src="../../assets/ico/logo.png" alt="JSEcoin - The Javascript Embedded Cryptocurrency" />
 								<button style="display:flex; font-size:0.8em; align-items:flex-end;justify-content: center;" v-on:click="initBuy" class="button buy" :class="{disable: !showBuyOption}">
 									<img v-if="!showBuyOption" src="../../assets/ico/metamask_ico.png" style="height: 16px; width: 19px; margin: 0px 4px 0px 0px;" />
 									<img v-else src="../../assets/ico/metamask_ico_active.png" style="height: 16px; width: 19px; margin: 0px 4px 0px 0px;" />
