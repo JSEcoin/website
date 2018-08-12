@@ -18,11 +18,11 @@
 						{{ $t('pages.navigation.technical.link_samples') }}
 					</a>
 				</li>
-				<li>
+				<!--<li>
 					<a href="https://jsecoin.com/en/support/contact">
 						{{ $t('pages.navigation.technical.link_support') }}
 					</a>
-				</li>
+				</li>-->
 			</ul>
 		</nav>
 

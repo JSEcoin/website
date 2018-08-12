@@ -162,7 +162,7 @@
 									{{BuyJSEButton}}</button>
 								<div v-if="bonus>0" style="margin:10px 10px 10px 10px; font-size:0.65em; text-align:center; font-weight:bold; border-radius:3px; border:solid 1px #eee; padding:4px 8px;">
 									{{bonus}}% BONUS ROUND
-									<div style="border-top: solid 1px #eee; margin-top: 4px; padding-top: 4px;">1<span style="opacity:0.8; font-size:0.85em;">ETH</span> = {{calcBonus()}}<span style="opacity:0.8; font-size:0.85em;">JSE</span></div>
+									<div style="border-top: solid 1px #eee; margin-top: 4px; padding-top: 4px;">1<span style="opacity:0.8; font-size:0.85em;"> ETH</span> = {{calcBonus()}}<span style="opacity:0.8; font-size:0.85em;"> JSE</span></div>
 								</div>
 							</div>
 							<!-- xICO Logo -->
@@ -697,7 +697,7 @@ export default {
 			const endICO = moment.unix(self.bonusDate);
 			const currentTime = moment();
 
-			let days = endICO.diff(currentTime, 'days')+1;
+			let days = endICO.diff(currentTime, 'days');
 			if (days < 10) {
 				days = `0${days}`;
 			}
@@ -712,6 +712,9 @@ export default {
 				const EOM = moment().endOf('minute');
 
 				let hrs = EOD.diff(moment(), 'hours');
+				if (days === '00') {
+					hrs = endICO.diff(moment(), 'hours');
+				}
 				if (hrs < 10) {
 					hrs = `0${hrs}`;
 				}
@@ -1109,18 +1112,6 @@ export default {
 			if (input === 'jse') {
 				self.updateEthVal();
 			}
-
-			//console.log(self.form.ico.eth.val, (self.form.ico.eth.val.length > 10), (self.form.ico.eth.val % 1 !== 0));
-			//check if display > 10 and contains decimal
-			if ((self.form.ico.eth.val.length > 10) && (self.form.ico.eth.val % 1 !== 0)) {
-				//self.form.ico.eth.val = self.form.ico.eth.val.substring(0, 10);
-				self.form.ico.eth.val = String(+(Math.round(Number(self.form.ico.eth.val) + 'e+' + 10)  + 'e-' + 10));
-			}
-			//check if display > 10 and contains decimal
-			if ((self.form.ico.jse.val.length > 10) && (self.form.ico.jse.val % 1 !== 0)) {
-				//self.form.ico.jse.val = self.form.ico.jse.val.substring(0, 10);
-				self.form.ico.jse.val = String(+(Math.round(Number(self.form.ico.jse.val) + 'e+' + 10)  + 'e-' + 10));
-			}
 			//if text remove placeholder and show above input
 			if (String(self.form.ico[input].val).length > 0) {
 				self.form.ico[input].flag = false;
@@ -1129,7 +1120,6 @@ export default {
 				self.form.ico[input].displayLabel = false;
 				self.form.ico[input].flag = true;
 			}
-			self.JSEBonusVal = Math.floor(Number(self.form.ico.jse.val)*0.1).toLocaleString();
 			self.checkValWhiteListed();
 		},
 		/**
@@ -1157,6 +1147,16 @@ export default {
 			if (Number(self.form.ico.eth.val) > Number(self.maxEthWhitelisted)) {
 				self.form.ico.eth.val = String(self.maxEthWhitelisted);
 			}
+
+			//console.log(self.form.ico.eth.val, (self.form.ico.eth.val.length > 10), (self.form.ico.eth.val % 1 !== 0));
+			//check if display > 10 and contains decimal
+			if ((self.form.ico.eth.val.length > 10) && (self.form.ico.eth.val % 1 !== 0)) {
+				//self.form.ico.eth.val = self.form.ico.eth.val.substring(0, 10);
+				self.form.ico.eth.val = String(+(Math.round(Number(self.form.ico.eth.val) + 'e+' + 10)  + 'e-' + 10));
+			}
+			setTimeout(() => {
+				self.JSEBonusVal = Math.floor(Number(self.form.ico.jse.val)*(self.bonus/100)).toLocaleString();
+			}, 10);
 			self.form.ico.jse.val = String(self.JSEPerEth * self.form.ico.eth.val);
 			self.form.ico.jse.displayLabel = true;
 			self.form.info.title = '';
@@ -1179,6 +1179,11 @@ export default {
 			if (Number(self.form.ico.eth.val) > Number(self.maxEthWhitelisted)) {
 				self.form.ico.eth.val = String(self.maxEthWhitelisted);
 				self.updateJSEVal();
+			}
+			//check if display > 10 and contains decimal
+			if ((self.form.ico.jse.val.length > 10) && (self.form.ico.jse.val % 1 !== 0)) {
+				//self.form.ico.jse.val = self.form.ico.jse.val.substring(0, 10);
+				self.form.ico.jse.val = String(+(Math.round(Number(self.form.ico.jse.val) + 'e+' + 10)  + 'e-' + 10));
 			}
 			self.form.ico.eth.displayLabel = true;
 			self.form.info.title = '';
