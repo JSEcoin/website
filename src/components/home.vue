@@ -182,6 +182,20 @@
 			</div>
 		</div>
 
+		<div id="JSEW-ecosystem">
+			<div class="wrapper">
+				<h2 class="heading center">{{ $t('pages.home.section_eco.heading_eco') }}</h2>
+				<h3 class="subHeading center">{{ $t('pages.home.section_eco.subheading_eco') }}</h3>
+			</div>
+			<div style="width: 100%; text-align: center;">
+				<img src="../assets/images/ecosystem.png" style="width:100%; max-width: 800px; margin: 30px auto;" />
+				<br>
+				<router-link v-bind:to="`/${$store.state.local}/technical/ecosystem`" tag="button" style="display:inline-block; margin-bottom:40px;" class="button">
+					<i class="fa  fa-line-chart"></i> {{ $t('pages.home.section_eco.button_eco') }}
+				</router-link>
+			</div>
+		</div>
+
 		<div id="JSEW-timeLine">
 			<div class="wrapper">
 				<h2 class="heading center">{{ $t('pages.home.section_timeline.heading_timeline') }}</h2>
@@ -290,7 +304,6 @@
 		</div>
 
 
-		<!-- John Can You Check This 
 		<div id="JSEW-where-next">
 			<div class="wrapper center">
 				<div id="JSEW-where-next-container">
@@ -308,7 +321,7 @@
 				</div>
 			</div>
 		</div>
-		-->
+
 
 
 		<!--
@@ -586,6 +599,10 @@ export default {
 	color:#323232;
 }
 
+#JSEW-ecosystem {
+	padding-top: 40px;
+	background: #fafafa;
+}
 
 .swiper-container {
 	padding:20px 50px !important;
@@ -800,7 +817,8 @@ export default {
 	background-image: url("/static/images/search_logo.png");
   background-size: 300px;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+	background-position: 50% 50%;
+	padding-top: 40px;
 }
 #JSEW-where-next-container {
   background: rgba(255,255,255,0.95);

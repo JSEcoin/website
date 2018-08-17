@@ -29,6 +29,7 @@ import gdpr from '@/components/legal/gdpr';
 
 //technical
 import technicalOverview from '@/components/technical/techOverview';
+import ecosystem from '@/components/technical/ecosystem';
 import stats from '@/components/technical/stats';
 import APIS from '@/components/technical/APIS';
 import samples from '@/components/technical/samples';
@@ -409,6 +410,16 @@ const router = new Router({
 				headerBG: '/banners/technical.jpg',
 				headerTitle: 'pages.techOverview.banner.heading',
 				headerSubTitle: 'pages.techOverview.banner.subheading',
+			},
+		},
+		{
+			path: '/technical/ecosystem',
+			component: ecosystem,
+			meta: {
+				linkText: 'pages.ecosystem.banner.linkText',
+				headerBG: '/banners/ecosystem.jpg',
+				headerTitle: 'pages.ecosystem.banner.heading',
+				headerSubTitle: 'pages.ecosystem.banner.subheading',
 			},
 		},
 		{
@@ -886,6 +897,16 @@ const router = new Router({
 				headerBG: '/banners/technical.jpg',
 				headerTitle: 'pages.techOverview.banner.heading',
 				headerSubTitle: 'pages.techOverview.banner.subheading',
+			},
+		},
+		{
+			path: '/:lang/technical/ecosystem',
+			component: ecosystem,
+			meta: {
+				linkText: 'pages.ecosystem.banner.linkText',
+				headerBG: '/banners/ecosystem.jpg',
+				headerTitle: 'pages.ecosystem.banner.heading',
+				headerSubTitle: 'pages.ecosystem.banner.subheading',
 			},
 		},
 		{

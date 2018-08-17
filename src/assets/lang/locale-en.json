@@ -1,6 +1,7 @@
 {
 	"global": {},
 	"updates": {
+		"20180817": "technical/ecosystem, plus navigation ecosystem link",
 		"20180424": "priavcyPolicy > para_main1_cta, section_where_next > whole section",
 		"20180502": "pages.downloads, pages.whitelisting",
 		"20180706": "pages.ico",
@@ -75,6 +76,7 @@
 			"heading_investors": "Investors",
 			"link_whyInvest": "Why Invest",
 			"link_overview": "Overview",
+			"link_ecosystem": "Ecosystem",
 			"link_whitepaper": "Whitepaper",
 			"link_siteStatistics": "Site Statistics",
 			"link_bitcoinTalkAnn": "BitcoinTalk Ann",
@@ -233,6 +235,7 @@
 			},
 			"technical": {
 				"link_overview": "JSE Overview",
+				"link_ecosystem": "Ecosystem",
 				"link_stats": "Stats",
 				"link_APIS": "API'S",
 				"link_samples": "Samples",
@@ -510,6 +513,11 @@
 				"para_main3": "Current mining practices are not sustainable or justifiable in terms of energy consumption - we feel browser mining provides a solution. Whether it’s our project that breaks through with it or someone else’s, this is the direction the industry is going in and we have the first mover advantage. ​",
 				"button_learnMoreOnImpact": "Learn more on our impact",
 				"alt_sustainableEnergy": "Sustainable Energy"
+			},
+			"section_eco": {
+				"heading_eco": "JSE ECOSYSTEM",
+				"subheading_eco":"The JSE token economy is built on digital advertising, enterprise solutions and merchant tools",
+				"button_eco": "Build Demand On Exchanges"
 			},
 			"section_timeline": {
 				"heading_timeline": "2018 TIMELINE",
@@ -1528,6 +1536,38 @@
 				"subheading_miningRewards": "HIGH lEVEL ARCHITECTURE - POWERED BY GOOGLE CLOUD",
 				"alt_insight": "JSE Network Architecture"
 			}
+		},
+		"ecosystem": {
+			"meta": {
+				"title": "JSE Ecosystem",
+				"keywords": "jse ecosystem, ecosystem, exchange demand, ad exchange, enterprise solutions",
+				"description": "The JSEcoin ecosystem forms the token economy that will create demand on exchanges through digital advertising, enterprise solutions and merchant tools"
+			},
+			"banner": {
+				"linkText": "JSE Ecosystem",
+				"heading": "JSE ECOSYSTEM",
+				"subheading": "WHAT WILL CREATE DEMAND ON EXCHANGE FOR THE JSE TOKEN"
+			},
+			"title": "The JSE Token Economy",
+			"para_main1": "JSE tokens will form the future economy of web based payments, digital advertising and content monetization.",
+			"adExchange": "Ad Exchange",
+			"enterpriseSolutions": "Enterprise Solutions",
+			"merchantTools": "Merchant Tools",
+			"para_main2": "Over 18,000 publisher websites are currently opted-in to display advertising when it becomes available in 2019. As of August 2018 our opted in publishers attract 10 million+ impressions per day with a valuation of approx $1.5 million USD / month based on $5 cpm. The supply side is live and ready to go.",
+			"para_main3": "Advertisers will be able to use the JSE token to purchase ad space via a self-serve platform to promote their brands. By improving inefficiencies we can add value to a stagnated $200 billion ad-tech industry.",
+			"para_main4": "The first enterprise API solution will provide real-time detection and identification of bots and fraudulent traffic.",
+			"para_main5": "Adding value to a huge market place by reducing fraud associated with digital advertising and ecommerce.",
+			"para_main6": "3rd party websites, social networks and mobile applications can also benefit from identifying fake users.",
+			"para_main7": "Payment for the enterprise API will be in JSE tokens on a per query basis.",
+			"para_main8": "Website owners can integrate cryptocurrency payments for their products and services, including:",
+			"merchant_list1": "Shopping carts",
+			"merchant_list2": "Pay buttons",
+			"merchant_list3": "SaaS subscriptions",
+			"merchant_list4": "Digital downloads",
+			"merchant_list5": "Digital marketing",
+			"merchant_list6": "Software sales",
+			"merchant_list7": "Website membership subscriptions",
+			"para_main9": "Tokens can be mined or purchased on exchange to pay for digital goods and services."
 		},
 		"blockchainExplorer": {			
 			"meta": {
