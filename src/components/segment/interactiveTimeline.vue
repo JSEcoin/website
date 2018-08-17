@@ -390,7 +390,7 @@ export default {
 						},
 						{
 							start: 290,
-							taskName: 'Market Maker Fund Strategy',
+							taskName: 'Post Exchange PR Strategy',
 							duration: 60,
 						},
 					],
