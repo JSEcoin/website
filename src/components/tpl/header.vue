@@ -28,7 +28,7 @@
 					</p>-->
 				</div>
 			</div>
-			<button class="button invert" v-on:click="whyJSECoin()"><i class="fa fa-arrow-circle-down"></i> Close</button>
+			<button class="button invert" v-on:click="whyJSEcoin()"><i class="fa fa-arrow-circle-down"></i> Close</button>
 		</div>
 		<div id="JSEW-carousel" :class="[activeHeader]">
 			<div id="JSEW-headerCore">
@@ -61,7 +61,7 @@
 								<i class="fa fa-file-pdf-o"></i> {{ $t('tpl.header.carousel1.link_readTheWhitepaper') }}
 							</a>
 
-							<button id="JSEW-why" v-on:click="whyJSECoin()">
+							<button id="JSEW-why" v-on:click="whyJSEcoin()">
 								<i class="fa fa-heart"></i> {{ $t('tpl.header.carousel1.button_whyJSEcoin') }}
 							</button>
 						</div>
@@ -144,7 +144,7 @@ export default {
 
 	methods: {
 		//update transaction display
-		whyJSECoin() {
+		whyJSEcoin() {
 			this.isActiveHeaderPanel = !this.isActiveHeaderPanel;
 		},
 		headerSelector(headerItem) {

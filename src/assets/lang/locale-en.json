@@ -16,14 +16,14 @@
 			"link_login": "LOG IN"
 		},
 		"header": {
-			"heading_whyJSEcoin": "Why JSECoin?",
-			"para_main1": "Traditional cryptocurrencies were not designed for mainstream adoption or web integration. The JSECoin project is built from scratch to provide solutions to the following issues:",
+			"heading_whyJSEcoin": "Why JSEcoin?",
+			"para_main1": "Traditional cryptocurrencies were not designed for mainstream adoption or web integration. The JSEcoin project is built from scratch to provide solutions to the following issues:",
 			"subheading_environmentalImpact": "Environmental Impact",
-			"para_main2": "PoW mining of traditional cryptocurrencies uses a huge amount of electrical power. JSECoin is mined using surplus CPU resources reducing the environmental impact of cryptocurrency adoption.",
+			"para_main2": "PoW mining of traditional cryptocurrencies uses a huge amount of electrical power. JSEcoin is mined using surplus CPU resources reducing the environmental impact of cryptocurrency adoption.",
 			"subheading_consumerFriendly": "Consumer Friendly",
 			"para_main3": "Our hybrid system makes it easy for non-technical users to setup an account, mine currency, make transactions and use cryptocurrency. We provide a safe, simple and intuitive platform for our users.",
 			"subheading_builtForTheWeb": "Built For The Web",
-			"para_main4": "We believe cryptocurrency should be web-based. Our system is mined by webmasters and self-miners using a web browser. The online platform provides a web-based point of entry to the JSECoin network.",
+			"para_main4": "We believe cryptocurrency should be web-based. Our system is mined by webmasters and self-miners using a web browser. The online platform provides a web-based point of entry to the JSEcoin network.",
 			"button_close": "Close",
 			"carousel1": {
 				"heading": "DIGITAL CURRENCY - DESIGNED FOR THE WEB",
@@ -31,15 +31,15 @@
 				"placeholder": "Enter your email address",
 				"button_getStarted": "Get Started",
 				"link_readTheWhitepaper": "Read the Whitepaper",
-				"button_whyJSEcoin": "Why JSECoin?"
+				"button_whyJSEcoin": "Why JSEcoin?"
 			}
 		}
 	},
 	"template": {
 		"meta": {
 			"title": "DIGITAL CURRENCY - DESIGNED FOR THE WEB",
-			"keywords": "JSECoin, web mining cryptocurrency, crpyto, blockchain as a service, javascript mining code, javascript crypto miner, mining through a browser, mining gui",
-			"description": "Discover JSECoin, the easiest way to mine receive payments for your goods or services and transfer cryptocurrency to friends and family online. Explore the Cryptocurrency mined by webmasters built for everyone."
+			"keywords": "JSEcoin, web mining cryptocurrency, crpyto, blockchain as a service, javascript mining code, javascript crypto miner, mining through a browser, mining gui",
+			"description": "Discover JSEcoin, the easiest way to mine receive payments for your goods or services and transfer cryptocurrency to friends and family online. Explore the Cryptocurrency mined by webmasters built for everyone."
 		},
 		"global": {
 			"text_comingSoon": "Coming soon!"
@@ -138,11 +138,11 @@
 				"button_signup": "Signup today for updates!",
 				"heading_mentioned": "Mentioned On",
 				"subheading_mentioned": "Innovating with blockchain and the web",
-				"alt_logos": "Sites that JSECoin are mentioned on"
+				"alt_logos": "Sites that JSEcoin are mentioned on"
 			},
 			"companyInfo": {
 				"text_registered": "Registered in England No. 10940920 - Dun and Bradstreet No. 100233913837",
-				"text_address": "JSECoin Ltd, Cambridgeshire, United Kingdom"
+				"text_address": "JSEcoin Ltd, Cambridgeshire, United Kingdom"
 			},
 			"copy": {
 				"text_copyright": "Copyright 2017-2018",
@@ -306,7 +306,7 @@
 				"info_list2_1": "To see your JSE Tokens you may need to add our JSE Token address to your wallet:",
 				"info_list3": "Use MyEtherWallet, MetaMask or other compatible wallets.",
 				"info_list3_1": "Explore and track your ETH transactions on",
-				"info_list4": "Your JSECoin tokens will appear on your Dashboard.",
+				"info_list4": "Your JSEcoin tokens will appear on your Dashboard.",
 				"info_list5": "Set decimal numer: 18 - Some wallets may ask you to enter decimals."
 			}
 		},
@@ -314,17 +314,17 @@
 			"meta": {
 				"title": "About",
 				"keywords": "UK cryptocurrency blockchain, blockchain uk, uk cryptocurrency company",
-				"description": "An overview of the JSECoin project and the team behind the cryptocurrency startup based out of the UK."
+				"description": "An overview of the JSEcoin project and the team behind the cryptocurrency startup based out of the UK."
 			},
 			"banner": {
 				"linkText": "About Us",
 				"heading": "About Us",
 				"subheading": "Leading cryptocurrency network for web-based mining"
 			},
-			"heading_about": "About JSECoin Ltd",
+			"heading_about": "About JSEcoin Ltd",
 			"subheading_about": "Formed 6th august 2017",
-			"para_main1": "Founded in August of 2017, JSECoin develops next generation blockchain technology for the web.",
-			"para_main2": "The JSECoin project includes the digital currency, wallet, mining and developer platform where any business or individual with an email address can generate tokens as well as securely and cost-effectively send and receive cryptocurrency payments online.",
+			"para_main1": "Founded in August of 2017, JSEcoin develops next generation blockchain technology for the web.",
+			"para_main2": "The JSEcoin project includes the digital currency, wallet, mining and developer platform where any business or individual with an email address can generate tokens as well as securely and cost-effectively send and receive cryptocurrency payments online.",
 			"para_main3": "The size of our network and widening acceptance of our product have helped us become one of the leading cryptocurrency networks for web-based mining. We are leading the way in promoting ethical opt-in web-based mining to our publishers which drive traffic and computation power to the network.",
 			"para_main4": "Headquartered in Cambridge, United Kingdom our team are working towards building a world class payments solution for the web utilizing the latest developments in blockchain technology. The world is changing and how we store value, trade and use money is going to be disrupted in the next decade. The emergence of cryptocurrencies provides a unique opportunity for us to change the world and make a difference.",
 			"para_main5": "If you would like to know more about the project please take the time to look at our updated whitepaper:",
@@ -343,7 +343,7 @@
 			},
 			"heading_about": "JSE for Charity",
 			"subheading_about": "In September 2017 we setup a charity account",
-			"para_main1": "Our pledge is to give something back to the charities that are important to our users. We are creating a peer led voting system where the charities we support are chosen by the JSECoin community. Members can pledge any amount of JSE no matter how big or small by making a transfer to our charity account. We are also transferring any tokens unfairly earned straight to the charity account so that some good can come from some people’s bad practice. Following our ICO we will look to distribute these tokens to your chosen charities.",
+			"para_main1": "Our pledge is to give something back to the charities that are important to our users. We are creating a peer led voting system where the charities we support are chosen by the JSEcoin community. Members can pledge any amount of JSE no matter how big or small by making a transfer to our charity account. We are also transferring any tokens unfairly earned straight to the charity account so that some good can come from some people’s bad practice. Following our ICO we will look to distribute these tokens to your chosen charities.",
 			"para_main2": "We will be setting up a crowd voting system and regular distribution package where anyone can suggest a registered charity and the community will vote on the most worthwhile causes which will receive funds.",
 			"para_main3_line1": "This account has now grown to contain over",
 			"para_main3_line2": "JSE and we are excited to start work on distributing this to great causes after the ICO.",
@@ -353,20 +353,20 @@
 			"meta": {
 				"title": "Environment",
 				"keywords": "Environmentally friendly cryptocurrency, green blockchain technology",
-				"description": "Traditional cryptocurrencies are horribly inefficient with some using as much power as a whole country. JSECoin aims to reduce the carbon footprint of the blockchain industry."
+				"description": "Traditional cryptocurrencies are horribly inefficient with some using as much power as a whole country. JSEcoin aims to reduce the carbon footprint of the blockchain industry."
 			},
 			"banner": {
 				"linkText": "Environment",
 				"heading": "Environment",
-				"subheading": "REDUCING THE ENVIRONMENTAL IMPACT OF CRYPTO WITH JSECoin"
+				"subheading": "REDUCING THE ENVIRONMENTAL IMPACT OF CRYPTO WITH JSEcoin"
 			},
 			"heading_environment": "Our Environmental impact",
 			"subheading_environment": "blockchains are power hungry",
 			"para_main1": "Did you know that 6 US households can be powered for 1 day by the electricity consumed for a single transaction on the bitcoin network!",
 			"para_main2": "The entire network consumes the same amount of electricity as 1,500,000 households and the consumption of miners is growing at around 1TW/hr per month. This is caused by the competitive nature of the mining proof of work system. Miners with access to cheaper electricity have an advantage as this is the only real cost once the ASIC mining hardware has been purchased. The result, huge server farms consuming nearly a billion dollars worth of electricity a year.",
-			"para_main3": "Is this optimal, ethical or sustainable? We think not. JSECoin provides a solution by using background CPU power which isn’t used during normal web browsing. This excess computer power is put to use mining and securing the blockchain without destroying the planet. It seems like a logical evolution of the technology but then we are a litte biased.",
+			"para_main3": "Is this optimal, ethical or sustainable? We think not. JSEcoin provides a solution by using background CPU power which isn’t used during normal web browsing. This excess computer power is put to use mining and securing the blockchain without destroying the planet. It seems like a logical evolution of the technology but then we are a litte biased.",
 			"para_main4_line1": "As part of our commitment to operating transparently and ethically we will be publishing all outgoing transactions from this account.",
-			"para_main4_line1_bold": "JSECoin has the first-mover advantage",
+			"para_main4_line1_bold": "JSEcoin has the first-mover advantage",
 			"para_main4_line2": ", let’s move fast and mend things."
 		},
 		"whitelisting": {
@@ -438,7 +438,7 @@
 		"exchanges": {
 			"meta": {
 				"title": "Exchanges",
-				"keywords": "Trade jse, JSECoin exchange, exchange JSECoin, JSECoin price, jse to usd",
+				"keywords": "Trade jse, JSEcoin exchange, exchange JSEcoin, JSEcoin price, jse to usd",
 				"description": ""
 			},
 			"banner": {
@@ -454,7 +454,7 @@
 		},
 		"home": {
 			"meta": {
-				"title": "JSECoin: Digital Currency - Designed for the web",
+				"title": "JSEcoin: Digital Currency - Designed for the web",
 				"description": ""
 			},
 			"banner": {
@@ -472,9 +472,9 @@
 					"heading_browserMining": "Web Browser Mining",
 					"para_browserMining": "Anyone with a web browser or website can now mine cryptocurrency. Either mine on your own device on our easy to use platform, or simply install a code snippet into your website which will earn you tokens whilst your visitors browse.",
 					"heading_storage": "Storage",
-					"para_storage": "You can store your tokens on the JSECoin platform or alternatively export them to an Ethereum compatible wallet of your choice.",
+					"para_storage": "You can store your tokens on the JSEcoin platform or alternatively export them to an Ethereum compatible wallet of your choice.",
 					"heading_tokens": "How to use your tokens",
-					"para_tokens": "Use your JSECoin tokens to make online purchases at participating sites. If you have your own site you can now start accepting JSECoin using our easy to use merchant tools."
+					"para_tokens": "Use your JSEcoin tokens to make online purchases at participating sites. If you have your own site you can now start accepting JSEcoin using our easy to use merchant tools."
 				},
 				"button_readWhitePaper": "Read the Whitepaper"
 			},
@@ -483,8 +483,8 @@
 				"subheading_browserMining": "Ever wanted to get into cryptocurrency but found it all a little confusing?",
 				
 				"heading_simple": "Simple To Use",
-				"para_main1": "Now you can register your JSECoin account and start mining in 60 seconds.",
-				"para_main2": "We have a dedicated mining page on the platform where you can put your devices CPU to use earning you some JSECoin tokens. Here your computer will be performing mathematical equations to secure our blockchain (basically a ledger of all of our transactions) and as a reward for doing this you will have the chance to earn JSECoin tokens. ",
+				"para_main1": "Now you can register your JSEcoin account and start mining in 60 seconds.",
+				"para_main2": "We have a dedicated mining page on the platform where you can put your devices CPU to use earning you some JSEcoin tokens. Here your computer will be performing mathematical equations to secure our blockchain (basically a ledger of all of our transactions) and as a reward for doing this you will have the chance to earn JSEcoin tokens. ",
 				"para_main3": "You’re in complete control the whole time and are able to start and stop the process at any point, as well as change how much CPU power you dedicate to mining. ",
 				"button_tryit": "Try it Out!",
 				"button_watchVideo": "Watch our video",
@@ -496,8 +496,8 @@
 				"alt_existingMiningPlatform": "Existing Mining Platform",
 				"heading_pubPlatMining": "Publisher mining overview",
 				"subheading_pubPlatMining": "Are you looking for a new way to monetise your website",
-				"para_main1": "JSECoin could be the solution. An unobtrusive code snippet is placed on your site which then runs the JSECoin miner on your visitors' devices whilst they browse your website. ",
-				"para_main2": "This provides the hashing functionality required to secure the blockchain and in return you get the chance to earn JSECoin tokens. ",
+				"para_main1": "JSEcoin could be the solution. An unobtrusive code snippet is placed on your site which then runs the JSEcoin miner on your visitors' devices whilst they browse your website. ",
+				"para_main2": "This provides the hashing functionality required to secure the blockchain and in return you get the chance to earn JSEcoin tokens. ",
 				"para_main3": "We believe that transparency and minimal impact on your visitors' browsing experience is key to mainstream adoption of this system. All visitors to your site will be notified and given the chance to opt out, and cpu usage is less than most standard video ads.",
 				"button_findOutMore": "Find out more",
 				"button_watchVideo": "Watch our video"
@@ -506,7 +506,7 @@
 				"heading_env": "ENVIRONMENTAL IMPACT OF CRYPTOCURRENCY",
 				"subheading_env": "TRADITIONAL CRYPTOCURRENCIES USE MORE POWER THAN SMALL COUNTRIES TO OPERATE THEIR NETWORKS",
 				"para_main1": "Every other industry across the globe is moving towards greener solutions that mitigate the risk of climate change and global warming. Sooner rather than later blockchain technology needs to follow suit. There is simply no need to consume the vast amounts of electrical power that traditional cryptocurrency networks waste.",
-				"para_main2": "JSECoin is mined using surplus CPU resources which would be otherwise wasted. Browser mining has a huge environmental and cost advantage over existing cryptocurrency networks. There is an opportunity to make a real difference with web based cryptocurrency mining.",
+				"para_main2": "JSEcoin is mined using surplus CPU resources which would be otherwise wasted. Browser mining has a huge environmental and cost advantage over existing cryptocurrency networks. There is an opportunity to make a real difference with web based cryptocurrency mining.",
 				"para_main3": "Current mining practices are not sustainable or justifiable in terms of energy consumption - we feel browser mining provides a solution. Whether it’s our project that breaks through with it or someone else’s, this is the direction the industry is going in and we have the first mover advantage. ​",
 				"button_learnMoreOnImpact": "Learn more on our impact",
 				"alt_sustainableEnergy": "Sustainable Energy"
@@ -530,7 +530,7 @@
 				"alt_charity": "JSE Donating to Charity",
 				"heading_charity": "Donating to charity",
 				"subheading_charity": "FUND RAISING ACTIVITIES",
-				"para_main1": "Our pledge is to give something back to the charities that are important to our users. We are creating a peer led voting system where the charities we support are chosen by the JSECoin community. Members can pledge any amount of JSE no matter how big or small by making a transfer to our charity account. We are also transferring any tokens unfairly earned straight to the charity account so that some good can come from some people’s bad practice. Following our ICO we will look to distribute these tokens to your chosen charities.",
+				"para_main1": "Our pledge is to give something back to the charities that are important to our users. We are creating a peer led voting system where the charities we support are chosen by the JSEcoin community. Members can pledge any amount of JSE no matter how big or small by making a transfer to our charity account. We are also transferring any tokens unfairly earned straight to the charity account so that some good can come from some people’s bad practice. Following our ICO we will look to distribute these tokens to your chosen charities.",
 				"text_JSECollected": "JSE Collected for charity"
 			},
 			"section_where_next": {
@@ -557,8 +557,8 @@
 		"systemStatus": {
 			"meta": {
 				"title": "System Status",
-				"keywords": "JSECoin network, blockchain system status",
-				"description": "System updates and live server information from the JSECoin network. If something goes wrong you'll hear about it here first."
+				"keywords": "JSEcoin network, blockchain system status",
+				"description": "System updates and live server information from the JSEcoin network. If something goes wrong you'll hear about it here first."
 			},
 			"banner": {
 				"linkText": "System Status",
@@ -576,8 +576,8 @@
 		"timeline": {
 			"meta": {
 				"title": "Interactive Timeline",
-				"keywords": "JSECoin timeline, browser mining ico, jse timeline",
-				"description": "The future for cryptocurrency is bright. See our plan of action to design, build, promote and maintain the JSECoin blockchain, web mining platform and publisher suite."
+				"keywords": "JSEcoin timeline, browser mining ico, jse timeline",
+				"description": "The future for cryptocurrency is bright. See our plan of action to design, build, promote and maintain the JSEcoin blockchain, web mining platform and publisher suite."
 			},
 			"banner": {
 				"linkText": "Timeline",
@@ -594,7 +594,7 @@
 			},
 			"section_timeline": {
 				"heading_timeline": "Where it all began",
-				"subheading_timeline": "The history of JSECoin",
+				"subheading_timeline": "The history of JSEcoin",
 
 				"date_july17_ABR": "JUL",
 				"info_july17_title": "Proof of Concept",
@@ -602,8 +602,8 @@
 				"info_july17_para_content2": "James Investigates further with sample code",
 			
 				"date_august17_ABR": "AUG",
-				"info_august17_title": "JSECoin is founded",
-				"info_august17_para_content1": "JSECoin is founded by James Bachini.",
+				"info_august17_title": "JSEcoin is founded",
+				"info_august17_para_content1": "JSEcoin is founded by James Bachini.",
 				"info_august17_list1": "Create beta platform for website owners.",
 				"info_august17_list2": "Get feedback from cryptocurrency investors and developers. ",
 				"info_august17_list3": "Launch on internal website network and create beta-blockchain.",
@@ -634,7 +634,7 @@
 				"info_december17_list4": "Start preparing for ICO",
 				
 				"date_january18_ABR": "JAN",
-				"info_january18_title": "JSECoin Rebrand",
+				"info_january18_title": "JSEcoin Rebrand",
 				"info_january18_para_content1": "Launch rebranded corporate site",
 				"info_january18_list1": "Solidity Contract ERC220",
 				"info_january18_list2": "Publisher Site Crawler"
@@ -656,10 +656,10 @@
 				"subheading_careers": "Driven to contribute meaningful and cutting edge projects",
 				"para_main1": "Are you passionate about blockchain, web technologies, making what seems impossible possible through the web? If so, you've found the right place.",
 				"para_main2": "We're a global team of passionate developers, designers, and entrepreneurs - who are looking to make a difference in the fintech industry with digital currencies and the blockchain.",
-				"para_main3": "The JSECoin platform facilitates the easy use of digital currency for consumers and merchants. This includes the buying and selling of our cryptocurrency JSE, and provides secure storage in the cloud along side a suite of merchant tools and developer platform.",
+				"para_main3": "The JSEcoin platform facilitates the easy use of digital currency for consumers and merchants. This includes the buying and selling of our cryptocurrency JSE, and provides secure storage in the cloud along side a suite of merchant tools and developer platform.",
 				"minorHeading_benefits": "Benefits",
 				"info_benefits_list1": "Own your own projects from conception to launch",
-				"info_benefits_list2": "The option of getting paid in JSECoin",
+				"info_benefits_list2": "The option of getting paid in JSEcoin",
 				"info_benefits_list3": "Work whenever you work best (flexible hours)",
 				"info_benefits_list4": "Flexible vacation - take time off when you need it",
 				"info_benefits_list5": "100% of medical/vision/dental benefits for employees ",
@@ -722,7 +722,7 @@
 			"meta": {
 				"title": "Press And Media",
 				"keywords": "Blockchain articles, cryptocurrency interviews, cryptocurrency press release",
-				"description": "Public relations information including artwork for use by the press. JSECoin is a cryptocurrency startup based in the UK specializing in website cryptocurrency mining."
+				"description": "Public relations information including artwork for use by the press. JSEcoin is a cryptocurrency startup based in the UK specializing in website cryptocurrency mining."
 			},
 			"banner": {
 				"linkText": "Press",
@@ -731,7 +731,7 @@
 			},
 			"section_overview": {
 				"heading_press": "Press Coverage",
-				"subheading_press": "Find out what others are saying about JSECoin",
+				"subheading_press": "Find out what others are saying about JSEcoin",
 				"alt_symantecLogo": "Symantec Logo",
 				"strapline_1": "offer a real and potentially better alternative to traditional web revenue generation methods",
 				"alt_BBCLogo": "BBC Logo",
@@ -743,8 +743,8 @@
 			"section_media": {
 				"alt_mediaPackDownload": "Media Pack Download",
 				"heading_media": "Media Pack Downloads",
-				"para_main1": "Feel free to use any of the images, quotes or stats from this site in your press article. All we ask is that we are not associated with the hidden background Monero mining platforms. JSECoin has never and will never participate in hidden background website mining.",
-				"para_main2": "The JSECoin project is dedicated to building new blockchain technologies based on the web and does not mine Bitcoin or Monero. Please read the frequently asked questions documents for further information.",
+				"para_main1": "Feel free to use any of the images, quotes or stats from this site in your press article. All we ask is that we are not associated with the hidden background Monero mining platforms. JSEcoin has never and will never participate in hidden background website mining.",
+				"para_main2": "The JSEcoin project is dedicated to building new blockchain technologies based on the web and does not mine Bitcoin or Monero. Please read the frequently asked questions documents for further information.",
 				"para_main3": "If you have any questions or would like to reach out to one of the team please",
 				"link_contactUs": "contact us",
 				"button_downloadMediaPack": "Download Media Pack"
@@ -754,7 +754,7 @@
 			"meta": {
 				"title": "The Team",
 				"keywords": "cryptocurrency team, blockchain developers, uk crypto project",
-				"description": "Meet the JSECoin team and find out more about our founders who created the technology and built the cryptocurrency."
+				"description": "Meet the JSEcoin team and find out more about our founders who created the technology and built the cryptocurrency."
 			},
 			"banner": {
 				"linkText": "Meet The Team",
@@ -762,7 +762,7 @@
 				"subheading": "Advancing blockchain<br />mining and cryptocurrency trading"
 			},
 			"section_overview": {
-				"heading_team": "JSECoin Team",
+				"heading_team": "JSEcoin Team",
 				"subheading_team": "Formed 6th august 2017",
 				"para_main1": "The JSE Team are driven and committed to improving and simplify the process by which people can mine and transact with cryptocurrencies through the use of the browser for all devices.",
 				"para_main2": "“We no longer live in the 90’s and it shouldn’t be as difficult as it is today to buy and trade goods with a cryptocurrency.”",
@@ -783,7 +783,7 @@
 				"DM": {
 					"title": "Co-Founder and COO",
 					"para_main1": "Dave heads up our technical support and social channels where he provides technical knowledge, patience and assistance to our users.",
-					"para_main2": "You will see him active on the forums and social sites, helping, guiding and actively promoting JSECoin. "
+					"para_main2": "You will see him active on the forums and social sites, helping, guiding and actively promoting JSEcoin. "
 				},
 				"TH": {
 					"title": "Co-Founder and CFO",
@@ -836,7 +836,7 @@
 				},
 				"OB": {
 					"title": "Marketing Advisor",
-					"para_main1": "6 years experience in online advertising and affiliate marketing. Ran a full service digital marketing agency for 4 years. 6 years full stack development experience. Image and digital media editing professional. Recently returned from an around the world trip to help with the JSECoin project.",
+					"para_main1": "6 years experience in online advertising and affiliate marketing. Ran a full service digital marketing agency for 4 years. 6 years full stack development experience. Image and digital media editing professional. Recently returned from an around the world trip to help with the JSEcoin project.",
 					"para_main2": "Oliver will be responsible for managing the affiliate accounts and helping with front end developments and media production for social networking accounts. "
 				},
 				"ASa": {
@@ -851,7 +851,7 @@
 			"meta": {
 				"title": "Developer Options",
 				"keywords": "Blockchain development, build app for blockchain, cryptocurrency developer",
-				"description": "Developers can learn more about working with the JSECoin platform and API. Find out more about the network, how it runs and how you can integrate 3rd party applications."
+				"description": "Developers can learn more about working with the JSEcoin platform and API. Find out more about the network, how it runs and how you can integrate 3rd party applications."
 			},
 			"banner": {
 				"linkText": "Developers",
@@ -860,14 +860,14 @@
 			},
 			"heading_developer": "Our Commitment",
 			"subheading_developer": "Driving innovation with blockchain and online cryptocurrency",
-			"para_main1": "The publisher code is just the tip of the iceberg when considering what is possible with JSECoin. We have fully features REST API's with documentation available at:",
+			"para_main1": "The publisher code is just the tip of the iceberg when considering what is possible with JSEcoin. We have fully features REST API's with documentation available at:",
 			"para_main2": "Developers can leverage balance checks, site and SubID tracking, server-side transactions, import/export functionality and a lot more.",
 			"para_main3": "Our engineers are available to support your projects and we have active support communities on the forum, Discord and Telegram where you can post questions and get help from our team."
 		},
 		"investorOverview": {
 			"meta": {
 				"title": "Investor Options",
-				"keywords": "Browser mining ico, web blockchain ico, JSECoin investor information",
+				"keywords": "Browser mining ico, web blockchain ico, JSEcoin investor information",
 				"description": "Information for potential investors and cryptocurrency traders. Find all the information you require in our investor portal."
 			},
 			"banner": {
@@ -876,13 +876,13 @@
 				"subheading": "What, Why, When..."
 			},
 			"test": "test",
-			"heading_what": "What is JSECoin",
+			"heading_what": "What is JSEcoin",
 			"subheading_what": "Cryptocurrency targeted for the web",
 			"para_what1": "JSEcoin is a simple to use platform making cryptocurrency accessible to a much wider audience encouraging mainstream adoption, alongside offering a genuine solution to disrupt the $200 billion online advertising industry.",
 			"heading_why": "Why Invest",
 			"subheading_why": "Committed to changing the way sites are monetised",
-			"para_why1": "This is a new concept that is set to challenge the current model for website monetisation. With the current online advertising industry being valued in excess of $200 billion worldwide, this would be a great time to invest in a platform that could challenge the current status quo. Demand for JSECoin will be created by the introduction of merchant tools allowing for the use of JSECoin as a method for digital payments. We are building a large community of platform miners to ensure that there is large pool of users with JSECoin tokens to spend.",
-			"para_why2": "The current trend for an ICO is for a company to do so based on an idea and a whitepaper. This clearly poses a huge risk for investors that no product will ever come to market. Whilst we are in no way able to offer investors any guarantees of a return (we would question anyone who does) we are trying to build a great platform and engage a solid user base to mitigate this risk and make JSECoin a more viable investment opportunity.",
+			"para_why1": "This is a new concept that is set to challenge the current model for website monetisation. With the current online advertising industry being valued in excess of $200 billion worldwide, this would be a great time to invest in a platform that could challenge the current status quo. Demand for JSEcoin will be created by the introduction of merchant tools allowing for the use of JSEcoin as a method for digital payments. We are building a large community of platform miners to ensure that there is large pool of users with JSEcoin tokens to spend.",
+			"para_why2": "The current trend for an ICO is for a company to do so based on an idea and a whitepaper. This clearly poses a huge risk for investors that no product will ever come to market. Whilst we are in no way able to offer investors any guarantees of a return (we would question anyone who does) we are trying to build a great platform and engage a solid user base to mitigate this risk and make JSEcoin a more viable investment opportunity.",
 			"heading_when": "When to Invest",
 			"subheading_when": "ICO Summer 2018",
 			"para_when1": "We are planning an ICO for later this year. As mentioned above we want to ensure that we have a great working product that has been adopted by a solid user base. Exact dates will be announced once we have finished the majority of the major development as listed on our timeline."
@@ -891,7 +891,7 @@
 			"meta": {
 				"title": "Webmaster Overview",
 				"keywords": "Mine cryptocurrency on website, wordpress cryptocurrency mining, monero alternative, browser miner, web mining cryptocurrency",
-				"description": "Browser based cryptocurrency mining on your website, learn how to install the JSECoin code on your site and mine cryptocurrency in a browser."
+				"description": "Browser based cryptocurrency mining on your website, learn how to install the JSEcoin code on your site and mine cryptocurrency in a browser."
 			},
 			"banner": {
 				"linkText": "Webmasters",
@@ -915,7 +915,7 @@
 				"subheading": ""
 			},
 			"heading_privacy": "Privacy Policy",
-			"para_main1": "The JSECoin code snippet runs mathematical cryptography hashing while you are browsing a website. This enables us to reward webmasters for producing the content that you have requested.",
+			"para_main1": "The JSEcoin code snippet runs mathematical cryptography hashing while you are browsing a website. This enables us to reward webmasters for producing the content that you have requested.",
 			"para_main1_cta": "Individuals can now earn cryptocurrency rewards too by setting up an account at: ",
 			"para_main2": "If you wish to opt-out you can do so at the following link:",
 			"para_main3": "You can opt-out of JSE crypto-mining across the whole network by clicking here",
@@ -948,7 +948,7 @@
 		"kycPolicy": {
 			"meta": {
 				"title": "KYC Policy",
-				"description": "Know your customer policy for JSECoin and how we work to battle money laundering in cryptocurrency"
+				"description": "Know your customer policy for JSEcoin and how we work to battle money laundering in cryptocurrency"
 			},
 			"banner": {
 				"linkText": "kycPolicy",
@@ -958,11 +958,11 @@
 			"heading_kyc": "KNOW YOUR CUSTOMER (KYC) POLICY",
 			"para_main1": "Between £800 billion and $2 trillion USD is laundered every year which equates to 2-5% of world GDP (United Nations Office on Drugs and Crime 2017)",
 			"para_main2": "Around $1.5 trillion is paid in bribes by businesses and individuals each year. (World Bank 2017)",
-			"para_main3": "At JSECoin we don't want to be associated with money laundering and are taking active measures to comply with the governments know your customer regulations.",
+			"para_main3": "At JSEcoin we don't want to be associated with money laundering and are taking active measures to comply with the governments know your customer regulations.",
 			"para_main4": "This KYC policy applies to all customer relationships with transactions valuing over $10,000 USD.",
 			"para_main5": "For investors looking to transfer more than $10,000 USD it will be necessary to verify your account by sending us a scan of an official document which includes a photograph, identity, residential address and date of birth. Data will be kept for a minimum of five years from the transaction date.",
 			"para_main6": "KYC is an ongoing, risk‐based process to gather relevant information about our customers and their business and financial activities in order to:",
-			"list_collectedData1": "Facilitate the timely identification of customer activity that is inconsistent with established facts and information. JSECoin is committed to deterring the use of its products and services for illegal purposes. The KYC policy and supporting procedures are a key component in the program to prevent and detect money laundering, terrorist financing, fraud and identity theft",
+			"list_collectedData1": "Facilitate the timely identification of customer activity that is inconsistent with established facts and information. JSEcoin is committed to deterring the use of its products and services for illegal purposes. The KYC policy and supporting procedures are a key component in the program to prevent and detect money laundering, terrorist financing, fraud and identity theft",
 			"list_collectedData2": "Meet our legal and regulatory obligation",
 			"subHeading_customerIdentity": "Confirming Customer Identity",
 			"para_main7": "When establishing a relationship with a customer we will confirm the identity of a person or the existence of an entity within acceptable time frames using acceptable identification methods. When a product or service is being established, inquiries will be made to determine whether it will be used by or for the benefit of a third party. Where required, particulars of the third party and their relationship with the customer will be obtained prior to establishing the relationship.",
@@ -1001,7 +1001,7 @@
 				"alt_bugBounty": "Bug Bounty",
 				"heading_bugBounty": "JSE Security Bug Bounty",
 				"subheading_bugBounty": "Happy bug hunting!",
-				"para_main1": "As part of our continued commitment to ensuring the safety and reliability of the JSECoin system - we offer a bug bounty scheme for responsible disclosure of security vulnerabilities.",
+				"para_main1": "As part of our continued commitment to ensuring the safety and reliability of the JSEcoin system - we offer a bug bounty scheme for responsible disclosure of security vulnerabilities.",
 				"para_main2": "Software security researchers today are increasingly engaged with Internet companies to track issues and security vulnerabilities. Programs by HackerOne, Hacken, Google, Mozilla, and others have helped to create a strong bug-hunting community.",
 				"para_main3": "Our bounty program gives a tip of the hat to these researchers for their efforts and provides some cold hard JSE.",
 				"para_main4": "If you’ve found a vulnerability, ",
@@ -1021,7 +1021,7 @@
 				"list_forYou1": "Don’t attempt to gain access to another user’s account or data.",
 				"list_forYou2": "Don’t perform any attack that could harm the reliability/integrity of our services or data. DDoS/spam attacks are not allowed.",
 				"list_forYou3": "Don’t publicly disclose a bug before it has been fixed.",
-				"list_forYou4": "Only test for vulnerabilities on sites you know to be operated by JSECoin and listed under Open Bounties.",
+				"list_forYou4": "Only test for vulnerabilities on sites you know to be operated by JSEcoin and listed under Open Bounties.",
 				"list_forYou5": "Don’t use scanners or automated tools to find vulnerabilities. They’re noisy and we may ban your IP address.",
 				"list_forYou6": "Never attempt non-technical attacks such as social engineering, phishing, or physical attacks against our employees, users, or infrastructure.",
 				"list_forYou7": "When in doubt, ",
@@ -1075,7 +1075,7 @@
 			"meta": {
 				"title": "Community Tasks",
 				"keywords": "Paid in cryptocurrency, cryptocurrency jobs, blockchain jobs",
-				"description": "Want to help promote and build the JSECoin project? Earn JSE by completing odd jobs and help us build the next generation of browser based cryptocurrency."
+				"description": "Want to help promote and build the JSEcoin project? Earn JSE by completing odd jobs and help us build the next generation of browser based cryptocurrency."
 			},
 			"banner": {
 				"linkText": "Small Jobs",
@@ -1089,7 +1089,7 @@
 			
 			"heading_promo": "JSE promotional videos",
 			"subheading_promo": "Do you have video editing skills?",
-			"para_promo": "Create a promotional video for JSECoin and if it's great, and we use it, we will pay you 10,000 JSE. The video should promote the project to investors and webmasters who have never heard of the platform. It should be impressive, sleek and modern. Please don't use any copyrighted music/images/video from 3rd parties that might get us in trouble.",
+			"para_promo": "Create a promotional video for JSEcoin and if it's great, and we use it, we will pay you 10,000 JSE. The video should promote the project to investors and webmasters who have never heard of the platform. It should be impressive, sleek and modern. Please don't use any copyrighted music/images/video from 3rd parties that might get us in trouble.",
 			
 			"heading_affiliate": "Become an affiliate",
 			"subheading_affiliate": "Earn 200 JSE per user who you can get to sign up to the platform",
@@ -1149,8 +1149,8 @@
 		"contact": {
 			"meta": {
 				"title": "Contact",
-				"keywords": "Contact JSECoin, JSECoin contact details",
-				"description": "Contact the JSECoin team with any questions, requests, suggestions or feedback on our browser based mining and cryptocurrency platform."
+				"keywords": "Contact JSEcoin, JSEcoin contact details",
+				"description": "Contact the JSEcoin team with any questions, requests, suggestions or feedback on our browser based mining and cryptocurrency platform."
 			},
 			"banner": {
 				"linkText": "Contact",
@@ -1201,11 +1201,11 @@
 				"faqItemContent1": "We are currently integrating the platform with an ERC20 compatible Ethereum smart contract. This will be compatible with all 3rd party ERC20 compatible wallets such as myetherwallet, metamask, parity etc. For most users we recommend storing your tokens on the web platform and using strong security practices on your account such as unique passwords and two factor authentication.",
 				"faqItemHeading2": "I've lost my two factor authentication code, what can I do?",
 				"faqItemContent2": "If you have lost your phone or access to your 2fa codes we recommend reinstalling Google Authenticator or Authy on a new device and signing in with your gmail account to access your codes. If this doesn't work we will require photo identification matching the name and address used when you signed up for an account along with answering some security questions. Please note 2fa is a security feature and we reserve the right to decline requests to reset it if we are not 100% satisfied that the case is genuine.",
-				"faqItemHeading3": "Why should I use a unique password for the JSECoin platform?",
-				"faqItemContent3": "You should use a different password for every platform that you register with. Users who use the same email address and password for every account risk having their accounts hacked. This is because high profile hacks leaked databases of email/password combos which are now available to hackers. Yahoo, Linkedin, Sony, AOL, Equifax have all been breached in the past and user account data is in the hands of hackers. Financial platforms are particularly targetable by hackers for obvious reasons. Take care of your account, use a unique password and setup two factor authentication using an application like Google Authenticator. This advice goes for all platforms across the web and not just specifically JSECoin.",
-				"faqItemHeading4": "Why is my ad-blocker/anti-virus software is blocking JSECoin.com?",
+				"faqItemHeading3": "Why should I use a unique password for the JSEcoin platform?",
+				"faqItemContent3": "You should use a different password for every platform that you register with. Users who use the same email address and password for every account risk having their accounts hacked. This is because high profile hacks leaked databases of email/password combos which are now available to hackers. Yahoo, Linkedin, Sony, AOL, Equifax have all been breached in the past and user account data is in the hands of hackers. Financial platforms are particularly targetable by hackers for obvious reasons. Take care of your account, use a unique password and setup two factor authentication using an application like Google Authenticator. This advice goes for all platforms across the web and not just specifically JSEcoin.",
+				"faqItemHeading4": "Why is my ad-blocker/anti-virus software is blocking JSEcoin.com?",
 				"faqItemContent4": "Some ad blockers and anti-virus companies have bundled us in with hidden background mining scripts that mine on a users PC without them knowing. We are actively campaigning and lobbying the organisations that are blocking our domains. If you would like to help please contact your software provider and ask for an exception to be made.",
-				"faqItemHeading5": "How can I earn JSECoin cryptocurrency tokens using just my PC?",
+				"faqItemHeading5": "How can I earn JSEcoin cryptocurrency tokens using just my PC?",
 				"faqItemContent5": "There are a number of ways to earn JSE. You can try the self-mining which runs a mathematical hashing process on your laptop in the background while you work. Rewards are distributed via a lottery system to the miners. If you have a website you can earn JSE by placing the code snippet on your site and getting visitors to mine for you while you sleep. You can refer friends and colleagues using the affiliate links available via the platform, there's even a simple social share button to tweet or share on Facebook. Finally you can help our team develop the platform by completing the small ",
 				"link_jobsListedHere": "jobs listed here",
 				"faqItemHeading6": "I'm new to the platform; is there anywhere I can find an overview of how everything works?",
@@ -1222,8 +1222,8 @@
 				"faqItemContent7": "No and we wouldn't like to take a guess at this because it relies on external factors out of our control. It is an extremely volatile market where values can change by large amounts in very short spaces of time.",
 				"faqItemHeading8": "Pre-ICO tokens were sold at a value of 1JSE = $1, what will be the value for your ICO?",
 				"faqItemContent8": "It is difficult to say at this stage but the value will be determined by demand and market conditions at the time of the ICO. We are working hard to create a platform that will be in high demand and deliver a good return to all early investors.",
-				"faqItemHeading9": "If JSECoin is a coin on its own, is it listed on Coinmarketcap?",
-				"faqItemContent9": "JSECoin is a cryptocurrency on its own but we are not listed on Coinmarketcap yet because we haven't listed on the exchanges. We will look to list on exchanges following our ICO later this year."
+				"faqItemHeading9": "If JSEcoin is a coin on its own, is it listed on Coinmarketcap?",
+				"faqItemContent9": "JSEcoin is a cryptocurrency on its own but we are not listed on Coinmarketcap yet because we haven't listed on the exchanges. We will look to list on exchanges following our ICO later this year."
 			},
 
 			"section_webmasters": {
@@ -1233,9 +1233,9 @@
 			
 				"faqItemHeading1": "How do I setup an account and place the code for my site?",
 				"faqItemContent1": "Simply register for an account at ",
-				"faqItemContent1_2": "and then visit the publishers page. Enter your website domain name and click the \"Setup Site\" button. This will generate your unique script.  The code will pop up in a new window and you can either copy and paste it above the closing </body> tag or paste it into the JSECoin wordpress plugin. ",
+				"faqItemContent1_2": "and then visit the publishers page. Enter your website domain name and click the \"Setup Site\" button. This will generate your unique script.  The code will pop up in a new window and you can either copy and paste it above the closing </body> tag or paste it into the JSEcoin wordpress plugin. ",
 				"faqItemContent1_para2": "Normally the best place to put the code is in a template file (so it runs across all pages of the site) or index file (so it only runs on the front page). Alternatively if you have a static site you can copy it to each and every page if you wish.",
-				"faqItemHeading2": "How do I install the JSECoin snippet on my wordpress site?",
+				"faqItemHeading2": "How do I install the JSEcoin snippet on my wordpress site?",
 				"faqItemContent2": "There's installation instructions and a video here: ",
 				"link_wordpress": "wordpress-plugin-available",
 				"faqItemHeading3": "How do I know if the code is correctly installed on my site?",
@@ -1247,8 +1247,8 @@
 				"faqItemHeading5": "How are publishers rewarded for running the script on their sites?",
 				"faqItemContent5": "Rewards are distributed via a lottery system where publishers earn lottery tickets for unique visitors, page views and hashes found. 50 x 2 JSE are then randomly distributed to ticket holders. This lottery repeats with each 30 second block delivering 288,000 JSE tokens in total each day.",
 				"faqItemHeading6": "Is it possible to increase the cpu usage on my visitors device?",
-				"faqItemContent6": "No! We don't want to give publishers control of how much of a users cpu the mining uses. Currently it is set to use the minimal amount so that it does not have a noticeable impact on their browsing experience. We wouldn't want webmasters to be able to increase the cpu usage as this could give JSECoin a bad reputation. Webmasters earnings are dependent on visitors, unique visitors as well as hashes found and so cpu usage is set to the minimum required in order to secure the blockchain.",
-				"faqItemHeading7": "Is it possible to prevent the JSECoin banner from appearing on my site?",
+				"faqItemContent6": "No! We don't want to give publishers control of how much of a users cpu the mining uses. Currently it is set to use the minimal amount so that it does not have a noticeable impact on their browsing experience. We wouldn't want webmasters to be able to increase the cpu usage as this could give JSEcoin a bad reputation. Webmasters earnings are dependent on visitors, unique visitors as well as hashes found and so cpu usage is set to the minimum required in order to secure the blockchain.",
+				"faqItemHeading7": "Is it possible to prevent the JSEcoin banner from appearing on my site?",
 				"faqItemContent7": "This is actually the privacy notification. It is important for us that this notification must appear when a user first visits your site (and once per hour after that) as we want to operate in a transparent way so that users are clearly being told that the mining is taking place, and that an opt out is available. We feel that this is important for legal and ethical reasons and that this openness will help the idea become more widely accepted. It is one of our terms of use that publishers must display the notification and not make any attempt to hide it.",
 				"faqItemHeading8": "Is there any specific legalese we need to put on our site?",
 				"faqItemContent8": "This is new technology, we haven't had any legal issues or guidance to contend with. The privacy notice is displayed by default and is essential because it contains the option to opt-out across the entire network. If you wish to place something in your own website terms this would help with transparency. ",
@@ -1257,7 +1257,7 @@
 				"link_privacyPolicy": "Privacy Policy",
 				"faqItemHeading9": "I saw your code on another site and I am trying to understand how it really works and what does the site publisher gets out of it?",
 				"faqItemContent9": "We are an early stage cryptocurrency which is based around webmaster mining. Our system is similar to traditional cryptocurrencies but instead of big server farms we carry out the hashing algorithm in website visitors browsers. This is unobtrusive and runs behind the scenes (except for a privacy notification) so it does not negatively affect the user experience or page load speeds for your website visitors.",
-				"faqItemContent9_para2": "The site publisher copies our code snippet to their website and is rewarded in payment of JSECoin tokens to their account."
+				"faqItemContent9_para2": "The site publisher copies our code snippet to their website and is rewarded in payment of JSEcoin tokens to their account."
 			},
 
 			"section_exchanges": {
@@ -1269,8 +1269,8 @@
 				"faqItemContent1": "Currently it is only possible to store JSEtokens via the online wallet at ",
 				"faqItemContent1_line2": "We have tested an integration with ERC20 Ethereum smart contract which would allow for 3rd party wallets to be used. This will not be released until we have finalized the exchange/ICO technology which could well change between now and when we ICO.",
 				"faqItemHeading2": "How do I get paid and convert JSE to USD or my local currency?",
-				"faqItemContent2": "You are rewarded in JSECoin tokens which are cryptocurrency tokens for placing the code on your site which will get your visitors to carry out mathematical equations in the background which help secure the blockchain.",
-				"faqItemContent2_para2": "Unfortunately for all of us JSECoin tokens are very new (launched publicly in August 2017) so there is currently no way to cash out your JSE. We are targeting an ICO and exchange listing in 2018, you will then be able to transfer JSECoin to the exchanges and swap for Bitcoin/USD etc. While there will never be a better time to mine cryptocurrency because competition is low, you wont be able to spend the earnings until JSE is listed on exchanges. Also worth noting is that if something goes wrong with JSE or the cryptocurrency markets in general we may never reach the liquidity stage and the tokens will be worthless. This is the risk that early adopters are facing.",
+				"faqItemContent2": "You are rewarded in JSEcoin tokens which are cryptocurrency tokens for placing the code on your site which will get your visitors to carry out mathematical equations in the background which help secure the blockchain.",
+				"faqItemContent2_para2": "Unfortunately for all of us JSEcoin tokens are very new (launched publicly in August 2017) so there is currently no way to cash out your JSE. We are targeting an ICO and exchange listing in 2018, you will then be able to transfer JSEcoin to the exchanges and swap for Bitcoin/USD etc. While there will never be a better time to mine cryptocurrency because competition is low, you wont be able to spend the earnings until JSE is listed on exchanges. Also worth noting is that if something goes wrong with JSE or the cryptocurrency markets in general we may never reach the liquidity stage and the tokens will be worthless. This is the risk that early adopters are facing.",
 				"faqItemHeading3": "Which exchanges are/will you be listed on?",
 				"faqItemContent3": "This will be confirmed following our ICO; as this will be dictated by funds available and popularity of the JSE Platform."
 			},
@@ -1289,7 +1289,7 @@
 				"faqItemHeading4": "What is the Hash Rate Accelerator?",
 				"faqItemContent4": "This is a simple slider function that allows you to increase or decrease the amount of cpu power that you dedicate to the mining process. If you want to continue using your computer then you may want to turn this down, or you can crank it up if you have nothing else to do on your device. Please note that at present there is no real benefit to earnings by going over 10K h/s and so setting the hash rate accelerator to deliver more that this is not recommended.",
 				"faqItemHeading5": "If my flatmate and I both mine at the same time are earnings affected as we are using the same IP address?",
-				"faqItemContent5": "As part of our fraud prevention and to ensure server farms can’t take over JSECoin, we have had to put IP restrictions in place. We have limited it to one lottery ticket per block per IP address. This means that multiple users will be able to mine in the same location, however potential rewards will be split between them."
+				"faqItemContent5": "As part of our fraud prevention and to ensure server farms can’t take over JSEcoin, we have had to put IP restrictions in place. We have limited it to one lottery ticket per block per IP address. This means that multiple users will be able to mine in the same location, however potential rewards will be split between them."
 			},
 			
 			"section_thePlatform": {
@@ -1316,15 +1316,15 @@
 				"faqItemContent4": "Please try entering your details again ensuring that they are correct. If the problem persists, try resetting your password. If you are still unable to access your account please raise a ticket using our ",
 				"link_contactForm": "contact form",
 				"faqItemHeading5": "I keep being asked to confirm my account, but I haven’t received the confirmation email.",
-				"faqItemContent5": "Firstly please ensure you have checked your spam/junk folders. If it’s not there please try adding noreply@JSECoin.com to your email address book and re-requesting the email. Any further problems please raise a ticket using our  ",
+				"faqItemContent5": "Firstly please ensure you have checked your spam/junk folders. If it’s not there please try adding noreply@JSEcoin.com to your email address book and re-requesting the email. Any further problems please raise a ticket using our  ",
 				"faqItemHeading6": "I keep being logged out of the platform, and asked to log back in. Is this normal?",
 				"faqItemContent6": "This shouldn't be happening to the platform. The 2 common reasons users find that cause this are;",
 				"faqItemContent6_list1": "Refreshing the page to check on earnings. By refreshing you are effectively leaving the page and reentering and so will be required to log in again. This is a fairly standard security feature.",
 				"faqItemContent6_list2": "You are signing into your account on a second device. Users are limited to one device, and as soon as a second login is made you will be logged out of the first account.",
-				"faqItemHeading7": "I’ve heard a lot about people having their cryptocurrencies stolen, are my tokens safe in my JSECoin account?",
-				"faqItemContent7": "Yes, they are safe. As there is currently no wallet available coins can only be transferred to other JSECoin accounts, and we have a record of all transactions. We recommend making your account more secure by setting up 2 factor authentication, but in the event of anyone entering your account and removing your tokens we would be able to track where they went and return them to you. The wallet will be available before we get to ICO but not until we are much closer to this.",
+				"faqItemHeading7": "I’ve heard a lot about people having their cryptocurrencies stolen, are my tokens safe in my JSEcoin account?",
+				"faqItemContent7": "Yes, they are safe. As there is currently no wallet available coins can only be transferred to other JSEcoin accounts, and we have a record of all transactions. We recommend making your account more secure by setting up 2 factor authentication, but in the event of anyone entering your account and removing your tokens we would be able to track where they went and return them to you. The wallet will be available before we get to ICO but not until we are much closer to this.",
 				"faqItemHeading8": "What is 2 factor authentication (2fa)?",
-				"faqItemContent8": "2fa requires you to enter a randomly generated code from a mobile app into your JSECoin account after you have entered your username and password. 2 common apps that the platform supports and have been fully tested are Authy and Google Autenticator. Simply download one of these apps, and the next time you log into your account go to the settings page and click to turn on 2fa. You will be prompted to scan a qr code with your phone and your first 6 digit code will be generated. You will then need to enter a code each time you log into your account. You should read instructions carefully regarding backing up your phones 2fa account in case you should lose or damage your phone.",
+				"faqItemContent8": "2fa requires you to enter a randomly generated code from a mobile app into your JSEcoin account after you have entered your username and password. 2 common apps that the platform supports and have been fully tested are Authy and Google Autenticator. Simply download one of these apps, and the next time you log into your account go to the settings page and click to turn on 2fa. You will be prompted to scan a qr code with your phone and your first 6 digit code will be generated. You will then need to enter a code each time you log into your account. You should read instructions carefully regarding backing up your phones 2fa account in case you should lose or damage your phone.",
 				"faqItemHeading9": "I’m having problems with 2fa, can you help?",
 				"faqItemContent9": "Yes, but we’re afraid it’s not a straightforward process. Start by raising a ticket using our  ",
 				"faqItemContent9_line2": "You will then be required to complete some steps towards proving your identity. Remember that this is purely to secure users accounts. It may seem annoying, but you’d be more annoyed if we allowed someone to access your tokens by not showing due dilligence. If you have properly backed up your 2fa account then this shouldn’t really be a problem."
@@ -1400,7 +1400,7 @@
 			"meta": {
 				"title": "Statistics",
 				"keywords": "Blockchain figures, cryptocurrency stats, browser mining statistics",
-				"description": "The latest figures live from the JSECoin servers. We publish the number of registered users, website miners, self-miners, cryptocurrency market cap and more."
+				"description": "The latest figures live from the JSEcoin servers. We publish the number of registered users, website miners, self-miners, cryptocurrency market cap and more."
 			},
 			"banner": {
 				"linkText": "Statistics & performance",
@@ -1449,7 +1449,7 @@
 			"meta": {
 				"title": "Technical Overview",
 				"keywords": "How to mine cryptocurrency in web browser, mine cryptocurrency on laptop, browser mining technical",
-				"description": "Discover what makes the JSECoin project tick. We use cutting edge technology to build the next generation of web based cryptocurrency and browser based blockchain mining."
+				"description": "Discover what makes the JSEcoin project tick. We use cutting edge technology to build the next generation of web based cryptocurrency and browser based blockchain mining."
 			},
 			"banner": {
 				"linkText": "Technical Overview",
@@ -1482,7 +1482,7 @@
 				"alt_minerTypes": "Miner Types",
 				
 				"step_heading3": "Integrate",
-				"step_content3": "Use our merchant tools to allow users to purchase goods and services with JSECoin",
+				"step_content3": "Use our merchant tools to allow users to purchase goods and services with JSEcoin",
 				"alt_merchantTools": "Mercant Tools"
 			},
 			"section_miningCoins": {
@@ -1532,8 +1532,8 @@
 		"blockchainExplorer": {			
 			"meta": {
 				"title": "Blockchain Explorer",
-				"keywords": "JSECoin blockchain explorer, blockchain explorer vue.js, open-source blockchain explorer",
-				"description": "Explore the JSECoin blockchain with our live real-time blockchain explorer. Watch the blocks come in and the transactions going out as our system grows."
+				"keywords": "JSEcoin blockchain explorer, blockchain explorer vue.js, open-source blockchain explorer",
+				"description": "Explore the JSEcoin blockchain with our live real-time blockchain explorer. Watch the blocks come in and the transactions going out as our system grows."
 			},
 			"banner": {
 				"linkText": "Blockchain Explorer",
@@ -1542,7 +1542,7 @@
 			},
 			"heading_blockchainExplorer": "JSE Blockchain Explorer",
 			"subheading_blockchainExplorer": "Explore the JSE Blockchain",
-			"para_main1": "The blockchain explorer provides a public access point to the JSECoin blockchain. This can be used along with the API to find out who owns what or who the latest mining rewards are going to. Please note that sensitive data such as email addresses or references are not recorded or displayed within the blockchain.",
+			"para_main1": "The blockchain explorer provides a public access point to the JSEcoin blockchain. This can be used along with the API to find out who owns what or who the latest mining rewards are going to. Please note that sensitive data such as email addresses or references are not recorded or displayed within the blockchain.",
 			"para_main2": "The blockchain explorer is written using real-time data communications meaning you can see the data evolving as the 30 second block cycles are completed."
 			
 		},
@@ -1560,7 +1560,7 @@
 			"heading_merchantTools": "Merchant Tools",
 			"subheading_merchantTools": "Expanding ecommerce and transforming digital advertisement",
 			"para_main1_infoMsg": "This feature is currently being developed and will be released to webmasters shortly.",
-			"para_main1": "JSECoin merchant tools allow webmasters to use JSECoin for taking digital payments via their websites. JSE tokens can be used for:-",
+			"para_main1": "JSEcoin merchant tools allow webmasters to use JSEcoin for taking digital payments via their websites. JSE tokens can be used for:-",
 			"list_usedFor1": "Shopping carts",
 			"list_usedFor2": "Pay buttons",
 			"list_usedFor3": "SaaS subscriptions",
@@ -1568,13 +1568,13 @@
 			"list_usedFor5": "Digital marketing",
 			"list_usedFor6": "Software sales",
 			"list_usedFor7": "Website membership subscriptions",
-			"para_main2": "Anything purchased through a website should be available to pay with cryptocurrency and JSECoin could lead the way in making this possible and simple for webmasters to integrate with their sites."
+			"para_main2": "Anything purchased through a website should be available to pay with cryptocurrency and JSEcoin could lead the way in making this possible and simple for webmasters to integrate with their sites."
 		},
 		"wallet": {
 			"meta": {
 				"title": "Wallet",
 				"keywords": "Hold cryptocurrency, how to store cryptocurrency, cryptocurrency wallet, jse wallet",
-				"description": "Store your JSECoin tokens in the online wallet. Our platform is secure, safe and fully integrated with the JSE blockchain. Send funds and export tokens straight from your wallet."
+				"description": "Store your JSEcoin tokens in the online wallet. Our platform is secure, safe and fully integrated with the JSE blockchain. Send funds and export tokens straight from your wallet."
 			},
 			"banner": {
 				"linkText": "Wallet",
@@ -1585,7 +1585,7 @@
 			"subheading_wallet": "Expanding JSE wallet support",
 			"para_main1_infoMsg": "We are planning to release our ERC20 wallet integration in the next couple of months and are currently testing our integrations.",
 			"para_main2": "JSE tokens can be stored either on the platform or exported via an ERC20 token which is compatible with 3rd party wallets and exchanges. For most users we recommend keeping the tokens on the platform as once they are exported we have no control over fraud/theft/hack attempts which may cause loss of funds.",
-			"para_main3": "The JSECoin token is compatible with any 3rd party ERC20 compatible wallet including:-",
+			"para_main3": "The JSEcoin token is compatible with any 3rd party ERC20 compatible wallet including:-",
 			"list_wallet1": "MyEtherWallet",
 			"list_wallet2": "MetaMask",
 			"list_wallet3": "Parity",
@@ -1606,7 +1606,7 @@
 			"meta": {
 				"title": "Integration",
 				"keywords": "Setup cryptocurrency mining, best cryptocurrency browser mining, crypto mining script",
-				"description": "Learn how to setup JSECoin browser based cryptocurrency mining on your website. Web browser mining is the future of monetisation and efficient blockchain technology."
+				"description": "Learn how to setup JSEcoin browser based cryptocurrency mining on your website. Web browser mining is the future of monetisation and efficient blockchain technology."
 			},
 			"banner": {
 				"linkText": "Integration",
@@ -1620,7 +1620,7 @@
 			"para_main2_line2": "and visit the “publishers” page.",
 			"para_main3": "Enter the domain name of your site and click",
 			"para_main3_infoMsg": "“GET CODE”",
-			"para_main4": "Copy and paste the code just above the </body> tag in your HTML. Bare in mind that it is best to edit a footer file or location so the code is displayed across your entire site. If you are using wordpress then download the JSECoin plugin which will automatically insert the code on to every page.",
+			"para_main4": "Copy and paste the code just above the </body> tag in your HTML. Bare in mind that it is best to edit a footer file or location so the code is displayed across your entire site. If you are using wordpress then download the JSEcoin plugin which will automatically insert the code on to every page.",
 			"para_main5_line1": "Either save your template file or upload the HTML to your web host and then test it in a browser. After a delay of 15 seconds you should start seeing JSE hashing data coming in via the the developer console. To open the developer console press",
 			"para_main5_infoMg1": "CTRL + SHIFT + K",
 			"para_main5_line2": "in Firefox or",

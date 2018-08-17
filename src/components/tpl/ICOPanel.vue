@@ -10,7 +10,7 @@
 					<div class="row">
 						<!-- ICO Logo -->
 						<div id="JSEW-ICOLogo" class="borderRight">
-							<img :class="{'bonus':bonus>0}" src="../../assets/ico/logo_white.png" alt="JSECoin - The Javascript Embedded Cryptocurrency" />
+							<img :class="{'bonus':bonus>0}" src="../../assets/ico/logo_white.png" alt="JSEcoin - The Javascript Embedded Cryptocurrency" />
 							<!--<button v-on:click="initBuy" class="button buy" :class="{disable: !showBuyOption}">{{BuyJSEButton}}</button>-->
 							<div v-if="bonus>0" style="background:rgba(0,0,0,0.48); margin:10px 10px 10px 10px; font-size:0.65em; text-align:center; font-weight:bold; border-radius:3px; border:solid 1px rgba(230,230,230,0.2); padding:4px 8px;">
 								{{bonus}}% BONUS ROUND

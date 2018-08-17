@@ -70,7 +70,7 @@
 						<br>
 						Download PDF
 						<br>-->
-						JSECoin Merchant Tools
+						JSEcoin Merchant Tools
 						<!--<br>
 						<div class="JSEW-casestudydescription">How we integrated the JSEcoin merchant tools as a payment gateway for Woocommerce shopping cart system to build a merchandise store</div>-->
 					</a>

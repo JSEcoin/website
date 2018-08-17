@@ -131,7 +131,7 @@
 							<router-link v-bind:to="`/${$store.state.local}/investors/overview`" tag="a">
 								{{ $t('template.navigation.link_whyInvest') }}
 							</router-link>
-							<a href="/JSECoinV2_Overview.pdf" target="_blank">
+							<a href="/JSEcoinV2_Overview.pdf" target="_blank">
 								Intro Slides <i class="fa fa-file-pdf-o"></i>
 							</a>
 							<a href="/onepager.pdf" target="_blank">
@@ -269,7 +269,7 @@
 				<div id="JSEW-footerSitemap">
 					<div class="wrapper">
 						<div id="JSE-footerLogo">
-							<img src="./assets/images/logo_jse_footer.png" width="200" alt="JSECoin Logo" />
+							<img src="./assets/images/logo_jse_footer.png" width="200" alt="JSEcoin Logo" />
 							<p>
 								{{ $t('template.footer.privacy.text_trust') }}
 							</p>
@@ -332,7 +332,7 @@
 						</nav>
 						<nav>
 							<h4>{{ $t('template.navigation.heading_investors') }}</h4>
-							<a href="/JSECoinV2_Overview.pdf" target="_blank">
+							<a href="/JSEcoinV2_Overview.pdf" target="_blank">
 								Intro Slides <i class="fa fa-file-pdf-o"></i>
 							</a>
 							<a href="/onepager.pdf" target="_blank">
@@ -476,7 +476,7 @@
 							{{ $t('template.footer.copy.text_copyright') }}
 							
 							<router-link v-bind:to="`/${$store.state.local}/home`" tag="a">
-								JSECoin Ltd
+								JSEcoin Ltd
 							</router-link> ~ {{ $t('template.footer.copy.text_rightsReserved') }}
 						</div>
 						<div id="JSEW-socialLinks">
@@ -537,7 +537,7 @@ export default {
 		const sCorp = {
 			'@context': 'http://schema.org',
 			'@type': 'Organization',
-			name: 'JSECoin Ltd',
+			name: 'JSEcoin Ltd',
 			url: 'https://www.jsecoin.com',
 			logo: 'https://www.jsecoin.com/static/images/search_logo.png',
 			address: {
@@ -565,7 +565,7 @@ export default {
 
 		//console.log((!this.showICOBadge), (this.activeRoutePath !== '/ico'));
 		if ((!this.showICOBadge) && (!this.$route.meta.hideICOButton)) {
-			//enable JSECoin BUY Badge
+			//enable JSEcoin BUY Badge
 			setTimeout(() => {
 				this.showICOBadge = true;
 				setTimeout(() => {
@@ -595,7 +595,7 @@ export default {
 
 		return {
 			title: this.$t('template.meta.title') + this.$route.meta.unicode,
-			titleTemplate: 'JSECoin | %s',
+			titleTemplate: 'JSEcoin | %s',
 			htmlAttrs: {
 				lang: this.$store.state.local,
 				//amp: undefined,
@@ -726,7 +726,7 @@ export default {
 			console.log('Google Analytics Not Available');
 		}
 
-		//JSECoin Miner
+		//JSEcoin Miner
 		/*
 		if ((document.getElementById('JSEW-coincode') === null) && (location.href.indexOf('localhost') === -1)) {
 			const t = document.createElement('script');

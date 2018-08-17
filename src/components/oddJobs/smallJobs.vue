@@ -66,7 +66,7 @@
 							</div>
 							<div class="tdCol">
 								<p>
-									Do you think we've missed a trick with optimising and promoting JSECoin?<br />
+									Do you think we've missed a trick with optimising and promoting JSEcoin?<br />
 									Let us know and if we implement your suggestion - we'll send on some JSE as a little thank you! :)
 								</p>
 							</div>

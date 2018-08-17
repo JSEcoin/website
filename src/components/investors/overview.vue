@@ -4,7 +4,7 @@
 			<div class="row">
 				<div id="JSEW-subNav" class="col" style="max-width:inherit;flex-grow:0;padding-right:40px;margin-right:40px; border-right:solid 1px #eee;width:240px;">
 					<nav>
-							<a href="/JSECoinV2_Overview.pdf" target="_blank">
+							<a href="/JSEcoinV2_Overview.pdf" target="_blank">
 								Intro Slides <i class="fa fa-file-pdf-o"></i>
 							</a>
 							<a href="/onepager.pdf" target="_blank">
