@@ -22,9 +22,29 @@
 					</p>
 				</div>
 				<div class="col center">
-					<img src="../assets/images/desktop_app.png" class="dl-responsive-image" alt="JSE Merchant Tools" />
+					<img src="../assets/images/desktop_app.png" class="dl-responsive-image" alt="Desktop App" />
 				</div>
 			</div>
+
+			<div class="row">
+				<div class="col">
+					<h1 class="heading">{{ $t('pages.downloads.mobile_app') }}</h1>
+					<p>
+						{{ $t('pages.downloads.mobile_app_description') }}
+					</p>
+					<p>
+						{{ $t('pages.downloads.latest_version') }}: 0.5.2
+					</p>
+					<br>
+					<p>
+						<a href="https://play.google.com/store/apps/details?id=com.jsecoin.alpha" class="button JSEW-download-button"><i class="fa fa-download"></i> {{ $t('pages.downloads.download') }}</a>
+					</p>
+				</div>
+				<div class="col center">
+					<img src="../assets/images/android_app.png" class="dl-responsive-image" alt="Android App" />
+				</div>
+			</div>
+
 			<h1 class="heading">{{ $t('pages.downloads.plugins') }}</h1>
 			<h2 class="subHeading">{{ $t('pages.downloads.wordpress_plugins') }}</h2>
 			<p><a href="https://jsecoin.com/downloads/JSEcoinWordpress.zip">{{ $t('pages.downloads.wordpress_mining_plugin') }}</a> - {{ $t('pages.downloads.wordpress_mining_plugin_description') }}</p>

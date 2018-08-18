@@ -1,6 +1,7 @@
 {
 	"global": {},
 	"updates": {
+		"20180818": "android app on downlods page",
 		"20180817": "technical/ecosystem, plus navigation ecosystem link",
 		"20180424": "priavcyPolicy > para_main1_cta, section_where_next > whole section",
 		"20180502": "pages.downloads, pages.whitelisting",
@@ -422,8 +423,10 @@
 			"subheading_downloads": "APPLICATIONS AND PLUGINS DEVELOPED BY JSECOIN",
 			"desktop_app": "DESKTOP APP",
 			"desktop_app_description": "The desktop app allows you to more efficiently mine JSE tokens using your desktop or laptop computer. Simply install the app and use the auto-start auto-mine settings to ensure you are always mining in the background while you work, play or study online.",
+			"mobile_app": "MOBILE APP",
+			"mobile_app_description": "The mobile app is currently available for Android. An iOS version will follow shortly. Currently mining is disabled due to restrictions within the Google Play Store.",
 			"latest_version": "Latest Version",
-			"system_recommendation": "Recommended System Requirements: 1GHZ CPU, 1GB RAM, 600mb HD, Internet Access",
+			"system_recommendation": "Recommended System Requirements: Android v8+",
 			"download": "DOWNLOAD",
 			"plugins": "PLUGINS",
 			"wordpress_plugins":"WORDPRESS PLUGINS",
