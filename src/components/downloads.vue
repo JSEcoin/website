@@ -11,9 +11,6 @@
 						{{ $t('pages.downloads.desktop_app_description') }}
 					</p>
 					<p>
-						{{ $t('pages.downloads.latest_version') }}: 0.5
-					</p>
-					<p>
 						{{ $t('pages.downloads.system_recommendation') }}
 					</p>
 					<br>
@@ -31,9 +28,6 @@
 					<h1 class="heading">{{ $t('pages.downloads.mobile_app') }}</h1>
 					<p>
 						{{ $t('pages.downloads.mobile_app_description') }}
-					</p>
-					<p>
-						{{ $t('pages.downloads.latest_version') }}: 0.5.2
 					</p>
 					<br>
 					<p>
@@ -53,6 +47,8 @@
 			<p><a href="https://jsecoin.com/downloads/JSEcoinJoomla.zip">{{ $t('pages.downloads.joomla_mining_plugin') }}</a> - {{ $t('pages.downloads.joomla_mining_plugin_description') }}</p>
 			<h2 class="subHeading">{{ $t('pages.downloads.anti_adblocker') }}</h2>
 			<p><a href="https://jsecoin.com/downloads/JSEcoinAntiAdblocker.zip">{{ $t('pages.downloads.anti_adblocker_script') }}</a> - {{ $t('pages.downloads.anti_adblocker_description') }}</p>
+			<h2 class="subHeading">{{ $t('pages.downloads.php_wrapper') }}</h2>
+			<p><a href="https://jsecoin.com/downloads/JSEcoinPHPWrapper.zip">{{ $t('pages.downloads.php_wrapper_script') }}</a> - {{ $t('pages.downloads.php_wrapper_description') }}</p>
 		
 
 

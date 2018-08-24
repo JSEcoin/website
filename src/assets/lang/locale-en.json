@@ -426,7 +426,7 @@
 			"mobile_app": "MOBILE APP",
 			"mobile_app_description": "The mobile app is currently available for Android. An iOS version will follow shortly. Currently mining is disabled due to restrictions within the Google Play Store.",
 			"latest_version": "Latest Version",
-			"system_recommendation": "Recommended System Requirements: Android v8+",
+			"system_recommendation": "Recommended System Requirements: 1GB Ram, 500mb HD, Win 10",
 			"download": "DOWNLOAD",
 			"plugins": "PLUGINS",
 			"wordpress_plugins":"WORDPRESS PLUGINS",
@@ -439,7 +439,10 @@
 			"joomla_mining_plugin_description": "Simple to install mining module for publishers using the Joomla CMS",
 			"anti_adblocker": "ANTI ADBLOCKER SCRIPT",
 			"anti_adblocker_script": "Anti-Adblocker Script",
-			"anti_adblocker_description": "Javascript code to detect browsers with ad blockers and display the option to disable the ad blocker or view site ad-free with JSEcoin mining."
+			"anti_adblocker_description": "Javascript code to detect browsers with ad blockers and display the option to disable the ad blocker or view site ad-free with JSEcoin mining.",
+			"php_wrapper":"PHP API WRAPPER",
+			"php_wrapper_script":"PHP API Wrapper",
+			"php_wrapper_description":"Include this class in your PHP script for easy access to the JSEcoin API functions. Examples included in source code."	
 		},
 		"exchanges": {
 			"meta": {
