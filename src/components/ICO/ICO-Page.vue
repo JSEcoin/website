@@ -270,13 +270,13 @@
 			<!-- xDistribution status and video -->
 			<div class="row">
 				<dl>
-					<dt>ICO Rank and Overview <i>(12 July 2018)</i></dt>
+					<dt>ICO Rank and Overview</dt>
 					<dd class="row" style="padding:10px; justify-content: center;">
 						<div class="col"><a href="https://icobench.com/ico/jsecoin" target="_blank" rel="nofollow" title="JSEcoin on ICO Bench"><img src="../../assets/ico/icobench.png" style="height:38px; border-radius:4px; margin:0px 4px;" /></a></div>
 						<div class="col"><a href="https://blokt.com/ico-ratings/jsecoin" target="_blank" rel="nofollow" title="JSEcoin on Blokt"><img src="../../assets/ico/blokt-ico-rating-a.png" style="height:38px; border-radius:4px; margin:0px 4px;" /></a></div>
 						<div class="col"><a href="https://icoholder.com/en/jsecoin-22332" target="_blank" rel="nofollow" title="JSEcoin on ICO Holder"><img src="https://icoholder.com/files/img/widget/e7f9eb690f6ce65ea318aa819b7987cb.svg?r=4.11" style="height:38px; border-radius:4px; margin:0px 4px;" /></a></div>
 						<div class="col"><a href="https://www.trackico.io/ico/jsecoin/" target="_blank" rel="nofollow" title="JSEcoin on Track ICO"><img src="../../assets/ico/track.png" style="height:38px; border-radius:4px; margin:0px 4px;" /></a></div>
-						<div class="col"><a href="https://foxico.io/project/jsecoin" target="_blank" title="JSEcoin on FoxICO"><img border="0" src="https://foxico.io/rating/jsecoin"  style="height:38px; border-radius:4px; margin:0px 4px;" alt="JSEcoin ICO rating"/></a></div>
+						<div class="col"><a href="https://foxico.io/project/jsecoin" target="_blank" title="JSEcoin on FoxICO"><img border="0" src="https://foxico.io/api/rating/jsecoin"  style="height:38px; border-radius:4px; margin:0px 4px;" alt="JSEcoin ICO rating"/></a></div>
 						<div class="col"><a href="https://icomarks.com/ico/jsecoin" target="_blank" rel="nofollow" title="JSEcoin on ICO Marks"><img border="0" src="https://icomarks.com/widget/j/jsecoin/horizontal.svg" style="height:38px; border-radius:4px; margin:0px 4px;" alt="JSEcoin ICO rating"/></a></div>
 					</dd>
 				</dl>
