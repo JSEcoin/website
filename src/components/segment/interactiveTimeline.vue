@@ -325,6 +325,16 @@ export default {
 							taskName: this.$t('segment.interactiveTimeline.task_name6'),
 							duration: 30,
 						},
+						{
+							start: 244,
+							taskName: 'Scalling Advertising',
+							duration: 30,
+						},
+						{
+							start: 350,
+							taskName: 'Publisher Outreach Campaign',
+							duration: 60,
+						},
 					],
 					[
 						{
@@ -334,6 +344,16 @@ export default {
 						},
 						{
 							taskName: this.$t('segment.interactiveTimeline.task_name7'),
+							duration: 30,
+						},
+						{
+							start: 225,
+							taskName: 'Develop Business Strategy and Key Documents',
+							duration: 7,
+						},
+						{
+							start: 285,
+							taskName: 'Apply For Exchange Listing',
 							duration: 30,
 						},
 					],
@@ -368,6 +388,11 @@ export default {
 							taskName: this.$t('segment.interactiveTimeline.task_name11'),
 							duration: 90,
 						},
+						{
+							start: 290,
+							taskName: 'Post Exchange PR Strategy',
+							duration: 60,
+						},
 					],
 					[
 						{
@@ -379,6 +404,16 @@ export default {
 							taskName: this.$t('segment.interactiveTimeline.task_name13'),
 							duration: 25,
 						},*/
+						{
+							start: 280,
+							taskName: 'Deposit / Withdraw Functionality On Platform',
+							duration: 14,
+						},
+						{
+							start: 360,
+							taskName: 'Captcha And Bot Detection Enterprise API',
+							duration: 30,
+						},
 					],/*
 					[
 						{
@@ -414,6 +449,21 @@ export default {
 							taskName: this.$t('segment.interactiveTimeline.task_name19'),
 							duration: 120,
 						},
+						{
+							start: 240,
+							taskName: 'Android App Release',
+							duration: 14,
+						},
+						{
+							start: 270,
+							taskName: 'Further Automation Of Fraud Checks',
+							duration: 7,
+						},
+						{
+							start: 310,
+							taskName: 'Mining Rewards, Affilite/Bounty Review',
+							duration: 7,
+						},
 					],
 					[
 						{
@@ -433,6 +483,16 @@ export default {
 						{
 							taskName: this.$t('segment.interactiveTimeline.task_name22'),
 							duration: 31,
+						},
+						{
+							start: 254,
+							taskName: 'iOS App Release',
+							duration: 14,
+						},
+						{
+							start: 320,
+							taskName: 'Develop Ad-Exchange Self-Serve Platform',
+							duration: 45,
 						},
 					],
 				],
