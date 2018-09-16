@@ -39,7 +39,7 @@
 				</div>
 			</div>
 
-			<h1 class="heading">{{ $t('pages.downloads.plugins') }}</h1>
+			<h1 id="scripts" class="heading">{{ $t('pages.downloads.plugins') }}</h1>
 			<h2 class="subHeading">{{ $t('pages.downloads.wordpress_plugins') }}</h2>
 			<p><a href="https://jsecoin.com/downloads/JSEcoinWordpress.zip">{{ $t('pages.downloads.wordpress_mining_plugin') }}</a> - {{ $t('pages.downloads.wordpress_mining_plugin_description') }}</p>
 			<p><a href="https://jsecoin.com/downloads/JSEcoinWoocommerce.zip">{{ $t('pages.downloads.woocommerce_payment_gateway') }}</a> - {{ $t('pages.downloads.woocommerce_payment_gateway_description') }}</p>
