@@ -113,6 +113,7 @@
 					<router-link v-bind:to="`/${$store.state.local}/ico`" tag="button" class="button">
 						INVEST IN JSECOIN
 					</router-link>
+					<a href="https://bit.ly/2NV1eOW" target="_blank" class="button">PURCHASE ON LA<span style="margin-left: 2px;">TOKEN</span></a>
 				</dd>
 			</dl>
 		</div>
@@ -310,7 +311,8 @@ export default {
     color: #25cbfc;
     padding: 6px;
     /* margin: 1px 10px; */
-    margin-top: 8px;
+		margin-top: 8px;
+		text-align: center;
 	transition: background 0.2s, border 0.2s;
 }
 
