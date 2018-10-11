@@ -240,6 +240,7 @@ const router = new Router({
 			redirect: `/${store.state.local}/tools/blockchainExplorer`,
 		},
 		*/
+		/*
 		{
 			path: '/ico',
 			component: ICO,
@@ -264,7 +265,7 @@ const router = new Router({
 				headerTitle: 'pages.Issue.banner.heading',
 				headerSubTitle: 'pages.Issue.banner.subheading',
 			},
-		},
+		},*/
 		{
 			path: '/home',
 			component: home,
@@ -522,6 +523,7 @@ const router = new Router({
 				headerSubTitle: 'pages.charity.banner.subheading',
 			},
 		},
+		/*
 		{
 			path: '/whitelisting',
 			component: whitelisting,
@@ -532,6 +534,7 @@ const router = new Router({
 				headerSubTitle: 'pages.whitelisting.banner.subheading',
 			},
 		},
+		*/
 		{
 			path: '/downloads',
 			component: downloads,
@@ -726,6 +729,7 @@ const router = new Router({
 				linkText: 'Home',
 			},
 		},*/
+		/*
 		{
 			path: '/:lang/ico',
 			component: ICO,
@@ -737,8 +741,9 @@ const router = new Router({
 				headerSubTitle: 'pages.ico.banner.subheading', //'Make sure you are logged in to your wallet to access the integrated purchase capabilities',
 			},
 		},
+		*/
 		//Add redirection on typo
-		{
+		/*{
 			path: '/:lang/ICO',
 			redirect: '/:lang/ico',
 		},
@@ -751,7 +756,7 @@ const router = new Router({
 				headerTitle: 'pages.ico.banner.heading',
 				headerSubTitle: 'pages.ico.banner.subheading',
 			},
-		},
+		},*/
 		{
 			path: '/:lang/home',
 			component: home,
@@ -1009,6 +1014,7 @@ const router = new Router({
 				headerSubTitle: 'pages.charity.banner.subheading',
 			},
 		},
+		/*
 		{
 			path: '/:lang/whitelisting',
 			component: whitelisting,
@@ -1019,6 +1025,7 @@ const router = new Router({
 				headerSubTitle: 'pages.whitelisting.banner.subheading',
 			},
 		},
+		*/
 		{
 			path: '/:lang/downloads',
 			component: downloads,
@@ -1119,6 +1126,7 @@ const router = new Router({
 				headerSubTitle: 'pages.blockchainExplorer.banner.subheading',
 			},
 		},
+		/*
 		{
 			path: '/:lang/ico',
 			component: ICO,
@@ -1128,7 +1136,7 @@ const router = new Router({
 				headerTitle: '',
 				headerSubTitle: '',
 			},
-		},
+		},*/
 	],
 });
 
