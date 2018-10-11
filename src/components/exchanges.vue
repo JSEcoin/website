@@ -3,6 +3,7 @@
 		<div id="JSEW-exchanges" class="wrapper">
 			<h1 class="heading">{{ $t('pages.exchanges.heading_exchanges') }}</h1>
 			<h2 class="subHeading">{{ $t('pages.exchanges.subheading_exchanges') }}</h2>
+			<!--
 			<p>
 				{{ $t('pages.exchanges.para_main1') }}
 			</p>
@@ -18,6 +19,11 @@
 			</ul>
 			<p>
 				{{ $t('pages.exchanges.para_main3') }}
+			</p>
+			-->
+			<p>
+				JSEcoin will be listed on the following exchanges after the ICO closes in October 2018.<br><br>
+				<a href="https://bit.ly/2NV1eOW" target="_blank"><img src="../assets/images/latoken.png" class="exchange-image dl-responsive-image" alt="LA Token" /></a>
 			</p>
 		</div>
 	</div>
@@ -50,5 +56,8 @@ export default {
 <style>
 #JSEW-exchanges {
 	padding:30px 0px;
+}
+.exchange-image {
+	max-width: 300px;
 }
 </style>
