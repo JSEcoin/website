@@ -66,13 +66,14 @@
 							</button>
 						</div>
 						<div v-if="activeHeaderItem('carousel2')">
-							<ICOPanel />
+							<!--<ICOPanel />-->
 						</div>
 						
+						<!--
 						<ul id="JSEW-carouselItems">
 							<li v-on:click="headerSelector('carousel2')" :class="{ active:activeHeaderItem('carousel2') }"></li>
 							<li v-on:click="headerSelector('carousel1')" :class="{ active:activeHeaderItem('carousel1') }"></li>
-						</ul>
+						</ul>-->
 						
 					</div>
 				</div>
@@ -135,7 +136,7 @@ export default {
 			staticPath: STATIC_PATH,
 			applyFadeIn: false,
 			isActiveHeaderPanel: false,
-			activeHeader: 'carousel2',
+			activeHeader: 'carousel1',
 			headerImgBg: {
 				color: 'red',
 			},

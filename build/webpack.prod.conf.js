@@ -126,9 +126,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/tools/merchantTools',
 			'/tools/blockchainExplorer',
 			'/downloads',
-			'/whitelisting',
-			'/ico',
-			'/ico/issue',
 
 			//english
 			'/en/home',
@@ -166,9 +163,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/en/tools/merchantTools',
 			'/en/tools/blockchainExplorer',
 			'/en/downloads',
-			'/en/whitelisting',
-			'/en/ico',
-			'/en/ico/issue',
 
 			//arabic
 			'/ar/home',
@@ -206,9 +200,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ar/tools/merchantTools',
 			'/ar/tools/blockchainExplorer',
 			'/ar/downloads',
-			'/ar/whitelisting',
-			'/ar/ico',
-			'/ar/ico/issue',
 
 			//bg
 			'/bg/home',
@@ -246,9 +237,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/bg/tools/merchantTools',
 			'/bg/tools/blockchainExplorer',
 			'/bg/downloads',
-			'/bg/whitelisting',
-			'/bg/ico',
-			'/bg/ico/issue',
 
 			//chinese
 			'/zh/home',
@@ -286,9 +274,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/zh/tools/merchantTools',
 			'/zh/tools/blockchainExplorer',
 			'/zh/downloads',
-			'/zh/whitelisting',
-			'/zh/ico',
-			'/zh/ico/issue',
 
 			//German
 			'/de/home',
@@ -326,9 +311,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/de/tools/merchantTools',
 			'/de/tools/blockchainExplorer',
 			'/de/downloads',
-			'/de/whitelisting',
-			'/de/ico',
-			'/de/ico/issue',
 
 			//Spanish
 			'/es/home',
@@ -366,9 +348,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/es/tools/merchantTools',
 			'/es/tools/blockchainExplorer',
 			'/es/downloads',
-			'/es/whitelisting',
-			'/es/ico',
-			'/es/ico/issue',
 
 			//finnish
 			'/fi/home',
@@ -406,9 +385,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/fi/tools/merchantTools',
 			'/fi/tools/blockchainExplorer',
 			'/fi/downloads',
-			'/fi/whitelisting',
-			'/fi/ico',
-			'/fi/ico/issue',
 
 			//french
 			'/fr/home',
@@ -446,9 +422,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/fr/tools/merchantTools',
 			'/fr/tools/blockchainExplorer',
 			'/fr/downloads',
-			'/fr/whitelisting',
-			'/fr/ico',
-			'/fr/ico/issue',
 
 			//Indonesian
 			'/id/home',
@@ -486,9 +459,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/id/tools/merchantTools',
 			'/id/tools/blockchainExplorer',
 			'/id/downloads',
-			'/id/whitelisting',
-			'/id/ico',
-			'/id/ico/issue',
 
 			//Italian
 			'/it/home',
@@ -526,9 +496,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/it/tools/merchantTools',
 			'/it/tools/blockchainExplorer',
 			'/it/downloads',
-			'/it/whitelisting',
-			'/it/ico',
-			'/it/ico/issue',
 
 			//japanese
 			'/ja/home',
@@ -566,9 +533,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ja/tools/merchantTools',
 			'/ja/tools/blockchainExplorer',
 			'/ja/downloads',
-			'/ja/whitelisting',
-			'/ja/ico',
-			'/ja/ico/issue',
 
 			//Korean
 			'/ko/home',
@@ -606,9 +570,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ko/tools/merchantTools',
 			'/ko/tools/blockchainExplorer',
 			'/ko/downloads',
-			'/ko/whitelisting',
-			'/ko/ico',
-			'/ko/ico/issue',
 
 			//
 			'/ms/home',
@@ -646,9 +607,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ms/tools/merchantTools',
 			'/ms/tools/blockchainExplorer',
 			'/ms/downloads',
-			'/ms/whitelisting',
-			'/ms/ico',
-			'/ms/ico/issue',
 
 			//
 			'/nl/home',
@@ -686,9 +644,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/nl/tools/merchantTools',
 			'/nl/tools/blockchainExplorer',
 			'/nl/downloads',
-			'/nl/whitelisting',
-			'/nl/ico',
-			'/nl/ico/issue',
 
 			//
 			'/no/home',
@@ -726,9 +681,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/no/tools/merchantTools',
 			'/no/tools/blockchainExplorer',
 			'/no/downloads',
-			'/no/whitelisting',
-			'/no/ico',
-			'/no/ico/issue',
 
 			//Portugese
 			'/pt/home',
@@ -766,9 +718,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/pt/tools/merchantTools',
 			'/pt/tools/blockchainExplorer',
 			'/pt/downloads',
-			'/pt/whitelisting',
-			'/pt/ico',
-			'/pt/ico/issue',
 
 			//Romanian
 			'/ro/home',
@@ -806,9 +755,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ro/tools/merchantTools',
 			'/ro/tools/blockchainExplorer',
 			'/ro/downloads',
-			'/ro/whitelisting',
-			'/ro/ico',
-			'/ro/ico/issue',
 
 			//Russian
 			'/ru/home',
@@ -846,9 +792,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/ru/tools/merchantTools',
 			'/ru/tools/blockchainExplorer',
 			'/ru/downloads',
-			'/ru/whitelisting',
-			'/ru/ico',
-			'/ru/ico/issue',
 
 			//Slovenian
 			'/si/home',
@@ -886,9 +829,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/si/tools/merchantTools',
 			'/si/tools/blockchainExplorer',
 			'/si/downloads',
-			'/si/whitelisting',
-			'/si/ico',
-			'/si/ico/issue',
 
 			//Swedish
 			'/se/home',
@@ -926,9 +866,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/se/tools/merchantTools',
 			'/se/tools/blockchainExplorer',
 			'/se/downloads',
-			'/se/whitelisting',
-			'/se/ico',
-			'/se/ico/issue',
 
 			//Thai
 			'/th/home',
@@ -966,9 +903,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/th/tools/merchantTools',
 			'/th/tools/blockchainExplorer',
 			'/th/downloads',
-			'/th/whitelisting',
-			'/th/ico',
-			'/th/ico/issue',
 
 			//taiwanese
 			'/tw/home',
@@ -1006,9 +940,6 @@ const webpackConfig = merge(baseWebpackConfig, {
 			'/tw/tools/merchantTools',
 			'/tw/tools/blockchainExplorer',
 			'/tw/downloads',
-			'/tw/whitelisting',
-			'/tw/ico',
-			'/tw/ico/issue',
 
 			//test
 			'/en/banner1',
@@ -1118,8 +1049,8 @@ const webpackConfig = merge(baseWebpackConfig, {
     ]),
     // service worker caching
     new SWPrecacheWebpackPlugin({
-      cacheId: 'jse-website_ico_180818',
-      filename: 'jse-web-worker_ico.js',
+      cacheId: 'jse-website_111018',
+      filename: 'jse-web-worker_final.js',
 	  //staticFileGlobs: ['dist/**/*.{js,html,css}'],
 	  staticFileGlobsIgnorePatterns: [/\.map$/], // use this to ignore sourcemap files
 	  staticFileGlobs: [
