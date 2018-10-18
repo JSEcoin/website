@@ -171,7 +171,11 @@
 					<ol>
 						<li>JSEcoin has a zero tolerance policy on the following website and advertising content:
 							<ol>
-								<li>Child pornography</li>
+								<li>Child pornography
+									<ol>
+										<li>Under 18 or portrayed to look under 18</li>	
+									</ol>
+								</li>
 								<li>Sexual conduct with animals</li>
 								<li>Violent or abusive content</li>
 								<li>Racist, sexist or any discriminatory content</li>

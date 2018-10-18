@@ -13,11 +13,6 @@
 			<p>
 				{{ $t('pages.environment.para_main3') }}
 			</p>
-			<p>
-				{{ $t('pages.environment.para_main4_line1') }}
-				<b>{{ $t('pages.environment.para_main4_line1_bold') }}</b>
-				{{ $t('pages.environment.para_main4_line2') }}
-			</p>
 		</div>
 	</div>
 </template>

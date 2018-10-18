@@ -225,22 +225,108 @@
 									</div>
 								</div>
 							</div>	
-							<div class="item left" style="margin-top: 10rem;">
+							<div class="item left" style="margin-top: -1rem;">
 								<div class="date">
 									<span>JUL</span>
 								</div>
 								<div class="box">
-									<h2 class="title">ICO</h2>
+									<h2 class="title">ICO Launch</h2>
 									<div class="content">
 										<ul>
-											<li>ICO Launch</li> 
 											<li>Airdrop</li> 
 											<li>Marketing Initiative</li> 
 										</ul>
 									</div>
 								</div>
-							</div>	
+							</div>
+							<div class="item right" style="margin-top: 10rem;">
+								<div class="date">
+									<span>Aug</span>
+								</div>
+								<div class="box">
+									<h2 class="title">ICO</h2>
+									<div class="content">
+										<ul>
+											<li>Business Strategy</li>
+											<li>Marketing Events</li> 
+											<li>Android App release</li> 
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="item left" style="margin-top: -1rem;">
+								<div class="date">
+									<span>Sept</span>
+								</div>
+								<div class="box">
+									<h2 class="title">ICO</h2>
+									<div class="content">
+										<ul>
+											<li>Scalling &amp; Advertisement</li> 
+											<li>Fraud Automation checks</li> 
+											<li>Platform Security &amp; PEN Test</li>
+											<li>Exhibiting Events - Blockchain Live &amp; Blockchain Summit</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="item right" style="margin-top: 10rem;">
+								<div class="date">
+									<span>Oct</span>
+								</div>
+								<div class="box">
+									<h2 class="title">ICO End</h2>
+									<div class="content">
+										<ul>
+											<li>Deposit Withdraw</li> 
+											<li>Exchange Listings
+												<ul>
+													<li>LAToken</li>	
+													<li>IDEX</li>	
+													<li>TokenJar</li>	
+												</ul>	
+											</li> 
+											<li>PR Strategy</li> 
+											<li>Ad Tech Platorm Dev</li> 
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="item left" style="margin-top: -1rem;">
+								<div class="date">
+									<span>Nov</span>
+								</div>
+								<div class="box">
+									<h2 class="title">PR</h2>
+									<div class="content">
+										<ul>
+											<li>Ad Tech Platform Preview</li> 
+											<li>Airdrop</li> 
+											<li>Marketing Initiative</li> 
+											<li>Exhibit WebSummit Lisbon</li> 
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="item right" style="margin-top: 10rem;">
+								<div class="date">
+									<span>Dec</span>
+								</div>
+								<div class="box">
+									<h2 class="title">ICO</h2>
+									<div class="content">
+										<ul>
+											<li>Ad Tech Platform go-live</li> 
+											<li>Publisher Campaign</li> 
+											<li>Captcha AdBlock Campaign</li> 
+										</ul>
+									</div>
+								</div>
+							</div>
 						</div>
+					</div>
+					<div class="year">
+						<div class="name">2019</div>
 					</div>
 				</div>
 			</div>

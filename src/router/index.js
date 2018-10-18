@@ -12,7 +12,7 @@ import home from '@/components/home';
 import about from '@/components/about';
 import team from '@/components/about/team';
 import ourVision from '@/components/about/ourVision';
-import careers from '@/components/about/careers';
+//import careers from '@/components/about/careers';
 import press from '@/components/about/press';
 
 //contact
@@ -37,7 +37,7 @@ import support from '@/components/technical/support';
 
 //jobs Bug bounty
 import bugBounty from '@/components/oddJobs/bugBounty';
-import smallJobs from '@/components/oddJobs/smallJobs';
+//import smallJobs from '@/components/oddJobs/smallJobs';
 import submitInfo from '@/components/oddJobs/submitInfo';
 
 //timeline
@@ -84,6 +84,9 @@ import test from '@/components/test';
 //ICO
 import ICO from '@/components/ICO/ICO-Page';
 import Issue from '@/components/ICO/Issue';
+
+//redirect
+import exchangeRedirect from '@/components/tpl/exchangeRedirect';
 
 //redux store
 import store from '../store';
@@ -240,32 +243,32 @@ const router = new Router({
 			redirect: `/${store.state.local}/tools/blockchainExplorer`,
 		},
 		*/
-		/*
 		{
 			path: '/ico',
-			component: ICO,
-			meta: {
-				hideICOButton: true,
-				linkText: '',
-				headerBG: '/banners/icoLaunchpad.png',
-				headerTitle: 'pages.ico.banner.heading', //ICO Launchpad',
-				headerSubTitle: 'pages.ico.banner.subheading', //'Make sure you are logged in to your wallet to access the integrated purchase capabilities',
-			},
+			component: exchangeRedirect,
+			//meta: {
+			//	hideICOButton: true,
+			//	linkText: '',
+			//	headerBG: '/banners/icoLaunchpad.png',
+			//	headerTitle: 'pages.ico.banner.heading', //ICO Launchpad',
+			//	headerSubTitle: 'pages.ico.banner.subheading', //'Make sure you are logged in to your wallet to access the integrated purchase capabilities',
+			//},
 		},
 		{
 			path: '/ICO',
-			redirect: '/ico',
+			component: exchangeRedirect,
 		},
 		{
 			path: '/ico/issue',
-			component: Issue,
-			meta: {
-				linkText: '',
-				headerBG: '/banners/icoLaunchpad.png',
-				headerTitle: 'pages.Issue.banner.heading',
-				headerSubTitle: 'pages.Issue.banner.subheading',
-			},
-		},*/
+			component: exchangeRedirect,
+			//component: Issue,
+			//meta: {
+			//	linkText: '',
+			//	headerBG: '/banners/icoLaunchpad.png',
+			//	headerTitle: 'pages.Issue.banner.heading',
+			//	headerSubTitle: 'pages.Issue.banner.subheading',
+			//},
+		},
 		{
 			path: '/home',
 			component: home,
@@ -302,7 +305,7 @@ const router = new Router({
 				headerTitle: 'pages.ourVision.banner.heading',
 				headerSubTitle: 'pages.ourVision.banner.subheading',
 			},
-		},
+		},/*
 		{
 			path: '/about/careers',
 			component: careers,
@@ -312,7 +315,7 @@ const router = new Router({
 				headerTitle: 'pages.careers.banner.heading',
 				headerSubTitle: 'pages.careers.banner.subheading',
 			},
-		},
+		},*/
 		{
 			path: '/about/press',
 			component: press,
@@ -472,7 +475,7 @@ const router = new Router({
 				headerTitle: 'pages.bugBounty.banner.heading',
 				headerSubTitle: 'pages.bugBounty.banner.subheading',
 			},
-		},
+		},/*
 		{
 			path: '/oddJobs/smallJobs',
 			component: smallJobs,
@@ -482,7 +485,7 @@ const router = new Router({
 				headerTitle: 'pages.smallJobs.banner.heading',
 				headerSubTitle: 'pages.smallJobs.banner.subheading',
 			},
-		},
+		},*/
 		{
 			path: '/oddJobs/submitInfo',
 			component: submitInfo,
@@ -523,18 +526,17 @@ const router = new Router({
 				headerSubTitle: 'pages.charity.banner.subheading',
 			},
 		},
-		/*
 		{
 			path: '/whitelisting',
-			component: whitelisting,
-			meta: {
-				linkText: 'pages.whitelisting.banner.linkText',
-				headerBG: '/banners/whitelisting.jpg',
-				headerTitle: 'pages.whitelisting.banner.heading',
-				headerSubTitle: 'pages.whitelisting.banner.subheading',
-			},
+			component: exchangeRedirect,
+			//component: whitelisting,
+			//meta: {
+			//	linkText: 'pages.whitelisting.banner.linkText',
+			//	headerBG: '/banners/whitelisting.jpg',
+			//	headerTitle: 'pages.whitelisting.banner.heading',
+			//	headerSubTitle: 'pages.whitelisting.banner.subheading',
+			//},
 		},
-		*/
 		{
 			path: '/downloads',
 			component: downloads,
@@ -729,34 +731,34 @@ const router = new Router({
 				linkText: 'Home',
 			},
 		},*/
-		/*
 		{
 			path: '/:lang/ico',
-			component: ICO,
-			meta: {
-				hideICOButton: true,
-				linkText: '',
-				headerBG: '/banners/icoLaunchpad.png',
-				headerTitle: 'pages.ico.banner.heading', //ICO Launchpad',
-				headerSubTitle: 'pages.ico.banner.subheading', //'Make sure you are logged in to your wallet to access the integrated purchase capabilities',
-			},
+			component: exchangeRedirect,
+			//redirect: '/:lang/exchanges',
+			//meta: {
+			//	hideICOButton: true,
+			//	linkText: '',
+			//	headerBG: '/banners/icoLaunchpad.png',
+			//	headerTitle: 'pages.ico.banner.heading', //ICO Launchpad',
+			//	headerSubTitle: 'pages.ico.banner.subheading', //'Make sure you are logged in to your wallet to access the integrated purchase capabilities',
+			//},
 		},
-		*/
 		//Add redirection on typo
-		/*{
+		{
 			path: '/:lang/ICO',
-			redirect: '/:lang/ico',
+			component: exchangeRedirect,
 		},
 		{
 			path: '/:lang/ico/issue',
-			component: Issue,
-			meta: {
-				linkText: '',
-				headerBG: '/banners/icoLaunchpad.png',
-				headerTitle: 'pages.ico.banner.heading',
-				headerSubTitle: 'pages.ico.banner.subheading',
-			},
-		},*/
+			component: exchangeRedirect,
+			//component: Issue,
+			//meta: {
+			//	linkText: '',
+			//	headerBG: '/banners/icoLaunchpad.png',
+			//	headerTitle: 'pages.ico.banner.heading',
+			//	headerSubTitle: 'pages.ico.banner.subheading',
+			//},
+		},
 		{
 			path: '/:lang/home',
 			component: home,
@@ -793,7 +795,7 @@ const router = new Router({
 				headerTitle: 'pages.ourVision.banner.heading',
 				headerSubTitle: 'pages.ourVision.banner.subheading',
 			},
-		},
+		},/*
 		{
 			path: '/:lang/about/careers',
 			component: careers,
@@ -803,7 +805,7 @@ const router = new Router({
 				headerTitle: 'pages.careers.banner.heading',
 				headerSubTitle: 'pages.careers.banner.subheading',
 			},
-		},
+		},*/
 		{
 			path: '/:lang/about/press',
 			component: press,
@@ -963,7 +965,7 @@ const router = new Router({
 				headerTitle: 'pages.bugBounty.banner.heading',
 				headerSubTitle: 'pages.bugBounty.banner.subheading',
 			},
-		},
+		},/*
 		{
 			path: '/:lang/oddJobs/smallJobs',
 			component: smallJobs,
@@ -973,7 +975,7 @@ const router = new Router({
 				headerTitle: 'pages.smallJobs.banner.heading',
 				headerSubTitle: 'pages.smallJobs.banner.subheading',
 			},
-		},
+		},*/
 		{
 			path: '/:lang/oddJobs/submitInfo',
 			component: submitInfo,
@@ -1014,18 +1016,17 @@ const router = new Router({
 				headerSubTitle: 'pages.charity.banner.subheading',
 			},
 		},
-		/*
 		{
 			path: '/:lang/whitelisting',
-			component: whitelisting,
-			meta: {
-				linkText: 'pages.whitelisting.banner.linkText',
-				headerBG: '/banners/whitelisting.jpg',
-				headerTitle: 'pages.whitelisting.banner.heading',
-				headerSubTitle: 'pages.whitelisting.banner.subheading',
-			},
+			component: exchangeRedirect,
+			//component: whitelisting,
+			//meta: {
+			//	linkText: 'pages.whitelisting.banner.linkText',
+			//	headerBG: '/banners/whitelisting.jpg',
+			//	headerTitle: 'pages.whitelisting.banner.heading',
+			//	headerSubTitle: 'pages.whitelisting.banner.subheading',
+			//},
 		},
-		*/
 		{
 			path: '/:lang/downloads',
 			component: downloads,

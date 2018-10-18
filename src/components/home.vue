@@ -307,11 +307,12 @@
 		<div id="JSEW-where-next">
 			<div class="wrapper center">
 				<div id="JSEW-where-next-container">
+					<!--
 					<h2 class="heading center">{{ $t('pages.home.section_where_next.heading1') }}</h2>
 					<hr>
 					<h3 class="subHeading center">{{ $t('pages.home.section_where_next.heading2a') }}</h3>
 					<p class=".JSEW-giant-link-container"><a href="https://jsecoin.com/whitelisting" class="JSEW-giant-link">https://jsecoin.com/whitelisting</a></p>
-					<hr>
+					<hr>-->
 					<h3 class="subHeading center">{{ $t('pages.home.section_where_next.heading2b') }}</h3>
 					<p class=".JSEW-giant-link-container"><a href="https://platform.jsecoin.com" class="JSEW-giant-link">https://platform.jsecoin.com</a></p>
 					<hr>

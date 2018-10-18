@@ -66,12 +66,12 @@
 						<h2 class="subHeading">{{ $t('pages.FAQ.section_general.subheading_general') }}</h2>
 
 						<!--ICO/Exchange Listing/Wallet-->
-						<div is="xBasicToggle">
+						<!--<div is="xBasicToggle">
 							<h3 class="faqItem"><i class="fa fa-plus-circle"></i> {{ $t('pages.FAQ.section_general.faqItemHeading1') }}</h3>
 							<p>
 								{{ $t('pages.FAQ.section_general.faqItemContent1') }}
 							</p>
-						</div>
+						</div>-->
 
 						<div is="xBasicToggle">
 							<h3 class="faqItem"><i class="fa fa-plus-circle"></i> {{ $t('pages.FAQ.section_general.faqItemHeading2') }}</h3>
@@ -128,7 +128,7 @@
 						
 
 
-						<div is="xBasicToggle">
+						<!--<div is="xBasicToggle">
 							<h3 class="faqItem"><i class="fa fa-plus-circle"></i> {{ $t('pages.FAQ.section_general.faqItemHeading7') }}</h3>
 							<p>
 								{{ $t('pages.FAQ.section_general.faqItemContent7') }}
@@ -139,11 +139,13 @@
 							<p>
 								{{ $t('pages.FAQ.section_general.faqItemContent8') }}
 							</p>
-						</div>
+						</div>-->
 						<div is="xBasicToggle">
 							<h3 class="faqItem"><i class="fa fa-plus-circle"></i> {{ $t('pages.FAQ.section_general.faqItemHeading9') }}</h3>
 							<p>
-								{{ $t('pages.FAQ.section_general.faqItemContent9') }}
+								<!--{{ $t('pages.FAQ.section_general.faqItemContent9') }}-->
+								JSEcoin is a cryptocurrency on its own but we are not listed on CoinMarketCap yet - Our Token exchange listings went live on the 18th October.<br />
+								We should be listed on CoinMarketCap in next couple of weeks.
 							</p>
 						</div>
 						<!--xICO/Exchange Listing/Wallet-->
@@ -296,8 +298,9 @@
 						</div>
 						<div is="xBasicToggle">
 							<h3 class="faqItem"><i class="fa fa-plus-circle"></i> {{ $t('pages.FAQ.section_platformMining.faqItemHeading3') }}</h3>
+							<p>To overcome this we recommend that you open the mining in a new browser with no other tabs open. If you then want to continue to different sites instead of opening a new tab, you should open up a new browser. This should stop the drop in hash rate. Try different browsers, your optimal browser will depend on your system.</p>
 							<p>
-								{{ $t('pages.FAQ.section_platformMining.faqItemContent3') }}
+								additionally you can prevent this by mining via our Windows or Mac desktop apps which can be downloaded here https://jsecoin.com/downloads
 							</p>
 						</div>
 						<div is="xBasicToggle">
@@ -396,7 +399,7 @@
 						<div is="xBasicToggle">
 							<h3 class="faqItem"><i class="fa fa-plus-circle"></i> {{ $t('pages.FAQ.section_thePlatform.faqItemHeading7') }}</h3>
 							<p>
-								{{ $t('pages.FAQ.section_thePlatform.faqItemContent7') }}
+								We have introduced a number of features to increase the security of the platform such as the PIN system, email confirmations for large withdrawals, transaction limits. However your account is only as secure as you make it. Please ensure you use a unique, secure password. We recommend setting up 2FA on your account, and never let anyone know your PIN. Ensure that your operating system is free from viruses and trojans.
 							</p>
 						</div>
 						<div is="xBasicToggle">
@@ -435,16 +438,8 @@
 						<div is="xBasicToggle">
 							<h3 class="faqItem"><i class="fa fa-plus-circle"></i> {{ $t('pages.FAQ.section_affiliates.faqItemHeading2') }}</h3>
 							<p>
-								{{ $t('pages.FAQ.section_affiliates.faqItemContent2') }}
-							</p>
-							<p>
-								{{ $t('pages.FAQ.section_affiliates.faqItemContent2_para2') }}
-							</p>
-							<p>
-								{{ $t('pages.FAQ.section_affiliates.faqItemContent2_para3') }}
-							</p>
-							<p>
-								{{ $t('pages.FAQ.section_affiliates.faqItemContent2_para4') }}
+								The referral program is open to change.<br />
+								For full details regarding payments and terms regarding qualifying referrals please visit the Referrals page of the platform at <a href="https://platform.jsecoin.com">https://platform.jsecoin.com</a> 
 							</p>
 						</div>
 						<div is="xBasicToggle">
@@ -453,16 +448,10 @@
 								{{ $t('pages.FAQ.section_affiliates.faqItemContent3') }}
 							</p>
 							<p>
-								{{ $t('pages.FAQ.section_affiliates.faqItemContent3_para2') }}
+								your referral is not from one of our accepted countries as listed on the referrals page.
 							</p>
 							<p>
 								{{ $t('pages.FAQ.section_affiliates.faqItemContent3_para3') }}
-							</p>
-						</div>
-						<div is="xBasicToggle">
-							<h3 class="faqItem"><i class="fa fa-plus-circle"></i> {{ $t('pages.FAQ.section_affiliates.faqItemHeading4') }}</h3>
-							<p>
-								{{ $t('pages.FAQ.section_affiliates.faqItemContent4') }}
 							</p>
 						</div>
 						<div is="xBasicToggle">

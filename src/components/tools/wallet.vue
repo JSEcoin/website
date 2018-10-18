@@ -5,19 +5,12 @@
 			<h1 class="heading">{{ $t('pages.wallet.heading_wallet') }}</h1>
 			<h2 class="subHeading">{{ $t('pages.wallet.subheading_wallet') }}</h2>
 
-			<p class="infoMsg">
+			<!--<p class="infoMsg">
 				{{ $t('pages.wallet.para_main1_infoMsg') }}
-			</p>
+			</p>-->
 			<p>
 				{{ $t('pages.wallet.para_main2') }}
-			<p>
-				{{ $t('pages.wallet.para_main3') }}
 			</p>
-			<ul>
-				<li>{{ $t('pages.wallet.list_wallet1') }}</li>
-				<li>{{ $t('pages.wallet.list_wallet2') }}</li>
-				<li>{{ $t('pages.wallet.list_wallet3') }}</li>
-			</ul>
 			<p>
 				{{ $t('pages.wallet.para_main4') }}
 			</p>	
