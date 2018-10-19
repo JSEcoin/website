@@ -369,9 +369,9 @@
 							<router-link v-bind:to="`/${$store.state.local}/environment`" tag="a">
 								{{ $t('template.navigation.link_environment') }}
 							</router-link>
-							<router-link v-bind:to="`/${$store.state.local}/whitelisting`" tag="a">
+							<!--<router-link v-bind:to="`/${$store.state.local}/whitelisting`" tag="a">
 								{{ $t('template.navigation.link_whitelisting') }} <i class="fa fa-check"></i>
-							</router-link>
+							</router-link>-->
 						</nav>
 						<nav>
 							<h4>{{ $t('template.navigation.heading_webmaster') }}</h4>
