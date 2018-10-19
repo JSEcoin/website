@@ -1,5 +1,8 @@
 <template>
-  <div> </div>
+	<div>
+	  <h1 class="heading center">ICO Complete - 11/10/2018</h1>
+	  <h3 class="subHeading center">Redirecting you shortly to our exchange information page</h3>
+	</div>
 </template>
 
 <script>
@@ -10,9 +13,15 @@ export default {
 			toggleItem: false,
 		};
 	},
-	created() {
+	mounted() {
 		const self = this;
-		self.$router.push(`/${self.$route.params.lang}/exchanges`);
+		setTimeout(() => {
+			let rpath = '/exchanges';
+			if (typeof (self.$route.params.lang) !== 'undefined') {
+				rpath = `/${self.$route.params.lang}/exchanges`;
+			}
+			self.$router.push(rpath);
+		}, 5000);
 	},
 };
 </script>
