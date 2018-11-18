@@ -1,0 +1,1498 @@
+{
+	"tpl": {
+		"globalNavHeader": {
+			"link_whitepaper": "DOCUMENTOS TECNICOS",
+			"link_investors": "INVERSIONISTAS",
+			"link_webmasters": "WEB MÁSTERS",
+			"link_developers": "DESARROLLADORES",
+			"link_contact": "CONTACTO",
+			"link_login": "INICIAR SESIÓN"
+		},
+		"header": {
+			"heading_whyJSEcoin": "¿Por qué JSEcoin?",
+			"para_main1": "Las cripto monedas tradicionales no se diseñaron para la adopción general o la integración web. El proyecto JSEcoin está construido desde cero para proporcionar soluciones a los siguientes problemas:",
+			"subheading_environmentalImpact": "Impacto medioambiental",
+			"para_main2": "La minería de cripto divisas tradicional utiliza una gran cantidad de energía eléctrica. JSEcoin se extrae utilizando recursos de CPU excedentes que reducen el impacto ambiental de la adopción de cripto monedas.",
+			"subheading_consumerFriendly": "Amigable al Consumidor",
+			"para_main3": "Nuestro sistema híbrido facilita a los usuarios no técnicos la configuración de una cuenta, minerar divisas, realizar transacciones y usar cripto divisas. Proporcionamos una plataforma segura, simple e intuitiva para nuestros usuarios.",
+			"subheading_builtForTheWeb": "Construido para la web",
+			"para_main4": "Creemos que las cripto monedas deben estar basada en la web. Nuestro sistema es minado por web másters y auto-mineros usando un navegador web. La plataforma en línea proporciona un punto de entrada basado en la web a la red JSEcoin.",
+			"button_close": "Cerrar",
+			"carousel1": {
+				"heading": "DIVISA DIGITAL - DISEÑADA PARA LA WEB",
+				"subheading": "El futuro del Blockchain y los Ecosistemas para comercio electrónico y publicidad digital",
+				"placeholder": "Ingrese su dirección de correo electrónico",
+				"button_getStarted": "Empezar",
+				"link_readTheWhitepaper": "Lea los DOCUMENTOS TECNICOS",
+				"button_whyJSEcoin": "¿Por qué JSECoin?"
+			}
+		}
+	},
+	"template": {
+		"meta": {
+			"title": "DIVISA DIGITAL - DISEÑADA PARA LA WEB",
+			"keywords": "jsecoin, cripto monedas de minería web, cripto, blockchain como servicio, código de minería de javascript, minería de cripto monedas de javascript, minería a través de un navegador, minería de datos",
+			"description": "Descubra JSECoin, la forma más fácil de recibir pagos por sus productos o servicios y transferir cripto monedas a amigos y familiares en línea. Explora la cripto moneda extraída por web másters creada para todos."
+		},
+		"global": {
+			"text_comingSoon": "¡Próximamente!"
+		},
+		"adDetection": {
+			"text_title": "Nos hemos dado cuenta de que estás usando un bloqueador de anuncios.",
+			"para_main1": "Aún puede usar e interactuar con nuestro sitio, sin embargo, algunas áreas pueden estar deshabilitadas.",
+			"para_main2": "Por favor agreguenos en la lista blanca o deshabilite su bloqueador de anuncios, y vuelva a cargar la página para acceder a todo el contenido."
+		},
+		"lang": {
+			"para_choose": "Elija el idioma con el que se sienta más cómodo."
+		},
+		"cookies": {
+			"text_overview_line1": "Usamos cookies para brindar mejor nuestros servicios.",
+			"text_overview_line2": "Al usar nuestros servicios, usted acepta",
+			"link_terms": "nuestro uso de cookies"
+		},
+		"navigation": {
+			"heading_company": "Empresa",
+			"link_about": "Sobre nosotros",
+			"link_team": "Equipo",
+			"link_vision": "Visión",
+			"link_news": "Noticias",
+			"link_announcements": "Anuncios",
+			"link_developmentStatus": "Estado del desarrollo",
+			"link_timeline": "Cronología",
+			"link_charity": "Caridad",
+			"link_careers": "Carreras",
+			"link_reportAbuse": "Reportar abuso",
+			"link_FAQ": "Preguntas más frecuentes",
+			"link_contactUs": "Contáctenos",
+			"heading_investors": "Inversores",
+			"link_whyInvest": "Por qué invertir",
+			"link_overview": "Visión de conjunto",
+			"link_whitepaper": "Documentos técnicos",
+			"link_siteStatistics": "Estadísticas del sitio",
+			"link_bitcoinTalkAnn": "Anuncios en BitcoinTalk",
+			"link_technicalOverview": "Resumen técnico",
+			"link_investorNews": "Noticias del inversor",
+			"link_forums": "Foros",
+			"link_press": "prensa",
+			"link_exchanges": "Bolsas",
+			"link_environment": "Ambiente",
+			"link_signup": "Regístrate",
+			"heading_webmaster": "Web máster",
+			"link_whySwitch": "Por qué cambiar",
+			"link_blockchainExplorer": "Explorador de Blockchain",
+			"link_merchantTools": "Herramientas de comercio",
+			"link_JSE_Wallet": "Monedero JSE",
+			"link_JSE_Integration": "Integración JSE",
+			"link_systemStatus": "Estado del sistema",
+			"link_technicalSupport": "Soporte técnico",
+			"link_API_Overview": "Descripción general de la API",
+			"link_sampleIntegrations": "Ejemplos de integraciones",
+			"link_publisherNews": "Noticias del editor",
+			"heading_developers": "Desarrolladores",
+			"link_ourCommitment": "Nuestro compromiso",
+			"link_API_Documentation": "Documentación de la API",
+			"link_codeSamples": "Ejemplos de código",
+			"link_developerSupport": "Soporte de desarrolladores",
+			"link_developerNews": "Noticias de Desarrolladores",
+			"link_bugBounty": "Caza de errores",
+			"link_oddJobs": "Trabajos ocasionales",
+			"link_submitABug": "Enviar un error",
+			"button_platformLogin": "inicio de sesión en la plataforma",
+			"button_readWhitepaper": "Lea el Documento técnico"
+		},
+		"social": {
+			"title_telegram": "Telegam",
+			"title_Discord": "Discord",
+			"title_Reddit": "Reddit",
+			"title_Medium": "Medium",
+			"title_YouTube": "Youtube",
+			"title_facebook": "Facebook",
+			"title_twitter": "Twitter",
+			"title_LinkedIn": "LinkedIn"
+		},
+		"footer": {
+			"privacy": {
+				"text_trust": "La confianza es esencial y será proporcional a nuestra transparencia operativa. Nos enorgullece operar un negocio ético abierto.",
+				"text_optout": "La página de política de privacidad anterior también contiene un enlace de exclusión para desactivar la extracción de cripto monedas JSE basada en navegador en toda la red.",
+				"link_privacyPolicy": "Política de privacidad",
+				"link_terms": "Condiciones",
+				"link_kyc": "Política de KYC"
+			},
+			"info": {
+				"heading_newsletterSignup": "Inscríbase al boletín",
+				"placeholder_emailInput": "Ingrese su dirección de correo electrónico",
+				"button_signup": "¡Regístrese hoy para recibir actualizaciones!",
+				"heading_mentioned": "Mencionado en",
+				"subheading_mentioned": "Innovando con blockchain y la web",
+				"alt_logos": "Los sitios en que JSECoin se menciona"
+			},
+			"companyInfo": {
+				"text_registered": "Registrado en el No. 10940920 de Inglaterra - Dun y Bradstreet No. 100233913837",
+				"text_address": "JSECoin Ltd, Cambridgeshire, Reino Unido"
+			},
+			"copy": {
+				"text_copyright": "Copyright 2017-2018",
+				"text_rightsReserved": "Todos los derechos reservados"
+			}
+		}
+	},
+	"segment": {
+		"interactiveTimeline": {
+			"label_tasks": "TAREAS",
+			"month_january": "ENERO",
+			"month_february": "FEBRERO",
+			"month_march": "MARZO",
+			"month_april": "ABRIL",
+			"month_may": "MAYO",
+			"month_june": "JUNIO",
+			"month_july": "JULIO",
+			"month_august": "AGOSTO",
+			"month_september": "SEPTIEMBRE",
+			"month_october": "OCTUBRE",
+			"month_november": "NOVIEMBRE",
+			"month_december": "DICIEMBRE",
+			"label_today": "HOY",
+			"label_os": "CODIGO ABIERTO",
+			"label_icoLaunch": "LANZAMIENTO DE ICO",
+			"label_exchangeListing": "LISTADO EN BOLSAS DE DIVISAS",
+			"task_name1": "Nueva de identidad",
+			"task_name1a": "Mejoras de SEO",
+			"task_name1b": "Mejoras del banner SEO JSE",
+			"task_name2": "Portal de desarrolladores",
+			"task_name3": "Lista blanca & sistemas ICO",
+			"task_name4": "Aplicación de escritorio para Windows / Linux / macOS",
+			"task_name5": "Aplicación móvil Android",
+			"task_name6": "Revisión de seguridad de la plataforma",
+			"task_name7": "Herramientas de comercio",
+			"task_name8": "Soporte web multilingüe",
+			"task_name9": "Plataforma de soporte multilingüe",
+			"task_name10": "Aplicación de escritorio con Soporte multilingüe",
+			"task_name11": "Soporte móvil multilingüe",
+			"task_name12": "Mejorar el esquema DB - Redis",
+			"task_name13": "Compatibilidad con plataforma de Hashing por GPU",
+			"task_name14": "Rastreador del sitio publicador ",
+			"task_name15": "Mejoras en el explorador Blockchain",
+			"task_name16": "Solidez del Contrato ERC220",
+			"task_name17": "Web3 ICO Widget para el lado de Cliente",
+			"task_name18": "Importación / Exportación del lado del servidor Web3",
+			"task_name19": "Revisión de seguridad del contrato",
+			"task_name20": "Conjunto de Identificadores GFX",
+			"task_name21": "Marco de Identificadores",
+			"task_name22": "Personalizar Identificadores Blockchain"
+		},
+		"miniStat": {
+			"text_loading": "Cargando",
+			"text_activeMiners": "Mineros activos",
+			"text_registeredSites": "Sitios registrados",
+			"text_registeredUsers": "Usuarios Registrados",
+			"text_hundred": "Cien",
+			"text_thousand": "Mil",
+			"text_million": "Millón",
+			"text_billion": "Mil millones",
+			"text_trillion": "trillones"
+		}
+	},
+	"pages": {
+		"navigation": {
+			"about": {
+				"link_about": "Acerca de",
+				"link_team": "Equipo",
+				"link_vision": "Visión",
+				"link_careers": "Carreras",
+				"link_press": "prensa"
+			},
+			"legal": {
+				"link_userAgreement": "Acuerdo del Usuario",
+				"link_privacyPolicy": "Política de privacidad",
+				"link_terms": "Condiciones",
+				"link_kycPolicy": "Política de KYC"
+			},
+			"oddJobs": {
+				"link_bugBounty": "Cacería de errores",
+				"link_smallJobs": "Pequeños trabajos",
+				"link_submit": "Enviar"
+			},
+			"support": {
+				"link_community": "Comunidad",
+				"link_contact": "Contacto",
+				"link_FAQ": "Preguntas más frecuentes"
+			},
+			"technical": {
+				"link_overview": "Descripción de JSE",
+				"link_stats": "Estadísticas",
+				"link_APIS": "API'S",
+				"link_samples": "Muestras",
+				"link_support": "Apoyo"
+			}
+		},
+		"about": {
+			"meta": {
+				"title": "Acerca de",
+				"keywords": "UK cripto divisas blockchain, blockchain uk, empresa de cripto moneda británica",
+				"description": "Una descripción general del proyecto JSEcoin y del equipo detrás de la puesta en marcha de cripto monedas con sede fuera del Reino Unido."
+			},
+			"banner": {
+				"linkText": "Sobre nosotros",
+				"heading": "Sobre nosotros",
+				"subheading": "Red líder en minería de cripto monedas basada en la web"
+			},
+			"heading_about": "Acerca de JSECoin Ltd",
+			"subheading_about": "Formado el 6 de agosto de 2017",
+			"para_main1": "Fundada en agosto de 2017, JSECoin desarrolla la tecnología blockchain de próxima generación para la web.",
+			"para_main2": "El proyecto JSEcoin incluye la plataforma digital de divisas, billetera, minería y desarrollo en la que cualquier empresa o individuo con una dirección de correo electrónico puede generar tokens, así como enviar y recibir de manera segura y rentable pagos en cripto monedas en línea.",
+			"para_main3": "El tamaño de nuestra red y la aceptación cada vez mayor de nuestro producto nos han ayudado a convertirnos en una de las principales redes de cripto monedas para la minería basada en la web. Estamos liderando el camino para promover la minería con opción de entrada basada en la web para nuestros editores, que impulsa el tráfico y el poder de cómputo a la red.",
+			"para_main4": "Con sede en Cambridge, Reino Unido, nuestro equipo está trabajando para construir una solución de pagos de clase mundial para la web utilizando los últimos desarrollos en la tecnología blockchain. El mundo está cambiando y la forma en que almacenamos valor, el comercio y el uso del dinero se verá afectado en la próxima década. El surgimiento de las cripto monedas nos brinda una oportunidad única para cambiar el mundo y marcar la diferencia.",
+			"para_main5": "Si desea obtener más información sobre el proyecto, tómese el tiempo para consultar nuestro documento técnico actualizado https://jsecoin.com/whitepaper.pdf",
+			"alt_about": "Acerca de JSE"
+		},
+		"charity": {
+			"meta": {
+				"title": "Caridad",
+				"keywords": "Cripto moneda de caridad, dar cripto moneda, cripto moneda filantropía",
+				"description": "Hemos tenido tanto apoyo para nuestra plataforma de minería basada en sitios web, que nuestro equipo está comprometido a devolver parte de esa ayuda a través de nuestros proyectos de caridad."
+			},
+			"banner": {
+				"linkText": "Caridad",
+				"heading": "",
+				"subheading": "Haciendo un cambio consciente para mejor"
+			},
+			"heading_about": "JSE para la Caridad",
+			"subheading_about": "En septiembre de 2017, configuramos una cuenta de caridad",
+			"para_main1": "Nuestro compromiso es devolver algo a las organizaciones benéficas que son importantes para nuestros usuarios. Estamos creando un sistema de votación dirigido por pares donde las organizaciones benéficas que apoyamos son elegidas por la comunidad JSEcoin. Los miembros pueden prometer cualquier cantidad de JSE sin importar cuan grande o pequeño sea haciendo una transferencia a nuestra cuenta de caridad. También estamos transfiriendo los tokens obtenidos injustamente directamente a la cuenta de caridad para que algo bueno pueda provenir de las malas prácticas de algunas personas. Siguiendo nuestra ICO buscaremos distribuir estos tokens a las organizaciones benéficas que hayas elegido.",
+			"para_main2": "Estableceremos un sistema de votación colectiva y un paquete de distribución regular donde cualquiera puede sugerir una organización benéfica registrada y la comunidad votará sobre las causas más valiosas que recibirán fondos.",
+			"para_main3_line1": "Esta cuenta ahora ha crecido para contener las donaciones.",
+			"para_main3_line2": "Estamos emocionados de comenzar a trabajar en la distribución de esto a las grandes causas después de la ICO.",
+			"para_main4": "Como parte de nuestro compromiso de operar de manera transparente y ética, publicaremos todas las transacciones salientes desde esta cuenta."
+		},
+		"environment": {
+			"meta": {
+				"title": "Ambiente",
+				"keywords": "Cripto moneda ecológica, tecnología verde blockchain",
+				"description": "Las cripto monedas tradicionales son terriblemente ineficientes y algunos usan tanta potencia como un país entero. JSEcoin tiene como objetivo reducir la huella de carbono de la industria blockchain."
+			},
+			"banner": {
+				"linkText": "Ambiente",
+				"heading": "Ambiente",
+				"subheading": "REDUCIR EL IMPACTO AMBIENTAL DE LAS CRIPTO DIVISAS CON JSECOIN"
+			},
+			"heading_environment": "Nuestro impacto ambiental",
+			"subheading_environment": "Los blockchains están hambrientos de poder",
+			"para_main1": "¿Sabía que 6 hogares de los EE. UU. Pueden recibir energía durante 1 día por la electricidad consumida para una sola transacción en la red bitcoin!",
+			"para_main2": "Toda la red consume la misma cantidad de electricidad que 1,500,000 hogares y el consumo de mineros está creciendo alrededor de 1TW / hora por mes. Esto es causado por la naturaleza competitiva del sistema de prueba de trabajo de minería. Los mineros con acceso a electricidad más barata tienen una ventaja ya que este es el único costo real una vez que se ha comprado el hardware de minería ASIC. El resultado es que las grandes granjas de servidores consumen cerca de mil millones de dólares en electricidad al año.",
+			"para_main3": "¿Es esto óptimo, ético o sustentable? Creemos que no. JSEcoin proporciona una solución mediante el uso de energía de fondo de la CPU que no se utiliza durante la navegación web normal. Este exceso de poder de computo se usa para minerar y asegurar la cadena de bloques sin destruir el planeta. Parece una evolución lógica de la tecnología, pero entonces somos un poco parcializados.",
+			"para_main4_line1": "Como parte de nuestro compromiso de operar de manera transparente y ética, publicaremos todas las transacciones salientes desde esta cuenta.",
+			"para_main4_line1_bold": "JSEcoin tiene la ventaja del primer jugador",
+			"para_main4_line2": ", avancemos rápido y arreglemos las cosas."
+		},
+		"exchanges": {
+			"meta": {
+				"title": "Bolsa",
+				"keywords": "Comercio jse, jsecoin bolsa, bolsa jsecoin, jsecoin precio, jse a usd",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "Cambios",
+				"heading": "Cambios",
+				"subheading": ""
+			},
+			"heading_exchanges": "La bolsa",
+			"subheading_exchanges": "¿Cuándo y dónde aparecerán?",
+			"para_main1": "Planeamos hacer una salida en las bolsas de divisas que sigan a nuestra ICO más adelante este año. En la preparación de esto estaremos escuchando sus comentarios, mientras sopesamos los pros y contras de cada bolsa para finalizar los intercambios que planeamos enumerar. Los fondos para las tarifas de cotización se incrementarán durante el ICO y, por lo tanto, no se tomarán decisiones finales hasta después de esta fecha.",
+			"para_main2": "Hemos pre seleccionado una serie de bolsas que consideraremos para solicitar o participar en sus sistemas de votación para nuevos listados:",
+			"para_main3": "Algunas bolsas como coinbase (gdax) / bittrex son proposiciones poco realistas para un nuevo token de cripto moneda."
+		},
+		"home": {
+			"meta": {
+				"title": "JSECoin: divisa digital - Diseñado para la web",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "Casa",
+				"heading": "",
+				"subheading": ""
+			},
+			"button_viewGlobalStats": "Ver estadísticas globales",
+			"section_overview": {
+				"heading_overview": "Construyendo el futuro del Blockchain en la web",
+				"subheading_overview": "Simplificando la cripto moneda, el comercio, la minería y la adopción de usuarios a través de un navegador",
+				"highlights": {
+					"heading_simple": "Fácil de usar",
+					"para_simple": "Fácil de comenzar, fácil de comprar y simple de enviar divisas digitales a cualquier persona con una dirección de correo electrónico",
+					"heading_browserMining": "Minería en Navegador web",
+					"para_browserMining": "Cualquiera que tenga un navegador web o sitio web ahora puede extraer cripto monedas. Ya sea en tu propio dispositivo en nuestra plataforma fácil de usar, o simplemente instala un fragmento de código en tu sitio web que te generará tokens mientras tus visitantes navegan.",
+					"heading_storage": "Almacenamiento",
+					"para_storage": "Puede almacenar sus tokens en la plataforma JSEcoin o, alternativamente, exportarlos a una billetera compatible Ethereum de su elección.",
+					"heading_tokens": "Cómo usar tus tokens",
+					"para_tokens": "Use sus tokens de JSEcoin para realizar compras en línea en los sitios participantes. Si tiene su propio sitio, ahora puede comenzar a aceptar JSEcoin utilizando nuestras herramientas comerciales fáciles de usar."
+				},
+				"button_readWhitePaper": "Lea el Documento técnico"
+			},
+			"section_browserMining": {
+				"heading_browserMining": "Descripción general de la minería",
+				"subheading_browserMining": "¿Alguna vez quiso entrar en las cripto monedas pero lo encontró un poco confuso?",
+				"heading_simple": "Fácil de usar",
+				"para_main1": "Ahora puede registrar su cuenta JSEcoin y comenzar a extraer en 60 segundos.",
+				"para_main2": "Tenemos una página de minería dedicada en la plataforma donde puede poner en funcionamiento la CPU de sus dispositivos y obtener algunos tokens de JSEcoin. Aquí su computadora realizará ecuaciones matemáticas para asegurar nuestra cadena de bloques (básicamente un registro de todas nuestras transacciones) y como recompensa por hacer esto, tendrá la oportunidad de ganar tokens de JSEcoin.",
+				"para_main3": "Usted tiene el control total todo el tiempo y puede iniciar y detener el proceso en cualquier punto, así como cambiar la cantidad de energía de la CPU que dedica a la minería.",
+				"button_tryit": "¡Pruébalo!",
+				"button_watchVideo": "Mira nuestro vídeo",
+				"alt_miner": "JSE Miner"
+			},
+			"section_pubPlatMining": {
+				"alt_newMiningPlatform": "Nueva plataforma minera",
+				"alt_existingLoginScreen": "Pantalla de inicio de sesión existente",
+				"alt_existingMiningPlatform": "Plataforma Minera existente",
+				"heading_pubPlatMining": "Descripción general de la minería",
+				"subheading_pubPlatMining": "¿Estás buscando una nueva forma de monetizar tu sitio web?",
+				"para_main1": "JSEcoin podría ser la solución. En su sitio se coloca un fragmento de código discreto que luego ejecuta el minero de JSEcoin en los dispositivos de sus visitantes mientras navegan por su sitio web.",
+				"para_main2": "Esto proporciona la funcionalidad de hashing necesaria para asegurar la cadena de bloques y, a cambio, tienes la oportunidad de ganar tokens de JSEcoin.",
+				"para_main3": "Creemos que la transparencia y el impacto mínimo en la experiencia de navegación de sus visitantes es clave para la adopción generalizada de este sistema. Se notificará a todos los visitantes de su sitio y se les dará la oportunidad de optar por no participar, y el uso de la CPU es menor que la mayoría de los anuncios de vídeo estándar.",
+				"button_findOutMore": "Saber más",
+				"button_watchVideo": "Mira nuestro vídeo"
+			},
+			"section_env": {
+				"heading_env": "IMPACTO AMBIENTAL DE LAS CRIPTO MONEDAS",
+				"subheading_env": "LAS CRIPTO MONEDAS TRADICIONALES UTILIZAN MÁS ENERGÍA QUE LOS PEQUEÑOS PAÍSES PARA OPERAR SUS REDES",
+				"para_main1": "Todas las demás industrias en todo el mundo están avanzando hacia soluciones más ecológicas que mitiguen el riesgo del cambio climático y el calentamiento global. Más temprano que tarde, la tecnología blockchain necesita hacer lo mismo. Simplemente no hay necesidad de consumir la gran cantidad de energía eléctrica que las redes tradicionales de cripto monedas desperdician.",
+				"para_main2": "JSEcoin se extrae utilizando recursos de CPU excedentes que de otro modo se desperdiciarían. La minería de exploradores tiene una gran ventaja ambiental y de costos sobre las redes de cripto monedas existentes. Existe la oportunidad de marcar una diferencia real con la minería de cripto monedas basada en la web.",
+				"para_main3": "Las prácticas actuales de minería no son sustentables ni justificables en términos de consumo de energía: creemos que la minería de navegadores proporciona una solución. Ya sea que se trate de nuestro proyecto o de alguien más, esta es la dirección en la que se encuentra la industria y tenemos la ventaja de ser los primeros en llegar. 1.",
+				"button_learnMoreOnImpact": "Conozca más sobre nuestro impacto",
+				"alt_sustainableEnergy": "Energía sustentable"
+			},
+			"section_timeline": {
+				"heading_timeline": "2018 CRONOGRAMA",
+				"subheading_timeline": "ECHE UN VISTAZO A NUESTRO HOJA DE RUTA Y DONDE ESTAREMOS PASADO EL PRÓXIMO AÑO!",
+				"button_viewDetailedTimeline": "Ver cronología detallada"
+			},
+			"section_team": {
+				"heading_team": "EL EQUIPO DE JSE",
+				"subheading_team": "¡AVANZANDO HOY EN LA CAPACIDAD DE COMERCIALIZACIÓN DE MINERÍA Y CRIPTO MONEDAS BASADA EN LA RED BLOCKCHAIN!",
+				"button_meetTheTeam": "Conocer al equipo"
+			},
+			"section_community": {
+				"heading_community": "Sé parte de nuestra creciente comunidad",
+				"subheading_community": "Ayúdanos a innovar, expandirnos y ser la próxima mejor cripto moneda",
+				"button_DontForgetForums": "No olvides nuestros foros!"
+			},
+			"section_charity": {
+				"alt_charity": "JSE donando a la caridad",
+				"heading_charity": "Donando a la caridad",
+				"subheading_charity": "ACTIVIDADES PARA RECAUDAR FONDOS",
+				"para_main1": "Nuestro compromiso es devolver algo a las organizaciones benéficas que son importantes para nuestros usuarios. Estamos creando un sistema de votación dirigido por pares donde las organizaciones benéficas que apoyamos son elegidas por la comunidad JSEcoin. Los miembros pueden prometer cualquier cantidad de JSE sin importar cuán grande o pequeña sea haciendo una transferencia a nuestra cuenta de caridad. También estamos transfiriendo los tokens obtenidos injustamente  directamente a la cuenta de caridad para que algo bueno pueda provenir de las malas prácticas de algunas personas. Siguiendo nuestra ICO buscaremos distribuir estos tokens a las organizaciones benéficas que hayas elegido.",
+				"text_JSECollected": "JSE recogido para caridad"
+			}
+		},
+		"notFound": {
+			"meta": {
+				"title": "404 Página no encontrada",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "404",
+				"heading": "404",
+				"subheading": "error: ¿No pudo encontrar la página?"
+			},
+			"alt_404": "error 404",
+			"heading_notFound": "Error 404 - Página no encontrada",
+			"subheading_notFound": "No te preocupes Regresar a la página anterior..."
+		},
+		"systemStatus": {
+			"meta": {
+				"title": "Estado del sistema",
+				"keywords": "Red Jsecoin, estado del sistema blockchain",
+				"description": "Actualizaciones del sistema e información del servidor en vivo desde la red JSEcoin. Si algo sale mal, primero lo oirás aquí."
+			},
+			"banner": {
+				"linkText": "Estado del sistema",
+				"heading": "Estado del sistema",
+				"subheading": ""
+			},
+			"alt_serverStatus": "El estado del servidor",
+			"text_checkingServerStatus": "Comprobando el estado del servidor ...",
+			"text_systemsUp": "Todos los sistemas están en funcionamiento",
+			"text_serverIssue": "Problema del servidor informado",
+			"text_lastUpdated": "Última actualización hoy",
+			"para_infoMsg": "Si tiene algún problema, póngase en contacto con",
+			"button_Support": "Soporte"
+		},
+		"timeline": {
+			"meta": {
+				"title": "Cronología interactiva",
+				"keywords": "Linea de tiempo Jsecoin, navegador minería ico, Linea de tiempo jse",
+				"description": "El futuro de las cripto monedas es brillante. Consulte nuestro plan de acción para diseñar, crear, promover y mantener JSEcoin blockchain, la plataforma de minería web y el conjunto de editores."
+			},
+			"banner": {
+				"linkText": "Cronología",
+				"heading": "Cronología",
+				"subheading": "Eche un vistazo a nuestra hoja de ruta durante el próximo año"
+			},
+			"section_interactiveTimeline": {
+				"heading_timeline": "Línea de tiempo interactiva para el 2018",
+				"subheading_timeline": "¿Dónde estamos hoy y planeamos estar mañana?",
+				"para_main1_line1": "Eche un vistazo a nuestros planes de desarrollo para el 2018: estaremos constantemente",
+				"para_main1_line2": "actualizando esta página así que espere que los cronogramas cambien regularmente.",
+				"para_main1_line3": "Haremos nuestro mejor esfuerzo para comprometernos con estas estimaciones.",
+				"para_main2": "Desplácese por los meses deslizando el cuadro a continuación."
+			},
+			"section_timeline": {
+				"heading_timeline": "Donde todo comenzó",
+				"subheading_timeline": "La historia de JSECoin",
+				"date_july17_ABR": "JUL",
+				"info_july17_title": "Prueba de concepto",
+				"info_july17_para_content1": "La minería de navegadores se había realizado en el pasado, pero nunca despegó, ya que nunca fue eficiente: con máquinas con más potencia y un nuevo enfoque para la minería ¿sería un proyecto eficaz?",
+				"info_july17_para_content2": "James investiga aún más con código de muestra",
+				"date_august17_ABR": "AGO",
+				"info_august17_title": "JSECoin se funda",
+				"info_august17_para_content1": "JSECoin es fundada por James Bachini.",
+				"info_august17_list1": "Se Crea la plataforma beta para propietarios de sitios web.",
+				"info_august17_list2": "Se Obtiene retroalimentación de inversionistas y desarrolladores de cripto monedas.",
+				"info_august17_list3": "Lanzamiento en los sitios web de la red interna, se crea beta-blockchain.",
+				"info_august17_list3_info": "(Plataforma abierta públicamente)",
+				"date_september17_ABR": "SEP",
+				"info_september17_title": "Revisar la tasa de adopción",
+				"info_september17_para_content1": "Encontrar inversionistas nacientes que estuvieran dispuestos a financiar a la compañía a cambio de cripto moneda o capital. Y / o explorar otras opciones de financiamiento. Inversión segura para la comercialización e intercambio de ICO.",
+				"info_september17_para_content2": "Se publica el primer conjunto de cuentas mensuales.",
+				"date_october17_ABR": "OCT",
+				"info_october17_title": "Anuncio",
+				"info_october17_list1": "Se Inician campañas publicitarias y de marketing dirigidas a editores e inversores potenciales de ICO.",
+				"info_october17_list2": "Se Mueve la red de la etapa beta a la producción con una actualización importante",
+				"date_november17_ABR": "NOV",
+				"info_november17_title": "Plan de marketing",
+				"info_november17_list1": "Se crea un plan de marketing ICO.",
+				"info_november17_list2": "Se libera el explorardor de bloques.",
+				"info_november17_list3": "Se Amplian las campañas de marketing.",
+				"info_november17_list4": "Se Crea el hilo Bitcointalk ANN.",
+				"date_december17_ABR": "DIC",
+				"info_december17_title": "Preparación de año nuevo",
+				"info_december17_list1": "Mapeo de herramientas comerciales.",
+				"info_december17_list2": "Actualizaciones al Documento técnico.",
+				"info_december17_list3": "Se Produce vídeo de demostración / venta para inversores.",
+				"info_december17_list4": "Comienzo de la preparación para ICO",
+				"date_january18_ABR": "ENE",
+				"info_january18_title": "Se renombra JSECoin",
+				"info_january18_para_content1": "Lanzar sitio corporativo renombrado",
+				"info_january18_list1": "Contrato de Solidez ERC220",
+				"info_january18_list2": "Rastreador web del editor"
+			}
+		},
+		"careers": {
+			"meta": {
+				"title": "Carreras",
+				"keywords": "Trabajos de Blockchain carreras uk, blockchain",
+				"description": "¿Te gustaría trabajar con la mejor empresa de cripto monedas del mundo? Estamos contratando desarrolladores, expertos en seguridad, equipos de soporte y más."
+			},
+			"banner": {
+				"linkText": "Carreras",
+				"heading": "Carreras",
+				"subheading": "Reunir a un equipo para innovar y liderar una transformación"
+			},
+			"section_overview": {
+				"heading_careers": "Carreras",
+				"subheading_careers": "Impulsado para contribuir proyectos significativos y de vanguardia",
+				"para_main1": "¿Te apasionan las tecnologías web de blockchain, haciendo posible lo que parece imposible a través de la web? Si es así, has encontrado el lugar correcto.",
+				"para_main2": "Somos un equipo global de apasionados desarrolladores, diseñadores y emprendedores, que buscan marcar la diferencia en la industria de la tecnología financiera con monedas digitales y el blockchain.",
+				"para_main3": "La plataforma JSECoin facilita el uso fácil de las divisas digitales para consumidores y comerciantes. Esto incluye la compra y venta de nuestra cripto moneda JSE, y proporciona almacenamiento seguro en la nube junto con un conjunto de herramientas comerciales y plataforma de desarrollador.",
+				"minorHeading_benefits": "Beneficios",
+				"info_benefits_list1": "Sea dueño de sus propios proyectos desde la concepción hasta el lanzamiento",
+				"info_benefits_list2": "La opción de recibir un pago en JSECoin",
+				"info_benefits_list3": "Trabaja cuando trabajes mejor (horarios flexibles)",
+				"info_benefits_list4": "Vacaciones flexibles: tómese un descanso cuando lo necesite",
+				"info_benefits_list5": "100% de beneficios médicos / de visión / dentales para empleados",
+				"sideHeading_currentPositions": "Posiciones abiertas actuales",
+				"info_job_list1": "ATENCIÓN AL CLIENTE",
+				"info_job_list2": "DISEÑO",
+				"info_job_list3": "LEGAL",
+				"info_job_list4": "OPERACIONES",
+				"info_job_list5": "SEGURIDAD"
+			},
+			"section_banner": {
+				"linkText": "",
+				"heading_careers": "Carreras",
+				"subheading_careers": "Impulsado para contribuir proyectos significativos y de vanguardia"
+			},
+			"section_careers": {
+				"heading_careers": "Carreras",
+				"subheading_careers": "Impulsado para contribuir proyectos significativos y de vanguardia",
+				"highlights": {
+					"heading_culture": "Cultura",
+					"para_culture": "Cultivamos un ambiente que es divertido y recompensa el ingenio, la determinación y las diversas perspectivas.",
+					"heading_benefits": "Beneficios",
+					"para_benefits": "Cuidamos a nuestros empleados brindándoles generosos planes de salud, bienestar y finanzas para que puedan sentirse seguros sobre su propio futuro mientras construyen el futuro del dinero.",
+					"heading_remoteLocations": "Lugares remotos",
+					"para_remoteLocations": "Nuestro equipo está posicionado globalmente. Trabaja desde casa, la playa donde sea que trabajes mejor.",
+					"heading_people": "Gente",
+					"para_people": "Hacemos un gran trabajo cuando estamos rodeados de personas que nos inspiran y desafían."
+				}
+			},
+			"section_questions": {
+				"heading_questions": "¿Preguntas?",
+				"subheading_questions": "Envíanos un correo electrónico hoy: siempre estamos buscando personas brillantes para unirse",
+				"button_contactUs": "Contáctenos"
+			},
+			"alt_about": "Acerca de JSE"
+		},
+		"ourVision": {
+			"meta": {
+				"title": "Nuestra visión",
+				"keywords": "Cripto moneda del navegador web, cripto moneda para sitios web, minería de navegador",
+				"description": "Nuestra visión es para un futuro en el que las cripto monedas se puedan utilizar para comprar artículos de uso cotidiano por cualquier persona en todo el mundo."
+			},
+			"banner": {
+				"linkText": "Nuestra visión",
+				"heading": "Nuestra visión",
+				"subheading": "Crea una cripto moneda eficiente en energía extraída en la WWW"
+			},
+			"section_overview": {
+				"heading_vision": "Nuestra visión",
+				"subheading_vision": "Diseñando una cripto moneda justa",
+				"para_main1": "Nuestra ambición es crear una cripto moneda energéticamente eficiente extraída por Web másters que sea adoptada globalmente por los usuarios principales.",
+				"para_main2": "Todas las cripto monedas principales actualmente dependen de los mineros para llevar a cabo el hashing de criptografía. Hashing es una ecuación matemática que se lleva a cabo a gran escala para asegurar una cadena de bloques que es la base de datos de transacciones subyacente de una cripto moneda. Este proceso consume grandes cantidades de energía informática y electricidad y está dominado por granjas de servidores. Los mineros son recompensados ​​por sus esfuerzos mediante la distribución de la divisa.",
+				"para_main3": "Es posible llevar a cabo SHA256 y otro cifrado en un navegador web estándar o en un dispositivo móvil. Al incrustar un fragmento de JavaScript en un sitio web, todos los visitantes del sitio web podrían llevar a cabo el proceso de cifrado hash, que al combinarse a escala podría reemplazar el rol de los mineros. Los propietarios del sitio web serían recompensados ​​con la distribución de la divisa. Hemos estimado que 1 de cada 15 personas posee o tiene acceso a un sitio web que proporciona una gran distribución y una base potencial de clientes.",
+				"para_main4": "Al usar un excedente de potencia de la CPU, se podrían obtener grandes ahorros de energía y costos en comparación con las redes de cripto monedas tradicionales.",
+				"alt_vision": "Visión"
+			}
+		},
+		"press": {
+			"meta": {
+				"title": "Prensa y medios de comunicación",
+				"keywords": "Artículos de Blockchain, entrevistas en cripto monedas, comunicado de prensa de cripto monedas",
+				"description": "Información de relaciones públicas, incluidas obras de arte para uso de la prensa. JSEcoin es una empresa emergente de cripto monedas con sede en el Reino Unido especializada en minería de cripto monedas sobre sitios web."
+			},
+			"banner": {
+				"linkText": "prensa",
+				"heading": "prensa",
+				"subheading": "Haciendo un impacto positivo en la Web minando cripto divisas."
+			},
+			"section_overview": {
+				"heading_press": "Cobertura de prensa",
+				"subheading_press": "Descubre lo que otros dicen sobre JSECoin",
+				"alt_symantecLogo": "Logotipo de Symantec",
+				"strapline_1": "ofrecen una alternativa real y potencialmente mejor a los métodos tradicionales de generación de ingresos web",
+				"alt_BBCLogo": "Logotipo de la BBC",
+				"strapline_2": "Muchos sitios usan esto y otros, como JSE Coin, legítimamente para generar algo de dinero de su flujo constante de visitantes.",
+				"alt_BitcoinLogo": "Logotipo de Bitcoin.com",
+				"strapline_3": "Adguard estimó que cada sitio web que ejecutaba un script de criptografía ganaba unos $ 43,000 dentro del período examinado de tres semanas.",
+				"alt_pressMedia": "Prensa y medios de comunicación"
+			},
+			"section_media": {
+				"alt_mediaPackDownload": "Descarga del paquete de medios",
+				"heading_media": "Descargas del paquete de medios",
+				"para_main1": "Siéntase libre de usar cualquiera de las imágenes, citas o estadísticas de este sitio en su artículo de prensa. Todo lo que pedimos es que no estamos asociados con las plataformas mineras ocultas de fondo Monero. JSEcoin nunca y nunca participará en la minería de sitios web de fondo ocultos.",
+				"para_main2": "El proyecto JSEcoin está dedicado a construir nuevas tecnologías de blockchain basadas en la web y no mina Bitcoin o Monero. Lea los documentos de preguntas frecuentes para obtener más información.",
+				"para_main3": "Si tiene alguna pregunta o desea comunicarse con uno de los miembros del equipo,",
+				"link_contactUs": "Contáctenos",
+				"button_downloadMediaPack": "Descargar paquete de medios"
+			}
+		},
+		"team": {
+			"meta": {
+				"title": "El equipo",
+				"keywords": "equipo de cripto monedas, desarrolladores de blockchain, proyecto criptográfico británico",
+				"description": "Conozca al equipo de JSEcoin y descubra más sobre nuestros fundadores que crearon la tecnología y construyeron la cripto moneda."
+			},
+			"banner": {
+				"linkText": "Conocer al equipo",
+				"heading": "Conoce al equipo de JSE",
+				"subheading": "Blockchain Avanzando <br /> comercio de minería y cripto monedas"
+			},
+			"section_overview": {
+				"heading_team": "Equipo JSECoin",
+				"subheading_team": "Formado el 6 de agosto de 2017",
+				"para_main1": "El equipo de JSE está motivado y comprometido a mejorar y simplificar el proceso mediante el cual las personas pueden extraer y realizar transacciones con cripto monedas mediante el uso del navegador para todos los dispositivos.",
+				"para_main2": "&quot;Ya no vivimos en los años 90 y no debería ser tan difícil como lo es hoy comprar y comerciar bienes con una cripto moneda&quot;.",
+				"alt_team": "El equipo"
+			},
+			"members": {
+				"JB": {
+					"title": "Fundador y CEO",
+					"para_main1": "James tiene un historial de desarrollar negocios de marketing digital exitosos. Con 8 años de experiencia en la industria de la tecnología publicitaria.",
+					"para_main2": "Experiencia en el desarrollo de aplicaciones y sitios web de alto volumen. Escribió su primer programa en un Commodore64 y ha estado enganchado desde entonces.",
+					"para_main3": "Responsable de supervisar el desarrollo de negocios y campañas de marketing."
+				},
+				"JS": {
+					"title": "Cofundador y CTO",
+					"para_main1": "Con más de 15 años de experiencia en TI, John se presenta regularmente en Full Stack Development, Innovation, User Experience y Cloud Architectures en las conferencias clave de Global IT Tech y App.",
+					"para_main2": "Su enfoque principal en JSE será liderar y asesorar al equipo de desarrollo, así como trabajar en estrecha colaboración con los equipos de Diseño y UX para mejorar la experiencia y el Viaje del usuario en cripto monedas con la nueva plataforma JSE."
+				},
+				"DM": {
+					"title": "Cofundador y COO",
+					"para_main1": "Dave encabeza nuestro soporte técnico y canales sociales donde brinda conocimiento técnico, paciencia y asistencia a nuestros usuarios.",
+					"para_main2": "Lo verás activo en los foros y sitios sociales, ayudando, guiando y promoviendo activamente a JSECoin."
+				},
+				"TH": {
+					"title": "Cofundador y CFO",
+					"para_main1_Line1": "Contador acreditado por MAAT. 20 años de experiencia en gestión financiera y contabilidad.",
+					"para_main1_Line2": "Anteriormente dirigió el departamento de finanzas de un proveedor de soluciones de TI de mediana capitalización.",
+					"para_main2": "Responsable de completar las cuentas de administración mensuales que se publican en el sitio web y llevar a cabo proyecciones y proyecciones de flujo de caja.",
+					"para_main3": "Tracey aporta una gran experiencia financiera al equipo."
+				},
+				"AG": {
+					"title": "Enterprise Blockchain",
+					"para_main1": "Proveniente de las dunas de El Cairo; ¡Amr es una verdadera tecnología Nekkyō-sha!",
+					"para_main2": "Con una licenciatura en Matemáticas e Informática, actualmente cursa su maestría.",
+					"para_main3": "Amr es un apasionado de la tecnología y siempre está superando los límites de las tecnologías que usa.",
+					"para_main4": "Su enfoque en JSE está en Ethereum, la solidez y las integraciones web3 con una mirada futura a la plataforma EOS."
+				},
+				"AW": {
+					"title": "Arquitecto Empresarial",
+					"para_main1": "Nacido de la tundra congelada en el centro de Alaska con solo un monocromo verde y negro 8086 para codificar.",
+					"para_main2": "Andy ahora reside en Minnesota ligeramente más cálido con hardware más moderno.",
+					"para_main3": "Arquitecto de TI para empresas con más de 15 años de experiencia, Andy ha implementado soluciones para empresas de todo el espectro.",
+					"para_main4": "Su enfoque en JSE es ayudar a construir una arquitectura robusta de back-end y modelos de datos que puedan escalar para el futuro."
+				},
+				"AS": {
+					"title": "RRHH internacional",
+					"para_main1": "Un profesional de recursos humanos de alto rendimiento y experiencia internacional, talentoso para aprovechar el valor del capital humano; obteniendo una Maestría Especial de Project Mangement, un MBA y una Licenciatura en Administración de Empresas con especialización en Comercio Internacional en Universidades de toda Europa. Multilingüe, habla cuatro idiomas con conocimiento práctico de otros tres, tiene 7 años de experiencia en gestión de recursos humanos y legislación laboral de la UE.",
+					"para_main2": "Disfruta de relajarse en las calles de Bucarest con un cálido cóctel de sangre."
+				},
+				"OB": {
+					"title": "Asesor de marketing",
+					"para_main1": "6 años de experiencia en publicidad en línea y marketing de afiliación. Dirigió una agencia de marketing digital de servicio completo durante 4 años. 6 años de experiencia en desarrollo de pila completa. Profesional de edición de imágenes y medios digitales. Recientemente regresé de un viaje alrededor del mundo para ayudar con el proyecto JSEcoin.",
+					"para_main2": "Oliver será responsable de administrar las cuentas de afiliado y ayudar con desarrollos de front-end y producción de medios para cuentas de redes sociales."
+				},
+				"ASa": {
+					"title": "Arquitecto de tecnología",
+					"subTitle": "TOGAF 9 Enterprise Architect",
+					"para_main1": "Un arquitecto de tecnología con una pasión por descubrir cómo la tecnología puede ayudar a un negocio a prosperar y tener éxito. Sus principales funciones han sido la de un asesor confiable que ayuda a los clientes a descubrir sus arquitecturas y a ayudarlas a implementar proyectos con éxito.",
+					"para_main2": "Fuera del trabajo, a Angelo le encanta &quot;manipular&quot; los gadgets y la tecnología, un proyecto favorito es crear un hogar inteligente IOT usando dispositivos como Arduino / ESP8266, servidores como HomeAssistant y protocolos como MQTT con una variedad de sensores."
+				}
+			}
+		},
+		"developerOverview": {
+			"meta": {
+				"title": "Opciones de desarrollador",
+				"keywords": "Desarrollo de Blockchain, aplicación de compilación para blockchain, desarrollador de cripto monedas",
+				"description": "Los desarrolladores pueden obtener más información sobre cómo trabajar con la plataforma y API de JSEcoin. Obtenga más información sobre la red, cómo se ejecuta y cómo puede integrar aplicaciones de terceros."
+			},
+			"banner": {
+				"linkText": "Desarrolladores",
+				"heading": "Experiencia de Desarrollador JSE",
+				"subheading": "Expandiendo la comunidad y nuestro compromiso"
+			},
+			"heading_developer": "Nuestro compromiso",
+			"subheading_developer": "Impulsando la innovación con blockchain y cripto moneda en línea",
+			"para_main1": "El código del editor es solo la punta del iceberg cuando se considera lo que es posible con JSEcoin. Tenemos una API REST completamente funcional con documentación disponible en:",
+			"para_main2": "Los desarrolladores pueden aprovechar las comprobaciones de saldo, el seguimiento del sitio y del subid, las transacciones del lado del servidor, la funcionalidad de importación / exportación y mucho más.",
+			"para_main3": "Nuestros ingenieros están disponibles para apoyar sus proyectos y contamos con comunidades de apoyo activo en el foro, Discord y Telegram, donde puede publicar preguntas y obtener ayuda de nuestro equipo."
+		},
+		"investorOverview": {
+			"meta": {
+				"title": "Opciones de inversionistas",
+				"keywords": "Navegador mineria ico, web blockchain ico, jsecoin información para inversores",
+				"description": "Información para inversionistas potenciales y comerciantes de cripto monedas. Encuentre toda la información que necesita en nuestro portal para inversores."
+			},
+			"banner": {
+				"linkText": "Inversores",
+				"heading": "Inversores",
+				"subheading": "Qué, por qué, cuándo ..."
+			},
+			"test": "prueba",
+			"heading_what": "Qué es JSECoin",
+			"subheading_what": "Cripto moneda dirigida a la web",
+			"para_what1": "Creemos que invertirá en el futuro de la monetización de sitios web. Los fondos recaudados en ICO se utilizarán principalmente para las tarifas de cotización de cambio y ...",
+			"heading_why": "Por qué invertir",
+			"subheading_why": "Comprometidos a cambiar la manera en que se monetizan los sitios",
+			"para_why1": "Este es un nuevo concepto que desafía el modelo actual de monetización de sitios web. Con la industria actual de la publicidad en línea valorada en más de $ 200 mil millones en todo el mundo, este sería un gran momento para invertir en una plataforma que podría desafiar el actual status quo. La demanda de JSEcoin se creará mediante la introducción de herramientas comerciales que permitan el uso de JSEcoin como método para pagos digitales. Estamos construyendo una gran comunidad de mineros de plataforma para garantizar que haya un gran grupo de usuarios con tokens de JSEcoin para gastar.",
+			"para_why2": "La tendencia actual de un ICO es que una empresa lo haga basándose en una idea y un documento técnico. Esto claramente plantea un gran riesgo para los inversores de que ningún producto llegará al mercado. Aunque de ninguna manera somos capaces de ofrecer a los inversores garantías de rentabilidad (cuestionaríamos a quien lo haga), estamos tratando de construir una gran plataforma y contratar una sólida base de usuarios para mitigar este riesgo y hacer de JSEcoin una oportunidad de inversión más viable.",
+			"heading_when": "Por qué invertir",
+			"subheading_when": "Comprometidos a cambiar la manera en que se monetizan los sitios",
+			"para_when1": "Estamos planeando un ICO para más adelante este año. Como se mencionó anteriormente, queremos asegurarnos de que tenemos un gran producto de trabajo que ha sido adoptado por una sólida base de usuarios. Las fechas exactas se darán a conocer una vez que hayamos terminado la mayoría del desarrollo principal tal como figura en nuestra línea de tiempo."
+		},
+		"webmastersOverview": {
+			"meta": {
+				"title": "Descripción general del administrador",
+				"keywords": "Mine cripto moneda en sitio web, wordpress cripto moneda minera, monero alternativa, buscador minero, web mining cripto moneda",
+				"description": "Minería de cripto monedas basada en navegador en su sitio web, obtenga información sobre cómo instalar el código JSEcoin en su sitio y la minería de cripto monedas en un navegador."
+			},
+			"banner": {
+				"linkText": "Web másters",
+				"heading": "Web másters",
+				"subheading": "Cambiar de anuncios a minería"
+			},
+			"heading_why": "Por qué cambiar",
+			"subheading_why": "Cambiando el pasado para un futuro mejor y más brillante",
+			"para_main1": "Nunca habrá un mejor momento para comenzar a extraer tokens JSE en sus sitios web. La competencia va en aumento, así que construye una pila de JSE antes de que sea demasiado tarde. Los sitios web pequeños, medianos y grandes se pueden beneficiar de nuestro módulo de minería de cripto monedas. Esto es simplemente un fragmento de JavaScript que copia y pega en su sitio que funciona de manera similar a los códigos de publicidad y análisis.",
+			"para_main2": "El plugin de Wordpress está disponible para que sea fácil de instalar en tu blog o sitio web basado en wordpress.",
+			"para_main3": "La criptografía se puede utilizar como una forma para que los propietarios de sitios web moneticen su contenido como una alternativa o además de mostrar anuncios. El tiempo de carga de la página y la experiencia del usuario no se ven afectados por la pequeña cantidad de recursos consumidos por el código de minería JSE."
+		},
+		"privacyPolicy": {
+			"meta": {
+				"title": "Política de privacidad",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "política de privacidad",
+				"heading": "Política de privacidad",
+				"subheading": ""
+			},
+			"heading_privacy": "Política de privacidad",
+			"para_main1": "El fragmento de código de JSEcoin ejecuta hash de criptografía matemática mientras navegas por un sitio web. Esto nos permite recompensar a los Web másters por producir el contenido que ha solicitado.",
+			"para_main2": "Si desea optar por no participar, puede hacerlo en el siguiente enlace:",
+			"para_main3": "Puede darse de baja de JSE crypto-mining en toda la red haciendo clic aquí",
+			"para_main4": "Para reiniciar JSE crypto-mining en toda la red, haga clic aquí",
+			"para_main5": "El código que se ejecuta en un navegador de visitantes no es agresivo en recursos de la misma manera que los programas de minería de datos de GPU y ASIC Bitcoin. El uso adicional de la CPU y el consumo de energía se mantendrán al mínimo.",
+			"subHeading_dataPrivacy": "Privacidad de datos",
+			"para_main6": "Recopilamos datos analíticos en nuestro sitio.",
+			"para_main7": "La información que recopilamos es:",
+			"list_collectedData1": "pubid - ID del editor para quién envió el tráfico",
+			"list_collectedData2": "siteid - id del sitio que es el nombre de dominio del sitio",
+			"list_collectedData3": "userip - dirección IP del usuario",
+			"list_collectedData4": "useragent - esta es la cadena de navegador useragent que identifica el navegador, es decir, Chrome / Firefox / Safari",
+			"list_collectedData5": "os - sistema operativo",
+			"list_collectedData6": "referencia: esta es la cadena de referencia que contiene la url del sitio que envía el tráfico.",
+			"para_main8": "También utilizamos Google Analytics, consulte sus términos aquí:",
+			"para_main9": "También almacenamos cookies y usamos la API localStorage.",
+			"para_main10_info": "Esta lista está completa y actualizada a partir del 24 de agosto de 2017, sin embargo, puede cambiar en el futuro"
+		},
+		"kycPolicy": {
+			"meta": {
+				"title": "Política de KYC",
+				"description": "Conozca la política de su cliente para JSEcoin y cómo trabajamos para luchar contra el lavado de dinero en cripto moneda"
+			},
+			"banner": {
+				"linkText": "kycPolicy",
+				"heading": "Política de KYC",
+				"subheading": ""
+			},
+			"heading_kyc": "CONOZCA SU PÓLIZA DE CLIENTE (KYC)",
+			"para_main1": "Cada año se blanquean entre £ 800 mil millones y $ 2 billones de dólares estadounidenses, lo que equivale al 2-5% del PIB mundial (Oficina de las Naciones Unidas contra la Droga y el Delito 2017)",
+			"para_main2": "Alrededor de $ 1.5 trillones son pagados en sobornos por empresas e individuos cada año. (Banco Mundial 2017)",
+			"para_main3": "En JSEcoin no queremos estar asociados con el lavado de dinero y estamos tomando medidas activas para cumplir con los gobiernos. Conozca las regulaciones de sus clientes.",
+			"para_main4": "Esta política de KYC se aplica a todas las relaciones con clientes con transacciones que valoran más de $ 10,000 USD.",
+			"para_main5": "Para los inversores que deseen transferir más de $ 10,000 USD, será necesario verificar su cuenta enviándonos un escaneo de un documento oficial que incluye una fotografía, identidad, dirección residencial y fecha de nacimiento. Los datos se conservarán durante un mínimo de cinco años a partir de la fecha de la transacción.",
+			"para_main6": "KYC es un proceso continuo y basado en el riesgo para recopilar información relevante sobre nuestros clientes y sus actividades comerciales y financieras a fin de:",
+			"list_collectedData1": "Facilitar la identificación oportuna de la actividad del cliente que es inconsistente con hechos e información establecidos. JSEcoin se compromete a disuadir el uso de sus productos y servicios para fines ilegales. La política KYC y los procedimientos de respaldo son un componente clave en el programa para prevenir y detectar el lavado de dinero, el financiamiento del terrorismo, el fraude y el robo de identidad.",
+			"list_collectedData2": "Cumplir con nuestra obligación legal y regulatoria",
+			"subHeading_customerIdentity": "Confirmando la identidad del cliente",
+			"para_main7": "Al establecer una relación con un cliente, confirmaremos la identidad de una persona o la existencia de una entidad dentro de marcos de tiempo aceptables utilizando métodos de identificación aceptables. Cuando se establece un producto o servicio, se realizarán consultas para determinar si será utilizado por o en beneficio de un tercero. Cuando sea necesario, se obtendrán los detalles del tercero y su relación con el cliente antes de establecer la relación.",
+			"subHeading_sharingInfo": "Compartir información del cliente",
+			"para_main8": "Estamos obligados a informar a las autoridades reguladoras las transacciones sospechosas que posiblemente podrían estar relacionadas con actividades de lavado de dinero.",
+			"subHeading_verifyingInfo": "Verificar información del cliente",
+			"para_main9": "Tomaremos medidas razonables y apropiadas para verificar la información clave proporcionada por los posibles clientes a fuentes independientes confiables. Realizaremos actividades de verificación adicionales para relaciones que representen un mayor nivel de riesgo. Nos negaremos a entablar o continuar relaciones o realizar transacciones con cualquier persona o entidad que insista en el anonimato o que proporcione información falsa, inconsistente o conflictiva cuando la incoherencia o conflicto no se pueda resolver después de una investigación razonable.",
+			"subHeading_monitoringInfo": "Monitoreo y actualización de la información del cliente",
+			"para_main10": "Supervisaremos la actividad del cliente para identificar e informar transacciones que puedan indicar actividad ilegal o inapropiada. Mantendremos la información sobre el cliente y sus actividades comerciales y financieras tan precisa, completa y actualizada como sea necesario para cumplir con el propósito para el que fue recopilada. Cuando los cambios en el comportamiento financiero de un cliente se vuelvan evidentes, tomaremos medidas para determinar los motivos subyacentes."
+		},
+		"terms": {
+			"meta": {
+				"title": "Términos y Condiciones",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "condiciones",
+				"heading": "Términos y Condiciones",
+				"subheading": ""
+			},
+			"heading_terms": "Condiciones",
+			"subHeading_definitions": "Definiciones",
+			"list_definitions1": "El &quot;Usuario&quot; es el solicitante de la cuenta o la persona que utiliza la plataforma JSEcoin.",
+			"list_definitions2": "El &quot;Editor&quot; significa el solicitante de la cuenta o la persona que es responsable de la distribución del código javascript o minería web de JSEcoin.",
+			"list_definitions3": "El &quot;Anuncio&quot; Una forma electrónica de publicidad que se muestra en el sitio web de los editores.",
+			"list_definitions4": "El &quot;sitio&quot; web es la propiedad del editor que se utiliza para proporcionar espacio publicitario para el anunciante.",
+			"list_definitions5": "&quot;JSEcoin&quot; es la red, operada por JSEcoin Limited, que actúa como proveedor de tecnología de cripto monedas.",
+			"list_definitions6": "&quot;Tráfico&quot; es el suministro de usuarios desde el sitio web de un editor a la plataforma JSEcoin.",
+			"list_definitions7": "&quot;Minero&quot; es alguien que lleva a cabo el algoritmo hash para proteger la red JSEcoin.",
+			"subHeading_conditions": "Condiciones",
+			"list_conditions1": "Estos &quot;Términos y condiciones&quot; no afectan sus derechos legales como consumidor.",
+			"list_conditions2": "Se considerará que todos los contratos y órdenes de inserción realizados por JSEcoin incorporan estos términos y condiciones que prevalecerán sobre cualquier otro documento o comunicación del anunciante o editor.",
+			"list_conditions3": "Si se requieren enmiendas a estos términos y condiciones, es preferible que se confirmen por escrito.",
+			"list_conditions4": "JSEcoin Limited, los empleados de JSEcoin, los afiliados de JSEcoin no son asesores financieros y ninguna información en este sitio o sitios web de terceros y la correspondencia se deben tomar como asesoramiento financiero bajo ninguna circunstancia. Los inversores son responsables de llevar a cabo su propia diligencia debida e investigación.",
+			"list_conditions5": "Estos términos y cualquier disputa que surja se regirán por las leyes del Reino Unido.",
+			"subHeading_liquidty": "Liquido",
+			"list_liquidty1": "JSEcoin no se hace responsable por el cambio de monedas o tokens a monedas fiduciarias como USD / EUR / GBP.",
+			"list_liquidty2": "JSEcoin no puede ayudar a resolver problemas cuando las monedas y los tokens se han vendido a través de terceros e intercambios.",
+			"list_liquidty3": "JSEcoin no asume ninguna responsabilidad por el pago de impuestos sobre la renta, comisiones bancarias o tarifas de divisas en nombre del editor. Comuníquese con la autoridad tributaria local para obtener más información sobre los regímenes fiscales aplicables.",
+			"subHeading_deliveryOfPrivacyNotice": "Entrega de aviso de privacidad",
+			"list_deliveryOfPrivacyNotice1": "Aunque se harán todos los esfuerzos razonables para proporcionar una entrega confiable y consistente del aviso de privacidad y anuncios, JSEcoin no será responsable de ninguna pérdida, costo, daño o gasto incurrido por el editor o cualquier otra persona o empresa que surja directa o indirectamente de cualquier falla de la red de publicidad.",
+			"subHeading_publicity": "Publicidad",
+			"list_publicity1": "JSEcoin puede utilizar los nombres, marcas comerciales y / o correspondencia de editores, anunciantes o cualquier tercero sin la aprobación previa por escrito.",
+			"subHeading_statisticsDiscrepancies": "Estadísticas y discrepancias",
+			"list_statisticsDiscrepancies1": "Todos los ingresos por tráfico se calcularán a partir de las estadísticas de JSEcoin. Esta será la única base para calcular los ingresos de los editores.",
+			"list_statisticsDiscrepancies2": "Es posible que las estadísticas de JSEcoin no sean 100% precisas y esto lo aceptan tanto los editores como los mineros.",
+			"list_statisticsDiscrepancies3": "En caso de que no se registren las estadísticas de la red. JSEcoin calculará los ingresos y los costos en función de las estadísticas históricas anteriores. Nuestra decisión con respecto al establecimiento de estas tarifas será definitiva y no negociable.",
+			"subHeading_ownershipRisk": "Propiedad y riesgo",
+			"list_ownershipRisk1": "Cualquier riesgo en la minería y la publicidad pasará directamente al anunciante una vez que el anunciante haya entregado el anuncio.",
+			"list_ownershipRisk2": "No se pueden hacer garantías con respecto a la calidad del tráfico y JSEcoin no se hará responsable de las pérdidas ocasionadas por el tráfico de mala calidad.",
+			"subHeading_cancellationRefunds": "Cancelación y reembolsos",
+			"list_cancellationRefunds1": "Un anunciante puede cancelar una campaña en cualquier momento. La red publicitaria proporciona control en tiempo real de esta característica; sin embargo, como precaución, se recomienda proporcionar un aviso por escrito con 24 horas de anticipación siempre que sea posible.",
+			"list_cancellationRefunds2": "Si usted es un anunciante, tiene derecho, además de sus otros derechos, a cancelar su contrato y recibir un reembolso. Debe comunicarse con nosotros e informarnos por escrito de su deseo de cancelar su cuenta. Luego, se eliminará su nombre de usuario y se le devolverá el saldo restante. Cualquier tarifa bancaria / paypal derivada de esto se cobrará al anunciante.",
+			"list_cancellationRefunds3": "Si usted es editor, tiene el derecho, además de sus otros derechos, de cancelar su contrato en cualquier momento. Debe comunicarse con nosotros e informarnos por escrito de su deseo de cancelar su cuenta. Luego se eliminará su nombre de usuario y el saldo restante se pagará solo si cumple con los umbrales mínimos que se detallan en la sección",
+			"subHeading_forceMajeure": "Fuerza mayor",
+			"list_forceMajeure1": "En el caso de que JSEcoin no pueda cumplir sus obligaciones en virtud de un contrato de venta como resultado de cualquier causa fuera de su control, como, entre otros, Actos de Dios, Guerra, Huelgas, cierres patronales, fallas de hardware, violaciones de seguridad, Inundaciones y fallas de terceros para entregar publicidad, JSEcoin será relevado de sus obligaciones y responsabilidades bajo dicho contrato para la venta por el tiempo que se impida tal cumplimiento.",
+			"subHeading_complaints": "Quejas",
+			"list_complaints1": "Si tiene una queja sobre nuestro servicio o cualquier bien o servicio que compre en JSEcoin, contáctenos inmediatamente. Será contactado lo más pronto posible para que tengamos noticias suyas y tengamos como objetivo proporcionar una resolución dentro de los 5 días hábiles.",
+			"list_complaints2": "Todas las quejas serán tratadas de manera justa y confidencial.",
+			"subHeading_liability": "Responsabilidad",
+			"list_liability1": "Bajo ninguna circunstancia JSEcoin o JSEcoin Limited serán responsables de las pérdidas sufridas por los usuarios, los mineros o los editores.",
+			"list_liability2": "Nuestra responsabilidad total nunca excederá más de $ 100 USD por evento, por lo que una serie de eventos o campañas se considera un solo evento.",
+			"list_liability3": "No somos responsables de las pérdidas causadas por terceros, incluidos los que utilizan la red de publicidad.",
+			"subHeading_alterationsTermsAndConditions": "Alteraciones a los términos y condiciones",
+			"list_alterationsTermsAndConditions1": "JSEcoin tiene derecho a modificar estos términos y condiciones según lo consideremos apropiado por cualquier motivo y en cualquier momento.",
+			"list_alterationsTermsAndConditions2": "Se proporcionará una copia actualizada de los términos y condiciones actuales en la siguiente URL:",
+			"list_alterationsTermsAndConditions3": "Si un minero o editor no acepta ninguna modificación, tendrá derecho a rescindir el acuerdo por escrito dentro de los 14 días posteriores a la modificación.",
+			"subHeading_budgetsCaptitalisationHashingDifficulty": "Presupuestos, captura y dificultad Hashing",
+			"list_budgetsCaptitalisationHashingDifficulty1": "Si bien se hacen todos los esfuerzos para cumplir con los requisitos de los mineros con respecto a los presupuestos, nos reservamos el derecho de cambiar las recompensas mineras y la dificultad de hash en cualquier momento sin previo aviso.",
+			"list_budgetsCaptitalisationHashingDifficulty2": "JSEcoin se reserva el derecho de introducir monedas nuevas y distribuir monedas como lo considere conveniente. Todas las transacciones se pondrán a disposición del público.",
+			"subHeading_damageSystems": "Daño a los sistemas",
+			"list_damageSystems1": "JSEcoin no se hace responsable de las pérdidas sufridas por daños a los sistemas de hardware o software causados ​​por la minería.",
+			"subHeading_websiteStandards": "Normas del sitio web",
+			"list_websiteStandards1": "JSEcoin tiene una política de tolerancia cero en el siguiente sitio web y contenido publicitario:",
+			"subList_tolerance1": "Pornografía infantil",
+			"subList_tolerance2": "Conducta sexual con animales",
+			"subList_tolerance3": "Contenido violento o abusivo",
+			"subList_tolerance4": "Contenido racista, sexista o discriminatorio",
+			"subList_tolerance5": "Contenido o imágenes de una persona sin su consentimiento",
+			"subList_tolerance6": "Delitos",
+			"subList_tolerance7": "Consejos de inversión engañosos",
+			"subList_tolerance8": "Spyware, malware, adware y cualquier software ilegal",
+			"subList_tolerance9": "Contenido pirateado / infracciones de derechos de autor",
+			"subList_tolerance10": "Actividades ilegales como spam y phishing",
+			"subList_tolerance11": "Cualquier actividad escatológica",
+			"subList_tolerance12": "Uso no autorizado de marcas comerciales de terceros",
+			"subList_tolerance13": "Promoción de drogas o parafernalia relacionada",
+			"subList_tolerance14": "Cualquier contenido dirigido a niños de 18 años o menos",
+			"subList_tolerance15": "Juegos de apuestas o apuestas en línea dirigidas al público estadounidense",
+			"subList_tolerance16": "Publicidad pagada para hacer clic (PTC)",
+			"subList_tolerance17": "Generadores de tráfico de surf automático",
+			"subList_tolerance18": "Pop unders o contenido iframing.",
+			"list_websiteStandards2": "El aviso de privacidad con la opción de exclusión debe mostrarse a los usuarios. No se debe hacer nada para ocultar o cambiar esta notificación.",
+			"list_websiteStandards3": "Los ID de sitio deben coincidir con el nombre de dominio en el que se ejecuta el script.",
+			"list_websiteStandards4": "Cualquier incumplimiento de la sección 15.1 puede resultar en la terminación inmediata de su cuenta de editor.",
+			"subHeading_applications": "Aplicaciones",
+			"list_applications1": "Las solicitudes de cuentas en la red serán aprobadas o rechazadas a exclusivo criterio de los empleados de JSEcoin por cualquier razón que consideremos adecuada.",
+			"subHeading_misuse": "Mal uso",
+			"list_misuse1": "Cualquier uso indebido del sistema dará como resultado la suspensión inmediata o el cierre de la cuenta de los usuarios.",
+			"list_misuse2": "El mal uso será juzgado únicamente por los empleados de JSEcoin y puede basarse en cualquier factor que consideremos adecuado.",
+			"list_misuse3": "Los editores que usen cualquier método para aumentar artificialmente el número de impresiones proporcionadas tendrán sus cuentas inmediatamente cerradas. Todo el tráfico proporcionado debe ser usuarios genuinos.",
+			"list_misuse4": "El código proporcionado para los editores, como la etiqueta javascript, no se puede modificar ni reutilizar de ninguna manera.",
+			"list_misuse5": "Crear cuentas múltiples en el sistema sin autorización previa se considerará como uso indebido.",
+			"list_misuse6": "El código del editor solo debe colocarse en dominios propiedad del Web máster o con permiso por escrito del propietario del sitio web.",
+			"list_misuse7": "El SiteID utilizado en el código del editor debe coincidir con el dominio de propiedad del Web máster.",
+			"list_misuse8": "El uso de cualquier servicio de cambio de IP como VPN, proxy, TOR o cualquier sistema que oculte o cambie su dirección IP está prohibido. Verificamos las direcciones IP de los usuarios contra las listas de terceros para identificar a los delincuentes.",
+			"subHeading_closureAccount": "Cierre de cuenta",
+			"list_closureAccount1": "Al cierre de la cuenta, el editor no tendrá derecho a ninguna remuneración de los fondos restantes en la cuenta.",
+			"subHeading_useCookies": "Uso de cookies",
+			"list_useCookies1": "JSEcoin usa cookies y localStorage para almacenar información en la computadora de un usuario. Esta información se usa luego en la orientación de los anunciantes, incluidas las campañas de reorientación. Una campaña de reorientación es cuando una cookie se coloca, a veces por un tercero, en la computadora de los usuarios y luego se muestran los anuncios a los usuarios con esa cookie específica. Cada editor es responsable de actualizar los términos y condiciones, la política de privacidad y cualquier otro documento legal requerido para el uso de cookies y la reorientación en su región local.",
+			"subHeading_intellectualProperty": "Propiedad intelectual",
+			"list_intellectualProperty1": "Los cofundadores de JSEcoin conservan todos los derechos, títulos e intereses de este sitio web, sus productos y servicios, incluidos todos los derechos de autor, patentes, secretos comerciales, marcas comerciales, nombres comerciales, logotipos, lemas, gráficos, scripts, código, videos, texto, software, archivos, contenido, información y otros derechos de propiedad intelectual.",
+			"subHeading_indemnification": "Indemnización",
+			"list_indemnification1": "En la máxima medida permitida por la ley aplicable, usted indemnizará, defenderá y eximirá de responsabilidad a nosotros y nuestros respectivos empleados, funcionarios, directores, contratistas, consultores, accionistas, proveedores, proveedores de servicios, empresas matrices, subsidiarias pasadas, presentes y futuras. , afiliados, agentes, representantes, predecesores, sucesores y cesionarios de y contra todos los reclamos, daños, responsabilidades, pérdidas, costos y gastos.",
+			"list_indemnification2": "Nos reservamos el derecho de ejercer control exclusivo sobre la defensa, a su cargo, de cualquier reclamación sujeta a indemnización de conformidad con estos términos.",
+			"subHeading_referrals": "Referencias",
+			"list_referrals1": "Todo el tráfico de referencia debe ser usuarios genuinos, las cuentas falsas y el tráfico bot dará lugar a suspensiones de cuenta.",
+			"list_referrals2": "JSEcoin No se pagarán los usuarios con direcciones IP duplicadas y otros factores que indiquen cuentas duplicadas. Esto incluye dos usuarios que se registran desde la misma oficina / hogar.",
+			"list_referrals3": "El personal de JSEcoin se reserva el derecho de suspender cualquier cuenta que consideremos que haya utilizado indebidamente el sistema. Nuestra decisión es final y no está sujeta a procedimientos legales.",
+			"subHeading_taxation": "Impuestos",
+			"list_taxation1": "Los usuarios y editores son los únicos responsables de la divulgación e imposición de todos los activos digitales.",
+			"list_taxation2": "JSEcoin Limited no será responsable de las implicaciones fiscales de transferir o mantener activos digitales en la jurisdicción de su hogar.",
+			"subHeading_misc": "Misc",
+			"list_misc1": "Todos los contratos se interpretarán en todos los aspectos y funcionarán como un contrato en inglés y de conformidad con la legislación inglesa.",
+			"list_misc2": "JSEcoin no se hará responsable de incumplimientos de directrices o leyes fuera del Reino Unido.",
+			"list_misc3": "En caso de una brecha de seguridad, pérdida de datos, problema de desarrollo o por cualquier otra razón que el equipo de JSEcoin considere oportuno, nos reservamos el derecho de restablecer la cadena de bloques al bloque de genes o una copia de seguridad anterior. Siempre que sea posible, realizaremos los saldos de las cuentas hacia adelante, sin embargo, el usuario acepta el riesgo de que sea necesario restablecer o invertir la cadena de bloques, lo que podría ocasionar la pérdida de fondos o datos de la transacción.",
+			"list_misc4": "Si se determina que alguna parte de estos términos y condiciones que no es fundamental es ilegal o inaplicable, dicha determinación no afectará la validez o aplicabilidad del resto de estos términos y condiciones."
+		},
+		"bugBounty": {
+			"meta": {
+				"title": "Cacería de errores",
+				"keywords": "Moneda error de cripto moneda, recompensa de error blockchain",
+				"description": "¿Encontró un error o vulnerabilidad de seguridad? Descubra cómo puede obtener tokens JSE por enviar información que nos ayuda a mejorar nuestra seguridad de plataforma y red."
+			},
+			"banner": {
+				"linkText": "Cacería de errores",
+				"heading": "Cacería de errores",
+				"subheading": "Caza vulnerabilidades para algunos JSE duro y frío"
+			},
+			"section_overview": {
+				"alt_bugBounty": "Cacería de errores",
+				"heading_bugBounty": "JSE Security Cacería de errores",
+				"subheading_bugBounty": "¡Feliz búsqueda de errores!",
+				"para_main1": "Como parte de nuestro compromiso continuo para garantizar la seguridad y la confiabilidad del sistema JSEcoin, ofrecemos un esquema de recompensa por errores para la divulgación responsable de las vulnerabilidades de seguridad.",
+				"para_main2": "Los investigadores de seguridad de software de hoy están cada vez más comprometidos con las empresas de Internet para rastrear problemas y vulnerabilidades de seguridad. Los programas de HackerOne, Hacken, Google, Mozilla y otros han ayudado a crear una comunidad de búsqueda de errores.",
+				"para_main3": "Nuestro programa de recompensas les da un puntapié inicial a estos investigadores por sus esfuerzos y proporciona un poco de frío JSE.",
+				"para_main4": "Si has encontrado una vulnerabilidad,",
+				"link_submit": "enviarlo aquí"
+			},
+			"section_leaderBoard": {
+				"heading_leaderBoard": "Pizzarrón de linderes",
+				"subheading_leaderBoard": "¡Guauu! Gracias por ayudarnos.",
+				"para_main1_line1": "Nuestro nuevo sitio acaba de lanzarse, así que obtén esos errores y",
+				"link_smallTasks": "pequeñas tareas en ...",
+				"para_main1_line2": "Y si quieres ... aparecerás en nuestra lista de líderes próximamente!"
+			},
+			"section_rules": {
+				"heading_rules": "Reglas",
+				"subheading_forYou": "Reglas para ti",
+				"list_forYou1": "No intente obtener acceso a la cuenta o datos de otro usuario.",
+				"list_forYou2": "No realice ningún ataque que pueda dañar la confiabilidad / integridad de nuestros servicios o datos. Los ataques DDoS / spam no están permitidos.",
+				"list_forYou3": "No divulgue públicamente un error antes de que se haya solucionado.",
+				"list_forYou4": "Pruebe únicamente vulnerabilidades en sitios que sepa que JSEcoin operará y se enumerará en recompensas abiertas.",
+				"list_forYou5": "No use escáneres o herramientas automatizadas para encontrar vulnerabilidades. Son ruidosos y podemos prohibir su dirección IP.",
+				"list_forYou6": "Nunca intente ataques no técnicos tales como ingeniería social, phishing o ataques físicos contra nuestros empleados, usuarios o infraestructura.",
+				"list_forYou7": "En caso de duda,",
+				"link_contact": "Contáctenos",
+				"subheading_forUs": "Reglas para nosotros",
+				"list_forUs1": "Responderemos lo más rápido posible a su envío.",
+				"list_forUs2": "Te mantendremos informado mientras trabajamos para solucionar el error que enviaste.",
+				"list_forUs3": "No vamos a tomar acciones legales en su contra si usted sigue las reglas.",
+				"subheading_doesNotQualify": "¿Qué no califica?",
+				"list_doesNotQualify1": "Errores que no afectan la última versión de los navegadores modernos (Chrome, Firefox, Edge, Safari).",
+				"subList_doesNotQualify1": "Los errores relacionados con las extensiones del navegador también están fuera del alcance.",
+				"list_doesNotQualify2": "Errores que requieren una interacción del usuario muy poco probable.",
+				"list_doesNotQualify3": "Configuraciones de cookies no seguras para cookies no sensibles.",
+				"list_doesNotQualify4": "Divulgación de información pública e información que no presente un riesgo significativo.",
+				"list_doesNotQualify5": "Errores que ya han sido enviados por otro usuario, que ya conocemos o que han sido clasificados como inelegibles.",
+				"list_doesNotQualify6": "Los errores en aplicaciones que no figuran en Recompensas Abiertas generalmente no son elegibles. Consulte las bondades individuales para obtener detalles sobre el alcance.",
+				"list_doesNotQualify7": "Las vulnerabilidades que JSE determine que son un riesgo aceptado no serán elegibles para una recompensa o listado pagado en el sitio.",
+				"list_doesNotQualify8": "Scripting u otra automatización y forzado bruto de la funcionalidad prevista.",
+				"list_doesNotQualify9": "Como guía, hemos enumerado las clasificaciones de vulnerabilidad que utilizamos para organizar las presentaciones realizadas al programa de recompensas.",
+				"list_doesNotQualify9a": "Errores relacionados con la suplantación de identidad o la ingeniería social.",
+				"list_doesNotQualify10": "En caso de duda,"
+			},
+			"section_openBounties": {
+				"heading_openBounties": "Recompensas abiertas",
+				"subheading_openBounties": "Estos son nuestros sitios activos que son parte de nuestro programa de recompensas de errores",
+				"subheading_officialWebsite": "Página web oficial",
+				"subheading_user_miningPlatform": "Usuario / Plataforma Minera",
+				"subheading_API": "API",
+				"subheading_blockchainExplorer": "Explorador Blockchain",
+				"subheading_developerPlatform": "Plataforma de desarrollo",
+				"subheading_loadServer": "Cargar servidor"
+			},
+			"section_rewards": {
+				"heading_rewards": "Recompensas",
+				"subheading_rewards": "Pago en cripto monedas",
+				"para_reward_line1": "Remuneración mínima: 1000 JSE",
+				"para_reward_line2": "Premios máximos: 100000 JSE",
+				"para_reward_info": "El monto exacto quedará a discreción del equipo dependiendo de la gravedad del problema.",
+				"para_ps_line1": "Intente incluir la mayor cantidad de información posible en el informe para que los desarrolladores puedan reproducir y resolver el problema.",
+				"para_ps_line2": "Indique también si desea ser incluido en nuestro salón de la fama y proporcione un enlace y el nombre completo que desea utilizar."
+			},
+			"section_submitABug": {
+				"heading_rewards": "Enviar un error",
+				"subheading_rewards": "¿Ya encontraste un problema? ¿Conoces un problema?",
+				"button_submissionForm": "Visita nuestro formulario de envío"
+			}
+		},
+		"smallJobs": {
+			"meta": {
+				"title": "Tareas Comunitarias",
+				"keywords": "Pagado en cripto monedas, trabajos de cripto monedas, trabajos de blockchain",
+				"description": "¿Quieres ayudar a promocionar y construir el proyecto JSEcoin? Obtenga JSE completando trabajos impares y ayúdenos a construir la próxima generación de cripto monedas basadas en navegador."
+			},
+			"banner": {
+				"linkText": "Pequeños trabajos",
+				"heading": "Pequeños trabajos",
+				"subheading": "¿Tienes algo de tiempo para ayudar a nuestro equipo con algunos pequeños trabajos?"
+			},
+			"para_main1_infoMsg_line1": "Estamos en el proceso de configurar nuestro nuevo sitio.",
+			"para_main1_infoMsg_line2": "Si está buscando ayudar a JSE, enumeraremos más tareas aquí en las próximas semanas.",
+			"para_main2_infoMsg": "Siempre estamos buscando errores tipográficos en el nuevo sitio. ¡Encuentra un error ortográfico y te enviaremos 200 JSE por corrección!",
+			"heading_promo": "Vídeos promocionales de JSE",
+			"subheading_promo": "¿Tienes habilidades de edición de vídeo?",
+			"para_promo": "Cree un vídeo promocional para JSEcoin y si es excelente y lo usamos, le pagaremos 10000 JSE. El vídeo debe promocionar el proyecto entre inversores y Web másters que nunca hayan oído hablar de la plataforma. Debe ser impresionante, elegante y moderno. No utilice ninguna música, imagen o vídeo protegido por derechos de autor de terceros que pueda causarnos problemas.",
+			"heading_affiliate": "Conviértase en afiliado",
+			"subheading_affiliate": "Obtenga 200 JSE por usuario que puede obtener para registrarse en la plataforma",
+			"para_affiliate": "Obtenga su enlace de afiliado desde la plataforma. La oferta es doble CPA de suscripción voluntaria y actualmente solo está disponible para los siguientes países: US, CA, GB, IE, AU, NZ, ZA, DE, FR, CH, SE, NO, FI, BE, NL, LU, DK, AT",
+			"heading_findBugs": "Encuentra errores de seguridad y problemas",
+			"subheading_findBugs": "¿Sabes cómo probar una plataforma de forma segura?",
+			"para_findBugs": "Encuentre un problema de seguridad con nuestra plataforma y le recompensaremos con bonificaciones de errores. Opcionalmente, también puedes ser agregado a nuestra pizarra de la fama de recompensas de errores."
+		},
+		"submitInfo": {
+			"meta": {
+				"title": "Presentar una Tarea o Recompensa",
+				"keywords": "Hackeo de cadena de bloqueo, error de cripto moneda",
+				"description": "Envíenos cualquier error o vulnerabilidad de seguridad que encuentre y puede ganar tokens JSE como parte de nuestra campaña de recompensas de errores."
+			},
+			"banner": {
+				"linkText": "Enviar información",
+				"heading": "¿Encontró un error o completó una tarea?",
+				"subheading": "Envíalo a nosotros para que lo revisemos."
+			},
+			"para_main1_infoMsg_line1": "Utilice este formulario para enviar errores, soluciones o elementos de trabajo completados.",
+			"para_main1_infoMsg_line2": "Asegúrese de comprimir todas las capturas de pantalla, documentos y códigos para adjuntarlo a este formulario.",
+			"form": {
+				"heading_userInfo": "Información de usuario",
+				"label_placeholder_userID": "Cuenta no",
+				"label_placeholder_email": "Dirección de correo electrónico",
+				"heading_taskSummary": "Resumen de tarea",
+				"placeholder_pleaseSelect": "Seleccione",
+				"heading_description": "Descripción - solo texto",
+				"label_placeholder_message": "Mensaje",
+				"heading_attachment": "Adjunto - archivo zip individual",
+				"para_dragDrop": "Arrastra y suelta un archivo zip",
+				"button_submit": "Enviar",
+				"heading_thankyou": "¡Gracias por ayudar al equipo! :)",
+				"para_thankyou": "Revisaremos su mensaje y nos comunicaremos con usted lo antes posible."
+			}
+		},
+		"community": {
+			"meta": {
+				"title": "Comunidad",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "comunidad",
+				"heading": "Comunidad",
+				"subheading": "Conéctese con otros mineros y desarrolladores"
+			},
+			"heading_community": "Nuestra comunidad",
+			"subheading_community": "Únete a nuestra comunidad y contáctanos directamente con cualquier pregunta"
+		},
+		"contact": {
+			"meta": {
+				"title": "Contacto",
+				"keywords": "Póngase en contacto con jsecoin, jsecoin detalles de contacto",
+				"description": "Póngase en contacto con el equipo de JSEcoin con cualquier pregunta, solicitud, sugerencia o comentario sobre nuestra plataforma de minería y cripto moneda basada en navegador."
+			},
+			"banner": {
+				"linkText": "Contacto",
+				"heading": "Contáctenos",
+				"subheading": "Póngase en contacto: estamos aquí para ayudar :)"
+			},
+			"heading_contact": "Tiene problemas, las preguntas nos envían un mensaje",
+			"subheading_contact": "Puede encontrar algunas respuestas a preguntas comunes en nuestro",
+			"link_FAQ": "Página de Preguntas Frecuentes",
+			"form": {
+				"label_placeholder_firstName": "Nombre de pila",
+				"label_placeholder_lastName": "Apellido",
+				"label_placeholder_contactNo": "No de Contacto",
+				"label_placeholder_emailAddress": "Dirección de correo electrónico",
+				"label_placeholder_message": "Mensaje",
+				"button_submit": "Enviar mensaje",
+				"heading_thankyou": "Gracias por tu mensaje :)",
+				"para_thankyou_line1": "Revisaremos su mensaje y nos comunicaremos con usted lo antes posible.",
+				"para_thankyou_line2": "No dude en comunicarse con nuestro equipo en nuestros canales sociales.",
+				"err_failed1": "Error al enviar el formulario - Respuesta no válida -",
+				"err_failed2": "No se pudo enviar el formulario; compruebe su conexión",
+				"err_failed3": "No se pudo enviar el formulario. Verifique todos los campos requeridos arriba."
+			}
+		},
+		"FAQ": {
+			"meta": {
+				"title": "Preguntas más frecuentes",
+				"keywords": "Acerca de la minería basada en navegador, blockchain en la web, jse faq",
+				"description": "Nos hacen muchas preguntas, así que eche un vistazo y encontrará mucha información sobre minería web, problemas de cuentas e integración de editores."
+			},
+			"banner": {
+				"linkText": "Preguntas más frecuentes",
+				"heading": "Preguntas frecuentes",
+				"subheading": "Aprenda más leyendo nuestro Documento técnico"
+			},
+			"heading_FAQ": "Estamos aquí para ayudar",
+			"subheading_FAQ": "SI NO PUEDE ENCONTRAR LA RESPUESTA QUE ESTABA BUSCANDO",
+			"link_getInTouch": "PONGASE EN CONTACTO",
+			"section_general": {
+				"alt_general": "Botón de filtro general",
+				"heading_general": "Consultas generales",
+				"subheading_general": "NUEVO ALREDEDOR DE AQUÍ? EMPECEMOS CON LO BÁSICO",
+				"faqItemHeading1": "¿Estás planeando liberar una billetera?",
+				"faqItemContent1": "Actualmente estamos integrando la plataforma con un contrato inteligente de Ethereum compatible con ERC20. Esto será compatible con todas las billeteras compatibles con ERC20 de terceros como myetherwallet, metamask, paridad, etc. Para la mayoría de los usuarios, recomendamos almacenar sus tokens en la plataforma web y utilizar prácticas de seguridad sólidas en su cuenta, como contraseñas únicas y autenticación de dos factores.",
+				"faqItemHeading2": "Perdí mi código de autenticación de dos factores, ¿qué puedo hacer?",
+				"faqItemContent2": "Si ha perdido su teléfono o el acceso a sus códigos 2fa, le recomendamos reinstalar Google Authenticator o Authy en un nuevo dispositivo e iniciar sesión con su cuenta de gmail para acceder a sus códigos. Si esto no funciona, solicitaremos una identificación con foto que coincida con el nombre y la dirección utilizados cuando te registraste para una cuenta junto con la respuesta a algunas preguntas de seguridad. Tenga en cuenta que 2fa es una función de seguridad y nos reservamos el derecho de rechazar solicitudes para restablecerlo si no estamos 100% satisfechos de que el caso sea genuino.",
+				"faqItemHeading3": "¿Por qué debería usar una contraseña única para la plataforma JSEcoin?",
+				"faqItemContent3": "Debe usar una contraseña diferente para cada plataforma con la que se registre. Los usuarios que usan la misma dirección de correo electrónico y contraseña para cada cuenta corren el riesgo de que sus cuentas sean pirateadas. Esto se debe a que hackers de alto perfil filtraron bases de datos de combos de correo electrónico / contraseña que ahora están disponibles para los piratas informáticos. Yahoo, Linkedin, Sony, AOL, Equifax han sido violados en el pasado y los datos de las cuentas de usuario están en manos de piratas informáticos. Las plataformas financieras son particularmente atacables por hackers por razones obvias. Cuide su cuenta, use una contraseña única y configure la autenticación de dos factores con una aplicación como Google Authenticator. Este consejo va para todas las plataformas en la web y no solo específicamente JSEcoin.",
+				"faqItemHeading4": "¿Por qué mi software ad-blocker / anti-virus está bloqueando JSEcoin.com?",
+				"faqItemContent4": "Algunos bloqueadores de anuncios y compañías antivirus nos han agrupado con scripts de minería de fondos ocultos que minan en la PC de un usuario sin que ellos lo sepan. Estamos haciendo campaña activamente y presionando a las organizaciones que bloquean nuestros dominios. Si desea ayudar, póngase en contacto con su proveedor de software y solicite que se haga una excepción.",
+				"faqItemHeading5": "¿Cómo puedo ganar tokens de cripto moneda JSEcoin usando solo mi PC?",
+				"faqItemContent5": "Hay varias formas de ganar JSE. Puedes probar la autoextracción que ejecuta un proceso de hash matemático en tu computadora portátil en el fondo mientras trabajas. Las recompensas se distribuyen a través de un sistema de lotería a los mineros. Si tiene un sitio web, puede ganar JSE colocando el fragmento de código en su sitio y haciendo que los visitantes miren por usted mientras duerme. Puede referir a amigos y colegas a través de los enlaces de afiliados disponibles a través de la plataforma, incluso hay un simple botón de compartir en redes sociales para twittear o compartir en Facebook. Finalmente, puede ayudar a nuestro equipo a desarrollar la plataforma completando pequeños trabajos.",
+				"link_jobsListedHere": "trabajos listados aquí",
+				"faqItemHeading6": "Soy nuevo en la plataforma, ¿hay algún lugar en el que pueda encontrar una descripción general de cómo funciona todo?",
+				"faqItemContent6": "Sí. Tenemos una guía de vídeo tutorial que se puede encontrar aquí",
+				"faqItemContent6_para2": "Si hay una página específica que está buscando, puede saltar a los siguientes tiempos.",
+				"faqItemContent6_list1": "Transferencia 1:05",
+				"faqItemContent6_list2": "Exportación 2:45",
+				"faqItemContent6_list3": "Minería 4:16",
+				"faqItemContent6_list4": "Editor 6:46",
+				"faqItemContent6_list5": "Inversores 9:45",
+				"faqItemContent6_list6": "Referencias 10:00",
+				"faqItemContent6_list7": "Configuración 11:33",
+				"faqItemHeading7": "¿Tiene alguna idea aproximada de cuál será el precio de ICO para BTC?",
+				"faqItemContent7": "No, y no nos gustaría adivinar esto porque depende de factores externos que están fuera de nuestro control. Es un mercado extremadamente volátil donde los valores pueden cambiar en grandes cantidades en espacios de tiempo muy cortos.",
+				"faqItemHeading8": "Los tokens Pre-ICO se vendieron a un valor de 1 JSE = $ 1, ¿cuál será el valor de su ICO?",
+				"faqItemContent8": "Es difícil decirlo en esta etapa, pero el valor estará determinado por la demanda y las condiciones del mercado en el momento de la ICO. Estamos trabajando arduamente para crear una plataforma que tendrá una gran demanda y ofrecer un buen rendimiento a todos los inversores iniciales.",
+				"faqItemHeading9": "Si JSEcoin es una moneda en sí misma, ¿está en la lista de Coinmarketcap?",
+				"faqItemContent9": "JSEcoin es una cripto moneda por sí misma, pero aún no figura en Coinmarketcap porque no figuramos en las bolsas. Buscaremos hacer una lista en las bolsas que sigan a nuestra ICO más adelante este año."
+			},
+			"section_webmasters": {
+				"alt_webmasters": "Botón de filtro de Web másters",
+				"heading_webmasters": "Web másters",
+				"subheading_webmasters": "Integración JSE",
+				"faqItemHeading1": "¿Cómo configuro una cuenta y coloco el código para mi sitio?",
+				"faqItemContent1": "Simplemente regístrese para una cuenta en",
+				"faqItemContent1_2": "y luego visita la página de editores. Ingrese el nombre de dominio de su sitio web y haga clic en el botón &quot;Configurar sitio&quot;. Esto generará su script único. El código aparecerá en una nueva ventana y puede copiarlo y pegarlo encima del cierre </body> etiquetar o pegar en el plugin de WordPress JSEcoin.",
+				"faqItemContent1_para2": "Normalmente, el mejor lugar para colocar el código es en un archivo de plantilla (por lo que se ejecuta en todas las páginas del sitio) o en un archivo de índice (por lo que solo se ejecuta en la página principal). Alternativamente, si tiene un sitio estático, puede copiarlo en todas y cada una de las páginas si lo desea.",
+				"faqItemHeading2": "¿Cómo instalo el fragmento de JSEcoin en mi sitio de wordpress?",
+				"faqItemContent2": "Hay instrucciones de instalación y un vídeo aquí:",
+				"link_wordpress": "wordpress-plugin-available",
+				"faqItemHeading3": "¿Cómo puedo saber si el código está instalado correctamente en mi sitio?",
+				"faqItemContent3": "Puede verlo en ejecución abriendo una ventana de registro de la consola. Para hacer esto, visite su página web usando Firefox o Chrome y en Firefox mantenga presionada la tecla CTRL SHIFT K, y en Chome presione CTRL SHIFT J",
+				"faqItemContent3_para2": "Se abrirá una ventana de registro de la consola que mostrará los procesos en segundo plano y podrá ver el script recopilando datos del bloque y trabajando en hashes.",
+				"faqItemContent3_para3": "El aviso de privacidad solo se mostrará una vez por hora (para que no se cargue en todas las páginas como navegadores de usuario a través de un sitio) y se producirá un retraso de 15 segundos después de la carga de la página.",
+				"faqItemHeading4": "¿Es necesario que cada sitio web tenga su propio fragmento (incluido el nombre de dominio) o se puede agregar el mismo fragmento en varios sitios web?",
+				"faqItemContent4": "Por favor rastrea diferentes sitios por separado. Necesitamos saber dónde se está ejecutando el código para evitar el fraude y nuestras verificaciones automáticas pueden arrojar un resultado falso positivo si el sitio no coincide con el dominio de referencia. En el futuro, es posible que desee ver estadísticas por sitios individuales, etc.",
+				"faqItemHeading5": "¿Cómo se recompensa a los editores por ejecutar el script en sus sitios?",
+				"faqItemContent5": "Las recompensas se distribuyen a través de un sistema de lotería donde los editores obtienen boletos de lotería para visitantes únicos, páginas vistas y hash encontrados. 50 x 2JSE se distribuyen aleatoriamente a los titulares de boletos. Esta lotería se repite con cada bloque de 30 segundos entregando 288000 fichas JSE en total cada día.",
+				"faqItemHeading6": "¿Es posible aumentar el uso de la CPU en mi dispositivo de visitantes?",
+				"faqItemContent6": "¡No! No queremos dar a los editores el control de la cantidad de CPU de los usuarios que utiliza la minería. Actualmente está configurado para usar la cantidad mínima para que no tenga un impacto notable en su experiencia de navegación. No deseamos que los Web másters puedan aumentar el uso de la CPU, ya que esto podría dar a JSEcoin una mala reputación. Las ganancias de los Web másters dependen de los visitantes, de los visitantes únicos y de los hash encontrados, por lo que el uso de la CPU se establece en el mínimo requerido para asegurar el blockchain.",
+				"faqItemHeading7": "¿Es posible evitar que el banner de JSEcoin aparezca en mi sitio?",
+				"faqItemContent7": "Esta es en realidad la notificación de privacidad. Es importante para nosotros que esta notificación debe aparecer cuando un usuario visita su sitio por primera vez (y una vez por hora después de eso) ya que queremos operar de forma transparente para que los usuarios sepan claramente que se está llevando a cabo la extracción, y que una opción de exclusión está disponible. Creemos que esto es importante por razones legales y éticas y que esta apertura ayudará a que la idea sea más ampliamente aceptada. Es uno de nuestros términos de uso que los editores deben mostrar la notificación y no hacer ningún intento por ocultarla.",
+				"faqItemHeading8": "¿Hay alguna jerga legal específica que necesitamos poner en nuestro sitio?",
+				"faqItemContent8": "Esta es una nueva tecnología, no hemos tenido problemas legales o guías con las que lidiar. El aviso de privacidad se muestra de forma predeterminada y es esencial porque contiene la opción de exclusión en toda la red. Si desea colocar algo en los términos de su sitio web, esto ayudaría con la transparencia.",
+				"faqItemContent8_para2": "Algo similar a MySite.com utiliza la minería de cripto monedas en segundo plano.",
+				"faqItemContent8_para2_line2": "Para darse de baja, por favor visite",
+				"link_privacyPolicy": "Política de privacidad",
+				"faqItemHeading9": "Vi su código en otro sitio y estoy tratando de entender cómo funciona realmente y qué obtiene el editor del sitio de él.",
+				"faqItemContent9": "Somos una cripto moneda de etapa inicial que se basa en la minería de Web másters. Nuestro sistema es similar a las cripto monedas tradicionales, pero en lugar de grandes granjas de servidores, llevamos a cabo el algoritmo de hashing en los navegadores de visitantes del sitio web. Esto es discreto y se ejecuta entre bastidores (a excepción de una notificación de privacidad) por lo que no afecta negativamente la experiencia del usuario o la velocidad de carga de la página para los visitantes de su sitio web.",
+				"faqItemContent9_para2": "El editor del sitio copia nuestro fragmento de código en su sitio web y se recompensa con el pago de los tokens de JSEcoin en su cuenta."
+			},
+			"section_exchanges": {
+				"alt_exchanges": "Botón de filtro de bolsas",
+				"heading_exchanges": "Bolsas",
+				"subheading_exchanges": "Tu billetera",
+				"faqItemHeading1": "¿Hay una billetera disponible para guardar monedas?",
+				"faqItemContent1": "Actualmente, solo es posible almacenar JSEtokens a través de la billetera en línea.",
+				"faqItemContent1_line2": "Hemos probado una integración con el contrato inteligente ERC20 Ethereum que permitiría el uso de billeteras de terceros. Esto no se dará a conocer hasta que hayamos finalizado la tecnología de intercambio / ICO, que bien podría cambiar de aquí a cuando el ICO.",
+				"faqItemHeading2": "¿Cómo me pagan y convierto JSE en USD o en mi divisa local?",
+				"faqItemContent2": "Se le recompensa en tokens JSEcoin que son tokens de cripto monedas para colocar el código en su sitio que hará que los visitantes realicen ecuaciones matemáticas en el fondo que ayudan a asegurar la cadena de bloques.",
+				"faqItemContent2_para2": "Desafortunadamente para todos nosotros, los tokens JSEcoin son muy nuevos (se lanzaron públicamente en agosto de 2017) por lo que actualmente no hay forma de retirar su JSE. Estamos apuntando a un ICO y una lista de intercambio en 2018, entonces podrá transferir JSEcoin a las bolsas y canjear por Bitcoin / USD, etc. Si bien nunca habrá un mejor momento para extraer cripto monedas porque la competencia es baja, no podrá gastar las ganancias hasta que JSE aparezca en las bolsas. También vale la pena señalar que si algo sale mal en JSE o en los mercados de cripto monedas en general, es posible que nunca lleguemos a la etapa de liquidez y que los tokens no valgan nada. Este es el riesgo que enfrentan los primeros adoptantes.",
+				"faqItemHeading3": "¿Qué bolsas se incluyen / se incluirán en la lista?",
+				"faqItemContent3": "Esto se confirmará después de nuestra ICO; ya que esto dependerá de los fondos disponibles y la popularidad de la plataforma JSE."
+			},
+			"section_platformMining": {
+				"alt_platformMining": "Botón de filtro de usuario",
+				"heading_platformMining": "Plataforma Minería",
+				"subheading_platformMining": "Puedo yo minerar?",
+				"faqItemHeading1": "¿Es posible extraer en varias computadoras conectadas a la misma cuenta? Si no, ¿debería uno configurar múltiples cuentas con el mismo propietario / dirección de correo electrónico?",
+				"faqItemContent1": "No, estamos tratando de evitar ambos escenarios. Básicamente, la autoextracción está destinada a ser una forma de que los usuarios individuales se involucren con la cripto moneda y sean divertidos para todos. Queremos evitar ir por el camino de múltiples cuentas de usuario y múltiples dispositivos porque esto eventualmente conducirá a granjas de servidores, redes de bots, etc. y no beneficiará a todos. Se arriesga a que se cierre su (s) cuenta (s) y tomamos medidas activas para prevenir este tipo de actividad.",
+				"faqItemHeading2": "¿Cuántos tokens hay disponibles cada día y cómo se distribuyen?",
+				"faqItemContent2": "Encontrar hashes válidos te hace ganar un boleto en un sistema de lotería donde 50 ganadores reciben una ficha de 1 JSE. Esta lotería tiene lugar cada 30 segundos, con un nuevo 50 x 1 JSE disponible cada vez. Esto suma hasta 71000 JSE disponibles cada día.",
+				"faqItemHeading3": "¿Por qué la tasa de hash disminuye significativamente cuando visito otras pestañas?",
+				"faqItemContent3": "Para superar esto, le recomendamos que abra la extracción en un nuevo navegador sin otras pestañas abiertas. Si luego desea continuar a diferentes sitios en lugar de abrir una pestaña nueva, debe abrir un nuevo navegador. Esto debería detener la caída en la tasa de hash. Pruebe diferentes navegadores, su navegador óptimo dependerá de su sistema. Se recomiendan Chrome y Firefox. Actualmente estamos terminando una aplicación de escritorio que los usuarios podrán utilizar para extraer, que también resolverá por completo este problema.",
+				"faqItemHeading4": "¿Qué es el acelerador de frecuencia hash?",
+				"faqItemContent4": "Esta es una función de deslizador simple que le permite aumentar o disminuir la cantidad de potencia de la CPU que usted dedica al proceso de minería. Si desea continuar usando su computadora, entonces puede apagarla o puede subirla si no tiene nada más que hacer en su dispositivo. Tenga en cuenta que en la actualidad no hay un beneficio real para las ganancias superando las 10K h / s, por lo que establecer el acelerador de tasa de hash para entregar más no es recomendable.",
+				"faqItemHeading5": "Si mi compañero de piso y yo minamos al mismo tiempo, estamos afectados por las ganancias ya que estamos usando la misma dirección IP?",
+				"faqItemContent5": "Como parte de nuestra prevención de fraude y para garantizar que las granjas de servidores no puedan hacerse cargo de JSEcoin, hemos tenido que aplicar restricciones de IP. Lo hemos limitado a un boleto de lotería por bloque por dirección IP. Esto significa que múltiples usuarios podrán extraer en la misma ubicación, sin embargo, las recompensas potenciales se dividirán entre ellos."
+			},
+			"section_thePlatform": {
+				"alt_thePlatform": "Botón de filtro de plataforma",
+				"heading_thePlatform": "La plataforma",
+				"subheading_thePlatform": "Algo salió mal",
+				"faqItemHeading1": "Soy nuevo en la plataforma, ¿hay algún lugar en el que pueda encontrar una descripción general de cómo funciona todo?",
+				"faqItemContent1": "Sí. Tenemos una guía de vídeo tutorial que se puede encontrar aquí",
+				"faqItemContent1_para2": "Si hay una página específica que está buscando, puede saltar a los siguientes tiempos.",
+				"faqItemContent1_list1": "Transferencia 1:05",
+				"faqItemContent1_list2": "Exportación 2:45",
+				"faqItemContent1_list3": "Minería 4:16",
+				"faqItemContent1_list4": "Editor 6:46",
+				"faqItemContent1_list5": "Inversores 9:45",
+				"faqItemContent1_list6": "Referencias 10:00",
+				"faqItemContent1_list7": "Configuración 11:33",
+				"faqItemHeading2": "Algo no funciona en la plataforma, ¿qué debo hacer?",
+				"faqItemContent2": "Estamos sacando muchas actualizaciones y restableciendo los servidores con frecuencia en este momento. Podría ser un problema de caché del navegador, intente cerrar la sesión y luego presione F5 o actualice un par de veces para volver a cargar la última versión de la plataforma. Si eso no funciona, envíenos una nota a",
+				"faqItemContent2_line2": "y lo investigaremos.",
+				"faqItemHeading3": "Perdí mi contraseña ¿Que puedo hacer?",
+				"faqItemContent3": "Simplemente visite la página de inicio de sesión y haga clic en el enlace &quot;Olvidé mi contraseña&quot; que está justo debajo del botón de inicio de sesión.",
+				"faqItemHeading4": "Dice que no hay una cuenta correspondiente para mi correo electrónico y contraseña en la base de datos. Que debería hacer.",
+				"faqItemContent4": "Por favor intente ingresar sus datos de nuevo asegurándose de que sean correctos. Si el problema persiste, intente restablecer su contraseña. Si aún no puede acceder a su cuenta, suba un ticket utilizando nuestra",
+				"link_contactForm": "Formulario de contacto",
+				"faqItemHeading5": "Me siguen solicitando que confirme mi cuenta, pero no recibí el correo electrónico de confirmación.",
+				"faqItemContent5": "En primer lugar, asegúrese de haber revisado sus carpetas de spam / basura. Si no está allí, intente agregar noreply@jsecoin.com a su libreta de direcciones de correo electrónico y vuelva a solicitar el correo electrónico. Si tiene más problemas, suba un ticket utilizando nuestra",
+				"faqItemHeading6": "Sigo saliendo de la plataforma y me piden que vuelva a iniciar sesión. ¿Es esto normal?",
+				"faqItemContent6": "Esto no debería estar pasando a la plataforma. Las 2 razones más comunes que los usuarios encuentran que causan esto son;",
+				"faqItemContent6_list1": "Actualizando la página para verificar las ganancias. Al actualizar, estará saliendo de la página y volviendo a ingresar, por lo que deberá volver a iniciar sesión. Esta es una característica de seguridad bastante estándar.",
+				"faqItemContent6_list2": "Estás iniciando sesión en tu cuenta en un segundo dispositivo. Los usuarios están limitados a un dispositivo y, tan pronto como se realice un segundo inicio de sesión, se cerrará la sesión de la primera cuenta.",
+				"faqItemHeading7": "He oído mucho sobre personas que han sido víctimas de robo sus cripto monedas. ¿Están seguros mis tokens en mi cuenta de JSEcoin?",
+				"faqItemContent7": "Sí, están a salvo. Como actualmente no hay monedero disponible, las monedas solo se pueden transferir a otras cuentas de JSEcoin, y tenemos un registro de todas las transacciones. Recomendamos hacer que su cuenta sea más segura configurando la autenticación de 2 factores, pero en el caso de que alguien ingrese a su cuenta y elimine sus tokens, podríamos hacer un seguimiento de dónde fueron y devolverlos. La billetera estará disponible antes de que lleguemos a ICO, pero no hasta que estemos mucho más cerca de esto.",
+				"faqItemHeading8": "Ok, ¿qué es la autenticación de 2 factores (2fa)?",
+				"faqItemContent8": "2fa requiere que ingrese un código generado aleatoriamente desde una aplicación móvil en su cuenta JSEcoin después de haber ingresado su nombre de usuario y contraseña. 2 aplicaciones comunes que la plataforma admite y que se han probado completamente son Google Autenticator y Authy. Simplemente descargue una de estas aplicaciones, y la próxima vez que inicie sesión en su cuenta vaya a la página de configuración y haga clic para activar 2fa. Se le pedirá que escanee un código QR con su teléfono y se generará su primer código de 6 dígitos. Luego deberá ingresar un código cada vez que inicie sesión en su cuenta. Debe leer las instrucciones cuidadosamente sobre la copia de seguridad de la cuenta 2fa de su teléfono en caso de que pierda o dañe su teléfono.",
+				"faqItemHeading9": "Estoy teniendo problemas con 2fa, ¿me pueden ayudar?",
+				"faqItemContent9": "Sí, pero tememos que no es un proceso sencillo. Comience levantando un boleto usando nuestro",
+				"faqItemContent9_line2": "A continuación, se le pedirá que complete algunos pasos para demostrar su identidad. Recuerde que esto es solo para asegurar cuentas de usuarios. Puede parecer molesto, pero te molestaría más si permitimos que alguien acceda a tus tokens al no mostrar la diligencia debida. Si ha hecho una copia de seguridad de su cuenta 2fa, esto no debería ser un problema."
+			},
+			"section_affiliates": {
+				"alt_affiliates": "Botón de filtro de afiliados",
+				"heading_affiliates": "Afiliados",
+				"subheading_affiliates": "Gana a través de referencias",
+				"faqItemHeading1": "¿Cómo puedo ganar JSE por referir a otros usuarios?",
+				"faqItemContent1": "Simplemente inicie sesión en su cuenta y diríjase a la página de referencias. Aquí encontrará varios códigos de referencia únicos que puede distribuir. Por favor, asegúrese de leer las reglas con respecto a las referencias calificadas antes de dedicar tiempo y esfuerzo a la distribución de sus enlaces.",
+				"faqItemHeading2": "¿Cuánto ganaré y hay alguna regla?",
+				"faqItemContent2": "Pagamos 200 JSE por cada usuario confirmado que registra una cuenta que halla hecho clic a través de su enlace de referencia personal y cumple con los siguientes criterios:",
+				"faqItemContent2_para2": "- Son de uno de nuestros países aceptados que figuran en la página de referencias. Estos países son US, CA, GB, IE, AU, NZ, ZA, DE, FR, CH, SE, NO, FI, BE, NL, LU, DK, AT. Esto se debe a la falta de soporte técnico y traducción de sitios que podemos ofrecer a países que no hablan inglés. Una vez que el sitio esté completamente desarrollado, veremos la traducción del sitio a la mayoría de los idiomas, momento en el que es probable que reintroduzcamos la bonificación de afiliado para estos países.",
+				"faqItemContent2_para3": "- No hay una cuenta registrada en esa dirección IP. Las cuentas de IP duplicadas no pagan la bonificación, ya que esto dejaría el sistema abierto al abuso.",
+				"faqItemContent2_para4": "-Es un usuario genuino y no se le paga por el tráfico generado por clic o bot.",
+				"faqItemHeading3": "¿Por qué se ha rechazado mi recomendación?",
+				"faqItemContent3": "Esto podría ser por 2 razones;",
+				"faqItemContent3_para2": "su referencia no es de uno de nuestros países aceptados como se detalla en la página de referencias. Estos países son US, CA, GB, IE, AU, NZ, ZA, DE, FR, CH, SE, NO, FI, BE, NL, LU, DK, AT.",
+				"faqItemContent3_para3": "su referencia ya tiene una cuenta registrada en la misma dirección IP. Las cuentas de IP duplicadas no pagan la bonificación, ya que esto dejaría el sistema abierto al abuso.",
+				"faqItemHeading4": "¿Por qué restringiste el programa de afiliados para que solo recompense los registros de habla inglesa? ¿Esto cambiará alguna vez?",
+				"faqItemContent4": "Esto se debe a la falta de soporte técnico y traducción de sitios que podemos ofrecer a países que no hablan inglés. Una vez que el sitio esté completamente desarrollado, veremos la traducción del sitio a la mayoría de los idiomas, momento en el que es probable que reintroduzcamos la bonificación de afiliado para estos países.",
+				"faqItemHeading5": "Mi referencia es de un país que califica y no es una cuenta duplicada, pero aún no he recibido la bonificación. ¿Por qué podría ser esto?",
+				"faqItemContent5": "Es muy probable que el usuario aún no haya confirmado sus cuentas. Tan pronto como lo hagan, deberían recibir la bonificación."
+			},
+			"section_technology": {
+				"alt_technology": "Botón de filtro de tecnología",
+				"heading_technology": "Tecnología",
+				"subheading_technology": "Código abierto, algoritmo, bibliotecas",
+				"faqItemHeading1": "¿El algoritmo usado es de código abierto y está disponible en github / gitlab?",
+				"faqItemContent1": "Todo el código es actualmente privado porque tenemos una ventaja de primera movida con la extracción de cripto monedas para Web másters. Tendremos que abrir el código fuente antes de una ICO, ya que este es un requisito de intercambio. Antes de que esto suceda, tendremos que llevar a cabo una revisión de seguridad completa y una verificación de código."
+			}
+		},
+		"APIS": {
+			"meta": {
+				"title": "Descripción general de API",
+				"keywords": "Blockchain api, cripto moneda api",
+				"description": "Los desarrolladores de cripto monedas pueden hacer uso de nuestra API de cripto monedas simple, efectiva y rápida. Haga transacciones, verifique balances inferiores y más."
+			},
+			"banner": {
+				"linkText": "API'S",
+				"heading": "Descripción general de API",
+				"subheading": "Apoyando a la comunidad de desarrolladores de JSE"
+			},
+			"heading_about": "Descripción general de API",
+			"subheading_about": "¡Un paso más cerca de la plataforma de desarrollo!",
+			"para_main1_line1": "Hoy, las API de JSE permiten la administración básica de JSE Wallet y el acceso a la cadena de bloques.",
+			"para_main1_line2": "Estamos trabajando activamente con nuestra comunidad de desarrolladores e integradores para ofrecer una API poderosa y estable para acceder a JSE Wallet, Blockchain, herramientas comerciales y más.",
+			"para_main2_b": "Punto final de API:",
+			"para_main3_line1": "Estamos acabando de terminar nuestro portal para desarrolladores.",
+			"para_main3_line2": "Asegúrate de volver pronto. Mientras tanto echa un vistazo a algunos de nuestros",
+			"link_oldBlogPosts": "publicaciones de blog de código antiguo",
+			"alt_api": "API'S"
+		},
+		"samples": {
+			"meta": {
+				"title": "Código de muestra",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "Muestras",
+				"heading": "Código de muestra",
+				"subheading": "&quot;fantasma en la máquina&quot;"
+			},
+			"para_infoMsg_line1": "Estamos en el proceso de limpiar nuestras muestras y prepararnos para lanzar nuestro Portal para desarrolladores de JSE.",
+			"para_infoMsg_line2": "Asegúrate de volver pronto. Mientras tanto echa un vistazo a algunos de nuestros",
+			"link_oldBlogPosts": "publicaciones de blog de código antiguo"
+		},
+		"stats": {
+			"meta": {
+				"title": "Estadística",
+				"keywords": "Figuras de Blockchain, estadísticas de cripto monedas, estadísticas de minería de navegador",
+				"description": "Las últimas cifras viven de los servidores de JSEcoin. Publicamos la cantidad de usuarios registrados, mineros de sitios web, auto-mineros, capitalización de cripto monedas y más."
+			},
+			"banner": {
+				"linkText": "Estadística",
+				"heading": "Estadística",
+				"subheading": "Navegador"
+			},
+			"section_map": {
+				"heading_stats": "DEMOGRAFÍA",
+				"subheading_stats": "LAS 10 MEJORES LOCACIONES DE NUESTROS MINEROS",
+				"alt_map": "Mapa del mundo",
+				"country_US": "Estados Unidos",
+				"country_RU": "Rusia",
+				"country_CN": "China",
+				"country_IN": "India",
+				"country_UA": "Ucrania",
+				"country_GB": "Reino Unido",
+				"country_DE": "Alemania",
+				"country_JP": "Japón",
+				"country_CA": "Canadá",
+				"country_ID": "Indonesia"
+			},
+			"section_cpuOverview": {
+				"para_main1_infoMsg_line1": "Solo estamos recopilando y reuniendo estadísticas y métricas de varios exploradores que se ejecutan en cada sistema operativo y diferentes dispositivos como los Raspberry PI. Avancemos rápido y arreglemos las cosas.",
+				"para_main1_infoMsg_line2": "Nuestra plataforma de minería utiliza menos del 10% de los recursos de la CPU inactiva, en comparación con los mineros de Monero que usan entre 80-90%."
+			},
+			"section_cpuBenchmark": {
+				"heading_bench": "Indicador de referencia de CPU de seguimiento"
+			}
+		},
+		"support": {
+			"meta": {
+				"title": "Apoyo",
+				"description": "¿Tiene problemas con la plataforma o tiene dificultades para configurar el código de minería del sitio web? Obtenga ayuda aquí en nuestras páginas de soporte técnico."
+			},
+			"banner": {
+				"linkText": "apoyo",
+				"heading": "Apoyo",
+				"subheading": "¿Tienes un problema? Estamos aquí, solo levanta un ticket de soporte;)"
+			},
+			"heading_support": "JSE Support Tickets",
+			"subheading_support": "Próximamente.",
+			"para_main1": "Estamos solucionando los errores, pero deberíamos tener nuestro entorno de ticketing de soporte funcionando en breve.",
+			"link_contactUs": "Mientras tanto, siéntase libre de contactarnos usando este formulario"
+		},
+		"techOverview": {
+			"meta": {
+				"title": "Resumen técnico",
+				"keywords": "Cómo extraer cripto monedas en el navegador web, la mineria de cripto moneda en la computadora portátil, la técnica exploración del navegador",
+				"description": "Descubra qué hace que el proyecto JSEcoin funcione. Utilizamos tecnología de vanguardia para construir la próxima generación de cripto monedas basadas en web y minería de cadena de bloques basada en navegador."
+			},
+			"banner": {
+				"linkText": "Resumen técnico",
+				"heading": "Resumen técnico",
+				"subheading": "Innovando con las capacidades del navegador web y más allá"
+			},
+			"section_techOverview": {
+				"heading_techOverview": "Visión general de la minería de Internet",
+				"subheading_techOverview": "¿Por qué habilitar las capacidades de minería de navegador web?",
+				"para_main1": "Utilizamos un enfoque similar para Google Adsense y otras plataformas analíticas o publicitarias, en las que un Web máster incorpora un archivo javascript externo en su sitio web.",
+				"para_main2": "Se usa una cantidad mínima de CPU de visitantes para luego extraer las Monedas JSE (menos del 10%, no más que tener un fragmento de vídeo incluido en una página). Cuantos más visitantes tengas, más se juntará tu comunidad de usuarios para mejorar la cantidad que se extrae.",
+				"link_cpuUsage": "Eche un vistazo a nuestra página de estadísticas para ver el uso promedio de la CPU del usuario",
+				"alt_tech": "Resumen técnico"
+			},
+			"section_monitiseBanner": {
+				"heading_monitiseBanner": "Monetiza tu sitio web",
+				"subheading_monitiseBanner": "Imagina ganar dinero sin el desorden de la publicidad",
+				"button_caseStudies_line1": "Casos prácticos de JSE Web máster",
+				"button_caseStudies_line2": "¡Próximamente!"
+			},
+			"section_gettingStarted": {
+				"heading_gettingStarted": "¿Cómo empezar?",
+				"subheading_gettingStarted": "Una etiqueta de Script y un poco de magia",
+				"step_heading1": "Regístrate",
+				"step_content1": "Cree una cuenta en la que pueda crear una plataforma, o permita que sus visitantes agrupen y extraigan desde su sitio.",
+				"alt_login": "Pantalla de ingreso al sistema",
+				"step_heading2": "Conectar",
+				"step_content2": "Copie y pegue el código de JavaScript en su sitio web o seleccione el botón de minería de plataforma.",
+				"alt_minerTypes": "Tipos de Mineros",
+				"step_heading3": "Integrar",
+				"step_content3": "Utilice nuestras herramientas comerciales para permitir a los usuarios comprar bienes y servicios con JSECoin",
+				"alt_merchantTools": "Herramientas Comerciales"
+			},
+			"section_miningCoins": {
+				"alt_star": "Estrella",
+				"heading_miningCoins": "Minerando Monedas - Criptografía",
+				"subheading_miningCoins": "JSE es una cripto moneda que se mina a través de un navegador",
+				"para_main1": "Tenemos el servidor de trabajo ECDSA secp256k1 de curva elíptica y el lado del cliente en el navegador. Esto permite a los usuarios firmar transacciones digitalmente.",
+				"para_main2": "Para hashing usamos el algoritmo estándar SHA256. Cuando está disponible, utilizamos los métodos incorporados de navegadores Crypto.Subtle API, ya que ofrece un rendimiento casi nativo. En los navegadores más antiguos hay una función SHA256 alternativa. El algoritmo SHA256 toma datos de cualquier longitud o tamaño y produce una cadena de código única para él que siempre tiene la misma longitud.",
+				"para_main3": "Al buscar hashes, cambiamos los datos por solo un dígito y calcula una cadena completamente diferente de letras alfanuméricas. Nuestros mineros hacen este cálculo una y otra vez buscando la cadena de valor más baja posible que tendrá ceros a la izquierda."
+			},
+			"section_howDoesItWork": {
+				"heading_howDoesItWork": "¿Cómo funciona el proceso de hashing?",
+				"subheading_howDoesItWork": "Simplificando la adopción y minería de usuarios a través de un navegador",
+				"step_heading1": "Fase 1",
+				"step_content1": "Los datos de transacción se configuran en la plataforma y se envían al navegador web del cliente",
+				"step_heading2": "Fase 2",
+				"step_content2": "Los datos se firman desde el navegador utilizando la criptografía ECDSA (secp256k1)",
+				"step_heading3": "Fase 3",
+				"step_content3": "La transacción es verificada por el nodo y empujada al bloque actual"
+			},
+			"section_miningRewards": {
+				"heading_miningRewards": "Recompensas mineras",
+				"subheading_miningRewards": "JSE es una cripto moneda que se extrae mediante un navegador",
+				"step_heading1": "Editorial Minería",
+				"step_content1": "288000 monedas / día, sistema de lotería, se distribuyen boletos para visitantes únicos, páginas vistas y hashes encontrados.",
+				"step_heading2": "Plataforma Minería",
+				"step_content2": "144000 monedas / sistema de lotería por día 1 boleto por hash encontrado. **",
+				"step_heading3": "Ganancias publicitarias",
+				"step_content3": "(aún no implementado) Estimación de eCPM x impresiones - margen, basado en el valor de mercado de la cripto moneda.",
+				"step_content3_para2": "Importante: ganancias basadas en impresiones, usuarios únicos y tiempo en el sitio en lugar de los mejores valores hash. Esto evita que equipos de gran potencia o granjas de servidores puedan dominar la explotación minera.",
+				"step_content3_para3": "Compre en monedas fiduciarias USD, EUR, GBP (Paypal, transferencia bancaria)",
+				"step_content3_para4": "Compre en cripto monedas BTC, ETH (dirección proporcionada, ERC20 / 23 en desarrollo)",
+				"alt_insight": "Visión",
+				"infoMsg_miningRewards": "** Los límites de boletos por bloque se colocan en la lotería para garantizar una distribución justa y combatir el fraude en la minería."
+			},
+			"section_networkArchitecture": {
+				"heading_miningRewards": "Red de arquitectura",
+				"subheading_miningRewards": "ARQUITECTURA DE ALTO NIVEL - IMPULSADA POR GOOGLE CLOUD",
+				"alt_insight": "Arquitectura de red JSE"
+			}
+		},
+		"blockchainExplorer": {
+			"meta": {
+				"title": "Explorador Blockchain",
+				"keywords": "Jsecoin blockchain explorador, blockchain explorador vue.js, código abierto blockchain explorador",
+				"description": "Explora el blockchain de JSEcoin con nuestro explorador de cadena de bloques en tiempo real. Mire cómo entran los bloques y salen las transacciones a medida que nuestro sistema crece."
+			},
+			"banner": {
+				"linkText": "Explorador Blockchain ",
+				"heading": "Explorador JSE Blockchain ",
+				"subheading": ""
+			},
+			"heading_blockchainExplorer": "JSE Blockchain Explorer",
+			"subheading_blockchainExplorer": "Explora el JSE Blockchain",
+			"para_main1": "El explorador de blockchain proporciona un punto de acceso público a la cadena de bloques JSEcoin. Esto se puede usar junto con la API para descubrir quién posee qué o a quién van a destinarse las últimas recompensas mineras. Tenga en cuenta que los datos confidenciales como las direcciones de correo electrónico o las referencias no se graban ni se muestran dentro de la cadena de bloques.",
+			"para_main2": "El explorador de blockchain está escrito usando comunicaciones de datos en tiempo real, lo que significa que puede ver los datos evolucionando a medida que se completan los ciclos de bloque de 30 segundos."
+		},
+		"merchantTools": {
+			"meta": {
+				"title": "Herramientas de comerciante",
+				"keywords": "Aceptar cripto monedas en el sitio web, suscripciones de cripto monedas, comercio electrónico de cripto monedas",
+				"description": "Acepte pagos en su sitio web con cripto monedas. Nuestras herramientas comerciales permiten a los Web másters integrar sus sitios con una solución de pago y comercio electrónico directa."
+			},
+			"banner": {
+				"linkText": "Herramientas de comerciante",
+				"heading": "Herramientas de comerciante JSE",
+				"subheading": ""
+			},
+			"heading_merchantTools": "Herramientas de comerciante",
+			"subheading_merchantTools": "Expansión del comercio electrónico y transformación de la publicidad digital",
+			"para_main1_infoMsg": "Esta característica se está desarrollando actualmente y se lanzará a los Web másters en breve.",
+			"para_main1": "Las herramientas comerciales de JSEcoin les permiten a los Web másters usar JSEcoin para tomar pagos digitales a través de sus sitios web. Los tokens JSE se pueden usar para:",
+			"list_usedFor1": "Carritos de compra",
+			"list_usedFor2": "Botones de pago",
+			"list_usedFor3": "Suscripciones SaaS",
+			"list_usedFor4": "Descargas digitales",
+			"list_usedFor5": "Publicidad digital",
+			"list_usedFor6": "Venta de software",
+			"list_usedFor7": "Suscripciones a sitios web",
+			"para_main2": "Todo lo que se compra a través de un sitio web debe estar disponible para pagar con cripto monedas y JSEcoin podría abrir el camino para que esto sea posible y simple para que los Web másters se integren con sus sitios."
+		},
+		"wallet": {
+			"meta": {
+				"title": "Billetera",
+				"keywords": "Mantenga la cripto moneda, cómo almacenar la cripto moneda, la billetera cripto moneda, la billetera jse",
+				"description": "Guarde sus tokens JSEcoin en la billetera en línea. Nuestra plataforma es segura y totalmente integrada con la cadena de bloques JSE. Envía fondos y exporta tokens directamente desde tu billetera."
+			},
+			"banner": {
+				"linkText": "Billetera",
+				"heading": "Billetera en línea JSE",
+				"subheading": ""
+			},
+			"heading_wallet": "Integraciones de billetera",
+			"subheading_wallet": "Ampliando el soporte de monedero JSE",
+			"para_main1_infoMsg": "Estamos planeando lanzar nuestra integración con la cartera ERC20 en los próximos meses y actualmente estamos probando nuestras integraciones.",
+			"para_main2": "Los tokens JSE pueden almacenarse en la plataforma o exportarse a través de un token ERC20 que es compatible con carteras y bolsas de terceros. Para la mayoría de los usuarios, recomendamos mantener los tokens en la plataforma, ya que una vez exportados no tenemos control sobre los intentos de fraude / robo / pirateo que pueden causar la pérdida de fondos.",
+			"para_main3": "El token JSEcoin es compatible con cualquier billetera compatible con ERC20 de terceros, incluyendo:",
+			"list_wallet1": "MyEtherWallet",
+			"list_wallet2": "MetaMask",
+			"list_wallet3": "Paridad",
+			"para_main4": "Los tokens almacenados en la plataforma siguen siendo tan seguros como las credenciales de su contraseña y la seguridad del sistema operativo, así que tenga cuidado de usar contraseñas únicas y seguras y asegúrese de que sus sistemas operativos estén libres de virus y troyanos."
+		},
+		"wordpress": {
+			"meta": {
+				"title": "Complementos de CMS",
+				"description": ""
+			},
+			"banner": {
+				"linkText": "",
+				"heading": "",
+				"subheading": ""
+			}
+		},
+		"integration": {
+			"meta": {
+				"title": "Integración",
+				"keywords": "Configuración de la minería de cripto monedas, la mejor minería de cripto monedas en el navegador, secuencia de comandos de minería.",
+				"description": "Aprenda a configurar la minería de cripto monedas basada en el navegador JSEcoin en su sitio web. La minería de exploradores web es el futuro de la monetización y la tecnología eficiente blockchain."
+			},
+			"banner": {
+				"linkText": "Integración",
+				"heading": "Integración",
+				"subheading": "Comience a hacer JSE Coins hoy"
+			},
+			"heading_integration": "Publicador Web máster Integración de minería.",
+			"subheading_integration": "Fácil como 1, 2, 3: copie y pegue el código JSE",
+			"para_main1": "La configuración del código de minería en su sitio es tan simple como copiar y pegar el código en su HTML.",
+			"para_main2_line1": "Configura una cuenta en",
+			"para_main2_line2": "y visite la página &quot;publicadores&quot;.",
+			"para_main3": "Ingrese el nombre de dominio de su sitio y haga clic",
+			"para_main3_infoMsg": "&quot;OBTENER CÓDIGO&quot;",
+			"para_main4": "Copie y pegue el código justo encima del </body> etiqueta en tu HTML. Ten en cuenta que es mejor editar un archivo de pie de página o una ubicación para que el código se muestre en todo tu sitio. Si usa wordpress, descargue el plugin JSEcoin que insertará automáticamente el código en cada página.",
+			"para_main5_line1": "Guarde su archivo de plantilla o cargue el HTML en su servidor web y luego pruébelo en un navegador. Después de un retraso de 15 segundos, debería comenzar a ver los datos hash de JSE entrando a través de la consola del desarrollador. Para abrir la consola del desarrollador, presione",
+			"para_main5_infoMg1": "CTRL SHIFT K",
+			"para_main5_line2": "en Firefox o",
+			"para_main5_infoMg2": "CTRL SHIFT J",
+			"para_main5_line3": "en Chrome."
+		}
+	}
+}
