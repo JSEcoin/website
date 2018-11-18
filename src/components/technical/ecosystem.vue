@@ -7,13 +7,12 @@
 				</router-link>
 				<router-link v-bind:to="`/${$store.state.local}/technical/ecosystem`" tag="li" class="active">
 					{{ $t('pages.navigation.technical.link_ecosystem') }}
-				</router-link>				
+				</router-link>
 				<router-link v-bind:to="`/${$store.state.local}/technical/stats`" tag="li">
 					{{ $t('pages.navigation.technical.link_stats') }}
 				</router-link>
 			</ul>
 		</nav>
-
 
 
 		<div id="JSEW-miningCoins">
@@ -107,7 +106,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>	
+<style>
 #JSEW-ecosystem {
 	padding: 30px 0px;
 }

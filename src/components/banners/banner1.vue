@@ -3,7 +3,7 @@
 		<h1 class="heading">Sample Banner</h1>
 		<h2 class="subHeading">Example of banner code generated</h2>
 		<br /><br />
-		
+
 		<h3 class="subHeading">DOM</h3>
 		<pre><code>
 			{{code}}

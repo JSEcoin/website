@@ -21,7 +21,7 @@
 		</nav>
 
 		<div id="JSEW-careers" class="wrapper row">
-			
+
 			<div class="col">
 				<h1 class="heading">{{ $t('pages.careers.section_overview.heading_careers') }}</h1>
 				<h2 class="subHeading">{{ $t('pages.careers.section_overview.subheading_careers') }}</h2>
@@ -36,7 +36,7 @@
 					{{ $t('pages.careers.section_overview.para_main3') }}
 				</p>
 
-				
+
 				<h3>{{ $t('pages.careers.section_overview.minorHeading_benefits') }}</h3>
 
 				<ul>
@@ -60,14 +60,14 @@
 				</ul>
 			</div>
 		</div>
-		
-		<div id="JSEW-bannerCareer">			
+
+		<div id="JSEW-bannerCareer">
 			<div class="center">
 				<h1 class="heading">{{ $t('pages.careers.section_banner.heading_careers') }}</h1>
 				<h2 class="subHeading">{{ $t('pages.careers.section_banner.subheading_careers') }}</h2>
 			</div>
 		</div>
-		
+
 		<div id="JSEW-ourTeamMatter" class="wrapper">
 			<div class="center">
 				<h1 class="heading">{{ $t('pages.careers.section_careers.heading_careers') }}</h1>
@@ -77,7 +77,7 @@
 			<div class="row" style="margin-top:20px;">
 				<div class="col">
 					<dl>
-						<dt><img src="../../assets/images/about/heart.png" width="100%" /></dt>
+						<dt><img src="../../assets/images/about/heart.png" width="100%" alt="JSE Heart" /></dt>
 						<dd>
 							<h3>{{ $t('pages.careers.section_careers.highlights.heading_culture') }}</h3>
 
@@ -86,11 +86,11 @@
 							</p>
 						</dd>
 					</dl>
-					
+
 				</div>
 				<div class="col">
 					<dl>
-						<dt><img src="../../assets/images/about/star.png" width="100%" /></dt>
+						<dt><img src="../../assets/images/about/star.png" width="100%" alt="JSE Star" /></dt>
 						<dd>
 							<h3>{{ $t('pages.careers.section_careers.highlights.heading_benefits') }}</h3>
 
@@ -105,7 +105,7 @@
 			<div class="row">
 				<div class="col">
 					<dl>
-						<dt><img src="../../assets/images/about/globe.png" width="100%" /></dt>
+						<dt><img src="../../assets/images/about/globe.png" width="100%" alt="JSE Globe" /></dt>
 						<dd>
 							<h3>{{ $t('pages.careers.section_careers.highlights.heading_remoteLocations') }}</h3>
 
@@ -114,11 +114,11 @@
 							</p>
 						</dd>
 					</dl>
-					
+
 				</div>
 				<div class="col">
 					<dl>
-						<dt><img src="../../assets/images/about/guy.png" width="100%" /></dt>
+						<dt><img src="../../assets/images/about/guy.png" width="100%" alt="JSE Guy" /></dt>
 						<dd>
 							<h3>{{ $t('pages.careers.section_careers.highlights.heading_people') }}</h3>
 
@@ -136,7 +136,7 @@
 				<h1 class="heading">{{ $t('pages.careers.section_questions.heading_questions') }}</h1>
 				<h2 class="subHeading">{{ $t('pages.careers.section_questions.subheading_questions') }}</h2>
 				<br /><br />
-				
+
 				<router-link class="button" v-bind:to="`/${$store.state.local}/support/contact`" tag="button">
 					<i class="fa fa-heart"></i> {{ $t('pages.careers.section_questions.button_contactUs') }}
 				</router-link>
@@ -228,7 +228,7 @@ p {
 	background-repeat: no-repeat;
 	background-size:contain;
 	width:100%;
-	height:140px;	
+	height:140px;
 	position: relative;
 	display: flex;
 }

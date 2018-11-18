@@ -1,7 +1,7 @@
 <template>
 	<div id="JSEW-wrapper">
 		<div id="JSEW-environment" class="wrapper">
-			
+
 			<h1 class="heading">{{ $t('pages.environment.heading_environment') }}</h1>
 			<h2 class="subHeading">	{{ $t('pages.environment.subheading_environment') }}</h2>
 			<p>

@@ -26,12 +26,12 @@
 						 {{ $t('pages.integration.para_main5_line1') }}
 						 <b class="infoMsg">{{ $t('pages.integration.para_main5_infoMg1') }}</b>
 						 {{ $t('pages.integration.para_main5_line2') }}
-						 <b class="infoMsg">{{ $t('pages.integration.para_main5_infoMg2') }}</b> 
+						 <b class="infoMsg">{{ $t('pages.integration.para_main5_infoMg2') }}</b>
 						 {{ $t('pages.integration.para_main5_line3') }}
 					</p>
 				</div>
 				<div class="col center">
-					<img src="../../assets/images/api.png" style="width:80%; margin-top:20px;"/>
+					<img src="../../assets/images/api.png" style="width:80%; margin-top:20px;" alt="JSEcoin API"/>
 				</div>
 			</div>
 		</div>

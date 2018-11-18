@@ -43,7 +43,7 @@
 		</div>
 
 		<div class="hr wrapper"></div>
-			
+
 		<div id="JSE-theTeam" class="wrapper">
 			<div class="row">
 				<div class="col">
@@ -58,7 +58,7 @@
 							<h4>{{ $t('pages.team.members.JB.title') }}</h4>
 							<p>
 								{{ $t('pages.team.members.JB.para_main1') }}
-							</p>								
+							</p>
 							<p>
 								{{ $t('pages.team.members.JB.para_main2') }}
 							</p>
@@ -67,7 +67,7 @@
 							</p>
 						</dd>
 					</dl>
-					
+
 				</div>
 				<div class="col">
 					<dl>
@@ -111,7 +111,7 @@
 							</p>
 						</dd>
 					</dl>
-					
+
 				</div>
 				<div class="col">
 					<dl>
@@ -126,13 +126,13 @@
 							<p>
 								{{ $t('pages.team.members.TH.para_main1_Line1') }}
 								<br />
-								{{ $t('pages.team.members.TH.para_main1_Line2') }}								
+								{{ $t('pages.team.members.TH.para_main1_Line2') }}
 							</p>
 							<p>
-								{{ $t('pages.team.members.TH.para_main2') }}		
+								{{ $t('pages.team.members.TH.para_main2') }}
 							</p>
 							<p>
-								{{ $t('pages.team.members.TH.para_main3') }}		
+								{{ $t('pages.team.members.TH.para_main3') }}
 							</p>
 						</dd>
 					</dl>
@@ -157,7 +157,7 @@
 							<p>
 								{{ $t('pages.team.members.AG.para_main2') }}
 							</p>
-							<p>	
+							<p>
 								{{ $t('pages.team.members.AG.para_main3') }}
 							</p>
 							<p>
@@ -165,7 +165,7 @@
 							</p>
 						</dd>
 					</dl>
-					
+
 				</div>
 				<div class="col">
 					<dl>
@@ -181,7 +181,7 @@
 								{{ $t('pages.team.members.MV.para_main1') }}
 							</p>
 							<p>
-								{{ $t('pages.team.members.MV.para_main2') }} 
+								{{ $t('pages.team.members.MV.para_main2') }}
 							</p>
 						</dd>
 					</dl>
@@ -250,10 +250,10 @@
 								{{ $t('pages.team.members.NI.para_main1') }}
 							</p>
 							<p>
-								{{ $t('pages.team.members.NI.para_main2') }} 
+								{{ $t('pages.team.members.NI.para_main2') }}
 							</p>
 							<p>
-								{{ $t('pages.team.members.NI.para_main3') }} 
+								{{ $t('pages.team.members.NI.para_main3') }}
 							</p>
 						</dd>
 					</dl>
@@ -295,7 +295,7 @@
 								{{ $t('pages.team.members.ASa.title') }}
 								<h5>{{ $t('pages.team.members.ASa.subTitle') }}</h5>
 							</h4>
-							
+
 							<p>
 								{{ $t('pages.team.members.ASa.para_main1') }}
 							</p>
@@ -338,7 +338,7 @@
 								{{ $t('pages.team.members.AW.para_main1') }}
 							</p>
 							<p>
-								{{ $t('pages.team.members.AW.para_main2') }} 
+								{{ $t('pages.team.members.AW.para_main2') }}
 							</p>
 							<p>
 								{{ $t('pages.team.members.AW.para_main3') }}
@@ -351,7 +351,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="hr wrapper"></div>
 
 	</div>
@@ -381,7 +381,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>	
+<style>
 #JSEW-theTeamOverview {
 	padding:30px 0px;
 	display: flex;

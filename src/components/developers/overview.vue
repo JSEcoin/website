@@ -43,7 +43,7 @@
 					<p>
 						{{ $t('pages.developerOverview.para_main3') }}
 					</p>
-				</div>			
+				</div>
 			</div>
 		</div>
 	</div>
@@ -77,7 +77,6 @@ export default {
 #JSEW-developerOverview {
 	padding:30px 0px;
 }
-
 
 
 </style>

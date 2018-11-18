@@ -1,13 +1,13 @@
-<template>	
+<template>
 	<div id="JSEW-timeLineWrapper">
 		<swiper :options="interactiveTimelineSwiper" ref="interactiveTimelineSwiper">
 			<!-- slides -->
 			<swiper-slide v-for="(n,monthIndex) in pageMonths" v-bind:key="n.text" :style="{'z-index':(monthIndex === 0)?1000:1}">
 				<ul class="timeLineWrapper">
-					<li v-for="(month, i) in displayMonth(n)">
-						
+					<li :key="i" v-for="(month, i) in displayMonth(n)">
+
 						<div class="timelineMonth">
-							<i class="slideTimeline disabled fa fa-angle-left" v-if="((n === 1) && i===0)"></i>							
+							<i class="slideTimeline disabled fa fa-angle-left" v-if="((n === 1) && i===0)"></i>
 							<i v-on:click="toSlide('interactiveTimelineSwiper',n-2)" class="slideTimeline fa fa-angle-left" v-if="((n > 1) && i===0)"></i>
 
 							<i v-on:click="toSlide('interactiveTimelineSwiper',n)" class="slideTimeline fa fa-angle-right" v-if="i===(timeline.splitMonthsBy-1)"></i>
@@ -19,15 +19,14 @@
 						</div>
 						<div class="timelineTaskList">
 							<ul class="timelineTaskListItems" v-if="((n === 1) && i===0)">
-								<li v-for="(taskRow,taskRowIndex) in timeline.tasks">
-									<div :class="{taskItem:task.type !== 'spacer'}" :style="{'min-width':task.duration*oneDay+'%',width:task.duration*oneDay+'%','margin-left':taskStartDate(task,taskRowIndex)+'%'}" v-for="(task,taskIndex) in timeline.tasks[taskRowIndex]">
+								<li :key="taskRowIndex" v-for="(taskRow,taskRowIndex) in timeline.tasks">
+									<div :key="taskIndex" :class="{taskItem:task.type !== 'spacer'}" :style="{'min-width':task.duration*oneDay+'%',width:task.duration*oneDay+'%','margin-left':taskStartDate(task,taskRowIndex)+'%'}" v-for="(task,taskIndex) in timeline.tasks[taskRowIndex]">
 										<span>{{ task.taskName }}</span>
 									</div>
 								</li>
 							</ul>
-							<div v-for="flag in timeline.flags" v-if="((n === 1) && i===0)">
-								 
-								<div :class="flag.className":style="{width: (flag.name === 'TODAY')?todayPos +'%':'0%','margin-left':(flag.name !== 'TODAY')?flag.markerPos*oneDay+'%':'0%'}">
+							<div :key="j" v-for="(flag, j) in timeline.flags" v-if="((n === 1) && i===0)">
+								<div :class="flag.className" :style="{width: (flag.name === 'TODAY')?todayPos +'%':'0%','margin-left':(flag.name !== 'TODAY')?flag.markerPos*oneDay+'%':'0%'}">
 									<div class="osLabel">{{flag.name}}</div>
 								</div>
 							</div>
@@ -52,7 +51,7 @@
 							<i class="bullet fa fa-list"></i>
 						</div>
 						<div class="timelineTaskList">
-							
+
 							<ul class="timelineTaskListItems">
 								<li>
 									<div class="taskItem" style="min-width:20%;width:20%;"><span>New Branded Identity &amp; Website</span></div>
@@ -70,7 +69,7 @@
 								<li>
 									<div class="taskItem" style="min-width:17%;width:17%;margin-left:22%"><span>Improve DB Schema - Redis</span></div>
 									<div class="taskItem" style="min-width:26%;width:26%;margin-left:39%"><span>Platform GPU Hashing Support</span></div>
-									
+
 								</li>
 								<li>
 									<div class="taskItem" style="min-width:35%;width:35%;"><span>Publisher Site Crawler</span></div>
@@ -102,7 +101,6 @@
 							</div>
 
 
-						
 						</div>
 						<div class="timelineProgress">
 							<div class="progressLabel">PROGRESS</div>
@@ -221,7 +219,7 @@
 				</ul>
 			</swiper-slide>
 			-->
-		
+
 		</swiper>
 	</div>
 </template>
@@ -231,7 +229,7 @@ import 'swiper/dist/css/swiper.css';
 import { swiper, swiperSlide } from 'vue-awesome-swiper';
 
 export default {
-	name: 'sInteractiveTimeline',
+	name: 'InteractiveTimeline',
 	components: {
 		swiper,
 		swiperSlide,
@@ -605,7 +603,7 @@ export default {
 }
 .timelineTaskListItems {
 	position: absolute;
-	z-index:10000;	
+	z-index:10000;
 	left: 0px;
 	right:0px;
 	margin:0px;

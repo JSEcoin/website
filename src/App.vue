@@ -4,7 +4,7 @@
 			<div v-if="adblockEnabled" id="JSEW-detectAdblockMask">
 				<div id="JSEW-adBlockMsg">
 					<i class="fa fa-close" v-on:click="hideAdBlockInfo"></i>
-					<img src="./assets/images/logo_jse_colour.png" style="width: 240px; margin: 20px 20px 0px 20px;" />
+					<img src="./assets/images/logo_jse_colour.png" style="width: 240px; margin: 20px 20px 0px 20px;" alt="JSEcoin Ltd Logo" />
 					<p>
 						<b>{{ $t('template.adDetection.text_title') }}</b><br />
 						{{ $t('template.adDetection.para_main1') }}
@@ -27,8 +27,8 @@
 			<div v-if="$store.state.showLanguageOptions" id="JSEW-detectLanguageMask">
 				<div id="JSEW-langMsg">
 					<i class="fa fa-close" v-on:click="hideLangInfo"></i>
-					<img src="./assets/images/logo_jse_colour.png" style="width: 240px; margin: 20px 20px 0px 20px;" />
-					
+					<img src="./assets/images/logo_jse_colour.png" style="width: 240px; margin: 20px 20px 0px 20px;" alt="JSEcoin Ltd Logo" />
+
 					<p>
 						<router-link v-bind:to="`/redirect`" tag="a" class="flag_en" v-on:click.native="hideLangInfo('en')">
 							Please choose a language you are most comfortable with.
@@ -45,7 +45,7 @@
 			<div id="JSEW-cookieDetection" :class="{active:showCookie}" v-if="showCookie && !$store.state.showMobileNav">
 				{{ $t('template.cookies.text_overview_line1') }}
 				{{ $t('template.cookies.text_overview_line2') }}
-				
+
 				<router-link v-bind:to="`/${$store.state.local}/legal/terms`" tag="a">
 					{{ $t('template.cookies.link_terms') }}
 				</router-link>.
@@ -62,7 +62,7 @@
 			<div id="JSEW-mobileNav" :class="{active:$store.state.showMobileNav}">
 				<div id="JSEW-mobileNavHeader" class="cf">
 					<router-link id="JSEW-logoColour" v-bind:to="`/${$store.state.local}/home`" tag="a">
-						<!--swap4SVG-->
+						<!--swap4SVG-->JSEcoin Ltd
 					</router-link>
 				</div>
 				<nav id="JSEW-mainMobile" class="subnavx vbx" style="height:100%;">
@@ -250,7 +250,7 @@
 				</nav>
 			</div>
 			<div id="JSEW-scrollbar"></div>
-				
+
 			<xHeader/>
 
 			<div id="JSEW-mainContent">
@@ -258,9 +258,9 @@
 			</div>
 
 			<footer>
-				<div id="JSEW-langOptions" :class="{'min':langOptMin}">	
+				<div id="JSEW-langOptions" :class="{'min':langOptMin}">
 					<div class="wrapper">
-						<i :class="{'fa-plus':langOptMin,'fa-minus':!langOptMin}" class="fa" v-on:click="toggleLangDisplay"></i>			
+						<i :class="{'fa-plus':langOptMin,'fa-minus':!langOptMin}" class="fa" v-on:click="toggleLangDisplay"></i>
 						<router-link v-bind:to="`/${item}${activeRoutePath}`" tag="a" v-for="item in $store.state.availablelocals" :key="item.id">
 							{{ $store.state.localeToNative[item] }}
 						</router-link>
@@ -424,9 +424,9 @@
 								{{ $t('template.navigation.link_signup') }} <i class="fa fa-external-link"></i>
 							</a>
 						</nav>
-					</div> 
+					</div>
 				</div>
-				
+
 				<div id="JSEW-footerInfo">
 					<div class="wrapper">
 						<div id="JSEW-footerNewsletter">
@@ -481,7 +481,7 @@
 					<div class="wrapper">
 						<div id="JSEW-copyInfo">
 							{{ $t('template.footer.copy.text_copyright') }}
-							
+
 							<router-link v-bind:to="`/${$store.state.local}/home`" tag="a">
 								JSEcoin Ltd
 							</router-link> ~ {{ $t('template.footer.copy.text_rightsReserved') }}
@@ -501,7 +501,7 @@
 				</div>
 			</footer>
 		</div>
-		
+
 		<!--<router-link v-bind:to="`/${$store.state.local}/ico`" tag="button" id="JSEW-ICOAlert" :class="{'active': showICOBadge}">
 			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" style="white-space: preserve-spaces; display:block; position:absolute; top:0px; width: 60px; margin: 50%; left: -30px; top: -26px;">
 				<g id="JSEA-rotatingLogo2" :class="{'active': animateBadge}" filter="none" transform="translate(498,507) translate(-445.503,-500.996)" style="fill: #00b1f4;">
@@ -528,7 +528,7 @@
 			<div class="txtOverlay">ICO LAUNCH</div>
 			<div id="JSEW-ICOButton" :class="{'active': showICOButton}">BUY JSE</div>
 		</router-link>-->
-		
+
 	</div>
 </template>
 
@@ -850,8 +850,8 @@ export default {
 @keyframes a1_t { 0% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 5.5555% { transform: translate(38.503px,177.996004px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 11.1111% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 38.8888% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 44.4444% { transform: translate(38.503px,177.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 50% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 77.7777% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 83.3333% { transform: translate(38.503px,177.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 88.8888% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 100% { transform: translate(-55.8px,-0.037221px) scale(1,1); } }
 @keyframes a2_t { 0% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 11.1111% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 16.6666% { transform: translate(155.500967px,182.995999px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 22.2222% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 33.3333% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 38.8888% { transform: translate(155.501px,182.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 44.4444% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 72.2222% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 77.7777% { transform: translate(155.501px,182.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 83.3333% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 100% { transform: translate(-55.8px,-0.037221px) scale(1,1); } }
 @keyframes a3_t { 0% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 5.5555% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 11.1111% { transform: translate(95.926907px,82.995999px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 16.6666% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 44.4444% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 50% { transform: translate(95.9269px,82.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 55.5555% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 66.6666% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 72.2222% { transform: translate(95.9269px,82.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 77.7777% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 100% { transform: translate(-55.8px,-0.037221px) scale(1,1); } }
- 
-		
+
+
 #JSEA-rotatingLogo2.active {
 	animation: a0_t 3.6s linear forwards;
 }
@@ -906,7 +906,7 @@ export default {
 	background-size: contain;
 	position: fixed;
 	bottom:-200px;
-	right:40px;	
+	right:40px;
 	width:100px;
 	height:155px;
 	z-index:100;
@@ -970,7 +970,7 @@ p {
 	padding: 0px 20px;
 }
 
-.infoMsg { 
+.infoMsg {
 	padding: 8px 14px;
     margin-bottom: 20px;
     text-shadow: 0 1px 0 rgba(255,255,255,0.5);
@@ -1130,7 +1130,7 @@ p .infoMsg {
 	right: 0px;
 	bottom:0px;
 	width:100%;
-	transition: left 0.2s; 
+	transition: left 0.2s;
     z-index: 100000;
 	/*border-right:solid 4px #eee;*/
 }
@@ -1189,6 +1189,8 @@ p .infoMsg {
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
+	overflow: hidden;
+	text-indent:-9999px;
 }
 
 .heading,
@@ -1229,7 +1231,7 @@ a {
 	position: relative;
 	background:#0f365a;
 	padding:10px 58px 10px 90px;
-	border-bottom:solid 6px #0c2d4e; 
+	border-bottom:solid 6px #0c2d4e;
 	color:#b7c0ca;
 	box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.5);
     z-index: 1000;
@@ -1337,7 +1339,7 @@ a {
 }
 
 #JSEW-footerNewsletterForm button:hover {
-	background: #5d5d5d;	
+	background: #5d5d5d;
 }
 .button.invert {
 	background:#fff;
@@ -1463,7 +1465,7 @@ a {
 	margin-right: 60px;
 }
 #JSE-footerLogo {
-	text-align:justify; 
+	text-align:justify;
 }
 #JSE-footerLogo img {
 	margin-left:20px;
@@ -1736,7 +1738,7 @@ header .carousel3 {
 }
 #JSEW-getStartedLinks a:hover {
 	color:#fff;
-} 
+}
 
 #JSEW-logo {
 	background-image:url("assets/images/logo_jse_white.png");
@@ -1748,6 +1750,8 @@ header .carousel3 {
 	float:left;
 	margin-top:10px;
 	margin-left:20px;
+	overflow: hidden;
+	text-indent:-9999px;
 }
 
 #JSEW-why {
@@ -1846,8 +1850,7 @@ footer {
 footer h4,
 footer a {
 	font-size:0.875em;
-} 
-
+}
 
 
 #JSEW-subHeaderNav {
@@ -2015,7 +2018,6 @@ footer a {
 }
 
 
-
 .button {
 	border:solid 4px #f2f2f2;
 	padding:15px;
@@ -2139,7 +2141,7 @@ footer a {
 
 .flexTableHeader .tdCol,
 .flexTableBody .tdCol {
-	padding: 10px 20px; 
+	padding: 10px 20px;
 	overflow: hidden;
 }
 
@@ -2149,7 +2151,7 @@ footer a {
 }
 
 .flexTableBody .infoMsg {
-	padding: 10px 20px; 
+	padding: 10px 20px;
 }
 
 
@@ -2287,14 +2289,14 @@ footer a {
 		margin-left:-85px !important;
 	}
 
-	
+
 	.enableResponsive .row.reverse {
 		flex-direction:column-reverse;
 	}
 
 	.enableResponsive #JSEW-subNav {
 		display:none;
-	} 
+	}
 
 	.enableResponsive .overlayHex {
 		width: 99px;
@@ -2319,7 +2321,7 @@ footer a {
 	}
 }
 @media screen and (max-width: 768px) {
-		
+
 	.enableResponsive #JSEW-footerPrivacy {
 		display: none;
 	}
@@ -2333,20 +2335,20 @@ footer a {
 	.enableResponsive #JSEW-copy {
 		text-align: center
 	}
-	
+
 	.enableResponsive #JSEW-footerCompanyInfo {
 		margin:0px 20px;
 		padding:0px 0px 0px 30px;
 	}
-	
+
 	.enableResponsive #JSEW-footerCompanyInfoBar #JSEW-footerCompanyInfo,
 	.enableResponsive #JSEW-footerCompanyInfoBar #JSEW-officeAddress {
-		float:none;	
+		float:none;
 		display: inline-block;
 	}
 	.enableResponsive #JSEW-copy #JSEW-copyInfo,
 	.enableResponsive #JSEW-copy #JSEW-socialLinks {
-		float:none;	
+		float:none;
 		display: inline-block;
 	}
 	.enableResponsive #JSEW-sectionHighlights dt {
@@ -2419,7 +2421,7 @@ footer a {
 	.enableResponsive #JSEW-langMsg {
 		max-height: 384px;
 	}
-	
+
 	#JSEW-ICOAlert {
 		right: 10px;
 	}
@@ -2464,7 +2466,7 @@ footer a {
 	.enableResponsive .flexTableBody {
 		margin:20px;
 		border: solid 1px #eee;
-		border-radius: 10px;	
+		border-radius: 10px;
 		display: block;
 		padding:10px 0px;
 	}

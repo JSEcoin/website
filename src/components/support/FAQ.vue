@@ -20,7 +20,7 @@
 					{{ $t('pages.FAQ.link_getInTouch') }}
 				</router-link>
 			</h2>
-			
+
 			<div class="row" style="padding:30px 0px;">
 				<div id="JSEW-faqOptions" class="col">
 					<div class="faqSection" :class="{active:activeFAQSection === 'generalEnquiries'}" v-on:click="activeSection('generalEnquiries')">
@@ -103,7 +103,7 @@
 								</router-link>.
 							</p>
 						</div>
-						
+
 						<div is="xBasicToggle">
 							<h3 class="faqItem"><i class="fa fa-plus-circle"></i> {{ $t('pages.FAQ.section_general.faqItemHeading6') }}</h3>
 							<p>
@@ -125,7 +125,6 @@
 								</ol>
 							</p>
 						</div>
-						
 
 
 						<!--<div is="xBasicToggle">
@@ -150,7 +149,6 @@
 						</div>
 						<!--xICO/Exchange Listing/Wallet-->
 					</div>
-						
 
 
 					<div v-if="activeFAQSection === 'webmasters'">
@@ -162,18 +160,18 @@
 							<h3 class="faqItem"><i class="fa fa-plus-circle"></i> {{ $t('pages.FAQ.section_webmasters.faqItemHeading1') }}</h3>
 							<p>
 								{{ $t('pages.FAQ.section_webmasters.faqItemContent1') }}
-								<a href="https://platform.jsecoin.com" target="_BLANK">https://platform.jsecoin.com</a> 
+								<a href="https://platform.jsecoin.com" target="_BLANK">https://platform.jsecoin.com</a>
 								{{ $t('pages.FAQ.section_webmasters.faqItemContent1_2') }}
 							</p>
 							<p>
 								{{ $t('pages.FAQ.section_webmasters.faqItemContent1_para2') }}
 							</p>
-						</div>					
+						</div>
 						<div is="xBasicToggle">
 							<h3 class="faqItem"><i class="fa fa-plus-circle"></i>  {{ $t('pages.FAQ.section_webmasters.faqItemHeading2') }}</h3>
 							<p>
 								{{ $t('pages.FAQ.section_webmasters.faqItemContent2') }}
-								
+
 								<router-link v-bind:to="`/${$store.state.local}/videos/wordpress-plugin-available`" tag="a" >
 									{{ $t('pages.FAQ.section_webmasters.link_wordpress') }}
 								</router-link>
@@ -223,7 +221,7 @@
 							<p>
 								{{ $t('pages.FAQ.section_webmasters.faqItemContent8_para2') }} <br />
 								{{ $t('pages.FAQ.section_webmasters.faqItemContent8_para2_line2') }}
-								
+
 								<router-link v-bind:to="`/${$store.state.local}/legal/privacyPolicy`" tag="a" >
 									{{ $t('pages.FAQ.section_webmasters.link_privacyPolicy') }}
 								</router-link>.
@@ -240,8 +238,6 @@
 						</div>
 						<!--xPublisher mining-->
 					</div>
-
-						
 
 
 					<div v-if="activeFAQSection === 'exchanges'">
@@ -274,9 +270,6 @@
 						</div>
 						<!--xLiquidity-->
 					</div>
-
-
-						
 
 
 					<div v-if="activeFAQSection === 'users'">
@@ -319,8 +312,6 @@
 					</div>
 
 
-
-
 					<div v-if="activeFAQSection === 'platform'">
 						<h1 class="heading">{{ $t('pages.FAQ.section_thePlatform.heading_thePlatform') }}</h1>
 						<h2 class="subHeading">{{ $t('pages.FAQ.section_thePlatform.subheading_thePlatform') }}</h2>
@@ -353,7 +344,7 @@
 								{{ $t('pages.FAQ.section_thePlatform.faqItemContent2') }}
 								<router-link v-bind:to="`/${$store.state.local}/support/community`" tag="a" >
 									https://jsecoin.com/support/community
-								</router-link> 
+								</router-link>
 							</p>
 						</div>
 						<div is="xBasicToggle">
@@ -422,8 +413,6 @@
 					</div>
 
 
-
-
 					<div v-if="activeFAQSection === 'affiliates'">
 						<h1 class="heading">{{ $t('pages.FAQ.section_affiliates.heading_affiliates') }}</h1>
 						<h2 class="subHeading">{{ $t('pages.FAQ.section_affiliates.subheading_affiliates') }}</h2>
@@ -439,7 +428,7 @@
 							<h3 class="faqItem"><i class="fa fa-plus-circle"></i> {{ $t('pages.FAQ.section_affiliates.faqItemHeading2') }}</h3>
 							<p>
 								The referral program is open to change.<br />
-								For full details regarding payments and terms regarding qualifying referrals please visit the Referrals page of the platform at <a href="https://platform.jsecoin.com">https://platform.jsecoin.com</a> 
+								For full details regarding payments and terms regarding qualifying referrals please visit the Referrals page of the platform at <a href="https://platform.jsecoin.com">https://platform.jsecoin.com</a>
 							</p>
 						</div>
 						<div is="xBasicToggle">
@@ -465,7 +454,7 @@
 				</div>
 			</div>
 		</div>
-	
+
 
 	</div>
 </template>
@@ -619,11 +608,11 @@ export default {
 	}
 }
 @media screen and (max-width: 768px) {
-	
+
 	.enableResponsive .faqSection {
 		/*min-width: 220px;
     	width: 200px;*/
-		
+
 		min-width: 120px;
 		width: 100px;
 		font-size: 0.5em;

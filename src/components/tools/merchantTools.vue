@@ -1,7 +1,7 @@
 <template>
 	<div id="JSEW-wrapper">
 		<div id="JSEW-webmasterOverview" class="wrapper">
-			
+
 			<h1 class="heading">{{ $t('pages.merchantTools.heading_merchantTools') }}</h1>
 			<h2 class="subHeading">{{ $t('pages.merchantTools.subheading_merchantTools') }}</h2>
 
@@ -26,9 +26,9 @@
 			<p>
 				{{ $t('pages.merchantTools.para_main2') }}
 			</p>
-		
+
 			<img src="../../assets/images/merchant_tools.png" alt="Merchant Tools Screenshot" class="merchant-tools-screenshot" />
-			
+
 		</div>
 	</div>
 </template>

@@ -1,6 +1,6 @@
 <template>
 	<div id="JSEW-wrapper">
-		<div id="JSE-blogPost"> 
+		<div id="JSE-blogPost">
 			<div class="wrapper">
 				<div class="postcard" v-if="single && single.content">
 					<h1 v-html="single.title.rendered"></h1>
@@ -12,7 +12,7 @@
 						</div>
 
 						<div class="is-pulled-right single-date">{{new Date(single.date).toDateString()}}</div>
-						
+
 						<div class="card-content">
 							<div v-html="single.content.rendered"></div>
 							<p class="is-clearfix"></p>

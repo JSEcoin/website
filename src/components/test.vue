@@ -60,10 +60,10 @@
 								</div>
 							</div>
 							<section class="options delivery_order__options">
-								<stf-select-option  
+								<stf-select-option
 									v-for="item of job" :key="item.id"
 									:value="item"
-									:class="{'stf-select-option_selected': item.id === (jobType && jobType.id), 'showOption': item.id === (jobType && jobType.id)}" 
+									:class="{'stf-select-option_selected': item.id === (jobType && jobType.id), 'showOption': item.id === (jobType && jobType.id)}"
 								>
 								<span>{{item.text}}</span>
 								</stf-select-option>
@@ -83,10 +83,10 @@
 								<input @input="onsearch">
 							</div>
 							<section class="options delivery_order__options">
-								<stf-select-option  
+								<stf-select-option
 									v-for="item of listFinded" :key="item.id"
 									:value="item"
-									:class="{'stf-select-option_selected': item.id === (value && value.id)}" 
+									:class="{'stf-select-option_selected': item.id === (value && value.id)}"
 								>
 									<span>{{item.text}} (<small>{{item.address}}</small>)</span>
 								</stf-select-option>
@@ -94,11 +94,11 @@
 						</stf-select>
 					</label>
 
-	<!--				
+	<!--
 					<div class="hr hrInfo"><span>Refine Summary</span></div>
 	-->
-					
-					
+
+
 					<div class="hr hrInfo"><span>Description - text only</span></div>
 
 					<label :class="{show:form.message.displayLabel, error:form.message.flag}">
@@ -111,7 +111,7 @@
 					</div>
 
 					<div class="hr hrInfo"><span>Attachment - single zip file</span></div>
-					
+
 					<vue-transmit class="dropHere"
 						:class="{highlight:highlightDropBox}"
 						tag="section"
@@ -123,27 +123,27 @@
 						@drag-leave="highlight(false)"
 						@drag-end="highlight(false)"
 						@drop="highlight(false)"
-						@accept-complete="fileAccepted"	
+						@accept-complete="fileAccepted"
 						@timeout="uploadTimeout"
 						@success="uploadSuccess"
 						@error="uploadError"
 						@upload-progress="uploadprogress"
 						@total-upload-progress="uploadprogress"
 						@complete="completedUpload"
-						@complete-multiple="completedUpload"	
+						@complete-multiple="completedUpload"
 						@sending="sendingTask"
-						@sending-multiple="sendingTask"	
+						@sending-multiple="sendingTask"
 					>
-						
+
 						<p v-if="filename.length === 0">
 							<i class="fa fa-file-archive-o"></i><br />
-							Drag and drop a zip file 
+							Drag and drop a zip file
 						</p>
 						<p v-else>
 							{{filename}} ({{filesize}})
 						</p>
 						<!--
-							
+
 						<div class="d-flex align-items-center justify-content-center w-100"
 								style="height:50vh; border-radius: 1rem;">
 							<button class="btn btn-primary"
@@ -154,7 +154,7 @@
 						<!--<template slot="files" scope="props">
 							<div v-for="(file, i) in props.files" :key="file.id" :class="{'mt-5': i === 0}">
 								<div class="media">
-									<img :src="file.dataUrl" class="img-fluid d-flex mr-3">
+									<img :src="file.dataUrl" class="img-fluid d-flex mr-3" alt="Submit File Icon">
 									<div class="media-body">
 										<h3>{{ file.name }}</h3>
 										<div class="progress" style="width: 50vw;">
@@ -167,8 +167,8 @@
 							</div>
 						</template>-->
 					</vue-transmit>
-					
-					
+
+
 					<div class="hr"></div>
 
 					<button class="button" type="submit">Submit</button>

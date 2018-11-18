@@ -13,7 +13,7 @@
 				</router-link>
 			</ul>
 		</nav>
-			
+
 		<div id="JSEW-bugBounty" class="wrapper">
 			<div class="row">
 				<div class="col center">
@@ -28,7 +28,7 @@
 					<p>
 						{{ $t('pages.bugBounty.section_overview.para_main2') }}
 					</p>
-					<p>	
+					<p>
 						{{ $t('pages.bugBounty.section_overview.para_main3') }}
 					</p>
 					<p>
@@ -54,7 +54,7 @@
 					<!--{{ $t('pages.bugBounty.section_leaderBoard.para_main1_line2') }}-->
 				</p>
 
-			
+
 				<div class="flexTable left" style="background:#fff;">
 					<div class="flexTableHeader">
 						<div class="tdCol">
@@ -151,7 +151,7 @@
 			</ul>
 
 			<h2 class="subHeading">{{ $t('pages.bugBounty.section_rules.subheading_forUs') }}</h2>
-			
+
 			<ul>
 				<li>
 					{{ $t('pages.bugBounty.section_rules.list_forUs1') }}
@@ -165,7 +165,7 @@
 			</ul>
 
 			<h2 class="subHeading">{{ $t('pages.bugBounty.section_rules.subheading_doesNotQualify') }}</h2>
-			
+
 			<ul>
 				<li>
 					{{ $t('pages.bugBounty.section_rules.list_doesNotQualify1') }}
@@ -226,7 +226,7 @@
 					<p>
 
 					</p>
-					
+
 					<a href="https://platform.jsecoin.com" target="_BLANK">
 						<h2 class="subHeading">JSE {{ $t('pages.bugBounty.section_openBounties.subheading_user_miningPlatform') }}</h2>
 						<h3 class="subsubHeading">https://platform.jsecoin.com</h3>
@@ -234,7 +234,7 @@
 					<p>
 
 					</p>
-					
+
 					<a href="https://api.jsecoin.com" target="_BLANK">
 						<h2 class="subHeading">JSE {{ $t('pages.bugBounty.section_openBounties.subheading_API') }}</h2>
 						<h3 class="subsubHeading">https://api.jsecoin.com</h3>
@@ -253,7 +253,7 @@
 					<p>
 
 					</p>
-					
+
 					<a href="https://developer.jsecoin.com" target="_BLANK">
 						<h2 class="subHeading">JSE {{ $t('pages.bugBounty.section_openBounties.subheading_developerPlatform') }}</h2>
 						<h3 class="subsubHeading">https://developer.jsecoin.com</h3>
@@ -262,7 +262,7 @@
 					<p>
 
 					</p>
-					
+
 					<a href="https://load.jsecoin.com" target="_BLANK">
 						<h2 class="subHeading">JSE {{ $t('pages.bugBounty.section_openBounties.subheading_loadServer') }}</h2>
 						<h3 class="subsubHeading">https://load.jsecoin.com</h3>
@@ -272,7 +272,7 @@
 
 					</p>
 				</div>
-			</div>		
+			</div>
 		</div>
 
 		<div id="JSEW-rewards" class="wrapper">
@@ -299,7 +299,7 @@
 				<h1 class="heading">{{ $t('pages.bugBounty.section_submitABug.heading_rewards') }}</h1>
 				<h2 class="subHeading">{{ $t('pages.bugBounty.section_submitABug.subheading_rewards') }}</h2>
 				<br /><br />
-				
+
 				<router-link v-bind:to="`/${$store.state.local}/oddJobs/submitInfo`" tag="button" class="button">
 					<i class="fa fa-bug"></i> {{ $t('pages.bugBounty.section_submitABug.button_submissionForm') }}
 				</router-link>
@@ -333,7 +333,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>	
+<style>
 
 #JSEW-bugBounty,
 #JSEW-bugLeaderBoard,

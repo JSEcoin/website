@@ -35,13 +35,13 @@
 			<div class="hex-brick h2"></div>
 			<div class="hex-brick h3"></div>
 		</div>
-		
+
 		<div class="gel c7 r2">
 			<div class="hex-brick h1"></div>
 			<div class="hex-brick h2"></div>
 			<div class="hex-brick h3"></div>
 		</div>
-		
+
 		<div class="gel c8 r2">
 			<div class="hex-brick h1"></div>
 			<div class="hex-brick h2"></div>
@@ -187,7 +187,7 @@
 			<div class="hex-brick h2"></div>
 			<div class="hex-brick h3"></div>
 		</div>
-		
+
 	</div>
 </template>
 
@@ -239,7 +239,7 @@ animation-name: fade;
 
 .gel{
 	height: 30px;
-	width: 30px;	
+	width: 30px;
 	transition: all .3s;
 	-webkit-transition: all .3s;
 	position: absolute;
@@ -250,7 +250,7 @@ left: 50%;
 .center-gel{
 	margin-left: -15px;
 	margin-top: -15px;
-	
+
 	animation-name: pulse;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
@@ -515,12 +515,12 @@ left: 50%;
 		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
-	
+
 	50%{
 		-webkit-transform: scale(0.01);
 		transform: scale(0.01);
 	}
-	
+
 	100%{
 		-webkit-transform: scale(1);
 		transform: scale(1);
@@ -531,11 +531,11 @@ left: 50%;
 	0%{
 		background: #ABF8FF;
 	}
-	
+
 	50%{
 		background: #90BBBF;
 	}
-	
+
 	100%{
 		background: #ABF8FF;
 	}
@@ -546,12 +546,12 @@ left: 50%;
 		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
-	
+
 	50%{
 		-webkit-transform: scale(0.01);
 		transform: scale(0.01);
 	}
-	
+
 	100%{
 		-webkit-transform: scale(1);
 		transform: scale(1);
@@ -562,11 +562,11 @@ left: 50%;
 	0%{
 		background: #ABF8FF;
 	}
-	
+
 	50%{
 		background: #389CA6;
 	}
-	
+
 	100%{
 		background: #ABF8FF;
 	}

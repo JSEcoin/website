@@ -13,11 +13,11 @@
 				</router-link>
 			</ul>
 		</nav>
-		
+
 		<div  id="JSEW-community" class="center">
 			<h1 class="heading">{{ $t('pages.community.heading_community') }}</h1>
 			<h1 class="subHeading">{{ $t('pages.community.subheading_community') }}</h1>
-			
+
 			<nav class="centerFlex">
 				<ul id="JSEW-communityLinks">
 					<li><a target="_blank" title="Facebook" href="https://www.facebook.com/JSEcoin-494968414186643/"><img src="../../assets/images/ico_facebook.png" alt="Facebook logo button" /></a></li>

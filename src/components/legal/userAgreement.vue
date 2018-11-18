@@ -15,7 +15,7 @@
 		</nav>
 
 		<div id="JSEW-userAgreement" class="wrapper">
-			
+
 		</div>
 	</div>
 </template>

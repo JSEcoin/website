@@ -1,19 +1,19 @@
 <template>
 	<div id="JSEW-wrapper">
-		
+
 		<router-link id="JSEW-globalStatsBar" class="hasLink" v-bind:to="`/${$store.state.local}/technical/stats`" tag="div">
 			<div id="JSEW-globalStatsButton">
 				<button>{{ $t('pages.home.button_viewGlobalStats') }}</button>
-			</div>		
-			
+			</div>
+
 			<miniStat />
 		</router-link>
 
-		
+
 		<div id="JSEW-overview" class="wrapper">
 			<h1 class="heading center">{{ $t('pages.home.section_overview.heading_overview') }}</h1>
 			<h3 class="subHeading center">{{ $t('pages.home.section_overview.subheading_overview') }}</h3>
-			
+
 			<div id="JSEW-sectionHighlights">
 				<div class="row">
 					<div class="col">
@@ -84,17 +84,17 @@
 						<p>
 							{{ $t('pages.home.section_browserMining.para_main2') }}
 						</p>
-						<p>	
+						<p>
 							{{ $t('pages.home.section_browserMining.para_main3') }}
 						</P>
-						
+
 						<div class="center">
-							<a href="https://platform.jsecoin.com" style="display:inline-block;" class="button" target="_BLANK"><i class="fa fa-universal-access"></i> {{ $t('pages.home.section_browserMining.button_tryit') }}</a>							
+							<a href="https://platform.jsecoin.com" style="display:inline-block;" class="button" target="_BLANK"><i class="fa fa-universal-access"></i> {{ $t('pages.home.section_browserMining.button_tryit') }}</a>
 							<!--<button class="button"><i class="fa fa-youtube-play"></i> {{ $t('pages.home.section_browserMining.button_watchVideo') }}</button>-->
 						</div>
 					</div>
 					<div class="col center">
-						
+
 						<img src="../assets/images/miner.png" style="width:70%" :alt="$t('pages.home.section_browserMining.alt_miner')" />
 
 					</div>
@@ -106,20 +106,23 @@
 			<div class="wrapper">
 				<div id="JSEW-pubPlatMiningContent" class="row">
 					<div class="col">
-						<div class="wingLeft"></div>
-						<div class="wingRight"></div>
-						
-						<swiper :options="swiperOption2" ref="mySwiper2">
+						<div class="center">
+							<img src="../assets/images/carousel/1.png" width="400" class="browserScreens" :alt="$t('pages.home.section_pubPlatMining.alt_newMiningPlatform')" />
+						</div>
+						<!--<div class="wingLeft"></div>
+						<div class="wingRight"></div>-->
+
+						<!--<swiper :options="swiperOption2" ref="mySwiper2">-->
 							<!-- slides -->
+							<!--
 							<swiper-slide class="center"><img src="../assets/images/carousel/1.png" width="400" class="browserScreens" :alt="$t('pages.home.section_pubPlatMining.alt_newMiningPlatform')" /></swiper-slide>
 							<swiper-slide class="center"><img src="../assets/images/carousel/2.png" width="400" class="browserScreens" :alt="$t('pages.home.section_pubPlatMining.alt_existingLoginScreen')" /></swiper-slide>
-							<swiper-slide class="center"><img src="../assets/images/carousel/3.png" width="400" class="browserScreens" :alt="$t('pages.home.section_pubPlatMining.alt_existingMiningPlatform')" /></swiper-slide>
-						</swiper>
+							<swiper-slide class="center"><img src="../assets/images/carousel/3.png" width="400" class="browserScreens" :alt="$t('pages.home.section_pubPlatMining.alt_existingMiningPlatform')" /></swiper-slide>-->
+						<!--</swiper>-->
 						<!-- Optional controls -->
 						<div class="swiper-paginationWrapper">
 							<div class="swiper-pagination2"  slot="pagination"></div>
 						</div>
-
 
 
 					</div>
@@ -130,10 +133,10 @@
 						<p>
 							{{ $t('pages.home.section_pubPlatMining.para_main1') }}
 						</p>
-						<p>	
+						<p>
 							{{ $t('pages.home.section_pubPlatMining.para_main2') }}
 						</p>
-						<p>	
+						<p>
 							{{ $t('pages.home.section_pubPlatMining.para_main3') }}
 						</p>
 						<div class="centerx">
@@ -146,10 +149,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
-
 
 
 		<div id="JSEW-env">
@@ -188,7 +187,7 @@
 				<h3 class="subHeading center">{{ $t('pages.home.section_eco.subheading_eco') }}</h3>
 			</div>
 			<div style="width: 100%; text-align: center;">
-				<img src="../assets/images/ecosystem.png" style="width:100%; max-width: 800px; margin: 30px auto;" />
+				<img src="../assets/images/ecosystem.png" style="width:100%; max-width: 800px; margin: 30px auto;"  alt="JSE Ecosystem"/>
 				<br>
 				<router-link v-bind:to="`/${$store.state.local}/technical/ecosystem`" tag="button" style="display:inline-block; margin-bottom:40px;" class="button">
 					<i class="fa  fa-line-chart"></i> {{ $t('pages.home.section_eco.button_eco') }}
@@ -196,18 +195,18 @@
 			</div>
 		</div>
 
-		<div id="JSEW-timeLine">
+		<!--<div id="JSEW-timeLine">
 			<div class="wrapper">
 				<h2 class="heading center">{{ $t('pages.home.section_timeline.heading_timeline') }}</h2>
 				<h3 class="subHeading center">{{ $t('pages.home.section_timeline.subheading_timeline') }}</h3>
 			</div>
-			
+
 			<interactiveTimeline/>
-			
+
 			<router-link v-bind:to="`/${$store.state.local}/timeline`" tag="button" class="button">
 				<i class="fa fa-calendar"></i> {{ $t('pages.home.section_timeline.button_viewDetailedTimeline') }}
 			</router-link>
-		</div>
+		</div>-->
 
 		<div id="JSEW-team">
 			<h2 class="heading center">{{ $t('pages.home.section_team.heading_team') }}</h2>
@@ -272,7 +271,7 @@
 						<li><a target="_blank" title="YouTube" href="https://www.youtube.com/channel/UCHtIF9KggJn9TDzr8pRYsYA"><img src="../assets/images/ico_youtube.png" alt="YouTube logo button" /></a></li>
 					</ul>
 				</nav>
-				
+
 				<a href="/forums/" class="button" style="display:inline-block;"><i class="fa fa-group"></i> {{ $t('pages.home.section_community.button_DontForgetForums') }}</a>
 			</div>
 		</div>
@@ -290,7 +289,7 @@
 						<p>
 							{{ $t('pages.home.section_charity.para_main1') }}
 						</p>
-						
+
 
 						<div id="JSEW-thermo">
 							<div id="JSEW-thermoCoin"></div>
@@ -324,7 +323,6 @@
 		</div>
 
 
-
 		<!--
 		<div id="JSEW-solutions">
 			<div class="wrapper">
@@ -332,7 +330,7 @@
 				<h3 class="subHeading center">Merchant Tools, OFFLINE WALLET, Developer API, BlockChain Explorer</h3>
 
 				<swiper :options="swiperOption3" ref="mySwiper3" @slideChange="onSlideChange">
-			
+
 					<swiper-slide>
 						<div class="row">
 							<div class="col center">
@@ -341,7 +339,7 @@
 							<div class="col">
 								<h2 class="heading">JSE Blockchain Explorer</h2>
 								<p>
-									Visit the online blockchain page - here you can view the content of individual JSE blocks and 
+									Visit the online blockchain page - here you can view the content of individual JSE blocks and
 									transactions and the transaction histories and balances of addresses, as well as keeping up to date with daily stats.
 								</p>
 
@@ -383,7 +381,7 @@
 							<div class="col">
 								<h2 class="heading">Wallet</h2>
 								<p>
-									Full integration with Ethereum Based wallets enable you to securely store and quickly send your tokens in a decentralised environment. 
+									Full integration with Ethereum Based wallets enable you to securely store and quickly send your tokens in a decentralised environment.
 								</p>
 
 								<p>
@@ -394,7 +392,7 @@
 							</div>
 						</div>
 					</swiper-slide>
-							
+
 					<div class="swiper-button-prev" slot="button-prev"></div>
 					<div class="swiper-button-next" slot="button-next"></div>
 				</swiper>
@@ -415,10 +413,10 @@
 //import axios from 'axios';
 //import numeral from 'numeral';
 //import numeralen from 'numeral/locales/en-gb';
-import 'swiper/dist/css/swiper.css';
-import { swiper, swiperSlide } from 'vue-awesome-swiper';
+//import 'swiper/dist/css/swiper.css';
+//import { swiper, swiperSlide } from 'vue-awesome-swiper';
 import miniStat from './segment/miniStat';
-import interactiveTimeline from './segment/interactiveTimeline';
+//import interactiveTimeline from './segment/interactiveTimeline';
 
 export default {
 	name: 'home',
@@ -429,10 +427,10 @@ export default {
 		};
 	},
 	components: {
-		swiper,
-		swiperSlide,
+		//swiper,
+		//swiperSlide,
 		miniStat,
-		interactiveTimeline,
+		//interactiveTimeline,
 	},
 	data() {
 		return {
@@ -850,7 +848,7 @@ export default {
 	border-radius:0px 0px 6px 6px;
 	font-size:0.8em;
 	color:#fff;
-	text-align:center;	
+	text-align:center;
     white-space: nowrap;
     padding: 0px 10px;
 }

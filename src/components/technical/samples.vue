@@ -30,12 +30,12 @@
 				-->
 			</ul>
 		</nav>
-		
+
 		<div id="JSEW-samples" class="wrapper center">
 			<p class="infoMsg">
 				{{ $t('pages.samples.para_infoMsg_line1') }}<br />
 				{{ $t('pages.samples.para_infoMsg_line2') }}
-				
+
 				<router-link v-bind:to="`/blog/development`">
 					{{ $t('pages.samples.link_oldBlogPosts') }}
 				</router-link>.
@@ -68,7 +68,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>	
+<style>
 
 #JSEW-support {
 	padding: 30px 0px;

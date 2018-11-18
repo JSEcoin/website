@@ -19,7 +19,7 @@
 				</router-link>
 			</ul>
 		</nav>
-					
+
 		<div id="JSEW-ourVision" class="wrapper row">
 
 			<div class="col">
@@ -76,7 +76,6 @@ export default {
 #JSEW-ourVision {
 	padding:30px 0px;
 }
-
 
 
 </style>

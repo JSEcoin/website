@@ -51,7 +51,7 @@
 						{{ $t('pages.webmastersOverview.para_main3') }}
 					</p>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</div>
 </template>

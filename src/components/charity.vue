@@ -20,13 +20,13 @@
 				{{ $t('pages.charity.para_main4') }}
 			</p>
 		</div>
-		
+
 		<div id="JSEW-shop" style="padding-bottom:30px;">
 			<div class="center">
 				<h1 class="heading">Donate</h1>
 				<h2 class="subHeading">Purchase some swag and give something back to charity</h2>
 				<br /><br />
-				
+
 				<a class="button" style="display:inline-block;" href="/shop" target="_BLANK">
 					<i class="fa fa-heart"></i> Shop and Donate
 				</a>

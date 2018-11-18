@@ -29,13 +29,13 @@
 				<p>
 					{{ $t('pages.smallJobs.para_promo') }}
 				</p>
-				
+
 				<h3 class="heading">{{ $t('pages.smallJobs.heading_affiliate') }}</h3>
 				<h4 class="subHeading">{{ $t('pages.smallJobs.subheading_affiliate') }}</h4>
 				<p>
 					{{ $t('pages.smallJobs.para_affiliate') }}
 				</p>
-				
+
 				<h3 class="heading">{{ $t('pages.smallJobs.heading_findBugs') }}</h3>
 				<h4 class="subHeading">{{ $t('pages.smallJobs.subheading_findBugs') }}</h4>
 				<p>
@@ -46,7 +46,7 @@
 					<br /><br /><br />
 					<h3 class="heading">Additional Tasks</h3>
 					<h4 class="subHeading">Help us to grow</h4>
-					
+
 					<div class="flexTable">
 						<div class="flexTableHeader">
 							<div class="tdCol">
@@ -82,7 +82,7 @@
 							<div class="tdCol">
 								<p>
 									If you spot a graphical issue or bug on a browser please report it.  <br />
-									We are actively testing Chrome, Firefox, Edge, Safari and Opera but we do miss things. 
+									We are actively testing Chrome, Firefox, Edge, Safari and Opera but we do miss things.
 								</p>
 								<p>
 									Feel free to report the issue on any of the latest Browsers - older browsers will not be viable for rewards.
@@ -121,7 +121,7 @@
 							</div>
 							<div class="tdCol">
 								<p>
-									We are looking for help to make our site multilingual.<br /> 
+									We are looking for help to make our site multilingual.<br />
 									To do this we need your help translating the following English internationalisation file <a href="/static/locale/locale-en.zip">locale-en</a>.
 								</p>
 								<p>
@@ -143,7 +143,7 @@
 									<li>Slovenian - In Progress</li>
 									<li>Finnish - In Progress</li>
 								</ul>
-								
+
 								<p class="infoMsg">
 									<b>Note:</b> We are looking for native speakers!<br /><br />
 									Please do not run this file through a translator tool like google translate as we will be validating and approving the content submitted.<br />
@@ -183,20 +183,20 @@
 								</ul>
 							</div>
 							<div class="tdCol">
-								JSE based on contribution level 
+								JSE based on contribution level
 							</div>
-						</div>	
-					</div>	
-				</div>	
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>		
+		</div>
 
 		<div id="JSEW-submitABug" v-if="$store.state.local === 'en'">
 			<div class="wrapper center">
 				<h1 class="heading">SUBMIT A JOB</h1>
 				<h2 class="subHeading">COMPLETED A JOB OR WANT TO LET US KNOW YOU ARE WORKING ON ONE?</h2>
 				<br /><br />
-				
+
 				<router-link v-bind:to="`/${$store.state.local}/oddJobs/submitInfo`" tag="button" class="button">
 					<i class="fa fa-bug"></i> Head over to our Bugs/Jobs submission form
 				</router-link>
@@ -229,7 +229,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>	
+<style>
 #JSEW-smallJobs {
 	padding:30px 0px;
 }

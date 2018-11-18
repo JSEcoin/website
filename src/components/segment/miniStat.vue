@@ -1,4 +1,4 @@
-<template>	
+<template>
 	<div id="JSEW-globalStats" class="row">
 		<div class="col" v-if="stats.status === 'loading'">
 			<dl>
@@ -102,7 +102,7 @@ export default {
 	align-items: center;
     flex-direction: column;
 	border-bottom:solid 1px #eee;
-	transition:background 0.2s;	
+	transition:background 0.2s;
 }
 
 #JSEW-globalStatsBar.hasLink {

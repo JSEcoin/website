@@ -33,7 +33,7 @@
 
 		<div id="JSEW-APIIntro" class="wrapper">
 			<div class="row">
-				<div class="col">	
+				<div class="col">
 					<h1 class="heading">{{ $t('pages.APIS.heading_about') }}</h1>
 					<h2 class="subHeading">{{ $t('pages.APIS.subheading_about') }}</h2>
 					<p>
@@ -47,11 +47,11 @@
 					<p class="infoMsg">
 						{{ $t('pages.APIS.para_main3_line1') }}<br />
 						{{ $t('pages.APIS.para_main3_line2') }}
-						
+
 						<router-link v-bind:to="`/blog/development`">
 							{{ $t('pages.APIS.link_oldBlogPosts') }}
-						</router-link>.	
-					</p> 
+						</router-link>.
+					</p>
 				</div>
 				<div class="col center">
 					<img src="../../assets/images/code.png" style="width:60%; margin-top:20px;"  :alt="$t('pages.APIS.alt_api')" />
@@ -85,7 +85,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>	
+<style>
 
 
 #JSEW-APIIntro {

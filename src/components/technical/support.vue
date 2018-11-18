@@ -28,7 +28,7 @@
 
 		<div id="JSEW-support" class="wrapper">
 			<div class="row">
-				<div class="col">	
+				<div class="col">
 					<h1 class="heading">{{ $t('pages.support.heading_support') }}</h1>
 					<h2 class="subHeading">{{ $t('pages.support.subheading_support') }}</h2>
 					<p>
@@ -41,7 +41,7 @@
 					</p>
 				</div>
 				<div class="col left">
-					
+
 				</div>
 			</div>
 		</div>
@@ -72,7 +72,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>	
+<style>
 #JSEW-support {
 	padding: 30px 0px;
 }

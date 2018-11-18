@@ -149,10 +149,10 @@ const store = new Vuex.Store({
 						params.page = 1;
 					}
 
-					if (state.categories &&
-						state.categories.length > 0 &&
-						state.categories[0].slug === params.categorySlug &&
-						state.page === params.page) {
+					if (state.categories
+						&& state.categories.length > 0
+						&& state.categories[0].slug === params.categorySlug
+						&& state.page === params.page) {
 						return false;
 					}
 
@@ -181,8 +181,8 @@ const store = new Vuex.Store({
 					commit,
 					state,
 				}, postSlug) => {
-					if (state.single &&
-						state.single.slug === postSlug) {
+					if (state.single
+						&& state.single.slug === postSlug) {
 						return false;
 					}
 

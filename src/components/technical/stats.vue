@@ -1,6 +1,6 @@
 <template>
 	<div id="JSEW-wrapper">
-		
+
 		<nav id="JSEW-subHeaderNav">
 			<ul class="wrapper">
 				<router-link v-bind:to="`/${$store.state.local}/technical/overview`" tag="li">
@@ -39,7 +39,7 @@
 		<div id="JSEW-stats" class="wrapper center">
 			<h1 class="heading">{{ $t('pages.stats.section_map.heading_stats') }}</h1>
 			<h2 class="subHeading">{{ $t('pages.stats.section_map.subheading_stats') }}</h2>
-			
+
 			<div class="row left" style="margin-top:30px;">
 				<div id="JSEW-mapGFX" class="col center">
 					<img src="../../assets/images/technical/map.png" width="90%" :alt="$t('pages.stats.section_map.alt_map')" />
@@ -61,7 +61,7 @@
 			</div>
 
 		</div>
-		
+
 		<div id="JSEW-CPUOverview" class="center">
 			<a class="button" style="display:inline-block;" href="https://blockchain.jsecoin.com/#/Charts" target="_blank">Graphical Overview</a><br><br>
 			<p class="infoMsg">
@@ -169,9 +169,8 @@
 							</tr>
 						</tfoot>
 						</table>
-						
 
-						
+
 						<table v-if="activateBrowser === 'firefox'">
 						<caption>Firefox</caption>
 						<thead>
@@ -380,7 +379,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>	
+<style>
 
 #JSEW-stats {
 	padding: 30px 0px;
@@ -413,7 +412,7 @@ export default {
 	color:#1279b7;
 }
 
-.flag {	
+.flag {
 	background-repeat: no-repeat;
 	background-size:20px auto;
 	background-position: 4px center;

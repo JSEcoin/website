@@ -1,18 +1,14 @@
 <template>
 	<div v-if="categories && categories.length > 0">
 		<div v-for="category in categories" v-bind:key="category.id">
-			<router-link :to="'/blog/' + category.slug + '/'"class="heading center" style="margin-bottom:30px;" tag="h1">
+			<router-link :to="'/blog/' + category.slug + '/'" class="heading center" style="margin-bottom:30px;" tag="h1">
 				{{category.name}}
 			</router-link>
-			<!--<h2>
-				
-			</h2>
-			-->
 			<div class="category-posts" v-if="!category.posts || category.posts.length === 0">
 				Could not find any posts?
 			</div>
 			<div class="category-posts category-posts-loaded">
-				<div v-for="(item, index) in category.posts" v-bind:key="item.id">
+				<div v-for="(item) in category.posts" v-bind:key="item.id">
 					<vwp-post-card :post="item" :newFlag="newFlag" :categorySlug="category.slug"></vwp-post-card>
 				</div>
 			</div>

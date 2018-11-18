@@ -2,7 +2,7 @@
   <div class="vwp-paging">
     <div class="paging-wrapper">
       <div class="columns paging-wrapper-inner">
-        <div v-for="(item, index) in pages" class="column paging-link" v-bind:key="item">
+        <div :key="index" v-for="(item, index) in pages" class="column paging-link">
           <router-link v-if="(item != '...')"
             v-bind:class="{ 'is-active': ((page == null && item === 1) || (item === page)) }"
             :to="path + '/page/' + item + '/'">{{item}}</router-link>
@@ -39,11 +39,11 @@ export default {
       for (let i = 1; i <= this.totalPages; i++) {
         if (i === 1 || i === parseInt(this.totalPages, 10)) {
           this.pages.push(i);
-        } else if ((i >= page - this.neighboors && i <= page) ||
-          (i >= page && i <= page + this.neighboors)) {
+        } else if ((i >= page - this.neighboors && i <= page)
+          || (i >= page && i <= page + this.neighboors)) {
           this.pages.push(i);
-        } else if ((i === (page - this.neighboors - 1)) ||
-          (i === (page + this.neighboors + 1))) {
+        } else if ((i === (page - this.neighboors - 1))
+          || (i === (page + this.neighboors + 1))) {
           this.pages.push('...');
         }
       }
@@ -60,7 +60,7 @@ export default {
 </script>
 
 <style>
-.vwp-paging {   
+.vwp-paging {
 	display: block;
     border-radius: 5px 5px 3px 3px;
     -webkit-box-sizing: border-box;

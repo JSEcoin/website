@@ -3,7 +3,7 @@
 		<div class="wrapper center" style="padding:30px 0px;">
 			<h1 class="heading">{{ $t('pages.timeline.section_interactiveTimeline.heading_timeline') }}</h1>
 			<h2 class="subHeading" style="margin-bottom:20px;">{{ $t('pages.timeline.section_interactiveTimeline.subheading_timeline') }}</h2>
-			
+
 			<p class="left">
 				{{ $t('pages.timeline.section_interactiveTimeline.para_main1_line1') }}<br />
 				{{ $t('pages.timeline.section_interactiveTimeline.para_main1_line2') }}<br />
@@ -14,9 +14,9 @@
 			</p>
 		</div>
 		<interactiveTimeline/>
-		
+
 		<div id="JSEW-timelineWrapper">
-			
+
 			<div class="wrapper center">
 				<h1 class="heading">{{ $t('pages.timeline.section_timeline.heading_timeline') }}</h1>
 				<h2 class="subHeading" style="margin-bottom:30px;">{{ $t('pages.timeline.section_timeline.subheading_timeline') }}</h2>
@@ -55,7 +55,7 @@
 										<ul>
 											<li>{{ $t('pages.timeline.section_timeline.info_august17_list1') }}</li>
 											<li>{{ $t('pages.timeline.section_timeline.info_august17_list2') }}</li>
-											<li>{{ $t('pages.timeline.section_timeline.info_august17_list3') }} 
+											<li>{{ $t('pages.timeline.section_timeline.info_august17_list3') }}
 												<i>{{ $t('pages.timeline.section_timeline.info_august17_list3_info') }}</i>
 											</li>
 										</ul>
@@ -89,7 +89,7 @@
 											<li>{{ $t('pages.timeline.section_timeline.info_october17_list1') }}</li>
 											<li>{{ $t('pages.timeline.section_timeline.info_october17_list2') }}</li>
 										</ul>
-										
+
 									</div>
 								</div>
 							</div>
@@ -103,7 +103,7 @@
 										<ul>
 											<li>{{ $t('pages.timeline.section_timeline.info_november17_list1') }}</li>
 											<li>{{ $t('pages.timeline.section_timeline.info_november17_list2') }}</li>
-											<li>{{ $t('pages.timeline.section_timeline.info_november17_list3') }}</li> 
+											<li>{{ $t('pages.timeline.section_timeline.info_november17_list3') }}</li>
 											<li>{{ $t('pages.timeline.section_timeline.info_november17_list4') }}</li>
 										</ul>
 									</div>
@@ -117,12 +117,12 @@
 									<h2 class="title">{{ $t('pages.timeline.section_timeline.info_december17_title') }}</h2>
 									<div class="content">
 										<ul>
-											<li>{{ $t('pages.timeline.section_timeline.info_december17_list1') }}</li> 
+											<li>{{ $t('pages.timeline.section_timeline.info_december17_list1') }}</li>
 											<li>{{ $t('pages.timeline.section_timeline.info_december17_list2') }} </li>
 											<li>{{ $t('pages.timeline.section_timeline.info_december17_list3') }}</li>
 											<li>{{ $t('pages.timeline.section_timeline.info_november17_list4') }}</li>
 										</ul>
-										
+
 									</div>
 								</div>
 							</div>
@@ -140,7 +140,7 @@
 									<div class="content">
 										<p>{{ $t('pages.timeline.section_timeline.info_january18_para_content1') }}</p>
 										<ul>
-											<li>{{ $t('pages.timeline.section_timeline.info_january18_list1') }}</li> 
+											<li>{{ $t('pages.timeline.section_timeline.info_january18_list1') }}</li>
 										</ul>
 									</div>
 								</div>
@@ -153,17 +153,17 @@
 									<h2 class="title">Enhancements</h2>
 									<div class="content">
 										<ul>
-											<li>SEO Optimisation</li> 
+											<li>SEO Optimisation</li>
 											<li>Opt-in Mining Update</li>
 											<li>Whitelisted on all major antivirus/malware checkers</li>
 											<li>Developer API / Samples</li>
 											<li>Website Multilingual Support</li>
 											<li>Improve Blockchain DB Schema</li>
 										</ul>
-										
+
 									</div>
 								</div>
-							</div>							
+							</div>
 							<div class="item left" style="margin-top: -1rem;">
 								<div class="date">
 									<span>MAR</span>
@@ -172,9 +172,9 @@
 									<h2 class="title">Merchant Tools</h2>
 									<div class="content">
 										<ul>
-											<li>Create Online Shop for JSE Ecommerce transactions</li> 
-											<li>User Generated Robot Identicons</li> 
-											<li>Start Desktop Mining application</li> 
+											<li>Create Online Shop for JSE Ecommerce transactions</li>
+											<li>User Generated Robot Identicons</li>
+											<li>Start Desktop Mining application</li>
 										</ul>
 									</div>
 								</div>
@@ -187,13 +187,13 @@
 									<h2 class="title">Components</h2>
 									<div class="content">
 										<ul>
-											<li>Alpha Desktop Launch</li> 
+											<li>Alpha Desktop Launch</li>
 											<li>Merchant Tools</li>
 											<li>Finalise metamask integration</li>
 										</ul>
 									</div>
 								</div>
-							</div>			
+							</div>
 							<div class="item left" style="margin-top: -1rem;">
 								<div class="date">
 									<span>MAY</span>
@@ -202,9 +202,9 @@
 									<h2 class="title">Components</h2>
 									<div class="content">
 										<ul>
-											<li>Whitelisting KYC system</li> 
-											<li>Initiate marketing campaign</li> 
-											<li>Open source JSEcoin</li> 
+											<li>Whitelisting KYC system</li>
+											<li>Initiate marketing campaign</li>
+											<li>Open source JSEcoin</li>
 											<li>Pre-alpha Android Mobile App release</li>
 											<li>PIN Security Feature</li>
 										</ul>
@@ -219,12 +219,12 @@
 									<h2 class="title">Audits</h2>
 									<div class="content">
 										<ul>
-											<li>Smart Contract Audit</li> 
-											<li>Full security Audit / Review</li> 
+											<li>Smart Contract Audit</li>
+											<li>Full security Audit / Review</li>
 										</ul>
 									</div>
 								</div>
-							</div>	
+							</div>
 							<div class="item left" style="margin-top: -1rem;">
 								<div class="date">
 									<span>JUL</span>
@@ -233,8 +233,8 @@
 									<h2 class="title">ICO Launch</h2>
 									<div class="content">
 										<ul>
-											<li>Airdrop</li> 
-											<li>Marketing Initiative</li> 
+											<li>Airdrop</li>
+											<li>Marketing Initiative</li>
 										</ul>
 									</div>
 								</div>
@@ -248,8 +248,8 @@
 									<div class="content">
 										<ul>
 											<li>Business Strategy</li>
-											<li>Marketing Events</li> 
-											<li>Android App release</li> 
+											<li>Marketing Events</li>
+											<li>Android App release</li>
 										</ul>
 									</div>
 								</div>
@@ -262,8 +262,8 @@
 									<h2 class="title">ICO</h2>
 									<div class="content">
 										<ul>
-											<li>Scalling &amp; Advertisement</li> 
-											<li>Fraud Automation checks</li> 
+											<li>Scalling &amp; Advertisement</li>
+											<li>Fraud Automation checks</li>
 											<li>Platform Security &amp; PEN Test</li>
 											<li>Exhibiting Events - Blockchain Live &amp; Blockchain Summit</li>
 										</ul>
@@ -278,16 +278,16 @@
 									<h2 class="title">ICO End</h2>
 									<div class="content">
 										<ul>
-											<li>Deposit Withdraw</li> 
+											<li>Deposit Withdraw</li>
 											<li>Exchange Listings
 												<ul>
-													<li>LAToken</li>	
-													<li>IDEX</li>	
-													<li>TokenJar</li>	
-												</ul>	
-											</li> 
-											<li>PR Strategy</li> 
-											<li>Ad Tech Platorm Dev</li> 
+													<li>LAToken</li>
+													<li>IDEX</li>
+													<li>TokenJar</li>
+												</ul>
+											</li>
+											<li>PR Strategy</li>
+											<li>Ad Tech Platorm Dev</li>
 										</ul>
 									</div>
 								</div>
@@ -300,10 +300,10 @@
 									<h2 class="title">PR</h2>
 									<div class="content">
 										<ul>
-											<li>Ad Tech Platform Preview</li> 
-											<li>Airdrop</li> 
-											<li>Marketing Initiative</li> 
-											<li>Exhibit WebSummit Lisbon</li> 
+											<li>Ad Tech Platform Preview</li>
+											<li>Airdrop</li>
+											<li>Marketing Initiative</li>
+											<li>Exhibit WebSummit Lisbon</li>
 										</ul>
 									</div>
 								</div>
@@ -316,9 +316,9 @@
 									<h2 class="title">ICO</h2>
 									<div class="content">
 										<ul>
-											<li>Ad Tech Platform go-live</li> 
-											<li>Publisher Campaign</li> 
-											<li>Captcha AdBlock Campaign</li> 
+											<li>Ad Tech Platform go-live</li>
+											<li>Publisher Campaign</li>
+											<li>Captcha AdBlock Campaign</li>
 										</ul>
 									</div>
 								</div>

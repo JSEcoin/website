@@ -13,12 +13,12 @@
 				</router-link>
 			</ul>
 		</nav>
-		
+
 		<div id="JSEW-contact" class="wrapper center">
 			<p class="infoMsg">
 				{{ $t('pages.submitInfo.para_main1_infoMsg_line1') }}<br />
 				{{ $t('pages.submitInfo.para_main1_infoMsg_line2') }}
-				
+
 			</p>
 		</div>
 		<div class="wrapper" style="padding:0px 20px;">
@@ -62,10 +62,10 @@
 								</div>
 							</div>
 							<section class="options delivery_order__options">
-								<stf-select-option  
+								<stf-select-option
 									v-for="item of job" :key="item.id"
 									:value="item"
-									:class="{'stf-select-option_selected': item.id === (jobType && jobType.id), 'showOption': item.id === (jobType && jobType.id)}" 
+									:class="{'stf-select-option_selected': item.id === (jobType && jobType.id), 'showOption': item.id === (jobType && jobType.id)}"
 								>
 								<span>{{item.text}}</span>
 								</stf-select-option>
@@ -75,7 +75,7 @@
 
 					<!-- Not sure if the below code is right for the task summary so I left it off the form. Jim -->
 					<label :class="{show:form.emailAddress.displayLabel, error:!form.emailAddress.valid || form.emailAddress.flag}">
-						<stf-select v-model="value" style="width: 100%">
+						<!--<stf-select v-model="value" style="width: 100%">
 							<div slot="label">{{ $t('pages.submitInfo.form.placeholder_pleaseSelect') }} *</div>
 							<div slot="value">
 								<div v-if="value">
@@ -86,22 +86,26 @@
 								<input @input="onsearch">
 							</div>
 							<section class="options delivery_order__options">
-								<stf-select-option  
+								<stf-select-option
 									v-for="item of listFinded" :key="item.id"
 									:value="item"
-									:class="{'stf-select-option_selected': item.id === (value && value.id)}" 
+									:class="{'stf-select-option_selected': item.id === (value && value.id)}"
 								>
 									<span>{{item.text}} (<small>{{item.address}}</small>)</span>
 								</stf-select-option>
 							</section>
-						</stf-select>
+						</stf-select>-->
+						<select>
+							<option value="">{{ $t('pages.submitInfo.form.placeholder_pleaseSelect') }} *</option>
+							<option v-for="item of listFinded" :key="item.id" :selected="(item.id === (value && value.id))" :value="item">{{item.text}} (<small>{{item.address}}</small>)</option>
+						</select>
 					</label>
 
-	<!--				
+	<!--
 					<div class="hr hrInfo"><span>Refine Summary</span></div>
 	-->
-					
-					
+
+
 					<div class="hr hrInfo"><span>{{ $t('pages.submitInfo.form.heading_description') }}</span></div>
 
 					<label :class="{show:form.message.displayLabel, error:form.message.flag}">
@@ -114,7 +118,7 @@
 					</div>
 
 					<div class="hr hrInfo"><span>{{ $t('pages.submitInfo.form.heading_attachment') }} *</span></div>
-					
+
 					<vue-transmit class="dropHere"
 						:class="{highlight:highlightDropBox}"
 						tag="section"
@@ -126,18 +130,18 @@
 						@drag-leave="highlight(false)"
 						@drag-end="highlight(false)"
 						@drop="highlight(false)"
-						@accept-complete="fileAccepted"	
+						@accept-complete="fileAccepted"
 						@timeout="uploadTimeout"
 						@success="uploadSuccess"
 						@error="uploadError"
 						@upload-progress="uploadprogress"
 						@total-upload-progress="uploadprogress"
 						@complete="completedUpload"
-						@complete-multiple="completedUpload"	
+						@complete-multiple="completedUpload"
 						@sending="sendingTask"
-						@sending-multiple="sendingTask"	
+						@sending-multiple="sendingTask"
 					>
-						
+
 						<p v-if="filename.length === 0">
 							<i class="fa fa-file-archive-o"></i><br />
 							{{ $t('pages.submitInfo.form.para_dragDrop') }}
@@ -146,7 +150,7 @@
 							{{filename}} ({{filesize}})
 						</p>
 						<!--
-							
+
 						<div class="d-flex align-items-center justify-content-center w-100"
 								style="height:50vh; border-radius: 1rem;">
 							<button class="btn btn-primary"
@@ -157,7 +161,7 @@
 						<!--<template slot="files" scope="props">
 							<div v-for="(file, i) in props.files" :key="file.id" :class="{'mt-5': i === 0}">
 								<div class="media">
-									<img :src="file.dataUrl" class="img-fluid d-flex mr-3">
+									<img :src="file.dataUrl" class="img-fluid d-flex mr-3" alt="Submit File Icon">
 									<div class="media-body">
 										<h3>{{ file.name }}</h3>
 										<div class="progress" style="width: 50vw;">
@@ -170,8 +174,8 @@
 							</div>
 						</template>-->
 					</vue-transmit>
-					
-					
+
+
 					<div class="hr"></div>
 
 					<button v-if="enableCaptcha" class="button" type="submit">{{ $t('pages.submitInfo.form.button_submit') }}</button>
@@ -189,9 +193,9 @@
 
 <script>
 import axios from 'axios';
-import { StfSelect, StfSelectOption } from 'stf-vue-select';
+//import { StfSelect, StfSelectOption } from 'stf-vue-select';
 import VueRecaptcha from 'vue-recaptcha';
-import 'stf-vue-select/dist/lib/stf-vue-select.min.css';
+//import 'stf-vue-select/dist/lib/stf-vue-select.min.css';
 import xLoading from '../tpl/loading';
 
 export default {
@@ -216,8 +220,8 @@ export default {
 	components: {
 		VueRecaptcha,
 		xLoading,
-		StfSelect,
-	    StfSelectOption,
+		//StfSelect,
+	    //StfSelectOption,
 	},
 	data() {
 		return {
@@ -511,7 +515,8 @@ export default {
 					console.log(JSON.stringify(self.formattedEmail));
 			    axios.post('https://server.jsecoin.com/adminemail/',
 			    self.formattedEmail,
-			    { headers: {
+			    {
+ headers: {
 			      'Content-type': 'application/x-www-form-urlencoded',
 			      },
 			    }).then(function(res) {
@@ -568,7 +573,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>	
+<style>
 .dropHere {
 	margin:20px;
 	border:dashed 3px #eee;
@@ -616,7 +621,7 @@ export default {
 
 #JSEW-oddJobsFormWrapper {
 	overflow:hidden;
-	position: relative;	
+	position: relative;
 	padding:0px 20px 20px 20px;
 }
 
@@ -650,7 +655,8 @@ export default {
 #JSEW-submitForm input[type="number"],
 #JSEW-submitForm input[type="email"],
 #JSEW-submitForm textarea,
-#JSEW-submitForm .stf-select {
+#JSEW-submitForm .stf-select,
+select {
 	border:0px;
 	height: 40px;
 	border-radius:8px;

@@ -1,7 +1,7 @@
 <template>
 	<div id="JSEW-headerBar" class="cf">
 		<router-link id="JSEW-logo" v-bind:to="`/${$store.state.local}/home`" tag="a">
-			<!--swap4SVG-->
+			<!--swap4SVG-->JSEcoin Ltd
 		</router-link>
 		<nav id="JSEW-globalNav">
 			<ul>
@@ -126,7 +126,6 @@ export default {
 .hamburger-inner::after {
 	bottom: -10px;
 }
-
 
 
 /*

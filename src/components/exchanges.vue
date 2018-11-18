@@ -7,7 +7,7 @@
 				It is possible to store tokens within the JSE platform at https://jsecoin.com/platform
 			</p>
 			<p>
-				Alternatively you can withdraw your tokens to any 3rd party ERC20 compatible wallet. (Before making a withdrawl you should check with your wallet provider to ensure that it will be compatible with the JSE ERC20 token. 
+				Alternatively you can withdraw your tokens to any 3rd party ERC20 compatible wallet. (Before making a withdrawl you should check with your wallet provider to ensure that it will be compatible with the JSE ERC20 token.
 			</p>
 
 			<h2 class="subHeading">To add a custom token please use the following details</h2>

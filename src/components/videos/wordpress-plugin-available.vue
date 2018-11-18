@@ -105,7 +105,7 @@ p {
 	background-repeat: no-repeat;
 	background-size:contain;
 	width:100%;
-	height:160px;	
+	height:160px;
 	position: relative;
 }
 

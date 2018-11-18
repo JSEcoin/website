@@ -8,21 +8,21 @@
 						{{ $t('tpl.header.para_main1') }}
 					</p>
 					<p>
-						<b class="JSEW-whysubheading"><i class="fa fa-globe"></i> {{ $t('tpl.header.subheading_environmentalImpact') }}</b> - 
+						<b class="JSEW-whysubheading"><i class="fa fa-globe"></i> {{ $t('tpl.header.subheading_environmentalImpact') }}</b> -
 						{{ $t('tpl.header.para_main2') }}
 					</p>
 					<p>
-						<b class="JSEW-whysubheading"><i class="fa fa-user"></i> {{ $t('tpl.header.subheading_consumerFriendly') }}</b> - 
+						<b class="JSEW-whysubheading"><i class="fa fa-user"></i> {{ $t('tpl.header.subheading_consumerFriendly') }}</b> -
 						{{ $t('tpl.header.para_main3') }}
 					</p>
 					<p>
-						<b class="JSEW-whysubheading"><i class="fa fa-chrome"></i> {{ $t('tpl.header.subheading_builtForTheWeb') }}</b> - 
+						<b class="JSEW-whysubheading"><i class="fa fa-chrome"></i> {{ $t('tpl.header.subheading_builtForTheWeb') }}</b> -
 						{{ $t('tpl.header.para_main4') }}
 					</p>
 					<!--
 					<p>
-						We believe that the current leading cryptocurrency technologies are flawed and too slow to adapt to changing 
-						requirements and market conditions. There will be new developments in the industry that will be game changing 
+						We believe that the current leading cryptocurrency technologies are flawed and too slow to adapt to changing
+						requirements and market conditions. There will be new developments in the industry that will be game changing
 						for blockchain technologies and the way the world uses money.
 
 					</p>-->
@@ -34,7 +34,7 @@
 			<div id="JSEW-headerCore">
 				<div class="wrapper">
 					<xGlobalNavHeader/>
-					
+
 					<div id="JSEW-carouselContent" v-if="$route.meta.linkText === 'Home'">
 						<div v-if="activeHeaderItem('carousel1')">
 							<div id="JSEW-supportedBrowsers"></div>
@@ -68,18 +68,18 @@
 						<div v-if="activeHeaderItem('carousel2')">
 							<!--<ICOPanel />-->
 						</div>
-						
+
 						<!--
 						<ul id="JSEW-carouselItems">
 							<li v-on:click="headerSelector('carousel2')" :class="{ active:activeHeaderItem('carousel2') }"></li>
 							<li v-on:click="headerSelector('carousel1')" :class="{ active:activeHeaderItem('carousel1') }"></li>
 						</ul>-->
-						
+
 					</div>
 				</div>
 			</div>
-			
-			<particlesJS v-if="$route.meta.linkText === 'Home'"/>
+
+			<!--<particlesJS v-if="$route.meta.linkText === 'Home'"/>-->
 		</div>
 	</header>
 	<header class="minHead" v-else>
@@ -94,22 +94,17 @@
 </template>
 
 <script>
-import particlesJS from './particlesJS';
+//import particlesJS from './particlesJS';
 import xGlobalNavHeader from './globalNavHeader';
-import ICOPanel from './ICOPanel';
-
-//const STATIC_PATH = STATIC_PATH || 'ddd';
 
 export default {
 	name: 'xHeader',
 	components: {
-		particlesJS,
+		//particlesJS,
 		xGlobalNavHeader,
-		ICOPanel,
 	},
 	mounted () {
 		this.applyFadeIn = true;
-		//console.log(STATIC_PATH);
 	},
 	beforeDestroy() {
 		this.applyFadeIn = false;
@@ -133,7 +128,7 @@ export default {
 				submittedForm: false,
 				error: false,
 			},
-			staticPath: STATIC_PATH,
+			staticPath: '',
 			applyFadeIn: false,
 			isActiveHeaderPanel: false,
 			activeHeader: 'carousel1',
@@ -224,14 +219,14 @@ export default {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	background: rgba(29, 92, 158, 0.5);    
+	background: rgba(29, 92, 158, 0.5);
 }
 .JSEW-tinyimg {
 	height: 30px;
 	width: 30px;
 	margin-bottom: -8px;
 }
-#JSEW-whyjsetxt { 
+#JSEW-whyjsetxt {
 	max-width: 800px;
 	margin: 0px auto;
 	background: rgba(255,255,255,0.8);

@@ -23,7 +23,7 @@
 			<div class="wrapper">
 				<!--Any Heading Content for news
 				<div v-if="categories && categories.length === 1 && categories[0].slug === 'news'">
-					
+
 				</div> -->
 				<vwp-subcategory :categories="categories" ></vwp-subcategory>
 			</div>

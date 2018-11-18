@@ -13,15 +13,15 @@
 				</router-link>
 			</ul>
 		</nav>
-		
+
 		<div class="wrapper" style="padding:0px 20px;">
 			<form id="JSEW-contactForm" @submit.prevent="onSubmit" class="active">
 				<div id="JSEW-contactImg"></div>
-					
+
 				<xLoading v-if="status.submittingMsg" />
 
 				<div v-if="status.displayForm" id="JSEW-contactFormWrapper">
-		
+
 					<div id="JSEW-contact" class="wrapper center" style="padding:0px;">
 						<h1 class="heading">Ico Launchpad Support</h1>
 						<p class="infoMsg">
@@ -74,7 +74,7 @@
 					</div>
 
 					<div class="hr"></div>
-					
+
 					<button v-if="enableCaptcha" class="button" type="submit"><i class="fa fa-heart"></i> {{ $t('pages.contact.form.button_submit') }}</button>
 				</div>
 				<div class="center" v-if="status.submittedForm">
@@ -164,8 +164,8 @@ export default {
 	methods: {
 		checkEth() {
 			if (
-				this.form.ethAddress.val.substr(0, 2) === '0x' &&
-				this.form.ethAddress.val.length === 42
+				this.form.ethAddress.val.substr(0, 2) === '0x'
+				&& this.form.ethAddress.val.length === 42
 			) {
 				this.form.ethAddress.valid = true;
 			} else {
@@ -310,7 +310,7 @@ export default {
 
 #JSEW-contactFormWrapper {
 	overflow:hidden;
-	position: relative;	
+	position: relative;
 	padding:0px 20px 20px 20px;
 }
 

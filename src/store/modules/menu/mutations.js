@@ -1,8 +1,8 @@
 const BLOGMENU_UPDATED = (state, menuItems) => {
-  state.items = menuItems
-  state.items.splice()
-}
+  state.items = menuItems;
+  state.items.splice();
+};
 
-export {
-  BLOGMENU_UPDATED
-}
+export default {
+  BLOGMENU_UPDATED,
+};

@@ -60,13 +60,11 @@
 } */
 export default {
   name: 'app-header',
-  data: () => {
-    return {
+  data: () => ({
       isMenuActive: false,
       siteName: '',
-      blogItems: []
-    }
-  },
+      blogItems: [],
+    }),
   // prefetch: fetchInitialData,
   /* computed: {
     ...mapGetters('menu', {
@@ -78,21 +76,21 @@ export default {
       getMenu: 'getMenu'
     }), */
     toggleMenu () {
-      this.isMenuActive = !this.isMenuActive
+      this.isMenuActive = !this.isMenuActive;
     },
     closeMenu () {
-      this.isMenuActive = false
+      this.isMenuActive = false;
     },
     relativePath (url) {
-      url = url.replace('https://', '')
-      var domain = url.split('/')[0]
-      return url.replace(domain, '')
-    }
+      url = url.replace('https://', '');
+      const domain = url.split('/')[0];
+      return url.replace(domain, '');
+    },
   },
   mounted () {
     // fetchInitialData(this.$store)
-  }
-}
+  },
+};
 </script>
 <style>
   #vwp-logo{

@@ -38,7 +38,7 @@
 		<div class="wrapper" style="padding:0px 20px;">
 			<form id="JSEW-contactForm" @submit.prevent="onSubmit">
 				<div id="JSEW-contactImg"></div>
-					
+
 				<xLoading v-if="status.submittingMsg" />
 
 				<div v-if="status.displayForm" id="JSEW-contactFormWrapper">
@@ -90,7 +90,7 @@
 					</div>
 
 					<div class="hr"></div>
-					
+
 					<button v-if="enableCaptcha" class="button" type="submit"><i class="fa fa-heart"></i> {{ $t('pages.contact.form.button_submit') }}</button>
 				</div>
 				<div class="center" v-if="status.submittedForm">
@@ -326,7 +326,7 @@ export default {
 
 #JSEW-contactFormWrapper {
 	overflow:hidden;
-	position: relative;	
+	position: relative;
 	padding:0px 20px 20px 20px;
 }
 

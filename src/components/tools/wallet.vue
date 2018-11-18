@@ -1,7 +1,7 @@
 <template>
 	<div id="JSEW-wrapper">
 		<div id="JSEW-webmasterOverview" class="wrapper">
-			
+
 			<h1 class="heading">{{ $t('pages.wallet.heading_wallet') }}</h1>
 			<h2 class="subHeading">{{ $t('pages.wallet.subheading_wallet') }}</h2>
 
@@ -13,7 +13,7 @@
 			</p>
 			<p>
 				{{ $t('pages.wallet.para_main4') }}
-			</p>	
+			</p>
 		</div>
 	</div>
 </template>

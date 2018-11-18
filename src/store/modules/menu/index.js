@@ -1,20 +1,20 @@
-import * as actions from './actions'
-import * as getters from './getters'
-import * as mutations from './mutations'
+import * as actions from './actions';
+import * as getters from './getters';
+import * as mutations from './mutations';
 
 const defaultState = {
-  items: []
-}
+  items: [],
+};
 
-const inBrowser = typeof window !== 'undefined'
+const inBrowser = typeof window !== 'undefined';
 
 // if in browser, use pre-fetched state injected by SSR
-const state = (inBrowser && window.__INITIAL_STATE__) || defaultState
+const state = (inBrowser && window.__INITIAL_STATE__) || defaultState;
 
 export default {
   namespaced: true,
   state,
   actions,
   mutations,
-  getters
-}
+  getters,
+};

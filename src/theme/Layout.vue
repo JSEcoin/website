@@ -12,21 +12,22 @@
 </template>
 
 <script>
-import AppHeader from './AppHeader.vue'
-import AppFooter from './AppFooter.vue'
-import gaAnalytics from 'components/gaAnalytics.vue'
+import gaAnalytics from '@/components/gaAnalytics.vue';
+import AppHeader from './AppHeader.vue';
+import AppFooter from './AppFooter.vue';
 
 export default {
   name: 'app',
   components: {
     'app-header': AppHeader,
     'app-footer': AppFooter,
-    'ga-analytics': gaAnalytics
-  }
-}
+    'ga-analytics': gaAnalytics,
+  },
+};
 </script>
 
 <style lang="scss">
+/*
   @import '../_variables';
   @import '~bulma';
   @import '../assets/fontello/css/fontello.css';
@@ -36,7 +37,7 @@ export default {
   }
   #app > .main-section.section{
     min-height: 800px;
-  }
+  }*/
   .vwp-loading{
     text-align: center;
   }

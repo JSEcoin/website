@@ -49,8 +49,6 @@
 			<p><a href="https://jsecoin.com/downloads/JSEcoinAntiAdblocker.zip">{{ $t('pages.downloads.anti_adblocker_script') }}</a> - {{ $t('pages.downloads.anti_adblocker_description') }}</p>
 			<h2 class="subHeading">{{ $t('pages.downloads.php_wrapper') }}</h2>
 			<p><a href="https://jsecoin.com/downloads/JSEcoinPHPWrapper.zip">{{ $t('pages.downloads.php_wrapper_script') }}</a> - {{ $t('pages.downloads.php_wrapper_description') }}</p>
-		
-
 
 
 		</div>

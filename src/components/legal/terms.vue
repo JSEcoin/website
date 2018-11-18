@@ -62,7 +62,7 @@
 							<ol>
 								<li>immediately notify us of any unauthorised use of your account or any other breach of security, and</li>
 								<li> ensure that you exit from your account at the end of each session when accessing the Platform. We will not be liable for any loss or damage arising from your failure to comply with this Section.</li>
-							</ol>	
+							</ol>
 						</li>
 					</ol>
 				</li>
@@ -173,7 +173,7 @@
 							<ol>
 								<li>Child pornography
 									<ol>
-										<li>Under 18 or portrayed to look under 18</li>	
+										<li>Under 18 or portrayed to look under 18</li>
 									</ol>
 								</li>
 								<li>Sexual conduct with animals</li>
@@ -403,7 +403,7 @@ export default {
 #JSEW-terms ol > li:before {
     content: counters(item, ".") ". ";
     display: table-cell;
-    padding-right: 0.6em;    
+    padding-right: 0.6em;
 }
 
 #JSEW-terms li li {

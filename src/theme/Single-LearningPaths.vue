@@ -31,7 +31,7 @@
             Table of Contents
           </p>
           <ul class="menu-list">
-            <li v-for="(item, index) in posts">
+            <li :key="index" v-for="(item, index) in posts">
               <router-link :to="'./' + item.slug" v-html="item.title.rendered" ></router-link>
             </li>
           </ul>

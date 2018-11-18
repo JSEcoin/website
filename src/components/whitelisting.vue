@@ -19,7 +19,7 @@
 			<a href="https://jsecoin.com/HowToParticipateInICO.pdf" target="_blank">{{ $t('pages.whitelisting.pdf') }}</a>
 		</p>
 		<p>{{ $t('pages.whitelisting.intro2') }}</p>-->
-		
+
 				<p class="infoMsg">
 					{{ $t('pages.whitelisting.help') }}
 					<a href="https://jsecoin.com/HowToParticipateInICO.pdf" target="_blank">{{ $t('pages.whitelisting.pdf') }}</a>
@@ -45,7 +45,7 @@
 					<a href="https://platform.jsecoin.com/?register=1&utm_source=internal&utm_campaign=whitelisting"
 					    target="_blank">https://platform.jsecoin.com</a>
 				</p>
-				
+
 
 				<div class="row">
 					<div class="col">
@@ -153,7 +153,7 @@
 				<p v-else>
 					{{ $t('pages.whitelisting.para_thankyou_kyc') }}
 				</p>
-				
+
 				<router-link v-bind:to="`/${$store.state.local}/ico`" tag="button" class="button">
 					Buy JSE
 				</router-link>
@@ -167,10 +167,8 @@
 
 <script>
 import axios from 'axios';
-import { StfSelect,	StfSelectOption } from 'stf-vue-select';
 import VueRecaptcha from 'vue-recaptcha';
-import 'stf-vue-select/dist/lib/stf-vue-select.min.css';
-import xLoading from '../components/tpl/loading';
+import xLoading from './tpl/loading';
 
 export default {
 	name: 'whitelisting',
@@ -193,8 +191,6 @@ export default {
 	components: {
 		VueRecaptcha,
 		xLoading,
-		StfSelect,
-		StfSelectOption,
 	},
 	data() {
 		return {
@@ -409,9 +405,8 @@ export default {
 			//console.log('filter',e);
 			if (e.target.value) {
 				this.listFinded = this.list.filter(
-					el =>
-					el.text.indexOf(e.target.value) !== -1 ||
-					el.address.indexOf(e.target.value) !== -1,
+					el => el.text.indexOf(e.target.value) !== -1
+					|| el.address.indexOf(e.target.value) !== -1,
 				);
 			} else {
 				this.listFinded = this.list;
@@ -421,9 +416,8 @@ export default {
 			////console.log(e);
 			if (e.target.value) {
 				this.listFinded = this.list.filter(
-					el =>
-					el.text.indexOf(e.target.value) !== -1 ||
-					el.address.indexOf(e.target.value) !== -1,
+					el => el.text.indexOf(e.target.value) !== -1
+					|| el.address.indexOf(e.target.value) !== -1,
 				);
 				if (this.filter !== null) {
 					this.listFinded = this.list.filter(el => el.address === this.filter);
@@ -464,8 +458,8 @@ export default {
 		},
 		checkEth() {
 			if (
-				this.form.ethAddress.val.substr(0, 2) === '0x' &&
-				this.form.ethAddress.val.length === 42
+				this.form.ethAddress.val.substr(0, 2) === '0x'
+				&& this.form.ethAddress.val.length === 42
 			) {
 				this.form.ethAddress.valid = true;
 			} else {
@@ -579,8 +573,7 @@ export default {
 			} else {
 				console.error('Failed to submit form');
 				this.form.error.display = true;
-				this.form.error.msg =
-					'Failed to submit form - please check all required fields above';
+				this.form.error.msg =					'Failed to submit form - please check all required fields above';
 			}
 			this.$ma.trackEvent({ category: 'goal', action: 'whitelisting' });
 		},

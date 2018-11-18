@@ -32,7 +32,7 @@
 												<div id="JSEW-icoPointerWrapper">
 													<div class="icoRow">
 														<div class="coin"></div>
-														<span style="color:#0096ff; margin-right:4px;">{{total.jseDisplay}}</span> 
+														<span style="color:#0096ff; margin-right:4px;">{{total.jseDisplay}}</span>
 														<span>JSE</span>
 													</div>
 												</div>
@@ -63,7 +63,7 @@
 											{{total.jseDisplay}} <span>JSE</span>
 										</li>
 										<!-- xJSE -->
-										<!-- EOS 
+										<!-- EOS
 										<li id="JSEW-distEOS" class="mainCol">
 											<div id="JSEW-eos"></div>
 											0 <span>EOS</span>
@@ -109,7 +109,7 @@
 				</dt>
 				<dd style="padding-bottom:14px;">
 					<iframe style="background:#000;" width="100%" height="160" src="https://www.youtube.com/embed/keoXxFL6aPM?rel=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					
+
 					<router-link v-bind:to="`/${$store.state.local}/ico`" tag="button" class="button">
 						INVEST IN JSECOIN
 					</router-link>
@@ -412,7 +412,7 @@ export default {
 		flex:1 !important;
 	}
 	.mainCol {
-		
+
 	}
 }
 
@@ -421,7 +421,7 @@ export default {
 		flex:1 !important;
 	}
 	.mainCol {
-		
+
 	}
 }
 	.mobileHide {
@@ -478,7 +478,7 @@ export default {
 	background:#16ab39;
 }
 
-#JSEW-ICOMask .footer button.green.disable, 
+#JSEW-ICOMask .footer button.green.disable,
 #JSEW-ICOMask .footer button.green.disable:hover {
 	background: #ccc;
 	cursor: default;
@@ -653,7 +653,7 @@ export default {
 }
 
 #JSEW-ICOLogo img {
-	width:90px; 
+	width:90px;
 	margin: 20px 20px 0px 20px;
 }
 
@@ -662,7 +662,7 @@ export default {
 }
 
 #JSEW-totalDistribution {
-	border-bottom:solid 1px rgba(230,230,230,0.2); 
+	border-bottom:solid 1px rgba(230,230,230,0.2);
 	margin:0px 10px;
 	padding-bottom:10px;
 }
@@ -677,12 +677,12 @@ export default {
 }
 
 #JSEW-purchaseVideo {
-	position:relative; 
+	position:relative;
 	padding-bottom:70px;
 }
 
 #JSEW-ETHQRCode {
-	margin:10px 0px; 
+	margin:10px 0px;
 	align-self: center;
 }
 
@@ -702,8 +702,8 @@ export default {
 }
 
 #JSEW-ethPaymentInfo ol {
-	margin:0px 0px 0px 20px; 
-	padding:0px; 
+	margin:0px 0px 0px 20px;
+	padding:0px;
 	font-size:0.9em;
 }
 
@@ -736,17 +736,10 @@ export default {
 }
 
 #JSEW-ethAddressMini input {
-	flex-grow:1; 
-	font-size:0.8em; 
+	flex-grow:1;
+	font-size:0.8em;
 	margin:20px 0px;
 }
-
-
-
-
-
-
-
 
 
 .borderRight {
@@ -956,7 +949,7 @@ th {
 #JSEW-distCountdown li {
 	list-style: none;
 	flex-grow:1;
-	text-align: center;	
+	text-align: center;
 }
 .counter {
 	border:solid 1px rgba(230,230,230,0.2);

@@ -22,12 +22,12 @@
 
 		<div id="JSEW-kycPolicy" class="wrapper">
 			<h2 class="heading">{{ $t('pages.kycPolicy.heading_kyc') }}</h2>
-			
+
 			<p><em>{{ $t('pages.kycPolicy.para_main1') }}</em></p>
-			<p></em>{{ $t('pages.kycPolicy.para_main2') }}</em></p>
+			<p><em>{{ $t('pages.kycPolicy.para_main2') }}</em></p>
 			<p>{{ $t('pages.kycPolicy.para_main3') }}  <a href="https://www.gov.uk/guidance/money-laundering-regulations-your-responsibilities">https://www.gov.uk/guidance/money-laundering-regulations-your-responsibilities</a></p>
 			<p>{{ $t('pages.kycPolicy.para_main4') }}</p>
-			<p><blockquote>{{ $t('pages.kycPolicy.para_main5') }}</blockquote></p>
+			<blockquote>{{ $t('pages.kycPolicy.para_main5') }}</blockquote>
 			<p>{{ $t('pages.kycPolicy.para_main6') }}</p>
 			<ul>
 				<li>{{ $t('pages.kycPolicy.list_collectedData1') }}</li>

@@ -33,7 +33,7 @@
 
 		<div id="JSEW-techOverview" class="wrapper">
 			<div class="row">
-				<div class="col">	
+				<div class="col">
 					<h1 class="heading">{{ $t('pages.techOverview.section_techOverview.heading_techOverview') }}</h1>
 					<h2 class="subHeading">{{ $t('pages.techOverview.section_techOverview.subheading_techOverview') }}</h2>
 					<p>
@@ -291,7 +291,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>	
+<style>
 
 #JSEW-techOverview .col {
 	max-width: inherit;
@@ -445,7 +445,7 @@ export default {
 	.enableResponsive #JSEW-processFlow li {
 		zoom:60%;
 	}
-	
+
 	.enableResponsive #JSEW-processFlow p {
 		padding:0px;
 	}

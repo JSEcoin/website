@@ -44,17 +44,17 @@
 					</dl>
 					<!--
 					<p>
-						Feel free to use any of the images, quotes or stats from this site in your press article. 
-						All we ask is that we are not associated with the hidden background Monero mining platforms. 
+						Feel free to use any of the images, quotes or stats from this site in your press article.
+						All we ask is that we are not associated with the hidden background Monero mining platforms.
 						JSEcoin has never and will never participate in hidden background website mining.
 					</p>
 					<p>
-						The JSEcoin project is dedicated to building new blockchain technologies based on the web 
-						and does not mine Bitcoin or Monero. Please read the frequently asked questions documents 
+						The JSEcoin project is dedicated to building new blockchain technologies based on the web
+						and does not mine Bitcoin or Monero. Please read the frequently asked questions documents
 						for further information.
 					</p>
 					<p>
-						If you have any questions or would like to reach out to one of the team please 
+						If you have any questions or would like to reach out to one of the team please
 						<router-link v-bind:to="`/${$store.state.local}/support/contact`" class="active">
 							contact us
 						</router-link>
@@ -79,7 +79,7 @@
 					<div class="col">
 						<h1 class="heading">{{ $t('pages.press.section_media.heading_media') }}</h1>
 						<!--<h2 class="subHeading center">Feel free to make use of the following approved assets</h2>-->
-						
+
 						<p>
 							{{ $t('pages.press.section_media.para_main1') }}
 						</p>
@@ -103,57 +103,57 @@
 				<!--
 				<div class="mediaPackRow">
 					<div>
-						<a href="/static/images/press/coin_silver.png" download="coin_silver"><img src="/static/images/press/coin_silver.png" /></a>
+						<a href="/static/images/press/coin_silver.png" download="coin_silver"><img src="/static/images/press/coin_silver.png" alt="JSE Silver Coin" /></a>
 					</div>
 					<div>
-						<a href="/static/images/press/coin_gold.png" download="coin_gold"><img src="/static/images/press/coin_gold.png" /></a>
-					</div>
-				</div>
-				<div class="mediaPackRow">
-					<div>
-						<a href="/static/images/press/jseminicon_1.png" download="jseminicon_1"><img src="/static/images/press/jseminicon_1.png" /></a>
-					</div>
-					<div>
-						<a href="/static/images/press/jseminicon_2.png" download="jseminicon_2"><img src="/static/images/press/jseminicon_2.png" /></a>
-					</div>
-					<div>
-						<a href="/static/images/press/jseminicon_3.png" download="jseminicon_3"><img src="/static/images/press/jseminicon_3.png" /></a>
-					</div>
-					<div>
-						<a href="/static/images/press/jseminicon_4.png" download="jseminicon_4"><img src="/static/images/press/jseminicon_4.png" /></a>
+						<a href="/static/images/press/coin_gold.png" download="coin_gold"><img src="/static/images/press/coin_gold.png" alt="JSE Gold Coin" /></a>
 					</div>
 				</div>
 				<div class="mediaPackRow">
 					<div>
-						<a href="/static/images/press/jselogo_1.png" download="jselogo_1"><img src="/static/images/press/jselogo_1.png" /></a>
+						<a href="/static/images/press/jseminicon_1.png" download="jseminicon_1"><img src="/static/images/press/jseminicon_1.png" alt="JSE Icon 1" /></a>
 					</div>
 					<div>
-						<a href="/static/images/press/jselogo_2.png" download="jselogo_2"><img src="/static/images/press/jselogo_2.png" /></a>
-					</div>
-				</div>
-				<div class="mediaPackRow">
-					<div>
-						<a href="/static/images/press/jsebadge_1.png" download="jsebadge_1"><img src="/static/images/press/jsebadge_1.png" /></a>
+						<a href="/static/images/press/jseminicon_2.png" download="jseminicon_2"><img src="/static/images/press/jseminicon_2.png" alt="JSE Icon 2"  /></a>
 					</div>
 					<div>
-						<a href="/static/images/press/jsebadge_2.png" download="jsebadge_2"><img src="/static/images/press/jsebadge_2.png" /></a>
+						<a href="/static/images/press/jseminicon_3.png" download="jseminicon_3"><img src="/static/images/press/jseminicon_3.png" alt="JSE Icon 3"  /></a>
 					</div>
 					<div>
-						<a href="/static/images/press/jsebadge_3.png" download="jsebadge_3"><img src="/static/images/press/jsebadge_3.png" /></a>
+						<a href="/static/images/press/jseminicon_4.png" download="jseminicon_4"><img src="/static/images/press/jseminicon_4.png" alt="JSE Icon 4"  /></a>
 					</div>
 				</div>
 				<div class="mediaPackRow">
 					<div>
-						<a href="/static/images/press/jsecoin_1.png" download="jsecoin_1"><img src="/static/images/press/jsecoin_1.png" /></a>
+						<a href="/static/images/press/jselogo_1.png" download="jselogo_1"><img src="/static/images/press/jselogo_1.png" alt="JSE Logo 1" /></a>
 					</div>
 					<div>
-						<a href="/static/images/press/jsecoin_2.png" download="jsecoin_2"><img src="/static/images/press/jsecoin_2.png" /></a>
+						<a href="/static/images/press/jselogo_2.png" download="jselogo_2"><img src="/static/images/press/jselogo_2.png" alt="JSE Logo 2" /></a>
+					</div>
+				</div>
+				<div class="mediaPackRow">
+					<div>
+						<a href="/static/images/press/jsebadge_1.png" download="jsebadge_1"><img src="/static/images/press/jsebadge_1.png" alt="JSE Badge 1" /></a>
 					</div>
 					<div>
-						<a href="/static/images/press/jsecoin_3.png" download="jsecoin_3"><img src="/static/images/press/jsecoin_3.png" /></a>
+						<a href="/static/images/press/jsebadge_2.png" download="jsebadge_2"><img src="/static/images/press/jsebadge_2.png" alt="JSE Badge 2" /></a>
 					</div>
 					<div>
-						<a href="/static/images/press/jsecoin_4.png" download="jsecoin_4"><img src="/static/images/press/jsecoin_4.png" /></a>
+						<a href="/static/images/press/jsebadge_3.png" download="jsebadge_3"><img src="/static/images/press/jsebadge_3.png" alt="JSE Badge 3" /></a>
+					</div>
+				</div>
+				<div class="mediaPackRow">
+					<div>
+						<a href="/static/images/press/jsecoin_1.png" download="jsecoin_1"><img src="/static/images/press/jsecoin_1.png" alt="JSE Coin 1" /></a>
+					</div>
+					<div>
+						<a href="/static/images/press/jsecoin_2.png" download="jsecoin_2"><img src="/static/images/press/jsecoin_2.png" alt="JSE Coin 2" /></a>
+					</div>
+					<div>
+						<a href="/static/images/press/jsecoin_3.png" download="jsecoin_3"><img src="/static/images/press/jsecoin_3.png" alt="JSE Coin 3" /></a>
+					</div>
+					<div>
+						<a href="/static/images/press/jsecoin_4.png" download="jsecoin_4"><img src="/static/images/press/jsecoin_4.png" alt="JSE Coin 4" /></a>
 					</div>
 				</div>
 				-->

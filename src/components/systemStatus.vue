@@ -13,17 +13,17 @@
 				<p class="infoMsg" v-html="requestStatus.msg"></p>
 			</div>
 
-			<div class="row" v-for="(server, index) in Math.ceil(servers.length/2)">
+			<div :key="index" class="row" v-for="(server, index) in Math.ceil(servers.length/2)">
 				<div class="col">
 					<dl>
 						<dt></dt>
 						<dd>
 							<i class="fa" :class="{showStatus:receivedResponse, 'fa-check':servers[index*2].status ==='Running', 'fa-close':servers[index*2].status !=='Running'}"></i>
-							
+
 							<h2 class="subHeading">JSE {{servers[index*2].serverName}}</h2>
 							<h3 class="subsubHeading">{{servers[index*2].URL}}</h3>
 							<p>
-								
+
 							</p>
 						</dd>
 					</dl>
@@ -33,11 +33,11 @@
 						<dt></dt>
 						<dd>
 							<i class="fa" :class="{showStatus:receivedResponse, 'fa-check':servers[(index*2)+1].status ==='Running', 'fa-close':servers[(index*2)+1].status !=='Running'}"></i>
-							
+
 							<h2 class="subHeading">JSE {{servers[(index*2)+1].serverName}}</h2>
 							<h3 class="subsubHeading">{{servers[(index*2)+1].URL}}</h3>
 							<p>
-								
+
 							</p>
 						</dd>
 					</dl>
@@ -45,7 +45,7 @@
 			</div>
 			<p class="infoMsg">
 				{{ $t('pages.systemStatus.para_infoMsg') }}
-				
+
 				<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a">
 					{{ $t('pages.systemStatus.button_Support') }}
 				</router-link>.

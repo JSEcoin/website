@@ -22,7 +22,7 @@
 
 		<div id="JSEW-privacy" class="wrapper">
 			<h2 class="heading">{{ $t('pages.privacyPolicy.heading_privacy') }}</h2>
-			
+
 			<p>{{ $t('pages.privacyPolicy.para_main1') }}</p>
 			<hr class="JSEW-privacy-hr">
 			<p id="JSEW-privacy-cta">{{ $t('pages.privacyPolicy.para_main1_cta') }}<a href="https://platform.jsecoin.com/?register=1&utm_medium=internalLinks&utm_source=privacyNotice&utm_campaign=privacyNoticeLink" target="_blank">https://platform.jsecoin.com</a></p>
@@ -33,7 +33,7 @@
 			<p>{{ $t('pages.privacyPolicy.para_main5') }}</p>
 			<br />
 			<h4 class="subHeading">{{ $t('pages.privacyPolicy.subHeading_dataPrivacy') }}</h4>
-			
+
 			<p>{{ $t('pages.privacyPolicy.para_main6') }}</p>
 			<p>{{ $t('pages.privacyPolicy.para_main7') }}</p>
 
@@ -91,6 +91,6 @@ export default {
   border: 0;
   border-top: 1px solid #CCC;
   margin: 1em 20px;
-  padding: 0; 
+  padding: 0;
 }
 </style>

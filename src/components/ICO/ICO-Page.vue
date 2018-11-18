@@ -68,7 +68,7 @@
 					<!-- Info Display -->
 					<div class="highlightPanelFlat" v-if="!accountWhitelisted">
 						<i>
-							{{ $t('pages.ico.panel_purchase.highlight_info1') }}							
+							{{ $t('pages.ico.panel_purchase.highlight_info1') }}
 							<router-link v-bind:to="`/${$store.state.local}/whitelisting`" tag="a">
 								{{ $t('pages.ico.panel_purchase.highlight_link') }}
 							</router-link>
@@ -132,7 +132,7 @@
 		</div>
 		<!-- xICO form dialogue mask -->
 		<div id="JSEW-ICO" class="wrapper" style="padding-top:10px;">
-			
+
 			<div class="infoPanel" v-if="launchPadDevMode">
 				<h4>WARNING - THE JSE ICO LAUNCHPAD IS NOT LIVE!</h4>
 				<p>
@@ -157,8 +157,8 @@
 							<div id="JSEW-ICOLogo" class="borderRight">
 								<img :class="{'bonus':bonus>0}" src="../../assets/ico/logo.png" alt="JSEcoin - The Javascript Embedded Cryptocurrency" />
 								<button style="display:flex; font-size:0.8em; align-items:flex-end;justify-content: center;" v-on:click="initBuy" class="button buy" :class="{disable: !showBuyOption}">
-									<img v-if="!showBuyOption" src="../../assets/ico/metamask_ico.png" style="height: 16px; width: 19px; margin: 0px 4px 0px 0px;" />
-									<img v-else src="../../assets/ico/metamask_ico_active.png" style="height: 16px; width: 19px; margin: 0px 4px 0px 0px;" />
+									<img v-if="!showBuyOption" src="../../assets/ico/metamask_ico.png" style="height: 16px; width: 19px; margin: 0px 4px 0px 0px;" alt="Metamask logo" />
+									<img v-else src="../../assets/ico/metamask_ico_active.png" style="height: 16px; width: 19px; margin: 0px 4px 0px 0px;" alt="Metamask logo" />
 									{{BuyJSEButton}}</button>
 								<div v-if="bonus>0" style="margin:10px 10px 10px 10px; font-size:0.65em; text-align:center; font-weight:bold; border-radius:3px; border:solid 1px #eee; padding:4px 8px;">
 									{{bonus}}% BONUS ROUND
@@ -180,7 +180,7 @@
 													<div id="JSEW-icoPointerWrapper">
 														<div class="icoRow">
 															<div class="coin"></div>
-															<span style="color:#0096ff; margin-right:4px;">{{total.jseDisplay}}</span> 
+															<span style="color:#0096ff; margin-right:4px;">{{total.jseDisplay}}</span>
 															<span>JSE</span>
 														</div>
 													</div>
@@ -211,7 +211,7 @@
 												{{total.jseDisplay}} <span>JSE</span>
 											</li>
 											<!-- xJSE -->
-											<!-- EOS 
+											<!-- EOS
 											<li id="JSEW-distEOS" class="mainCol">
 												<div id="JSEW-eos"></div>
 												0 <span>EOS</span>
@@ -288,7 +288,7 @@
 					<dt>{{ $t('pages.ico.panel_directPayment.heading_directPayment') }}</dt>
 					<dd>
 						<div>
-							<img src="../../assets/ico/metamask.svg" style="width:50px; float:left; margin:0px 10px" />
+							<img src="../../assets/ico/metamask.svg" style="width:50px; float:left; margin:0px 10px" alt="Metamask logo" />
 							<p>
 								If you don't have an integrated wallet like <a href="http://metamask.io/" target="_BLANK">Metamask</a> - you can send Ethereum direct to our smart contract address for JSE Tokens.
 							</p>
@@ -304,7 +304,7 @@
 								<div style="margin:0px 10px 10px 10px; font-size:0.65em; text-align:center; font-weight:bold; border-radius:3px; border:solid 1px #eee; padding:4px 8px;">QR CODE<BR />JSE CONTRACT ADDRESS</div>
 							</div>
 							<!-- xETH QR Code -->
-							
+
 							<!-- ETH payment Info -->
 							<div id="JSEW-ethPaymentInfo">
 								<h2><i class="fa fa-info-circle"></i> {{ $t('pages.ico.panel_directPayment.subheading_important') }}</h2>
@@ -325,7 +325,7 @@
 							</div>
 							<!-- xETH payment Info -->
 						</div>
-							
+
 						<div class="row" style="padding:10px; justify-content: center;">
 							<div class="col"><a href="https://github.com/ethereum/mist/releases" target="_blank" rel="nofollow" title="Mist Wallet"><img src="../../assets/ico/mist_badge.png" style="height:30px; margin:0px 4px;" /></a></div>
 							<div class="col"><a href="https://token.im/" target="_blank" rel="nofollow" title="IMToken Wallet"><img src="../../assets/ico/imtoken_badge.png" style="height:30px; margin:0px 4px;" /></a></div>
@@ -337,7 +337,7 @@
 					</dd>
 				</dl>
 				<!-- xEthereum Payment Overview Panel -->
-				
+
 				<!-- KYC -->
 				<dl id="JSEW-KYC" class="thinCol">
 					<dt><i class="fa fa-info-circle "></i> {{ $t('pages.ico.panel_KYC.heading_KYC') }}</dt>
@@ -348,8 +348,8 @@
 						<p style="margin:10px; border-radius:6px; border:solid 1px #eee; padding:4px 8px;">
 							<i>{{ $t('pages.ico.panel_KYC.para_infoMsg') }}</i>
 						</p>
-						
-						
+
+
 						<div class="footer">
 							<router-link style="width:80%" class="button thin" v-bind:to="`/${$store.state.local}/whitelisting`" tag="button">
 								<i class="fa fa-user-circle-o"></i> {{ $t('pages.ico.panel_KYC.button_startKYC') }}
@@ -383,7 +383,7 @@
 							</div>
 						</dd>
 					</dl>
-					
+
 					<dl style="margin-top:16px">
 						<dt>{{ $t('pages.ico.panel_purchaseHistory.heading_tokenAddress') }} <i class="fa  fa-level-down"></i></dt>
 						<dd>
@@ -479,7 +479,7 @@
 							</li>
 							<li style="margin:10px;">{{ $t('pages.ico.panel_exchangeInfo.info_list4') }}</li>
 						</ol>
-						<div class="hr" style="margin:10px 0px;"><hr /></div>	
+						<div class="hr" style="margin:10px 0px;"><hr /></div>
 					</dd>
 				</dl>
 				<!-- xExchange payment info -->
@@ -1324,7 +1324,7 @@ export default {
 		flex:1 !important;
 	}
 	.mainCol {
-		
+
 	}
 }
 
@@ -1333,7 +1333,7 @@ export default {
 		flex:1 !important;
 	}
 	.mainCol {
-		
+
 	}
 }
 	.mobileHide {
@@ -1390,7 +1390,7 @@ export default {
 	background:#16ab39;
 }
 
-#JSEW-ICOMask .footer button.green.disable, 
+#JSEW-ICOMask .footer button.green.disable,
 #JSEW-ICOMask .footer button.green.disable:hover {
 	background: #ccc;
 	cursor: default;
@@ -1561,12 +1561,12 @@ export default {
 }
 .bottomButton {
 	background: #00b48d;
-	border-radius:0px 0px 6px 6px; 
-	margin:0px 0px 10px -20px; 
-	padding:4px 8px; 
-	width:280px; 
-	font-size:0.8em; 
-	font-weight:bold; 
+	border-radius:0px 0px 6px 6px;
+	margin:0px 0px 10px -20px;
+	padding:4px 8px;
+	width:280px;
+	font-size:0.8em;
+	font-weight:bold;
 	max-width:280px;
 	color:#fff;
 }
@@ -1599,7 +1599,7 @@ export default {
 }
 
 #JSEW-ICOLogo img {
-	width:120px; 
+	width:120px;
 	margin: 20px 20px 0px 20px;
 }
 
@@ -1608,7 +1608,7 @@ export default {
 }
 
 #JSEW-totalDistribution {
-	border-bottom:solid 1px #eee; 
+	border-bottom:solid 1px #eee;
 	margin:0px 10px;
 	padding-bottom:10px;
 }
@@ -1623,12 +1623,12 @@ export default {
 }
 
 #JSEW-purchaseVideo {
-	position:relative; 
+	position:relative;
 	padding-bottom:70px;
 }
 
 #JSEW-ETHQRCode {
-	margin:10px 0px; 
+	margin:10px 0px;
 	align-self: center;
 }
 
@@ -1643,8 +1643,8 @@ export default {
 }
 
 #JSEW-ethPaymentInfo ol {
-	margin:0px 0px 0px 20px; 
-	padding:0px; 
+	margin:0px 0px 0px 20px;
+	padding:0px;
 	font-size:0.9em;
 }
 
@@ -1676,17 +1676,10 @@ export default {
 }
 
 #JSEW-ethAddressMini input {
-	flex-grow:1; 
-	font-size:0.8em; 
+	flex-grow:1;
+	font-size:0.8em;
 	margin:20px 0px;
 }
-
-
-
-
-
-
-
 
 
 .borderRight {

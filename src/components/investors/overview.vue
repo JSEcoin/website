@@ -59,16 +59,15 @@
 
 					<h1 class="heading">{{ $t('pages.investorOverview.heading_when') }}</h1>
 					<h2 class="subHeading">{{ $t('pages.investorOverview.subheading_when') }}</h2>
-					
+
 					<p>
 						{{ $t('pages.investorOverview.para_when1') }}
 					</p>
 
 					<iframe src="//www.slideshare.net/slideshow/embed_code/key/87vlHovYG7T9WR" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin: 20px; max-width: 100%;" allowfullscreen> </iframe>
 
-					
-					
-				</div>			
+
+				</div>
 			</div>
 		</div>
 	</div>
