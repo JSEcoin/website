@@ -46,10 +46,10 @@
 				<h1 class="heading">{{ $t('pages.bugBounty.section_leaderBoard.heading_leaderBoard') }}</h1>
 				<h2 class="subHeading">{{ $t('pages.bugBounty.section_leaderBoard.subheading_leaderBoard') }}</h2>
 				<p>
-					{{ $t('pages.bugBounty.section_leaderBoard.para_main1_line1') }}
-					<router-link v-bind:to="`/${$store.state.local}/oddJobs/smallJobs`" tag="a">
+					<!--{{ $t('pages.bugBounty.section_leaderBoard.para_main1_line1') }}-->
+					<!--<router-link v-bind:to="`/${$store.state.local}/oddJobs/smallJobs`" tag="a">
 						{{ $t('pages.bugBounty.section_leaderBoard.link_smallTasks') }}
-					</router-link>
+					</router-link>-->
 					<br />
 					<!--{{ $t('pages.bugBounty.section_leaderBoard.para_main1_line2') }}-->
 				</p>

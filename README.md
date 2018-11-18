@@ -40,15 +40,19 @@ Check out our live [website](https://jsecoin.com).
 
 ### Run development environment
 
-1. Initialise developer environment `npm run dev`
+1. Initialise developer environment `npm run serve`
+
+Or Try out VUE UI - `vue ui` and from tasks select serve - 'Run task'
 
 ### Build website
 
 1. Executing `npm run build` generates a build within `./dist`
 
+Or Try out VUE UI - `vue ui` and from tasks select build - 'Run task'
+
 ## Webpack notes
 
-1. Remember to update `./build/webpack.prod.conf.js` with any new additional routes to generate static html and paths with PrerenderSpaPlugin.
+1. Remember to update `./vue.config.js` with any new additional routes to generate static html and paths with PrerenderSpaPlugin.
 
 ## Bug Bounty
 This is an initial push - alot of cleanup is still required if you spot an issue please report it and if we consider it a major issue we will credit your account as part of our bug bounty offering.
