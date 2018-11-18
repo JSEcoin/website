@@ -3,14 +3,17 @@
 		<div id="JSEW-exchanges" class="wrapper">
 			<h1 class="heading">{{ $t('pages.exchanges.heading_exchanges') }}</h1>
 			<h2 class="subHeading">Is there a wallet available to store tokens?</h2>
-			<p>
-				It is possible to store tokens within the JSE platform at https://jsecoin.com/platform
-			</p>
-			<p>
-				Alternatively you can withdraw your tokens to any 3rd party ERC20 compatible wallet. (Before making a withdrawl you should check with your wallet provider to ensure that it will be compatible with the JSE ERC20 token.
-			</p>
+			<ul>
+				<li>
+					It is possible to store tokens within the JSE platform at <a href="https://jsecoin.com/platform" target="_blank">https://jsecoin.com/platform</a>
+				</li>
+				<li>
+					Alternatively you can withdraw your tokens to any 3rd party ERC20 compatible wallet.<br />
+					(Before making a withdrawl you should check with your wallet provider to ensure that it supportd ERC20 tokens.)
+				</li>
+			</ul>
 
-			<h2 class="subHeading">To add a custom token please use the following details</h2>
+			<h2 class="subHeading">To add the JSE ERC20 token please use the following details:</h2>
 
 			<p>
 				<b>Token Contract Address:</b> 0x2d184014b5658C453443AA87c8e9C4D57285620b<br />
@@ -21,7 +24,7 @@
 			</p>
 			<h2 class="subHeading">Which exchanges is the JSE token listed on</h2>
 			<p>
-				JSEcoin will is listed and availabl on the following exchanges:
+				We are listed on a number of exchanges; however - we would recommend you use one of the following exchanges:
 			</p>
 			<div style="display:flex; align-items: center;">
 				<a href="https://bit.ly/2NV1eOW" target="_blank"><img src="../assets/images/exchanges/latoken.png" class="exchange-image dl-responsive-image" alt="LATOKEN" /></a>
