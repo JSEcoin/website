@@ -24,16 +24,7 @@
 					{{ $t('pages.contact.link_FAQ') }}
 				</router-link>
 			</h2>
-			<p>
-				Top 3 Questions:<br>
-				<a href="https://youtu.be/jHrB_9xonSc" target="_blank">How much is each JSE token worth?</a><br>
-				<a href="https://youtu.be/7aQq7TQXYuQ" target="_blank">How can I change JSE for USD?</a><br>
-				<a href="https://youtu.be/PtwnVQ0HPNk" target="_blank">When is the ICO and exchange listing?</a><br><br>
-				Many more questions are answered in our <router-link v-bind:to="`/${$store.state.local}/support/FAQ`" tag="a">
-					FAQ
-				</router-link>
-			</p>
-			<button class="button" v-on:click="showForm"><i class="fa fa-frown-o"></i> I HAVE CHECKED THE FAQ AND STILL HAVE A QUERY</button>
+			<p id="JSEW-noLongerAvailable">This page is no longer available</p>
 		</div>
 		<div class="wrapper" style="padding:0px 20px;">
 			<form id="JSEW-contactForm" @submit.prevent="onSubmit">
@@ -186,14 +177,62 @@ export default {
 	},
 	mounted() {
 		const self = this;
+		const get = this.getQueryParams(document.location.search);
+		if (get.ts && get.hash) {
+			self.sha256(get.ts).then(function(tsHash) {
+				console.log('t2');
+				const tsHashChopped = tsHash.substr(0,8);
+				if (tsHashChopped === get.hash) {
+					const now =  new Date().getTime();
+					if (now < get.ts + 172800000 && now > get.ts) {
+						console.log('Timestamp and hash correct');
+						self.showForm();
+					} else {
+						console.log('Contact form has expired');
+					}
+				} else {
+					console.log('Hash does not match timestamp');
+				}
+			});
+		} else {
+			console.log('get variables not found for ts and hash');
+		}
+
 		setTimeout(() => {
 			self.enableCaptcha = true;
 		}, 5000);
 	},
 	methods: {
+		sha256(str) {
+			// We transform the string into an arraybuffer.
+			const buffer = new TextEncoder('utf-8').encode(str);
+			return crypto.subtle.digest('SHA-256', buffer).then(function (hash) {
+				const hexCodes = [];
+				const view = new DataView(hash);
+				for (let i = 0; i < view.byteLength; i += 4) {
+					const value = view.getUint32(i);
+					const stringValue = value.toString(16);
+					const padding = '00000000';
+					const paddedValue = (padding + stringValue).slice(-padding.length);
+					hexCodes.push(paddedValue);
+				}
+				return hexCodes.join('');
+			});
+		},
+
+		getQueryParams(qs) {
+			qs = qs.split('+').join(' ');
+			const params = {};
+			let tokens;
+			const re = /[?&]?([^=]+)=([^&]*)/g;
+			while (tokens = re.exec(qs)) { params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]); }  // eslint-disable-line
+			return params;
+		},
 		showForm() {
 			this.formEl = document.getElementById('JSEW-contactForm');
 			this.formEl.style.display = 'block';
+			this.notAvailableEl = document.getElementById('JSEW-noLongerAvailable');
+			this.notAvailableEl.style.display = 'none';
 		},
 		displayForm() {
 			//if (e) e.preventDefault();

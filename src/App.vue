@@ -106,12 +106,15 @@
 							<a href="/shop">
 								Shop <i class="fa fa-external-link"></i>
 							</a>
-							<!--<router-link v-bind:to="`/${$store.state.local}/about/careers`" tag="a">
+							<!--
+							<router-link v-bind:to="`/${$store.state.local}/about/careers`" tag="a">
 								{{ $t('template.navigation.link_careers') }}
 							</router-link>-->
+							<!--
 							<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a">
 								{{ $t('template.navigation.link_reportAbuse') }}
 							</router-link>
+							-->
 							<router-link v-bind:to="`/${$store.state.local}/support/FAQ`" tag="a">
 								{{ $t('template.navigation.link_FAQ') }}
 							</router-link>
