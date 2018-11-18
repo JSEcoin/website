@@ -5,9 +5,9 @@
 				<router-link v-bind:to="`/${$store.state.local}/oddJobs/bugBounty`" tag="li">
 					{{ $t('pages.navigation.oddJobs.link_bugBounty') }}
 				</router-link>
-				<router-link v-bind:to="`/${$store.state.local}/oddJobs/smallJobs`" tag="li" class="active">
+				<!--<router-link v-bind:to="`/${$store.state.local}/oddJobs/smallJobs`" tag="li" class="active">
 					{{ $t('pages.navigation.oddJobs.link_smallJobs') }}
-				</router-link>
+				</router-link>-->
 				<router-link v-bind:to="`/${$store.state.local}/oddJobs/submitInfo`" tag="li">
 					{{ $t('pages.navigation.oddJobs.link_submit') }}
 				</router-link>

@@ -106,9 +106,9 @@
 							<a href="/shop">
 								Shop <i class="fa fa-external-link"></i>
 							</a>
-							<router-link v-bind:to="`/${$store.state.local}/about/careers`" tag="a">
+							<!--<router-link v-bind:to="`/${$store.state.local}/about/careers`" tag="a">
 								{{ $t('template.navigation.link_careers') }}
-							</router-link>
+							</router-link>-->
 							<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a">
 								{{ $t('template.navigation.link_reportAbuse') }}
 							</router-link>
@@ -161,9 +161,9 @@
 							<router-link v-bind:to="`/${$store.state.local}/environment`" tag="a">
 								{{ $t('template.navigation.link_environment') }}
 							</router-link>
-							<router-link v-bind:to="`/${$store.state.local}/whitelisting`" tag="a">
+							<!--<router-link v-bind:to="`/${$store.state.local}/whitelisting`" tag="a">
 								{{ $t('template.navigation.link_whitelisting') }} <i class="fa fa-check"></i>
-							</router-link>
+							</router-link>-->
 						</div>
 					</div>
 				</nav>
@@ -220,9 +220,9 @@
 							<a href="https://github.com/jsecoin" target="_blank">
 								GitHub <i class="fa fa-external-link"></i>
 							</a>
-							<router-link v-bind:to="`/${$store.state.local}/oddJobs/smallJobs`" tag="a">
+							<!--<router-link v-bind:to="`/${$store.state.local}/oddJobs/smallJobs`" tag="a">
 								{{ $t('template.navigation.link_oddJobs') }}
-							</router-link>
+							</router-link>-->
 							<router-link v-bind:to="`/${$store.state.local}/oddJobs/bugBounty`" tag="a">
 								{{ $t('template.navigation.link_bugBounty') }}
 							</router-link>
@@ -321,9 +321,9 @@
 							<a href="/shop">
 								Shop <i class="fa fa-external-link"></i>
 							</a>
-							<router-link v-bind:to="`/${$store.state.local}/about/careers`" tag="a">
+							<!--<router-link v-bind:to="`/${$store.state.local}/about/careers`" tag="a">
 								{{ $t('template.navigation.link_careers') }}
-							</router-link>
+							</router-link>-->
 							<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a">
 								{{ $t('template.navigation.link_reportAbuse') }}
 							</router-link>
@@ -369,9 +369,9 @@
 							<router-link v-bind:to="`/${$store.state.local}/environment`" tag="a">
 								{{ $t('template.navigation.link_environment') }}
 							</router-link>
-							<router-link v-bind:to="`/${$store.state.local}/whitelisting`" tag="a">
+							<!--<router-link v-bind:to="`/${$store.state.local}/whitelisting`" tag="a">
 								{{ $t('template.navigation.link_whitelisting') }} <i class="fa fa-check"></i>
-							</router-link>
+							</router-link>-->
 						</nav>
 						<nav>
 							<h4>{{ $t('template.navigation.heading_webmaster') }}</h4>
@@ -408,9 +408,9 @@
 							<a href="https://github.com/jsecoin" target="_blank">
 								GitHub <i class="fa fa-external-link"></i>
 							</a>
-							<router-link v-bind:to="`/${$store.state.local}/oddJobs/smallJobs`" tag="a">
+							<!--<router-link v-bind:to="`/${$store.state.local}/oddJobs/smallJobs`" tag="a">
 								{{ $t('template.navigation.link_oddJobs') }}
-							</router-link>
+							</router-link>-->
 							<router-link v-bind:to="`/${$store.state.local}/oddJobs/bugBounty`" tag="a">
 								{{ $t('template.navigation.link_bugBounty') }}
 							</router-link>

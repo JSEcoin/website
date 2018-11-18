@@ -11,9 +11,9 @@
 				<router-link v-bind:to="`/${$store.state.local}/about/ourVision`" tag="li">
 					{{ $t('pages.navigation.about.link_vision') }}
 				</router-link>
-				<router-link v-bind:to="`/${$store.state.local}/about/careers`" tag="li">
+				<!--<router-link v-bind:to="`/${$store.state.local}/about/careers`" tag="li">
 					{{ $t('pages.navigation.about.link_careers') }}
-				</router-link>
+				</router-link>-->
 				<router-link v-bind:to="`/${$store.state.local}/about/press`" tag="li" class="active">
 					{{ $t('pages.navigation.about.link_press') }}
 				</router-link>
