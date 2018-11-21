@@ -242,7 +242,7 @@ module.exports = {
 
 	baseUrl: undefined,
 	outputDir: undefined,
-	assetsDir: 'static',
+	assetsDir: 'assets',
 	runtimeCompiler: undefined,
 	productionSourceMap: false,
 	parallel: undefined,
