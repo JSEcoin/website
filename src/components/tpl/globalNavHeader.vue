@@ -45,7 +45,7 @@
 						<div id="JSEW-translateContent">
 							<div id="google_translate_element"></div>
 							<p>
-								Feel free to ask any questions, leave your comments, wishes and suggestions regarding 
+								Feel free to ask any questions, leave your comments, wishes and suggestions regarding
 								the Google Translation at our <a id="JSEW-telegramLink" href="https://t.me/jsetelegram">Telegram Chat</a>.
 							</p>
 						</div>
@@ -59,18 +59,20 @@
 <script>
 export default {
 	name: 'globalNavHeader',
-	
+
 	data() {
 		return {
 			translate: false,
 		};
 	},
 	mounted() {
-		//set tanslate ele
-		window.googleTranslateElementInit = () => {
-			new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+		if (typeof(window.googleTranslateElementInit) === 'undefined') {
+			window.googleTranslateElementInit = () => {
+				google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false }, 'google_translate_element');
+			};
 		}
-		//if ((document.getElementById('JSEW-googleT') === null) && (location.href.indexOf('localhost') === -1)) {
+		if (document.getElementById('JSEW-googleT') === null) {
+			//set tanslate ele
 			const t = document.createElement('script');
 			const s = document.getElementsByTagName('script')[0];
 
@@ -82,7 +84,7 @@ export default {
 
 			//inject
 			s.parentNode.insertBefore(t, s);
-		//}
+		}
 	},
 	methods: {
 		toggleTranslateDisplay() {
