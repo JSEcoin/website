@@ -313,12 +313,12 @@
 									<span>Dec</span>
 								</div>
 								<div class="box">
-									<h2 class="title">ICO</h2>
+									<h2 class="title">JSEcoin Platform</h2>
 									<div class="content">
 										<ul>
-											<li>Ad Tech Platform go-live</li>
-											<li>Publisher Campaign</li>
-											<li>Captcha AdBlock Campaign</li>
+											<li>iOS Release - itunes</li>
+											<li>Desktop Official Beta Signed Release</li>
+											<li>Ad-Exchange Development</li>
 										</ul>
 									</div>
 								</div>
@@ -327,6 +327,54 @@
 					</div>
 					<div class="year">
 						<div class="name">2019</div>
+						<div class="items">
+							<div class="item left" style="margin-top: -1rem;">
+								<div class="date">
+									<span>Q1</span>
+								</div>
+								<div class="box">
+									<h2 class="title">Ad-Exchange Internal Release</h2>
+									<div class="content">
+										<p>Ad-exchange goes live with beta version and select partners</p>
+									</div>
+								</div>
+							</div>
+							<div class="item right" style="margin-top: 10rem;">
+								<div class="date">
+									<span>Q2</span>
+								</div>
+								<div class="box">
+									<h2 class="title">Security Enhancements</h2>
+									<div class="content">
+										<p>Development of bot detection enterprise API and JSE captcha solution</p>
+									</div>
+								</div>
+							</div>
+							<div class="item left" style="margin-top: -1rem;">
+								<div class="date">
+									<span>Q3</span>
+								</div>
+								<div class="box">
+									<h2 class="title">Ad-Exchange Public Launch</h2>
+									<div class="content">
+										<p>Full public release of the JSE ad-exchange self-serve platform</p>
+										<p>Integration of additonal cryptocurrencies with merchant tools BTC/ETH</p>
+									</div>
+								</div>
+							</div>
+							<div class="item right" style="margin-top: 10rem;">
+								<div class="date">
+									<span>Q4</span>
+								</div>
+								<div class="box">
+									<h2 class="title">V2</h2>
+									<div class="content">
+										<p>Development of V2 platform including client consensus &amp; webRTC P2P network</p>
+										<p>Marketing/sales pipeline to scale ad-exchange and enterprise solutions</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -149,9 +149,9 @@
 							<a href="https://bitcointalk.org/index.php?topic=2398571.0" target="_BLANK">
 								{{ $t('template.navigation.link_bitcoinTalkAnn') }} <i class="fa fa-external-link"></i>
 							</a>
-							<router-link v-bind:to="`/${$store.state.local}/technical/stats`" tag="a">
+							<!--<router-link v-bind:to="`/${$store.state.local}/technical/stats`" tag="a">
 								{{ $t('template.navigation.link_siteStatistics') }}
-							</router-link>
+							</router-link>-->
 							<router-link v-bind:to="`/${$store.state.local}/technical/overview`" tag="a">
 								{{ $t('template.navigation.link_technicalOverview') }}
 							</router-link>
@@ -261,14 +261,14 @@
 			</div>
 
 			<footer>
-				<div id="JSEW-langOptions" :class="{'min':langOptMin}">
+				<!--<div id="JSEW-langOptions" :class="{'min':langOptMin}">
 					<div class="wrapper">
 						<i :class="{'fa-plus':langOptMin,'fa-minus':!langOptMin}" class="fa" v-on:click="toggleLangDisplay"></i>
 						<router-link v-bind:to="`/${item}${activeRoutePath}`" tag="a" v-for="item in $store.state.availablelocals" :key="item.id">
 							{{ $store.state.localeToNative[item] }}
 						</router-link>
 					</div>
-				</div>
+				</div>-->
 				<div id="JSEW-tokenAddressInfo">
 					<div class="wrapper">
 						<p>
@@ -327,9 +327,9 @@
 							<!--<router-link v-bind:to="`/${$store.state.local}/about/careers`" tag="a">
 								{{ $t('template.navigation.link_careers') }}
 							</router-link>-->
-							<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a">
+							<!--<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a">
 								{{ $t('template.navigation.link_reportAbuse') }}
-							</router-link>
+							</router-link>-->
 							<router-link v-bind:to="`/${$store.state.local}/support/FAQ`" tag="a">
 								{{ $t('template.navigation.link_FAQ') }}
 							</router-link>
@@ -357,9 +357,9 @@
 							<a href="https://bitcointalk.org/index.php?topic=2398571.0" target="_BLANK">
 								{{ $t('template.navigation.link_bitcoinTalkAnn') }} <i class="fa fa-external-link"></i>
 							</a>
-							<router-link v-bind:to="`/${$store.state.local}/technical/stats`" tag="a">
+							<!--<router-link v-bind:to="`/${$store.state.local}/technical/stats`" tag="a">
 								{{ $t('template.navigation.link_siteStatistics') }}
-							</router-link>
+							</router-link>-->
 							<router-link v-bind:to="`/${$store.state.local}/technical/overview`" tag="a">
 								{{ $t('template.navigation.link_technicalOverview') }}
 							</router-link>
@@ -848,7 +848,6 @@ export default {
 <style>
 @import 'assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-/*@import 'assets/fonts/customset/ico.css';*/
 @keyframes a0_t { 0% { transform: translate(498px,507px) rotate(0deg) translate(-445.503px,-500.996px); } 22.2222% { transform: translate(498px,507px) rotate(0deg) translate(-445.503px,-500.996px); animation-timing-function: cubic-bezier(0.44,0,0.19,1.515); } 30.5555% { transform: translate(498px,507px) rotate(120deg) translate(-445.503px,-500.996px); } 55.5555% { transform: translate(498px,507px) rotate(120deg) translate(-445.503px,-500.996px); animation-timing-function: cubic-bezier(0.44,0,0.19,1.515); } 63.8888% { transform: translate(498px,507px) rotate(240deg) translate(-445.503px,-500.996px); } 88.8888% { transform: translate(498px,507px) rotate(240deg) translate(-445.503px,-500.996px); animation-timing-function: cubic-bezier(0.44,0,0.19,1.515); } 97.2222% { transform: translate(498px,507px) rotate(360deg) translate(-445.503px,-500.996px); } 100% { transform: translate(498px,507px) rotate(360deg) translate(-445.503px,-500.996px); } }
 @keyframes a1_t { 0% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 5.5555% { transform: translate(38.503px,177.996004px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 11.1111% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 38.8888% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 44.4444% { transform: translate(38.503px,177.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 50% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 77.7777% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 83.3333% { transform: translate(38.503px,177.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 88.8888% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 100% { transform: translate(-55.8px,-0.037221px) scale(1,1); } }
 @keyframes a2_t { 0% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 11.1111% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 16.6666% { transform: translate(155.500967px,182.995999px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 22.2222% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 33.3333% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 38.8888% { transform: translate(155.501px,182.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 44.4444% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 72.2222% { transform: translate(-55.8px,-0.037221px) scale(1,1); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 77.7777% { transform: translate(155.501px,182.996px) scale(0.7,0.7); animation-timing-function: cubic-bezier(0.42,0,0.58,1); } 83.3333% { transform: translate(-55.8px,-0.037221px) scale(1,1); } 100% { transform: translate(-55.8px,-0.037221px) scale(1,1); } }
@@ -962,7 +961,7 @@ body {
 	padding:0px;
 	background: #fff;
 	font-size: 16px;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito', 'calibri', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -1211,7 +1210,8 @@ p .infoMsg {
 a {
 	text-decoration: none;
 	color:#0168bb;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	/*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+	font-family: 'Nunito', 'calibri', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 * {
 	outline:none;
@@ -1620,7 +1620,7 @@ header a {
 
 
 #JSEW-headerBar a {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito', 'calibri', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #JSEW-carouselContent {
@@ -1657,41 +1657,6 @@ header .carousel3 {
 	max-width:1000px;
 	width:100%;
 	margin:0px auto;
-}
-
-#JSEW-globalNav {
-	float:right;
-	margin-top:16px;
-	/*font-size:0.875em;*/
-	font-size:0.85em;
-}
-#JSEW-globalNav ul {
-	margin:0px;
-	margin-right:22px;
-	padding:0px;
-}
-
-#JSEW-globalNav li {
-	float: left;
-	list-style: none;
-}
-
-#JSEW-globalNav li a {
-	padding:8px 10px;
-	color:#fff;
-	font-weight: 800;
-	text-transform: uppercase;
-}
-#JSEW-globalNav li a:hover {
-	/*background: #103764;*/
-	background: rgba(0,0,0,0.3);
-	border-radius: 60px;
-}
-
-#JSEW-globalNav li a.navButton {
-	border:solid 2px;
-	border-radius: 3px;
-	margin-left:20px;
 }
 #JSEW-getStarted {
 	display: flex;
@@ -2415,7 +2380,8 @@ footer a {
 	}
 }
 @media screen and (min-width: 1400px) {
-	body {
+	body #JSEW-website,
+	body #FB-CB {
 		zoom:120%;
 	}
 }

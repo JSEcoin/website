@@ -1,13 +1,16 @@
 <template>
 	<div id="JSEW-wrapper">
 
-		<router-link id="JSEW-globalStatsBar" class="hasLink" v-bind:to="`/${$store.state.local}/technical/stats`" tag="div">
+		<!--<router-link id="JSEW-globalStatsBar" class="hasLink" v-bind:to="`/${$store.state.local}/technical/stats`" tag="div">-->
+		<div id="JSEW-globalStatsBar">
+			<!--
 			<div id="JSEW-globalStatsButton">
 				<button>{{ $t('pages.home.button_viewGlobalStats') }}</button>
-			</div>
+			</div>-->
 
 			<miniStat />
-		</router-link>
+		</div>
+		<!--</router-link>-->
 
 
 		<div id="JSEW-overview" class="wrapper">
