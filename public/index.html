@@ -67,6 +67,59 @@
 		<strong>We're sorry but website doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
 	</noscript>
 	<div id="JSEW-website"></div>
+<style>
+	#FB-CB {
+		background-image: url(/static/atlas/cb_button.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		width:99px;
+		height:99px;
+		position: fixed;
+		bottom:0px;
+		right:26px;
+		z-index:1001;
+		opacity: 0;
+		transition: bottom 0.2s, opacity 0.2s;
+	}
+	
+	#FB-CB.active {
+		opacity: 1;
+		bottom:10px;
+		cursor: pointer;
+	}
+	#FB-atlasFrame.floatingButton {
+		z-index: 100000000;
+		position: fixed;
+		height:100%;
+		max-height: 730px;
+		min-height:350px;
+		width: 520px;
+		right: 20px;
+		bottom: 20px;
+	}
+	
+	#FB-atlasFrame.hide {
+		display: none;
+	}
+	
+	@media screen and (max-width: 520px) {
+		#FB-atlasFrame.floatingButton {
+			position: fixed;
+			width: 100%;
+			height: 100% !important;
+			top:0px;
+			bottom:0px;
+			left:0px;
+			right:0px;
+			max-height: inherit;
+		}
+		#FB-CB {
+			right:6px;
+			width: 69px;
+  			height: 69px;
+		}
+	}
+	</style>
+	<script src="iframe.js"></script>
 </body>
-
 </html>
