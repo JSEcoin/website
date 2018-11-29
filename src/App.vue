@@ -2380,7 +2380,8 @@ footer a {
 	}
 }
 @media screen and (min-width: 1400px) {
-	body {
+	body #JSEW-website,
+	body #FB-CB {
 		zoom:120%;
 	}
 }
