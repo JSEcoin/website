@@ -2,15 +2,15 @@
 	<div id="JSEW-wrapper">
 		<nav id="JSEW-subHeaderNav">
 			<ul class="wrapper">
+				<router-link v-bind:to="`/${$store.state.local}/support`" tag="li">
+					Support Center
+				</router-link>
 				<router-link v-bind:to="`/${$store.state.local}/support/community`" tag="li" class="active">
 					{{ $t('pages.navigation.support.link_community') }}
 				</router-link>
 				<!--<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="li">
 					{{ $t('pages.navigation.support.link_contact') }}
 				</router-link>-->
-				<router-link v-bind:to="`/${$store.state.local}/support/FAQ`" tag="li">
-					{{ $t('pages.navigation.support.link_FAQ') }}
-				</router-link>
 			</ul>
 		</nav>
 

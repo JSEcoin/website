@@ -1,0 +1,69 @@
+category_path,questions,content
+Platform Mining,"Is it possible to mine on multiple computers logged into the same account? If not, should one set up multiple accounts with same owner/email address?
+I have lots of computers, can I mine on all of them?
+Can I mine on my phone and my computer at the same time?
+Is it ok to mine on lots of devices on different IP addresses?
+Can I use different email addresses to set up lots of accounts?","No, we are trying to avoid both scenarios. The self-mining is meant to be a way for individual users to get involved with cryptocurrency and be accessible for everyone. We want to avoid going down the path of multiple user accounts and multiple devices because this will eventually lead to server farms, bot-nets etc. and wont benefit everyone. You risk having your account(s) closed and we take active measures to prevent this kind of activity."
+Platform Mining,"How many tokens are available each day and how are they distributed?
+How many hashes do I need to find to earn 1 JSE?
+How am I paid for using the self-mining?
+How often should I receive a reward?
+I found a hash but didn't get paid.
+How many tokens should I earn each day?","Finding valid hashes earns you a ticket into a random lottery system where 50 winners get rewarded a 1 JSE token. This lottery takes place every 30 seconds, with a new 50 x 1JSE available each time. This adds up to 144,000 JSE available each day. There is a limit of 1 ticket per IP address and user ID per block.
+
+The random nature of the lottery mean that finsing a hash does not guarantee earning a reward?
+
+If you run the miner for 24 hours you can expect to earn roughly the number of tokens available each day divided by the number of miners online. You can see this information on the mining platform of the page. FOr example if there are 4000 miners online it would be 144000/4000 = 36. This is not guaranteed and will vary as user number fluctuate during the day and should be used to give a rough guide only."
+Platform Mining,"What is the Hash Rate Accelerator?
+How can I increase the hashrate?
+Mining doesnt use very much cpu, can i increase this.
+I want to use my compute for mining only, can I increase the hashrate?
+I have moved the accelerator to 9 but only get 12k h/s.
+How can I reduce the hashrate?","This is a simple slider function that allows you to increase or decrease the amount of cpu power that you dedicate to the mining process. If you want to continue using your computer then you may want to turn this down, or you can crank it up if you have nothing else to do on your device. Please note that at present there is no real benefit to earnings by going over 10K h/s and so setting the hash rate accelerator to deliver more that this is not recommended."
+Platform Mining,"Can i mine on Linux/Mac?
+Can I mine on Mac?
+Can I mine on Raspberry PI?
+Is there a desktop app for Linux?
+Is a desktop app available for Mac?
+Is there a mining app for linux or mac?","You can mine on any device that has a web browser. The desktop app is currently only available for windows but it is built with Electron so should compile to Mac/Linux.
+
+We currently aren't planning any a command line app as this would be open to abuse."
+General Enquiries,"What are pending rewards and how are the released?
+Why does the balance not increase?
+What does pending mean?
+When are my tokens added to my balance?
+I have earned tokens but have not been paid?
+Why haven't I received my JSE?
+I have seen that I am earning rewards but they aren’t being added to my balance.
+Why are tokens I've earnt not being added to my balance?
+Why are earnings going into pending?
+All my earnings are stuck in pending","In order to help with fraud prevention tokens go into a 7 day pending holding period. This means that any tokens earned on a monday will be added to your balance the following monday, and tokens earned on a tuesday will be added the following Tuesday and so on. If you go to the bottom right of the dashboard page of the platform you will see a breakdown of all pending rewards."
+Platform Mining,"How can I mine jsecoin?
+how do I mine?
+Tell me how to mine jse
+How to mine jse tokens?
+How is jse mined?","JSE tokens can be mined effectively with any device that contains a web browser.
+
+Simply set up an account at https://platform.jsecoin.com log in and visit the mining page. The mathematical hashing algorithm runs in the browser and uses minimal resources so your user experience and other applications wont be affected. 50 JSE tokens are distributed to the mining community on each 30 second block cycle.
+
+Website owners can also mine using the publisher mining code snippet on their sites. Visitors can opt-in to mine on your behalf and help monetize a webmasters cost of content."
+Platform Mining,"If my flatmate and I both mine at the same time are earnings affected as we are using the same IP address?
+I share an office, can we all mine at the same time?
+Can I mine in lots of accounts on the same IP address?
+Will I earn more using lots of devices?
+Can me and my friend all mine at college?
+My wife started mining as well and now I am earning less, why?","As part of our fraud prevention and to ensure server farms can't take over JSEcoin, we have had to put IP restrictions in place. We have limited it to one lottery ticket per block per IP address. This means that multiple users will be able to mine in the same location, however potential rewards will be split."
+Platform Mining,"Why does the hash rate drop significantly when I visit other tabs?
+Mining stops when I visit other websites.
+How can I leave mining running in the backgroung?
+I can't use any other tabs without mining stopping?
+What is the best browser for mining?
+Is firefox better than chrome?","To overcome this we recommend that you open the mining in a new browser with no other tabs open. If you then want to continue to different sites instead of opening a new tab, you should open up a new browser. This should stop the drop in hash rate. Try different browsers, your optimal browser will depend on your system. - additionally you can prevent this by mining via our Windows or Mac desktop apps which can be downloaded here https://jsecoin.com/downloads"
+Platform Mining,"What is the best hash rate to earn JSE tokens?
+What is the best hash rate?
+What is the optimal hash rate?
+What hash rate should I be getting?
+How many hps should I get?
+What should I set the hash rate accelerator to?
+How does the hash rate accelerator work?
+How many hashes per second do I need to earn JSE?",For optimal earnings you need to be finding one hash per 30 second block on the platform mining. For this we recommend a hash rate of around 3000HPS but you can go lower. Above this figure wont necessarily earn you more rewards. You can adjust your hash rate using the hash rate accelerator slider in the settings on the mining page.
