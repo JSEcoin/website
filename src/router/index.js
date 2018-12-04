@@ -216,7 +216,8 @@ const router = new Router({
 		},
 		{
 			path: '/support/FAQ',
-			component: FAQ,
+			redirect: '/support',
+			//component: FAQ,
 			meta: {
 				linkText: 'pages.FAQ.banner.linkText',
 				headerBG: '/static/banners/faq.jpg',
@@ -712,7 +713,8 @@ const router = new Router({
 		},
 		{
 			path: '/:lang/support/FAQ',
-			component: FAQ,
+			redirect: '/support',
+			//component: FAQ,
 			meta: {
 				linkText: 'pages.FAQ.banner.linkText',
 				headerBG: '/static/banners/faq.jpg',
