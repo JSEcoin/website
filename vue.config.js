@@ -37,6 +37,7 @@ const coreRoutes = [
 	'/about/ourVision',
 	//'/about/careers',
 	'/about/press',
+	'/support',
 	'/support/contact',
 	'/support/FAQ',
 	'/support/community',
