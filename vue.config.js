@@ -39,7 +39,7 @@ const coreRoutes = [
 	'/about/press',
 	'/support',
 	'/support/contact',
-	'/support/FAQ',
+	//'/support/FAQ',
 	'/support/community',
 	'/legal/userAgreement',
 	'/legal/privacyPolicy',
