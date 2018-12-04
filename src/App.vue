@@ -115,8 +115,8 @@
 								{{ $t('template.navigation.link_reportAbuse') }}
 							</router-link>
 							-->
-							<router-link v-bind:to="`/${$store.state.local}/support/FAQ`" tag="a">
-								{{ $t('template.navigation.link_FAQ') }}
+							<router-link v-bind:to="`/${$store.state.local}/support`" tag="a">
+								Support Center
 							</router-link>
 							<a href="/forums">
 								{{ $t('template.navigation.link_forums') }}
@@ -330,8 +330,8 @@
 							<!--<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a">
 								{{ $t('template.navigation.link_reportAbuse') }}
 							</router-link>-->
-							<router-link v-bind:to="`/${$store.state.local}/support/FAQ`" tag="a">
-								{{ $t('template.navigation.link_FAQ') }}
+							<router-link v-bind:to="`/${$store.state.local}/support`" tag="a">
+								Support Center
 							</router-link>
 							<a href="/forums">
 								{{ $t('template.navigation.link_forums') }}

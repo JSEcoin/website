@@ -1,0 +1,69 @@
+category_path,questions,content
+Exchanges,"How do I get paid and convert JSE to USD or my local currency?
+How can I convert JSE to USD?
+How do I cash out of JSE?
+Can I exchange JSE for Euros?
+Can I convert JSEcoin to real money?
+Where can I convert JSE to Bitcoin or Ethereum?
+Can I exchange JSE for BTC or ETH?
+How can we tranfer jsecoin to bitcoin?
+How do I transfer JSEcoin to ethereum?",You can convert JSE to Bitcoin or Ethereum and ultimately fiat currencies such as the USD or Euro at 3rd party exchanges such as https://latoken.com and https://idex.market
+Exchanges,"How do I make a withdrawal from the JSE platform?
+How can I withdraw my tokens?
+How do I send tokens to myetherwallet or metamask?
+What do I need to do to withdraw JSEcoin?
+Can you show me how to withdraw funds to exchange?
+How do I send my JSE to Latoken or IDEX?
+I'd like to ask how to withdrawal from JSE Platform to ERC20 Wallet?","Go to the JSEcoin platform at https://platform.jsecoin.com and open the funds page. Click withdraw and then paste the address you want to send the tokens to, and enter the amount. Please ensure that the receiving wallet is compatible with ERC20 tokens. Withdrawals can currently take up to 24 hours to process."
+Exchanges,"How do I make a deposit to the JSE platform?
+How do I send funds from exchange to the platform?
+Can I deposit funds bought on exchange?
+Can I deposit funds to the platform?
+How can I claim JSE tokens purchased on exchange?
+Where can I deposit JSEcoin?
+How do I transfer my ICO tokens from metamask to the JSE platform?","Go to the JSEcoin platform at https://platform.jsecoin.com and open the funds page. Click deposit, and an address will be created. Paste this address into the wallet you are sending the tokens from as the receiving address. Only send JSE tokens to this address do not send ETH or any other cryptocurrencies as the funds will be lost."
+Exchanges,"Is there a wallet available to store coins?
+Where can I store JSE tokens?
+How can I save my JSEcoin?
+Is there a wallet available?
+Where can I put my JSE tokens?
+Can I send tokens to Metamask?
+Can I send JSE to myetherwallet?","It is possible to store tokens within the JSE platform at https://jsecoin.com/platform Alternatively you can withdraw your tokens to any 3rd party ERC20 compatible wallet that accepts ERC20 tokens. Before making a withdrawal you should check with your wallet provider to ensure that it will be compatible with the JSE ERC20 token. A good 3rd party wallet that we use here is metamask, available from: https://metamask.io/"
+Exchanges,"What details do I need to use to add a custom token to my ERC20 wallet?
+What is the token contract address?
+Why aren't my tokens showing in metamask?
+My JSEcoin isn't showing in my wallet
+How can I set up jsecoin in an ERC20 wallet?
+Where can I find the token address?","To add a custom token please use the following details, Token Contract Address: 0x2d184014b5658C453443AA87c8e9C4D57285620b. Token Symbol: JSE. Decimals: 18"
+Exchanges,"On which exchanges can I trade JSE tokens?
+Where can I sell JSE?
+What exchanges is JSEcoin listed on?
+Where can I buy JSEcoin?
+Which exchanges list JSE pairs?
+Where can I trade JSE for Bitcoin or Ethereum?",Our official exchanges are https://LATOKEN.com and https://IDEX.market Please ensure you check minimum deposit amounts before making any deposits as sending lees than the minimum could result in the loss of your tokens.
+Exchanges,"What is the price of JSE?
+What is the price of jsecoin?
+How much is a jse coin worth?
+What is the exchange rate to usd?
+What is the exchange rate to bitcoin or ethereum?
+How much is each jsecoin worth?
+What is the price of jse?
+How much is jse worth in usd?
+Value of Jsecoin?
+Value of JSE?
+What is JSE price?","Exchange rates vary constantly and it's best to check at a exchange aggregator such as:
+https://coinmarketcap.com/currencies/jsecoin/"
+Exchanges,"How can I invest?
+How can I invest in JSEcoin?
+How can I buy JSE tokens?
+Can I invest USD?
+Can I buy JSE tokens with USD or Euros?","To purchase JSE tokens you will need some Ethereum or Bitcoin which can be purchased from a broker such as https://coinbase.com or https://localbitcoins.com
+
+Once you have some cryptocurrency you can exchange it for JSE using a 3rd party exchange such as https://latoken.com or https://idex.market"
+Exchanges,"I’m trying to withdraw tokens but don’t receive the confirmation email!
+I'm not getting emails
+I have checked spam but am not receiving emails
+I haven't received a welcome email with confirmation link
+I can't confirm my account because the email isn't coming through
+I'm not receiving the mail with confirmation link
+When I try to withdraw my tokens I don’t receive the confirmation email",We use Sendgrid for email delivery and it is most likely that you have unsubscribed from receiving these emails. If you go to the settings page and click the “subscribe to emails” button you will be removed from the list and the confirmation emails should arrive.

@@ -25,6 +25,7 @@ const press = () => import(/* webpackChunkName: "about" */ '@/components/about/p
 const community = () => import(/* webpackChunkName: "support" */ '@/components/support/community');
 const contact = () => import(/* webpackChunkName: "support" */ '@/components/support/contact');
 const FAQ = () => import(/* webpackChunkName: "support" */ '@/components/support/FAQ');
+const qna = () => import(/* webpackChunkName: "support" */ '@/components/support/QnA');
 
 //legal
 const privacyPolicy = () => import(/* webpackChunkName: "legal" */ '@/components/legal/privacyPolicy');
@@ -93,7 +94,6 @@ const blockchainExplorer = () => import(/* webpackChunkName: "tools" */ '@/compo
 
 //redirect
 const exchangeRedirect = () => import(/* webpackChunkName: "tpl" */ '@/components/tpl/exchangeRedirect');
-
 
 //blog integration
 const ThemePagePage = () => import(/* webpackChunkName: "theme" */ '@/theme/Page');
@@ -217,6 +217,17 @@ const router = new Router({
 		{
 			path: '/support/FAQ',
 			component: FAQ,
+			meta: {
+				linkText: 'pages.FAQ.banner.linkText',
+				headerBG: '/static/banners/faq.jpg',
+				headerTitle: 'pages.FAQ.banner.heading',
+				headerSubTitle: 'pages.FAQ.banner.subheading',
+			},
+		},
+		{
+			path: '/support',
+			component: qna,
+			//redirect: `/${store.state.local}/home`,
 			meta: {
 				linkText: 'pages.FAQ.banner.linkText',
 				headerBG: '/static/banners/faq.jpg',
@@ -676,6 +687,17 @@ const router = new Router({
 				headerBG: '/static/banners/press.jpg',
 				headerTitle: 'pages.press.banner.heading',
 				headerSubTitle: 'pages.press.banner.subheading',
+			},
+		},
+		{
+			path: '/:lang/support',
+			component: qna,
+			//redirect: `/${store.state.local}/home`,
+			meta: {
+				linkText: 'pages.FAQ.banner.linkText',
+				headerBG: '/static/banners/faq.jpg',
+				headerTitle: 'pages.FAQ.banner.heading',
+				headerSubTitle: 'pages.FAQ.banner.subheading',
 			},
 		},
 		{

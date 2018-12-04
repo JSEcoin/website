@@ -1,0 +1,91 @@
+category_path,questions,content
+General Enquiries,"Why should I use a unique password for the JSEcoin platform?
+What is the need for password security?
+Do I need to use a unique password?
+Is my account secure?
+Can my password be hacked?
+What happens if I use the same password for everything?","You should use a different password for every platform that you register with. Users who use the same email address and password for every account risk having their accounts hacked. This is because high profile hacks leaked databases of email/password combos which are now available to hackers. Yahoo, Linkedin, Sony, AOL, Equifax have all been breached in the past and user account data is in the hands of hackers. Financial platforms are particularly targetable by hackers for obvious reasons. Take care of your account, use a unique password and setup two factor authentication using an application like Google Authenticator. This advice goes for all platforms across the web and not just specifically JSEcoin."
+General Enquiries,"I'm new to the platform; is there anywhere I can find an overview of how everything works?
+Where can I find an overview of the project?
+Can you show me more about the platform?
+Where is the whitepaper
+Can you tell me more about the project?
+Show me the whitepaper
+Is there a video explainer?","We have a video walkthrough guide which can be found here https://www.youtube.com/watch?v=UgoYhUPgqlY
+
+There's also the whitepaper at https://jsecoin.com/whitepaper.pdf"
+General Enquiries,"I’ve lost access to email. Is it possible to change the email address linked to my account?
+Can I change my email?
+How do I change my email address?
+I need to change the email address associated with my JSEcoin account
+How do I modify my email address?
+Can you change my email address for me?",No it is not possible to change the email address associated with the account.
+General Enquiries,"How can I earn JSEcoin cryptocurrency tokens using just my PC?
+What are the ways to earn JSE?
+How can I get JSEcoin?
+Can you give me some JSE?
+How can I mine JSEcoin?
+Can you tell me how to get more JSE?
+How can i get free coins?
+How can I get JSE tokens?
+How can I earn JSE tokens for mining?","There are a number of ways to earn JSE. You can try the self-mining which runs a mathematical hashing process on your laptop in the background while you work. Rewards are distributed via a lottery system to the miners. If you have a website you can earn JSE by placing the code snippet on your site and getting visitors to mine for you while you sleep. You can refer friends and colleagues using the affiliate links available via the platform, there's even a simple social share button to tweet or share on Facebook. Finally you can help our team develop the platform by reporting any security vulnerabilities here https://jsecoin.com/en/oddJobs/bugBounty."
+General Enquiries,"Why is my ad-blocker/anti-virus software is blocking JSEcoin.com?
+AV is blocking JSEcoin
+ad block plus is blocking JSEcoin
+Why is my antivirus warning me about you?
+Is there a virus on JSEcoin?
+Does the platform have a virus?",Some ad blockers and anti-virus companies have bundled us in with hidden background mining scripts that mine on a users PC without them knowing. We are actively campaigning and lobbying the organisations that are blocking our domains. If you would like to help please contact your software provider and ask for an exception to be made.
+General Enquiries,"I see that you are using the SHA256 hashing algorithm. What prevents ASIC devices and server farms from taking over?
+Is the mining proof of work pow?
+How are rewards distributed?
+Is JSEcoin ASIC resistent
+Can JSEcoin be minedby servers and ASIC devices?
+How does the mining algorithm work?","Rewards are distributed via a unique random lottery system with restrictions in place meaning that finding more hashes or hashes with a greater number of leading zeros will not lead to an increase in earnings. Therefore there would no benefit to using an ASIC device, and money would simply be wasted on electricity."
+General Enquiries,"I've lost my two factor authentication code what can I do?
+how to reset my 2fa?
+I've lost my 2fa how do I restore my account?
+I've broken my phone how do I get my two factor authentication code?
+How do I restore my 2fa?
+What is the process to recover two factor authentication?
+I lost my phone and can't access my account because I don't have 2fa
+I lost acess to google authenticator what can I do?",If you have lost your phone or access to your 2fa codes we recommend reinstalling Google Authenticator or Authy on a new device and signing in with your gmail account to access your codes. When setting up your 2fa make sure you write down the back up code. If you have this then it can also be restored via the “restore 2fa” link at https://platform.jsecoin.com
+General Enquiries,"Why is my account suspended?
+Why is my account closed?
+Can you reopen my account?
+My account has been closed how can I reopen it?
+My account has been shut down by mistake
+Getting message Your account has been closed
+Why am I getting this email Your account has been closed?
+What can I do to appeal my account being closed?","This is due to exceeding the threshold for acceptable use. The machine learning algorithms have categorised the data associated with your account and it matched fraudulent patterns.
+
+This could be one of the following;
+Publisher fraud - sending fake bot/PTC traffic etc
+Referral fraud - sending non genuine or incentivised registrations.
+Personal use of multiple accounts.
+
+We rely on machine learning for this purpose to remain impartial and remove the human factor from this decision and due to this the decision is unable to be appealed.
+"
+General Enquiries,"If JSEcoin is a coin on its own, is it listed on Coinmarketcap?
+Is JSE listed on coin market cap?
+Is JSEcoin on CMC?
+Why isn't JSEcoin on coinmarketcap
+Is JSE on coinmarketcap.com
+Where is JSEcoin on coinmarketcap?",Yes - you can track the JSE token here https://coinmarketcap.com/currencies/jsecoin/
+General Enquiries,"Who are JSEcoin's competitors?
+Who is the competition?
+What competitors does JSEcoin have?
+What competition does JSEcoin face?
+Are there competitors to JSEcoin?",We are competing with other cryptocurrencies for a place in investors portfolios. More directly we compete with hidden background Monero miners for market share in the publisher mining sector.
+General Enquiries,"Can I buy JSE merchandise?
+Where can I find out more about JSE merchandise?
+Can I have the sizes in cm for the merchandise?
+Where can I buy JSE tshirts?
+How can I buy JSE hoodies?","You can buy JSE merchandise at https://thebrandmoneycantbuy.com
+
+The supplier for this store is https://inkthreadable.co.uk and there is additional information on the products on their site."
+Misc,"What are my earnings for today?
+How much have I earnt today?
+How much JSE did I earn yesterday?
+How many JSEcoins did I make yesterday?
+What are my JSE earnings yesterday?
+How much are my mining rewards today?",Sorry I can't access your account data from here. You can log in to the platform at https://platform.jsecoin.com to check your current earnings data.
