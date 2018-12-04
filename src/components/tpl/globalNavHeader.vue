@@ -66,7 +66,7 @@ export default {
 		};
 	},
 	mounted() {
-		if (typeof(window.googleTranslateElementInit) === 'undefined') {
+		if (typeof (window.googleTranslateElementInit) === 'undefined') {
 			window.googleTranslateElementInit = () => {
 				google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false }, 'google_translate_element');
 			};

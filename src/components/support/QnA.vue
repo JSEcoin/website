@@ -20,7 +20,7 @@
 					{{ $t('pages.FAQ.link_getInTouch') }}
 				</router-link>
 			</h2>
-			
+
 			<div class="row" style="padding:30px 0px;">
 				<div id="JSEW-faqOptions" class="col">
 					<div class="faqSection active">
@@ -154,7 +154,7 @@ export default {
 				complete: (r, f) => {
 					//console.log('complete', r, f);
 					self.categoryInfo[category].qna = r.data;
-				}
+				},
 			});
 		});
 	},
