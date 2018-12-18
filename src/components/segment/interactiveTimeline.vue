@@ -235,7 +235,6 @@ export default {
 		swiperSlide,
 	},
 	data() {
-		console.log();
 		return {
 			interactiveTimelineSwiper: {
 				spaceBetween: 0,
@@ -420,9 +419,24 @@ export default {
 							duration: 14,
 						},
 						{
-							start: 360,
-							taskName: 'Captcha And Bot Detection Enterprise API',
-							duration: 30,
+							start: 365,
+							taskName: 'Ad-Exchange Internal Release',
+							duration: 90,
+						},
+						{
+							start: 455,
+							taskName: 'Security Enhancements',
+							duration: 92,
+						},
+						{
+							start: 547,
+							taskName: 'Ad-Exchange Public Launch',
+							duration: 92,
+						},
+						{
+							start: 639,
+							taskName: 'V2 Development',
+							duration: 92,
 						},
 					],/*
 					[

@@ -2,14 +2,14 @@
 	<div id="JSEW-wrapper" :class="{formSubmitted:status.submittedForm}">
 		<nav id="JSEW-subHeaderNav">
 			<ul class="wrapper">
+				<router-link v-bind:to="`/${$store.state.local}/support/FAQ`" tag="li">
+					{{ $t('pages.navigation.support.link_FAQ') }}
+				</router-link>
 				<router-link v-bind:to="`/${$store.state.local}/support/community`" tag="li">
 					{{ $t('pages.navigation.support.link_community') }}
 				</router-link>
 				<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="li" class="active">
 					{{ $t('pages.navigation.support.link_contact') }}
-				</router-link>
-				<router-link v-bind:to="`/${$store.state.local}/support/FAQ`" tag="li">
-					{{ $t('pages.navigation.support.link_FAQ') }}
 				</router-link>
 				<!--<li v-on:click="location='/forums'">
 					Forums

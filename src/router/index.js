@@ -25,6 +25,7 @@ const press = () => import(/* webpackChunkName: "about" */ '@/components/about/p
 const community = () => import(/* webpackChunkName: "support" */ '@/components/support/community');
 const contact = () => import(/* webpackChunkName: "support" */ '@/components/support/contact');
 const FAQ = () => import(/* webpackChunkName: "support" */ '@/components/support/FAQ');
+const qna = () => import(/* webpackChunkName: "support" */ '@/components/support/QnA');
 
 //legal
 const privacyPolicy = () => import(/* webpackChunkName: "legal" */ '@/components/legal/privacyPolicy');
@@ -83,7 +84,7 @@ const merchantTools = () => import(/* webpackChunkName: "tools" */ '@/components
 const blockchainExplorer = () => import(/* webpackChunkName: "tools" */ '@/components/tools/blockchainExplorer');
 
 //banners
-//const banner1 = () => import(/* webpackChunkName: "banners" */ '@/components/banners/banner1');
+//const banner1 = () => import(/* webpackChunkName: "banners" */ '@/components/static/banners/banner1');
 
 //const test = () => import(/* webpackChunkName: "test" */ '@/components/test');
 
@@ -93,7 +94,6 @@ const blockchainExplorer = () => import(/* webpackChunkName: "tools" */ '@/compo
 
 //redirect
 const exchangeRedirect = () => import(/* webpackChunkName: "tpl" */ '@/components/tpl/exchangeRedirect');
-
 
 //blog integration
 const ThemePagePage = () => import(/* webpackChunkName: "theme" */ '@/theme/Page');
@@ -134,7 +134,7 @@ const router = new Router({
 			//meta: {
 			//	hideICOButton: true,
 			//	linkText: '',
-			//	headerBG: '/banners/icoLaunchpad.png',
+			//	headerBG: '/static/banners/icoLaunchpad.png',
 			//	headerTitle: 'pages.ico.banner.heading', //ICO Launchpad',
 			//	headerSubTitle: 'pages.ico.banner.subheading', //'Make sure you are logged in to your wallet to access the integrated purchase capabilities',
 			//},
@@ -149,7 +149,7 @@ const router = new Router({
 			//component: Issue,
 			//meta: {
 			//	linkText: '',
-			//	headerBG: '/banners/icoLaunchpad.png',
+			//	headerBG: '/static/banners/icoLaunchpad.png',
 			//	headerTitle: 'pages.Issue.banner.heading',
 			//	headerSubTitle: 'pages.Issue.banner.subheading',
 			//},
@@ -159,7 +159,7 @@ const router = new Router({
 			component: about,
 			meta: {
 				linkText: 'pages.about.banner.linkText',
-				headerBG: '/banners/about.jpg',
+				headerBG: '/static/banners/about.jpg',
 				headerTitle: 'pages.about.banner.heading',
 				headerSubTitle: 'pages.about.banner.subheading',
 			},
@@ -169,7 +169,7 @@ const router = new Router({
 			component: team,
 			meta: {
 				linkText: 'pages.team.banner.linkText',
-				headerBG: '/banners/team.jpg',
+				headerBG: '/static/banners/team.jpg',
 				headerTitle: 'pages.team.banner.heading',
 				headerSubTitle: 'pages.team.banner.subheading',
 			},
@@ -179,7 +179,7 @@ const router = new Router({
 			component: ourVision,
 			meta: {
 				linkText: 'pages.ourVision.banner.linkText',
-				headerBG: '/banners/vision.jpg',
+				headerBG: '/static/banners/vision.jpg',
 				headerTitle: 'pages.ourVision.banner.heading',
 				headerSubTitle: 'pages.ourVision.banner.subheading',
 			},
@@ -189,7 +189,7 @@ const router = new Router({
 		//	component: careers,
 		//	meta: {
 		//		linkText: 'pages.careers.banner.linkText',
-		//		headerBG: '/banners/careers.jpg',
+		//		headerBG: '/static/banners/careers.jpg',
 		//		headerTitle: 'pages.careers.banner.heading',
 		//		headerSubTitle: 'pages.careers.banner.subheading',
 		//	},
@@ -199,7 +199,7 @@ const router = new Router({
 			component: press,
 			meta: {
 				linkText: 'pages.press.banner.linkText',
-				headerBG: '/banners/press.jpg',
+				headerBG: '/static/banners/press.jpg',
 				headerTitle: 'pages.press.banner.heading',
 				headerSubTitle: 'pages.press.banner.subheading',
 			},
@@ -209,17 +209,29 @@ const router = new Router({
 			component: contact,
 			meta: {
 				linkText: 'pages.contact.banner.linkText',
-				headerBG: '/banners/contact.jpg',
+				headerBG: '/static/banners/contact.jpg',
 				headerTitle: 'pages.contact.banner.heading',
 				headerSubTitle: 'pages.contact.banner.subheading',
 			},
 		},
 		{
 			path: '/support/FAQ',
-			component: FAQ,
+			redirect: '/support',
+			//component: FAQ,
 			meta: {
 				linkText: 'pages.FAQ.banner.linkText',
-				headerBG: '/banners/faq.jpg',
+				headerBG: '/static/banners/faq.jpg',
+				headerTitle: 'pages.FAQ.banner.heading',
+				headerSubTitle: 'pages.FAQ.banner.subheading',
+			},
+		},
+		{
+			path: '/support',
+			component: qna,
+			//redirect: `/${store.state.local}/home`,
+			meta: {
+				linkText: 'pages.FAQ.banner.linkText',
+				headerBG: '/static/banners/faq.jpg',
 				headerTitle: 'pages.FAQ.banner.heading',
 				headerSubTitle: 'pages.FAQ.banner.subheading',
 			},
@@ -229,7 +241,7 @@ const router = new Router({
 			component: community,
 			meta: {
 				linkText: 'pages.community.banner.linkText',
-				headerBG: '/banners/community.jpg',
+				headerBG: '/static/banners/community.jpg',
 				headerTitle: 'pages.community.banner.heading',
 				headerSubTitle: 'pages.community.banner.subheading',
 			},
@@ -239,7 +251,7 @@ const router = new Router({
 			component: userAgreement,
 			meta: {
 				linkText: 'User Agreement',
-				headerBG: '/banners/header_bg.png',
+				headerBG: '/static/banners/header_bg.png',
 				headerTitle: 'User Agreement',
 				headerSubTitle: '',
 			},
@@ -249,7 +261,7 @@ const router = new Router({
 			component: privacyPolicy,
 			meta: {
 				linkText: 'pages.privacyPolicy.banner.linkText',
-				headerBG: '/banners/basic-jse.jpg',
+				headerBG: '/static/banners/basic-jse.jpg',
 				headerTitle: 'pages.privacyPolicy.banner.heading',
 				headerSubTitle: 'pages.privacyPolicy.banner.subheading',
 			},
@@ -259,7 +271,7 @@ const router = new Router({
 			component: terms,
 			meta: {
 				linkText: 'pages.terms.banner.linkText',
-				headerBG: '/banners/basic-jse.jpg',
+				headerBG: '/static/banners/basic-jse.jpg',
 				headerTitle: 'pages.terms.banner.heading',
 				headerSubTitle: 'pages.terms.banner.subheading',
 			},
@@ -269,7 +281,7 @@ const router = new Router({
 			component: kycPolicy,
 			meta: {
 				linkText: 'pages.kycPolicy.banner.linkText',
-				headerBG: '/banners/basic-jse.jpg',
+				headerBG: '/static/banners/basic-jse.jpg',
 				headerTitle: 'pages.kycPolicy.banner.heading',
 				headerSubTitle: 'pages.kycPolicy.banner.subheading',
 			},
@@ -279,7 +291,7 @@ const router = new Router({
 			component: gdpr,
 			meta: {
 				linkText: 'pages.gdpr.banner.linkText',
-				headerBG: '/banners/basic-jse.jpg',
+				headerBG: '/static/banners/basic-jse.jpg',
 				headerTitle: 'pages.gdpr.banner.heading',
 				headerSubTitle: 'pages.gdpr.banner.subheading',
 			},
@@ -289,7 +301,7 @@ const router = new Router({
 			component: technicalOverview,
 			meta: {
 				linkText: 'pages.techOverview.banner.linkText',
-				headerBG: '/banners/technical.jpg',
+				headerBG: '/static/banners/technical.jpg',
 				headerTitle: 'pages.techOverview.banner.heading',
 				headerSubTitle: 'pages.techOverview.banner.subheading',
 			},
@@ -299,7 +311,7 @@ const router = new Router({
 			component: ecosystem,
 			meta: {
 				linkText: 'pages.ecosystem.banner.linkText',
-				headerBG: '/banners/ecosystem.jpg',
+				headerBG: '/static/banners/ecosystem.jpg',
 				headerTitle: 'pages.ecosystem.banner.heading',
 				headerSubTitle: 'pages.ecosystem.banner.subheading',
 			},
@@ -309,7 +321,7 @@ const router = new Router({
 			component: stats,
 			meta: {
 				linkText: 'pages.stats.banner.linkText',
-				headerBG: '/banners/stats.jpg',
+				headerBG: '/static/banners/stats.jpg',
 				headerTitle: 'pages.stats.banner.heading',
 				headerSubTitle: 'pages.stats.banner.subheading',
 			},
@@ -319,7 +331,7 @@ const router = new Router({
 			component: APIS,
 			meta: {
 				linkText: 'pages.APIS.banner.linkText',
-				headerBG: '/banners/api.jpg',
+				headerBG: '/static/banners/api.jpg',
 				headerTitle: 'pages.APIS.banner.heading',
 				headerSubTitle: 'pages.APIS.banner.subheading',
 			},
@@ -329,7 +341,7 @@ const router = new Router({
 			component: samples,
 			meta: {
 				linkText: 'pages.samples.banner.linkText',
-				headerBG: '/banners/samples.jpg',
+				headerBG: '/static/banners/samples.jpg',
 				headerTitle: 'pages.samples.banner.heading',
 				headerSubTitle: 'pages.samples.banner.subheading',
 			},
@@ -339,7 +351,7 @@ const router = new Router({
 			component: support,
 			meta: {
 				linkText: 'pages.sasupportmples.banner.linkText',
-				headerBG: '/banners/support.jpg',
+				headerBG: '/static/banners/support.jpg',
 				headerTitle: 'pages.support.banner.heading',
 				headerSubTitle: 'pages.support.banner.subheading',
 			},
@@ -349,7 +361,7 @@ const router = new Router({
 			component: bugBounty,
 			meta: {
 				linkText: 'pages.bugBounty.banner.linkText',
-				headerBG: '/banners/bugBounty.jpg',
+				headerBG: '/static/banners/bugBounty.jpg',
 				headerTitle: 'pages.bugBounty.banner.heading',
 				headerSubTitle: 'pages.bugBounty.banner.subheading',
 			},
@@ -359,7 +371,7 @@ const router = new Router({
 		//	component: smallJobs,
 		//	meta: {
 		//		linkText: 'pages.smallJobs.banner.linkText',
-		//		headerBG: '/banners/oddJobs.jpg',
+		//		headerBG: '/static/banners/oddJobs.jpg',
 		//		headerTitle: 'pages.smallJobs.banner.heading',
 		//		headerSubTitle: 'pages.smallJobs.banner.subheading',
 		//	},
@@ -369,7 +381,7 @@ const router = new Router({
 			component: submitInfo,
 			meta: {
 				linkText: 'pages.submitInfo.banner.linkText',
-				headerBG: '/banners/submitInfo.jpg',
+				headerBG: '/static/banners/submitInfo.jpg',
 				headerTitle: 'pages.submitInfo.banner.heading',
 				headerSubTitle: 'pages.submitInfo.banner.subheading',
 			},
@@ -379,7 +391,7 @@ const router = new Router({
 			component: timeline,
 			meta: {
 				linkText: 'pages.timeline.banner.linkText',
-				headerBG: '/banners/timeline.jpg',
+				headerBG: '/static/banners/timeline.jpg',
 				headerTitle: 'pages.timeline.banner.heading',
 				headerSubTitle: 'pages.timeline.banner.subheading',
 			},
@@ -389,7 +401,7 @@ const router = new Router({
 			component: environment,
 			meta: {
 				linkText: 'pages.environment.banner.linkText',
-				headerBG: '/banners/environment.jpg',
+				headerBG: '/static/banners/environment.jpg',
 				headerTitle: 'pages.environment.banner.heading',
 				headerSubTitle: 'pages.environment.banner.subheading',
 			},
@@ -399,7 +411,7 @@ const router = new Router({
 			component: charity,
 			meta: {
 				linkText: 'pages.charity.banner.linkText',
-				headerBG: '/banners/charity.jpg',
+				headerBG: '/static/banners/charity.jpg',
 				headerTitle: 'pages.charity.banner.heading',
 				headerSubTitle: 'pages.charity.banner.subheading',
 			},
@@ -410,7 +422,7 @@ const router = new Router({
 			//component: whitelisting,
 			//meta: {
 			//	linkText: 'pages.whitelisting.banner.linkText',
-			//	headerBG: '/banners/whitelisting.jpg',
+			//	headerBG: '/static/banners/whitelisting.jpg',
 			//	headerTitle: 'pages.whitelisting.banner.heading',
 			//	headerSubTitle: 'pages.whitelisting.banner.subheading',
 			//},
@@ -420,7 +432,7 @@ const router = new Router({
 			component: downloads,
 			meta: {
 				linkText: 'pages.downloads.banner.linkText',
-				headerBG: '/banners/basic-jse.jpg',
+				headerBG: '/static/banners/basic-jse.jpg',
 				headerTitle: 'pages.downloads.banner.heading',
 				headerSubTitle: 'pages.downloads.banner.subheading',
 			},
@@ -430,7 +442,7 @@ const router = new Router({
 			component: exchanges,
 			meta: {
 				linkText: 'pages.exchanges.banner.linkText',
-				headerBG: '/banners/exchanges2.jpg',
+				headerBG: '/static/banners/exchanges2.jpg',
 				headerTitle: 'pages.exchanges.banner.heading',
 				headerSubTitle: 'pages.exchanges.banner.subheading',
 			},
@@ -440,7 +452,7 @@ const router = new Router({
 			component: systemStatus,
 			meta: {
 				linkText: 'pages.systemStatus.banner.linkText',
-				headerBG: '/banners/systemStats.jpg',
+				headerBG: '/static/banners/systemStats.jpg',
 				headerTitle: 'pages.systemStatus.banner.heading',
 				headerSubTitle: 'pages.systemStatus.banner.subheading',
 			},
@@ -450,7 +462,7 @@ const router = new Router({
 			component: investors,
 			meta: {
 				linkText: 'pages.investorOverview.banner.linkText',
-				headerBG: '/banners/investor.jpg',
+				headerBG: '/static/banners/investor.jpg',
 				headerTitle: 'pages.investorOverview.banner.heading',
 				headerSubTitle: 'pages.investorOverview.banner.subheading',
 			},
@@ -460,7 +472,7 @@ const router = new Router({
 			component: webmasters,
 			meta: {
 				linkText: 'pages.webmastersOverview.banner.linkText',
-				headerBG: '/banners/webmaster.jpg',
+				headerBG: '/static/banners/webmaster.jpg',
 				headerTitle: 'pages.webmastersOverview.banner.heading',
 				headerSubTitle: 'pages.webmastersOverview.banner.subheading',
 			},
@@ -470,7 +482,7 @@ const router = new Router({
 			component: integration,
 			meta: {
 				linkText: 'pages.integration.banner.linkText',
-				headerBG: '/banners/integration.jpg',
+				headerBG: '/static/banners/integration.jpg',
 				headerTitle: 'pages.integration.banner.heading',
 				headerSubTitle: 'pages.integration.banner.subheading',
 			},
@@ -480,7 +492,7 @@ const router = new Router({
 			component: developers,
 			meta: {
 				linkText: 'pages.developerOverview.banner.linkText',
-				headerBG: '/banners/developer.jpg',
+				headerBG: '/static/banners/developer.jpg',
 				headerTitle: 'pages.developerOverview.banner.heading',
 				headerSubTitle: 'pages.developerOverview.banner.subheading',
 			},
@@ -490,7 +502,7 @@ const router = new Router({
 			component: wallet,
 			meta: {
 				linkText: 'pages.wallet.banner.linkText',
-				headerBG: '/banners/header_bg.png',
+				headerBG: '/static/banners/header_bg.png',
 				headerTitle: 'pages.wallet.banner.heading',
 				headerSubTitle: 'pages.wallet.banner.subheading',
 			},
@@ -500,7 +512,7 @@ const router = new Router({
 			component: merchantTools,
 			meta: {
 				linkText: 'pages.merchantTools.banner.linkText',
-				headerBG: '/banners/merchant.jpg',
+				headerBG: '/static/banners/merchant.jpg',
 				headerTitle: 'pages.merchantTools.banner.heading',
 				headerSubTitle: 'pages.merchantTools.banner.subheading',
 			},
@@ -510,7 +522,7 @@ const router = new Router({
 			component: blockchainExplorer,
 			meta: {
 				linkText: 'pages.blockchainExplorer.banner.linkText',
-				headerBG: '/banners/header_bg.png',
+				headerBG: '/static/banners/header_bg.png',
 				headerTitle: 'pages.blockchainExplorer.banner.heading',
 				headerSubTitle: 'pages.blockchainExplorer.banner.subheading',
 			},
@@ -520,7 +532,7 @@ const router = new Router({
 		//	component: banner1,
 		//	meta: {
 		//		linkText: '',
-		//		headerBG: '/banners/header_bg.png',
+		//		headerBG: '/static/banners/header_bg.png',
 		//		//headerTitle: ':id',
 		//		//headerSubTitle: 'err: Could not find page?!',
 		//	},
@@ -530,7 +542,7 @@ const router = new Router({
 		//	component: test,
 		//	meta: {
 		//		linkText: '',
-		//		headerBG: '/banners/header_bg.png',
+		//		headerBG: '/static/banners/header_bg.png',
 		//		//headerTitle: ':id',
 		//		//headerSubTitle: 'err: Could not find page?!',
 		//	},
@@ -540,7 +552,7 @@ const router = new Router({
 			component: ThemePagePage,
 			meta: {
 				linkText: '',
-				headerBG: '/banners/header_bg.png',
+				headerBG: '/static/banners/header_bg.png',
 				//headerTitle: ':id',
 				//headerSubTitle: 'err: Could not find page?!',
 			},
@@ -553,7 +565,7 @@ const router = new Router({
 			component: ThemePageCategory,
 			meta: {
 				linkText: 'Blog',
-				headerBG: '/banners/blog-jse.jpg',
+				headerBG: '/static/banners/blog-jse.jpg',
 				headerTitle: 'Blog',
 				//headerSubTitle: 'err: Could not find page?!',
 			},
@@ -563,7 +575,7 @@ const router = new Router({
 			component: ThemePageSingle,
 			meta: {
 				linkText: 'Blog',
-				headerBG: '/banners/blog-jse.jpg',
+				headerBG: '/static/banners/blog-jse.jpg',
 				headerTitle: 'Blog',
 				//headerSubTitle: 'err: Could not find page?!',
 			},
@@ -576,7 +588,7 @@ const router = new Router({
 			},
 			meta: {
 				linkText: 'Blog',
-				headerBG: '/banners/blog-jse.jpg',
+				headerBG: '/static/banners/blog-jse.jpg',
 				headerTitle: 'Blog',
 				//headerSubTitle: 'err: Could not find page?!',
 			},
@@ -588,7 +600,7 @@ const router = new Router({
 			component: notFound,
 			meta: {
 				linkText: 'pages.notFound.banner.linkText',
-				headerBG: '/banners/header_bg.png',
+				headerBG: '/static/banners/header_bg.png',
 				headerTitle: 'pages.notFound.banner.heading',
 				headerSubTitle: 'pages.notFound.banner.subheading',
 			},
@@ -600,7 +612,7 @@ const router = new Router({
 			//meta: {
 			//	hideICOButton: true,
 			//	linkText: '',
-			//	headerBG: '/banners/icoLaunchpad.png',
+			//	headerBG: '/static/banners/icoLaunchpad.png',
 			//	headerTitle: 'pages.ico.banner.heading', //ICO Launchpad',
 			//	headerSubTitle: 'pages.ico.banner.subheading', //'Make sure you are logged in to your wallet to access the integrated purchase capabilities',
 			//},
@@ -616,7 +628,7 @@ const router = new Router({
 			//component: Issue,
 			//meta: {
 			//	linkText: '',
-			//	headerBG: '/banners/icoLaunchpad.png',
+			//	headerBG: '/static/banners/icoLaunchpad.png',
 			//	headerTitle: 'pages.ico.banner.heading',
 			//	headerSubTitle: 'pages.ico.banner.subheading',
 			//},
@@ -633,7 +645,7 @@ const router = new Router({
 			component: about,
 			meta: {
 				linkText: 'pages.about.banner.linkText',
-				headerBG: '/banners/about.jpg',
+				headerBG: '/static/banners/about.jpg',
 				headerTitle: 'pages.about.banner.heading',
 				headerSubTitle: 'pages.about.banner.subheading',
 			},
@@ -643,7 +655,7 @@ const router = new Router({
 			component: team,
 			meta: {
 				linkText: 'pages.team.banner.linkText',
-				headerBG: '/banners/team.jpg',
+				headerBG: '/static/banners/team.jpg',
 				headerTitle: 'pages.team.banner.heading',
 				headerSubTitle: 'pages.team.banner.subheading',
 			},
@@ -653,7 +665,7 @@ const router = new Router({
 			component: ourVision,
 			meta: {
 				linkText: 'pages.ourVision.banner.linkText',
-				headerBG: '/banners/vision.jpg',
+				headerBG: '/static/banners/vision.jpg',
 				headerTitle: 'pages.ourVision.banner.heading',
 				headerSubTitle: 'pages.ourVision.banner.subheading',
 			},
@@ -663,7 +675,7 @@ const router = new Router({
 		//	component: careers,
 		//	meta: {
 		//		linkText: 'pages.careers.banner.linkText',
-		//		headerBG: '/banners/careers.jpg',
+		//		headerBG: '/static/banners/careers.jpg',
 		//		headerTitle: 'pages.careers.banner.heading',
 		//		headerSubTitle: 'pages.careers.banner.subheading',
 		//	},
@@ -673,9 +685,20 @@ const router = new Router({
 			component: press,
 			meta: {
 				linkText: 'pages.press.banner.linkText',
-				headerBG: '/banners/press.jpg',
+				headerBG: '/static/banners/press.jpg',
 				headerTitle: 'pages.press.banner.heading',
 				headerSubTitle: 'pages.press.banner.subheading',
+			},
+		},
+		{
+			path: '/:lang/support',
+			component: qna,
+			//redirect: `/${store.state.local}/home`,
+			meta: {
+				linkText: 'pages.FAQ.banner.linkText',
+				headerBG: '/static/banners/faq.jpg',
+				headerTitle: 'pages.FAQ.banner.heading',
+				headerSubTitle: 'pages.FAQ.banner.subheading',
 			},
 		},
 		{
@@ -683,17 +706,18 @@ const router = new Router({
 			component: contact,
 			meta: {
 				linkText: 'pages.contact.banner.linkText',
-				headerBG: '/banners/contact.jpg',
+				headerBG: '/static/banners/contact.jpg',
 				headerTitle: 'pages.contact.banner.heading',
 				headerSubTitle: 'pages.contact.banner.subheading',
 			},
 		},
 		{
 			path: '/:lang/support/FAQ',
-			component: FAQ,
+			redirect: '/support',
+			//component: FAQ,
 			meta: {
 				linkText: 'pages.FAQ.banner.linkText',
-				headerBG: '/banners/faq.jpg',
+				headerBG: '/static/banners/faq.jpg',
 				headerTitle: 'pages.FAQ.banner.heading',
 				headerSubTitle: 'pages.FAQ.banner.subheading',
 			},
@@ -703,7 +727,7 @@ const router = new Router({
 			component: community,
 			meta: {
 				linkText: 'pages.community.banner.linkText',
-				headerBG: '/banners/community.jpg',
+				headerBG: '/static/banners/community.jpg',
 				headerTitle: 'pages.community.banner.heading',
 				headerSubTitle: 'pages.community.banner.subheading',
 			},
@@ -713,7 +737,7 @@ const router = new Router({
 			component: userAgreement,
 			meta: {
 				linkText: 'User Agreement',
-				headerBG: '/banners/header_bg.png',
+				headerBG: '/static/banners/header_bg.png',
 				headerTitle: 'User Agreement',
 				headerSubTitle: '',
 			},
@@ -723,7 +747,7 @@ const router = new Router({
 			component: privacyPolicy,
 			meta: {
 				linkText: 'pages.privacyPolicy.banner.linkText',
-				headerBG: '/banners/basic-jse.jpg',
+				headerBG: '/static/banners/basic-jse.jpg',
 				headerTitle: 'pages.privacyPolicy.banner.heading',
 				headerSubTitle: 'pages.privacyPolicy.banner.subheading',
 			},
@@ -733,7 +757,7 @@ const router = new Router({
 			component: terms,
 			meta: {
 				linkText: 'pages.terms.banner.linkText',
-				headerBG: '/banners/basic-jse.jpg',
+				headerBG: '/static/banners/basic-jse.jpg',
 				headerTitle: 'pages.terms.banner.heading',
 				headerSubTitle: 'pages.terms.banner.subheading',
 			},
@@ -743,7 +767,7 @@ const router = new Router({
 			component: kycPolicy,
 			meta: {
 				linkText: 'pages.kycPolicy.banner.linkText',
-				headerBG: '/banners/basic-jse.jpg',
+				headerBG: '/static/banners/basic-jse.jpg',
 				headerTitle: 'pages.kycPolicy.banner.heading',
 				headerSubTitle: 'pages.kycPolicy.banner.subheading',
 			},
@@ -753,7 +777,7 @@ const router = new Router({
 			component: gdpr,
 			meta: {
 				linkText: 'pages.gdpr.banner.linkText',
-				headerBG: '/banners/basic-jse.jpg',
+				headerBG: '/static/banners/basic-jse.jpg',
 				headerTitle: 'pages.gdpr.banner.heading',
 				headerSubTitle: 'pages.gdpr.banner.subheading',
 			},
@@ -763,7 +787,7 @@ const router = new Router({
 			component: technicalOverview,
 			meta: {
 				linkText: 'pages.techOverview.banner.linkText',
-				headerBG: '/banners/technical.jpg',
+				headerBG: '/static/banners/technical.jpg',
 				headerTitle: 'pages.techOverview.banner.heading',
 				headerSubTitle: 'pages.techOverview.banner.subheading',
 			},
@@ -773,7 +797,7 @@ const router = new Router({
 			component: ecosystem,
 			meta: {
 				linkText: 'pages.ecosystem.banner.linkText',
-				headerBG: '/banners/ecosystem.jpg',
+				headerBG: '/static/banners/ecosystem.jpg',
 				headerTitle: 'pages.ecosystem.banner.heading',
 				headerSubTitle: 'pages.ecosystem.banner.subheading',
 			},
@@ -783,7 +807,7 @@ const router = new Router({
 			component: stats,
 			meta: {
 				linkText: 'pages.stats.banner.linkText',
-				headerBG: '/banners/stats.jpg',
+				headerBG: '/static/banners/stats.jpg',
 				headerTitle: 'pages.stats.banner.heading',
 				headerSubTitle: 'pages.stats.banner.subheading',
 			},
@@ -793,7 +817,7 @@ const router = new Router({
 			component: APIS,
 			meta: {
 				linkText: 'pages.APIS.banner.linkText',
-				headerBG: '/banners/api.jpg',
+				headerBG: '/static/banners/api.jpg',
 				headerTitle: 'pages.APIS.banner.heading',
 				headerSubTitle: 'pages.APIS.banner.subheading',
 			},
@@ -803,7 +827,7 @@ const router = new Router({
 			component: samples,
 			meta: {
 				linkText: 'pages.samples.banner.linkText',
-				headerBG: '/banners/samples.jpg',
+				headerBG: '/static/banners/samples.jpg',
 				headerTitle: 'pages.samples.banner.heading',
 				headerSubTitle: 'pages.samples.banner.subheading',
 			},
@@ -813,7 +837,7 @@ const router = new Router({
 			component: support,
 			meta: {
 				linkText: 'pages.sasupportmples.banner.linkText',
-				headerBG: '/banners/support.jpg',
+				headerBG: '/static/banners/support.jpg',
 				headerTitle: 'pages.support.banner.heading',
 				headerSubTitle: 'pages.support.banner.subheading',
 			},
@@ -823,7 +847,7 @@ const router = new Router({
 			component: bugBounty,
 			meta: {
 				linkText: 'pages.bugBounty.banner.linkText',
-				headerBG: '/banners/bugBounty.jpg',
+				headerBG: '/static/banners/bugBounty.jpg',
 				headerTitle: 'pages.bugBounty.banner.heading',
 				headerSubTitle: 'pages.bugBounty.banner.subheading',
 			},
@@ -833,7 +857,7 @@ const router = new Router({
 		//	component: smallJobs,
 		//	meta: {
 		//		linkText: 'pages.smallJobs.banner.linkText',
-		//		headerBG: '/banners/oddJobs.jpg',
+		//		headerBG: '/static/banners/oddJobs.jpg',
 		//		headerTitle: 'pages.smallJobs.banner.heading',
 		//		headerSubTitle: 'pages.smallJobs.banner.subheading',
 		//	},
@@ -843,7 +867,7 @@ const router = new Router({
 			component: submitInfo,
 			meta: {
 				linkText: 'pages.submitInfo.banner.linkText',
-				headerBG: '/banners/submitInfo.jpg',
+				headerBG: '/static/banners/submitInfo.jpg',
 				headerTitle: 'pages.submitInfo.banner.heading',
 				headerSubTitle: 'pages.submitInfo.banner.subheading',
 			},
@@ -853,7 +877,7 @@ const router = new Router({
 			component: timeline,
 			meta: {
 				linkText: 'pages.timeline.banner.linkText',
-				headerBG: '/banners/timeline.jpg',
+				headerBG: '/static/banners/timeline.jpg',
 				headerTitle: 'pages.timeline.banner.heading',
 				headerSubTitle: 'pages.timeline.banner.subheading',
 			},
@@ -863,7 +887,7 @@ const router = new Router({
 			component: environment,
 			meta: {
 				linkText: 'pages.environment.banner.linkText',
-				headerBG: '/banners/environment.jpg',
+				headerBG: '/static/banners/environment.jpg',
 				headerTitle: 'pages.environment.banner.heading',
 				headerSubTitle: 'pages.environment.banner.subheading',
 			},
@@ -873,7 +897,7 @@ const router = new Router({
 			component: charity,
 			meta: {
 				linkText: 'pages.charity.banner.linkText',
-				headerBG: '/banners/charity.jpg',
+				headerBG: '/static/banners/charity.jpg',
 				headerTitle: 'pages.charity.banner.heading',
 				headerSubTitle: 'pages.charity.banner.subheading',
 			},
@@ -884,7 +908,7 @@ const router = new Router({
 			//component: whitelisting,
 			//meta: {
 			//	linkText: 'pages.whitelisting.banner.linkText',
-			//	headerBG: '/banners/whitelisting.jpg',
+			//	headerBG: '/static/banners/whitelisting.jpg',
 			//	headerTitle: 'pages.whitelisting.banner.heading',
 			//	headerSubTitle: 'pages.whitelisting.banner.subheading',
 			//},
@@ -894,7 +918,7 @@ const router = new Router({
 			component: downloads,
 			meta: {
 				linkText: 'pages.downloads.banner.linkText',
-				headerBG: '/banners/basic-jse.jpg',
+				headerBG: '/static/banners/basic-jse.jpg',
 				headerTitle: 'pages.downloads.banner.heading',
 				headerSubTitle: 'pages.downloads.banner.subheading',
 			},
@@ -904,7 +928,7 @@ const router = new Router({
 			component: exchanges,
 			meta: {
 				linkText: 'pages.exchanges.banner.linkText',
-				headerBG: '/banners/exchanges2.jpg',
+				headerBG: '/static/banners/exchanges2.jpg',
 				headerTitle: 'pages.exchanges.banner.heading',
 				headerSubTitle: 'pages.exchanges.banner.subheading',
 			},
@@ -914,7 +938,7 @@ const router = new Router({
 			component: systemStatus,
 			meta: {
 				linkText: 'pages.systemStatus.banner.linkText',
-				headerBG: '/banners/systemStats.jpg',
+				headerBG: '/static/banners/systemStats.jpg',
 				headerTitle: 'pages.systemStatus.banner.heading',
 				headerSubTitle: 'pages.systemStatus.banner.subheading',
 			},
@@ -924,7 +948,7 @@ const router = new Router({
 			component: investors,
 			meta: {
 				linkText: 'pages.investorOverview.banner.linkText',
-				headerBG: '/banners/investor.jpg',
+				headerBG: '/static/banners/investor.jpg',
 				headerTitle: 'pages.investorOverview.banner.heading',
 				headerSubTitle: 'pages.investorOverview.banner.subheading',
 			},
@@ -934,7 +958,7 @@ const router = new Router({
 			component: webmasters,
 			meta: {
 				linkText: 'pages.webmastersOverview.banner.linkText',
-				headerBG: '/banners/webmaster.jpg',
+				headerBG: '/static/banners/webmaster.jpg',
 				headerTitle: 'pages.webmastersOverview.banner.heading',
 				headerSubTitle: 'pages.webmastersOverview.banner.subheading',
 			},
@@ -944,7 +968,7 @@ const router = new Router({
 			component: integration,
 			meta: {
 				linkText: 'pages.integration.banner.linkText',
-				headerBG: '/banners/integration.jpg',
+				headerBG: '/static/banners/integration.jpg',
 				headerTitle: 'pages.integration.banner.heading',
 				headerSubTitle: 'pages.integration.banner.subheading',
 			},
@@ -954,7 +978,7 @@ const router = new Router({
 			component: developers,
 			meta: {
 				linkText: 'pages.developerOverview.banner.linkText',
-				headerBG: '/banners/developer.jpg',
+				headerBG: '/static/banners/developer.jpg',
 				headerTitle: 'pages.developerOverview.banner.heading',
 				headerSubTitle: 'pages.developerOverview.banner.subheading',
 			},
@@ -964,7 +988,7 @@ const router = new Router({
 			component: wallet,
 			meta: {
 				linkText: 'pages.wallet.banner.linkText',
-				headerBG: '/banners/header_bg.png',
+				headerBG: '/static/banners/header_bg.png',
 				headerTitle: 'pages.wallet.banner.heading',
 				headerSubTitle: 'pages.wallet.banner.subheading',
 			},
@@ -974,7 +998,7 @@ const router = new Router({
 			component: merchantTools,
 			meta: {
 				linkText: 'pages.merchantTools.banner.linkText',
-				headerBG: '/banners/merchant.jpg',
+				headerBG: '/static/banners/merchant.jpg',
 				headerTitle: 'pages.merchantTools.banner.heading',
 				headerSubTitle: 'pages.merchantTools.banner.subheading',
 			},
@@ -984,7 +1008,7 @@ const router = new Router({
 			component: blockchainExplorer,
 			meta: {
 				linkText: 'pages.blockchainExplorer.banner.linkText',
-				headerBG: '/banners/header_bg.png',
+				headerBG: '/static/banners/header_bg.png',
 				headerTitle: 'pages.blockchainExplorer.banner.heading',
 				headerSubTitle: 'pages.blockchainExplorer.banner.subheading',
 			},

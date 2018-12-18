@@ -19,9 +19,9 @@
 							<a href="https://bitcointalk.org/index.php?topic=2398571.0" target="_BLANK">
 								{{ $t('template.navigation.link_bitcoinTalkAnn') }} <i class="fa fa-external-link"></i>
 							</a>
-							<router-link v-bind:to="`/${$store.state.local}/technical/stats`" tag="a">
+							<!--<router-link v-bind:to="`/${$store.state.local}/technical/stats`" tag="a">
 								{{ $t('template.navigation.link_siteStatistics') }}
-							</router-link>
+							</router-link>-->
 							<router-link v-bind:to="`/${$store.state.local}/technical/overview`" tag="a">
 								{{ $t('template.navigation.link_technicalOverview') }}
 							</router-link>

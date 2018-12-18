@@ -35,6 +35,22 @@
 						{{ $t('tpl.globalNavHeader.link_login') }}
 					</a>
 				</li>
+				<li id="JSEW-translate" :class="{'active':translate}">
+					<a v-on:click="toggleTranslateDisplay"><img width="25px" src="../../assets/svg/google_translate_logo.svg" /></a>
+					<div id="JSEW-googleTransate">
+						<div id="JSEW-translateTitle">
+							<img id="JSEW-googleArr" width="20px" src="../../assets/svg/arrow-up.svg" />
+							Translate the page
+						</div>
+						<div id="JSEW-translateContent">
+							<div id="google_translate_element"></div>
+							<p>
+								Feel free to ask any questions, leave your comments, wishes and suggestions regarding
+								the Google Translation at our <a id="JSEW-telegramLink" href="https://t.me/jsetelegram">Telegram Chat</a>.
+							</p>
+						</div>
+					</div>
+				</li>
 			</ul>
 		</nav>
 	</div>
@@ -43,10 +59,143 @@
 <script>
 export default {
 	name: 'globalNavHeader',
+
+	data() {
+		return {
+			translate: false,
+		};
+	},
+	mounted() {
+		if (typeof (window.googleTranslateElementInit) === 'undefined') {
+			window.googleTranslateElementInit = () => {
+				google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false }, 'google_translate_element');
+			};
+		}
+		if (document.getElementById('JSEW-googleT') === null) {
+			//set tanslate ele
+			const t = document.createElement('script');
+			const s = document.getElementsByTagName('script')[0];
+
+			//script attrs
+			t.async = true;
+			t.defer = true;
+			t.id = 'JSEW-googleT';
+			t.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+
+			//inject
+			s.parentNode.insertBefore(t, s);
+		}
+	},
+	methods: {
+		toggleTranslateDisplay() {
+			const self = this;
+			self.translate = !self.translate;
+		},
+	},
 };
 </script>
 
 <style>
+#JSEW-globalNav {
+	float:right;
+	margin-top:16px;
+	/*font-size:0.875em;*/
+	font-size:0.85em;
+}
+#JSEW-googleArr {
+    position: absolute;
+    top: -8px;
+    right: 16px;
+}
+#JSEW-globalNav ul {
+	margin:0px;
+	margin-right:22px;
+	padding:0px;
+}
+
+#JSEW-globalNav li {
+	float: left;
+	list-style: none;
+}
+#JSEW-telegramLink {
+	display: inline-block;
+	color:#333;
+	text-decoration: underline;
+}
+#JSEW-globalNav li > a {
+	padding:8px 10px;
+	color:#fff;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+#JSEW-globalNav li > a:hover {
+	/*background: #103764;*/
+	background: rgba(0,0,0,0.3);
+	border-radius: 60px;
+}
+
+#JSEW-globalNav li > a.navButton {
+	border:solid 2px;
+	border-radius: 3px;
+	margin-left:20px;
+}
+
+#JSEW-globalNav #JSEW-translate {
+	position: relative;
+}
+#JSEW-globalNav #JSEW-translate #JSEW-googleTransate {
+	display: none;
+}
+
+#JSEW-globalNav #JSEW-translate.active #JSEW-googleTransate {
+	display: block;
+}
+
+#JSEW-globalNav #JSEW-translate > a {
+    padding: 0px;
+    height: 34px;
+    display: block;
+    /*padding: 10px;*/
+    width: 34px;
+    border-radius: 4px;
+    margin-left: 10px;
+    padding: 5px;
+    margin-top: -8px;
+	cursor:pointer;
+}
+
+#JSEW-googleTransate {
+	position: absolute;
+	background:#fff;
+	top:36px;
+	border-radius: 4px;
+	right:-10px;
+	z-index:1000;
+    min-width: 280px;
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.5);
+}
+#JSEW-translateTitle {
+	text-align:center;
+	padding:4px 8px;
+	background:#edeef2;
+	color:#000;
+	border-radius: 4px 4px 0px 0px;
+	position: relative;
+}
+#JSEW-translateContent {
+	padding:16px;
+	text-align:center;
+}
+#JSEW-translateContent p {
+	margin:10px 0px 0px 0px;
+	padding:0px;
+	color:#333;
+	line-height:1.2em;
+}
+
+#JSEW-globalNav  #JSEW-translate.active > a {
+	background: rgba(0,0,0,0.3);
+}
 /* Your styles */
 
 #JSEW-burger {
@@ -165,6 +314,4 @@ export default {
 	transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 	background-color:#164677;
 }
-
-
 </style>

@@ -1,0 +1,64 @@
+category_path,questions,content
+The Platform,"I've lost my password. What can I do?
+It says Credentials Error: {""fail"":1,""notification"":""Login failed. Invalid email or password""} What does it mean?
+I can't remember my password?
+How do I reset my password?
+I can't login.
+Can I get a new password?",Simply visit the login page and click the forgot password link which is just below the login button.
+The Platform,"I keep being logged out of the platform, and asked to log back in. Is this normal?
+Why do I keep needing to log in?
+I keep being kicked off the platform?
+I get logged out when I refresh the page.
+Why do you keep logging me out?
+Why do I keep being asked to enter my username and password?","This shouldn't be happening to the platform. The 2 common reasons users find that cause this are; - 1. Refreshing the page to check on earnings. By refreshing you are effectively leaving the page and reentering and so will be required to log in again. This is a fairly standard security feature. - 2. You are signing into your account on a second device. Users are limited to one device, and as soon as a second login is made you will be logged out of the first account."
+The Platform,"Can I log into and mine in a browser, desktop and mobile app simultaneously?
+Can I use the app and a browser at the same time?
+How can I check my balance when I am away from my computer?
+Can I cehck my balance on my phone without affecting mining?
+Will I earn more if i log into the desktop and mobile apps at the same time?
+Will you close my account if I log in on my phone and computer at the same time?","It is possible to log into 1 instance of each simultaneously. This enables you to mine in one and then perform other functions such as checking your balance, making payments transfers etc, in another. However there is no benefit to mining in all 3 at the same time, and there are restrictions in place to prevent an increase in earnings, you will simply just be wasting electricity and mobile data etc."
+The Platform,"What is 2 factor authentication (2fa)?
+What does 2FA mean?
+Do you support multi-factor authentication?
+How can I increase secuurity on my account?
+Can I use Authy/Authenticator to secure my account?
+How do I set up 2 Factor authentication (2FA)","2fa requires you to enter a randomly generated code from a mobile app into your JSEcoin account after you have entered your username and password. 2 common apps that the platform supports and have been fully tested are Authy and Google Authenticator. Simply download one of these apps, and the next time you log into your account go to the settings page and click to turn on 2fa. You will be prompted to scan a qr code with your phone and your first 6 digit code will be generated. You will then need to enter a code each time you log into your account. You should read instructions carefully regarding backing up your phones 2fa account in case you should lose or damage your phone."
+The Platform,"I’ve forgotten my PIN, can I restore it?
+I forgot my pin number, please help me to restore it
+I need to reset my pin?
+How can I reset my pin number?
+I never set up a pin number but it is asking me for one?
+I have lost my pin, how can I restore access to my account?
+I don't know my pin code
+I lost my pin
+Can I reset my pin?
+Can you restore my pin?
+I forgot my pin, can you reset it?",It's not possible to restore a PIN. It’s a 4-12 digit number and most people use a common number that is familiar to them. We suggest trying a few. You get 3 attempts per six hour period but nothing bad will happen if you get it wrong other than you run out of guesses. The team here have to deal with this a lot because we don’t offer email reset on the pin number (because it’s designed to prevent loss of funds if an email account is compromised) and almost everyone gets it right within a few attempts.
+The Platform,"It says there is no matching account for my email and password in the database. What should I do?
+It says my account doesn't exist?","Please try entering your details again ensuring that they are correct. If the problem persists, try resetting your password. "
+The Platform,"I’ve found a bug in the system, what should I do?
+Do you have a bug bounty program?
+There is a security vulnerability, can I report it?
+Will I get paid for finding a bug?
+I have found a problem with your system.
+How am I paid for finding a bug.",For details of our bug bounty program and submission form for please visit our bug bounty page at  https://jsecoin.com/en/oddJobs/bugBounty Rewards for responsible disclosure of bugs are sent as JSE tokens
+The Platform,"I keep being asked to confirm my account, but I haven't received the confirmation email.
+I haven't received the confirmation email?
+I have looked in my spam but can't see the confirmation email.
+How do I confirm my account?
+It says I need to confirm my account?
+I can't confirm my account, what can I do?
+The confirmation email doesn't arrive?
+Please resend the welcome email I can't confirm my account","Firstly please ensure you have checked your spam/junk folders. If it's not there please try adding noreply@JSEcoin.com to your email address book and re-requesting the email. It could be that there is an account already linked to that IP address, in which case the email isn’t sent on signup. If you log back into your account you will be given the chance to request this email again at which point it should arrive."
+The Platform,"I've heard a lot about people having their cryptocurrencies stolen, are my tokens safe in my JSEcoin account?
+Is my account secure?
+Can someone hack my account?
+Are my tokens safe in my JSE account?
+Are my tokens safer in a wallet?
+Is the JSE platform safer than a wallet?","We have introduced a number of features to increase the security of the platform such as the PIN system, email confirmations for large withdrawals, transaction limits. However your account is only as secure as you make it. Please ensure you use a unique, secure password. We recommend setting up 2FA on your account, and never let anyone know your PIN. Ensure that your operating system is free from viruses and trojans."
+The Platform,"I'm new to the platform; is there anywhere I can find an overview of how everything works?
+Do you have a video tutorial for using the platform?
+How can I see how everything works?
+Can you show me how to start mining?
+Where can I learn how to use JSEcoin?
+How do I use the JSEcoin platform for mining?",Yes. We have a video walkthrough guide which can be found here https://www.youtube.com/watch?v=UgoYhUPgqlY

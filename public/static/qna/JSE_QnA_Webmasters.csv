@@ -1,0 +1,64 @@
+category_path,questions,content
+webmasters,"I saw your code on another site and I am trying to understand how it really works and what does the site publisher gets out of it?
+How does browser mining work?
+Why do I earn JSE for running the miner?
+What do I earn for installing the miner?
+How am I paid?
+What currency will I earn?",We are an early stage cryptocurrency which is based around webmaster mining. Our system is similar to traditional cryptocurrencies but instead of big server farms we carry out the hashing algorithm in website visitors browsers. This is unobtrusive and runs behind the scenes (except for a privacy notification) so it does not negatively affect the user experience or page load speeds for your website visitors. - The site publisher copies our code snippet to their website and is rewarded in payment of JSEcoin tokens to their account.
+webmasters,"Is there any specific legalese we need to put on our site?
+Are there any regulations regarding browser mining?
+Is browser mining legal?
+Is it against the law?
+Am I breaking the law having broswer mining on my site?
+Do I need to tell my visitors that I am using the JSEcoin miner?","This is new technology, we haven't had any legal issues or guidance to contend with. The privacy notice is displayed by default and is essential because it contains the option to opt-out across the entire network. If you wish to place something in your own website terms this would help with transparency. - Something along the lines of MySite.com uses background cryptocurrency mining.� - To opt-out please visit�Privacy Policy�."
+webmasters,"Is there a limit to the number of sites we can register. Does each website need to have its own snippet (including the domain name), or can the same snippet be laced on multiple websites?
+How many sites can I use the code on?
+Can I use the same code for different websites/domains?
+I have more than 1 website, is it ok to use the code on all of them?
+Do i need to register every website?
+Do I need to register the correct domain name?","There is no limit to the number of site you can register, however it is important that you register each website separately. We need to know where the code is running to avoid fraud and our automated checks may return a false positive if the siteid does not match the referral domain. In the future you may wish to see stats by individual sites etc."
+webmasters,"Is it possible to increase the cpu usage on my visitors device?
+Can I increase visitors hashrate?
+How do I use more of my visitors CPU power?
+How can I generate more hashes?
+I want to increase hashrate to earn more JSE.
+Why is the hashrate so low?","No! We don't want to give publishers control over how much of a users cpu the mining uses. Currently it is set to use the minimal amount so that it does not have a noticeable impact on their browsing experience, and there is no benefit to earning to increase this. We feel that the mining having the minimal impact possible on a visitors browsing experience is key to encouraging adoption of browser mining as a way of monetising content."
+webmasters,"What are subids?
+How does subid tracking work?
+Can you explain how to use subids?
+What are sub ID's?
+Why isn't subid tracking working?
+How can I track visitor mining stats?","Sub ID's can be used to track 3rd party variables such as users to your site or pages that the code is loaded from. You can track whatever alphanumeric variable you want in this field and it will be displayed with full stats on your subID report available on the publishers page.
+
+More information on how to check subid balances programmatically can be found at https://developer.jsecoin.com"
+webmasters,"How do I know if the code is correctly installed on my site?
+How can I check to see if its working on my site?
+I can't see the opt-in banner/notification, is it working?
+How can I see the hashrate?
+The mining isn't working on my site.
+Is mining running on my site?","You can see it running by opening a console log window. To do this visit your web page using Firefox or Chrome and in Firefox hold down CTRL + SHIFT + K, and in Chome press CTRL + SHIFT + J - A console logging window will open which will show background processes and you will be able to see the script collecting block data and working on hashes. - The privacy notice will only show once per hour (so it doesn't load on every page as a user browsers through a site) and there is a 15 second delay on it after page load."
+webmasters,"Is it possible to prevent the JSEcoin banner from appearing on my site?
+Can I hide the opt-in notification?
+How do I remove the banner?
+Can I change the opt-in banner?
+The banner stops people visiting my site, can I remove it?
+I don't want users to have to opt-in. 
+Can I make mining compulsory?","This is actually the privacy notification. It is important for us that this notification must appear when a user first visits your site, and that it only disappears when a user has either opted in or out. We feel that this is important for legal and ethical reasons and that this openness will help the process become more widely accepted. We want to operate in a transparent way and feel that the visitor should be in full control over their cpu usage. It is one of our terms of use that publishers must display the notification and not make any attempt to hide it. We plan to enable some level of customisation to the notification in the future but it will not be possible to hide it completely."
+webmasters,"How do I install the JSEcoin snippet on my wordpress site?
+Is there a wordpress plugin?
+Is there a joomla plugin?
+Can I use the mining on a wordpress/joomla site?
+How do I install the wordpress plugin?
+Can I add HTML to a wordpress site?",There's installation instructions and a video here: https://jsecoin.com/wordpress-plugin-available/ https://www.youtube.com/watch?v=KBFDw7rpOJ4 You can download the plugin here https://jsecoin.com/en/downloads
+webmasters,"How do I setup an account and place the code for my site?
+How do I generate the code for my website?
+Where can I find my unique code?
+How do I generate the script?
+I own a website, how can I use JSE mining?
+Is it easy to install on my website?","Simply register for an account at https://platform.jsecoin.com and then visit the publishers page. Enter your website domain name and click the ""Setup Site"" button. This will generate your unique script. The code will pop up in a new window and you can either copy and paste it above the closing </body> tag or paste it into the JSEcoin wordpress plugin. Normally the best place to put the code is in a template file (so it runs across all pages of the site) or index file (so it only runs on the front page). Alternatively if you have a static site you can copy it to each and every page if you wish. "
+webmasters,"How are publishers rewarded for running the script on their sites?
+I own a website, how will I earn JSE?
+How are rewards distributed?
+How many visitors do I need to earn JSE?
+How do I earn rewards?
+What is the rewards algorithm?","Publisher rewards are distributed via a lottery system where publishers earn lottery tickets for opted-in visitors who provide computational power. 50 x 2 JSE are then randomly distributed to ticket holders. This lottery repeats with each 30 second block delivering 288,000 JSE tokens in total each day."

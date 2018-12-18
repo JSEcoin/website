@@ -5,9 +5,9 @@
 				<router-link v-bind:to="`/${$store.state.local}/technical/overview`" tag="li" class="active">
 					{{ $t('pages.navigation.technical.link_overview') }}
 				</router-link>
-				<router-link v-bind:to="`/${$store.state.local}/technical/stats`" tag="li">
+				<!--<router-link v-bind:to="`/${$store.state.local}/technical/stats`" tag="li">
 					{{ $t('pages.navigation.technical.link_stats') }}
-				</router-link>
+				</router-link>-->
 				<li onclick="window.location.href='https://developer.jsecoin.com'">
 						{{ $t('pages.navigation.technical.link_APIS') }}
 				</li>
