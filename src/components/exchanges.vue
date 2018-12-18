@@ -9,7 +9,7 @@
 				</li>
 				<li>
 					Alternatively you can withdraw your tokens to any 3rd party ERC20 compatible wallet.<br />
-					(Before making a withdrawl you should check with your wallet provider to ensure that it supportd ERC20 tokens.)
+					(Before making a withdrawal you should check with your wallet provider to ensure that it supported ERC20 tokens.)
 				</li>
 			</ul>
 
