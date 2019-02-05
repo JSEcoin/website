@@ -1,5 +1,6 @@
 <template>
 	<div id="JSEW-wrapper">
+		<!--
 		<div class="wrapper center" style="padding:30px 0px;">
 			<h1 class="heading">{{ $t('pages.timeline.section_interactiveTimeline.heading_timeline') }}</h1>
 			<h2 class="subHeading" style="margin-bottom:20px;">{{ $t('pages.timeline.section_interactiveTimeline.subheading_timeline') }}</h2>
@@ -14,12 +15,12 @@
 			</p>
 		</div>
 		<interactiveTimeline/>
-
+		-->
 		<div id="JSEW-timelineWrapper">
 
 			<div class="wrapper center">
-				<h1 class="heading">{{ $t('pages.timeline.section_timeline.heading_timeline') }}</h1>
-				<h2 class="subHeading" style="margin-bottom:30px;">{{ $t('pages.timeline.section_timeline.subheading_timeline') }}</h2>
+				<h1 class="heading">Timeline</h1>
+				<!--<h2 class="subHeading" style="margin-bottom:30px;">{{ $t('pages.timeline.section_timeline.subheading_timeline') }}</h2>-->
 			</div>
 
 
@@ -333,9 +334,9 @@
 									<span>Q1</span>
 								</div>
 								<div class="box">
-									<h2 class="title">Ad-Exchange Internal Release</h2>
+									<h2 class="title">Ad-Exchange Release</h2>
 									<div class="content">
-										<p>Ad-exchange goes live with beta version and select partners</p>
+										<p>Ad-exchange goes live providing marketplace for digital advertising</p>
 									</div>
 								</div>
 							</div>
@@ -344,8 +345,9 @@
 									<span>Q2</span>
 								</div>
 								<div class="box">
-									<h2 class="title">Security Enhancements</h2>
+									<h2 class="title">Continued Development</h2>
 									<div class="content">
+										<p>Further development on ad-exchnage with additional features, placements and optimisations</p>
 										<p>Development of bot detection enterprise API and JSE captcha solution</p>
 									</div>
 								</div>
@@ -355,9 +357,8 @@
 									<span>Q3</span>
 								</div>
 								<div class="box">
-									<h2 class="title">Ad-Exchange Public Launch</h2>
+									<h2 class="title">Merchant Tools Improvements</h2>
 									<div class="content">
-										<p>Full public release of the JSE ad-exchange self-serve platform</p>
 										<p>Integration of additonal cryptocurrencies with merchant tools BTC/ETH</p>
 									</div>
 								</div>
@@ -367,10 +368,9 @@
 									<span>Q4</span>
 								</div>
 								<div class="box">
-									<h2 class="title">V2</h2>
+									<h2 class="title">Web Platform V2</h2>
 									<div class="content">
-										<p>Development of V2 platform including client consensus &amp; webRTC P2P network</p>
-										<p>Marketing/sales pipeline to scale ad-exchange and enterprise solutions</p>
+										<p>Development of V2 platform</p>
 									</div>
 								</div>
 							</div>
