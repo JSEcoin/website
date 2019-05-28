@@ -347,7 +347,7 @@
 								<div class="box">
 									<h2 class="title">Continued Development</h2>
 									<div class="content">
-										<p>Further development on ad-exchnage with additional features, placements and optimisations</p>
+										<p>Further development on ad-exchange with additional features, placements and optimisations</p>
 										<p>Development of bot detection enterprise API and JSE captcha solution</p>
 									</div>
 								</div>
