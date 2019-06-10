@@ -384,6 +384,7 @@
 									<span>Q1</span>
 								</div>
 								<div class="box">
+									<h2 class="title">V2 - Beta / Launch</h2>
 									<div class="content">
 										<p>Beta testing and roll out platform V2</p>
 									</div>
@@ -394,6 +395,7 @@
 									<span>Q2</span>
 								</div>
 								<div class="box">
+									<h2 class="title">P2P Browser</h2>
 									<div class="content">
 										<p>Start testing and development of client-side PTP consensus algorithm</p>
 									</div>
@@ -404,6 +406,7 @@
 									<span>Q3</span>
 								</div>
 								<div class="box">
+									<h2 class="title">Optimisations</h2>
 									<div class="content">
 										<p>Optimisation of hashing algorithm, exploring WASM, WebGL, Rust</p>
 									</div>
@@ -414,6 +417,7 @@
 									<span>Q4</span>
 								</div>
 								<div class="box">
+									<h2 class="title">P2P Beta / Launch</h2>
 									<div class="content">
 										<p>Migration to client-side consensus aglorithm</p>
 									</div>
@@ -427,7 +431,7 @@
 </template>
 
 <script>
-import interactiveTimeline from './segment/interactiveTimeline';
+//import interactiveTimeline from './segment/interactiveTimeline';
 
 export default {
 	name: 'timeline',
@@ -448,9 +452,9 @@ export default {
 			],
 		};
 	},
-	components: {
-		interactiveTimeline,
-	},
+	//components: {
+	//	interactiveTimeline,
+	//},
 };
 </script>
 
