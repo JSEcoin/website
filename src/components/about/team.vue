@@ -191,21 +191,6 @@
 			<div class="row">
 				<div class="col">
 					<dl>
-						<dt><div class="profile jay"><div class="overlayHex"></div></div></dt>
-						<dd>
-							<div class="team-social-icons">
-								<a href="https://www.linkedin.com/in/jaywestlin/" target="_blank"><img src="../../assets/images/ico_linkedin.png" class="team-social-icon" alt="Linkedin" /></a>
-								<a href="https://twitter.com/JayWestlin" target="_blank"><img src="../../assets/images/ico_twitter.png" class="team-social-icon" alt="Twitter" /></a>
-							</div>
-							<h3>Jay Westin</h3>
-							<h4>{{ $t('pages.team.members.JW.title') }}</h4>
-
-							<p v-html="$t('pages.team.members.JW.para_main1')"></p>
-						</dd>
-					</dl>
-				</div>
-				<div class="col">
-					<dl>
 						<dt><div class="profile kyle"><div class="overlayHex"></div></div></dt>
 						<dd>
 							<div class="team-social-icons">
@@ -219,41 +204,18 @@
 						</dd>
 					</dl>
 				</div>
-			</div>
-
-			<div class="row">
-
 				<div class="col">
 					<dl>
-						<dt><div class="profile jack"><div class="overlayHex"></div></div></dt>
+						<dt><div class="profile ollie"><div class="overlayHex"></div></div></dt>
 						<dd>
-							<div class="team-social-icons">
-								<a href="https://www.linkedin.com/in/jack-cline-b176a411a/" target="_blank"><img src="../../assets/images/ico_linkedin.png" class="team-social-icon" alt="Linkedin" /></a>
-							</div>
-							<h3>Jack Cline</h3>
-							<h4>{{ $t('pages.team.members.JC.title') }}</h4>
+							<h3>Oliver Bachini</h3>
+							<h4>{{ $t('pages.team.members.OB.title') }}</h4>
 
 							<p>
-								{{ $t('pages.team.members.JC.para_main1') }}
-							</p>
-						</dd>
-					</dl>
-				</div>
-				<div class="col">
-					<dl>
-						<dt><div class="profile nick"><div class="overlayHex"></div></div></dt>
-						<dd>
-							<h3>Nick Indelicato</h3>
-							<h4>{{ $t('pages.team.members.NI.title') }}</h4>
-
-							<p>
-								{{ $t('pages.team.members.NI.para_main1') }}
+								{{ $t('pages.team.members.OB.para_main1') }}
 							</p>
 							<p>
-								{{ $t('pages.team.members.NI.para_main2') }}
-							</p>
-							<p>
-								{{ $t('pages.team.members.NI.para_main3') }}
+								{{ $t('pages.team.members.OB.para_main2') }}
 							</p>
 						</dd>
 					</dl>
@@ -277,49 +239,6 @@
 							</p>
 							<p>
 								{{ $t('pages.team.members.AS.para_main2') }}
-							</p>
-						</dd>
-					</dl>
-				</div>
-
-				<div class="col">
-					<dl>
-						<dt><div class="profile angelo"><div class="overlayHex"></div></div></dt>
-						<dd>
-							<div class="team-social-icons">
-								<a href="https://www.linkedin.com/in/angelo-santagata-a64344/" target="_blank"><img src="../../assets/images/ico_linkedin.png" class="team-social-icon" alt="Linkedin" /></a>
-								<a href="https://twitter.com/angelosantagata" target="_blank"><img src="../../assets/images/ico_twitter.png" class="team-social-icon" alt="Twitter" /></a>
-							</div>
-							<h3>Angelo Santagata</h3>
-							<h4>
-								{{ $t('pages.team.members.ASa.title') }}
-								<h5>{{ $t('pages.team.members.ASa.subTitle') }}</h5>
-							</h4>
-
-							<p>
-								{{ $t('pages.team.members.ASa.para_main1') }}
-							</p>
-							<p>
-								{{ $t('pages.team.members.ASa.para_main2') }}
-							</p>
-						</dd>
-					</dl>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col">
-					<dl>
-						<dt><div class="profile ollie"><div class="overlayHex"></div></div></dt>
-						<dd>
-							<h3>Oliver Bachini</h3>
-							<h4>{{ $t('pages.team.members.OB.title') }}</h4>
-
-							<p>
-								{{ $t('pages.team.members.OB.para_main1') }}
-							</p>
-							<p>
-								{{ $t('pages.team.members.OB.para_main2') }}
 							</p>
 						</dd>
 					</dl>

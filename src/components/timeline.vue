@@ -376,13 +376,62 @@
 							</div>
 						</div>
 					</div>
+					<div class="year">
+						<div class="name">2020</div>
+						<div class="items">
+							<div class="item left" style="margin-top: -1rem;">
+								<div class="date">
+									<span>Q1</span>
+								</div>
+								<div class="box">
+									<h2 class="title">V2 - Beta / Launch</h2>
+									<div class="content">
+										<p>Beta testing and roll out platform V2</p>
+									</div>
+								</div>
+							</div>
+							<div class="item right" style="margin-top: 10rem;">
+								<div class="date">
+									<span>Q2</span>
+								</div>
+								<div class="box">
+									<h2 class="title">P2P Browser</h2>
+									<div class="content">
+										<p>Start testing and development of client-side PTP consensus algorithm</p>
+									</div>
+								</div>
+							</div>
+							<div class="item left" style="margin-top: -1rem;">
+								<div class="date">
+									<span>Q3</span>
+								</div>
+								<div class="box">
+									<h2 class="title">Optimisations</h2>
+									<div class="content">
+										<p>Optimisation of hashing algorithm, exploring WASM, WebGL, Rust</p>
+									</div>
+								</div>
+							</div>
+							<div class="item right" style="margin-top: 10rem;">
+								<div class="date">
+									<span>Q4</span>
+								</div>
+								<div class="box">
+									<h2 class="title">P2P Beta / Launch</h2>
+									<div class="content">
+										<p>Migration to client-side consensus aglorithm</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 </template>
 
 <script>
-import interactiveTimeline from './segment/interactiveTimeline';
+//import interactiveTimeline from './segment/interactiveTimeline';
 
 export default {
 	name: 'timeline',
@@ -403,9 +452,9 @@ export default {
 			],
 		};
 	},
-	components: {
-		interactiveTimeline,
-	},
+	//components: {
+	//	interactiveTimeline,
+	//},
 };
 </script>
 

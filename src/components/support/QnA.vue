@@ -269,7 +269,7 @@ export default {
 
 	.enableResponsive .faqSection {
 		min-width: 220px;
-    	width: 200px;*
+    	width: 200px;
 		font-size: 0.5em;
 	}
 }
