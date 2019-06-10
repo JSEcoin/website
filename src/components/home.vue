@@ -275,7 +275,7 @@
 					</ul>
 				</nav>
 
-				<a href="/forums/" class="button" style="display:inline-block;"><i class="fa fa-group"></i> {{ $t('pages.home.section_community.button_DontForgetForums') }}</a>
+				<!--<a href="/forums/" class="button" style="display:inline-block;"><i class="fa fa-group"></i> {{ $t('pages.home.section_community.button_DontForgetForums') }}</a>-->
 			</div>
 		</div>
 

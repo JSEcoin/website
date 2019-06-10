@@ -118,9 +118,9 @@
 							<router-link v-bind:to="`/${$store.state.local}/support`" tag="a">
 								Support Center
 							</router-link>
-							<a href="/forums">
+							<!--<a href="/forums">
 								{{ $t('template.navigation.link_forums') }}
-							</a>
+							</a>-->
 							<!--<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a">
 								{{ $t('template.navigation.link_contactUs') }}
 							</router-link>-->
@@ -201,9 +201,9 @@
 							<router-link v-bind:to="`/blog/code`" tag="a">
 								{{ $t('template.navigation.link_publisherNews') }}
 							</router-link>
-							<a href="/forum/webmasters/">
+							<!--<a href="/forum/webmasters/">
 								{{ $t('template.navigation.link_forums') }}
-							</a>
+							</a>-->
 							<a href="https://platform.jsecoin.com/?register=1" target="_BLANK">
 								{{ $t('template.navigation.link_signup') }} <i class="fa fa-external-link"></i>
 							</a>
@@ -333,9 +333,9 @@
 							<router-link v-bind:to="`/${$store.state.local}/support`" tag="a">
 								Support Center
 							</router-link>
-							<a href="/forums">
+							<!--<a href="/forums">
 								{{ $t('template.navigation.link_forums') }}
-							</a>
+							</a>-->
 							<!--<router-link v-bind:to="`/${$store.state.local}/support/contact`" tag="a">
 								{{ $t('template.navigation.link_contactUs') }}
 							</router-link>-->
