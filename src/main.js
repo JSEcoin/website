@@ -27,7 +27,7 @@ Vue.use(VueMultianalytics, {
 	modules: {
 		ga: {
 			appName: 'JSECoin_V3', // Mandatory
-			appVersion: '4.0.0', // Mandatory
+			appVersion: '4.0.1', // Mandatory
 			trackingId: 'UA-48537439-15', // Mandatory
 			//debug: true, // Whether or not display console logs debugs (optional)
 		},
