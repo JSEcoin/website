@@ -4,9 +4,11 @@
 			<div class="row">
 				<div id="JSEW-subNav" class="col" style="max-width:inherit;flex-grow:0;padding-right:40px;margin-right:40px; border-right:solid 1px #eee;width:240px;">
 					<nav>
+							<!--
 							<a href="/JSEcoinV2_Overview.pdf" target="_blank">
 								Intro Slides <i class="fa fa-file-pdf-o"></i>
 							</a>
+							-->
 							<a href="/onepager.pdf" target="_blank">
 								{{ $t('template.navigation.link_overview') }} <i class="fa fa-file-pdf-o"></i>
 							</a>
@@ -57,15 +59,16 @@
 						{{ $t('pages.investorOverview.para_why2') }}
 					</p>
 
+					
 					<h1 class="heading">{{ $t('pages.investorOverview.heading_when') }}</h1>
-					<h2 class="subHeading">{{ $t('pages.investorOverview.subheading_when') }}</h2>
+					<!--
+						<h2 class="subHeading">{{ $t('pages.investorOverview.subheading_when') }}</h2>
 
 					<p>
 						{{ $t('pages.investorOverview.para_when1') }}
 					</p>
-
-					<iframe src="//www.slideshare.net/slideshow/embed_code/key/87vlHovYG7T9WR" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin: 20px; max-width: 100%;" allowfullscreen> </iframe>
-
+					-->
+					<iframe src="//www.slideshare.net/slideshow/embed_code/key/vR3AsGAhAY4YNf" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin: 20px; max-width: 100%;" allowfullscreen> </iframe>
 
 				</div>
 			</div>

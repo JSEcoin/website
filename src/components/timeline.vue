@@ -345,7 +345,7 @@
 									<span>Q2</span>
 								</div>
 								<div class="box">
-									<h2 class="title">Continued Development</h2>
+									<h2 class="title">Enterprise API</h2>
 									<div class="content">
 										<p>Further development on ad-exchange with additional features, placements and optimisations</p>
 										<p>Development of bot detection enterprise API and JSE captcha solution</p>
@@ -370,7 +370,7 @@
 								<div class="box">
 									<h2 class="title">Web Platform V2</h2>
 									<div class="content">
-										<p>Development of V2 platform</p>
+										<p>Development of version 2 of the JSE platform</p>
 									</div>
 								</div>
 							</div>
@@ -386,7 +386,7 @@
 								<div class="box">
 									<h2 class="title">V2 - Beta / Launch</h2>
 									<div class="content">
-										<p>Beta testing and roll out platform V2</p>
+										<p>Beta testing and roll out platform V2 across web, desktop and mobile clients</p>
 									</div>
 								</div>
 							</div>
@@ -395,9 +395,9 @@
 									<span>Q2</span>
 								</div>
 								<div class="box">
-									<h2 class="title">P2P Browser</h2>
+									<h2 class="title">Client-side Consensus</h2>
 									<div class="content">
-										<p>Start testing and development of client-side PTP consensus algorithm</p>
+										<p>Start testing and development of client-side P2P consensus algorithm</p>
 									</div>
 								</div>
 							</div>
@@ -419,7 +419,7 @@
 								<div class="box">
 									<h2 class="title">P2P Beta / Launch</h2>
 									<div class="content">
-										<p>Migration to client-side consensus aglorithm</p>
+										<p>Testing and migration to client-side consensus aglorithm</p>
 									</div>
 								</div>
 							</div>

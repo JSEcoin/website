@@ -23,9 +23,9 @@
 						<dl>
 							<dt id="JSEW-icoSimple"></dt>
 							<dd>
-								<h3>{{ $t('pages.home.section_overview.highlights.heading_simple') }}</h3>
+								<h3>Web Browser Mining</h3>
 								<p>
-									{{ $t('pages.home.section_overview.highlights.para_simple') }}
+									Anyone with a web browser or website can now mine cryptocurrency. Block rewards distributed to real users across the globe.
 								</p>
 							</dd>
 						</dl>
@@ -34,9 +34,9 @@
 						<dl>
 							<dt id="JSEW-icoMining"></dt>
 							<dd>
-								<h3>{{ $t('pages.home.section_overview.highlights.heading_browserMining') }}</h3>
+								<h3>Ad Exchange</h3>
 								<p>
-									{{ $t('pages.home.section_overview.highlights.para_browserMining') }}
+									A transparent market place for the purchase and sale of digital marketing space for banner and text advertising.
 								</p>
 							</dd>
 						</dl>
@@ -47,9 +47,9 @@
 						<dl>
 							<dt id="JSEW-icoTrust"></dt>
 							<dd>
-								<h3>{{ $t('pages.home.section_overview.highlights.heading_storage') }}</h3>
+								<h3>Merchant Tools</h3>
 								<p>
-									{{ $t('pages.home.section_overview.highlights.para_storage') }}
+									Accept cryptocurrency payments online with simple to setup "Buy with crypto" buttons.
 								</p>
 							</dd>
 						</dl>
@@ -58,10 +58,9 @@
 						<dl>
 							<dt id="JSEW-icoAPI"></dt>
 							<dd>
-								<h3>{{ $t('pages.home.section_overview.highlights.heading_tokens') }}</h3>
+								<h3>Enterprise Solutions</h3>
 								<p>
-									{{ $t('pages.home.section_overview.highlights.para_tokens') }}
-								<!--<b class="infoMsg">{{ $t('template.global.text_comingSoon') }}</b>-->
+									Enterprise grade API's for bot detection and side chain validations.
 								</p>
 							</dd>
 						</dl>
@@ -275,10 +274,12 @@
 					</ul>
 				</nav>
 
-				<!--<a href="/forums/" class="button" style="display:inline-block;"><i class="fa fa-group"></i> {{ $t('pages.home.section_community.button_DontForgetForums') }}</a>-->
+				<!--
+					<a href="/forums/" class="button" style="display:inline-block;"><i class="fa fa-group"></i> {{ $t('pages.home.section_community.button_DontForgetForums') }}</a>
+				-->
 			</div>
 		</div>
-
+<!--
 		<div id="JSEW-charity">
 			<div class="wrapper">
 				<div id="JSEW-charityContent" class="row">
@@ -304,7 +305,7 @@
 				</div>
 			</div>
 		</div>
-
+-->
 
 		<div id="JSEW-where-next">
 			<div class="wrapper center">
@@ -528,9 +529,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-
+#JSEW-team {
+	padding: 30px 0px;
+	background: #FFFFFF;
+}
 #JSEW-browserMining,
-#JSEW-team,
 #JSEW-charity {
 	padding: 30px 0px;
 	background: #fafafa;
@@ -603,7 +606,7 @@ export default {
 
 #JSEW-ecosystem {
 	padding-top: 40px;
-	background: #fafafa;
+	background: #ffffff;
 }
 
 .swiper-container {
@@ -705,25 +708,25 @@ export default {
 	background-position: center;
 }
 #JSEW-icoSimple {
-	background-image:url("../assets/images/ico_simple.png");
+	background-image:url("../assets/images/homeIcons/browser-mining.png");
 	background-repeat: no-repeat;
 	background-size:contain;
 	background-position: center 20px;
 }
 #JSEW-icoMining {
-	background-image:url("../assets/images/ico_web.png");
+	background-image:url("../assets/images/homeIcons/ad-exchange.png");
 	background-repeat: no-repeat;
 	background-size:contain;
 	background-position: center 20px;
 }
 #JSEW-icoTrust {
-	background-image:url("../assets/images/ico_earningtrust.png");
+	background-image:url("../assets/images/homeIcons/merchant-tools.png");
 	background-repeat: no-repeat;
 	background-size:contain;
 	background-position: center 20px;
 }
 #JSEW-icoAPI{
-	background-image:url("../assets/images/ico_api.png");
+	background-image:url("../assets/images/homeIcons/enterprise-solutions.png");
 	background-repeat: no-repeat;
 	background-size:contain;
 	background-position: center 20px;
@@ -815,6 +818,7 @@ export default {
 	margin: 25px auto;
 }
 
+/*
 #JSEW-where-next {
 	background-image: url("/static/images/search_logo.png");
   background-size: 300px;
@@ -825,7 +829,7 @@ export default {
 #JSEW-where-next-container {
   background: rgba(255,255,255,0.95);
 }
-
+*/
 #JSEW-globalStatsBar:hover {
 	background:#fdfdfd;
 }
