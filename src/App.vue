@@ -485,8 +485,7 @@
 				<div id="JSEW-copy" class="cf">
 					<div class="wrapper">
 						<div id="JSEW-copyInfo">
-							{{ $t('template.footer.copy.text_copyright') }}
-
+							Copyright 2017 - <span id="copyright-this-year"></span>
 							<router-link v-bind:to="`/${$store.state.local}/home`" tag="a">
 								JSEcoin Ltd
 							</router-link> ~ {{ $t('template.footer.copy.text_rightsReserved') }}
@@ -778,6 +777,7 @@ export default {
 			}
 		}, 1000);
 		*/
+		document.getElementById('copyright-this-year').innerHTML = new Date().getFullYear();
 	},
 	methods: {
 		icoBadge() {
