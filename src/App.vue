@@ -342,9 +342,11 @@
 						</nav>
 						<nav>
 							<h4>{{ $t('template.navigation.heading_investors') }}</h4>
+							<!--
 							<a href="/JSEcoinV2_Overview.pdf" target="_blank">
 								Intro Slides <i class="fa fa-file-pdf-o"></i>
 							</a>
+							-->
 							<a href="/onepager.pdf" target="_blank">
 								{{ $t('template.navigation.link_overview') }} <i class="fa fa-file-pdf-o"></i>
 							</a>
@@ -483,8 +485,7 @@
 				<div id="JSEW-copy" class="cf">
 					<div class="wrapper">
 						<div id="JSEW-copyInfo">
-							{{ $t('template.footer.copy.text_copyright') }}
-
+							Copyright 2017 - <span id="copyright-this-year"></span>
 							<router-link v-bind:to="`/${$store.state.local}/home`" tag="a">
 								JSEcoin Ltd
 							</router-link> ~ {{ $t('template.footer.copy.text_rightsReserved') }}
@@ -496,7 +497,7 @@
 							<a target="_blank" href="https://discord.gg/3gBZsA4" title="Discord"><i class="fa fa-discord"></i></a>
 							<a target="_blank" href="https://bitcointalk.org/index.php?topic=2398571.0" title="BitcoinTalk"><i class="fa fa-bitcoin"></i></a>
 							<a target="_blank" href="https://www.reddit.com/r/JSEcoin_Official/" title="Reddit"><i class="fa fa-reddit-alien"></i></a>
-							<a target="_blank" href="https://medium.com/@jsecoin/" title="Medium"><i class="fa fa-medium"></i></a>
+							<!-- <a target="_blank" href="https://medium.com/@jsecoin/" title="Medium"><i class="fa fa-medium"></i></a> -->
 							<a target="_blank" href="https://www.youtube.com/channel/UCHtIF9KggJn9TDzr8pRYsYA" title="YouTube"><i class="fa fa-youtube-play"></i></a>
 							<a target="_blank" href="https://www.linkedin.com/company/25048028/" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
 						</div>
@@ -776,6 +777,7 @@ export default {
 			}
 		}, 1000);
 		*/
+		document.getElementById('copyright-this-year').innerHTML = new Date().getFullYear();
 	},
 	methods: {
 		icoBadge() {
@@ -1633,13 +1635,14 @@ header .carousel1 {
 	background-repeat: no-repeat;
 	background-size: 259px 312px;
 	background-position: bottom left;
-}*/
+}
 header .carousel1 {
 	background-image: url("assets/images/carousel_1a.png");
 	background-repeat: no-repeat;
 	background-size: 263px 392px;
 	background-position: bottom left;
 }
+*/
 
 header .carousel2 {
 	background-image: url("assets/images/carousel/ico.png");
@@ -1647,8 +1650,8 @@ header .carousel2 {
 	background-size: cover;
 }
 
-header .carousel3 {
-	background-image: url("assets/images/carousel/4.png");
+header .carousel1 {
+	background-image: url("assets/images/carousel/5.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }

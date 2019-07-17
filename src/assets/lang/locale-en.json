@@ -877,7 +877,7 @@
 			"subheading_developer": "Driving innovation with blockchain and online cryptocurrency",
 			"para_main1": "The publisher code is just the tip of the iceberg when considering what is possible with JSEcoin. We have fully features REST API's with documentation available at:",
 			"para_main2": "Developers can leverage balance checks, site and SubID tracking, server-side transactions, import/export functionality and a lot more.",
-			"para_main3": "Our engineers are available to support your projects and we have active support communities on the forum, Discord and Telegram where you can post questions and get help from our team."
+			"para_main3": "We have active support communities on Discord and Telegram where you can post questions and get help from our community."
 		},
 		"investorOverview": {
 			"meta": {
@@ -888,17 +888,17 @@
 			"banner": {
 				"linkText": "Investors",
 				"heading": "Investors",
-				"subheading": "What, Why, When..."
+				"subheading": ""
 			},
 			"test": "test",
 			"heading_what": "What is JSEcoin",
 			"subheading_what": "Cryptocurrency targeted for the web",
 			"para_what1": "JSEcoin is a simple to use platform making cryptocurrency accessible to a much wider audience encouraging mainstream adoption, alongside offering a genuine solution to disrupt the $200 billion online advertising industry.",
 			"heading_why": "Why Invest",
-			"subheading_why": "Committed to changing the way sites are monetised",
-			"para_why1": "This is a new concept that is set to challenge the current model for website monetisation. With the current online advertising industry being valued in excess of $200 billion worldwide, this would be a great time to invest in a platform that could challenge the current status quo. Demand for JSEcoin will be created by the introduction of merchant tools allowing for the use of JSEcoin as a method for digital payments. We are building a large community of platform miners to ensure that there is large pool of users with JSEcoin tokens to spend.",
-			"para_why2": "The current trend for an ICO is for a company to do so based on an idea and a whitepaper. This clearly poses a huge risk for investors that no product will ever come to market. Whilst we are in no way able to offer investors any guarantees of a return (we would question anyone who does) we are trying to build a great platform and engage a solid user base to mitigate this risk and make JSEcoin a more viable investment opportunity.",
-			"heading_when": "When to Invest",
+			"subheading_why": "Blockchain project, with a product and business model",
+			"para_why1": "The JSE project challenges the current model for website monetisation. With the current online advertising industry being valued in excess of $200 billion worldwide, this would be a great time to invest in a platform that could disrupt the current status quo. Demand for the JSE token will be created by the ecosystem built on the ad-exchange, merchant tools and enterprise solutions. We are building a large community of website owners and the technology is currently used on 20,000+ websites.",
+			"para_why2": "",
+			"heading_when": "Pitch Deck",
 			"subheading_when": "ICO Summer 2018",
 			"para_when1": "We are planning an ICO for later this year. As mentioned above we want to ensure that we have a great working product that has been adopted by a solid user base. Exact dates will be announced once we have finished the majority of the major development as listed on our timeline."
 		},
