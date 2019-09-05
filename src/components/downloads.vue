@@ -15,7 +15,7 @@
 					</p>
 					<br>
 					<p>
-						<a href="https://jsecoin.com/downloads/JSEcoinDesktopLatest.exe" class="button JSEW-download-button"><i class="fa fa-download"></i> {{ $t('pages.downloads.download') }}</a>
+						<a href="https://github.com/JSEcoin/platform/releases/download/v0.6.1-beta/JSEcoin-0.6.1-github-Windows.exe" class="button JSEW-download-button"><i class="fa fa-download"></i> {{ $t('pages.downloads.download') }}</a>
 					</p>
 				</div>
 				<div class="col center">
