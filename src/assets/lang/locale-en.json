@@ -1260,7 +1260,7 @@
 				"faqItemHeading4": "Does each website need to have its own snippet (including the domain name), or can the same snippet be laced on multiple websites?",
 				"faqItemContent4": "Please track different sites separately. We need to know where the code is running to avoid fraud and our automated checks may return a false positive if the siteid does not match the referral domain. In the future you may wish to see stats by individual sites etc.",
 				"faqItemHeading5": "How are publishers rewarded for running the script on their sites?",
-				"faqItemContent5": "Rewards are distributed via a lottery system where publishers earn lottery tickets for unique visitors, page views and hashes found. 50 x 2 JSE are then randomly distributed to ticket holders. This lottery repeats with each 30 second block delivering 288,000 JSE tokens in total each day.",
+				"faqItemContent5": "Rewards are distributed via a lottery system where publishers earn lottery tickets for unique visitors, page views and hashes found. 50 x 1 JSE are then randomly distributed to ticket holders. This lottery repeats with each 30 second block delivering 144,000 JSE tokens in total each day.",
 				"faqItemHeading6": "Is it possible to increase the cpu usage on my visitors device?",
 				"faqItemContent6": "No! We don't want to give publishers control of how much of a users cpu the mining uses. Currently it is set to use the minimal amount so that it does not have a noticeable impact on their browsing experience. We wouldn't want webmasters to be able to increase the cpu usage as this could give JSEcoin a bad reputation. Webmasters earnings are dependent on visitors, unique visitors as well as hashes found and so cpu usage is set to the minimum required in order to secure the blockchain.",
 				"faqItemHeading7": "Is it possible to prevent the JSEcoin banner from appearing on my site?",
@@ -1524,7 +1524,7 @@
 				"heading_miningRewards": "Mining Rewards",
 				"subheading_miningRewards": "JSE is a cryptocurrency that is mined by through a browser",
 				"step_heading1": "Publisher Mining",
-				"step_content1": "288,000 coins / day, lottery system, tickets are distributed for unique visitors, page views and hashes found.",
+				"step_content1": "144,000 coins / day, lottery system, tickets are distributed for unique visitors, page views and hashes found.",
 				
 				"step_heading2": "Platform Mining",
 				"step_content2": "144,000 JSEcoins / day lottery system 1 ticket per hash found.**",
