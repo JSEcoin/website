@@ -143,7 +143,7 @@
 							<a href="/whitepaper.pdf" target="_blank">
 								{{ $t('template.navigation.link_whitepaper') }} <i class="fa fa-file-pdf-o"></i>
 							</a>
-							<a href="https://www.slideshare.net/JamesBachini/jsecoin-pitch-deck-97289450" target="_blank">
+							<a href="https://jsecoin.com/pitchdeck.pdf" target="_blank">
 								{{ $t('template.navigation.link_pitchdeck') }} <i class="fa fa-external-link"></i>
 							</a>
 							<a href="https://bitcointalk.org/index.php?topic=2398571.0" target="_BLANK">
@@ -353,7 +353,7 @@
 							<a href="/whitepaper.pdf" target="_blank">
 								{{ $t('template.navigation.link_whitepaper') }} <i class="fa fa-file-pdf-o"></i>
 							</a>
-							<a href="https://www.slideshare.net/JamesBachini/jsecoin-pitch-deck-97289450" target="_blank">
+							<a href="https://jsecoin.com/pitchdeck.pdf" target="_blank">
 								{{ $t('template.navigation.link_pitchdeck') }} <i class="fa fa-external-link"></i>
 							</a>
 							<a href="https://bitcointalk.org/index.php?topic=2398571.0" target="_BLANK">
