@@ -77,6 +77,105 @@
 			<div class="wrapper">
 				<div id="JSEW-browserMiningContent" class="row reverse">
 					<div class="col">
+						<h2 class="heading">Blockchain</h2>
+						<h3 class="subHeading">Immutable Chronologically Ordered Data</h3>
+
+						<p>
+							 Blockchain technology provides a secure, shared database of unchangeable data. While the concept is simple, we are still only starting to see the use of cases for immutable data emerging. The JSE project has been building on top of blockchain and web technologies to enable website owners to monetize their content.
+						</p>
+						<p>
+							Blockchain’s are mined using a mathematical calculation on the data in each block. For traditional cryptocurrencies this is competed over by huge server farms. The bitcoin network currently consumes more energy than Switzerland<a href="https://www.theverge.com/2019/7/4/20682109/bitcoin-energy-consumption-annual-calculation-cambridge-index-cbeci-country-comparison" target="_blank">*</a>. The JSE team developed a tool that carries out the same hashing algorithm in a normal web browser without disturbing user experience. Hash calculations are sent back to the nodes which form the network and are used to finalise and secure each block. This gives the project a distinct advantage in cost savings as the network is run using surplus resources. 
+						</p>
+						<div class="center">
+							<a href="https://platform.jsecoin.com" style="display:inline-block;" class="button" target="_BLANK"><i class="fa fa-universal-access"></i> {{ $t('pages.home.section_browserMining.button_tryit') }}</a>
+						</div>
+					</div>
+					<div class="col center">
+
+						<img src="../assets/images/blockchain.png" style="width:70%" alt="JSE Blockchain" />
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="JSEW-adTech">
+			<div class="wrapper">
+				<div id="JSEW-adTechContent" class="row reverse">
+					<div class="col center">
+						<img src="../assets/images/adtech.png" style="width:80%; margin-top: 10%;" alt="ad tech" />
+					</div>
+					<div class="col">
+						<h2 class="heading">Ad-Tech</h2>
+						<h3 class="subHeading">A digital ad-exchange using cryptocurrency micropayments</h3>
+						<p>
+							The JSE ad-exchange provides a transparent marketplace for trading digital advertising placements such as banners and inText ads. Website owners can place advertising code on their website to display ads which are then purchased by advertisers and media buyers using the self-serve platform. Advertising campaigns can be optimised by country, device, browser, siteID, publisherID to provide the best return on investment for our clients.
+						</p>
+						<p>
+							Publishers have options for auto-ads, custom banners, in-text ads as well as full control over the advertisers that are allowed to purchase inventory on their site.
+						</p>
+						<p>
+							The JSE token is used as the medium of exchange via micropayments on the JSE blockchain.
+						</p>
+						<p>
+							To attract website owners to our platform we have developed further tools such as a captcha solution, wordpress plugins and a developer API.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="JSEW-enterprise">
+			<div class="wrapper">
+				<div id="JSEW-enterpriseContent" class="row reverse">
+					<div class="col">
+						<h2 class="heading">Enterprise</h2>
+						<h3 class="subHeading">Developing solutions for business</h3>
+						<p>
+							Energy and cost savings make the JSE blockchain very competitive for 3rd party integrations. The team have developed a side-chain API which allows businesses easy access to the benefits of blockchain.
+						</p>
+						<p>
+							Our internal bot-detection and fraud prevention tools are available as a 3rd party API. The network receives high volumes of traffic through the browser mining and captcha solutions which provides data on suspicious connections and bot networks. This data is anonymously analysed using machine learning algorithms to provide risk assessments.
+						</p>
+						<p>
+							Our team have front-end and back-end developers who are available to customise solutions and help integrate blockchain solutions that add value to clients business systems.
+						</p>
+					</div>
+					<div class="col center">
+						<img src="../assets/images/enterprise2.png" style="width:50%; margin-top: 10%" alt="ad tech" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="JSEW-ecom">
+			<div class="wrapper">
+				<div id="JSEW-ecomContent" class="row reverse">
+					<div class="col center">
+						<img src="../assets/images/ecom.png" style="width:50%; margin-top: 10%" alt="ad tech" />
+					</div>
+					<div class="col">
+						<h2 class="heading">E-Commerce</h2>
+						<h3 class="subHeading">Accepting cryptocurrency payments online</h3>
+						<p>
+							In the future we believe that cryptocurrency transactions will be adopted by a mainstream user base to send funds much like we send emails today. Every year more trade is being done online and e-commerce stores and websites will want a way to accept cryptocurrency payments.
+						</p>
+						<p>
+							The JSE merchant tools provide a simple “Buy with Crypto” button that can be placed alongside other payment gateways to accept cryptocurrency payments. Shopping cart plug-ins are also available for stores to quickly setup crypto payments and be future ready.
+						</p>
+						<p>
+							The payment processing industry provides an exceptional opportunity to add value and benefit from the growth in cryptocurrency adoption.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--
+		<div id="JSEW-browserMining">
+			<div class="wrapper">
+				<div id="JSEW-browserMiningContent" class="row reverse">
+					<div class="col">
 						<h2 class="heading">{{ $t('pages.home.section_browserMining.heading_browserMining') }}</h2>
 						<h3 class="subHeading">{{ $t('pages.home.section_browserMining.subheading_browserMining') }}</h3>
 
@@ -92,7 +191,6 @@
 
 						<div class="center">
 							<a href="https://platform.jsecoin.com" style="display:inline-block;" class="button" target="_BLANK"><i class="fa fa-universal-access"></i> {{ $t('pages.home.section_browserMining.button_tryit') }}</a>
-							<!--<button class="button"><i class="fa fa-youtube-play"></i> {{ $t('pages.home.section_browserMining.button_watchVideo') }}</button>-->
 						</div>
 					</div>
 					<div class="col center">
@@ -111,17 +209,7 @@
 						<div class="center">
 							<img src="../assets/images/carousel/1.png" width="400" class="browserScreens" :alt="$t('pages.home.section_pubPlatMining.alt_newMiningPlatform')" />
 						</div>
-						<!--<div class="wingLeft"></div>
-						<div class="wingRight"></div>-->
 
-						<!--<swiper :options="swiperOption2" ref="mySwiper2">-->
-							<!-- slides -->
-							<!--
-							<swiper-slide class="center"><img src="../assets/images/carousel/1.png" width="400" class="browserScreens" :alt="$t('pages.home.section_pubPlatMining.alt_newMiningPlatform')" /></swiper-slide>
-							<swiper-slide class="center"><img src="../assets/images/carousel/2.png" width="400" class="browserScreens" :alt="$t('pages.home.section_pubPlatMining.alt_existingLoginScreen')" /></swiper-slide>
-							<swiper-slide class="center"><img src="../assets/images/carousel/3.png" width="400" class="browserScreens" :alt="$t('pages.home.section_pubPlatMining.alt_existingMiningPlatform')" /></swiper-slide>-->
-						<!--</swiper>-->
-						<!-- Optional controls -->
 						<div class="swiper-paginationWrapper">
 							<div class="swiper-pagination2"  slot="pagination"></div>
 						</div>
@@ -145,14 +233,13 @@
 							<router-link v-bind:to="`/${$store.state.local}/technical/overview`" tag="button" style="display:inline-block; margin-left:20px;" class="button">
 								<i class="fa  fa-question-circle"></i> {{ $t('pages.home.section_pubPlatMining.button_findOutMore') }}
 							</router-link>
-							<!--<button class="button"><i class="fa fa-youtube-play"></i> Watch our video</button>-->
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-
+-->
 		<div id="JSEW-env">
 			<div id="JSEW-cityScape">
 				<div class="wrapper">
@@ -231,11 +318,11 @@
 						<ul class="hexGrid">
 							<li><div class="solidHex"></div></li>
 							<li><div class="blankHex"></div></li>
+							<li><div class="blankHex"></div></li>
 							<li><div class="profile amr"><div class="overlayHex"></div></div></li>
-							<li><div class="profile andy"><div class="overlayHex"></div></div></li>
-							<li><div class="profile alex"><div class="overlayHex"></div></div></li>
-							<li><div class="profile ollie"><div class="overlayHex"></div></div></li>
-							<li><div class="profile angelo"><div class="overlayHex"></div></div></li>
+							<li><div class="profile alina"><div class="overlayHex"></div></div></li>
+							<li><div class="profile marks"><div class="overlayHex"></div></div></li>
+							<li><div class="blankHex"></div></li>
 							<li><div class="solidHex"></div></li>
 							<li><div class="solidHex"></div></li>
 						</ul>
@@ -577,6 +664,9 @@ export default {
 #JSEW-solutions {
 	min-height: 600px;
 }
+#JSEW-enterprise {
+	background: #F7F7F7;
+}
 #JSEW-browserMining > div:first-child,
 #JSEW-pubPlatMining > div:first-child,
 #JSEW-env > div:first-child,
@@ -767,6 +857,17 @@ export default {
 	padding:0px 20px;
 }
 
+#JSEW-ecomContent {
+	padding: 80px 20px;
+}
+
+#JSEW-enterpriseContent {
+	padding: 80px 20px;
+}
+
+#JSEW-adTechContent {
+	padding: 80px 20px;
+}
 
 #JSEW-pubPlatMining .col .wingLeft,
 #JSEW-browserMiningContent .col .wingLeft,

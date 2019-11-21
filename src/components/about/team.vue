@@ -206,16 +206,19 @@
 				</div>
 				<div class="col">
 					<dl>
-						<dt><div class="profile ollie"><div class="overlayHex"></div></div></dt>
+						<dt><div class="profile marks"><div class="overlayHex"></div></div></dt>
 						<dd>
-							<h3>Oliver Bachini</h3>
-							<h4>{{ $t('pages.team.members.OB.title') }}</h4>
-
+							<div class="team-social-icons">
+								<a href="https://www.linkedin.com/in/marks-balahanovs-8479b8107/" target="_blank"><img src="../../assets/images/ico_linkedin.png" class="team-social-icon" alt="Linkedin" /></a>
+							</div>
+							<h3>Marks Balahanovs</h3>
+							<h4>Sales Representative</h4>
 							<p>
-								{{ $t('pages.team.members.OB.para_main1') }}
+								With the experience in Sales, IT Project Management,  and Finance,  Marks ensures the successful sales development of JSEcoin team.
+								He holds a degree in International Finance and has a PRINCE2 Foundation Certificate in Project Management, and ITIL Foundation and Business Analysis Certification (BCS exam). He worked as IT Business Consultant at FDM group, IT Project Manager at National Grid plc and as a Sales Manager at real estate agency.
 							</p>
 							<p>
-								{{ $t('pages.team.members.OB.para_main2') }}
+								Marks is a ninja of successful negotiations and is passionate about carrying out good business.
 							</p>
 						</dd>
 					</dl>
@@ -223,47 +226,34 @@
 			</div>
 
 			<div class="row">
-
 				<div class="col">
 					<dl>
-						<dt><div class="profile alex"><div class="overlayHex"></div></div></dt>
+						<dt><div class="profile alina"><div class="overlayHex"></div></div></dt>
 						<dd>
 							<div class="team-social-icons">
-								<a href="https://www.linkedin.com/in/alexandrasim/" target="_blank"><img src="../../assets/images/ico_linkedin.png" class="team-social-icon" alt="Linkedin" /></a>
+								<a href="https://www.linkedin.com/in/alina-gutoreva-77b9a8107/" target="_blank"><img src="../../assets/images/ico_linkedin.png" class="team-social-icon" alt="Linkedin" /></a>
 							</div>
-							<h3>Alexandra Sim - MCIPD</h3>
-							<h4>{{ $t('pages.team.members.AS.title') }}</h4>
-
+							<h3>Alina Gutoreva</h3>
+							<h4>Decision Scientist</h4>
 							<p>
-								{{ $t('pages.team.members.AS.para_main1') }}
+								Alina implements cutting edge cognitive, behavioural, and decision research to improve current practises at JSEcoing and to make the platform accessible for all. She aims to uncover the incredible possibilities the platform holds for society.
 							</p>
 							<p>
-								{{ $t('pages.team.members.AS.para_main2') }}
+								In her PhD work, she looked at social informational influence, risky decision-making, cognitive biases, and nudges by implementing experimental psychology and machine learning techniques. She was a teaching assistant at an MBA course and worked on Leading Integrity project at the University of Warwick.
 							</p>
 						</dd>
 					</dl>
 				</div>
 				<div class="col">
 					<dl>
-						<dt><div class="profile andy"><div class="overlayHex"></div></div></dt>
+						<dt><div class="profile avatar"><div class="overlayHex"></div></div></dt>
 						<dd>
-							<div class="team-social-icons">
-								<a href="https://www.linkedin.com/in/andyweaver/" target="_blank"><img src="../../assets/images/ico_linkedin.png" class="team-social-icon" alt="Linkedin" /></a>
-							</div>
-							<h3>Andy Weaver</h3>
-							<h4>{{ $t('pages.team.members.AW.title') }}</h4>
-
+							<h3>Want to help?</h3>
 							<p>
-								{{ $t('pages.team.members.AW.para_main1') }}
+								The project is currently run by volunteers and we are always on the look out for talented, exceptional people who want to contribute. If you think you might be able to help please contact us on the telegram channel.
 							</p>
 							<p>
-								{{ $t('pages.team.members.AW.para_main2') }}
-							</p>
-							<p>
-								{{ $t('pages.team.members.AW.para_main3') }}
-							</p>
-							<p>
-								{{ $t('pages.team.members.AW.para_main4') }}
+								<a href="https://t.me/jsetelegram" target="_blank">https://t.me/jsetelegram</a>
 							</p>
 						</dd>
 					</dl>

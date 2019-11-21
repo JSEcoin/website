@@ -1651,7 +1651,7 @@ header .carousel2 {
 }
 
 header .carousel1 {
-	background-image: url("assets/images/carousel/5.png");
+	background-image: url("assets/images/carousel/6.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -1741,7 +1741,7 @@ header .carousel1 {
 }
 
 #JSEW-supportedBrowsers {
-	background-image:url("assets/images/logo_browsers.png");
+	background-image:url("assets/images/top_icon.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	width:240px;
@@ -1911,11 +1911,20 @@ footer a {
 .alex {
 	background-image:url("assets/images/profile/alex.png");
 }
+.marks {
+	background-image:url("assets/images/profile/marks.png");
+}
 .ollie {
 	background-image:url("assets/images/profile/ollie.png");
 }
 .angelo {
 	background-image:url("assets/images/profile/angelo.png");
+}
+.alina {
+	background-image:url("assets/images/profile/alina.png");
+}
+.avatar {
+	background-image:url("assets/images/profile/avatar.png");
 }
 .jay {
 	background-image:url("assets/images/profile/jay.png");
