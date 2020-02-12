@@ -27,9 +27,11 @@
 				We are listed on a number of exchanges; however - we would recommend you use one of the following exchanges:
 			</p>
 			<div style="display:flex; align-items: center;">
-				<a href="https://bit.ly/2NV1eOW" target="_blank"><img src="../assets/images/exchanges/latoken.png" class="exchange-image dl-responsive-image" alt="LATOKEN" /></a>
+				<a href="https://latoken.com/" target="_blank"><img src="../assets/images/exchanges/latoken.png" class="exchange-image dl-responsive-image" alt="LATOKEN" /></a>
 				<a href="https://idex.market" target="_blank"><img src="../assets/images/exchanges/idex.png" class="exchange-image dl-responsive-image" alt="IDEX" /></a>
+				<!--
 				<a href="https://www.ecxx.com" target="_blank"><img src="../assets/images/exchanges/ecxx.png" class="exchange-image dl-responsive-image" alt="ECXX" /></a>
+				-->
 				<!--<a href="https://tokenjar.io/" target="_blank"><img src="../assets/images/exchanges/tokenjar.png" class="exchange-image dl-responsive-image" alt="TOKENJAR" /></a>-->
 			</div>
 		</div>
