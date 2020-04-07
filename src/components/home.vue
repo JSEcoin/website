@@ -14,9 +14,26 @@
 
 
 		<div id="JSEW-overview" class="wrapper">
-			<h1 class="heading center">{{ $t('pages.home.section_overview.heading_overview') }}</h1>
-			<h3 class="subHeading center">{{ $t('pages.home.section_overview.subheading_overview') }}</h3>
-
+			<h1 class="heading center">JSE Closing Down 21st April 2020</h1>
+			<h3 class="subHeading center">Under the current economic environment it has not been possible to raise the funding required to continue the JSE project. </h3>
+			<p>
+				Since 2017 the team has developed and built the network and front-end platforms to bridge web and blockchain technologies. In hindsight we left it too late to raise ICO funds and the project was always bootstrapped. Undeterred we used what little funds we had to the best of our abilities to build out the JSE platform, app and network. The markets for cryptocurrencies have declined since the end of 2017 and this has had a very negative impact on the liquidity and token economics. Organic growth and token demand have slowed significantly making our metrics less desirable to investors. With the Covid-19 pandemic hitting all markets and VC investment our chances of raising are now unrealistic.
+			</p>
+			<p>
+				The platform will be shut down on the 21st April 2020, at this time a snapshot will be taken of the ledger and published on the website. Remaining funds after liquidation and server costs will be used to continue the buy back programme on LATOKEN exchange which seems the fairest way to reimburse stakeholders. Anyone looking to trade tokens on exchange should withdraw funds to the ERC20 token (which will remain in use) before the date above.
+			</p>
+			<p>
+				The code-base will remain on Github and the existing ledger json files will be published on this website once they have been finalised.
+			</p>
+			<p>
+				I hope that in the future someone will continue the work we started and fork the project continuing the existing ledger. Cryptocurrency is the future and the current economic crisis and bail out plans only highlight the need to separate money from state. As a community we need an environmentally friendly alternative to traditional proof-of-work systems.
+			</p>
+			<p>
+				I would like to thank everyone who contributed to the project. Developers, investors, community members, miners and website publishers. I have been lucky enough to work with some amazing people over the last three years and wish them the best for whatever the future brings. I apologise to everyone who invested time, money and resources into the project who believed, like I did, in what we were doing.
+			</p>
+		</div>
+		<hr>
+		<div class="wrapper">
 			<div id="JSEW-sectionHighlights">
 				<div class="row">
 					<div class="col">
@@ -297,6 +314,7 @@
 			</router-link>
 		</div>-->
 
+		<!--
 		<div id="JSEW-team">
 			<h2 class="heading center">{{ $t('pages.home.section_team.heading_team') }}</h2>
 			<h3 class="subHeading center">{{ $t('pages.home.section_team.subheading_team') }}</h3>
@@ -344,6 +362,7 @@
 				</router-link>
 			</div>
 		</div>
+		-->
 
 		<div id="JSEW-community">
 			<div class="wrapper center">
