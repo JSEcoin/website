@@ -15,7 +15,7 @@
     "localforage": "^1.7.3",
     "moment": "^2.22.2",
     "numeral": "^2.0.6",
-    "papaparse": "^4.6.3",
+    "papaparse": "^5.2.0",
     "particles.js": "^2.0.0",
     "prerender-spa-plugin": "^3.4.0",
     "qrious": "^4.0.2",
